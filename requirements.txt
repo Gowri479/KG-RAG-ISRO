@@ -1,0 +1,8 @@
+# Python dependencies (placeholder)
+spacy
+networkx
+faiss-cpu
+requests
+python-dotenv
+# Add: ragas, transformers, sentence-transformers, etc.
+
