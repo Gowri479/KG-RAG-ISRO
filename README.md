@@ -1,8 +1,3 @@
-Here's the README:
-
----
-
-```markdown
 # KG-RAG: Knowledge Graph-Augmented Retrieval-Augmented Generation for ISRO Domain Question Answering
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
@@ -28,6 +23,7 @@ programme at Alliance School of Advanced Computing, Alliance University (2025–
 
 ## System Architecture
 
+```
                     ┌─────────────────────┐
                     │   ISRO Public Docs  │
                     │   (isro.gov.in)     │
@@ -52,20 +48,20 @@ programme at Alliance School of Advanced Computing, Alliance University (2025–
    │     spaCy NER       │      │   MiniLM-L6-v2      │
    │  + Dep. Parsing     │      │  (384-dim encoder)  │
    └──────────┬──────────┘      └──────────┬──────────┘
-              │                            │
-              ▼                            ▼
+              │                             │
+              ▼                             ▼
    ┌─────────────────────┐      ┌─────────────────────┐
    │    NetworkX KG      │      │    FAISS Index      │
-   │ 4.2K nodes/11.5K    │      │     Flat L2         │
+   │ 4.2K nodes/11.5K   │      │     Flat L2         │
    │      edges          │      │                     │
-   └──────────┬──────────┘      └───────── ─┬─────────┘
+   └──────────┬──────────┘      └──────────┬──────────┘
               │                             │
               │      ┌──────────────┐       │
               │      │  User Query  │       │
               │      └──────┬───────┘       │
               │             │               │
               │      ┌──────┴───────┐       │
-              │      │  Query NER  │        │
+              │      │  Query NER   │       │
               │      └──────┬───────┘       │
               │             │               │
               ▼             ▼               ▼
@@ -85,6 +81,7 @@ programme at Alliance School of Advanced Computing, Alliance University (2025–
            ┌─────────────────────────┐
            │     Generated Answer    │
            └─────────────────────────┘
+```
 
 ---
 
@@ -101,12 +98,12 @@ programme at Alliance School of Advanced Computing, Alliance University (2025–
 
 ## Results (Preliminary)
 
-| System             | Faithfulness | Answer Relevancy | Context Precision | Context Recall |
-|--------------------|--------------|------------------|-------------------|----------------|
-| BM25 + LLM         | 0.62         | 0.59             | —                 | —              |
-| Vanilla RAG        | 0.71         | 0.68             | —                 | —              |
-| GraphRAG           | —            | —                | —                 | —              |
-| **KG-RAG (ours)**  | **0.84**     | **0.81**         | —                 | —              |
+| System | Faithfulness | Answer Relevancy | Context Precision | Context Recall |
+|---|---|---|---|---|
+| BM25 + LLM | 0.62 | 0.59 | — | — |
+| Vanilla RAG | 0.71 | 0.68 | — | — |
+| GraphRAG | — | — | — | — |
+| **KG-RAG (ours)** | **0.84** | **0.81** | — | — |
 
 *Full results to be updated after experimental evaluation.*
 
@@ -114,35 +111,78 @@ programme at Alliance School of Advanced Computing, Alliance University (2025–
 
 ## Project Structure
 
-
+```
 KG-RAG-ISRO/
 │
 ├── data/
-│   ├── raw/              # Scraped markdown files from isro.gov.in
-│   ├── chunks/           # Preprocessed chunks (JSON)
-│   ├── kg/               # NetworkX graph files
-│   └── benchmark/        # ISRO-QA benchmark (JSON)
+│   ├── raw/                    # Scraped markdown files from isro.gov.in
+│   ├── chunks/                 # Preprocessed chunks (JSON)
+│   ├── kg/                     # NetworkX graph files
+│   └── benchmark/              # ISRO-QA benchmark (JSON)
 │
 ├── src/
-│   ├── scraper/          # Firecrawl data collection scripts
-│   ├── preprocessing/    # Document cleaning and chunking
-│   ├── kg_builder/       # spaCy NER + relation extraction + NetworkX
-│   ├── indexer/          # MiniLM embeddings + FAISS index builder
-│   ├── retriever/        # Hybrid retrieval pipeline
-│   ├── generator/        # Ollama API integration + prompt templates
-│   ├── baselines/        # BM25, Vanilla RAG, GraphRAG implementations
-│   └── evaluation/       # RAGAS evaluation scripts
+│   ├── scraper/
+│   │   └── crawl.py            # Firecrawl data collection
+│   │
+│   ├── preprocessing/
+│   │   ├── clean.py            # Noise removal, deduplication
+│   │   └── chunk.py            # 512-token chunker with stride
+│   │
+│   ├── kg_builder/
+│   │   ├── ner.py              # spaCy NER entity extraction
+│   │   ├── relations.py        # Dependency-based triple extraction
+│   │   └── build_kg.py         # NetworkX graph construction
+│   │
+│   ├── indexer/
+│   │   ├── encode.py           # MiniLM-L6-v2 chunk encoding
+│   │   └── build_index.py      # FAISS index builder
+│   │
+│   ├── retriever/
+│   │   ├── kg_retriever.py     # One-hop KG neighbourhood expansion
+│   │   ├── faiss_retriever.py  # Dense passage retrieval
+│   │   ├── hybrid.py           # Context merging pipeline
+│   │   └── query.py            # Main query entrypoint
+│   │
+│   ├── generator/
+│   │   ├── prompt.py           # Prompt templates
+│   │   └── ollama_api.py       # Ollama REST API integration
+│   │
+│   ├── baselines/
+│   │   ├── bm25_llm.py         # BM25 + Mistral baseline
+│   │   ├── vanilla_rag.py      # FAISS-only RAG baseline
+│   │   └── graphrag.py         # GraphRAG baseline
+│   │
+│   └── evaluation/
+│       ├── evaluate.py         # RAGAS scoring pipeline
+│       └── ablation.py         # Ablation study scripts
 │
-├── frontend/             # React chat UI
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── ChatBox.jsx     # Main chat interface
+│   │   │   ├── QueryInput.jsx  # Question input component
+│   │   │   └── Answer.jsx      # Answer display component
+│   │   ├── App.jsx
+│   │   └── index.jsx
+│   └── package.json
 │
-├── notebooks/            # Experiments and analysis notebooks
+├── notebooks/
+│   ├── kg_analysis.ipynb       # KG statistics and visualization
+│   ├── retrieval_analysis.ipynb# Retrieval quality analysis
+│   └── results_analysis.ipynb  # Experiment results analysis
 │
-├── paper/                # LaTeX source files for IEEE paper
+├── paper/
+│   ├── main.tex                # IEEE paper LaTeX source
+│   ├── references.bib          # Bibliography
+│   └── figures/
+│       └── system_architecture.png
 │
-├── requirements.txt
 ├── .env.example
+├── .gitignore
+├── requirements.txt
 └── README.md
-
+```
 
 ---
 
@@ -151,7 +191,7 @@ KG-RAG-ISRO/
 ### Prerequisites
 
 - Python 3.10+
-- NVIDIA GPU with 4GB+ VRAM (tested on RTX 3050 4GB)
+- NVIDIA GPU with 4GB+ VRAM
 - [Ollama](https://ollama.ai) installed and running
 - Node.js 18+ (for frontend)
 
@@ -160,7 +200,7 @@ KG-RAG-ISRO/
 ```bash
 git clone https://github.com/<your-username>/KG-RAG-ISRO.git
 cd KG-RAG-ISRO
-
+```
 
 ### 2. Create virtual environment
 
@@ -168,33 +208,34 @@ cd KG-RAG-ISRO
 python -m venv venv
 source venv/bin/activate        # Linux/Mac
 venv\Scripts\activate           # Windows
+```
 
 ### 3. Install Python dependencies
 
 ```bash
 pip install -r requirements.txt
 python -m spacy download en_core_web_lg
-
+```
 
 ### 4. Pull Mistral model via Ollama
 
 ```bash
 ollama pull mistral:7b-instruct-q4_K_M
-
+```
 
 ### 5. Set up environment variables
 
 ```bash
 cp .env.example .env
 # Add your Firecrawl API key to .env
-
+```
 
 ### 6. Install frontend dependencies
 
 ```bash
 cd frontend
 npm install
-
+```
 
 ---
 
@@ -204,44 +245,44 @@ npm install
 
 ```bash
 python src/scraper/crawl.py
-
+```
 
 ### Step 2 — Preprocess and chunk
 
 ```bash
 python src/preprocessing/chunk.py
-
+```
 
 ### Step 3 — Build knowledge graph
 
 ```bash
 python src/kg_builder/build_kg.py
-
+```
 
 ### Step 4 — Build FAISS index
 
 ```bash
 python src/indexer/build_index.py
-
+```
 
 ### Step 5 — Run the QA system
 
 ```bash
 python src/retriever/query.py --question "What is the primary payload of Chandrayaan-2?"
-
+```
 
 ### Step 6 — Launch frontend
 
 ```bash
 cd frontend
 npm start
-
+```
 
 ### Step 7 — Run evaluation
 
 ```bash
 python src/evaluation/evaluate.py --benchmark data/benchmark/isro_qa.json
-
+```
 
 ---
 
@@ -249,12 +290,12 @@ python src/evaluation/evaluate.py --benchmark data/benchmark/isro_qa.json
 
 The ISRO-QA benchmark consists of 200 manually curated question-answer pairs:
 
-| Tier      | Type                 | Count   |
-|-----------|----------------------|---------|
-| 1         | Factoid              | 100     |
-| 2         | Multi-hop relational | 60      |
-| 3         | Timeline reasoning   | 40      |
-| **Total** |                      | **200** |
+| Tier | Type | Count |
+|---|---|---|
+| 1 | Factoid | 100 |
+| 2 | Multi-hop relational | 60 |
+| 3 | Timeline reasoning | 40 |
+| **Total** | | **200** |
 
 The benchmark JSON is located at `data/benchmark/isro_qa.json`.
 
@@ -262,26 +303,26 @@ The benchmark JSON is located at `data/benchmark/isro_qa.json`.
 
 ## Tech Stack
 
-| Component       | Tool                         |
-|-----------------|------------------------------|
-| Web scraping    | Firecrawl API                |
-| NER + parsing   | spaCy `en_core_web_lg`       |
-| Knowledge graph | NetworkX 3.x                 |
-| Embeddings      | `all-MiniLM-L6-v2`           |
-| Vector index    | FAISS-CPU                    |
-| LLM             | Mistral-7B-Instruct Q4\_K\_M |
-| LLM serving     | Ollama                       |
-| Evaluation      | RAGAS                        |
-| Frontend        | React                        |
+| Component | Tool |
+|---|---|
+| Web scraping | Firecrawl API |
+| NER + parsing | spaCy `en_core_web_lg` |
+| Knowledge graph | NetworkX 3.x |
+| Embeddings | `all-MiniLM-L6-v2` |
+| Vector index | FAISS-CPU |
+| LLM | Mistral-7B-Instruct Q4\_K\_M |
+| LLM serving | Ollama |
+| Evaluation | RAGAS |
+| Frontend | React |
 
 ---
 
 ## Team
 
-| Name                | Role                                             | Institution|
-|---------------------|--------------------------------------------------|------------|
-| Nandana Narayan Das | KG pipeline, retrieval, evaluation, paper        | ASAC       |
-| Gowri Kannan        | Data collection, generation, baselines, frontend | VJCET      |
+| Name | Role | Institution |
+|---|---|---|
+| Nandana Narayan Das | KG pipeline, retrieval, evaluation, paper | Alliance School of Advanced Computing, Alliance University |
+| Gowri Kannan | Data collection, generation, baselines, frontend | VJCET |
 
 ---
 
@@ -297,7 +338,7 @@ If you use this work or the ISRO-QA benchmark, please cite:
   booktitle = {Proceedings of the International Conference on Natural Language Processing (ICNLP)},
   year      = {2027}
 }
-
+```
 
 ---
 
@@ -310,7 +351,4 @@ This project is licensed under the MIT License. See `LICENSE` for details.
 ## Acknowledgements
 
 This work is conducted under the ISRO Bharatiya Antariksh Hackathon 2025 (BAH-02) framework.
-We thank Alliance School of Advanced Computing, Alliance University for academic support.```
-
-
-Copy this into a file called `README.md` in the root of the repo. Want anything added or changed?
+We thank Alliance School of Advanced Computing, Alliance University for academic support.
