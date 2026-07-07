@@ -28,33 +28,63 @@ programme at Alliance School of Advanced Computing, Alliance University (2025–
 
 ## System Architecture
 
-```
-ISRO Public Docs
-      │
-      ▼
-Firecrawl API ──► Text Chunks (512 tok, stride 128)
-                        │
-           ┌────────────┴────────────┐
-           ▼                         ▼
-     spaCy NER                 MiniLM-L6-v2
-   + Dep. Parser               (384-dim embed)
-           │                         │
-           ▼                         ▼
-    NetworkX KG               FAISS Flat L2
-  (4.2K nodes, 11.5K edges)     Index
-           │                         │
-           └────────────┬────────────┘
-                        ▼
-              Hybrid Retrieval
-          (1-hop KG + top-5 FAISS)
-                        │
-                        ▼
-          Mistral-7B-Instruct Q4_K_M
-                  via Ollama
-                        │
-                        ▼
-               Generated Answer
-```
+┌─────────────────────┐
+                    │   ISRO Public Docs  │
+                    │   (isro.gov.in)     │
+                    └─────────┬───────────┘
+                              │
+                              ▼
+                    ┌─────────────────────┐
+                    │   Firecrawl API     │
+                    │  Web + PDF scrape   │
+                    └─────────┬───────────┘
+                              │
+                              ▼
+                    ┌─────────────────────┐
+                    │    Text Chunks      │
+                    │ 512 tok, stride 128 │
+                    └────────┬────────────┘
+                             │
+              ┌──────────────┴──────────────┐
+              │                             │
+              ▼                             ▼
+   ┌─────────────────────┐      ┌─────────────────────┐
+   │     spaCy NER       │      │   MiniLM-L6-v2      │
+   │  + Dep. Parsing     │      │  (384-dim encoder)  │
+   └──────────┬──────────┘      └──────────┬──────────┘
+              │                             │
+              ▼                             ▼
+   ┌─────────────────────┐      ┌─────────────────────┐
+   │    NetworkX KG      │      │    FAISS Index      │
+   │ 4.2K nodes/11.5K   │      │     Flat L2         │
+   │      edges          │      │                     │
+   └──────────┬──────────┘      └──────────┬──────────┘
+              │                             │
+              │      ┌──────────────┐       │
+              │      │  User Query  │       │
+              │      └──────┬───────┘       │
+              │             │               │
+              │      ┌──────┴───────┐       │
+              │      │  Query NER  │        │
+              │      └──────┬───────┘       │
+              │             │               │
+              ▼             ▼               ▼
+   ┌─────────────────────────────────────────────┐
+   │            Hybrid Retrieval                 │
+   │   1-hop KG neighbours + top-5 FAISS chunks  │
+   └─────────────────────┬───────────────────────┘
+                         │
+                         ▼
+           ┌─────────────────────────┐
+           │  Mistral-7B-Instruct    │
+           │     Q4_K_M via Ollama   │
+           │   (local, zero-cost)    │
+           └─────────────┬───────────┘
+                         │
+                         ▼
+           ┌─────────────────────────┐
+           │     Generated Answer    │
+           └─────────────────────────┘
 
 ---
 
@@ -71,12 +101,12 @@ Firecrawl API ──► Text Chunks (512 tok, stride 128)
 
 ## Results (Preliminary)
 
-| System | Faithfulness | Answer Relevancy | Context Precision | Context Recall |
-|---|---|---|---|---|
-| BM25 + LLM | 0.62 | 0.59 | — | — |
-| Vanilla RAG | 0.71 | 0.68 | — | — |
-| GraphRAG | — | — | — | — |
-| **KG-RAG (ours)** | **0.84** | **0.81** | — | — |
+| System             | Faithfulness | Answer Relevancy | Context Precision | Context Recall |
+|--------------------|--------------|------------------|-------------------|----------------|
+| BM25 + LLM         | 0.62         | 0.59             | —                 | —              |
+| Vanilla RAG        | 0.71         | 0.68             | —                 | —              |
+| GraphRAG           | —            | —                | —                 | —              |
+| **KG-RAG (ours)**  | **0.84**     | **0.81**         | —                 | —              |
 
 *Full results to be updated after experimental evaluation.*
 
@@ -220,12 +250,12 @@ python src/evaluation/evaluate.py --benchmark data/benchmark/isro_qa.json
 
 The ISRO-QA benchmark consists of 200 manually curated question-answer pairs:
 
-| Tier | Type | Count |
-|---|---|---|
-| 1 | Factoid | 100 |
-| 2 | Multi-hop relational | 60 |
-| 3 | Timeline reasoning | 40 |
-| **Total** | | **200** |
+| Tier      | Type                 | Count   |
+|-----------|----------------------|---------|
+| 1         | Factoid              | 100     |
+| 2         | Multi-hop relational | 60      |
+| 3         | Timeline reasoning   | 40      |
+| **Total** |                      | **200** |
 
 The benchmark JSON is located at `data/benchmark/isro_qa.json`.
 
@@ -233,26 +263,26 @@ The benchmark JSON is located at `data/benchmark/isro_qa.json`.
 
 ## Tech Stack
 
-| Component | Tool |
-|---|---|
-| Web scraping | Firecrawl API |
-| NER + parsing | spaCy `en_core_web_lg` |
-| Knowledge graph | NetworkX 3.x |
-| Embeddings | `all-MiniLM-L6-v2` |
-| Vector index | FAISS-CPU |
-| LLM | Mistral-7B-Instruct Q4\_K\_M |
-| LLM serving | Ollama |
-| Evaluation | RAGAS |
-| Frontend | React |
+| Component       | Tool                         |
+|-----------------|------------------------------|
+| Web scraping    | Firecrawl API                |
+| NER + parsing   | spaCy `en_core_web_lg`       |
+| Knowledge graph | NetworkX 3.x                 |
+| Embeddings      | `all-MiniLM-L6-v2`           |
+| Vector index    | FAISS-CPU                    |
+| LLM             | Mistral-7B-Instruct Q4\_K\_M |
+| LLM serving     | Ollama                       |
+| Evaluation      | RAGAS                        |
+| Frontend        | React                        |
 
 ---
 
 ## Team
 
-| Name | Role | Institution |
-|---|---|---|
-| Nandana Narayan Das | KG pipeline, retrieval, evaluation, paper | Alliance School of Advanced Computing, Alliance University |
-| Gowri Kannan | Data collection, generation, baselines, frontend | VJCET |
+| Name                | Role                                             | Institution|
+|---------------------|--------------------------------------------------|------------|
+| Nandana Narayan Das | KG pipeline, retrieval, evaluation, paper        | ASAC       |
+| Gowri Kannan        | Data collection, generation, baselines, frontend | VJCET      |
 
 ---
 
