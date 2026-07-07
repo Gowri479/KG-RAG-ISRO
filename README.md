@@ -28,7 +28,7 @@ programme at Alliance School of Advanced Computing, Alliance University (2025–
 
 ## System Architecture
 
-┌─────────────────────┐
+                    ┌─────────────────────┐
                     │   ISRO Public Docs  │
                     │   (isro.gov.in)     │
                     └─────────┬───────────┘
@@ -52,13 +52,13 @@ programme at Alliance School of Advanced Computing, Alliance University (2025–
    │     spaCy NER       │      │   MiniLM-L6-v2      │
    │  + Dep. Parsing     │      │  (384-dim encoder)  │
    └──────────┬──────────┘      └──────────┬──────────┘
-              │                             │
-              ▼                             ▼
+              │                            │
+              ▼                            ▼
    ┌─────────────────────┐      ┌─────────────────────┐
    │    NetworkX KG      │      │    FAISS Index      │
-   │ 4.2K nodes/11.5K   │      │     Flat L2         │
+   │ 4.2K nodes/11.5K    │      │     Flat L2         │
    │      edges          │      │                     │
-   └──────────┬──────────┘      └──────────┬──────────┘
+   └──────────┬──────────┘      └───────── ─┬─────────┘
               │                             │
               │      ┌──────────────┐       │
               │      │  User Query  │       │
@@ -114,7 +114,7 @@ programme at Alliance School of Advanced Computing, Alliance University (2025–
 
 ## Project Structure
 
-```
+
 KG-RAG-ISRO/
 │
 ├── data/
@@ -142,7 +142,7 @@ KG-RAG-ISRO/
 ├── requirements.txt
 ├── .env.example
 └── README.md
-```
+
 
 ---
 
@@ -160,7 +160,7 @@ KG-RAG-ISRO/
 ```bash
 git clone https://github.com/<your-username>/KG-RAG-ISRO.git
 cd KG-RAG-ISRO
-```
+
 
 ### 2. Create virtual environment
 
@@ -168,34 +168,33 @@ cd KG-RAG-ISRO
 python -m venv venv
 source venv/bin/activate        # Linux/Mac
 venv\Scripts\activate           # Windows
-```
 
 ### 3. Install Python dependencies
 
 ```bash
 pip install -r requirements.txt
 python -m spacy download en_core_web_lg
-```
+
 
 ### 4. Pull Mistral model via Ollama
 
 ```bash
 ollama pull mistral:7b-instruct-q4_K_M
-```
+
 
 ### 5. Set up environment variables
 
 ```bash
 cp .env.example .env
 # Add your Firecrawl API key to .env
-```
+
 
 ### 6. Install frontend dependencies
 
 ```bash
 cd frontend
 npm install
-```
+
 
 ---
 
@@ -205,44 +204,44 @@ npm install
 
 ```bash
 python src/scraper/crawl.py
-```
+
 
 ### Step 2 — Preprocess and chunk
 
 ```bash
 python src/preprocessing/chunk.py
-```
+
 
 ### Step 3 — Build knowledge graph
 
 ```bash
 python src/kg_builder/build_kg.py
-```
+
 
 ### Step 4 — Build FAISS index
 
 ```bash
 python src/indexer/build_index.py
-```
+
 
 ### Step 5 — Run the QA system
 
 ```bash
 python src/retriever/query.py --question "What is the primary payload of Chandrayaan-2?"
-```
+
 
 ### Step 6 — Launch frontend
 
 ```bash
 cd frontend
 npm start
-```
+
 
 ### Step 7 — Run evaluation
 
 ```bash
 python src/evaluation/evaluate.py --benchmark data/benchmark/isro_qa.json
-```
+
 
 ---
 
@@ -298,7 +297,7 @@ If you use this work or the ISRO-QA benchmark, please cite:
   booktitle = {Proceedings of the International Conference on Natural Language Processing (ICNLP)},
   year      = {2027}
 }
-```
+
 
 ---
 
@@ -311,9 +310,7 @@ This project is licensed under the MIT License. See `LICENSE` for details.
 ## Acknowledgements
 
 This work is conducted under the ISRO Bharatiya Antariksh Hackathon 2025 (BAH-02) framework.
-We thank Alliance School of Advanced Computing, Alliance University for academic support.
-```
+We thank Alliance School of Advanced Computing, Alliance University for academic support.```
 
----
 
 Copy this into a file called `README.md` in the root of the repo. Want anything added or changed?
