@@ -1,8 +1,23 @@
-# Python dependencies (placeholder)
-spacy
-networkx
-faiss-cpu
-requests
-python-dotenv
-# Add: ragas, transformers, sentence-transformers, etc.
+# Core runtime
+python-dotenv>=1.0.0
+requests>=2.32.0
+tqdm>=4.66.0
+numpy>=1.26.0
+pandas>=2.2.0
+
+# NLP + graph
+spacy>=3.7.0
+networkx>=3.3.0
+sentence-transformers>=3.2.0
+faiss-cpu>=1.8.0
+
+# Local LLM / eval
+ollama>=0.1.0
+ragas>=0.1.0
+transformers>=4.41.0
+
+# Testing
+pytest>=8.0.0
+
+# Frontend tooling is handled separately in frontend/package.json
 

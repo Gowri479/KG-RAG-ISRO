@@ -1,0 +1,29 @@
+# Source: https://www.isro.gov.in/3rd_National_Space_Day_2026.html
+
+3rd National Space Day 2026 celebrated at Ahmedabad
+3
+rd
+National Space Day 2026 celebrated at Ahmedabad
+Home
+/3
+rd
+National Space Day 2026 celebrated at Ahmedabad
+August 24, 2026
+The inaugural event of 3
+rd
+National Space Day (NSPD) 2026 was held at Ahmedabad on August 23, 2026. This year’s theme is “Towards Viksit Bharat: Innovating, Collaborating and Aspiring to Global Space Leadership”.
+Hon’ble Union Minister Shri Gajendra Singh Shekhawat, Union Minister of Culture and Tourism, was the chief guest and Hon’ble Shri Arjunbhai Devabhai Modhwadia, Minister for Forests and Environment, Climate Change and Science and Technology Govt. of Gujarat was the Guest of Honour. Dr V. Narayanan, Secretary DoS / Chairman ISRO presided over the function, Dr Pawan Kumar Goenka, Chairman IN-SPACe and Dr Ch V. N. Rao, Director SAC, participated in the function. The event was inaugurated with invocation, lighting of lamp and formal welcome address by Director SAC.
+Hon’ble Union Minister Shri Gajendra Singh Shekhawat while addressing emphasised about the theme reflecting three key pillars of India’s development journey—innovation as the strength of a new India, collaboration as an expression of India’s culture, thought and wisdom, and global leadership as a national aspiration, and stated that the center of these aspirations is India’s youth. He conveyed the important message to the gathering that the success of space missions would be determined by how these missions have changed the lives of common man and further reasserted that space reform is not the privatisation but it is the democratisation of space opportunity.
+He concluded by stating that India stands at the threshold of immense possibilities and is moving forward with enthusiasm and resolve under the leadership of the Hon’ble Prime Minister. Emphasizing that every stakeholder has a role and responsibility in a period of transformation, he noted that greater capacity and capabilities bring greater responsibility, particularly for those working in the fields of science and space. He called upon all stakeholders to recognize this responsibility and fulfil their respective roles in developing India, so that future generations can take pride in the contribution of the present generation towards Viksit Bharat. He urged everyone to make full use of this opportunity and work with collective resolve for the country’s development.
+In his address, Guest of Honor Shri Arjunbhai Devabhai Modhwadia mentioned that today’s youth is not job seekers but they are job givers. He invited start-up and industries to establish their manufacturing facilities at Gujarat Space Park.
+The Secretary, Department of Space / Chairman, ISRO, highlighted that, in recognition of the historic soft landing of Chandrayaan-3’s Vikram lander near the lunar south polar region on August 23, 2023, Hon’ble Prime Minister Shri Narendra Modi declared August 23 as ‘National Space Day’. To celebrate this landmark achievement in India’s space journey the 3
+rd
+National Space Day was celebrated on 23 August 2026, in Ahmedabad, which was aptly chosen considering the presence of Space Applications Centre and start-up ecosystem growing rapidly in and around Ahmedabad.
+He recalled ISRO’s humble beginnings in the 1960s, from launching small sounding rockets to demonstrating the capability to launch international commercial satellites in the 6-ton class. He congratulated M/s Skyroot Aerospace team for successful launch of the first orbital flight ‘Vikram-1’ in the very first attempt. He also mentioned that ISRO team whole heartedly supported the private launch activities as ISRO’s own activity.
+He added that space sector reforms were rolled out by Govt. of India in 2020, and now it has resulted in growth of more than 440 space start-ups in the country. He reaffirmed that we would contribute towards
+Viksit Bharat 2047
+as per the vision of the Hon’ble Prime Minister.
+Addressing the gathering, Dr. Pawan Kumar Goenka, Chairman, IN-SPACe, underscored the pivotal role of ISRO in nurturing India's rapidly expanding space ecosystem. He highlighted that the country's growing space industry has been built on ISRO's decades of technological excellence, institutional support, and knowledge-sharing. Emphasising the strength of public-private collaboration, he said that the growth of private space sector in India can happen only with the support of ISRO, and the partnership between ISRO and industry will accelerate innovation, strengthen India's global competitiveness, and help achieve the nation's ambitious space goals. He reiterated that ‘without ISRO there is no space industry in India’.
+Subsequently, M/s Skyroot Aerospace team was felicitated by Secretary, DOS / Chairman ISRO.
+Awards to winners of various competitions and quiz organized during national space day celebration across India were also distributed.
+function outsideAlert(url) { if (confirm("You will be directed to an external website. Are you sure that you want to proceed?")) { window.open(url, '_blank'); } }
