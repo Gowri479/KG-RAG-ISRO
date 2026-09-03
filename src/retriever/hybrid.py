@@ -29,6 +29,10 @@ def _entity_fallback(query: str) -> list[str]:
     return [candidate.strip() for candidate in candidates if candidate.strip()][:10]
 
 
+def _query_keywords(query: str) -> list[str]:
+    return [word.lower() for word in query.split() if len(word) > 3]
+
+
 def _extract_entities(query: str) -> list[str]:
     if not query:
         return []
@@ -56,7 +60,12 @@ def retrieve(query: str) -> str:
     if not query or not query.strip():
         return ""
 
+    keywords = _query_keywords(query)
     entities = _extract_entities(query)
+    entities = [
+        entity for entity in entities
+        if any(keyword in entity.lower() for keyword in keywords)
+    ]
     kg_context = get_kg_context(entities)
     passage_context = get_passage_context(query)
 
@@ -68,8 +77,8 @@ def retrieve(query: str) -> str:
 
     merged = "\n\n".join(combined_parts)
     tokens = merged.split()
-    if len(tokens) > 3500:
-        merged = " ".join(tokens[:3500])
+    if len(tokens) > 4000:
+        merged = " ".join(tokens[:4000])
     return merged.strip()
 
 
