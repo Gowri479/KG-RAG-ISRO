@@ -3,9 +3,14 @@
 from __future__ import annotations
 
 import json
+import os
+import warnings
 from pathlib import Path
 
 import numpy as np
+
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+warnings.filterwarnings("ignore")
 
 try:
     from sentence_transformers import SentenceTransformer
@@ -47,7 +52,10 @@ def encode_chunks(chunk_dir: str | Path, model_name: str = "all-MiniLM-L6-v2") -
         raise FileNotFoundError(f"Chunk directory does not exist: {chunk_path}")
 
     texts: list[str] = []
-    for file_path in sorted(chunk_path.glob("*.json")):
+    combined_path = chunk_path / "chunks.json"
+    files = [combined_path] if combined_path.exists() else sorted(chunk_path.glob("*.json"))
+
+    for file_path in files:
         payload = json.loads(file_path.read_text(encoding="utf-8"))
         if isinstance(payload, list):
             for item in payload:

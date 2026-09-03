@@ -23,8 +23,17 @@ ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_OUTPUT_DIR = ROOT / "data" / "raw"
 DEFAULT_SEEDS = [
     "https://www.isro.gov.in/",
-    "https://www.isro.gov.in/Spacecraft",
     "https://www.isro.gov.in/Missions",
+    "https://www.isro.gov.in/Launch_Vehicles",
+    "https://www.isro.gov.in/Satellites",
+    "https://www.isro.gov.in/Chandrayaan3.html",
+    "https://www.isro.gov.in/chandrayaan-2-scientific-objectives.html",
+    "https://www.isro.gov.in/pslv-c57-aditya-l1-mission.html",
+    "https://www.isro.gov.in/PSLV_Missions.html",
+    "https://www.isro.gov.in/GSLV_Missions.html",
+    "https://www.isro.gov.in/press-releases",
+    "https://www.isro.gov.in/annual-reports",
+    "https://www.isro.gov.in/scientists-engineers",
 ]
 
 logger = logging.getLogger(__name__)
@@ -83,21 +92,51 @@ def extract_internal_links(html_text: str, base_url: str) -> list[str]:
     return sorted(links)
 
 
-def crawl_discovered_links(seed_url: str, output_dir: Path = DEFAULT_OUTPUT_DIR, max_pages: int | None = None) -> List[Path]:
-    """Fetch a seed page, discover internal links, and crawl the valid site pages."""
-    base_html = fetch_page_html(seed_url)
-    candidates = extract_internal_links(base_html, seed_url)
-    if not candidates:
+def crawl_discovered_links(seed_url: str, output_dir: Path = DEFAULT_OUTPUT_DIR, max_pages: int | None = None, max_depth: int = 2) -> List[Path]:
+    """Fetch a seed page, discover internal links, and recursively crawl useful content pages up to a bounded depth."""
+    queue: list[tuple[str, int]] = [(seed_url, 0)]
+    discovered: set[str] = set()
+    collected: list[str] = []
+
+    while queue:
+        current_url, depth = queue.pop(0)
+        if current_url in discovered:
+            continue
+        discovered.add(current_url)
+        try:
+            base_html = fetch_page_html(current_url)
+        except Exception as exc:
+            logger.warning("Failed to fetch %s during discovery: %s", current_url, exc)
+            continue
+
+        candidates = extract_internal_links(base_html, current_url)
+        filtered = [
+            link
+            for link in candidates
+            if all(token not in link.lower() for token in ("search", "calendar", "logout", "login", "privacy", "terms"))
+        ]
+        if depth == 0:
+            logger.info("Discovered %d candidate links from %s", len(filtered), current_url)
+
+        if filtered:
+            for link in filtered:
+                if link not in discovered and depth < max_depth:
+                    queue.append((link, depth + 1))
+                if link not in collected:
+                    collected.append(link)
+
+        if not filtered and depth == 0:
+            collected.append(current_url)
+
+    if not collected:
         logger.warning("No internal links discovered from %s", seed_url)
         return crawl_urls([seed_url], output_dir=output_dir, max_pages=max_pages)
 
-    filtered = [
-        link
-        for link in candidates
-        if all(token not in link.lower() for token in ("search", "calendar", "logout", "login", "privacy", "terms"))
-    ]
-    logger.info("Discovered %d candidate links from %s", len(filtered), seed_url)
-    return crawl_urls(filtered[:max_pages] if max_pages else filtered, output_dir=output_dir, max_pages=max_pages)
+    ordered = list(dict.fromkeys(collected))
+    if max_pages is not None:
+        ordered = ordered[:max_pages]
+    logger.info("Crawling %d discovered links from %s (max_depth=%d)", len(ordered), seed_url, max_depth)
+    return crawl_urls(ordered, output_dir=output_dir, max_pages=max_pages)
 
 
 def _fetch_firecrawl_markdown(url: str, api_key: str) -> str:
@@ -105,8 +144,8 @@ def _fetch_firecrawl_markdown(url: str, api_key: str) -> str:
     endpoint = "https://api.firecrawl.dev/v1/scrape"
     payload = {
         "url": url,
-        "pageOptions": {"onlyMainContent": True},
         "formats": ["markdown"],
+        "onlyMainContent": True,
     }
     headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
     response = requests.post(endpoint, json=payload, headers=headers, timeout=60)
@@ -183,6 +222,7 @@ def _parse_args() -> argparse.Namespace:
     parser.add_argument("--input-file", type=Path, default=None, help="Optional text file containing a URL per line")
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR, help="Directory for saved raw Markdown files")
     parser.add_argument("--max-pages", type=int, default=None, help="Maximum number of pages to crawl")
+    parser.add_argument("--max-depth", type=int, default=3, help="Maximum link-discovery depth when using --discover")
     parser.add_argument("--discover", action="store_true", help="Fetch a seed page and crawl valid internal links discovered on it")
     return parser.parse_args()
 
@@ -199,7 +239,7 @@ def main() -> None:
     if args.discover:
         collected: List[Path] = []
         for url in urls:
-            collected.extend(crawl_discovered_links(url, output_dir=args.output_dir, max_pages=args.max_pages))
+            collected.extend(crawl_discovered_links(url, output_dir=args.output_dir, max_pages=args.max_pages, max_depth=args.max_depth))
         return
 
     crawl_urls(urls, output_dir=args.output_dir, max_pages=args.max_pages)

@@ -63,7 +63,7 @@ def chunk_markdown_file(input_path: Path, output_path: Path, chunk_size: int = 5
 
 
 def chunk_directory(input_dir: Path, output_dir: Path, chunk_size: int = 512, stride: int = 128) -> list[dict]:
-    """Chunk every markdown file in the directory into JSON chunk records."""
+    """Chunk every markdown file in the directory into JSON chunk records and a combined corpus file."""
     if not input_dir.exists():
         raise FileNotFoundError(f"Input directory does not exist: {input_dir}")
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -71,6 +71,9 @@ def chunk_directory(input_dir: Path, output_dir: Path, chunk_size: int = 512, st
     for file_path in tqdm(sorted(input_dir.glob("*.md")), desc="Chunking markdown files", unit="file"):
         file_payload = chunk_markdown_file(file_path, output_dir / f"{file_path.stem}_chunks.json", chunk_size=chunk_size, stride=stride)
         all_chunks.extend(file_payload)
+
+    combined_path = output_dir / "chunks.json"
+    combined_path.write_text(json.dumps(all_chunks, indent=2, ensure_ascii=False), encoding="utf-8")
     return all_chunks
 
 

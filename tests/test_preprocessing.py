@@ -1,5 +1,17 @@
 from src.preprocessing.clean import clean_markdown
-from src.preprocessing.chunk import chunk_text
+from src.preprocessing.chunk import chunk_directory, chunk_text
+
+
+def test_chunk_directory_creates_combined_chunks_json(tmp_path):
+    input_dir = tmp_path / "raw"
+    input_dir.mkdir()
+    (input_dir / "sample.md").write_text("ISRO launched Chandrayaan-3 from Sriharikota. " * 30, encoding="utf-8")
+
+    output_dir = tmp_path / "chunks"
+    all_chunks = chunk_directory(input_dir, output_dir, chunk_size=50, stride=10)
+
+    assert len(all_chunks) > 0
+    assert (output_dir / "chunks.json").exists()
 
 
 def test_clean_markdown_removes_noise_and_deduplicates():
