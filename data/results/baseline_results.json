@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "isro_001",
+    "question": "When was Chandrayaan-2 launched?",
+    "reference_answer": "Chandrayaan-2 was launched on July 22, 2019.",
+    "tier": 1,
+    "kgrag_answer": "Chandrayaan-2 was launched on July 16, 2019.",
+    "bm25_answer": "Chandrayaan-2 was launched in 2023.",
+    "vanilla_rag_answer": "The context does not provide information on when Chandrayaan-2 was launched.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_002",
+    "question": "What is the primary objective of Chandrayaan-3?",
+    "reference_answer": "Chandrayaan-3 aims to demonstrate safe and soft landing on the lunar surface and rover operations.",
+    "tier": 1,
+    "kgrag_answer": "The primary objective of Chandrayaan-3 is to deliver critical \"Ground Truth\" on the Moon's plasma environment.",
+    "bm25_answer": "The primary objective of Chandrayaan-3 appears to be to gather detailed information about the Moon's plasma environment near its surface, particularly at the Southern higher latitudes. The RAMBHA-LP instrument onboard the Vikram lander is designed to deliver critical \"ground truth\" on the Moon's plasma environment, which is governed by several major processes, including solar wind, photo-electric effect, and deposition of charged particles from the Earth's magnetosphere. The study aims to understand the complex structure of regolith with unique geo-technical and thermophysical properties, as well as the dynamic electrical environment near the surface. The results obtained from the analysis of the Chandrayaan",
+    "vanilla_rag_answer": "The primary objective of Chandrayaan-3 is to collect samples from the Moon's surface and study the early evolution of the Moon. The mission aims to investigate the probable source of the anomalous differences in the concentrations of volatile elements found at the landing site, particularly the enrichment of sulfur. The mission also aims to collect samples for future in-situ resource utilization (ISRU) activities.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_003",
+    "question": "When did Chandrayaan-3 land on the Moon?",
+    "reference_answer": "Chandrayaan-3 landed on the Moon on August 23, 2023.",
+    "tier": 1,
+    "kgrag_answer": "Chandrayaan-3 landed on the Moon on August 23, 2023.",
+    "bm25_answer": "Chandrayaan-3 landed on the Moon on August 23, 2023.",
+    "vanilla_rag_answer": "I don't know.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_004",
+    "question": "What is the name of the rover on Chandrayaan-3?",
+    "reference_answer": "The rover on Chandrayaan-3 is named Pragyan.",
+    "tier": 1,
+    "kgrag_answer": "The name of the rover on Chandrayaan-3 is not mentioned in the provided context.",
+    "bm25_answer": "The rover on Chandrayaan-3 is not mentioned in the provided context.",
+    "vanilla_rag_answer": "The rover on Chandrayaan-3 is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_005",
+    "question": "What is the name of the lander on Chandrayaan-3?",
+    "reference_answer": "The lander on Chandrayaan-3 is named Vikram.",
+    "tier": 1,
+    "kgrag_answer": "The name of the lander on Chandrayaan-3 is not explicitly mentioned in the provided context.",
+    "bm25_answer": "The name of the lander on Chandrayaan-3 is not explicitly mentioned in the provided context.",
+    "vanilla_rag_answer": "The name of the lander on Chandrayaan-3 is not explicitly mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_006",
+    "question": "When was Mangalyaan launched?",
+    "reference_answer": "Mangalyaan (Mars Orbiter Mission) was launched on November 5, 2013.",
+    "tier": 1,
+    "kgrag_answer": "The provided context does not mention the launch date of Mangalyaan.",
+    "bm25_answer": "The context does not mention the launch date of Mangalyaan.",
+    "vanilla_rag_answer": "The context does not mention the launch date of Mangalyaan.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_007",
+    "question": "What launch vehicle carried Mangalyaan?",
+    "reference_answer": "Mangalyaan was launched by PSLV-C25.",
+    "tier": 1,
+    "kgrag_answer": "The launch vehicle that carried Mangalyaan was not mentioned in the given context.",
+    "bm25_answer": "The launch vehicle that carried Mangalyaan is not mentioned in the context provided.",
+    "vanilla_rag_answer": "The launch vehicle that carried Mangalyaan is not mentioned in the given context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_008",
+    "question": "When was Aditya-L1 launched?",
+    "reference_answer": "Aditya-L1 was launched on September 2, 2023.",
+    "tier": 1,
+    "kgrag_answer": "Aditya-L1 was launched on September 2, 2023.",
+    "bm25_answer": "Aditya-L1 was launched on September 2, 2023.",
+    "vanilla_rag_answer": "Aditya-L1 was launched on September 2, 2023.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_009",
+    "question": "What is the primary objective of Aditya-L1?",
+    "reference_answer": "Aditya-L1 aims to study the Sun from the L1 Lagrange point, focusing on solar corona, solar wind, and space weather.",
+    "tier": 1,
+    "kgrag_answer": "The primary objective of Aditya-L1 is not explicitly mentioned in the provided context. However, it is mentioned that Aditya-L1 is a spacecraft that will be launched by the Indian Space Research Organisation (ISRO) to study the Sun's corona. The mission is expected to be launched in 2026.",
+    "bm25_answer": "The primary objective of Aditya-L1 is to study solar activity and provide an uninterrupted view of solar activity across multiple wavelengths. The observatory is equipped with various instruments, including the Solar Ultraviolet Imaging Telescope (SUIT), the Solar Low Energy X-ray Spectrometer (SoLEXS), and the High Energy L1 Orbiting X-ray Spectrometer (HEL1OS), which enable scientists to observe the Sun in eleven near-ultraviolet (NUV) filters, measure the X-ray emission produced by energetic processes in the solar corona, and study how activity in the lower solar atmosphere is linked to energy release in the corona",
+    "vanilla_rag_answer": "The primary objective of Aditya-L1 is to provide a stable and continuous platform for conducting scientific research in space. The satellite is designed to provide a long-term stable platform for conducting scientific research in space, with a focus on solar and space weather observations, as well as other scientific research activities. The satellite is expected to be launched in 2026 and will operate for at least 10 years.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_010",
+    "question": "What does PSLV stand for?",
+    "reference_answer": "PSLV stands for Polar Satellite Launch Vehicle.",
+    "tier": 1,
+    "kgrag_answer": "PSLV stands for Polar Satellite Launch Vehicle.",
+    "bm25_answer": "PSLV stands for Polar Satellite Launch Vehicle.",
+    "vanilla_rag_answer": "PSLV stands for Polar Satellite Launch Vehicle.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_011",
+    "question": "What does GSLV stand for?",
+    "reference_answer": "GSLV stands for Geosynchronous Satellite Launch Vehicle.",
+    "tier": 1,
+    "kgrag_answer": "GSLV stands for Geostationary Satellite Launch Vehicle.",
+    "bm25_answer": "GSLV stands for \"Galaxy Satellite Lunar Vehicle\".",
+    "vanilla_rag_answer": "GSLV stands for Geosynchronous Satellite Launch Vehicle.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_012",
+    "question": "Who is the current chairman of ISRO?",
+    "reference_answer": "The current chairman of ISRO is Dr. V. Narayanan.",
+    "tier": 1,
+    "kgrag_answer": "The current Chairman of ISRO is Dr. V. Narayanan.",
+    "bm25_answer": "The current Chairman of ISRO is Dr. V. Narayanan.",
+    "vanilla_rag_answer": "The current Chairman of ISRO is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_013",
+    "question": "When was ISRO established?",
+    "reference_answer": "ISRO was established on August 15, 1969.",
+    "tier": 1,
+    "kgrag_answer": "ISTRAC, one of the ground segment arms of Indian Space Research Organisation (ISRO), was established on September 06, 1976.",
+    "bm25_answer": "The context does not provide information on the establishment date of ISRO.",
+    "vanilla_rag_answer": "The context does not provide information about the establishment date of ISRO.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_014",
+    "question": "Where is ISRO headquarters located?",
+    "reference_answer": "ISRO headquarters is located in Bengaluru, Karnataka, India.",
+    "tier": 1,
+    "kgrag_answer": "The ISRO headquarters is located in Bengaluru.",
+    "bm25_answer": "ISRO headquarters is located in Bangalore, India.",
+    "vanilla_rag_answer": "The context does not provide information about the location of ISRO headquarters.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_015",
+    "question": "What was India's first satellite?",
+    "reference_answer": "India's first satellite was Aryabhata.",
+    "tier": 1,
+    "kgrag_answer": "I don't know.",
+    "bm25_answer": "India's first satellite was not mentioned in the provided context.",
+    "vanilla_rag_answer": "The provided text does not mention India's first satellite.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_016",
+    "question": "When was Aryabhata launched?",
+    "reference_answer": "Aryabhata was launched on April 19, 1975.",
+    "tier": 1,
+    "kgrag_answer": "The context does not provide information about the launch of Aryabhata.",
+    "bm25_answer": "The context does not mention the launch of Aryabhata.",
+    "vanilla_rag_answer": "The provided context does not mention the launch of Aryabhata.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_017",
+    "question": "What is the full form of INSAT?",
+    "reference_answer": "INSAT stands for Indian National Satellite System.",
+    "tier": 1,
+    "kgrag_answer": "The full form of INSAT is not mentioned in the given context.",
+    "bm25_answer": "The full form of INSAT is Indian National Satellite System.",
+    "vanilla_rag_answer": "The full form of INSAT is not mentioned in the given context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_018",
+    "question": "What is the orbit type of Chandrayaan-2?",
+    "reference_answer": "Chandrayaan-2 is in a lunar polar orbit.",
+    "tier": 1,
+    "kgrag_answer": "The context does not provide information about the orbit type of Chandrayaan-2.",
+    "bm25_answer": "The orbit type of Chandrayaan-2 is not mentioned in the provided context. The article discusses the discovery of a dense sub-Saturn exoplanet, TOI-6038A b, in a wide binary system.",
+    "vanilla_rag_answer": "The orbit type of Chandrayaan-2 is not explicitly stated in the provided context. However, it is known that Chandrayaan-2 is an Indian lunar spacecraft that was launched by the Indian Space Research Organization (ISRO) on July 16, 2019. The spacecraft entered into lunar orbit on August 21, 2019, and performed a soft landing on the moon's surface on September 6, 2019. The spacecraft was designed to perform various scientific experiments and collect data from the lunar surface.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_019",
+    "question": "What is the name of ISRO's human spaceflight mission?",
+    "reference_answer": "ISRO's human spaceflight mission is called Gaganyaan.",
+    "tier": 1,
+    "kgrag_answer": "The name of ISRO's human spaceflight mission is not mentioned in the provided context.",
+    "bm25_answer": "The name of ISRO's human spaceflight mission is not explicitly mentioned in the provided context. However, it is mentioned that India is preparing for its maiden human spaceflight under the Gaganyaan programme.",
+    "vanilla_rag_answer": "The name of ISRO's human spaceflight mission is not explicitly mentioned in the provided context. However, it is mentioned that the foundation stone has been laid for the launch pad at the SSLV Launch Complex (SLC), Kulasekarapattinam, which is likely related to the Gaganyaan mission, which is India's human spaceflight mission.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_020",
+    "question": "When was PSLV-C37 launched?",
+    "reference_answer": "PSLV-C37 was launched on February 15, 2017.",
+    "tier": 1,
+    "kgrag_answer": "The context does not mention the launch date of PSLV-C37.",
+    "bm25_answer": "PSLV-C37 was successfully launched on February 15, 2017.",
+    "vanilla_rag_answer": "The provided context does not mention the launch date of PSLV-C37.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_021",
+    "question": "How many satellites did PSLV-C37 carry?",
+    "reference_answer": "PSLV-C37 carried 104 satellites, setting a world record.",
+    "tier": 1,
+    "kgrag_answer": "The information provided does not mention the number of satellites that PSLV-C37 carried.",
+    "bm25_answer": "The text does not mention the number of satellites carried by PSLV-C37.",
+    "vanilla_rag_answer": "The information provided does not mention the number of satellites carried by PSLV-C37.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_022",
+    "question": "What is the full form of SSLV?",
+    "reference_answer": "SSLV stands for Small Satellite Launch Vehicle.",
+    "tier": 1,
+    "kgrag_answer": "The full form of SSLV is Small Satellite Launch Vehicle.",
+    "bm25_answer": "The full form of SSLV is not provided in the given context. However, based on the information provided, it can be inferred that SSLV could refer to the Solar System Large Velocity Variability, which is a phenomenon observed in the Sun's magnetic field and its associated solar activity.",
+    "vanilla_rag_answer": "The full form of SSLV is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_023",
+    "question": "What is the payload capacity of GSLV Mk III to GTO?",
+    "reference_answer": "GSLV Mk III can carry up to 4 tonnes to Geostationary Transfer Orbit.",
+    "tier": 1,
+    "kgrag_answer": "The payload capacity of GSLV Mk III to Geosynchronous Transfer Orbit (GTO) is 4,200 kg.",
+    "bm25_answer": "The payload capacity of GSLV Mk III to GTO is not mentioned in the context provided.",
+    "vanilla_rag_answer": "The payload capacity of GSLV Mk III to GTO is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_024",
+    "question": "Where is the Satish Dhawan Space Centre located?",
+    "reference_answer": "The Satish Dhawan Space Centre is located in Sriharikota, Andhra Pradesh, India.",
+    "tier": 1,
+    "kgrag_answer": "The Satish Dhawan Space Centre is located in Sriharsha, Andhra Pradesh, India.",
+    "bm25_answer": "The Satish Dhawan Space Centre is located in Sriharsha, Andhra Pradesh, India.",
+    "vanilla_rag_answer": "The Satish Dhawan Space Centre is located in Sriharsha, Andhra Pradesh, India.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_025",
+    "question": "What is the full form of VSSC?",
+    "reference_answer": "VSSC stands for Vikram Sarabhai Space Centre.",
+    "tier": 1,
+    "kgrag_answer": "The full form of VSSC is Vikram Sarabhai Space Centre.",
+    "bm25_answer": "The full form of VSSC is not provided in the given context. However, it is likely that VSSC stands for the Vikram Sarabhai Space Centre, which is a space research institute in India.",
+    "vanilla_rag_answer": "The full form of VSSC is not mentioned in the given context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_026",
+    "question": "Where is VSSC located?",
+    "reference_answer": "VSSC is located in Thiruvananthapuram, Kerala, India.",
+    "tier": 1,
+    "kgrag_answer": "The Vikram Sarabhai Space Centre (VSSC) is located in Thiruvananthapuram, Kerala, India.",
+    "bm25_answer": "The Vikram Sarabhai Space Centre (VSSC) is located in Thiruvananthapuram, Kerala.",
+    "vanilla_rag_answer": "The context does not provide information about the location of VSSC.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_027",
+    "question": "What is NavIC?",
+    "reference_answer": "NavIC is India's regional navigation satellite system, providing accurate position information over India and surrounding regions.",
+    "tier": 1,
+    "kgrag_answer": "I don't know.",
+    "bm25_answer": "NavIC stands for Navigation with Indian Constellations. It is a satellite-based navigation system developed by India for its exclusive use. It is designed to provide real-time positioning, navigation, and timing services to users in the Indian subcontinent and its surrounding regions. NavIC uses a constellation of 31 satellites to provide accurate positioning, navigation, and timing services to users. It is expected to provide better accuracy and reliability compared to existing satellite-based navigation systems like GPS.",
+    "vanilla_rag_answer": "NavIC stands for Navigation with Indian Constellations. It is a satellite-based navigation system developed by India to provide real-time location information to users in the Indian subcontinent and beyond. The system is based on the use of multiple satellites in low Earth orbit, which transmit signals to ground-based receivers to determine the user's location. NavIC is designed to provide high accuracy, reliability, and availability, and is intended to be used for a wide range of applications, including aviation, maritime, transportation, and agriculture.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_028",
+    "question": "How many satellites are in the NavIC constellation?",
+    "reference_answer": "NavIC consists of 8 satellites.",
+    "tier": 1,
+    "kgrag_answer": "The context does not provide information on the number of satellites in the NavIC constellation.",
+    "bm25_answer": "The context does not provide information about the number of satellites in the NavIC constellation.",
+    "vanilla_rag_answer": "The context does not provide information on the number of satellites in the NavIC constellation.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_029",
+    "question": "What is the full form of SAC in ISRO context?",
+    "reference_answer": "SAC stands for Space Applications Centre.",
+    "tier": 1,
+    "kgrag_answer": "The full form of SAC in the ISRO context is Space Applications Centre.",
+    "bm25_answer": "The full form of SAC in the ISRO context is Space Applications Centre.",
+    "vanilla_rag_answer": "The full form of SAC in the context of ISRO is not explicitly mentioned in the provided information. However, it is possible that SAC could refer to the Satellite Application Center, which is a unit of ISRO responsible for providing technical support and training for the use of ISRO's satellite-based products and services.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_030",
+    "question": "Where is SAC located?",
+    "reference_answer": "SAC is located in Ahmedabad, Gujarat, India.",
+    "tier": 1,
+    "kgrag_answer": "The context does not provide any information about the location of SAC.",
+    "bm25_answer": "The location of SAC (SHAR Space Applications Centre) is not explicitly mentioned in the provided context.",
+    "vanilla_rag_answer": "The context does not provide information about the location of SAC.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_031",
+    "question": "What is the full form of NRSC?",
+    "reference_answer": "NRSC stands for National Remote Sensing Centre.",
+    "tier": 1,
+    "kgrag_answer": "The full form of NRSC is not explicitly mentioned in the given context. However, it is likely that NRSC stands for National Remote Sensing Center, which is a unit of the Indian Space Research Organization (ISRO).",
+    "bm25_answer": "The full form of NRSC is not provided in the given context. It is possible that NRSC stands for the National Research Society of Chemistry, which is a professional society for chemists in India. However, without more context, it is difficult to determine the full form of NRSC.",
+    "vanilla_rag_answer": "The full form of NRSC is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_032",
+    "question": "Where is NRSC located?",
+    "reference_answer": "NRSC is located in Hyderabad, Telangana, India.",
+    "tier": 1,
+    "kgrag_answer": "The National Remote Sensing Centre (NRSC) is located in Hyderabad, India.",
+    "bm25_answer": "The National Remote Sensing Centre (NRSC) is located in Thiruvananthapuram, Kerala.",
+    "vanilla_rag_answer": "The National Remote Sensing Centre (NRSC) is located in JD Metla Campus, Hyderabad.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_033",
+    "question": "What is Chandrayaan-1 best known for discovering?",
+    "reference_answer": "Chandrayaan-1 is best known for confirming the presence of water molecules on the Moon.",
+    "tier": 1,
+    "kgrag_answer": "Chandrayaan-1 is best known for discovering the presence of Sulfur on the Moon.",
+    "bm25_answer": "Chandrayaan-1 is best known for discovering the super-heated cloud of energetic plasma surrounding black holes, known as corona, and its connection to rapid QPOs.",
+    "vanilla_rag_answer": "Chandrayaan-1 is best known for discovering the Moon's surface and mapping it in high resolution. It was launched by the Indian Space Research Organization (ISRO) on October 22, 2008, and orbited the Moon for 100 days before it crashed on November 21, 2008. The mission was a significant achievement for India, as it was the first Indian spacecraft to orbit another celestial body.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_034",
+    "question": "When was Chandrayaan-1 launched?",
+    "reference_answer": "Chandrayaan-1 was launched on October 22, 2008.",
+    "tier": 1,
+    "kgrag_answer": "The text does not mention the launch date of Chandrayaan-1.",
+    "bm25_answer": "Chandrayaan-1 was launched on 22 April 2011.",
+    "vanilla_rag_answer": "The context does not provide information about the launch date of Chandrayaan-1.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_035",
+    "question": "What launch vehicle carried Chandrayaan-1?",
+    "reference_answer": "Chandrayaan-1 was launched by PSLV-C11.",
+    "tier": 1,
+    "kgrag_answer": "The launch vehicle that carried Chandrayaan-1 is not mentioned in the provided context.",
+    "bm25_answer": "The launch vehicle that carried Chandrayaan-1 is not mentioned in the provided context.",
+    "vanilla_rag_answer": "The launch vehicle that carried Chandrayaan-1 was not mentioned in the context provided.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_036",
+    "question": "What is the full form of LPSC?",
+    "reference_answer": "LPSC stands for Liquid Propulsion Systems Centre.",
+    "tier": 1,
+    "kgrag_answer": "The full form of LPSC is not mentioned in the given context.",
+    "bm25_answer": "The full form of LPSC is not provided in the given context. However, it is mentioned that Aditya-L1 spacecraft is located at the Lagrange point of the Sun-Earth system. Lagrange points are points in space where the gravitational pull of two large objects is balanced by the centrifugal force of an object orbiting around them. There are five Lagrange points in the Sun-Earth system, labeled L1 to L5, and each has a unique location and properties.",
+    "vanilla_rag_answer": "The full form of LPSC is not mentioned in the given context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_037",
+    "question": "What is RISAT?",
+    "reference_answer": "RISAT stands for Radar Imaging Satellite, used for remote sensing using synthetic aperture radar.",
+    "tier": 1,
+    "kgrag_answer": "I don't know.",
+    "bm25_answer": "RISAT stands for Radar Imaging Satellite. It is a type of satellite launched by the Indian Space Research Organization (ISRO) for remote sensing and surveillance purposes. The specific RISAT mentioned in the context is RISAT-2BR1, which was launched in December 2019 along with nine commercial satellites.",
+    "vanilla_rag_answer": "I don't know.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_038",
+    "question": "What is the full form of ISTRAC?",
+    "reference_answer": "ISTRAC stands for ISRO Telemetry, Tracking and Command Network.",
+    "tier": 1,
+    "kgrag_answer": "The full form of ISTRAC is not explicitly mentioned in the given context. However, it is mentioned that the students visited ISTRAC (Indian Telemetry, Tracking and Command Network) during their visit to ISRO Centres in Bengaluru.",
+    "bm25_answer": "ISTRAC stands for Interstellar Telescope for Stellar and Planetary Research and Astrophysics.",
+    "vanilla_rag_answer": "ISTRAC stands for Indian Space Technology and Research Centre.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_039",
+    "question": "Who founded ISRO?",
+    "reference_answer": "ISRO was founded by Dr. Vikram Sarabhai.",
+    "tier": 1,
+    "kgrag_answer": "I don't know.",
+    "bm25_answer": "The article does not mention who founded ISRO.",
+    "vanilla_rag_answer": "The Indian Space Research Organisation (ISRO) was founded in 1962.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_040",
+    "question": "What is the full form of URSC?",
+    "reference_answer": "URSC stands for U R Rao Satellite Centre.",
+    "tier": 1,
+    "kgrag_answer": "URSC stands for UR Rao Satellite Centre.",
+    "bm25_answer": "URSC stands for U. R. Rao Satellite Centre.",
+    "vanilla_rag_answer": "URSC stands for University Research Scholarship Council.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_041",
+    "question": "Where is URSC located?",
+    "reference_answer": "URSC is located in Bengaluru, Karnataka, India.",
+    "tier": 1,
+    "kgrag_answer": "URSC is not mentioned in the context provided.",
+    "bm25_answer": "URSC is located in Bangalore, India.",
+    "vanilla_rag_answer": "URSC is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_042",
+    "question": "What is the primary mission of Aditya-L1?",
+    "reference_answer": "Aditya-L1 studies the solar corona, solar wind, and space weather phenomena from the L1 Lagrange point.",
+    "tier": 1,
+    "kgrag_answer": "The primary mission of Aditya-L1 is not explicitly stated in the provided context. However, it is mentioned that Aditya-L1 is a satellite mission launched by ISRO on December 24, 2025, and that it is part of the LVM3-M6/BlueBird Block-2 Mission. Additionally, it is mentioned that Aditya-L1 is an autonomous body under the Indian Space Research Organisation (ISRO) and that it is one of the centres and units of ISRO.",
+    "bm25_answer": "The primary mission of Aditya-L1 is to study the Sun and its influence on space weather. The mission is set to revolutionize our understanding of the Sun and its deepest secrets, with India leading the way in uncovering these secrets. The initial findings from Aditya-L1 instruments are just the beginning of what could be a new era in solar physics.",
+    "vanilla_rag_answer": "The primary mission of Aditya-L1 is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_043",
+    "question": "What launch vehicle was used for Chandrayaan-3?",
+    "reference_answer": "Chandrayaan-3 was launched by LVM3-M4.",
+    "tier": 1,
+    "kgrag_answer": "The launch vehicle used for Chandrayaan-2 was not mentioned in the provided context.",
+    "bm25_answer": "The launch vehicle used for Chandrayaan-3 was not mentioned in the provided context.",
+    "vanilla_rag_answer": "The launch vehicle used for Chandrayaan-3 is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_044",
+    "question": "What is the landing site of Chandrayaan-3?",
+    "reference_answer": "Chandrayaan-3 landed near the lunar south pole.",
+    "tier": 1,
+    "kgrag_answer": "The context above does not mention the landing site of Chandrayaan-3.",
+    "bm25_answer": "The landing site of Chandrayaan-3 is not explicitly mentioned in the provided context. However, it is mentioned that the APXS measurements were taken at the Chandrayaan-3 landing site.",
+    "vanilla_rag_answer": "The landing site of Chandrayaan-3 is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_045",
+    "question": "What is GSAT?",
+    "reference_answer": "GSAT is India's series of communication satellites operated by ISRO for telecommunication and broadcasting.",
+    "tier": 1,
+    "kgrag_answer": "GSAT is not mentioned in the provided context.",
+    "bm25_answer": "GSAT stands for Geo-Synchronous Satellite.",
+    "vanilla_rag_answer": "GSAT stands for Geo-Synchronous Satellite. It is a type of satellite that is designed to orbit the Earth at the same speed as the Earth's rotation, which allows it to remain in a fixed position over a specific geographic location. The Cartosat-2 Series Satellite, which is scheduled to be launched on February 15, 2017, is an example of a GSAT.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_046",
+    "question": "What is the full form of LVM3?",
+    "reference_answer": "LVM3 stands for Launch Vehicle Mark 3, formerly known as GSLV Mk III.",
+    "tier": 1,
+    "kgrag_answer": "The full form of LVM3 is not explicitly mentioned in the given context. However, it can be inferred that LVM3 stands for Launch Vehicle Mark 3, which is a space launch vehicle developed and operated by the Indian Space Research Organization (ISRO).",
+    "bm25_answer": "I don't know.",
+    "vanilla_rag_answer": "The full form of LVM3 is not provided in the context above.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_047",
+    "question": "What propellant does PSLV use in its first stage?",
+    "reference_answer": "PSLV uses solid propellant (HTPB) in its first stage.",
+    "tier": 1,
+    "kgrag_answer": "The context does not provide information about the propellant used in the first stage of PSLV.",
+    "bm25_answer": "The context does not mention the propellant used in the first stage of PSLV.",
+    "vanilla_rag_answer": "The propellant used in the first stage of PSLV-C35 is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_048",
+    "question": "What is the full form of HTPB?",
+    "reference_answer": "HTPB stands for Hydroxyl-Terminated Polybutadiene.",
+    "tier": 1,
+    "kgrag_answer": "The full form of HTPB is not explicitly mentioned in the given context. However, based on the information provided, it can be inferred that HTPB is an abbreviation for a type of document or file format. The context mentions several other abbreviations such as PDF, DOCX, and OBJ, which are commonly used file formats. It is possible that HTPB is a less commonly used file format.",
+    "bm25_answer": "The full form of HTPB is not provided in the given context. However, it is possible that HTPB stands for \"Hybrid Thermal Plasma\" or \"Hybrid Thermal Plasma Beam\". These terms are related to the study of plasma physics and the behavior of charged particles in plasma. In the context of space exploration and solar studies, HTPB may refer to a type of plasma beam used for spacecraft propulsion or for studying the behavior of charged particles in the solar wind.",
+    "vanilla_rag_answer": "The full form of HTPB is not mentioned in the given context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_049",
+    "question": "When was the first successful GSLV flight?",
+    "reference_answer": "The first successful GSLV flight was GSLV-D2 on May 8, 2003.",
+    "tier": 1,
+    "kgrag_answer": "The context does not provide information about the first successful GSLV flight.",
+    "bm25_answer": "The first successful GSLV flight was on December 19, 2018, when GSLV-F11 successfully launched GSAT-7A.",
+    "vanilla_rag_answer": "The first successful GSLV flight was on December 7, 2016, with the launch of PSLV-C36/RESOURCESAT-2A mission.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_050",
+    "question": "What is the Chandrayaan-2 orbiter's mission life?",
+    "reference_answer": "The Chandrayaan-2 orbiter has a mission life of 7 years.",
+    "tier": 1,
+    "kgrag_answer": "The Chandrayaan-2 orbiter's mission life is almost seven years instead of the planned one year.",
+    "bm25_answer": "The Chandrayaan-2 orbiter's mission life is not explicitly stated in the provided context. However, it is mentioned that the initial imaging and observations by Chandrayaan-2 Dual-Frequency Synthetic Aperture Radar (DF-SAR) have been completed, and the orbiter is currently conducting spectroscopic studies of the lunar surface. It is also mentioned that the fourth year data of the Mars Orbiter Mission (MOM) has been released, indicating that the MOM has been operational for at least four years.",
+    "vanilla_rag_answer": "The Chandrayaan-2 orbiter's mission life is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_051",
+    "question": "What is the name of India's first remote sensing satellite?",
+    "reference_answer": "India's first remote sensing satellite was IRS-1A.",
+    "tier": 1,
+    "kgrag_answer": "The name of India's first remote sensing satellite is not mentioned in the provided context.",
+    "bm25_answer": "The name of India's first remote sensing satellite is not mentioned in the provided context.",
+    "vanilla_rag_answer": "The name of India's first remote sensing satellite is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_052",
+    "question": "When was IRS-1A launched?",
+    "reference_answer": "IRS-1A was launched on March 17, 1988.",
+    "tier": 1,
+    "kgrag_answer": "The context does not provide information about the launch date of IRS-1A.",
+    "bm25_answer": "The context provided does not mention the launch of IRS-1A.",
+    "vanilla_rag_answer": "The context does not provide any information about the launch date of IRS-1A.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_053",
+    "question": "What is the Gaganyaan mission?",
+    "reference_answer": "Gaganyaan is ISRO's crewed orbital spacecraft mission to send Indian astronauts to space.",
+    "tier": 1,
+    "kgrag_answer": "The Gaganyaan mission is a space mission by the Indian Space Research Organization (ISRO) to send an Indian astronaut to the International Space Station (ISS) aboard a SpaceX Crew Dragon spacecraft. The mission, named Ax-04, is the fourth mission of the Axiom series, which aims to provide a platform for conducting microgravity research experiments and testing new technologies in space. The mission is expected to last for about 12 million kilometers and 282 orbits around the Earth. The Indian astronaut, Shubhanshu Shukla, is the first Indian to be sent to the ISS as part of this mission.",
+    "bm25_answer": "The Gaganyaan mission is a human spaceflight mission by the Indian Space Research Organization (ISRO) to send an astronaut into space. The mission is named after the ancient Indian sage Gaganyaan, who is believed to have traveled to the moon. The mission is expected to take place in the near future and will involve the deployment of a crew module with a parachute system to ensure a safe landing. The parachute system is being tested in a series of Integrated Main Parachute Airdrop Tests (IMAT) to ensure its reliability and robustness for human spaceflight.",
+    "vanilla_rag_answer": "The Gaganyaan mission is a human spaceflight mission of India. Dr. V. Narayanan was the Chairman of the National Level Human Rated Certification Board (HRCB) of the Gaganyaan programme.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_054",
+    "question": "What is the planned orbit for Gaganyaan?",
+    "reference_answer": "Gaganyaan is planned to orbit at an altitude of 400 km.",
+    "tier": 1,
+    "kgrag_answer": "The planned orbit for Gaganyaan is not explicitly mentioned in the provided context. However, it is mentioned that Gaganyaan is currently aboard the International Space Station (ISS) and that the mission is a saga of approximately 12 million kilometers and 282 orbits aboard the ISS.",
+    "bm25_answer": "The planned orbit for Gaganyaan is not mentioned in the provided context.",
+    "vanilla_rag_answer": "The context does not provide information about the planned orbit for Gaganyaan.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_055",
+    "question": "What is the name of ISRO's space science centre?",
+    "reference_answer": "ISRO's space science centre is the Space Physics Laboratory (SPL), part of VSSC.",
+    "tier": 1,
+    "kgrag_answer": "The name of ISRO's space science center is not explicitly mentioned in the provided context.",
+    "bm25_answer": "The name of ISRO's space science center is not explicitly mentioned in the provided context. However, it does mention several ISRO centers and units, including the Indian Institute of Space Science and Technology (IIST), the Indian Institute of Remote Sensing (IIRS), the ISRO Inertial Systems Unit (IISU), the ISRO Propulsion Complex (IPRC), the ISRO Telemetry, Tracking and Command Network (ISTRAC), the Laboratory for Electro-Optics Systems (LEOS), the Liquid Propulsion Systems Centre(LPSC), the Master Control Facility (MCF), the National Remote Sensing Centre (NRSC), the Satish Dhawan Space Centre (",
+    "vanilla_rag_answer": "The name of ISRO's space science center is not explicitly mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_056",
+    "question": "What is EDUSAT?",
+    "reference_answer": "EDUSAT is India's first satellite dedicated to educational services.",
+    "tier": 1,
+    "kgrag_answer": "EDUSAT is not mentioned in the provided context.",
+    "bm25_answer": "I don't know.",
+    "vanilla_rag_answer": "EDUSAT is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_057",
+    "question": "When was EDUSAT launched?",
+    "reference_answer": "EDUSAT was launched on September 20, 2004.",
+    "tier": 1,
+    "kgrag_answer": "I don't know.",
+    "bm25_answer": "The context does not mention the launch date of EDUSAT.",
+    "vanilla_rag_answer": "The context does not provide information about the launch date of EDUSAT.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_058",
+    "question": "What is the full form of IRNSS?",
+    "reference_answer": "IRNSS stands for Indian Regional Navigation Satellite System, now known as NavIC.",
+    "tier": 1,
+    "kgrag_answer": "The full form of IRNSS is not explicitly mentioned in the provided context. However, it is likely that IRNSS stands for Indian Regional Navigation Satellite System.",
+    "bm25_answer": "IRNSS stands for Indian Regional Navigation Satellite System.",
+    "vanilla_rag_answer": "The full form of IRNSS is not explicitly mentioned in the provided context. However, it is likely that IRNSS stands for Indian Regional Navigation Satellite System.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_059",
+    "question": "What is Rohini satellite?",
+    "reference_answer": "Rohini was India's first indigenously built and launched satellite, launched by SLV-3 in 1980.",
+    "tier": 1,
+    "kgrag_answer": "The context does not mention any satellite named \"Rohini\". It discusses the Indian heliophysics community's vision for solar and space weather observations from space, as well as the launch of India's first solar space mission Aditya-L1.",
+    "bm25_answer": "I don't know.",
+    "vanilla_rag_answer": "The provided text does not mention any satellite named \"Rohini\".",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_060",
+    "question": "What is the full form of SLV?",
+    "reference_answer": "SLV stands for Satellite Launch Vehicle.",
+    "tier": 1,
+    "kgrag_answer": "The full form of SLV is not explicitly mentioned in the given context. However, based on the information provided, it can be inferred that SLV stands for Satellite Launch Vehicle.",
+    "bm25_answer": "I don't know.",
+    "vanilla_rag_answer": "The full form of SLV is not mentioned in the context provided. However, it is likely that SLV stands for Satellite Launch Vehicle, which is a spacecraft designed to launch satellites into orbit.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_061",
+    "question": "Who was the project director of Chandrayaan-1?",
+    "reference_answer": "The project director of Chandrayaan-1 was M. Annadurai.",
+    "tier": 1,
+    "kgrag_answer": "The context does not provide information about the project director of Chandrayaan-1.",
+    "bm25_answer": "The provided context does not mention the project director of Chandrayaan-1.",
+    "vanilla_rag_answer": "The context does not provide information about the project director of Chandrayaan-1.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_062",
+    "question": "What is the mass of Chandrayaan-3 at launch?",
+    "reference_answer": "Chandrayaan-3 had a launch mass of approximately 3,900 kg.",
+    "tier": 1,
+    "kgrag_answer": "I don't know.",
+    "bm25_answer": "The context does not provide information about the mass of Chandrayaan-3 at launch.",
+    "vanilla_rag_answer": "The mass of Chandrayaan-3 at launch is not explicitly stated in the provided context. However, it can be found in other sources that the mass of Chandrayaan-3 is approximately 3,170 kg.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_063",
+    "question": "What instruments does the Pragyan rover carry?",
+    "reference_answer": "Pragyan rover carries LIBS (Laser Induced Breakdown Spectroscope) and APXS (Alpha Particle X-ray Spectrometer).",
+    "tier": 1,
+    "kgrag_answer": "The Pragyan rover carries the Alpha Particle X-ray Spectrometer (APXS) instrument.",
+    "bm25_answer": "The Pragyan rover carries the APXS instrument for in-situ analysis of the elemental composition of soil and rocks on the surface of planetary bodies. It also carries the LIBS instrument for spectroscopic analysis of the composition of rocks and soil.",
+    "vanilla_rag_answer": "The Pragyan rover, which is part of the Chandrayaan-2 mission, carries several instruments to study the moon's surface and its composition. These instruments include:\n\n1. High-Resolution Camera (HRC): This camera captures high-resolution images of the lunar surface and helps in creating detailed maps of the moon.\n2. Infrared Reflectometer (IRR): This instrument measures the reflectance of infrared radiation from the lunar surface, which helps in understanding the composition of the surface.\n3. Laser Altimeter (LA): This instrument measures the height of the lunar surface by sending laser pulses and measuring the time it takes for them",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_064",
+    "question": "What is the full form of LIBS?",
+    "reference_answer": "LIBS stands for Laser Induced Breakdown Spectroscope.",
+    "tier": 1,
+    "kgrag_answer": "The full form of LIBS is not explicitly mentioned in the provided context. However, based on the information provided, it can be inferred that LIBS stands for \"Laser Interferometer Gravitational-wave Observatory\".",
+    "bm25_answer": "LIBS stands for \"Light-emitting Bragg Spectroscopy\". It is a technique used in astronomy to study the composition of celestial objects by analyzing the light they emit. The technique involves using a laser to excite the atoms in the object and then measuring the light emitted by the excited atoms as they return to their ground state. This allows scientists to determine the chemical composition of the object based on the wavelengths of the emitted light.",
+    "vanilla_rag_answer": "The full form of LIBS is not mentioned in the given context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_065",
+    "question": "What is the full form of APXS?",
+    "reference_answer": "APXS stands for Alpha Particle X-ray Spectrometer.",
+    "tier": 1,
+    "kgrag_answer": "APXS is not mentioned in the provided context.",
+    "bm25_answer": "APXS stands for Aditya-L1 Payload X-ray Spectrometer.",
+    "vanilla_rag_answer": "APXS is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_066",
+    "question": "What is the mission life of Chandrayaan-3 lander and rover?",
+    "reference_answer": "The Chandrayaan-3 lander and rover have a mission life of one lunar day, approximately 14 Earth days.",
+    "tier": 1,
+    "kgrag_answer": "The mission life of Chandrayaan-3 lander and rover is not explicitly stated in the provided information. However, it is mentioned that the rover will operate for a period of 100 lunar days, and the lander will continue to operate for a period of 100 lunar days after the rover has completed its mission.",
+    "bm25_answer": "The mission life of Chandrayaan-3 lander and rover is not mentioned in the provided context.",
+    "vanilla_rag_answer": "The mission life of Chandrayaan-3 lander and rover is not explicitly mentioned in the provided context. However, it is mentioned that the mission is expected to last for 2 years.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_067",
+    "question": "What orbit does Aditya-L1 occupy?",
+    "reference_answer": "Aditya-L1 is placed in a halo orbit around the Sun-Earth Lagrange Point 1 (L1).",
+    "tier": 1,
+    "kgrag_answer": "Aditya-L1 occupies a halo orbit around the Lagrange point 1 (L1) of the Sun-Earth system, which is about 1.5 million km from the Earth.",
+    "bm25_answer": "Aditya-L1 is a satellite that orbits the Sun at a distance of approximately 1.5 million kilometers (930,000 miles) from the Sun. This distance is known as the Lagrangian point L1, which is one of the five Lagrangian points in the Sun-Earth system. Lagrangian points are locations in space where the gravitational pull of two objects is balanced by the centrifugal force of their orbit, making them ideal locations for spacecraft to park and observe the Sun and Earth. Aditya-L1 is used to study solar activity and space weather, and it is the first spacecraft to be designed specifically for this purpose",
+    "vanilla_rag_answer": "Aditya-L1 is a geostationary transfer orbit (GTTO) that is used to transfer satellites from their geostationary orbit (GEO) to their final destination in low Earth orbit (LEO) or medium Earth orbit (MEO). The orbit is located at an altitude of approximately 36,000 kilometers above the Earth's equator and has a period of approximately 90 minutes. The orbit is used to provide a stable and controlled environment for the satellite to be maneuvered to its final destination.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_068",
+    "question": "How many payloads does Aditya-L1 carry?",
+    "reference_answer": "Aditya-L1 carries 7 payloads.",
+    "tier": 1,
+    "kgrag_answer": "Aditya-L1 carries seven payloads.",
+    "bm25_answer": "Aditya-L1 carries 7 payloads.",
+    "vanilla_rag_answer": "Aditya-L1 carries seven payloads.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_069",
+    "question": "What is VELC on Aditya-L1?",
+    "reference_answer": "VELC stands for Visible Emission Line Coronagraph, the primary payload of Aditya-L1 for studying the solar corona.",
+    "tier": 1,
+    "kgrag_answer": "It is not specified in the provided context what VELC stands for or what it is related to in the context of Aditya-L1.",
+    "bm25_answer": "provided, VELC stands for Visible Emission Line Coronagraph(VELC) and it is a payload on Aditya-L1 that is used for imaging and spectroscopy of the corona. It is used to study the corona and its properties, such as temperature and density. The payload is capable of observing the corona in visible and ultraviolet wavelengths, and it is used to study the coronal mass ejections (CMEs) and other solar phenomena.",
+    "vanilla_rag_answer": "There is no mention of VELC in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_070",
+    "question": "What is the distance of L1 from Earth?",
+    "reference_answer": "The L1 Lagrange point is approximately 1.5 million km from Earth.",
+    "tier": 1,
+    "kgrag_answer": "The distance of L1 from Earth is not explicitly mentioned in the provided context. However, it is known that L1 is the first Lagrange point in the Sun-Earth system, which is located about 1.5 million kilometers away from Earth.",
+    "bm25_answer": "The distance of L1 from Earth is not explicitly mentioned in the provided context. However, L1 is one of the Lagrange points in the Sun-Earth system, which is located at a distance of about 1.5 million kilometers (930,000 miles) from Earth.",
+    "vanilla_rag_answer": "The distance of L1 from Earth is not explicitly mentioned in the provided context. However, it is known that L1 is located at a distance of about 1.5 million kilometers (930,000 miles) from Earth.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_071",
+    "question": "What is the PSLV-C57 mission?",
+    "reference_answer": "PSLV-C57 was the launch mission that carried Aditya-L1 into orbit.",
+    "tier": 1,
+    "kgrag_answer": "The PSLV-C57 mission is a space mission by the Indian Space Research Organization (ISRO) to study the Sun. The spacecraft, named Aditya-L1, will be placed in a halo orbit around the Lagrange point 1 (L1) of the Sun-Earth system, which is about 1.5 million km from the Earth. The spacecraft will carry seven payloads to observe the photosphere, chromosphere, and the outermost layers of the Sun (the corona) using electromagnetic and particle and magnetic field detectors. The mission's major science objectives include studying solar upper atmospheric dynamics, chromospheric and coronal heating, physics of",
+    "bm25_answer": "The PSLV-C57 mission is the Aditya-L1 mission, which is the first space-based Indian mission to study the Sun. The spacecraft will be placed in a halo orbit around the Lagrange point 1 (L1) of the Sun-Earth system, which is about 1.5 million km from the Earth. The spacecraft will carry seven payloads to observe the photosphere, chromosphere, and the outermost layers of the Sun (the corona) using electromagnetic and particle and magnetic field detectors. The mission's major science objectives include studying solar upper atmospheric dynamics, chromospheric and coronal heating, physics of the partially ionized",
+    "vanilla_rag_answer": "The PSLV-C57 mission is not explicitly mentioned in the provided context. However, it is possible that the context is referring to the PSLV-C57 mission, which was a space launch of the Indian satellite GSAT-18 on April 11, 2018. The mission was successful and the satellite was placed into geostationary transfer orbit.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_072",
+    "question": "What is the full form of ISRO?",
+    "reference_answer": "ISRO stands for Indian Space Research Organisation.",
+    "tier": 1,
+    "kgrag_answer": "The full form of ISRO is not explicitly mentioned in the provided context. However, it is known that ISRO stands for Indian Space Research Organization.",
+    "bm25_answer": "The full form of ISRO is the Indian Space Research Organization.",
+    "vanilla_rag_answer": "The full form of ISRO is not explicitly mentioned in the provided context. However, it is known that ISRO stands for Indian Space Research Organization.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_073",
+    "question": "What is the Astrosat mission?",
+    "reference_answer": "AstroSat is India's first dedicated multi-wavelength space observatory for astronomical observations.",
+    "tier": 1,
+    "kgrag_answer": "The Astrosat mission is a space-based satellite designed for astronomy and astrophysics research. It was launched on June 22, 2017, and is equipped with several unique capabilities, including the highest angular resolution in UV over a large field of view, the largest collecting area in medium energy X-rays, and X-ray polarisation measurement capability in hard X-rays for bright sources. The mission has produced several interesting results, including studies of star clusters, star formation in galaxies, and galaxy clusters. Astrosat data are archived and made available to the scientific community, and the recent launch of XPoSat with the X-ray polarimeter, Polix, has opened",
+    "bm25_answer": "The AstroSat mission is a space-based observatory that was launched by the Indian Space Research Organization (ISRO) on April 26, 2015. Its primary objective is to conduct scientific research in various fields such as astrophysics, astrobiology, and space technology. The spacecraft is equipped with several scientific instruments that are used to study the universe and its phenomena. The AstroSat mission is currently in its second year of operations and has contributed to various scientific discoveries and advancements in the field of space science.",
+    "vanilla_rag_answer": "The Astrosat mission is not mentioned in the provided context. The context discusses various events related to the launch and orbit raising operations of the GSAT-17 satellite, including the successful completion of two orbit raising operations and the successful launch of the satellite by the PSLV-C38 rocket.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_074",
+    "question": "When was AstroSat launched?",
+    "reference_answer": "AstroSat was launched on September 28, 2015.",
+    "tier": 1,
+    "kgrag_answer": "The AstroSat Support Cell (ASC) was set up at IUCAA, Pune on May 3, 2016. However, the launch date of AstroSat is not mentioned in the provided context.",
+    "bm25_answer": "AstroSat was launched in 2015.",
+    "vanilla_rag_answer": "The context provided does not mention the launch date of AstroSat.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_075",
+    "question": "What launch vehicle carried AstroSat?",
+    "reference_answer": "AstroSat was launched by PSLV-C30.",
+    "tier": 1,
+    "kgrag_answer": "The launch vehicle that carried AstroSat was not mentioned in the provided context.",
+    "bm25_answer": "The launch vehicle that carried AstroSat is not mentioned in the provided context.",
+    "vanilla_rag_answer": "The launch vehicle that carried AstroSat is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_076",
+    "question": "What is the full form of GSAT?",
+    "reference_answer": "GSAT stands for Geostationary Satellite.",
+    "tier": 1,
+    "kgrag_answer": "GSAT stands for Geo-Synchronous Satellite.",
+    "bm25_answer": "GSAT stands for Geostationary Satellite System.",
+    "vanilla_rag_answer": "The full form of GSAT is not explicitly mentioned in the given context. However, it is mentioned that GSAT-29 is a satellite built by ISRO.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_077",
+    "question": "What is the mission of RISAT-1?",
+    "reference_answer": "RISAT-1 is a synthetic aperture radar imaging satellite for all-weather earth observation.",
+    "tier": 1,
+    "kgrag_answer": "I don't know.",
+    "bm25_answer": "The context does not provide information about the mission of RISAT-1.",
+    "vanilla_rag_answer": "The context does not provide information about the mission of RISAT-1.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_078",
+    "question": "What is the Cartosat series?",
+    "reference_answer": "Cartosat is a series of ISRO Earth observation satellites for cartographic applications and land mapping.",
+    "tier": 1,
+    "kgrag_answer": "The Cartosat series is a series of Earth observation satellites launched by India's space agency, ISRO. The Cartosat series is designed to provide high-resolution imagery and geospatial data for various applications, including urban planning, land use mapping, and disaster management. The Cartosat series is typically launched along with other satellites as part of a multi-satellite mission.",
+    "bm25_answer": "The Cartosat series is a series of Indian Earth observation satellites launched by the Indian Space Research Organisation (ISRO). The Cartosat-2 series satellite, which was launched on January 12, 2018, is the latest addition to the Cartosat series. The Cartosat series is used for various applications such as mapping, topographic surveys, and monitoring of land use and land cover changes.",
+    "vanilla_rag_answer": "The Cartosat series is a series of Indian remote sensing satellites launched by the Indian Space Research Organization (ISRO) for Earth observation and mapping purposes. The Cartosat-2 Series satellite is the latest in the series and is scheduled to be launched on June 22, 2017, along with other satellites. The Cartosat-2 Series satellite is designed to provide high-resolution imagery of the Earth's surface and is expected to be used for various applications such as urban planning, disaster management, and environmental monitoring.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_079",
+    "question": "What is the full form of IRS?",
+    "reference_answer": "IRS stands for Indian Remote Sensing satellite.",
+    "tier": 1,
+    "kgrag_answer": "The full form of IRS is not mentioned in the given context.",
+    "bm25_answer": "The full form of IRS is not explicitly mentioned in the given context. However, based on the information provided, it can be inferred that IRS stands for Interstellar Medium.",
+    "vanilla_rag_answer": "The full form of IRS is not mentioned in the given context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_080",
+    "question": "What is OCEANSAT?",
+    "reference_answer": "OCEANSAT is ISRO's series of satellites dedicated to ocean observation and research.",
+    "tier": 1,
+    "kgrag_answer": "OCEANSAT is not mentioned in the provided context.",
+    "bm25_answer": "OCEANSAT is a remote sensing satellite operated by the Indian Space Research Organization (ISRO) that is used for monitoring crop progress and health during the Rabi season in India. It is one of the remote sensing datasets used in the analysis of wheat crop area and production estimation in India.",
+    "vanilla_rag_answer": "OCEANSAT is not mentioned in the given context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_081",
+    "question": "What is the Chandrayaan-2 orbiter used for currently?",
+    "reference_answer": "The Chandrayaan-2 orbiter is currently active and providing scientific data including high-resolution lunar maps.",
+    "tier": 1,
+    "kgrag_answer": "The Chandrayaan-2 orbiter is used for lunar exploration and mapping.",
+    "bm25_answer": "The Chandrayaan-2 orbiter is currently being integrated with the GSLV launcher for the upcoming GSLV MKIII-M1 /Chandrayaan-2 mission.",
+    "vanilla_rag_answer": "The Chandrayaan-2 orbiter is currently being used to study the effect of the Earth's geomagnetic tail on the Lunar ionosphere plasma. The study is being conducted by analyzing radio signals from the orbiter, which are received at the Indian Deep Space Network (IDSN). The results of the study have revealed that the Moon's ionosphere exhibits unexpectedly high electron densities when it enters the Earth's geomagnetic tail, suggesting a stronger influence of the Moon's remnant magnetic fields than previously thought.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_082",
+    "question": "What is the PSLV variant used most frequently?",
+    "reference_answer": "The PSLV-XL variant is the most powerful and frequently used variant of PSLV.",
+    "tier": 1,
+    "kgrag_answer": "The PSLV variant used most frequently is the PSLV-DL variant.",
+    "bm25_answer": "The PSLV variant used most frequently is not explicitly mentioned in the provided context. However, it is mentioned that PSLV is the workhorse launch vehicle of ISRO that has completed 63 flights, including notable missions like Chandrayaan-1, Mars Orbiter Mission, Aditya-L1, and Astrosat Mission.",
+    "vanilla_rag_answer": "The PSLV variant used most frequently is PSLV-C.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_083",
+    "question": "What is the name of ISRO's launch port?",
+    "reference_answer": "ISRO's primary launch port is Satish Dhawan Space Centre (SDSC) SHAR, Sriharikota.",
+    "tier": 1,
+    "kgrag_answer": "I don't know. The context does not provide information about the name of ISRO's launch port.",
+    "bm25_answer": "The name of ISRO's launch port is not mentioned in the provided context.",
+    "vanilla_rag_answer": "The name of ISRO's launch port is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_084",
+    "question": "What is the Mission Shakti?",
+    "reference_answer": "Mission Shakti was India's anti-satellite missile test conducted by DRDO in March 2019.",
+    "tier": 1,
+    "kgrag_answer": "The Mission Shakti is not mentioned in the provided context.",
+    "bm25_answer": "The Mission Shakti is a space mission launched by India in 2026. It is a sub-orbital solid motor-based test vehicle that is being ground-tested by ISRO. The mission is part of the Gaganyaan Programme, which aims to send humans to space. The Mission Shakti is being used to test the sub-orbital flight capabilities of the Gaganyaan spacecraft.",
+    "vanilla_rag_answer": "The Mission Shakti is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_085",
+    "question": "What is the full form of DRDO?",
+    "reference_answer": "DRDO stands for Defence Research and Development Organisation.",
+    "tier": 1,
+    "kgrag_answer": "The full form of DRDO is not mentioned in the provided context.",
+    "bm25_answer": "DRDO stands for Defense Research and Development Organization.",
+    "vanilla_rag_answer": "The full form of DRDO is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_086",
+    "question": "What is GSAT-11?",
+    "reference_answer": "GSAT-11 is India's heaviest and most advanced communication satellite, launched in 2018.",
+    "tier": 1,
+    "kgrag_answer": "GSAT-11 is not mentioned in the provided context.",
+    "bm25_answer": "GSAT-11 is not mentioned in the provided context.",
+    "vanilla_rag_answer": "GSAT-11 is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_087",
+    "question": "What is the mass of GSAT-11?",
+    "reference_answer": "GSAT-11 has a mass of approximately 5,854 kg.",
+    "tier": 1,
+    "kgrag_answer": "The context above does not provide information about the mass of GSAT-11.",
+    "bm25_answer": "The context above does not provide any information about the mass of GSAT-11.",
+    "vanilla_rag_answer": "The information provided does not mention the mass of GSAT-11. It only provides details about the successful launch of GSAT-19 and the countdown operations for the PSLV-C38/Cartosat-2 Series Satellite mission.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_088",
+    "question": "What is the SCE-200 engine?",
+    "reference_answer": "SCE-200 is a semi-cryogenic engine being developed by ISRO for future launch vehicles.",
+    "tier": 1,
+    "kgrag_answer": "I don't know.",
+    "bm25_answer": "I don't know.",
+    "vanilla_rag_answer": "The SCE-200 engine is a cryogenic engine that powers the LVM3 upper stage of the Indian Space Agency's (ISRO) Lunar Mission Vehicle 3 (LVM3). It is qualified for operation at thrust levels ranging from 19 to 22 tonnes in flight with a single start and has been qualified for the Gaganyaan missions. The engine ignition is initiated under tank head conditions, followed by the start of turbopumps using a stored gas start-up system. For future missions, multiple in-flight restarts of the SCE-200 engine will be required for mission flexibility towards multi-orbit missions. Achieving boot-",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_089",
+    "question": "What is the Reusable Launch Vehicle programme?",
+    "reference_answer": "ISRO's RLV-TD programme aims to develop a reusable two-stage-to-orbit vehicle to reduce launch costs.",
+    "tier": 1,
+    "kgrag_answer": "The Reusable Launch Vehicle (RLV) programme is a space exploration initiative by the Indian Space Research Organization (ISRO) aimed at developing a reusable spacecraft for human spaceflight. The programme is focused on reducing the cost of space missions and increasing the frequency of space launches. The Gaganyaan Programme is a key component of the RLV programme and is aimed at sending an Indian astronaut to the International Space Station (ISS) in the near future.",
+    "bm25_answer": "The Reusable Launch Vehicle (RLV) programme is a space exploration initiative by the Indian Space Research Organization (ISRO). The RLV LEX mission was successfully conducted on March 31, 2023, which demonstrated the autonomous landing of a reusable launch vehicle. The mission was a significant step towards the development of a fully reusable launch vehicle, which has the potential to significantly reduce the cost of space launches.",
+    "vanilla_rag_answer": "The Reusable Launch Vehicle (RLV) programme is a space exploration initiative by the Indian Space Research Organization (ISRO) aimed at developing a reusable spacecraft for human spaceflight. The programme is focused on reducing the cost of space missions and increasing the frequency of space launches. The RLV is designed to be launched multiple times, with the first stage being reused for subsequent launches. The programme includes the development of the Space Launch Vehicle (SLV), the Reusable Second Stage (RSS), and the Reusable Third Stage (RTS). The RLV is expected to be used for various space missions, including satellite launches, scientific research, and human space",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_090",
+    "question": "What is the name of ISRO's space station programme?",
+    "reference_answer": "ISRO's proposed space station is called Bharatiya Antariksh Station (BAS).",
+    "tier": 1,
+    "kgrag_answer": "The name of ISRO's space station programme is not mentioned in the provided context.",
+    "bm25_answer": "The name of ISRO's space station programme is not explicitly mentioned in the provided context. However, it is mentioned that the Gaganyaan program aims to demonstrate India's capability to launch a crewed spacecraft into low Earth orbit, and the experiences and knowledge gained from this mission will be crucial for its success.",
+    "vanilla_rag_answer": "The name of ISRO's space station programme is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_091",
+    "question": "What is the Shukrayaan mission?",
+    "reference_answer": "Shukrayaan is ISRO's proposed orbiter mission to Venus.",
+    "tier": 1,
+    "kgrag_answer": "The Shukrayaan mission is not mentioned in the provided context.",
+    "bm25_answer": "The Shukrayaan mission is not mentioned in the provided context. It is possible that the mission is a hypothetical or a proposed mission that is not yet officially announced or launched by any space agency.",
+    "vanilla_rag_answer": "The Shukrayaan mission is a space mission by India to send an astronaut, Gaganyatri Shubhanshu Shukla, to the International Space Station (ISS) aboard a SpaceX Dragon spacecraft. The mission took place in July 2025 and was a collaboration between India's space agency, ISRO, and SpaceX. The mission had several events, including a historic live interaction with the Hon. Prime Minister Narendra Modi, a video link with school students, and Amateur Radio on the International Space Station (ARISS) sessions. The mission concluded with a successful splashdown in the Pacific Ocean and the recovery of the Dragon capsule.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_092",
+    "question": "What is EMISAT?",
+    "reference_answer": "EMISAT is an ISRO electronic intelligence satellite launched in 2019.",
+    "tier": 1,
+    "kgrag_answer": "EMISAT is not mentioned in the provided context.",
+    "bm25_answer": "I don't know.",
+    "vanilla_rag_answer": "EMISAT is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_093",
+    "question": "What is the PSLV-C45 mission?",
+    "reference_answer": "PSLV-C45 launched EMISAT along with 28 international co-passenger satellites in April 2019.",
+    "tier": 1,
+    "kgrag_answer": "The PSLV-C45 mission is not mentioned in the provided context.",
+    "bm25_answer": "The PSLV-C45 mission was to launch the EMISAT and 28 customer satellites into orbit. The launch took place on April 1, 2019.",
+    "vanilla_rag_answer": "The PSLV-C45 mission is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_094",
+    "question": "What is the Chandrayaan-2 orbiter's altitude?",
+    "reference_answer": "The Chandrayaan-2 orbiter operates at an altitude of approximately 100 km above the lunar surface.",
+    "tier": 1,
+    "kgrag_answer": "The provided context does not mention the altitude of the Chandrayaan-2 orbiter.",
+    "bm25_answer": "The Chandrayaan-2 orbiter's altitude is not mentioned in the provided context.",
+    "vanilla_rag_answer": "The Chandrayaan-2 orbiter's altitude is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_095",
+    "question": "What is the OneWeb launch by ISRO?",
+    "reference_answer": "ISRO launched 36 OneWeb broadband satellites using LVM3-M2 in October 2022.",
+    "tier": 1,
+    "kgrag_answer": "I don't know.",
+    "bm25_answer": "The OneWeb launch by ISRO refers to the successful launch of the OneWeb India-1 mission on October 23, 2022. The mission was completed successfully and marked the 6th operational flight of the LVM3 launch vehicle. The LVM3-M2 / OneWeb India-1 mission was a dedicated commercial mission onboard the LVM3 launch vehicle, which launched the OneWeb India-1 communication satellite of OneWeb, a UK-based company. The mission was a success and marked the first launch of OneWeb's constellation of low Earth orbit (LEO) satellites from Indian soil.",
+    "vanilla_rag_answer": "The provided text does not mention any OneWeb launch by ISRO.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_096",
+    "question": "What is the full form of ISITE?",
+    "reference_answer": "ISITE stands for ISRO Satellite Integration and Testing Establishment.",
+    "tier": 1,
+    "kgrag_answer": "I don't know.",
+    "bm25_answer": "The full form of ISITE is not provided in the given context. However, it is mentioned that ISM (Interstellar Medium) is one of the constituents of galaxies and plays a crucial role in their evolution.",
+    "vanilla_rag_answer": "The full form of ISITE is not provided in the context above.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_097",
+    "question": "What is the Chandrayaan-3 propulsion module?",
+    "reference_answer": "The Chandrayaan-3 propulsion module carried the lander-rover to lunar orbit and carries the SHAPE payload to study Earth from lunar orbit.",
+    "tier": 1,
+    "kgrag_answer": "The Chandrayaan-3 propulsion module is not explicitly mentioned in the provided context. However, it is known that the Chandrayaan-3 mission is a lunar exploration mission that was launched by the Indian Space Research Organization (ISRO) on November 16, 2020. The mission includes a lunar lander named Pradhanmaniyan, which was successfully deployed on the lunar surface on November 19, 2020. The Pradhanmaniyan lander was equipped with a CE-20 cryogenic engine, which was used to propel the lander to the lunar surface.",
+    "bm25_answer": "The Chandrayaan-3 propulsion module is a component of the Chandrayaan-3 spacecraft that is responsible for providing the necessary thrust for the spacecraft to enter and maintain its lunar orbit. The module was successfully separated from the lander while in orbit and will be used to execute a series of complex braking maneuvers to facilitate a soft landing in the South Polar region of the Moon on August 23, 2023.",
+    "vanilla_rag_answer": "The Chandrayaan-3 propulsion module is not mentioned in the provided context. The article discusses the discovery of high electron densities in the lunar environment and the potential role of lunar crustal magnetic fields in shaping plasma dynamics, based on data collected by India's Chandrayaan-2 orbiter.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_098",
+    "question": "What does the SHAPE payload on Chandrayaan-3 study?",
+    "reference_answer": "SHAPE (Spectro-polarimetry of HAbitable Planet Earth) studies Earth's spectral and polarimetric properties from lunar orbit.",
+    "tier": 1,
+    "kgrag_answer": "The SHAPE payload on Chandrayaan-3 studies the shape of the lunar surface.",
+    "bm25_answer": "The SHAPE payload on Chandrayaan-3 studies the shape of the Moon.",
+    "vanilla_rag_answer": "The SHAPE payload on Chandrayaan-3 studies the shape and topography of the Moon's surface.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_099",
+    "question": "What is Mangalyaan's current status?",
+    "reference_answer": "Mangalyaan lost contact with ISRO in 2022 after exhausting its fuel, ending its mission after nearly 8 years.",
+    "tier": 1,
+    "kgrag_answer": "The provided context does not mention the current status of Mangalyaan.",
+    "bm25_answer": "The current status of Mangalyaan is not mentioned in the provided context.",
+    "vanilla_rag_answer": "There is no information provided in the context about Mangalyaan's current status.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_100",
+    "question": "What was Mangalyaan's designed mission life?",
+    "reference_answer": "Mangalyaan was designed for a mission life of 6 months.",
+    "tier": 1,
+    "kgrag_answer": "The provided context does not mention Mangalyaan's designed mission life.",
+    "bm25_answer": "Mangalyaan, India's first interplanetary spacecraft, was launched in 2014 and was designed to have a mission life of 250 days. However, it successfully completed its mission in 2017, having spent over 500 days in space and completed several tasks, including sending back high-resolution images of Mars and conducting experiments to study the planet's atmosphere.",
+    "vanilla_rag_answer": "Mangalyaan's designed mission life is not explicitly stated in the provided context. However, it can be inferred that Mangalyaan's mission was to explore and collect data on Mars, as it was designed to land on the Martian surface and perform various tasks such as taking images, conducting experiments, and collecting soil samples. The specific duration of Mangalyaan's mission life is not mentioned, but it is likely that it was designed to operate for a certain period of time to accomplish its tasks and transmit data back to Earth.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_101",
+    "question": "Which launch vehicle carried the satellite that first detected water molecules on the Moon?",
+    "reference_answer": "Chandrayaan-1 first detected water molecules on the Moon. It was carried by PSLV-C11 (PSLV-XL variant).",
+    "tier": 2,
+    "kgrag_answer": "The launch vehicle that carried the satellite that first detected water molecules on the Moon is not mentioned in the given context.",
+    "bm25_answer": "The launch vehicle that carried the satellite that first detected water molecules on the Moon is not mentioned in the provided context.",
+    "vanilla_rag_answer": "I don't know.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_102",
+    "question": "Which ISRO mission carried the Moon Impact Probe and what did it discover?",
+    "reference_answer": "Chandrayaan-1 carried the Moon Impact Probe (MIP). It separated from the orbiter on November 14, 2008 and struck near the lunar south pole. Data from its CHACE instrument and NASA's M3 spectrometer confirmed the presence of water molecules on the Moon.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO mission that carried the Moon Impact Probe is not mentioned in the provided context.",
+    "bm25_answer": "The ISRO mission that carried the Moon Impact Probe is not mentioned in the provided context.",
+    "vanilla_rag_answer": "The ISRO mission that carried the Moon Impact Probe is not explicitly mentioned in the provided context. However, it is known that the TMC-2 (Tandem Mooner) spacecraft was launched by ISRO on July 4, 2022, and it carried the Moon Impact Probe. The Moon Impact Probe was designed to study the lunar surface and its composition. Unfortunately, the probe did not make a successful impact on the lunar surface due to an issue with the spacecraft's guidance system.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_103",
+    "question": "Who was the ISRO chairman when Chandrayaan-1 was launched?",
+    "reference_answer": "G. Madhavan Nair was the ISRO Chairman when Chandrayaan-1 was launched, serving from 2003 to 2009.",
+    "tier": 2,
+    "kgrag_answer": "The context does not provide information about the ISRO chairman when Chandrayaan-1 was launched.",
+    "bm25_answer": "Dr. V. Narayanan was the Chairman of ISRO when Chandrayaan-1 was launched.",
+    "vanilla_rag_answer": "The context does not provide information about the ISRO chairman when Chandrayaan-1 was launched.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_104",
+    "question": "Which mission established India as the first country to reach Mars orbit on its first attempt?",
+    "reference_answer": "Mangalyaan (Mars Orbiter Mission) established India as the first nation to reach Mars orbit on its debut attempt, and the first Asian country to do so.",
+    "tier": 2,
+    "kgrag_answer": "I don't know.",
+    "bm25_answer": "The mission that established India as the first country to reach Mars orbit on its first attempt is not mentioned in the provided code or context.",
+    "vanilla_rag_answer": "The mission that established India as the first country to reach Mars orbit on its first attempt is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_105",
+    "question": "What is the name of the rover on Chandrayaan-3 and which ISRO centre built it?",
+    "reference_answer": "The rover on Chandrayaan-3 is named Pragyan. It was built by ISRO's U R Rao Satellite Centre (URSC) in Bengaluru.",
+    "tier": 2,
+    "kgrag_answer": "The rover on Chandrayaan-3 is named \"Prithvi\" and it was built by the Indian Institute of Technology (IIT) Kharagpur.",
+    "bm25_answer": "The name of the rover on Chandrayaan-3 is not mentioned in the provided context. However, it is mentioned that the rover for Chandrayaan-5/LUPEX mission will be made by Mitsubishi Heavy Industries (MHI), Japan.",
+    "vanilla_rag_answer": "The rover on Chandrayaan-3 is named \"Prithvi\" and it was built by the Physical Research Laboratory (PRL), Ahmedabad, a unit of the Department of Space, Government of India.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_106",
+    "question": "Which ISRO centre is responsible for developing satellite payloads?",
+    "reference_answer": "Space Applications Centre (SAC), located in Ahmedabad, is the ISRO centre responsible for developing satellite payloads.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO centre responsible for developing satellite payloads is not explicitly mentioned in the provided context. However, it is known that the Indian Institute of Space Science and Technology (IIST) and the Indian Institute of Remote Sensing (IIRS) are involved in the development of satellite payloads.",
+    "bm25_answer": "The information provided does not mention any specific ISRO centre responsible for developing satellite payloads.",
+    "vanilla_rag_answer": "The ISRO center responsible for developing satellite payloads is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_107",
+    "question": "What launch vehicle was used for Aditya-L1 and what orbit did it achieve?",
+    "reference_answer": "Aditya-L1 was launched by PSLV-C57 and placed into a halo orbit around the Sun-Earth Lagrange Point 1 (L1), approximately 1.5 million km from Earth.",
+    "tier": 2,
+    "kgrag_answer": "The launch vehicle used for Aditya-L1 was PSLV C-57 and it achieved a large halo orbit around first Earth-Sun Lagrange Point known as Lagrange Point L1.",
+    "bm25_answer": "The launch vehicle used for Aditya-L1 was PSLV-C57 and it achieved an orbit of 245 km x 22459 km.",
+    "vanilla_rag_answer": "The launch vehicle used for Aditya-L1 was PSLV-C57 and it achieved an orbit of 245 km x 22459 km.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_108",
+    "question": "Which ISRO mission used the Vikram lander and what was its fate?",
+    "reference_answer": "The Vikram lander was used in Chandrayaan-2. It crash-landed on the Moon's surface on September 7, 2019 due to a software glitch. The Chandrayaan-2 orbiter remains operational.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO mission that used the Vikram lander was Chandrayaan-2. The fate of the Vikram lander was that communication from the lander to the ground stations was lost after descent was as planned and normal performance was observed upto an altitude of 2.1 km.",
+    "bm25_answer": "The ISRO mission that used the Vikram lander was Chandrayaan-3. The fate of the Vikram lander was that it successfully soft-landed on the Moon's surface on August 23, 2023, and conducted experiments on the lunar surface, near-surface plasma, and ground vibrations for a period of around 10 Earth-days. On September 02, 2023, the Vikram lander reignited its engines to perform a \"hop\" (~50 cm) by utilizing the residual propellant. This hop proved a critical skill for future missions that will bring lunar samples back to Earth.",
+    "vanilla_rag_answer": "The ISRO mission that used the Vikram lander was the Chandrayaan-2 mission. The fate of the Vikram lander is not explicitly stated in the provided context, but it is known that the lander lost communication with the orbiter and did not successfully land on the moon.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_109",
+    "question": "What is the connection between GSAT-11 and broadband internet in India?",
+    "reference_answer": "GSAT-11 provides broadband internet services across India using Ku and Ka band transponders, delivering up to 16 Gbps throughput to remote areas.",
+    "tier": 2,
+    "kgrag_answer": "The provided text does not mention any direct connection between GSAT-11 and broadband internet in India. However, it does mention that GSAT-11 is a communication satellite launched by India in 2017, which provides high-speed internet connectivity to remote and rural areas of the country. The text also mentions that the Indian government has launched various initiatives to improve internet connectivity in the country, such as the Digital India program, which aims to provide affordable and accessible internet to all citizens.",
+    "bm25_answer": "GSAT-11 is a communication satellite launched by ISRO on-board Ariane-V [VA 257 flight] from Kourou, French Guiana on 23rd June 2022. The satellite is designed to provide high-speed internet connectivity across India and other parts of the world. The successful launch of GSAT-11 is expected to significantly improve the broadband internet infrastructure in India, providing faster and more reliable internet access to millions of people, especially in rural and remote areas.",
+    "vanilla_rag_answer": "GSAT-11 is a satellite launched by the Indian Space Research Organisation (ISRO) in 2017. It is designed to provide high-speed internet connectivity to rural and remote areas of India. The satellite is equipped with 48 Ka-band transponders, which can provide data rates of up to 1 Gbps.\n\nThe satellite is part of the Indian government's Digital India initiative, which aims to provide affordable and accessible internet to all citizens of India. GSAT-11 is expected to significantly improve internet connectivity in rural areas, where access to high-speed internet is limited.\n\nThe satellite is also expected to support the growth of the Indian telecommun",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_110",
+    "question": "Which ISRO mission and payload first confirmed water ice at the lunar south pole?",
+    "reference_answer": "Chandrayaan-1 confirmed water ice at the lunar south pole using NASA's Moon Mineralogy Mapper (M3) and the Moon Impact Probe's CHACE instrument.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO mission and payload that first confirmed water ice at the lunar south pole is the Chandrayaan-2 Orbiter and its payload, the Dual Frequency Synthetic Aperture Radar (DFSAR).",
+    "bm25_answer": "The ISRO mission and payload that first confirmed water ice at the lunar south pole is not mentioned in the provided context.",
+    "vanilla_rag_answer": "I don't know.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_111",
+    "question": "Which ISRO centre develops liquid propulsion systems and what mission did it support for Chandrayaan-3?",
+    "reference_answer": "The Liquid Propulsion Systems Centre (LPSC) developed the throttleable liquid engines for Chandrayaan-3's Vikram lander that enabled its soft landing.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO centre that develops liquid propulsion systems is the Liquid Propulsion Systems Centre (LPSC). It supported the Chandrayaan-3 mission by developing the 200-tonne thrust LOX-Kerosene Semi Cryogenic Rocket System for improving LVM3 payload.",
+    "bm25_answer": "The ISRO centre that develops liquid propulsion systems is the Liquid Propulsion Systems Centre (LPSC). It supported the Chandrayaan-3 mission by providing the liquid propulsion systems for the spacecraft.",
+    "vanilla_rag_answer": "The ISRO centre that develops liquid propulsion systems is not mentioned in the provided context. However, it is known that ISRO's Liquid Propulsion Systems Centre (LPSC) is responsible for the development of liquid propulsion systems for various space missions, including Chandrayaan-3.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_112",
+    "question": "What is the relationship between PSLV-C57 and Aditya-L1?",
+    "reference_answer": "PSLV-C57 was the launch mission that carried Aditya-L1 into orbit on September 2, 2023, first placing it in an elliptical Earth orbit before a series of manoeuvres led to L1 insertion.",
+    "tier": 2,
+    "kgrag_answer": "PSLV-C57 is the launch vehicle that will be used to launch Aditya-L1 into space. The launch is scheduled for September 2, 2023. The launch will be carried out from the Satish Dhawan Space Centre in Sriharsha, India. The launch will be the first space-based Indian mission to study the Sun. The spacecraft will be placed in a halo orbit around the Lagrange point 1 (L1) of the Sun-Earth system, which is about 1.5 million km from the Earth. The spacecraft will carry seven payloads to observe the photosphere, chromosphere and the outermost layers of the Sun (",
+    "bm25_answer": "PSLV-C57 is the launch vehicle that was used to launch the Aditya-L1 spacecraft into orbit. The payloads onboard Aditya-L1, including the SUIT payload, are used to study the Sun and its atmosphere. The SUIT payload observed an X6.3-class solar flare on February 22, 2024, and made significant observations in the NUV wavelength range, which provided new insights into the physics of solar flares.",
+    "vanilla_rag_answer": "PSLV-C57 is the spacecraft that will carry the Aditya-L1 payload to its intended orbit around the Lagrange point 1 (L1) of the Sun-Earth system. The spacecraft is designed to place the payload in its halo orbit around the L1 point, which is about 1.5 million km from the Earth. The payloads on board Aditya-L1 are designed to study the Sun's upper atmosphere, including the chromosphere and corona, and to observe the in-situ particle and plasma environment at the L1 point. The spacecraft carries a total of seven payloads, four of which are remote sensing instruments and three of",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_113",
+    "question": "Which satellite did ISRO launch for OneWeb and what orbit was it placed in?",
+    "reference_answer": "ISRO launched 36 OneWeb broadband communication satellites using LVM3-M2 in October 2022, placing them into Low Earth Orbit at approximately 600 km altitude.",
+    "tier": 2,
+    "kgrag_answer": "I don't know.",
+    "bm25_answer": "The satellite launched by ISRO for OneWeb was not mentioned in the provided context.",
+    "vanilla_rag_answer": "The satellite launched by ISRO for OneWeb was not mentioned in the provided context. However, OneWeb is a global communication satellite constellation that is being developed by OneWeb Limited, a private company. ISRO has been involved in the development of the OneWeb constellation, providing launch services for several of the company's satellites. The satellites are placed in low Earth orbit (LEO) at an altitude of approximately 1,100 kilometers.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_114",
+    "question": "What ISRO mission used a Hohmann transfer to reach Mars and how long did the journey take?",
+    "reference_answer": "Mangalyaan used a Hohmann-like transfer orbit, with the spacecraft traversing deep space for approximately 300 days before entering Mars orbit on September 24, 2014.",
+    "tier": 2,
+    "kgrag_answer": "I don't know.",
+    "bm25_answer": "The ISRO mission used a Hohmann transfer to reach Mars is not mentioned in the provided context.",
+    "vanilla_rag_answer": "The ISRO mission that used a Hohmann transfer to reach Mars is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_115",
+    "question": "Which ISRO chairman oversaw both the SLV-3 success and the founding of ISRO's first operational launch vehicle programme?",
+    "reference_answer": "Dr. Satish Dhawan, ISRO Chairman from 1972 to 1984, oversaw the SLV-3 success in 1980 and established the foundations of India's first operational launch vehicle programmes.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO chairman who oversaw both the SLV-3 success and the founding of ISRO's first operational launch vehicle programme is not mentioned in the provided context.",
+    "bm25_answer": "Dr. V. Narayanan",
+    "vanilla_rag_answer": "The ISRO chairman who oversaw both the SLV-3 success and the founding of ISRO's first operational launch vehicle programme is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_116",
+    "question": "What payload on Chandrayaan-2 is studying the lunar exosphere?",
+    "reference_answer": "CHACE-2 (Chandra's Atmospheric Composition Explorer-2) on the Chandrayaan-2 orbiter studies the neutral composition of the tenuous lunar exosphere.",
+    "tier": 2,
+    "kgrag_answer": "The payload on Chandrayaan-2 that is studying the lunar exosphere is the S-band Telemetry and Telecommand (TTC) radio signals in a two-way radio occultation experiment.",
+    "bm25_answer": "Chandrayaan-2 is studying the lunar exosphere with the Payload for Lunar Atmosphere and Dust Environment Experiment (PLADEE).",
+    "vanilla_rag_answer": "The payload on Chandrayaan-2 that is studying the lunar exosphere is the Dual Frequency Synthetic Aperture Radar (DFSAR) instrument.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_117",
+    "question": "Why was the development of NavIC considered strategically important for India?",
+    "reference_answer": "NavIC's development became critical after the 1999 Kargil War, when the US denied India access to GPS data for enemy location tracking, motivating India to build an independent navigation system.",
+    "tier": 2,
+    "kgrag_answer": "The development of NavIC (GPS) was considered strategically important for India due to its potential to enhance the country's economic growth, improve the quality of life of its citizens, and provide a competitive edge in the global market. NavIC can help in precise navigation, location-based services, and disaster management, which can have a significant impact on various sectors such as agriculture, transportation, and emergency services. Additionally, the Indian government has been promoting the use of NavIC in various applications, such as border surveillance, maritime security, and military operations, which can enhance the country's security and defense capabilities. Therefore, the development of NavIC was considered a critical priority for India's economic and strategic development.",
+    "bm25_answer": "The development of NavIC (National Navigation Satellite System) was considered strategically important for India because it is a critical infrastructure for the country's economic growth and national security. NavIC is designed to provide precise and reliable navigation services to users in India and its neighboring regions, including the Indian Ocean, which is a vital trade route for the country. The system is expected to support various applications, including maritime, aviation, agriculture, and disaster management. Additionally, the Indian government has been promoting the use of NavIC in various sectors, including defense, transportation, and agriculture, to enhance the country's economic and strategic position in the region.",
+    "vanilla_rag_answer": "The development of NavIC was considered strategically important for India due to its potential to enhance the country's security and economic growth. NavIC is an indigenous satellite-based navigation system that is designed to provide accurate and reliable positioning, navigation, and timing services to users in the Indian subcontinent and beyond.\n\nOne of the key benefits of NavIC is its ability to provide real-time positioning and navigation services to users in remote and challenging terrains, such as mountainous regions and coastal areas. This can be particularly useful for military and paramilitary forces, as well as for disaster response and relief operations.\n\nAdditionally, NavIC can help to boost India's economic growth by enabling more efficient",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_118",
+    "question": "What is the connection between NavIC and India's strategic defence needs?",
+    "reference_answer": "NavIC provides India with an independent, secure navigation system for both civilian and strategic defence use, free from foreign denial or interference.",
+    "tier": 2,
+    "kgrag_answer": "The information provided does not mention any direct connection between NavIC and India's strategic defense needs. However, it does mention that the NISAR mission, which was a joint ISRO-NASA mission, is significant because it is the first dual-frequency Synthetic Aperture Radar (SAR) satellite and is now fully operational. SAR technology can be used for various applications, including military intelligence gathering and surveillance. Additionally, the LVM3-M5/CMS-03 mission, which was another unique mission, validated the electro-mechanical actuation for the S200 motor and other modifications to improve the payload performance by 176kg. This could potentially have",
+    "bm25_answer": "The NavIC (Navigation with Indian Constellations) is a satellite-based navigation system developed by India to provide real-time positioning, navigation, and timing services to users in the Indian region and beyond. While the primary focus of NavIC is to provide navigation services, it also has significant implications for India's strategic defense needs.\n\nOne of the key benefits of NavIC is its ability to provide accurate and reliable positioning information in the Indian region, which is critical for military operations. The system can provide real-time positioning information to military vehicles, aircraft, and ships, enabling them to operate more effectively and efficiently. Additionally, NavIC can provide positioning information to military communication systems, enabling secure and reliable communication",
+    "vanilla_rag_answer": "The provided context does not mention any direct connection between NavIC and India's strategic defense needs. However, it does mention that India is actively involved in various international fora deliberating on space debris issues and the long-term sustainability of outer space activities, including the Inter-Agency Debris Coordination Committee (IADC), International Academy of Astronautics (IAA) space debris working group, International Astronautical Federation (IAF) space traffic management working group, International Organization for Standardization (ISO) space debris working group, and UN-COPUOS Scientific & Technical Sub-Committee/Legal Sub-Committee. Additionally, India currently chairs the UN working group on the Long-term",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_119",
+    "question": "Which ISRO satellite series supports India's disaster management and what type of orbit do they use?",
+    "reference_answer": "ISRO's INSAT and GSAT communication satellites support India's disaster management programme. They operate in Geostationary Orbit, providing continuous coverage for disaster warning and monitoring.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO satellite series that supports India's disaster management is not explicitly mentioned in the provided context. However, it is known that ISRO has several satellite systems that are used for disaster management, such as the Indian Remote Sensing (IRS) system, which includes the IRS-P, IRS-D, and IRS-E satellites. These satellites are used for providing remote sensing data for disaster management applications, such as flood mapping, landslide monitoring, and disaster response.\n\nAs for the type of orbit used by these satellites, it is also not explicitly mentioned in the provided context. However, it is known that ISRO's satellite systems use various types of orbits, such as",
+    "bm25_answer": "The ISRO satellite series that supports India's disaster management is not explicitly mentioned in the provided context. However, it is mentioned that ISRO's contributions in disaster management mechanisms were acknowledged.",
+    "vanilla_rag_answer": "The ISRO satellite series that supports India's disaster management is not explicitly mentioned in the provided context. However, it is mentioned that the PSLV-C60 launch was cleared by COLA for disaster management purposes. Additionally, the PSLV Orbital Experimental Module (POEM) missions were flown for technology demonstration on the PS4 of PSLV-C58 and PSLV-C60, which may have some relevance to disaster management.\n\nAs for the type of orbit used by these satellites, the provided context mentions that the upper stages of PSLV-C58 and PSLV-C60 were de-orbited to 35",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_120",
+    "question": "What is the relationship between URSC and GSAT-11?",
+    "reference_answer": "GSAT-11 was built and integrated by U R Rao Satellite Centre (URSC), formerly known as ISRO Satellite Centre (ISAC), in Bengaluru.",
+    "tier": 2,
+    "kgrag_answer": "URSC stands for User Requirements Specification and GSAT-11 is a geostationary satellite. It is not clear from the provided context what the relationship between URSC and GSAT-11 is.",
+    "bm25_answer": "URSC stands for User Requirements Specification and is a document that outlines the requirements for a satellite system. GSAT-11 is a communication satellite launched by ISRO on-board Ariane-V [VA 257 flight] from Kourou, French Guiana on 23rd June 2022.\n\nIt is not clear from the provided context what the relationship between URSC and GSAT-11 is.",
+    "vanilla_rag_answer": "The information provided does not mention any relationship between URSC and GSAT-11.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_121",
+    "question": "Which ISRO mission carried the Terrain Mapping Camera and what did it produce?",
+    "reference_answer": "Chandrayaan-1 carried the Terrain Mapping Camera (TMC), which produced three-dimensional high-resolution topographic maps of the lunar surface including the polar regions.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO mission that carried the Terrain Mapping Camera was Chandrayaan 2. The Terrain Mapping Camera produced high resolution images of the lunar surface, which were immensely useful to the global scientific community.",
+    "bm25_answer": "The ISRO mission that carried the Terrain Mapping Camera is not mentioned in the provided context. However, it is known that the Chandrayaan 2 mission, which was launched on July 22, 2019, carried a Terrain Mapping Camera (TMC) that was used to capture high-resolution images of the lunar surface. The TMC was developed by the Indian Space Research Organization (ISRO) and was designed to provide detailed information about the lunar terrain, including topography, craters, and other geological features. The images captured by the TMC were used to create a 3D digital elevation model of the lunar surface, which was used for scientific research",
+    "vanilla_rag_answer": "The ISRO mission that carried the Terrain Mapping Camera is not explicitly mentioned in the provided context. However, it is known that ISRO has several missions that carry cameras for various purposes, such as the Cartosat series for satellite imagery and the Terrain Mapping Camera (TMC) for topographic mapping. The TMC was carried by the INSAT-1E satellite and produced high-resolution topographic maps of India and its neighboring countries.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_122",
+    "question": "What instruments on Chandrayaan-1 confirmed the presence of water on the Moon?",
+    "reference_answer": "NASA's Moon Mineralogy Mapper (M3) aboard Chandrayaan-1 confirmed water locked in minerals on the Moon. The Moon Impact Probe's CHACE instrument also detected water vapour during descent.",
+    "tier": 2,
+    "kgrag_answer": "The instruments on Chandrayaan-1 that confirmed the presence of water on the Moon are not mentioned in the provided context.",
+    "bm25_answer": "The instruments on Chandrayaan-1 that confirmed the presence of water on the Moon are not mentioned in the provided context.",
+    "vanilla_rag_answer": "The instruments on Chandrayaan-1 that confirmed the presence of water on the Moon are not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_123",
+    "question": "Which ISRO satellite provides positioning for Indian naval vessels and what system does it belong to?",
+    "reference_answer": "NavIC (IRNSS) satellites provide positioning for Indian naval vessels via the Restricted Service (RS) encrypted channel, offering accuracy of 0.5 to 5 metres for defence applications.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO satellite that provides positioning for Indian naval vessels is not mentioned in the provided context.",
+    "bm25_answer": "The ISRO satellite that provides positioning for Indian naval vessels is the Indian Regional Navigation Satellite System (IRNSS). It is a constellation of 24 satellites that provide accurate positioning, navigation, and timing services to users in the Indian subcontinent and beyond. The IRNSS system is designed to meet the specific requirements of the Indian military and other users in the region.",
+    "vanilla_rag_answer": "The ISRO satellite that provides positioning for Indian naval vessels is not mentioned in the provided context. However, ISRO operates several satellite systems for navigation and positioning, including the Indian Regional Navigation Satellite System (IRNSS), the Geo-Synchronous Earth Orbit (GEO) Navigation Satellite System (GNS), and the Global Positioning System (GPS). It is possible that one of these systems provides positioning for Indian naval vessels, but without more specific information, it cannot be determined which satellite or system is being referred to.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_124",
+    "question": "What is the relationship between SAC and the RISAT satellite series?",
+    "reference_answer": "SAC in Ahmedabad designs and develops all optical and microwave sensors for ISRO's remote sensing satellites. The RISAT satellite series uses Synthetic Aperture Radar (SAR) payloads developed by SAC.",
+    "tier": 2,
+    "kgrag_answer": "The Space Applications Centre (SAC) is responsible for developing and managing the RISAT satellite series. The RISAT satellite series is a series of remote sensing satellites developed by ISRO for various applications, including meteorology, oceanography, and land use mapping. SAC has been collaborating with the Indian Navy for more than two-and-a-half decades to utilize the immense potential of satellite data for supporting and enhancing naval operations. SAC has enabled the Indian Navy with satellite data assimilation capabilities for generating weather and ocean outlooks, empowering them to achieve self-reliance in this domain. The MOSDAC-IN (Meteorological and Oceanographic Sat",
+    "bm25_answer": "The Space Applications Centre (SAC) is responsible for the development of space-borne and air-borne instruments/payloads and their applications for national development and societal benefits. The Centre has contributed significantly to scientific and planetary missions of ISRO, including the development of communication transponders for the Indian National Satellite (INSAT) and Geo Synchronous Satellite (GSAT) series of satellites. These transponders are used by government and private sector for various applications such as VSAT, DTH, Internet, broadcasting, and telephones. SAC also designs and develops the optical and microwave sensors for these satellites, signal and image processing software, GIS software",
+    "vanilla_rag_answer": "The SAC (Satellite Application Center) is a facility of the Indian Space Research Organization (ISRO) that is responsible for the design, development, and operation of the RISAT satellite series. The RISAT satellite series is a family of remote sensing satellites that are used for various applications such as land use and land cover mapping, crop monitoring, urban planning, and disaster management. The SAC plays a crucial role in the development and operation of the RISAT satellite series by providing technical support, data processing, and analysis services to users. The SAC also collaborates with other organizations and institutions to develop new technologies and applications for the RISAT satellite series.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_125",
+    "question": "Which ISRO mission marked India's entry into the commercial launch market?",
+    "reference_answer": "ISRO's first dedicated commercial launch was PSLV-C51/Amazonia-1 in February 2021, operated by NewSpace India Limited (NSIL), ISRO's commercial arm.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO mission that marked India's entry into the commercial launch market is not explicitly mentioned in the provided context. However, the context does mention several successful launches of various satellites and spacecraft, including the launch of Chandrayaan-2, the GSLV MkIII-M1, and the RISAT-2B. These launches were successful in their respective missions and have contributed to India's space program.",
+    "bm25_answer": "The ISRO mission that marked India's entry into the commercial launch market is not explicitly mentioned in the provided context.",
+    "vanilla_rag_answer": "The ISRO mission that marked India's entry into the commercial launch market is not explicitly mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_126",
+    "question": "What ISRO mission carried foreign payloads for the first time?",
+    "reference_answer": "Chandrayaan-1 was the first ISRO mission to carry significant foreign payloads, including instruments from NASA, ESA, and other international agencies. It carried 11 scientific instruments, 6 Indian and 5 international.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO mission that carried foreign payloads for the first time is not mentioned in the provided context.",
+    "bm25_answer": "The ISRO mission that carried foreign payloads for the first time is not mentioned in the provided context.",
+    "vanilla_rag_answer": "The answer to the question is not provided in the context above.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_127",
+    "question": "Which ISRO centre is responsible for tracking spacecraft and what mission did it support for Chandrayaan-2?",
+    "reference_answer": "ISRO Telemetry, Tracking and Command Network (ISTRAC) in Bengaluru is responsible for spacecraft tracking. For Chandrayaan-2, ISTRAC managed all mission operations including communication with Vikram during descent.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO centre responsible for tracking spacecraft is the ISRO Telemetry, Tracking and Command Network (ISTRAC). It supported the Chandrayaan-2 mission by tracking the spacecraft's movement and providing communication and control support.",
+    "bm25_answer": "The ISRO center responsible for tracking spacecraft is the ISRO Telemetry, Tracking and Command Network (ISTRAC). It supported the Chandrayaan-2 mission.",
+    "vanilla_rag_answer": "The ISRO centre responsible for tracking spacecraft is the Indian Space Research Organization (ISRO). It supported the Chandrayaan-2 mission, which was a lunar exploration mission that aimed to land a rover on the surface of the Moon and collect data.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_128",
+    "question": "What is the connection between GSLV Mk III and the Gaganyaan mission?",
+    "reference_answer": "The human-rated LVM3 (evolved GSLV Mk III) is the designated launch vehicle for Gaganyaan, enhanced with crew escape system, structural redundancies, and health monitoring for human spaceflight.",
+    "tier": 2,
+    "kgrag_answer": "The GSLV Mk III is a launch vehicle developed by the Indian Space Research Organization (ISRO) for the Gaganyaan mission, which aims to send an astronaut into space. The GSLV Mk III is designed to carry the Gaganyaan spacecraft, which will be launched from the Satish Dhawan Space Centre (SDSC) in Sriharikota, India. The GSLV Mk III is equipped with the CE-20 engine, which is intended for use in human-rated GSLV Mk III launch vehicles. The Gaganyaan mission is a significant step towards India's goal of becoming a space-faring nation and is expected to p",
+    "bm25_answer": "There is no direct connection between GSLV Mk III and the Gaganyaan mission mentioned in the context. GSLV Mk III is a space launch vehicle developed by India for launching satellites into orbit, while Gaganyaan is India's human spaceflight program. The Gaganyaan mission is expected to be launched using a different space launch vehicle, which has not been mentioned in the context.",
+    "vanilla_rag_answer": "There is no direct connection between GSLV Mk III and the Gaganyaan mission mentioned in the given context. GSLV Mk III is a space launch vehicle developed by ISRO for launching satellites into orbit, while Gaganyaan is India's human spaceflight mission that aims to send an astronaut into space.\n\nHowever, it is worth noting that GSLV Mk III has been used to launch several satellites that are part of India's space exploration program, including the Chandrayaan missions and the Mars Orbiter Mission. These satellites have contributed to our understanding of the Moon, Mars, and other celestial bodies, which in turn paves the",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_129",
+    "question": "Which ISRO scientist is credited with the development of the cryogenic engine?",
+    "reference_answer": "Dr. Nambi Narayanan and his team at LPSC are credited with pioneering ISRO's cryogenic engine programme. S. Somanath led development of the CE-7.5 indigenous cryogenic engine used in GSLV-D5.",
+    "tier": 2,
+    "kgrag_answer": "The provided context does not mention any ISRO scientist being credited with the development of the cryogenic engine.",
+    "bm25_answer": "The context does not provide any information about the ISRO scientist credited with the development of the cryogenic engine.",
+    "vanilla_rag_answer": "The provided context does not mention any ISRO scientist being credited with the development of the cryogenic engine.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_130",
+    "question": "What payload on Aditya-L1 studies solar energetic particles and what centre built it?",
+    "reference_answer": "The Suprathermal and Energetic Particle Spectrometer (STEPS), part of the ASPEX payload on Aditya-L1, studies solar energetic particles. ASPEX was developed by the Physical Research Laboratory (PRL), Ahmedabad.",
+    "tier": 2,
+    "kgrag_answer": "The payload on Aditya-L1 that studies solar energetic particles is the Solar Low Energy X-ray Spectrometer (SoLEXS). It was built by the U Rao Satellite Centre (URSC) in Bengaluru.",
+    "bm25_answer": "The payload on Aditya-L1 that studies solar energetic particles is not mentioned in the provided context.",
+    "vanilla_rag_answer": "The payload on Aditya-L1 is not explicitly stated in the provided context. However, it is mentioned that Aditya-L1 is a spacecraft that studies solar energetic particles. It is also mentioned that the center that built Aditya-L1 is the Indian Space Research Organization (ISRO).",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_131",
+    "question": "Which ISRO mission demonstrated aerobraking for the first time for India?",
+    "reference_answer": "Mangalyaan demonstrated India's first deep space mission propulsion management, using precise fuel-efficient manoeuvres for Mars approach. India became the first country to reach Mars orbit on its maiden attempt.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO mission that demonstrated aerobraking for the first time for India is not mentioned in the provided context.",
+    "bm25_answer": "The ISRO mission that demonstrated aerobraking for the first time for India is not mentioned in the provided context.",
+    "vanilla_rag_answer": "The ISRO mission that demonstrated aerobraking for the first time for India is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_132",
+    "question": "What is the relationship between Chandrayaan-2 orbiter and Chandrayaan-3 landing?",
+    "reference_answer": "The Chandrayaan-2 orbiter established two-way communication with Chandrayaan-3's Vikram lander before landing and later imaged the landing site using its high-resolution OHRC camera.",
+    "tier": 2,
+    "kgrag_answer": "The Chandrayaan-2 orbiter and Chandrayaan-3 landing are related in that the Chandrayaan-2 mission successfully inserted its spacecraft into the lunar orbit, and the Chandrayaan-3 mission is currently in the process of doing the same. The Chandrayaan-2 mission was designed to expand the lunar scientific knowledge through detailed study of topography, seismography, mineral identification and distribution, surface chemical composition, thermo-physical characteristics of top soil and composition of the tenuous lunar atmosphere, leading to a new understanding of the origin and evolution of the Moon. The Chandrayaan-3 mission, on the other hand, is designed to study the lun",
+    "bm25_answer": "The Chandrayaan-2 orbiter and Chandrayaan-3 landing are related in that the Chandrayaan-2 orbiter was used to gather data and information about the lunar surface, which was used to plan and execute the successful soft-landing of Chandrayaan-3 on the Moon. The Alpha Particle X-ray Spectrometer (APXS) onboard the Pragyan rover of Chandrayaan-3 measured the elemental composition at the Shiv Shakti Statio, which was found to closely resemble that of the first Lunar Meteorite ALHA 81005 discovered in Antarctica. This geochem",
+    "vanilla_rag_answer": "Chandrayaan-2 orbiter and Chandrayaan-3 landing are related in the sense that Chandrayaan-2 orbiter is a precursor to Chandrayaan-3 mission. Chandrayaan-2 orbiter was launched in 2018 and is currently in orbit around the Moon. Chandrayaan-3 mission, on the other hand, is a lunar lander mission that will land on the Moon and deploy a rover to collect samples and conduct experiments. The rover will be deployed from the lander and will operate independently for a period of time before returning to the lander for ascent and return to Earth. The Chandrayaan-3 mission is",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_133",
+    "question": "Which ISRO mission first used the GSLV Mk III and what payload did it carry?",
+    "reference_answer": "The first orbital GSLV Mk III flight was GSLV Mk III-D1 on June 5, 2017, carrying the GSAT-19 communication satellite.",
+    "tier": 2,
+    "kgrag_answer": "The GSLV Mk III was first used in the GSLV Mk III-D2 /GSAT-29 Mission, which was launched on November 14, 2018. The payload carried by the GSLV Mk III-D2 /GSAT-29 Mission was a communication satellite named GSAT-29.",
+    "bm25_answer": "The ISRO mission that first used the GSLV Mk III was the Chandrayaan-2 mission, which was launched on July 16, 2019. The payload carried by the GSLV Mk III for this mission was the Chandrayaan-2 spacecraft, which was designed to land on the Moon and collect data about its surface.",
+    "vanilla_rag_answer": "The ISRO mission that first used the GSLV Mk III was the Chandrayaan-2 mission, which was launched on July 16, 2019. The payload carried by the GSLV Mk III during this mission was the Chandrayaan-2 spacecraft, which was designed to land on the Moon and collect data about its surface.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_134",
+    "question": "What is the connection between AstroSat and India's astronomy research?",
+    "reference_answer": "AstroSat is India's first dedicated multi-wavelength space observatory, enabling simultaneous observation of celestial objects in ultraviolet, optical, and X-ray wavelengths.",
+    "tier": 2,
+    "kgrag_answer": "AstroSat is a 4-m class optical telescope that was launched in India in 2015. It is one of the major observing facilities that has been developed and operated in the country in recent years. According to the document, AstroSat is expected to play a significant role in Indian astronomy research in the coming years. It is mentioned that the telescope will enhance the wide-band capabilities of GMRT, a radio telescope, and enable research in various areas such as exoplanets, stellar abundances, and the study of active galactic nuclei. The document also mentions that AstroSat will be part of several large international telescope projects, including the Square",
+    "bm25_answer": "AstroSat is a space-based observatory that was launched by India in 2015 to study the universe in the X-ray and gamma-ray bands. It is an important part of India's astronomy research as it provides valuable data and insights into various astronomical phenomena, such as the study of black holes, neutron stars, and the universe's large-scale structure. The observatory has been instrumental in advancing our understanding of the universe and has contributed to several scientific discoveries. Additionally, AstroSat has also been used for technology development and education purposes.",
+    "vanilla_rag_answer": "The AstroSat is a space-based observatory launched by India in 2015 to study the universe in the X-ray and gamma-ray energy bands. The AstroSat is designed to provide a comprehensive study of the universe, including the study of celestial objects such as stars, galaxies, and black holes. The AstroSat is equipped with several scientific instruments that are designed to study the universe in different energy bands.\n\nThe AstroSat is an important tool for India's astronomy research as it provides a unique opportunity to study the universe in the X-ray and gamma-ray energy bands. The AstroSat is capable of studying celestial objects",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_135",
+    "question": "Which ISRO launch vehicle uses a cryogenic upper stage and when was it first successfully flown?",
+    "reference_answer": "GSLV uses an indigenous cryogenic upper stage. The first successful flight with the indigenous CE-7.5 cryogenic engine was GSLV-D5 on January 5, 2014, carrying GSAT-14.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO launch vehicle that uses a cryogenic upper stage is the LVM3 vehicle. The first successful flight of the LVM3 vehicle was on its maiden attempt in 2020.",
+    "bm25_answer": "The ISRO launch vehicle that uses a cryogenic upper stage is the LVM3 (GeoSat-2) launch vehicle. The first successful flight of the LVM3 launch vehicle with a cryogenic upper stage was on April 10, 2017.",
+    "vanilla_rag_answer": "The ISRO launch vehicle that uses a cryogenic upper stage is the Geosynchronous Satellite Launch Vehicle (GSLV). It was first successfully flown on April 18, 2001, when it launched the INSAT-2E satellite.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_136",
+    "question": "What ISRO mission first demonstrated orbit raising using onboard propulsion after separation?",
+    "reference_answer": "Chandrayaan-1 demonstrated orbit raising using its onboard Liquid Apogee Motor (LAM) after separation from PSLV, performing multiple manoeuvres to transfer from Earth orbit to lunar orbit.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO mission that first demonstrated orbit raising using onboard propulsion after separation is GSAT-7A. The first orbit raising maneuver of GSAT-7A satellite was successfully carried out on December 20, 2018, by firing the Liquid Apogee Motor (LAM) engine of the satellite for a duration of 3895 seconds.",
+    "bm25_answer": "The ISRO mission that first demonstrated orbit raising using onboard propulsion after separation is GSAT-31.",
+    "vanilla_rag_answer": "The ISRO mission that first demonstrated orbit raising using onboard propulsion after separation is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_137",
+    "question": "Which centre built the Vikram lander for Chandrayaan-3 and what propulsion system did it use?",
+    "reference_answer": "The Vikram lander was built and integrated by U R Rao Satellite Centre (URSC). The propulsion system using four throttleable liquid engines was developed by the Liquid Propulsion Systems Centre (LPSC).",
+    "tier": 2,
+    "kgrag_answer": "The Vikram lander for Chandrayaan-3 was built by the Space Applications Centre (SAC) in Bengaluru, India. The propulsion system used by the Vikram lander was a 11 m long, 1.7 m dia monolithic composite motor with a Propellant Mass of 30t.",
+    "bm25_answer": "The Vikram lander for Chandrayaan-3 was built by the Indian Space Research Organization (ISRO) and it used a hybrid propulsion system consisting of a combination of solid rocket engines and electric thrusters.",
+    "vanilla_rag_answer": "The Vikram lander for Chandrayaan-3 was built by the Space Applications Centre (SAC) in Bengaluru, India. The propulsion system used by the Vikram lander was a hybrid system that combined solid rocket boosters and a heat shield to protect the lander during its descent to the lunar surface.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_138",
+    "question": "What is the connection between the Reusable Launch Vehicle and ISRO's future cost reduction goals?",
+    "reference_answer": "ISRO's RLV-TD programme aims to develop a reusable two-stage-to-orbit vehicle targeting a tenfold reduction in launch costs, making India more competitive in the global commercial launch market.",
+    "tier": 2,
+    "kgrag_answer": "The Reusable Launch Vehicle (RLV) is a key component of ISRO's future cost reduction goals. The RLV is designed to be reused multiple times, reducing the cost of launching satellites into space. ISRO has been testing and improving the RLV, including the Small Satellite Launch vehicle (SSLV) and the Reusable Launch Vehicle 2 (RLV-2), with the aim of making space launches more affordable and accessible. Additionally, ISRO has been conducting various capacity building workshops and hackathons to inspire young innovators and develop new technologies that can further reduce the cost of space exploration.",
+    "bm25_answer": "The Reusable Launch Vehicle (RLV) is a key component of ISRO's future cost reduction goals. The RLV is designed to be reused multiple times, which would significantly reduce the cost of space launches compared to the current single-use launch vehicles. The RLV is expected to be used for a variety of missions, including satellite launches, space exploration, and human spaceflight. By reducing the cost of space launches, ISRO hopes to make space exploration more accessible and affordable to the Indian people and other countries.",
+    "vanilla_rag_answer": "The Reusable Launch Vehicle (RLV) is a key component of ISRO's future cost reduction goals. The RLV is designed to be reused multiple times, which can significantly reduce the cost of space launches. ISRO has been working on the development of the RLV, including the Reusable Upper Stage (RUS) and the Reusable Cryogenic Upper Stage (RCUS), which are expected to be used in future space missions. The RLV is also expected to be used in the Gaganyaan mission, which aims to send an Indian astronaut into space. The successful re-entry of the Cryogenic Upper Stage of LVM3 M4 on",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_139",
+    "question": "Which ISRO mission carried India's first indigenous cryogenic engine to orbit successfully?",
+    "reference_answer": "GSLV-D5, launched on January 5, 2014, was the first ISRO mission to successfully use an indigenously developed cryogenic engine (CE-7.5), placing GSAT-14 into orbit.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO mission that carried India's first indigenous cryogenic engine to orbit successfully is not mentioned in the provided context.",
+    "bm25_answer": "The ISRO mission that carried India's first indigenous cryogenic engine to orbit successfully is the LVM3/Chandrayaan-3 mission.",
+    "vanilla_rag_answer": "The ISRO mission that carried India's first indigenous cryogenic engine to orbit successfully is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_140",
+    "question": "What payload on Chandrayaan-3 lander studied the seismic activity of the Moon?",
+    "reference_answer": "The Instrument for Lunar Seismic Activity (ILSA) on Chandrayaan-3's Vikram lander studied seismic activity at the landing site. It was the first MEMS-based seismic instrument on the Moon.",
+    "tier": 2,
+    "kgrag_answer": "The payload on the Chandrayaan-3 lander that studied the seismic activity of the Moon is the Instrument for Lunar Seismic Activity (ILSA).",
+    "bm25_answer": "The payload on Chandrayaan-3 lander that studied the seismic activity of the Moon is not mentioned in the provided context.",
+    "vanilla_rag_answer": "I don't know. The provided context does not mention any payload on the Chandrayaan-3 lander that studied the seismic activity of the Moon.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_141",
+    "question": "Which ISRO satellite supports telemedicine services and which ministry operates it?",
+    "reference_answer": "ISRO's INSAT and GSAT satellites support telemedicine services in India, connecting remote hospitals to specialist centres under the Ministry of Health's telemedicine programme.",
+    "tier": 2,
+    "kgrag_answer": "It is not specified in the provided context which ISRO satellite supports telemedicine services. However, the Ministry of Health and Family Welfare operates the National Telemedicine Programme (NTP) in India, which utilizes satellite technology for remote healthcare services.",
+    "bm25_answer": "The ISRO satellite that supports telemedicine services is not mentioned in the provided context.",
+    "vanilla_rag_answer": "The ISRO satellite that supports telemedicine services is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_142",
+    "question": "What is the connection between SSLV and ISRO's small satellite launch market strategy?",
+    "reference_answer": "SSLV is designed as a low-cost, quick-turnaround vehicle assembled in 72 hours targeting the small satellite market — nanosatellites, microsatellites — where PSLV is too large and expensive.",
+    "tier": 2,
+    "kgrag_answer": "The SSLV (Small Satellite Launch Vehicle) is a launch vehicle developed by ISRO (Indian Space Research Organization) as a quick turnaround, on-demand launch vehicle that is amenable to industrial production and is targeted to cater to the global small satellite launch vehicle market. The SSLV is designed to launch satellites weighing up to 500 kg into Lower Earth Orbit (LEO). The technology transfer agreement signed between ISRO and NewSpace India Limited (NSIL) for the SSLV technology is a major milestone enabled by the space-sector reforms announced by the Government of India. The successful commercialization of SSLV is expected to boost the Indian space ecosystem and meet the",
+    "bm25_answer": "The SSLV (Small Satellite Launch Vehicle) is a 3-staged vehicle developed by ISRO for launching small satellites up to 500 kg. The vehicle is envisaged to capture the global launch service market for small satellites. The construction of the SSLV Launch Complex at Kulasekarapattinam, Tamil Nadu is primarily to address the polar launches of the SSLV. The complex is planned to have Upper Stage Assembly Facilities (UAF-I & UAF-II) for the preparation of the second and third stages of the SSLV vehicle along with a Launch Service Building (LSB). The launch complex is expected to be operational and",
+    "vanilla_rag_answer": "It is not clear from the given context what the connection between SSLV and ISRO's small satellite launch market strategy is. SSLV (Small Satellite Launch Vehicle) is a new initiative by ISRO to launch small satellites at a lower cost, while ISRO's small satellite launch market strategy is not mentioned in the given context. Further information or context is needed to understand the connection between these two concepts.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_143",
+    "question": "Which ISRO mission to the Moon used a Moon Impact Probe and what did it find?",
+    "reference_answer": "Chandrayaan-1 carried the Moon Impact Probe (MIP). After separation on November 14, 2008, its CHACE instrument detected water vapour during descent to the lunar south pole.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO mission to the Moon that used a Moon Impact Probe is not mentioned in the provided context.",
+    "bm25_answer": "The ISRO mission to the Moon that used a Moon Impact Probe is not mentioned in the provided context.",
+    "vanilla_rag_answer": "The ISRO mission to the Moon that used a Moon Impact Probe is not explicitly mentioned in the provided context. However, it is known that the Chandrayaan-2 mission, which was launched by ISRO in 2019, included a Moon Impact Probe named Vikram. The Vikram was designed to land on the Moon's surface and deploy a rover named Pradipan, but unfortunately, the Vikram lost communication with Earth and crashed on the Moon's surface. The rover Pradipan was also not able to deploy due to the failure of the Vikram.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_144",
+    "question": "What is the relationship between Vikram Sarabhai and the establishment of ISRO?",
+    "reference_answer": "Dr. Vikram Sarabhai founded ISRO in 1969, having earlier established INCOSPAR in 1962 and India's first rocket launch facility at Thumba. VSSC is named in his honour.",
+    "tier": 2,
+    "kgrag_answer": "Vikram Sarabhai was a key figure in the establishment of the Indian Space Research Organization (ISRO). He was the first Director of the organization and played a crucial role in its inception in the 1960s. Sarabhai was instrumental in launching India's first satellite, Aryabhata, in 1971, and he also played a significant role in the development of India's space program. He was a visionary leader who believed in the potential of space exploration and its benefits to the country. Sarabhai's leadership and vision helped establish ISRO as a world-class space agency and paved the way for India's continued growth and development",
+    "bm25_answer": "The context does not provide any information about the relationship between Vikram Sarabhai and the establishment of ISRO.",
+    "vanilla_rag_answer": "Vikram Sarabhai was the founder and first Chairman of the Indian Space Research Organization (ISRO). He played a crucial role in the establishment of ISRO in 1962, which was created to develop and implement India's space program. Sarabhai was a key figure in the Indian scientific community and was instrumental in promoting the development of space technology in India. He was also responsible for launching India's first satellite, Aryabhata, in 1971, which marked a significant milestone in India's space program.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_145",
+    "question": "Which ISRO satellite was the first to use electric propulsion and what mission was it part of?",
+    "reference_answer": "GSAT-20 (CMS-03), launched in 2024 aboard SpaceX's Falcon 9, was the first ISRO satellite to formally use electric propulsion (Hall thrusters) for orbit raising.",
+    "tier": 2,
+    "kgrag_answer": "The context does not provide information on the first ISRO satellite to use electric propulsion or the mission it was part of.",
+    "bm25_answer": "The ISRO satellite that was the first to use electric propulsion was not mentioned in the given context.",
+    "vanilla_rag_answer": "The ISRO satellite that was the first to use electric propulsion was not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_146",
+    "question": "What ISRO programme trains astronauts and which country collaborated with ISRO for it?",
+    "reference_answer": "Four Indian Air Force pilots were selected for Gaganyaan and underwent training at Russia's Gagarin Cosmonaut Training Center (GCTC) under a contract signed between ISRO and Roscosmos in June 2019.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO programme that trains astronauts is not mentioned in the provided context. However, it is mentioned that ISRO collaborated with the European Space Agency (ESA) for joint calibration/validation activities and scientific studies for Earth observation missions.",
+    "bm25_answer": "The ISRO programme that trains astronauts is the Gaganyaan Programme, and the country that collaborated with ISRO for it is the United States.",
+    "vanilla_rag_answer": "The ISRO programme that trains astronauts is not mentioned in the provided context. However, it is known that ISRO collaborates with other countries for astronaut training, such as the joint NASA-ISRO mission NISAR.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_147",
+    "question": "Which ISRO satellite provides data for the National Ocean Monitoring Service?",
+    "reference_answer": "ISRO's OCEANSAT series (OCEANSAT-1, 2, 3) provides data for the National Ocean Monitoring Service (NOMS) operated by the Ministry of Earth Sciences and INCOIS.",
+    "tier": 2,
+    "kgrag_answer": "I don't know.",
+    "bm25_answer": "The provided context does not mention any ISRO satellite that provides data for the National Ocean Monitoring Service.",
+    "vanilla_rag_answer": "It is not mentioned in the provided context which ISRO satellite provides data for the National Ocean Monitoring Service.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_148",
+    "question": "What is the connection between PSLV-C51 and Brazil's Amazonia-1 satellite?",
+    "reference_answer": "PSLV-C51 launched Brazil's Amazonia-1 satellite on February 28, 2021 — the first dedicated commercial mission of ISRO's commercial arm NewSpace India Limited (NSIL).",
+    "tier": 2,
+    "kgrag_answer": "There is no direct connection between PSLV-C51 and Brazil's Amazonia-1 satellite. The information provided in the context only mentions PSLV-C35, which is the launch vehicle that is scheduled to launch SCATSAT-1 on September 26, 2016. PSLV-C51 is not mentioned in the context.\n\nHowever, it is worth noting that PSLV-C35 is a reusable launch vehicle, and PSLV-C51 may be a future mission that utilizes the same launch vehicle. Additionally, the context mentions that the launch of SCATSAT-1 is expected to occur between",
+    "bm25_answer": "There is no direct connection between PSLV-C51 and Brazil's Amazonia-1 satellite. The information provided in the context above does not mention any details about PSLV-C51 or its launch, nor does it mention any details about Amazonia-1 or its launch. It is possible that PSLV-C51 was not launched or that it was launched for a different mission.",
+    "vanilla_rag_answer": "There is no direct connection between PSLV-C51 and Brazil's Amazonia-1 satellite. The information provided does not mention any launch or payload related to Amazonia-1 that was carried by PSLV-C51.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_149",
+    "question": "Which ISRO mission demonstrated indigenous docking technology?",
+    "reference_answer": "The SpaDeX (Space Docking Experiment) mission demonstrated indigenous docking technology. SDX01 and SDX02 successfully docked on January 16, 2025, making India the fourth country to master this capability.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO mission that demonstrated indigenous docking technology is not mentioned in the provided context.",
+    "bm25_answer": "The ISRO mission that demonstrated indigenous docking technology is not mentioned in the provided context.",
+    "vanilla_rag_answer": "The ISRO mission that demonstrated indigenous docking technology is not explicitly mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_150",
+    "question": "What is the relationship between the GSLV Mk III human rating and the Gaganyaan crewed mission?",
+    "reference_answer": "The GSLV Mk III required human rating for Gaganyaan, including additional redundancies, a crew escape system, structural upgrades, and enhanced health monitoring for crewed spaceflight.",
+    "tier": 2,
+    "kgrag_answer": "The GSLV Mk III human rating is a spacecraft designed by ISRO for human spaceflight. It is a part of the Gaganyaan crewed mission, which is a program by ISRO to send an Indian astronaut into space. The GSLV Mk III human rating is the spacecraft that will be used to carry the astronaut to the International Space Station (ISS) and back. The Gaganyaan mission is scheduled to launch in 2024, and the GSLV Mk III human rating is expected to be used for this mission.",
+    "bm25_answer": "The GSLV Mk III human rating and the Gaganyaan crewed mission are related in that the GSLV Mk III is the launch vehicle that will be used to carry the Gaganyaan crewed mission to space. The GSLV Mk III is being developed and tested as part of the Gaganyaan program, and the human rating of the vehicle is a critical part of the development process. The Gaganyaan crewed mission is a significant milestone for India's space program, and the successful launch of the GSLV Mk III with a human crew will be a major achievement for the country.",
+    "vanilla_rag_answer": "The GSLV Mk III human rating is a spacecraft that is designed to carry human crew to space. The Gaganyaan crewed mission is a specific mission that is planned to be carried out using the GSLV Mk III human rating spacecraft. The Gaganyaan mission is a part of India's space exploration program and is expected to carry out scientific research and exploration in space. The GSLV Mk III human rating is a key component of the Gaganyaan mission and is being developed by the Indian Space Research Organisation (ISRO) to support the mission.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_151",
+    "question": "What is the full form of SpaDeX and what did it demonstrate?",
+    "reference_answer": "SpaDeX stands for Space Docking Experiment. Launched aboard PSLV-C60 on December 30, 2024, it demonstrated India's indigenous Bharatiya Docking System (BDS) essential for future space station and lunar missions.",
+    "tier": 2,
+    "kgrag_answer": "The full form of SpaDeX is not explicitly mentioned in the given context. However, it is mentioned that the PSLV-C60 Mission launched a record number of 104 satellites, including the SPADEX spacecraft. Therefore, it can be assumed that SpaDeX is an acronym for the SPADEX spacecraft.\n\nAs for what SpaDeX demonstrated, it is also not explicitly mentioned in the given context. However, it is mentioned that the PSLV-C60 Mission was launched on December 30, 2024, and POEM-4 began its operations subsequent to the successful injection of the SPADEX spacecraft. Therefore",
+    "bm25_answer": "I don't know.",
+    "vanilla_rag_answer": "I don't know.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_152",
+    "question": "Which ISRO satellite first provided direct-to-home television services in India?",
+    "reference_answer": "INSAT-4A, launched in 2005, was the dedicated satellite that enabled large-scale DTH (Direct-to-Home) television broadcasting in India using Ku-band transponders.",
+    "tier": 2,
+    "kgrag_answer": "The provided context does not mention any ISRO satellite that first provided direct-to-home television services in India.",
+    "bm25_answer": "The provided context does not mention any ISRO satellite that first provided direct-to-home television services in India.",
+    "vanilla_rag_answer": "The provided context does not mention any ISRO satellite that first provided direct-to-home television services in India.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_153",
+    "question": "What payload on the Chandrayaan-2 orbiter studies the Moon's surface mineralogy?",
+    "reference_answer": "The Imaging Infrared Spectrometer (IIRS) on the Chandrayaan-2 orbiter studies lunar surface mineralogy across 250 spectral bands, including the 3-micrometre absorption band indicating water molecules.",
+    "tier": 2,
+    "kgrag_answer": "The payload on the Chandrayaan-2 orbiter that studies the Moon's surface mineralogy is the Alpha Particle X-ray Spectrometer (APXS).",
+    "bm25_answer": "The payload on the Chandrayaan-2 orbiter that studies the Moon's surface mineralogy is not mentioned in the provided context.",
+    "vanilla_rag_answer": "The payload on the Chandrayaan-2 orbiter that studies the Moon's surface mineralogy is the Alpha Particle X-ray Spectrometer (APXS).",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_154",
+    "question": "Which ISRO launch vehicle was derived from the ASLV programme?",
+    "reference_answer": "PSLV was derived from experience with the ASLV (Augmented Satellite Launch Vehicle) programme. ASLV was a stretched SLV-3, and lessons from its mixed record directly shaped the PSLV design.",
+    "tier": 2,
+    "kgrag_answer": "I don't know.",
+    "bm25_answer": "The ISRO launch vehicle derived from the ASLV programme is not explicitly mentioned in the provided context.",
+    "vanilla_rag_answer": "The ISRO launch vehicle derived from the ASLV programme is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_155",
+    "question": "What was the first operational PSLV mission and what satellite did it carry?",
+    "reference_answer": "The first operational PSLV mission was PSLV-D2, launched October 15, 1994, which successfully placed IRS-P2 into orbit — the first fully successful PSLV flight.",
+    "tier": 2,
+    "kgrag_answer": "The first operational PSLV mission was PSLV-C1, which was launched on April 10, 1997 and carried the Indian satellite IRS-P3.",
+    "bm25_answer": "The first operational PSLV mission was PSLV-C1, which was launched on April 10, 1997. It carried the Indian satellite IRS-1A.",
+    "vanilla_rag_answer": "The first operational PSLV mission was PSLV-C10, which was launched on April 12, 2005, and carried the INSAT-4C satellite.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_156",
+    "question": "Which ISRO mission carried instruments from NASA and ESA?",
+    "reference_answer": "Chandrayaan-1 carried instruments from NASA (Moon Mineralogy Mapper), ESA, and other international partners alongside Indian instruments — 11 scientific instruments in total from India, USA, UK, Germany, Sweden, and Bulgaria.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO mission that carried instruments from NASA and ESA is not mentioned in the provided context.",
+    "bm25_answer": "The ISRO mission that carried instruments from NASA and ESA is not mentioned in the provided text.",
+    "vanilla_rag_answer": "The ISRO mission that carried instruments from NASA and ESA is not mentioned in the given context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_157",
+    "question": "What is the connection between the Chandrayaan-2 orbiter's OHRC camera and lunar science?",
+    "reference_answer": "The OHRC (Orbiter High Resolution Camera) on Chandrayaan-2 captures images at approximately 0.32-metre resolution — the highest-resolution lunar camera ever flown — and imaged the Chandrayaan-3 Vikram lander after its August 2023 landing.",
+    "tier": 2,
+    "kgrag_answer": "The Chandrayaan-2 orbiter's OHRC camera is a high-resolution camera that will provide high-resolution images of the lunar surface, which will be immensely useful to the global scientific community. These images will provide detailed information about the minerals and water molecules present on the surface of the moon, which will help scientists understand the moon's evolution and mapping of the minerals and water molecules in Polar regions. The precise launch and mission management has ensured a long life of almost seven years instead of the planned one year, which will provide a wealth of data for lunar science.",
+    "bm25_answer": "The Chandrayaan-2 orbiter's OHRC (Orbiter High Resolution Camera) is used to capture high-resolution images of the lunar surface. These images are used in lunar science research to study the geology, topography, and other features of the moon. The images captured by the OHRC camera provide valuable data for scientists to understand the moon's history and evolution.",
+    "vanilla_rag_answer": "The Chandrayaan-2 orbiter's OHRC (Orbiter High Resolution Camera) is not directly mentioned in the context provided. However, the Chandrayaan-3 mission, which is currently in operation, has an OHRC camera that is used to capture high-resolution images of the lunar surface. The OHRC camera is one of the instruments onboard the Chandrayaan-3 orbiter and is designed to study the lunar surface in detail, including the presence of water ice and other geological features. The data collected by the OHRC camera and other instruments onboard the Chandrayaan-3 orbiter will contribute to our understanding of the Moon and its",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_158",
+    "question": "Which ISRO mission was the first to be launched from a mobile launch pad?",
+    "reference_answer": "The TV-D1 (Test Vehicle Abort Mission-1) on October 21, 2023 tested the Crew Escape System (CES) for Gaganyaan, successfully demonstrating in-flight abort at Mach 1.2 and safe crew module recovery.",
+    "tier": 2,
+    "kgrag_answer": "The context does not provide information about the first ISRO mission to be launched from a mobile launch pad.",
+    "bm25_answer": "The provided context does not mention any ISRO mission that was launched from a mobile launch pad.",
+    "vanilla_rag_answer": "The text does not provide any information about the first ISRO mission to be launched from a mobile launch pad.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_159",
+    "question": "What is the relationship between INSAT-4B and Ku-band services in India?",
+    "reference_answer": "INSAT-4B, launched in 2007, carried Ku-band transponders supporting DTH television and broadband internet services in India for operators including Tata Sky.",
+    "tier": 2,
+    "kgrag_answer": "The INSAT-4B satellite is a key component of India's space-based communication and broadcasting infrastructure. It is equipped with several Ku-band transponders that provide high-quality, high-speed communication services to various users, including government agencies, private enterprises, and individual consumers. The Ku-band services offered by INSAT-4B include direct-to-home (DTH) television broadcasting, internet connectivity, and voice calls. These services are critical for supporting India's economic growth, enhancing its global competitiveness, and improving the quality of life of its citizens.",
+    "bm25_answer": "The provided context does not mention any relationship between INSAT-4B and Ku-band services in India.",
+    "vanilla_rag_answer": "The INSAT-4B satellite is a communication satellite that provides Ku-band services in India. The Ku-band is a frequency band used for satellite communication and is used for various applications such as direct-to-home (DTH) television, internet connectivity, and mobile communication. The INSAT-4B satellite is one of the main satellites in the Indian Space Research Organization's (ISRO) INSAT system, which provides Ku-band services to various parts of India. The INSAT-4B satellite is used to provide DTH television services, internet connectivity, and mobile communication services to various parts of India.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_160",
+    "question": "Which ISRO mission first tested the crew escape system for Gaganyaan?",
+    "reference_answer": "The TV-D1 mission on October 21, 2023 was the first mission to test the Crew Escape System for Gaganyaan, validating abort capability at Mach 1.2.",
+    "tier": 2,
+    "kgrag_answer": "The ISRO mission that first tested the crew escape system for Gaganyaan is the Integrated Air Drop Test (IADT-01) for Gaganyaan Missions.",
+    "bm25_answer": "The ISRO mission that first tested the crew escape system for Gaganyaan was the Integrated Air Drop Test (IADT).",
+    "vanilla_rag_answer": "The context does not mention any ISRO mission that first tested the crew escape system for Gaganyaan.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_161",
+    "question": "How many years after Chandrayaan-1 was Chandrayaan-2 launched?",
+    "reference_answer": "Chandrayaan-1 launched October 22, 2008; Chandrayaan-2 launched July 22, 2019 — approximately 10 years and 9 months later.",
+    "tier": 3,
+    "kgrag_answer": "Chandrayaan-2 was launched on July 22, 2019, which is 9 years after the launch of Chandrayaan-1 on October 24, 2010.",
+    "bm25_answer": "Chandrayaan-2 was launched four years after Chandrayaan-1.",
+    "vanilla_rag_answer": "Chandrayaan-2 was launched on April 15, 2019, which is 8 years after the launch of Chandrayaan-1 on October 22, 2010.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_162",
+    "question": "Which came first -- Mangalyaan or Chandrayaan-2?",
+    "reference_answer": "Mangalyaan came first, launched November 5, 2013. Chandrayaan-2 was launched July 22, 2019.",
+    "tier": 3,
+    "kgrag_answer": "The information provided does not mention Mangalyaan or Chandrayaan-2.",
+    "bm25_answer": "Chandrayaan-2 was launched before Mangalyaan.",
+    "vanilla_rag_answer": "Chandrayaan-2 came first.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_163",
+    "question": "How many years did it take from ISRO's establishment to India's first Mars mission?",
+    "reference_answer": "ISRO was established August 15, 1969. Mangalyaan launched November 5, 2013 — approximately 44 years after ISRO's founding.",
+    "tier": 3,
+    "kgrag_answer": "The context does not provide information about India's first Mars mission.",
+    "bm25_answer": "The context provided does not mention any information about India's first Mars mission. Therefore, it is not possible to determine how long it took from ISRO's establishment to India's first Mars mission based on the given information.",
+    "vanilla_rag_answer": "It is not possible to determine the exact number of years it took from ISRO's establishment to India's first Mars mission based on the provided context. The context mentions several events and activities related to space exploration and technology development, but it does not provide specific information about the timeline for India's first Mars mission.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_164",
+    "question": "How many years between India's first satellite Aryabhata and first Moon mission Chandrayaan-1?",
+    "reference_answer": "Aryabhata launched April 19, 1975; Chandrayaan-1 launched October 22, 2008 — approximately 33 years between India's first satellite and first Moon mission.",
+    "tier": 3,
+    "kgrag_answer": "I don't know.",
+    "bm25_answer": "The context does not provide information on the launch date of India's first satellite Aryabhata or the launch date of India's first Moon mission Chandrayaan-1. Therefore, it is not possible to determine the number of years between the two events based on the given context.",
+    "vanilla_rag_answer": "The article does not provide a direct answer to the question about the years between India's first satellite Aryabhata and first Moon mission Chandrayaan-1. However, it does mention that India's first satellite, Aryabhata, was launched in 1960 and India's first Moon mission, Chandrayaan-1, was launched in 2008. Therefore, the difference between the two events is 48 years.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_165",
+    "question": "Was Aditya-L1 launched before or after Chandrayaan-3 landed on the Moon?",
+    "reference_answer": "Chandrayaan-3 landed August 23, 2023. Aditya-L1 launched September 2, 2023 — Aditya-L1 was launched after Chandrayaan-3 landed.",
+    "tier": 3,
+    "kgrag_answer": "The information provided does not mention the launch of Aditya-L1 in relation to the Chandrayaan-3 mission. The article discusses the successful completion of the Lunar Orbit Insertion (LOI) for Chandrayaan-3 and the upcoming maneuvers to reduce its orbit and facilitate a soft landing in the South Polar region of the Moon.",
+    "bm25_answer": "Aditya-L1 was launched before Chandrayaan-3 landed on the Moon. The launch of Aditya-L1 was on December 22, 2024, and the landing of Chandrayaan-3 on the Moon was on April 16, 2021.",
+    "vanilla_rag_answer": "The answer cannot be determined based on the provided context. The information provided only mentions the launch of Aditya-L1 and the landing of Chandrayaan-3 on the Moon, but does not provide any information on the order in which these events occurred.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_166",
+    "question": "How long did Mangalyaan operate beyond its designed mission life of 6 months?",
+    "reference_answer": "Mangalyaan was designed for 6 months but operated until 2022 — approximately 7.5 years total, operating roughly 7 years beyond its designed mission life.",
+    "tier": 3,
+    "kgrag_answer": "The provided context does not mention the duration of Mangalyaan's operation beyond its designed mission life of 6 months.",
+    "bm25_answer": "The information provided does not mention the duration of Mangalyaan's operation beyond its designed mission life of 6 months.",
+    "vanilla_rag_answer": "The provided context does not contain any information about Mangalyaan operating beyond its designed mission life of 6 months.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_167",
+    "question": "Which was launched first -- GSLV Mk III-D1 or PSLV-C37?",
+    "reference_answer": "PSLV-C37 launched February 15, 2017. GSLV Mk III-D1 launched June 5, 2017 — PSLV-C37 was launched first.",
+    "tier": 3,
+    "kgrag_answer": "GSLV Mk III-D1 was launched first. The countdown for the launch of GSLV Mk III-D2 /GSAT-29 Mission from Satish Dhawan Space Centre SHAR,Sriharikota started today at 14:50 Hrs IST. The launch is scheduled at 17:08 Hrs IST on 14th November 2018.",
+    "bm25_answer": "GSLV Mk III-D1 was launched first.",
+    "vanilla_rag_answer": "The context above does not mention the launch of GSLV Mk III-D1. The context only mentions the launch of PSLV-C37, which was launched on April 19, 2018.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_168",
+    "question": "In what order were these missions launched: Chandrayaan-1, Mangalyaan, Chandrayaan-2, Chandrayaan-3?",
+    "reference_answer": "In order: Chandrayaan-1 (October 2008), Mangalyaan (November 2013), Chandrayaan-2 (July 2019), Chandrayaan-3 (July 2023).",
+    "tier": 3,
+    "kgrag_answer": "1. Chandrayaan-1\n2. Mangalyaan\n3. Chandrayaan-2\n4. Chandrayaan-3",
+    "bm25_answer": "1. Chandrayaan-1\n2. Mangalyaan\n3. Chandrayaan-2\n4. Chandrayaan-3",
+    "vanilla_rag_answer": "1. Chandrayaan-1\n2. Mangalyaan\n3. Chandrayaan-2 (scheduled for July 22, 2019)\n4. Chandrayaan-3 (not mentioned in the context)",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_169",
+    "question": "How many years passed between India's first successful GSLV flight and the first GSLV Mk III flight?",
+    "reference_answer": "First successful GSLV flight: GSLV-D2, May 8, 2003. First GSLV Mk III orbital flight: June 5, 2017 — approximately 14 years between the two milestones.",
+    "tier": 3,
+    "kgrag_answer": "The first successful GSLV flight was on 18 April 2001, and the first GSLV Mk III flight was on 18 May 2025. Therefore, the time difference between these two events is 24 years.",
+    "bm25_answer": "The first successful GSLV flight was in 2001, and the first GSLV Mk III flight was in 2017. Therefore, 16 years passed between India's first successful GSLV flight and the first GSLV Mk III flight.",
+    "vanilla_rag_answer": "The first successful GSLV flight was on April 18, 2001, and the first GSLV Mk III flight was on December 18, 2014. Therefore, the difference between these two events is 13 years.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_170",
+    "question": "Was Chandrayaan-3 launched before or after India's 75th Independence Day?",
+    "reference_answer": "India's 75th Independence Day was August 15, 2022. Chandrayaan-3 launched July 14, 2023 — Chandrayaan-3 was launched after India's 75th Independence Day.",
+    "tier": 3,
+    "kgrag_answer": "Chandrayaan-3 was launched before India's 75th Independence Day. The satellite was successfully launched on-board LVM3 from SDSC SHAR, Sriharikota on July 14, 2023, at 14:35 Hrs. IST.",
+    "bm25_answer": "Chandrayaan-3 was launched after India's 75th Independence Day. The launch date for Chandrayaan-3 was August 14, 2019, which is after India's 75th Independence Day on August 15, 2019.",
+    "vanilla_rag_answer": "Chandrayaan-3 was launched after India's 75th Independence Day.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_171",
+    "question": "How many days after Chandrayaan-3 landing did Aditya-L1 launch?",
+    "reference_answer": "Chandrayaan-3 landed August 23, 2023. Aditya-L1 launched September 2, 2023 — 10 days after Chandrayaan-3's landing.",
+    "tier": 3,
+    "kgrag_answer": "The question asks for the number of days after Chandrayaan-3 landed on the Moon. However, the provided context does not mention the date of the landing. Therefore, it is not possible to provide an answer based on the given information.",
+    "bm25_answer": "The context does not provide information on the launch date of Aditya-L1.",
+    "vanilla_rag_answer": "The article does not mention the launch date of Aditya-L1 in relation to the Chandrayaan-3 landing.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_172",
+    "question": "How many years after Aryabhata did India launch its first remote sensing satellite IRS-1A?",
+    "reference_answer": "Aryabhata launched April 19, 1975; IRS-1A launched March 17, 1988 — approximately 13 years later.",
+    "tier": 3,
+    "kgrag_answer": "It is not mentioned in the given context how many years after Aryabhata did India launch its first remote sensing satellite IRS-1A.",
+    "bm25_answer": "It is not clear from the provided context how many years after Aryabhata India launched its first remote sensing satellite IRS-1A. Aryabhata was a 5th-century Indian mathematician, astronomer, and geographer who is widely regarded as the father of Indian mathematics and astronomy. He is credited with developing the Aryabhata Samhita, a mathematical and astronomical text that contains a number of important results in mathematics, astronomy, and geography. However, there is no information provided in the context about the launch of IRS-1A or its relationship to Aryabhata.",
+    "vanilla_rag_answer": "It is not possible to determine the exact number of years after Aryabhata that India launched its first remote sensing satellite IRS-1A based on the given context. The context only provides information about the launch of IRS-1A and its specifications, but does not mention the date or year of its launch. Additionally, there is no mention of Aryabhata in the context, making it unclear how the two events are related.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_173",
+    "question": "Which ISRO mission came immediately after Chandrayaan-1 in the lunar exploration sequence?",
+    "reference_answer": "Chandrayaan-2 (2019) came immediately after Chandrayaan-1 (2008) in ISRO's lunar exploration sequence.",
+    "tier": 3,
+    "kgrag_answer": "The ISRO mission that came immediately after Chandrayaan-1 in the lunar exploration sequence was Chandrayaan-2.",
+    "bm25_answer": "The ISRO mission that came immediately after Chandrayaan-1 in the lunar exploration sequence is not mentioned in the provided context.",
+    "vanilla_rag_answer": "The ISRO mission that came immediately after Chandrayaan-1 in the lunar exploration sequence is not mentioned in the provided context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_174",
+    "question": "How many years did it take from the first PSLV flight to PSLV-C37's record-breaking launch?",
+    "reference_answer": "First PSLV flight: September 20, 1993. PSLV-C37 record-breaking launch: February 15, 2017 — approximately 23 years and 5 months.",
+    "tier": 3,
+    "kgrag_answer": "It is not clear from the provided context how many years it took from the first PSLV flight to PSLV-C37's record-breaking launch. The context only mentions that PSLV-C3 underwent an accidental break-up in 2001 and generated 371 debris, while most of these fragments have re-entered the atmosphere. It also mentions that PSLV-C37 was launched in 2020, but it does not provide any information about the time gap between the first PSLV flight and PSLV-C37's launch.",
+    "bm25_answer": "It is not clear from the provided context how many years it took from the first PSLV flight to PSLV-C37's record-breaking launch.",
+    "vanilla_rag_answer": "It is not clear from the provided context how many years it took from the first PSLV flight to PSLV-C37's record-breaking launch. The provided context only mentions the successful sea level hot test of the CE20 cryogenic engine at 22 tonne thrust level with a full area nozzle on March 10, 2026.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_175",
+    "question": "Was AstroSat launched before or after Mangalyaan?",
+    "reference_answer": "Mangalyaan launched November 5, 2013; AstroSat launched September 28, 2015 — AstroSat was launched after Mangalyaan.",
+    "tier": 3,
+    "kgrag_answer": "It is not clear from the given context whether AstroSat was launched before or after Mangalyaan.",
+    "bm25_answer": "It is not mentioned in the provided context whether AstroSat was launched before or after Mangalyaan.",
+    "vanilla_rag_answer": "It is not clear from the provided context whether AstroSat was launched before or after Mangalyaan.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_176",
+    "question": "How many years between ISRO's founding and India's first operational remote sensing satellite?",
+    "reference_answer": "ISRO established August 15, 1969; IRS-1A launched March 17, 1988 — approximately 19 years between ISRO's founding and its first operational remote sensing satellite.",
+    "tier": 3,
+    "kgrag_answer": "It is not clear from the provided context how many years it took for India to launch its first operational remote sensing satellite. The text mentions that the Laboratory for Electro-Optics Systems (LEOS) deals with the development and delivery of Optical Systems for remote sensing and meteorological payloads, but it does not provide any information about when India's first operational remote sensing satellite was launched.",
+    "bm25_answer": "The Indian National Space Promotion and Authorization Center (IN-SPACe) was formed following the Space sector reforms to enable and facilitate the participation of private players. It is responsible to promote, enable authorize and supervise various space activities of non-governmental entities including building launch vehicles & satellites and providing space-based services; sharing space infrastructure and premises under the control of DOS/ISRO; and establishing of new space infrastructure and facilities. The agency acts as an interface between ISRO and Non-Governmental Entities (NGEs) and assesses how to utilize India's space resources better and increase space-based activities. It also assesses the needs and demands of private",
+    "vanilla_rag_answer": "I don't know.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_177",
+    "question": "Which happened first -- Chandrayaan-3 landing or the announcement of Gaganyaan astronaut names?",
+    "reference_answer": "Chandrayaan-3 landed August 23, 2023. The four Gaganyaan astronaut names were announced February 27, 2024 — Chandrayaan-3 landing happened first.",
+    "tier": 3,
+    "kgrag_answer": "The announcement of Gaganyaan astronaut names happened first.",
+    "bm25_answer": "The announcement of Gaganyaan astronaut names happened first.",
+    "vanilla_rag_answer": "The Chandrayaan-3 landing happened first. The ISRO Robotics Challenge – URSC (IRoC-U) 2026 was conceived in the spirit of innovation, self-reliance, and scientific excellence to commemorate the historic soft landing of the Chandrayaan-3 Vikram Lander near the lunar south pole.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_178",
+    "question": "How many ISRO lunar missions were launched before Chandrayaan-3?",
+    "reference_answer": "Two ISRO lunar missions were launched before Chandrayaan-3: Chandrayaan-1 (2008) and Chandrayaan-2 (2019).",
+    "tier": 3,
+    "kgrag_answer": "The text does not provide a definitive answer to this question.",
+    "bm25_answer": "The context does not provide information on the number of ISRO lunar missions launched before Chandrayaan-3.",
+    "vanilla_rag_answer": "The text does not provide a specific number of ISRO lunar missions launched before Chandrayaan-3. However, it does mention that Chandrayaan-3 is the third lunar mission launched by ISRO, following Chandrayaan-1 and Chandrayaan-2.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_179",
+    "question": "How many years after SLV-3 success did ISRO develop the ASLV?",
+    "reference_answer": "SLV-3 first successful flight: July 18, 1980. ASLV first flew March 24, 1987 — approximately 7 years later.",
+    "tier": 3,
+    "kgrag_answer": "It is not clear from the provided information how many years after SLV-3 success ISRO developed the ASLV.",
+    "bm25_answer": "The context does not provide information about the development of the ASLV after the SLV-3 success.",
+    "vanilla_rag_answer": "The context does not provide information on the development of the ASLV after the SLV-3 success.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_180",
+    "question": "In what order were these launch vehicles first flown: SLV, ASLV, PSLV, GSLV?",
+    "reference_answer": "In order of first flight: SLV (1980), ASLV (1987), PSLV (1993), GSLV (2001).",
+    "tier": 3,
+    "kgrag_answer": "1. SLV\n2. ASLV\n3. PSLV\n4. GSLV",
+    "bm25_answer": "The context does not provide information on the order in which these launch vehicles were first flown.",
+    "vanilla_rag_answer": "The launch vehicles mentioned in the context are:\n\n1. SLV (Satellite Launch Vehicle)\n2. ASLV (Advanced Satellite Launch Vehicle)\n3. PSLV (Polar Satellite Launch Vehicle)\n4. GSLV (Geostationary Satellite Launch Vehicle)\n\nHowever, the order in which they were first flown is not mentioned in the context.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_181",
+    "question": "How many years after Chandrayaan-2 did Chandrayaan-3 successfully land on the Moon?",
+    "reference_answer": "Chandrayaan-2 launched July 22, 2019; Chandrayaan-3 landed August 23, 2023 — approximately 4 years after Chandrayaan-2.",
+    "tier": 3,
+    "kgrag_answer": "Chandrayaan-3 successfully landed on the Moon on August 23, 2023. Chandrayaan-2 was launched on April 24, 2019. Therefore, Chandrayaan-3 successfully landed on the Moon 4 years after Chandrayaan-2.",
+    "bm25_answer": "The information provided does not mention any specific date for the launch of Chandrayaan-3. However, it does mention that Chandrayaan-2 was successfully launched on April 22, 2019, and was inserted into lunar orbit on August 20, 2019. The mission was designed to last for one year, but due to precise launch and mission management, it has already been operating for almost seven years as of the information provided.",
+    "vanilla_rag_answer": "The article does not mention the launch date of Chandrayaan-3, but it does mention that Chandrayaan-2 is still in good health and providing data. Therefore, it is not possible to determine how many years after Chandrayaan-2 Chandrayaan-3 successfully landed on the Moon based on the information provided.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_182",
+    "question": "Was GSAT-11 launched before or after India's anti-satellite test Mission Shakti?",
+    "reference_answer": "GSAT-11 launched December 4, 2018. Mission Shakti was March 27, 2019 — GSAT-11 was launched before Mission Shakti.",
+    "tier": 3,
+    "kgrag_answer": "It is not clear from the provided context whether GSAT-11 was launched before or after India's anti-satellite test Mission Shakti. The context only mentions GSAT-11 as a payload for a future GSLV-F17 mission, but does not provide any information about its launch date in relation to Mission Shakti.",
+    "bm25_answer": "It is not specified in the given context whether GSAT-11 was launched before or after India's anti-satellite test Mission Shakti.",
+    "vanilla_rag_answer": "It is not mentioned in the provided context whether GSAT-11 was launched before or after India's anti-satellite test Mission Shakti.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_183",
+    "question": "How many years did it take ISRO to go from first satellite launch to first Moon mission?",
+    "reference_answer": "ISRO established 1969; first successful orbit (Rohini RS-1) July 18, 1980 — approximately 11 years.",
+    "tier": 3,
+    "kgrag_answer": "It is not clear from the provided context how many years it took ISRO to go from its first satellite launch to its first Moon mission. The context discusses the current status of the Chandrayaan-3 mission and the upcoming Lunar bound orbit maneuver, but does not provide information on the timeline for these missions or how they relate to ISRO's first satellite launch.",
+    "bm25_answer": "It is not clear from the provided context how many years it took ISRO to go from its first satellite launch to its first Moon mission.",
+    "vanilla_rag_answer": "It is not possible to determine the exact number of years it took ISRO to go from its first satellite launch to its first Moon mission based on the provided context. The context mentions several events related to ISRO's activities, but it does not provide specific information about the timing of these events in relation to the first satellite launch and the first Moon mission.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_184",
+    "question": "Which came first -- Chandrayaan-2 launch or the commissioning of GSAT-29?",
+    "reference_answer": "Chandrayaan-2 launched July 22, 2019. GSAT-29 launched November 14, 2018 — GSAT-29 came first.",
+    "tier": 3,
+    "kgrag_answer": "The commissioning of GSAT-29 came first. The 48-hour countdown for the launch of GSAT-29 started on Monday, June 20, 2016, while the launch of Chandrayaan-2 was scheduled for April 15, 2019.",
+    "bm25_answer": "The commissioning of GSAT-29 (which is not mentioned in the context) came before the launch of Chandrayaan-2.",
+    "vanilla_rag_answer": "The commissioning of GSAT-29 came first. The launch of Chandrayaan-2 was scheduled for April 22, 2019, but was postponed due to technical issues. The launch of Chandrayaan-2 was eventually carried out on July 16, 2019.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_185",
+    "question": "How many months did Chandrayaan-2 take to reach the Moon from launch?",
+    "reference_answer": "Chandrayaan-2 launched July 22, 2019 and reached lunar orbit August 20, 2019 — approximately 29 days to reach the Moon from launch.",
+    "tier": 3,
+    "kgrag_answer": "It is not clear from the provided context how long it took for Chandrayaan-2 to reach the Moon from launch. The text mentions that the spacecraft was successfully inserted into lunar orbit on August 20, 2019, but it does not provide information on the duration of the journey from launch to lunar orbit insertion.",
+    "bm25_answer": "The article does not provide information on how long it took for Chandrayaan-2 to reach the Moon from launch.",
+    "vanilla_rag_answer": "The answer to the question is not provided in the context above.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_186",
+    "question": "In what year did ISRO cross the milestone of 100 total launches?",
+    "reference_answer": "ISRO crossed the 100 total launches milestone around 2017 to 2020, with PSLV-C50 in December 2020 being PSLV's 50th flight.",
+    "tier": 3,
+    "kgrag_answer": "The year provided in the context is 2025.",
+    "bm25_answer": "It is not mentioned in the given context when ISRO crossed the milestone of 100 total launches.",
+    "vanilla_rag_answer": "The provided context does not mention the year when ISRO crossed the milestone of 100 total launches.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_187",
+    "question": "How many years after Vikram Sarabhai's death was ISRO's first successful satellite launch?",
+    "reference_answer": "Vikram Sarabhai died December 30, 1971. India's first successful satellite launch (Rohini RS-1) was July 18, 1980 — approximately 8.5 years after his death.",
+    "tier": 3,
+    "kgrag_answer": "It is not clear from the provided context when ISRO's first successful satellite launch was.",
+    "bm25_answer": "The context does not provide information about ISRO's first successful satellite launch.",
+    "vanilla_rag_answer": "It is not clear from the provided context when Vikram Sarabhai passed away. However, the first successful satellite launch by ISRO was on April 19, 1965, which was 52 years after Vikram Sarabhai's death.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_188",
+    "question": "Was the SpaDeX mission launched before or after Chandrayaan-3?",
+    "reference_answer": "SpaDeX launched December 30, 2024. Chandrayaan-3 landed August 23, 2023 — SpaDeX was launched after Chandrayaan-3.",
+    "tier": 3,
+    "kgrag_answer": "The SpaDeX mission was launched before Chandrayaan-3. The SpaDeX mission was launched on July 20, 2019, while Chandrayaan-3 is scheduled for launch on July 22, 2019.",
+    "bm25_answer": "The SpaDeX mission was launched before Chandrayaan-3.",
+    "vanilla_rag_answer": "The SpaDeX mission was launched before Chandrayaan-3.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_189",
+    "question": "How many years passed between India's first Mars mission and the proposed Mangalyaan-2?",
+    "reference_answer": "Mangalyaan launched November 2013. As of 2026, Mangalyaan-2 has been proposed but not yet launched — over 12 years have passed since the first mission.",
+    "tier": 3,
+    "kgrag_answer": "The context does not provide information about India's first Mars mission. Therefore, it is not possible to determine how many years passed between India's first Mars mission and the proposed Mangalyaan-2.",
+    "bm25_answer": "The context does not provide information about India's first Mars mission. Therefore, it is not possible to determine how many years passed between India's first Mars mission and the proposed Mangalyaan-2.",
+    "vanilla_rag_answer": "The context does not provide information about India's first Mars mission or the proposed Mangalyaan-2. Therefore, it is not possible to determine how many years passed between these two missions.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_190",
+    "question": "Which was announced first -- Gaganyaan or Chandrayaan-3?",
+    "reference_answer": "Gaganyaan was announced by Prime Minister Modi on August 15, 2018. Chandrayaan-3 was formally approved in January 2020 — Gaganyaan was announced first.",
+    "tier": 3,
+    "kgrag_answer": "Chandrayaan-3 was announced first.",
+    "bm25_answer": "Chandrayaan-3 was announced first.",
+    "vanilla_rag_answer": "Gaganyaan was announced first.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_191",
+    "question": "How many days did Mangalyaan take to travel from Earth to Mars?",
+    "reference_answer": "Mangalyaan traversed deep space for approximately 300 days before entering Mars orbit on September 24, 2014.",
+    "tier": 3,
+    "kgrag_answer": "The context does not provide information about the time it took for Mangalyaan to travel from Earth to Mars.",
+    "bm25_answer": "The provided context does not mention the time it took for Mangalyaan to travel from Earth to Mars.",
+    "vanilla_rag_answer": "The context does not provide information about the time it took for Mangalyaan to travel from Earth to Mars.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_192",
+    "question": "In what order were these ISRO space science missions launched: Astrosat, Chandrayaan-1, Aditya-L1, Mangalyaan?",
+    "reference_answer": "In order of launch: Chandrayaan-1 (October 2008), Mangalyaan (November 2013), AstroSat (September 2015), Aditya-L1 (September 2023).",
+    "tier": 3,
+    "kgrag_answer": "1. Chandrayaan-1\n2. Astrosat\n3. Mangalyaan\n4. Aditya-L1\n\nNote: The information provided in the context only mentions the following ISRO space science missions: Chandrayaan-1, Astrosat, Mangalyaan, and Aditya-L1. Therefore, the order of their launch cannot be determined based solely on the provided context.",
+    "bm25_answer": "1. Astrosat\n2. Chandrayaan-1\n3. Aditya-L1\n4. Mangalyaan",
+    "vanilla_rag_answer": "1. Astrosat\n2. Chandrayaan-1\n3. Aditya-L1\n4. Mangalyaan",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_193",
+    "question": "How many years after NavIC's first satellite launch was the full constellation completed?",
+    "reference_answer": "The first NavIC satellite (IRNSS-1A) launched July 1, 2013. The constellation was declared operational with 7 satellites in April 2016 — approximately 3 years to complete the initial constellation.",
+    "tier": 3,
+    "kgrag_answer": "It is not clear from the provided context when the first satellite of NavIC (India's satellite-based navigation system) was launched. However, it is mentioned that the full constellation of NavIC was completed in 2020.",
+    "bm25_answer": "The context does not provide information about the completion of the full constellation of NavIC.",
+    "vanilla_rag_answer": "The context does not provide information about the completion of the full constellation of NavIC.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_194",
+    "question": "Was Chandrayaan-3 launched in the same year as Aditya-L1?",
+    "reference_answer": "Yes. Both Chandrayaan-3 (July 14, 2023) and Aditya-L1 (September 2, 2023) were launched in the same year, 2023.",
+    "tier": 3,
+    "kgrag_answer": "No, Chandrayaan-3 was launched in 2023, while Aditya-L1 is scheduled for launch in 2026.",
+    "bm25_answer": "No, Chandrayaan-3 and Aditya-L1 were not launched in the same year. Chandrayaan-3 was launched on 16 April 2020 and Aditya-L1 was launched on 11 April 2021.",
+    "vanilla_rag_answer": "No, Chandrayaan-3 was launched in 2019, while Aditya-L1 was launched in 2020.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_195",
+    "question": "How many years after ISRO's founding did India achieve its first successful orbit?",
+    "reference_answer": "ISRO established August 15, 1969. India's first successful orbit (Rohini RS-1) was July 18, 1980 — approximately 11 years after ISRO's founding.",
+    "tier": 3,
+    "kgrag_answer": "The article does not provide information on when India achieved its first successful orbit.",
+    "bm25_answer": "The provided context does not mention the year when India achieved its first successful orbit.",
+    "vanilla_rag_answer": "The context does not provide information about when India achieved its first successful orbit.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_196",
+    "question": "Which came first -- ISRO's first commercial launch or India's first operational communication satellite?",
+    "reference_answer": "India's first operational communication satellite INSAT-1B entered service in 1983. ISRO's first dedicated commercial launch came in the early 2000s — the communication satellite came first.",
+    "tier": 3,
+    "kgrag_answer": "India's first operational communication satellite, INSAT-1A, was launched by ISRO on April 19, 1994. ISRO's first commercial launch, of the GSAT-1 satellite, was on April 20, 1996. Therefore, India's first operational communication satellite came before ISRO's first commercial launch.",
+    "bm25_answer": "India's first operational communication satellite, INSAT-1A, was launched by ISRO on April 19, 1994. Therefore, ISRO's first commercial launch, which was the launch of the IRNSS-1I navigation satellite on April 12, 2018, came after India's first operational communication satellite.",
+    "vanilla_rag_answer": "India's first operational communication satellite, INSAT-1A, was launched by ISRO on April 19, 1994. Therefore, India's first operational communication satellite came before ISRO's first commercial launch.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_197",
+    "question": "How many years between PSLV's first flight and its 50th flight?",
+    "reference_answer": "PSLV first flew September 20, 1993. PSLV's 50th flight was PSLV-C50 on December 17, 2020 — approximately 27 years between first and 50th flights.",
+    "tier": 3,
+    "kgrag_answer": "The PSLV's first flight was on April 10, 1993, and its 50th flight was on March 29, 2018. Therefore, the number of years between PSLV's first flight and its 50th flight is 24 years and 9 months.",
+    "bm25_answer": "The first flight of the PSLV (Polar Satellite Launch Vehicle) was on April 10, 1997. Its 50th flight was on February 14, 2022. Therefore, the number of years between the first flight and the 50th flight is 24 years and 4 months.",
+    "vanilla_rag_answer": "The PSLV's first flight was on April 10, 1997, and its 50th flight was on January 12, 2018. Therefore, the number of years between the two events is 20 years and 2 months.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_198",
+    "question": "Was the Chandrayaan-2 orbiter still operational when Chandrayaan-3 landed?",
+    "reference_answer": "Yes. The Chandrayaan-2 orbiter was fully operational when Chandrayaan-3 landed on August 23, 2023. It established two-way communication with Vikram and imaged the landing site.",
+    "tier": 3,
+    "kgrag_answer": "No, the Chandrayaan-2 orbiter was not still operational when Chandrayaan-3 landed. The Chandrayaan-2 mission had ended in October 2019 after the Vikram Lander lost communication with the ground stations during its descent towards the lunar surface. The Chandrayaan-3 mission, on the other hand, landed on the South Polar region of the Moon on August 23, 2023.",
+    "bm25_answer": "The provided context does not mention anything about the Chandrayaan-2 orbiter being operational when Chandrayaan-3 landed. However, it does mention that the Chandrayaan-2 mission had a hard landing, and the National Level Expert Committee was formed to investigate the reasons for the hard landing and recommend necessary improvements. The success of Chandrayaan-3 is attributed to the improvements made based on the committee's recommendations.",
+    "vanilla_rag_answer": "The article does not mention whether the Chandrayaan-2 orbiter was still operational when Chandrayaan-3 landed.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_199",
+    "question": "How many years after the first GSLV failure did ISRO achieve a fully indigenous GSLV success with indigenous cryogenic engine?",
+    "reference_answer": "First GSLV failure with indigenous cryogenic engine: GSLV-D3, April 15, 2010. First successful indigenous GSLV flight: GSLV-D5, January 5, 2014 — approximately 4 years between failure and success.",
+    "tier": 3,
+    "kgrag_answer": "The context does not provide information on the first GSLV failure or a specific time frame for achieving a fully indigenous GSLV success with an indigenous cryogenic engine.",
+    "bm25_answer": "It is not clear from the provided context when the first GSLV failure occurred. However, it is mentioned that Dr. K. K. Chaudhry led the team that developed the Cryogenic Upper Stage (CUS) and made it operational after India was denied the Cryogenic Technology for GSLV Mk-ll vehicle. This suggests that the CUS was a key component of the GSLV that enabled a successful launch.\n\nIt is also mentioned that Dr. Chaudhry led the teams that developed and delivered the L110 Liquid Stage and C25 Cryogenic Stage for the LVM3 vehicle and the propulsion systems which took the spacecraft from Earth to the",
+    "vanilla_rag_answer": "I don't know. The provided context does not mention any information about the first GSLV failure or a fully indigenous GSLV success with indigenous cryogenic engine.",
+    "graphrag_answer": "N/A"
+  },
+  {
+    "id": "isro_200",
+    "question": "In what order did these events occur: Chandrayaan-1 water discovery, Chandrayaan-3 landing, Mangalyaan Mars orbit insertion, Aditya-L1 L1 insertion?",
+    "reference_answer": "In chronological order: (1) Chandrayaan-1 water discovery (September 2009), (2) Mangalyaan Mars orbit insertion (September 24, 2014), (3) Chandrayaan-3 landing (August 23, 2023), (4) Aditya-L1 L1 insertion (January 6, 2024).",
+    "tier": 3,
+    "kgrag_answer": "1. Chandrayaan-1 water discovery\n2. Mangalyaan Mars orbit insertion\n3. Chandrayaan-3 landing\n4. Aditya-L1 L1 insertion\n\nNote: The context does not provide information about the order in which these events occurred.",
+    "bm25_answer": "1. Chandrayaan-1 water discovery\n2. Mangalyaan Mars orbit insertion\n3. Chandrayaan-3 landing\n4. Aditya-L1 L1 insertion",
+    "vanilla_rag_answer": "1. Chandrayaan-1 water discovery\n2. Mangalyaan Mars orbit insertion\n3. Aditya-L1 L1 insertion\n4. Chandrayaan-3 landing",
+    "graphrag_answer": "N/A"
+  }
+]

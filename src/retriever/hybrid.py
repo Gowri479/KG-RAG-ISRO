@@ -55,7 +55,7 @@ def _extract_entities(query: str) -> list[str]:
     return _entity_fallback(query)
 
 
-def retrieve(query: str) -> str:
+def retrieve(query: str, passage_limit: int = 5, max_tokens: int = 4000) -> str:
     """Merge KG and vector-context evidence into a single retrieval string."""
     if not query or not query.strip():
         return ""
@@ -67,7 +67,7 @@ def retrieve(query: str) -> str:
         if any(keyword in entity.lower() for keyword in keywords)
     ]
     kg_context = get_kg_context(entities)
-    passage_context = get_passage_context(query)
+    passage_context = get_passage_context(query, top_k=passage_limit)
 
     combined_parts = []
     if kg_context.strip():
@@ -77,8 +77,8 @@ def retrieve(query: str) -> str:
 
     merged = "\n\n".join(combined_parts)
     tokens = merged.split()
-    if len(tokens) > 4000:
-        merged = " ".join(tokens[:4000])
+    if len(tokens) > max_tokens:
+        merged = " ".join(tokens[:max_tokens])
     return merged.strip()
 
 

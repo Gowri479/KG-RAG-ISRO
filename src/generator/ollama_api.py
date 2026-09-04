@@ -36,7 +36,7 @@ def _clean_response(response_text: str) -> str:
     return answer or UNKNOWN
 
 
-def generate(query: str, context: str) -> str:
+def generate(query: str, context: str, options: dict | None = None) -> str:
     """Ask Ollama to answer from the supplied retrieval context only."""
     if not query or not query.strip():
         return UNKNOWN
@@ -52,6 +52,8 @@ def generate(query: str, context: str) -> str:
         "prompt": build_user_prompt(context_text, query),
         "stream": False,
     }
+    if options:
+        payload["options"] = options
 
     try:
         response = requests.post(OLLAMA_URL, json=payload, timeout=120)
