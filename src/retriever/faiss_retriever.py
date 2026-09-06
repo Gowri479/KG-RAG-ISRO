@@ -18,7 +18,7 @@ from sentence_transformers import SentenceTransformer
 ROOT = Path(__file__).resolve().parents[2]
 INDEX_PATH = ROOT / "data" / "index" / "faiss_index.index"
 CHUNKS_PATH = ROOT / "data" / "chunks" / "chunks.json"
-
+    
 _MODEL = SentenceTransformer("all-MiniLM-L6-v2", device="cpu")
 
 
