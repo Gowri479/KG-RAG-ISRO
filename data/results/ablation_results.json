@@ -1,0 +1,20 @@
+{
+  "kg_only": {
+    "rouge_l": 0.0109,
+    "coverage": 0.0143,
+    "idk_rate": 0.96,
+    "n": 50
+  },
+  "faiss_only": {
+    "rouge_l": 0.2789,
+    "coverage": 0.4346,
+    "idk_rate": 0.22,
+    "n": 50
+  },
+  "full_kgrag": {
+    "rouge_l": 0.2807,
+    "coverage": 0.4923,
+    "idk_rate": 0.2,
+    "n": 50
+  }
+}
