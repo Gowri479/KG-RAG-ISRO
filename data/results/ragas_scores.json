@@ -4,26 +4,26 @@
     "n_evaluated": 200,
     "idk_count": 18,
     "idk_rate": 0.09,
-    "rouge_l": 0.273,
-    "answer_coverage": 0.3939,
-    "exact_match": 0.025
+    "rouge_l": 0.2678,
+    "answer_coverage": 0.3896,
+    "exact_match": 0.02
   },
   {
     "system": "bm25",
     "n_evaluated": 200,
-    "idk_count": 7,
-    "idk_rate": 0.035,
-    "rouge_l": 0.2867,
-    "answer_coverage": 0.421,
-    "exact_match": 0.02
+    "idk_count": 5,
+    "idk_rate": 0.025,
+    "rouge_l": 0.2967,
+    "answer_coverage": 0.4278,
+    "exact_match": 0.03
   },
   {
     "system": "vanilla_rag",
     "n_evaluated": 200,
-    "idk_count": 9,
-    "idk_rate": 0.045,
-    "rouge_l": 0.2372,
-    "answer_coverage": 0.3685,
+    "idk_count": 8,
+    "idk_rate": 0.04,
+    "rouge_l": 0.2416,
+    "answer_coverage": 0.3746,
     "exact_match": 0.015
   }
 ]
