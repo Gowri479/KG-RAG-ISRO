@@ -1,0 +1,152 @@
+{
+  "preregistration": "reports/preregistration_corrected_rerun.md \u00a714",
+  "checker_file": "corrected_rerun_spotcheck3_filled.csv",
+  "questions": [
+    "rakg_001",
+    "rakg_007",
+    "rakg_015",
+    "rakg_018",
+    "rakg_019",
+    "rakg_022",
+    "rakg_023",
+    "rakg_027",
+    "rakg_029",
+    "rakg_032",
+    "rakg_047",
+    "rakg_050",
+    "rakg_053",
+    "rakg_056",
+    "rakg_058",
+    "rakg_064",
+    "rakg_065",
+    "rakg_066",
+    "rakg_067",
+    "rakg_072"
+  ],
+  "units": 60,
+  "krippendorff_alpha": {
+    "correctness": 0.607711507738961,
+    "completeness": 0.7722303673744523,
+    "groundedness": 0.6073568976096988,
+    "relevance": 0.6009794225116074,
+    "unsupported_claim": 0.33766233766233766
+  },
+  "exact_agreement": {
+    "correctness": 0.75,
+    "completeness": 0.75,
+    "groundedness": 0.6667,
+    "relevance": 0.8,
+    "unsupported_claim": 0.8
+  },
+  "correctness_differences": {
+    "A_CURRENT_vs_V_VANILLA": {
+      "checker": {
+        "n": 20,
+        "mean_diff": 1.55,
+        "median_diff": 1.0,
+        "ci95": [
+          0.8,
+          2.3
+        ],
+        "dz": 0.879967,
+        "wins_losses_ties": [
+          13,
+          2,
+          5
+        ]
+      },
+      "rater1": {
+        "n": 20,
+        "mean_diff": 1.25,
+        "median_diff": 1.0,
+        "ci95": [
+          0.65,
+          1.9
+        ],
+        "dz": 0.843254,
+        "wins_losses_ties": [
+          11,
+          0,
+          9
+        ]
+      },
+      "same_direction": true
+    },
+    "C_TWO_STAGE_vs_V_VANILLA": {
+      "checker": {
+        "n": 20,
+        "mean_diff": 1.2,
+        "median_diff": 0.5,
+        "ci95": [
+          0.55,
+          1.9
+        ],
+        "dz": 0.761355,
+        "wins_losses_ties": [
+          10,
+          1,
+          9
+        ]
+      },
+      "rater1": {
+        "n": 20,
+        "mean_diff": 0.7,
+        "median_diff": 0.5,
+        "ci95": [
+          -0.25,
+          1.6
+        ],
+        "dz": 0.317767,
+        "wins_losses_ties": [
+          10,
+          3,
+          7
+        ]
+      },
+      "same_direction": true
+    }
+  },
+  "criterion": "correctness ordinal alpha >= 0.667 and checker's A-V and C-V correctness differences in the same direction as rater 1",
+  "validation": "FAILED",
+  "agreement_with_other_checkers": {
+    "corrected_rerun_spotcheck_filled.csv": {
+      "krippendorff_alpha": {
+        "correctness": 0.6589505227223917,
+        "completeness": 0.7525057843071186,
+        "groundedness": 0.3193818654079341,
+        "relevance": 0.6946145950224867,
+        "unsupported_claim": 0.6111111111111112
+      },
+      "exact_agreement": {
+        "correctness": 0.6833,
+        "completeness": 0.7167,
+        "groundedness": 0.5833,
+        "relevance": 0.7167,
+        "unsupported_claim": 0.9
+      }
+    },
+    "corrected_rerun_spotcheck2_filled.csv": {
+      "krippendorff_alpha": {
+        "correctness": 0.4850980440744045,
+        "completeness": 0.5227824660103141,
+        "groundedness": 0.5340016950222246,
+        "relevance": 0.4518037440264453,
+        "unsupported_claim": 0.2272727272727273
+      },
+      "exact_agreement": {
+        "correctness": 0.65,
+        "completeness": 0.7,
+        "groundedness": 0.6833,
+        "relevance": 0.6833,
+        "unsupported_claim": 0.7667
+      }
+    }
+  },
+  "pooled_alpha_all_checkers": {
+    "correctness": 0.5773957413919459,
+    "completeness": 0.6123941186952496,
+    "groundedness": 0.3162917683999553,
+    "relevance": 0.5812665565350854,
+    "unsupported_claim": 0.3237777777777777
+  }
+}
