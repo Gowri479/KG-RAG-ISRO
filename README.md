@@ -25,6 +25,7 @@ Antariksh Hackathon 2025 (BAH-02).
 | Latest result | Pre-registered corrected rerun: relation-aware KG-RAG beats vanilla dense RAG on correctness |
 | Caveat | Scores are AI-drafted and reviewed by one human (99.2% unchanged) |
 | Spot-check | Independent human on 20 random questions: **FAILED** pre-registered criterion (correctness α = 0.64 < 0.667); same direction as the main result |
+| Second checker | Post hoc, exploratory (not pre-registered): agrees with rater 1 (α = 0.84), but only α = 0.58 with the first independent checker. Both independent humans find A − Vanilla ≈ +1.00 with a CI above zero |
 | Paper | Not yet updated with the corrected results; kept locally, outside git |
 
 ### Headline result
@@ -52,7 +53,12 @@ agreement α = 0.64 against a 0.667 threshold, with very low agreement on
 groundedness (α = 0.15) and unsupported claims (α = 0.17). The evaluator's own
 scores point the same way: A − Vanilla +1.00 (95% CI [0.15, 1.80]), C − Vanilla
 +0.55 ([−0.25, 1.40]). Report the main result as *AI-drafted, human-reviewed,
-not independently validated*, and show the spot-check alongside it. See
+not independently validated*, and show the spot-check alongside it. A second
+independent checker, added after the failure and therefore exploratory
+(§17), agreed with rater 1 (α = 0.84) but only moderately with the first
+checker (α = 0.58). Agreement depends on the rater; the consistent finding is
+direction: both independent humans score A about 1 point above Vanilla
+(95% CIs [0.15, 1.80] and [0.40, 1.65]), while C's gain is uncertain. See
 [`reports/preregistration_corrected_rerun.md`](reports/preregistration_corrected_rerun.md) §12–§16.
 
 ---
