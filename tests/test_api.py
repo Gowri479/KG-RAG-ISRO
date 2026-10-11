@@ -6,7 +6,7 @@ from fastapi.testclient import TestClient
 
 from src.api.app import create_app
 from src.api.pipeline import GenerationUnavailable
-from src.evaluation.run_corrected_rerun import RESULTS
+from src.config.runtime import CORRECTED_RERUN_RESULTS_PATH as RESULTS
 
 
 @pytest.fixture()

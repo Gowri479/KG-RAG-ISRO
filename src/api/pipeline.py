@@ -19,13 +19,17 @@ from functools import lru_cache
 import requests
 
 from src.api.schemas import AskResponse, Hop, KGPath, Passage, QueryAnalysis, Source, Usage
-from src.evaluation.run_corrected_rerun import OPTIONS, RESULTS as RERUN_RESULTS
-from src.evaluation.run_relation_aware_experiment import CONTEXT_LIMIT
+from src.config.runtime import (
+    CORRECTED_RERUN_RESULTS_PATH as RERUN_RESULTS,
+    DEFAULT_CONTEXT_LIMIT as CONTEXT_LIMIT,
+    DEFAULT_GENERATION_OPTIONS as OPTIONS,
+)
 from src.generator.kg_grounded_generator import _evidence_budget
 from src.generator.ollama_api import MODEL_NAME, OLLAMA_URL, UNKNOWN
 from src.generator.prompt import SYSTEM_PROMPT
 from src.generator.token_budget import EVIDENCE, trim_to_tokens
 from src.retriever.relation_aware import RelationAwareKG, RelationEvidence, fuse_relation_evidence
+from src.retriever.search_service import retrieve_bm25_chunks, retrieve_dense_chunks
 
 MAX_PATHS_SHOWN = 10
 EXCERPT_CHARS = 600
@@ -116,12 +120,12 @@ class LivePipeline:
             self.status, self.detail = "error", f"{type(exc).__name__}: {exc}"
 
     def answer(self, question: str) -> AskResponse:
-        from src.evaluation.evaluate_relational_qa import _bm25_trace, _vanilla_trace
         from src.generator.ollama_api import generate_with_metrics
         from src.retriever.faiss_retriever import _load_chunk_records
 
         started = time.perf_counter()
-        dense, bm25 = _vanilla_trace(question), _bm25_trace(question)
+        dense = retrieve_dense_chunks(question)
+        bm25 = retrieve_bm25_chunks(question)
         paths = knowledge_graph().retrieve(
             question,
             dict(zip(dense["retrieved_chunk_ids"], dense["retrieved_chunk_scores"])),

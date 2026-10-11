@@ -46,9 +46,20 @@ def read_scores(path: Path, question_ids: list[str]) -> dict[tuple[str, str], di
     return scores
 
 
-def main() -> None:
+def agreement_between(a: dict, b: dict) -> dict:
+    keys = sorted(a)
+    return {
+        "krippendorff_alpha": {
+            d: krippendorff_alpha([[a[k][d], b[k][d]] for k in keys], "nominal" if d == "unsupported_claim" else "ordinal")
+            for d in DIMENSIONS
+        },
+        "exact_agreement": {d: round(sum(a[k][d] == b[k][d] for k in keys) / len(keys), 4) for d in DIMENSIONS},
+    }
+
+
+def main(filled: Path = FILLED, output: Path = OUTPUT, compare_with: Path | None = None) -> None:
     ids = select_questions()
-    checker, rater1 = read_scores(FILLED, ids), read_scores(RATER1, ids)
+    checker, rater1 = read_scores(filled, ids), read_scores(RATER1, ids)
     keys = sorted(checker)
     agreement = {
         d: krippendorff_alpha([[rater1[k][d], checker[k][d]] for k in keys], "nominal" if d == "unsupported_claim" else "ordinal")
@@ -66,6 +77,7 @@ def main() -> None:
     passed = (agreement["correctness"] or 0) >= ALPHA_THRESHOLD and all(v["same_direction"] for v in direction.values())
     result = {
         "preregistration": "reports/preregistration_corrected_rerun.md §14",
+        "checker_file": filled.name,
         "questions": ids,
         "units": len(keys),
         "krippendorff_alpha": agreement,
@@ -74,11 +86,20 @@ def main() -> None:
         "criterion": f"correctness ordinal alpha >= {ALPHA_THRESHOLD} and checker's A-V and C-V correctness differences in the same direction as rater 1",
         "validation": "PASSED" if passed else "FAILED",
     }
-    OUTPUT.write_text(json.dumps(result, indent=2) + "\n", encoding="utf8")
-    print(json.dumps({k: result[k] for k in ("krippendorff_alpha", "exact_agreement", "validation")}, indent=2))
+    if compare_with is not None:
+        result["agreement_with_other_checker"] = {"other_checker_file": compare_with.name, **agreement_between(checker, read_scores(compare_with, ids))}
+    output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf8")
+    print(json.dumps({k: result[k] for k in ("krippendorff_alpha", "exact_agreement", "validation", "agreement_with_other_checker") if k in result}, indent=2))
     for key, v in direction.items():
         print(key, "checker", v["checker"]["mean_diff"], v["checker"]["ci95"], "| rater1", v["rater1"]["mean_diff"], v["rater1"]["ci95"])
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--filled", type=Path, default=FILLED)
+    parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument("--compare-with", type=Path, help="Another checker's filled CSV, for checker-vs-checker agreement")
+    args = parser.parse_args()
+    main(args.filled, args.output, args.compare_with)

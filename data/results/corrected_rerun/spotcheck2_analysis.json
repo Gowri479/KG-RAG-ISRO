@@ -1,0 +1,128 @@
+{
+  "preregistration": "reports/preregistration_corrected_rerun.md \u00a714",
+  "checker_file": "corrected_rerun_spotcheck2_filled.csv",
+  "questions": [
+    "rakg_001",
+    "rakg_007",
+    "rakg_015",
+    "rakg_018",
+    "rakg_019",
+    "rakg_022",
+    "rakg_023",
+    "rakg_027",
+    "rakg_029",
+    "rakg_032",
+    "rakg_047",
+    "rakg_050",
+    "rakg_053",
+    "rakg_056",
+    "rakg_058",
+    "rakg_064",
+    "rakg_065",
+    "rakg_066",
+    "rakg_067",
+    "rakg_072"
+  ],
+  "units": 60,
+  "krippendorff_alpha": {
+    "correctness": 0.8365784962037717,
+    "completeness": 0.5957214312232222,
+    "groundedness": 0.8888202051655927,
+    "relevance": 0.5629857193460426,
+    "unsupported_claim": 0.8967013888888888
+  },
+  "exact_agreement": {
+    "correctness": 0.8333,
+    "completeness": 0.75,
+    "groundedness": 0.8333,
+    "relevance": 0.75,
+    "unsupported_claim": 0.9667
+  },
+  "correctness_differences": {
+    "A_CURRENT_vs_V_VANILLA": {
+      "checker": {
+        "n": 20,
+        "mean_diff": 1,
+        "median_diff": 0.0,
+        "ci95": [
+          0.4,
+          1.65
+        ],
+        "dz": 0.672593,
+        "wins_losses_ties": [
+          8,
+          0,
+          12
+        ]
+      },
+      "rater1": {
+        "n": 20,
+        "mean_diff": 1.25,
+        "median_diff": 1.0,
+        "ci95": [
+          0.65,
+          1.9
+        ],
+        "dz": 0.843254,
+        "wins_losses_ties": [
+          11,
+          0,
+          9
+        ]
+      },
+      "same_direction": true
+    },
+    "C_TWO_STAGE_vs_V_VANILLA": {
+      "checker": {
+        "n": 20,
+        "mean_diff": 0.55,
+        "median_diff": 0.0,
+        "ci95": [
+          -0.4,
+          1.45
+        ],
+        "dz": 0.257102,
+        "wins_losses_ties": [
+          7,
+          2,
+          11
+        ]
+      },
+      "rater1": {
+        "n": 20,
+        "mean_diff": 0.7,
+        "median_diff": 0.5,
+        "ci95": [
+          -0.25,
+          1.6
+        ],
+        "dz": 0.317767,
+        "wins_losses_ties": [
+          10,
+          3,
+          7
+        ]
+      },
+      "same_direction": true
+    }
+  },
+  "criterion": "correctness ordinal alpha >= 0.667 and checker's A-V and C-V correctness differences in the same direction as rater 1",
+  "validation": "PASSED",
+  "agreement_with_other_checker": {
+    "other_checker_file": "corrected_rerun_spotcheck_filled.csv",
+    "krippendorff_alpha": {
+      "correctness": 0.5844433731599112,
+      "completeness": 0.5307246368088534,
+      "groundedness": 0.11022523837590403,
+      "relevance": 0.565345423461983,
+      "unsupported_claim": 0.16700000000000004
+    },
+    "exact_agreement": {
+      "correctness": 0.75,
+      "completeness": 0.7667,
+      "groundedness": 0.6167,
+      "relevance": 0.85,
+      "unsupported_claim": 0.7667
+    }
+  }
+}

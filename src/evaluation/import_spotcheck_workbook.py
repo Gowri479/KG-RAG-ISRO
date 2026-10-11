@@ -1,6 +1,7 @@
 """Convert the evaluator's filled spot-check workbook into the analysis CSV.
 
-Reads the Scoring sheet of KG-RAG_Spotcheck_Scoring*.xlsx, checks every answer
+Reads the Scoring sheet of KG-RAG_Spotcheck_Scoring*.xlsx (or a CSV export of
+that sheet), checks every answer
 text against the blank package and every score against the allowed values,
 and writes data/annotations/corrected_rerun_spotcheck_filled.csv.
 
@@ -26,11 +27,28 @@ def norm(text: str) -> str:
     return " ".join((text or "").split())
 
 
+def _score(raw) -> int | None:
+    try:
+        value = float(raw)
+    except (TypeError, ValueError):
+        return None
+    return int(value) if value.is_integer() else None
+
+
+def _rows(path: Path):
+    """Scoring-sheet rows from the .xlsx, or from a CSV export of that sheet."""
+    if path.suffix.lower() == ".csv":
+        with path.open(encoding="utf-8-sig", newline="") as handle:
+            yield from list(csv.reader(handle))[1:]
+    else:
+        yield from load_workbook(path, data_only=True)["Scoring"].iter_rows(min_row=2, values_only=True)
+
+
 def read_workbook(path: Path) -> dict[tuple[str, str], dict]:
-    ws = load_workbook(path, data_only=True)["Scoring"]
     entries: dict[tuple[str, str], dict] = {}
     question_id = None
-    for row in ws.iter_rows(min_row=2, values_only=True):
+    for row in _rows(path):
+        row = list(row) + [None] * (13 - len(row))
         if row[1]:
             question_id = str(row[1])
         label = row[5]
@@ -39,8 +57,7 @@ def read_workbook(path: Path) -> dict[tuple[str, str], dict]:
         scores = {}
         for offset, name in enumerate(SCORES):
             raw = row[FIRST_SCORE_COLUMN - 1 + offset]
-            value = int(raw) if isinstance(raw, (int, float)) and float(raw).is_integer() else (
-                int(raw) if isinstance(raw, str) and raw.strip().isdigit() else None)
+            value = _score(raw)
             allowed = (0, 1) if name == "unsupported_claim" else (1, 2, 3, 4, 5)
             if value not in allowed:
                 raise ValueError(f"{question_id} answer {label}: {name} is {raw!r}; expected one of {allowed}")
@@ -49,9 +66,10 @@ def read_workbook(path: Path) -> dict[tuple[str, str], dict]:
     return entries
 
 
-def main(workbook: Path, force: bool) -> None:
-    if FILLED.exists() and not force:
-        raise FileExistsError(f"{FILLED} already exists; pass --force to replace it")
+def main(workbook: Path, force: bool, output: Path | None = None) -> None:
+    output = output or FILLED
+    if output.exists() and not force:
+        raise FileExistsError(f"{output} already exists; pass --force to replace it")
     with BLANK.open(encoding="utf8", newline="") as handle:
         reader = csv.DictReader(handle)
         fields, rows = reader.fieldnames, list(reader)
@@ -69,11 +87,11 @@ def main(workbook: Path, force: bool) -> None:
                 row[f"{label}_{name}"] = value
             if entry["notes"]:
                 notes.append(f"{row['question_id']} {label}: {entry['notes']}")
-    with FILLED.open("w", encoding="utf8", newline="") as handle:
+    with output.open("w", encoding="utf8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields)
         writer.writeheader()
         writer.writerows(rows)
-    print(f"wrote {FILLED.name}: {len(rows)} questions, {len(entries) * len(SCORES)} scores")
+    print(f"wrote {output.name}: {len(rows)} questions, {len(entries) * len(SCORES)} scores")
     if notes:
         print("Evaluator notes:\n  " + "\n  ".join(notes))
 
@@ -82,5 +100,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("workbook", type=Path)
     parser.add_argument("--force", action="store_true")
+    parser.add_argument("--output", type=Path, help="Destination CSV (default: the §14 spot-check file)")
     args = parser.parse_args()
-    main(args.workbook, args.force)
+    main(args.workbook, args.force, args.output)

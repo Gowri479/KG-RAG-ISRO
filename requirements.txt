@@ -1,9 +1,16 @@
+# Primary project dependencies with minimum version bounds.
+# For exact deterministic installations and CI environments, use:
+#   pip install -r requirements-lock.txt
+
 # Core runtime
 python-dotenv>=1.0.0
 requests>=2.32.0
 tqdm>=4.66.0
 numpy>=1.26.0
 pandas>=2.2.0
+scipy>=1.11.0
+matplotlib>=3.8.0
+psutil>=5.9.0
 pypdf>=5.0.0
 
 # NLP + graph
@@ -27,4 +34,3 @@ reportlab>=4.0.0
 
 # Testing
 pytest>=8.0.0
-
