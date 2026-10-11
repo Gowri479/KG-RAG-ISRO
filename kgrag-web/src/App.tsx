@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useState } from "react";
 import { ask, getExamples, getHealth } from "./api";
-import type { AskResponse, Health, Hop } from "./api";
+import type { AskResponse, Example, Health, Hop } from "./api";
 import "./App.css";
 
 const MISSIONS = [
@@ -49,7 +49,7 @@ function Graph({ hops, sel, onSel }: { hops: Hop[]; sel: string | null; onSel: (
 
 export default function App() {
   const [health, setHealth] = useState<Health | null>(null);
-  const [examples, setExamples] = useState<string[]>([]);
+  const [examples, setExamples] = useState<Example[]>([]);
   const [mission, setMission] = useState(0);
   const [question, setQuestion] = useState("");
   const [asked, setAsked] = useState("");
@@ -110,8 +110,18 @@ export default function App() {
     setMenu(false);
   };
 
-  const key = MISSIONS[mission].key;
-  const matched = examples.filter((e) => e.toLowerCase().includes(key));
+  const targetMission = MISSIONS[mission];
+  const matched = examples.filter((e) => {
+    const missionField = (e.mission || "").toLowerCase();
+    const key = targetMission.key.toLowerCase();
+    const name = targetMission.name.toLowerCase();
+    return (
+      missionField.includes(key) ||
+      missionField.includes(name) ||
+      e.question.toLowerCase().includes(key) ||
+      e.question.toLowerCase().includes(name)
+    );
+  });
   const list = matched.length ? matched : examples;
   const shown = more ? list : list.slice(0, 6);
 
@@ -230,8 +240,8 @@ export default function App() {
                 </p>
                 <div className="exgrid">
                   {shown.map((ex) => (
-                    <button key={ex} className="ex" onClick={() => submit(ex)}>
-                      {ex}
+                    <button key={ex.question} className="ex" onClick={() => submit(ex.question)}>
+                      {ex.question}
                     </button>
                   ))}
                 </div>

@@ -1,46 +1,84 @@
-const BASE = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+const BASE = (typeof import.meta !== "undefined" && import.meta.env?.VITE_API_URL) || "http://127.0.0.1:8000";
 
-export type Source = {
+export type Mode = "live" | "mock";
+
+export interface Source {
   document_id: string;
   url: string | null;
   section?: string | null;
   page?: string | null;
   excerpt?: string | null;
-};
+}
 
-export type Hop = {
+export interface Hop {
   subject: string;
   relation: string;
   object: string;
   triple_id: string;
   source: Source;
-};
+}
 
-export type KGPath = {
+export interface KGPath {
   path_id: string;
   score: number;
   hops: Hop[];
-};
+}
 
-export type AskResponse = {
+export interface Passage {
+  rank: number;
+  text: string;
+  url?: string | null;
+  title?: string | null;
+  mission?: string | null;
+  source_file?: string | null;
+}
+
+export interface QueryAnalysis {
+  query_type: "FACTUAL" | "RELATIONAL" | "MULTI_HOP" | string;
+  entities: string[];
+  relations: string[];
+  hop_depth: number;
+}
+
+export interface Usage {
+  latency_ms: number;
+  prompt_tokens?: number | null;
+  context_tokens_used?: number | null;
+  context_trimmed?: boolean | null;
+}
+
+export interface AskResponse {
   question: string;
   answer: string;
   abstained: boolean;
-  mode: string;
+  mode: Mode;
   system: string;
-  analysis: {
-    query_type: string;
-    entities: string[];
-    relations: string[];
-    hop_depth: number;
-  };
+  analysis: QueryAnalysis;
   kg_paths: KGPath[];
   kg_paths_total: number;
-  passages: any[];
-  usage: { latency_ms: number | null };
-};
+  passages: Passage[];
+  usage: Usage;
+}
 
-export type Health = { status: string; mode: string; model?: string; detail?: string };
+export interface Example {
+  question: string;
+  mission: string;
+  category: string;
+}
+
+export interface ExamplesResponse {
+  examples: Example[];
+}
+
+export interface HealthResponse {
+  status: "ready" | "warming_up" | "error";
+  mode: Mode;
+  model: string;
+  ollama_reachable?: boolean | null;
+  detail?: string | null;
+}
+
+export type Health = HealthResponse;
 
 const OFFLINE = "The service is currently unavailable. Please try again later.";
 
@@ -57,16 +95,21 @@ async function errorMessage(r: Response): Promise<string> {
 
 export async function getHealth(): Promise<Health> {
   const r = await fetch(`${BASE}/api/health`);
+  if (!r.ok) throw new Error(await errorMessage(r));
   return r.json();
 }
 
-export async function getExamples(): Promise<string[]> {
+export async function getExamples(): Promise<Example[]> {
   const r = await fetch(`${BASE}/api/examples`);
+  if (!r.ok) throw new Error(await errorMessage(r));
   const data = await r.json();
-  const arr = Array.isArray(data) ? data : data.examples ?? data.questions ?? [];
-  return arr.map((x: any) =>
-    typeof x === "string" ? x : x.question ?? x.text ?? JSON.stringify(x)
-  );
+  if (Array.isArray(data)) {
+    return data;
+  }
+  if (Array.isArray(data.examples)) {
+    return data.examples;
+  }
+  return [];
 }
 
 export async function ask(question: string): Promise<AskResponse> {

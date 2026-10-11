@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  python-tests:
+    name: Python 3.11 Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies (pinned environment)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-lock.txt
+
+      - name: Run pytest test suite
+        run: |
+          pytest -q
+
+  frontend-checks:
+    name: React Frontend Checks (ASTRA)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "npm"
+          cache-dependency-path: kgrag-web/package-lock.json
+
+      - name: Install frontend dependencies
+        working-directory: kgrag-web
+        run: npm ci
+
+      - name: Lint frontend code
+        working-directory: kgrag-web
+        run: npm run lint
+
+      - name: Build frontend bundle
+        working-directory: kgrag-web
+        run: npm run build
+
+      - name: Run frontend unit tests
+        working-directory: kgrag-web
+        run: npm test

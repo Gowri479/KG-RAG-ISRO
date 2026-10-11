@@ -81,38 +81,15 @@ def _load_chunks():
 
 
 def _bm25_trace(question: str) -> dict[str, Any]:
-    from src.baselines.bm25_llm import _load_bm25, _tokenize
+    from src.retriever.search_service import retrieve_bm25_chunks
 
-    chunks = _load_chunks()
-    scores = _load_bm25().get_scores(_tokenize(question))
-    indices = sorted(range(len(scores)), key=lambda index: scores[index], reverse=True)[:TOP_K]
-    return {
-        "retrieved_chunk_ids": [str(index) for index in indices],
-        "retrieved_chunk_scores": [float(scores[index]) for index in indices],
-        "retrieved_text": [chunks[index] for index in indices],
-    }
+    return retrieve_bm25_chunks(question, top_k=TOP_K)
 
 
 def _vanilla_trace(question: str) -> dict[str, Any]:
-    import faiss
-    from src.retriever.embedding_model import get_embedding_model
-    from src.retriever.faiss_retriever import INDEX_PATH, _load_index, _load_chunks as load_faiss_chunks, _query_keywords
+    from src.retriever.search_service import retrieve_dense_chunks
 
-    chunks = load_faiss_chunks()
-    index = _load_index()
-    vector = get_embedding_model().encode([question], convert_to_numpy=True, normalize_embeddings=True)
-    limit = min(max(TOP_K * 4, 20), index.ntotal)
-    distances, indices = index.search(np.asarray(vector, dtype=np.float32), limit)
-    ranked = [(int(index), float(score), chunks[int(index)]) for score, index in zip(distances[0], indices[0]) if 0 <= int(index) < len(chunks)]
-    keywords = _query_keywords(question)
-    filtered = [item for item in ranked if any(keyword in item[2].lower() for keyword in keywords)]
-    selected = filtered or ranked
-    selected = selected[:TOP_K]
-    return {
-        "retrieved_chunk_ids": [str(index) for index, _, _ in selected],
-        "retrieved_chunk_scores": [score for _, score, _ in selected],
-        "retrieved_text": [text for _, _, text in selected],
-    }
+    return retrieve_dense_chunks(question, top_k=TOP_K)
 
 
 def _kg_trace(question: str) -> dict[str, Any]:

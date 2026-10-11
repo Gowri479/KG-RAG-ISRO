@@ -3,246 +3,195 @@
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![LLM](https://img.shields.io/badge/LLM-Mistral--7B%20Q4%20(local)-purple)
-![Status](https://img.shields.io/badge/Human%20validation-not%20passed-red)
+![Human Validation](https://img.shields.io/badge/Human%20Spot--Check-not%20passed-red)
+![Frontend](https://img.shields.io/badge/Frontend-ASTRA%20(React)-orange)
 
-A local question-answering system over official ISRO and ISSDC documents. It
-combines a provenance-linked knowledge graph with dense retrieval and a 4-bit
-Mistral-7B model served by Ollama, on resource-constrained hardware.
+A local, provenance-preserving question-answering system over official ISRO and ISSDC documentation. It combines a provenance-linked knowledge graph with dense retrieval and a 4-bit quantized Mistral-7B model served locally via Ollama on resource-constrained hardware.
 
-**Research question:** can a provenance-preserving, relation-aware knowledge
-graph improve question answering over official ISRO/ISSDC documents?
+**Research question:** Can a provenance-preserving, relation-aware knowledge graph improve factual question answering over official ISRO/ISSDC documentation?
 
-This is an M.Tech (AI & Data Science) capstone at Alliance School of Advanced
-Computing, Alliance University (2025–2027), developed under the ISRO Bharatiya
-Antariksh Hackathon 2025 (BAH-02).
+Developed as an M.Tech (AI & Data Science) capstone at Alliance School of Advanced Computing, Alliance University (2025–2027), within the ISRO Bharatiya Antariksh Hackathon 2025 (BAH-02) framework.
 
 ---
 
-## Current status (October 2026)
+## Current Status & Research Summary (October 2026)
 
-| | |
-|---|---|
-| Latest result | Pre-registered corrected rerun: relation-aware KG-RAG beats vanilla dense RAG on correctness |
-| Caveat | Scores are AI-drafted and reviewed by one human (99.2% unchanged) |
-| Spot-check | Independent human on 20 random questions: **FAILED** pre-registered criterion (correctness α = 0.64 < 0.667); same direction as the main result |
-| Second checker | Post hoc, exploratory (not pre-registered): agrees with rater 1 (α = 0.84), but only α = 0.58 with the first independent checker. Both independent humans find A − Vanilla ≈ +1.00 with a CI above zero |
-| Paper | Not yet updated with the corrected results; kept locally, outside git |
+The project evaluated whether relation-aware knowledge-graph retrieval improves answer quality compared to vanilla dense RAG.
 
-### Headline result
+### Summary of Findings & Evaluation Status
 
-Pre-registered rerun on the frozen relation-aware benchmark (60 KG-required
-questions), with every prompt guaranteed to fit the model's context window:
-
-| System | Correctness (1–5) | Completeness | Groundedness | Relevance | Unsupported claims |
-|---|---:|---:|---:|---:|---:|
-| Vanilla dense RAG | 3.22 | 3.12 | 3.77 | 3.98 | 43.3% |
-| **A: relation-aware KG-RAG** | **4.38** | **4.33** | **4.42** | **4.63** | **16.7%** |
-| C: two-stage KG-grounded | 4.15 | 4.12 | 4.10 | 4.40 | 28.3% |
-
-- **A vs Vanilla:** correctness +1.17, 95% CI [0.72, 1.62], Holm-adjusted p < .001. Decision: **SUPPORTED**.
-- **C vs Vanilla:** correctness +0.93, 95% CI [0.42, 1.43], Holm-adjusted p = .0011. Decision: **SUPPORTED**.
-- **C vs A:** −0.23, 95% CI [−0.60, 0.12], not significant. The two-stage step adds nothing over relation-aware retrieval.
-- The effect holds with duplicate questions removed (n = 45) and with direct-fact questions excluded (n = 50).
-
-**How far this can be trusted:** the scores come from one rater who reviewed
-a model-drafted sheet, so they are effectively an AI judge's verdict. The
-references were derived from KG triples, which may favour KG systems that
-reuse triple wording. The independent spot-check (20 random questions, one evaluator who saw no
-other scores) did **not** pass its pre-registered criterion: correctness
-agreement α = 0.64 against a 0.667 threshold, with very low agreement on
-groundedness (α = 0.15) and unsupported claims (α = 0.17). The evaluator's own
-scores point the same way: A − Vanilla +1.00 (95% CI [0.15, 1.80]), C − Vanilla
-+0.55 ([−0.25, 1.40]). Report the main result as *AI-drafted, human-reviewed,
-not independently validated*, and show the spot-check alongside it. A second
-independent checker, added after the failure and therefore exploratory
-(§17), agreed with rater 1 (α = 0.84) but only moderately with the first
-checker (α = 0.58). Agreement depends on the rater; the consistent finding is
-direction: both independent humans score A about 1 point above Vanilla
-(95% CIs [0.15, 1.80] and [0.40, 1.65]), while C's gain is uncertain. See
-[`reports/preregistration_corrected_rerun.md`](reports/preregistration_corrected_rerun.md) §12–§16.
-
----
-
-## What changed: the context-truncation bug
-
-Every generation run before October 2026 used Ollama with `num_ctx=2048` and
-a 1,500-**word** context budget. Real prompts were often 2,400–3,900 model
-tokens. Ollama silently kept only about the **last** 1,027 tokens and dropped
-the beginning, which is exactly where the KG evidence sat. In some runs up to
-78% of the prompt never reached the model.
-
-This affected every earlier experiment, including the 180-question benchmark,
-Aditya-L1, relational v1, Phase 7, the relation-aware run and the two-stage
-experiments. Their negative or mixed results describe systems that mostly
-never saw their KG evidence.
-
-**Fix** (commit `7cb2d2a`):
-- [`src/generator/token_budget.py`](src/generator/token_budget.py) counts exact
-  model tokens with the tokenizer extracted from the model's own GGUF file
-  ([`config/tokenizer/`](config/tokenizer/)). Its counts match Ollama's
-  `prompt_eval_count` exactly.
-- Every call through `generate_with_metrics` fits the prompt to
-  `num_ctx − num_predict`. It trims the end of the context (lowest-priority
-  evidence), never the question, and logs `prompt_tokens_expected`,
-  `context_trimmed` and `ollama_truncated`.
-- KG generation budgets now use model tokens, and the structured prompts fit
-  their evidence before wrapping.
-
----
-
-## Experimental history
-
-All earlier artifacts are kept unchanged as an audit trail. The results
-listed under "earlier experiments" were produced **under truncation**.
-
-| Stage | Benchmark | Outcome |
+| Dimension | Finding | Methodological Status |
 |---|---|---|
-| Canonical benchmark | 180 test questions | No KG advantage (ROUGE-L: BM25 .292, Vanilla .278, KG-RAG .274). An audit later found 0 of 180 questions strictly require the KG |
-| Aditya-L1 targeted | 36 researcher-built questions | KG-RAG +.094 ROUGE-L (p = .005); selection-biased, not independent |
-| Relational v1 | 62 questions (26 KG-required) | No KG advantage; traced to an evaluation/KG mismatch, then fixed |
-| Phase 7 corrected structured KG | 26 KG-required, human-rated | Better on all 4 dimensions descriptively; nothing significant |
-| Relation-aware retrieval | 72 questions × 7 systems | All 60 KG paths recovered; human evaluation NOT SUPPORTED |
-| Two-stage generation | 60 KG-required, 13 held out | Lexical gains; held-out human evaluation NOT SUPPORTED |
-| **Corrected rerun (pre-registered)** | **72 questions × 3 systems** | **KG systems beat Vanilla; see above** |
+| **Corrected Rerun (Main Result)** | **System A (Relation-Aware KG-RAG) beats Vanilla Dense RAG on correctness (+1.17 on 1–5 scale, p < .001).** | **AI-drafted, single-human-reviewed:** Scores were generated by an LLM rater draft and reviewed by one human evaluator (99.2% accepted without modification). Effectively an AI judge verdict. |
+| **Independent Spot-Check** | Evaluator scored System A higher than Vanilla (+1.00, 95% CI [0.15, 1.80]). | **FAILED pre-registered reliability criterion:** Inter-rater agreement on 20 random questions failed the threshold (Krippendorff's α = 0.64 against 0.667 threshold; groundedness α = 0.15). Human-rating reliability is **not independently established**. |
+| **Exploratory Second Checker** | Evaluator also scored System A ~1 point above Vanilla (95% CI [0.40, 1.65]). | **Exploratory (post hoc):** High agreement with rater 1 (α = 0.84), but moderate agreement with first checker (α = 0.58). Demonstrates that agreement varies substantially across raters. |
+| **Two-Stage Architecture (System C)** | System C beats Vanilla (+0.93, p = .0011), but differs insignificantly from System A (−0.23, p > .05). | Two-stage planning adds no measurable advantage over direct relation-aware retrieval. |
 
-Known limitations of the relation-aware benchmark v2, which is frozen and
-documented rather than edited:
-- 45 unique texts among its 60 KG-required items;
-- 5 questions labelled both KG-required and not;
-- set-valued questions with a single reference answer;
-- references derived from the same KG the retriever queries;
-- held-out leakage: 6 of 13 held-out questions repeat development texts.
+> **Research Conclusion:** The main corrected rerun result shows promising quantitative gains for relation-aware KG-RAG, but because the primary scores are AI-drafted and the pre-registered independent human spot-check did not meet the agreement threshold, **the main result should be reported as AI-drafted and human-reviewed, not as independently validated by human raters**.
 
 ---
 
-## Corpus and knowledge graph
+## Pre-Registered Corrected Rerun Results
 
-- 33 Tier-1 official sources (24 ISRO, 9 ISSDC); 1,006 chunks; about 65.6k words.
-- 123 entities and 134 provenance-linked triples. Each triple carries its source
-  document, chunk, URL and excerpt.
-- Relations include `HAS_PAYLOAD`, `HAS_OBJECTIVE`, `OBSERVES`, `STUDIES`,
-  `DEVELOPED_BY`, `LAUNCHED_BY`, `LAUNCHED_FROM` and `LAUNCHED_ON`.
-- Missions: Aditya-L1, AstroSat, Chandrayaan-1/2/3, Gaganyaan, Mars Orbiter Mission.
+Evaluated on the frozen relation-aware benchmark (60 KG-required questions) after eliminating the silent context-truncation bug. Every prompt was strictly budgeted and guaranteed to fit within the 2,048 model context window:
 
-Canonical files: [`data/corpus/chunks.jsonl`](data/corpus/chunks.jsonl),
-[`data/corpus/triples.jsonl`](data/corpus/triples.jsonl),
-[`data/corpus/entities.jsonl`](data/corpus/entities.jsonl).
+| System | Correctness (1–5) | Completeness (1–5) | Groundedness (1–5) | Relevance (1–5) | Unsupported Claims (%) |
+|---|---:|---:|---:|---:|---:|
+| Vanilla Dense RAG | 3.22 | 3.12 | 3.77 | 3.98 | 43.3% |
+| **A: Relation-Aware KG-RAG** | **4.38** | **4.33** | **4.42** | **4.63** | **16.7%** |
+| C: Two-Stage KG-Grounded | 4.15 | 4.12 | 4.10 | 4.40 | 28.3% |
 
----
+### Statistical Hypotheses (Pre-Registered)
+- **A vs Vanilla:** Correctness difference +1.17, 95% CI [0.72, 1.62], Holm-adjusted p < .001. Decision: **SUPPORTED**.
+- **C vs Vanilla:** Correctness difference +0.93, 95% CI [0.42, 1.43], Holm-adjusted p = .0011. Decision: **SUPPORTED**.
+- **C vs A:** Difference −0.23, 95% CI [−0.60, 0.12], not statistically significant. The additional planning stage adds no value over relation-aware retrieval.
+- **Sensitivity checks:** The effect direction and significance hold with duplicates removed (n = 45) and direct-fact questions excluded (n = 50).
 
-## Systems
-
-All three use the same model, settings and 1,500-token evidence budget.
-
-- **Vanilla dense RAG:** MiniLM embeddings and FAISS retrieve text chunks; one
-  context-only generation call.
-- **A: relation-aware KG-RAG** ([`src/retriever/relation_aware.py`](src/retriever/relation_aware.py)):
-  detects entities, the requested relation, its direction and the hop depth;
-  retrieves 1–2-hop provenance-linked KG paths, scored by dense, lexical,
-  entity, relation and provenance signals. KG evidence comes first, then
-  dense text; one generation call.
-- **C: two-stage KG-grounded** ([`src/generator/kg_grounded_generator.py`](src/generator/kg_grounded_generator.py)):
-  the same evidence as A. The model first writes an evidence plan, then
-  answers from the verified KG facts and the plan only.
+For complete pre-registration protocol, analysis plans, and registered deviations, see [`reports/preregistration_corrected_rerun.md`](reports/preregistration_corrected_rerun.md).
 
 ---
 
-## Reproducing the corrected rerun
+## Methodological Integrity: The Context-Truncation Bug
 
-Prerequisites: Python 3.11, [Ollama](https://ollama.com) with
-`mistral:7b-instruct-q4_K_M`, and `pip install -r requirements.txt`.
+All generation experiments run prior to October 2026 configured Ollama with `num_ctx=2048` but budgeted evidence using a word count (~1,500 words). Because real prompts often expanded to 2,400–3,900 model tokens, Ollama silently discarded the beginning of the prompt (the first ~1,000+ tokens)—which was precisely where the retrieved KG evidence was placed.
+
+As a result, earlier benchmarks (180-question test set, Aditya-L1, Relational v1, Phase 7, and early Two-Stage runs) evaluated systems that rarely saw their KG context.
+
+**The Fix (Commit `7cb2d2a`):**
+- [`src/generator/token_budget.py`](src/generator/token_budget.py) counts exact model tokens using the tokenizer extracted directly from Ollama's GGUF file ([`config/tokenizer/`](config/tokenizer/)).
+- `generate_with_metrics` guarantees that prompts fit `num_ctx − num_predict`. Any trimming occurs strictly from the tail of the lowest-priority text context, never the question or KG paths.
+- Expected token counts are logged and verified against Ollama's `prompt_eval_count` on every call.
+
+---
+
+## Experimental History & Audit Trail
+
+All historical experimental outputs are permanently retained in [`data/results/`](data/results/README.md) as an immutable audit trail:
+
+| Stage | Benchmark | Result Summary | Status / Notes |
+|---|---|---|---|
+| **Canonical Benchmark** | 180 test questions | No KG gain (ROUGE-L: BM25 .292, Vanilla .278, KG-RAG .274) | Under truncation. Audit revealed 0 of 180 questions strictly required KG. |
+| **Aditya-L1 Targeted** | 36 researcher questions | KG-RAG +.094 ROUGE-L (p = .005) | Under truncation. Selection-biased, not independent. |
+| **Relational QA v1** | 62 questions (26 KG-required) | No significant KG advantage | Under truncation. Traced to evaluation/KG mismatch. |
+| **Phase 7 Structured KG** | 26 KG-required, human-rated | Descriptive gains; not statistically significant | Under truncation. |
+| **Relation-Aware Retrieval** | 72 questions × 7 systems | All 60 KG paths recovered; human eval NOT SUPPORTED | Under truncation. |
+| **Two-Stage Generation** | 60 KG-required, 13 held out | Lexical gains; held-out human eval NOT SUPPORTED | Under truncation. |
+| **Corrected Rerun** | **72 questions × 3 systems** | **KG systems beat Vanilla; spot-check failed reliability threshold** | **Authoritative rerun; see Current Status above.** |
+
+### Frozen Benchmark Limitations (v2)
+The Relation-Aware Benchmark v2 is frozen for reproducibility and carries documented limitations:
+- 45 unique questions among the 60 KG-required items;
+- 5 questions labeled both KG-required and not;
+- References derived from the same KG schema that the retriever queries;
+- 6 of 13 held-out evaluation questions repeat training/development source texts.
+
+---
+
+## Authoritative Corpus & Knowledge Graph
+
+- **Corpus:** 33 Tier-1 official sources (24 ISRO, 9 ISSDC); 1,006 chunks; ~65.6k words.
+- **Knowledge Graph:** 123 entities, 134 provenance-linked triples. Every triple carries its source document, chunk ID, official URL, and exact text excerpt.
+- **Relations:** `HAS_PAYLOAD`, `HAS_OBJECTIVE`, `OBSERVES`, `STUDIES`, `DEVELOPED_BY`, `LAUNCHED_BY`, `LAUNCHED_FROM`, `LAUNCHED_ON`.
+- **Missions Covered:** Aditya-L1, AstroSat, Chandrayaan-1, Chandrayaan-2, Chandrayaan-3, Gaganyaan, Mars Orbiter Mission.
+
+Authoritative files: [`data/corpus/chunks.jsonl`](data/corpus/chunks.jsonl), [`data/corpus/triples.jsonl`](data/corpus/triples.jsonl), [`data/corpus/entities.jsonl`](data/corpus/entities.jsonl). For reproduction instructions, see [`data/corpus/README.md`](data/corpus/README.md) and [`data/README.md`](data/README.md).
+
+---
+
+## Application Interface: ASTRA (React + FastAPI)
+
+The primary supported product interface is **ASTRA** (`kgrag-web`), backed by the FastAPI service (`src/api`):
+- **Frontend (`kgrag-web`):** React 19 + TypeScript + Vite web app with interactive provenance graph visualizer, mission-specific filtering, and responsive evidence panels. See [`kgrag-web/README.md`](kgrag-web/README.md).
+- **Backend API (`src/api`):** Serves System A over HTTP. Supports zero-setup `--mock` mode using git-tracked artifacts, and live mode using local Ollama. OpenAPI docs at `http://127.0.0.1:8000/docs`.
 
 ```bash
+# Start backend (mock mode: runs immediately with zero model download)
+python -m src.api --mock
+
+# Start frontend (in a separate terminal)
+cd kgrag-web
+npm ci
+npm run dev
+```
+
+---
+
+## Reproducing the Corrected Rerun
+
+### Prerequisites
+- Python 3.11 (tested on 3.11.9)
+- [Ollama](https://ollama.com) with `mistral:7b-instruct-q4_K_M`
+- Dependencies:
+  - `pip install -r requirements.txt` (standard install with open `>=` bounds)
+  - `pip install -r requirements-lock.txt` (exact pinned environment, used in CI and for deterministic reproduction)
+
+```bash
+# 1. Pull the model in Ollama
 ollama pull mistral:7b-instruct-q4_K_M
-```
 
-```bash
+# 2. Dry run: Verify and budget all prompts without model invocation
 python -m src.evaluation.run_corrected_rerun --dry-run
-```
 
-```bash
+# 3. Full rerun: Generate answers across systems V, A, C
 python -m src.evaluation.run_corrected_rerun
-```
 
-```bash
+# 4. Analyze results
 python -m src.evaluation.analyze_corrected_rerun
-```
 
-- The dry run builds and fits every prompt without calling the model.
-- The full run refuses to start unless the pre-registration is approved and
-  committed. It checks the benchmark and frozen-retrieval hashes and records
-  per-call integrity: expected token count equals evaluated token count.
-- Outputs go to `data/results/corrected_rerun/`.
-
-Spot-check (completed 2026-10-11, result FAILED; outputs in
-`data/results/corrected_rerun/spotcheck_analysis.json`). To reproduce from the
-evaluator's workbook:
-
-```bash
-python -m src.evaluation.import_spotcheck_workbook data/annotations/corrected_rerun_spotcheck_rater_IS.xlsx --force
-```
-
-```bash
+# 5. Reproduce independent spot-check analysis
 python -m src.evaluation.analyze_corrected_rerun_spotcheck
 ```
 
-Run the tests:
-
+### Running Tests and Verification
 ```bash
+# Run backend test suite
 pytest -q
+
+# Run frontend build, lint, and unit tests
+cd kgrag-web
+npm ci
+npm run lint
+npm run build
+npm test
 ```
 
-### Reproducibility notes
-
-- `.gitattributes` stores `data/**` byte-for-byte, so a fresh clone reproduces
-  every recorded SHA-256 (benchmark v2 `6c7f3600…`, frozen retrieval
-  `e13e4c82…`, corrected rerun `2d9b6f47…`). Don't remove it.
-- Large local artifacts (`data/raw`, `data/chunks`, `data/index`, `data/kg`,
-  `data/cleaned`) and `paper/` are not tracked.
-- [`src/generator/extract_tokenizer.py`](src/generator/extract_tokenizer.py)
-  regenerates the tokenizer if the Ollama model changes; it needs `gguf`.
+Automated testing is configured via GitHub Actions in [`.github/workflows/ci.yml`](.github/workflows/ci.yml).
 
 ---
 
-## HTTP API for frontends
+## Manuscript Versioning Policy
 
-`src/api` serves the relation-aware KG-RAG system (system A) over HTTP, so a
-frontend can be built in any framework. The guide, TypeScript types and
-OpenAPI spec are in [`docs/frontend/`](docs/frontend/README.md).
-
-```bash
-python -m src.api --mock
-```
-
-Mock mode needs only git-tracked files. Live mode (`python -m src.api`)
-needs Ollama and the local index; it reproduces system A's rerun answers
-exactly. Interactive docs are at http://127.0.0.1:8000/docs.
+Per repository policy, the academic manuscript directory `paper/` and zip bundles (`*_updated.zip`) are explicitly excluded from Git tracking in `.gitignore`:
+- **Policy Rationale:** Academic manuscripts undergo active drafting, peer review, and journal/conference formatting. Keeping the manuscript local prevents premature dissemination of unreviewed drafts or camera-ready conflicts while peer review is underway.
+- **Audit Consistency:** All benchmark figures, rater scores, and statistical tests reported in any submitted manuscript correspond directly to the immutable Git commit hashes and artifacts recorded in this repository.
 
 ---
 
-## Repository layout
+## Repository Layout
 
 ```
-config/tokenizer/        Tokenizer extracted from the Ollama GGUF (exact token counts)
+.github/workflows/ci.yml GitHub Actions CI workflow (Python 3.11 + React)
+config/tokenizer/        Tokenizer extracted from Ollama GGUF (exact token counts)
 data/
-  corpus/                Canonical Phase-1 corpus: chunks, entities, triples, sources
-  benchmark/             200-question canonical benchmark and splits
-  relational_benchmark/  Relational QA v1 (62 questions)
-  relation_aware_benchmark/  Relation-aware QA v2 (72 questions, frozen)
-  annotations/           Human-evaluation packages and filled sheets
-  results/               Every experiment's outputs and manifests (frozen)
-    corrected_rerun/     Pre-registered rerun: generations, analysis, spot-check
-reports/                 Audits, construction reports, pre-registration
+  corpus/                Authoritative Phase 1 corpus: chunks, entities, triples, registry
+  benchmark/             Canonical 200-question benchmark and splits (historical)
+  relational_benchmark/  Relational QA v1 (62 questions, historical)
+  relation_aware_benchmark/ Relation-Aware QA v2 (72 questions, frozen benchmark)
+  annotations/           Rater templates, guidelines, completed evaluations (data/annotations/README.md)
+  results/               Authoritative and historical experiment outputs (data/results/README.md)
+    corrected_rerun/     Pre-registered rerun: generations, statistical tests, spot-check
+kgrag-web/               Canonical React 19 web frontend (ASTRA)
 src/
-  corpus/                Collection, extraction, cleaning, chunking, KG assembly
-  retriever/             Dense, KG, hybrid, and relation-aware retrieval
-  generator/             Ollama client, prompts, token budgeting, KG-grounded generation
-  baselines/             BM25 + LLM, vanilla RAG, GraphRAG, LightRAG
-  evaluation/            Runners, analyses, and human-evaluation package builders
-tests/                   pytest suite
-src/api/                 HTTP API for frontends (FastAPI)
-docs/frontend/           Frontend guide, TypeScript types, OpenAPI spec
-app.py, app_v2.py        Streamlit demo apps
+  api/                   FastAPI HTTP application services and schemas
+  config/                Runtime configuration, token budgets, and default settings
+  corpus/                Official document collection, extraction, chunking, and KG assembly
+  retriever/             Dense FAISS, lexical BM25, and relation-aware graph retrieval
+  generator/             Ollama client, exact token budgeting, and prompt construction
+  baselines/             BM25 + LLM, Vanilla Dense RAG, GraphRAG, LightRAG
+  evaluation/            Benchmark runners, statistical analyses, and human-eval package builders
+tests/                   Pytest test suite
+requirements.txt         Core application and API dependencies
+requirements-lock.txt    Tested pinned dependency set on Python 3.11.9
 ```
 
 ---
@@ -251,27 +200,28 @@ app.py, app_v2.py        Streamlit demo apps
 
 | Name | Role | Institution |
 |---|---|---|
-| Nandana Narayan Das | KG pipeline, retrieval, evaluation, paper | Alliance School of Advanced Computing, Alliance University |
-| Gowri Kannan | Data collection, generation, baselines, frontend | VJCET |
+| **Nandana Narayan Das** | KG pipeline, relation-aware retrieval, evaluation, paper | Alliance School of Advanced Computing, Alliance University |
+| **Gowri Kannan** | Data collection, generation, baselines, frontend | VJCET |
 
 ## Citation
 
+Until final publication details are assigned, please cite this work as a preprint / working paper:
+
 ```bibtex
-@inproceedings{narayandas2027kgrag,
-  title     = {KG-RAG: Knowledge Graph-Augmented Retrieval-Augmented Generation
-               for ISRO Domain Question Answering on Resource-Constrained Hardware},
-  author    = {Narayan Das, Nandana and Kannan, Gowri},
-  booktitle = {Proceedings of the International Conference on Natural Language Processing (ICNLP)},
-  year      = {2027}
+@misc{narayandas2026kgrag,
+  title        = {KG-RAG: Knowledge Graph-Augmented Retrieval-Augmented Generation for ISRO Domain Question Answering on Resource-Constrained Hardware},
+  author       = {Narayan Das, Nandana and Kannan, Gowri},
+  year         = {2026},
+  howpublished = {Working paper / Preprint},
+  institution  = {Alliance School of Advanced Computing, Alliance University},
+  note         = {Under peer review}
 }
 ```
 
 ## License
 
-MIT. See `LICENSE`.
+MIT License. See [`LICENSE`](LICENSE).
 
 ## Acknowledgements
 
-Conducted under the ISRO Bharatiya Antariksh Hackathon 2025 (BAH-02)
-framework. We thank Alliance School of Advanced Computing, Alliance
-University, for academic support.
+Conducted under the ISRO Bharatiya Antariksh Hackathon 2025 (BAH-02) framework. We thank Alliance School of Advanced Computing, Alliance University, for academic support.

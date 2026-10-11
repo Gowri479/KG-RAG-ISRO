@@ -21,7 +21,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from src.api.pipeline import GenerationUnavailable, LivePipeline, MockPipeline, ollama_reachable
 from src.api.schemas import AskRequest, AskResponse, ErrorResponse, Example, ExamplesResponse, HealthResponse
-from src.evaluation.build_corrected_rerun_human_package import BENCHMARK
+from src.config.runtime import CANONICAL_BENCHMARK_PATH as BENCHMARK
 from src.generator.ollama_api import MODEL_NAME
 
 DEFAULT_ORIGINS = "http://localhost:5173,http://127.0.0.1:5173,http://localhost:3000,http://127.0.0.1:3000"
