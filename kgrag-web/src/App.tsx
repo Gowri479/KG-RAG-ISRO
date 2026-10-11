@@ -55,7 +55,7 @@ export default function App() {
   const [asked, setAsked] = useState("");
   const [result, setResult] = useState<AskResponse | null>(null);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [menu, setMenu] = useState(false);
   const [more, setMore] = useState(false);
   const [sel, setSel] = useState<string | null>(null);
@@ -89,14 +89,14 @@ export default function App() {
     setQuestion(q);
     setAsked(q);
     setLoading(true);
-    setError(false);
+    setError(null);
     setResult(null);
     setSel(null);
     setMenu(false);
     try {
       setResult(await ask(q));
-    } catch {
-      setError(true);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "The service is currently unavailable. Please try again later.");
     } finally {
       setLoading(false);
     }
@@ -104,7 +104,7 @@ export default function App() {
 
   const reset = () => {
     setResult(null);
-    setError(false);
+    setError(null);
     setLoading(false);
     setQuestion("");
     setMenu(false);
@@ -121,7 +121,7 @@ export default function App() {
     .filter((h) => !seen.has(h.triple_id) && seen.add(h.triple_id));
   const docCount = new Set(hops.map((h) => h.source.document_id)).size;
   const topScore = result?.kg_paths[0]?.score;
-  const traceView = loading || !!result || error;
+  const traceView = loading || !!result || !!error;
   const abstained = !!result?.abstained;
 
   const picker = (cls: string) =>
@@ -282,8 +282,8 @@ export default function App() {
             {error && (
               <section className="card state bad">
                 <div>
-                  <h3>Backend offline</h3>
-                  <p className="soft">The service is currently unavailable. Please try again later.</p>
+                  <h3>Something went wrong</h3>
+                  <p className="soft">{error}</p>
                   <button className="outline" onClick={() => submit(asked)}>Retry</button>
                 </div>
               </section>
