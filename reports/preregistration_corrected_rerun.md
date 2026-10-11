@@ -287,3 +287,31 @@ Recorded 2026-10-11, before running any agreement analysis on this rating.
   agreement between the two independent checkers (IS vs this rater) with the
   same Krippendorff α. The §14 criterion is applied descriptively only, with
   no PASS/FAIL claim for the study.
+
+## 18. Third spot-check rater (post hoc, exploratory; recorded before its analysis)
+
+Recorded 2026-10-11, before running any agreement analysis on this rating.
+
+- **Status:** NOT pre-registered; obtained after §14 FAILED. Like §17, it
+  cannot change the §14 outcome and is reported only as an exploratory
+  check alongside it.
+- **Source:** the evaluator kit returned by a third, new evaluator. The
+  workbook is stored as `data/annotations/corrected_rerun_spotcheck3_rater.xlsx`
+  (SHA-256 `2d6d1fbf…`) and converted to `corrected_rerun_spotcheck3_filled.csv`.
+  All 300 scores are valid, and every answer text matched the package. The
+  returned CSV and PDF are byte-identical to the kit.
+- **Attestation:** the project owner reports that the evaluator did not see
+  any other scores and used no AI tools. This is not verified by the analysis.
+- **Observations recorded before analysis:**
+  - the kit files were unpacked at 14:58 and the workbook was last saved at
+    15:05–15:06 (IST), so scoring and notes took about 7 minutes;
+  - every one of the 60 answers has a formulaic note, and one note misstates
+    a reference (rakg_053 note says "ESA is the reference answer"; the
+    reference is ISRO);
+  - cell overlap with IS 72.0%, checker 2 69.7%, rater-1 sheet 75.3%,
+    AI draft 74.7%.
+  Given the speed, readers should weigh this rating with caution.
+- **Analysis (fixed now):** the §14 computation against rater 1 (output
+  `spotcheck3_analysis.json`), pairwise agreement with IS and checker 2,
+  and pooled Krippendorff α across the three independent checkers. All
+  descriptive, with no PASS/FAIL claim for the study.

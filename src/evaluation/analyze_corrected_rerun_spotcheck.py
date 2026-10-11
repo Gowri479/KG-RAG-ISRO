@@ -86,10 +86,18 @@ def main(filled: Path = FILLED, output: Path = OUTPUT, compare_with: Path | None
         "criterion": f"correctness ordinal alpha >= {ALPHA_THRESHOLD} and checker's A-V and C-V correctness differences in the same direction as rater 1",
         "validation": "PASSED" if passed else "FAILED",
     }
-    if compare_with is not None:
-        result["agreement_with_other_checker"] = {"other_checker_file": compare_with.name, **agreement_between(checker, read_scores(compare_with, ids))}
+    others = [compare_with] if isinstance(compare_with, Path) else list(compare_with or [])
+    if len(others) == 1:
+        result["agreement_with_other_checker"] = {"other_checker_file": others[0].name, **agreement_between(checker, read_scores(others[0], ids))}
+    elif others:
+        scored = {path.name: read_scores(path, ids) for path in others}
+        result["agreement_with_other_checkers"] = {name: agreement_between(checker, s) for name, s in scored.items()}
+        result["pooled_alpha_all_checkers"] = {
+            d: krippendorff_alpha([[checker[k][d], *(s[k][d] for s in scored.values())] for k in sorted(checker)], "nominal" if d == "unsupported_claim" else "ordinal")
+            for d in DIMENSIONS
+        }
     output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf8")
-    print(json.dumps({k: result[k] for k in ("krippendorff_alpha", "exact_agreement", "validation", "agreement_with_other_checker") if k in result}, indent=2))
+    print(json.dumps({k: result[k] for k in ("krippendorff_alpha", "exact_agreement", "validation", "agreement_with_other_checker", "agreement_with_other_checkers", "pooled_alpha_all_checkers") if k in result}, indent=2))
     for key, v in direction.items():
         print(key, "checker", v["checker"]["mean_diff"], v["checker"]["ci95"], "| rater1", v["rater1"]["mean_diff"], v["rater1"]["ci95"])
 
@@ -100,6 +108,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--filled", type=Path, default=FILLED)
     parser.add_argument("--output", type=Path, default=OUTPUT)
-    parser.add_argument("--compare-with", type=Path, help="Another checker's filled CSV, for checker-vs-checker agreement")
+    parser.add_argument("--compare-with", type=Path, nargs="+", help="Other checkers' filled CSVs, for checker-vs-checker agreement")
     args = parser.parse_args()
     main(args.filled, args.output, args.compare_with)
