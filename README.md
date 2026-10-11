@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![LLM](https://img.shields.io/badge/LLM-Mistral--7B%20Q4%20(local)-purple)
-![Status](https://img.shields.io/badge/Human%20validation-pending-orange)
+![Status](https://img.shields.io/badge/Human%20validation-not%20passed-red)
 
 A local question-answering system over official ISRO and ISSDC documents. It
 combines a provenance-linked knowledge graph with dense retrieval and a 4-bit
@@ -24,7 +24,7 @@ Antariksh Hackathon 2025 (BAH-02).
 |---|---|
 | Latest result | Pre-registered corrected rerun: relation-aware KG-RAG beats vanilla dense RAG on correctness |
 | Caveat | Scores are AI-drafted and reviewed by one human (99.2% unchanged) |
-| In progress | Independent human spot-check on 20 random questions (pre-registered, §14) |
+| Spot-check | Independent human on 20 random questions: **FAILED** pre-registered criterion (correctness α = 0.64 < 0.667); same direction as the main result |
 | Paper | Not yet updated with the corrected results; kept locally, outside git |
 
 ### Headline result
@@ -46,9 +46,14 @@ questions), with every prompt guaranteed to fit the model's context window:
 **How far this can be trusted:** the scores come from one rater who reviewed
 a model-drafted sheet, so they are effectively an AI judge's verdict. The
 references were derived from KG triples, which may favour KG systems that
-reuse triple wording. Until the independent spot-check passes, report this as
-*AI-drafted, human-reviewed* and *not yet independently validated*. See
-[`reports/preregistration_corrected_rerun.md`](reports/preregistration_corrected_rerun.md) §12–§14.
+reuse triple wording. The independent spot-check (20 random questions, one evaluator who saw no
+other scores) did **not** pass its pre-registered criterion: correctness
+agreement α = 0.64 against a 0.667 threshold, with very low agreement on
+groundedness (α = 0.15) and unsupported claims (α = 0.17). The evaluator's own
+scores point the same way: A − Vanilla +1.00 (95% CI [0.15, 1.80]), C − Vanilla
++0.55 ([−0.25, 1.40]). Report the main result as *AI-drafted, human-reviewed,
+not independently validated*, and show the spot-check alongside it. See
+[`reports/preregistration_corrected_rerun.md`](reports/preregistration_corrected_rerun.md) §12–§16.
 
 ---
 
@@ -163,9 +168,13 @@ python -m src.evaluation.analyze_corrected_rerun
   per-call integrity: expected token count equals evaluated token count.
 - Outputs go to `data/results/corrected_rerun/`.
 
-Spot-check (pending): an independent rater scores
-`data/annotations/corrected_rerun_spotcheck.csv` from scratch and saves it as
-`corrected_rerun_spotcheck_filled.csv`. Then:
+Spot-check (completed 2026-10-11, result FAILED; outputs in
+`data/results/corrected_rerun/spotcheck_analysis.json`). To reproduce from the
+evaluator's workbook:
+
+```bash
+python -m src.evaluation.import_spotcheck_workbook data/annotations/corrected_rerun_spotcheck_rater_IS.xlsx --force
+```
 
 ```bash
 python -m src.evaluation.analyze_corrected_rerun_spotcheck

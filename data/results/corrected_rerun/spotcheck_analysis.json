@@ -1,0 +1,110 @@
+{
+  "preregistration": "reports/preregistration_corrected_rerun.md \u00a714",
+  "questions": [
+    "rakg_001",
+    "rakg_007",
+    "rakg_015",
+    "rakg_018",
+    "rakg_019",
+    "rakg_022",
+    "rakg_023",
+    "rakg_027",
+    "rakg_029",
+    "rakg_032",
+    "rakg_047",
+    "rakg_050",
+    "rakg_053",
+    "rakg_056",
+    "rakg_058",
+    "rakg_064",
+    "rakg_065",
+    "rakg_066",
+    "rakg_067",
+    "rakg_072"
+  ],
+  "units": 60,
+  "krippendorff_alpha": {
+    "correctness": 0.6393781731268615,
+    "completeness": 0.618093447905478,
+    "groundedness": 0.15390109702180366,
+    "relevance": 0.42695359163342117,
+    "unsupported_claim": 0.16700000000000004
+  },
+  "exact_agreement": {
+    "correctness": 0.7833,
+    "completeness": 0.7167,
+    "groundedness": 0.5667,
+    "relevance": 0.6667,
+    "unsupported_claim": 0.7667
+  },
+  "correctness_differences": {
+    "A_CURRENT_vs_V_VANILLA": {
+      "checker": {
+        "n": 20,
+        "mean_diff": 1,
+        "median_diff": 0.0,
+        "ci95": [
+          0.15,
+          1.8
+        ],
+        "dz": 0.506712,
+        "wins_losses_ties": [
+          9,
+          2,
+          9
+        ]
+      },
+      "rater1": {
+        "n": 20,
+        "mean_diff": 1.25,
+        "median_diff": 1.0,
+        "ci95": [
+          0.65,
+          1.9
+        ],
+        "dz": 0.843254,
+        "wins_losses_ties": [
+          11,
+          0,
+          9
+        ]
+      },
+      "same_direction": true
+    },
+    "C_TWO_STAGE_vs_V_VANILLA": {
+      "checker": {
+        "n": 20,
+        "mean_diff": 0.55,
+        "median_diff": 0.0,
+        "ci95": [
+          -0.25,
+          1.4
+        ],
+        "dz": 0.28069,
+        "wins_losses_ties": [
+          7,
+          5,
+          8
+        ]
+      },
+      "rater1": {
+        "n": 20,
+        "mean_diff": 0.7,
+        "median_diff": 0.5,
+        "ci95": [
+          -0.25,
+          1.6
+        ],
+        "dz": 0.317767,
+        "wins_losses_ties": [
+          10,
+          3,
+          7
+        ]
+      },
+      "same_direction": true
+    }
+  },
+  "criterion": "correctness ordinal alpha >= 0.667 and checker's A-V and C-V correctness differences in the same direction as rater 1",
+  "validation": "FAILED"
+}
