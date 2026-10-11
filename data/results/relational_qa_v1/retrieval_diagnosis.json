@@ -1,0 +1,9 @@
+{
+  "kg_path_retrieval_rate": 0.0,
+  "partial_path_rate": 0.0,
+  "required_path_not_retrieved_rate": 0.0,
+  "path_not_determinable_rate": 1.0,
+  "supporting_text_retrieval_rate": 0.653846,
+  "supporting_text_not_retrieved_rate": 0.346154,
+  "text_not_determinable_rate": 0.0
+}

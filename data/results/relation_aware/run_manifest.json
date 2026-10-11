@@ -1,0 +1,33 @@
+{
+  "benchmark_sha256": "6c7f3600995c0091de73d20d2f02953cb414023df281f7178069f9f81b432b64",
+  "benchmark_questions": 72,
+  "systems": [
+    "vanilla_dense_rag",
+    "corrected_structured_kg_rag",
+    "relation_aware_kg_rag",
+    "relation_aware_kg_only",
+    "relation_aware_kg_source",
+    "relation_aware_kg_dense",
+    "relation_aware_kg_dense_bm25"
+  ],
+  "expected_generations": 504,
+  "model": "mistral:7b-instruct-q4_K_M",
+  "options": {
+    "temperature": 0.1,
+    "num_predict": 150,
+    "num_ctx": 2048
+  },
+  "context_token_budget": 1500,
+  "seed": 20261008,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "git_commit": "4d6027f19deeaf25aab0a806a6d5dfb3e65b1a06",
+  "frozen_weights": {
+    "dense": 0.2,
+    "lexical": 0.15,
+    "entity": 0.2,
+    "relation": 0.3,
+    "provenance": 0.15
+  },
+  "leakage_control": "Benchmark is generated from canonical triples before any answer generation; no evaluation output is read by retrieval."
+}

@@ -1,0 +1,109 @@
+{
+  "status": "passed",
+  "check_count": 19,
+  "passed_check_count": 19,
+  "failed_check_count": 0,
+  "document_count": 33,
+  "chunk_count": 1006,
+  "entity_count": 123,
+  "triple_count": 134,
+  "provenance_linked_triple_count": 134,
+  "source_url_network_reachability_checked": false,
+  "checks": [
+    {
+      "name": "unique_registry_document_ids",
+      "passed": true,
+      "detail": "33 registered documents"
+    },
+    {
+      "name": "registry_required_metadata",
+      "passed": true,
+      "detail": "Missing required metadata: []"
+    },
+    {
+      "name": "official_source_urls_well_formed",
+      "passed": true,
+      "detail": "Each URL is HTTPS and its host matches source_domain."
+    },
+    {
+      "name": "registered_documents_are_tier1",
+      "passed": true,
+      "detail": "Only official ISRO/ISSDC primary sources are in this corpus."
+    },
+    {
+      "name": "registered_source_files_exist",
+      "passed": true,
+      "detail": "Missing source files: []"
+    },
+    {
+      "name": "registered_source_hashes_match",
+      "passed": true,
+      "detail": "Checksum mismatches: []"
+    },
+    {
+      "name": "no_duplicate_document_hashes",
+      "passed": true,
+      "detail": "Duplicate hashes: {}"
+    },
+    {
+      "name": "every_raw_file_is_registered",
+      "passed": true,
+      "detail": "Unregistered raw files: []"
+    },
+    {
+      "name": "unique_chunk_ids",
+      "passed": true,
+      "detail": "1006 chunks"
+    },
+    {
+      "name": "chunks_map_to_registered_documents",
+      "passed": true,
+      "detail": "Unregistered chunk references: []"
+    },
+    {
+      "name": "chunk_source_urls_match_registry",
+      "passed": true,
+      "detail": "Mismatched chunk URLs: []"
+    },
+    {
+      "name": "chunks_have_text_section_and_tier",
+      "passed": true,
+      "detail": "Incomplete chunks: []"
+    },
+    {
+      "name": "unique_entity_ids",
+      "passed": true,
+      "detail": "123 entities"
+    },
+    {
+      "name": "entities_use_ontology_types",
+      "passed": true,
+      "detail": "Invalid entity types: []"
+    },
+    {
+      "name": "unique_triple_ids",
+      "passed": true,
+      "detail": "134 triples"
+    },
+    {
+      "name": "triples_are_typed_controlled_and_unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no_orphan_entities",
+      "passed": true,
+      "detail": "Orphan entities: []"
+    },
+    {
+      "name": "every_entity_has_chunk_provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "every_triple_has_exact_chunk_provenance",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

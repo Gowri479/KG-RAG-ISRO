@@ -1,0 +1,500 @@
+{
+  "benchmark_metadata": {
+    "benchmark_file": "data\\benchmark\\aditya_l1_optional_qa.json",
+    "benchmark_size": 36,
+    "valid_questions": 36,
+    "excluded_questions": 0,
+    "categories": [
+      "launch/trajectory/time relationships",
+      "mission facts",
+      "multi-hop payload relations",
+      "multi-hop temporal relations",
+      "payload → institution",
+      "payload → instrument subsystem",
+      "payload → measurement",
+      "payload → objective",
+      "temporal relations",
+      "trajectory/time relationships"
+    ],
+    "reasoning_types": [
+      "Type A: Direct fact lookup",
+      "Type B: One explicit relationship",
+      "Type C: Multiple related entities / multi-hop",
+      "Type D: Temporal relationship"
+    ]
+  },
+  "overall_metrics": {
+    "bm25_llm": {
+      "n": 36,
+      "rouge_l": 0.2918,
+      "reference_token_coverage": 0.4767,
+      "exact_match": 0.0,
+      "idk_rate": 0.2222
+    },
+    "vanilla_rag": {
+      "n": 36,
+      "rouge_l": 0.2924,
+      "reference_token_coverage": 0.4897,
+      "exact_match": 0.0,
+      "idk_rate": 0.25
+    },
+    "kg_rag": {
+      "n": 36,
+      "rouge_l": 0.3859,
+      "reference_token_coverage": 0.5473,
+      "exact_match": 0.0,
+      "idk_rate": 0.0833
+    }
+  },
+  "per_category_metrics": {
+    "launch/trajectory/time relationships": {
+      "bm25_llm": {
+        "n": 3,
+        "rouge_l": 0.2967,
+        "reference_token_coverage": 0.6825,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      },
+      "vanilla_rag": {
+        "n": 3,
+        "rouge_l": 0.1212,
+        "reference_token_coverage": 0.3333,
+        "exact_match": 0.0,
+        "idk_rate": 0.6667
+      },
+      "kg_rag": {
+        "n": 3,
+        "rouge_l": 0.4069,
+        "reference_token_coverage": 0.7355,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      }
+    },
+    "mission facts": {
+      "bm25_llm": {
+        "n": 6,
+        "rouge_l": 0.1821,
+        "reference_token_coverage": 0.3449,
+        "exact_match": 0.0,
+        "idk_rate": 0.5
+      },
+      "vanilla_rag": {
+        "n": 6,
+        "rouge_l": 0.2092,
+        "reference_token_coverage": 0.5076,
+        "exact_match": 0.0,
+        "idk_rate": 0.3333
+      },
+      "kg_rag": {
+        "n": 6,
+        "rouge_l": 0.3564,
+        "reference_token_coverage": 0.5263,
+        "exact_match": 0.0,
+        "idk_rate": 0.1667
+      }
+    },
+    "multi-hop payload relations": {
+      "bm25_llm": {
+        "n": 1,
+        "rouge_l": 0.375,
+        "reference_token_coverage": 0.8,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      },
+      "vanilla_rag": {
+        "n": 1,
+        "rouge_l": 0.375,
+        "reference_token_coverage": 0.8,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      },
+      "kg_rag": {
+        "n": 1,
+        "rouge_l": 0.375,
+        "reference_token_coverage": 0.8,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      }
+    },
+    "multi-hop temporal relations": {
+      "bm25_llm": {
+        "n": 1,
+        "rouge_l": 0.2778,
+        "reference_token_coverage": 0.4375,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      },
+      "vanilla_rag": {
+        "n": 1,
+        "rouge_l": 0.1207,
+        "reference_token_coverage": 0.625,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      },
+      "kg_rag": {
+        "n": 1,
+        "rouge_l": 0.12,
+        "reference_token_coverage": 0.5625,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      }
+    },
+    "payload → institution": {
+      "bm25_llm": {
+        "n": 7,
+        "rouge_l": 0.4039,
+        "reference_token_coverage": 0.4563,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      },
+      "vanilla_rag": {
+        "n": 7,
+        "rouge_l": 0.1974,
+        "reference_token_coverage": 0.2132,
+        "exact_match": 0.0,
+        "idk_rate": 0.4286
+      },
+      "kg_rag": {
+        "n": 7,
+        "rouge_l": 0.284,
+        "reference_token_coverage": 0.3012,
+        "exact_match": 0.0,
+        "idk_rate": 0.1429
+      }
+    },
+    "payload → instrument subsystem": {
+      "bm25_llm": {
+        "n": 3,
+        "rouge_l": 0.2069,
+        "reference_token_coverage": 0.5231,
+        "exact_match": 0.0,
+        "idk_rate": 0.3333
+      },
+      "vanilla_rag": {
+        "n": 3,
+        "rouge_l": 0.3086,
+        "reference_token_coverage": 0.5259,
+        "exact_match": 0.0,
+        "idk_rate": 0.3333
+      },
+      "kg_rag": {
+        "n": 3,
+        "rouge_l": 0.4,
+        "reference_token_coverage": 0.8336,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      }
+    },
+    "payload → measurement": {
+      "bm25_llm": {
+        "n": 3,
+        "rouge_l": 0.0833,
+        "reference_token_coverage": 0.0714,
+        "exact_match": 0.0,
+        "idk_rate": 0.6667
+      },
+      "vanilla_rag": {
+        "n": 3,
+        "rouge_l": 0.2426,
+        "reference_token_coverage": 0.5099,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      },
+      "kg_rag": {
+        "n": 3,
+        "rouge_l": 0.2323,
+        "reference_token_coverage": 0.5099,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      }
+    },
+    "payload → objective": {
+      "bm25_llm": {
+        "n": 6,
+        "rouge_l": 0.2335,
+        "reference_token_coverage": 0.4527,
+        "exact_match": 0.0,
+        "idk_rate": 0.3333
+      },
+      "vanilla_rag": {
+        "n": 6,
+        "rouge_l": 0.3239,
+        "reference_token_coverage": 0.4931,
+        "exact_match": 0.0,
+        "idk_rate": 0.1667
+      },
+      "kg_rag": {
+        "n": 6,
+        "rouge_l": 0.4044,
+        "reference_token_coverage": 0.5038,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      }
+    },
+    "temporal relations": {
+      "bm25_llm": {
+        "n": 5,
+        "rouge_l": 0.4704,
+        "reference_token_coverage": 0.7057,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      },
+      "vanilla_rag": {
+        "n": 5,
+        "rouge_l": 0.6293,
+        "reference_token_coverage": 0.8031,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      },
+      "kg_rag": {
+        "n": 5,
+        "rouge_l": 0.661,
+        "reference_token_coverage": 0.6964,
+        "exact_match": 0.0,
+        "idk_rate": 0.2
+      }
+    },
+    "trajectory/time relationships": {
+      "bm25_llm": {
+        "n": 1,
+        "rouge_l": 0.4167,
+        "reference_token_coverage": 0.5833,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      },
+      "vanilla_rag": {
+        "n": 1,
+        "rouge_l": 0.2857,
+        "reference_token_coverage": 0.5833,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      },
+      "kg_rag": {
+        "n": 1,
+        "rouge_l": 0.4211,
+        "reference_token_coverage": 0.3333,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      }
+    }
+  },
+  "per_reasoning_type_metrics": {
+    "Type A: Direct fact lookup": {
+      "bm25_llm": {
+        "n": 6,
+        "rouge_l": 0.1821,
+        "reference_token_coverage": 0.3449,
+        "exact_match": 0.0,
+        "idk_rate": 0.5
+      },
+      "vanilla_rag": {
+        "n": 6,
+        "rouge_l": 0.2092,
+        "reference_token_coverage": 0.5076,
+        "exact_match": 0.0,
+        "idk_rate": 0.3333
+      },
+      "kg_rag": {
+        "n": 6,
+        "rouge_l": 0.3564,
+        "reference_token_coverage": 0.5263,
+        "exact_match": 0.0,
+        "idk_rate": 0.1667
+      }
+    },
+    "Type B: One explicit relationship": {
+      "bm25_llm": {
+        "n": 19,
+        "rouge_l": 0.2684,
+        "reference_token_coverage": 0.4049,
+        "exact_match": 0.0,
+        "idk_rate": 0.2632
+      },
+      "vanilla_rag": {
+        "n": 19,
+        "rouge_l": 0.262,
+        "reference_token_coverage": 0.3978,
+        "exact_match": 0.0,
+        "idk_rate": 0.2632
+      },
+      "kg_rag": {
+        "n": 19,
+        "rouge_l": 0.3322,
+        "reference_token_coverage": 0.4822,
+        "exact_match": 0.0,
+        "idk_rate": 0.0526
+      }
+    },
+    "Type C: Multiple related entities / multi-hop": {
+      "bm25_llm": {
+        "n": 2,
+        "rouge_l": 0.3264,
+        "reference_token_coverage": 0.6188,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      },
+      "vanilla_rag": {
+        "n": 2,
+        "rouge_l": 0.2479,
+        "reference_token_coverage": 0.7125,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      },
+      "kg_rag": {
+        "n": 2,
+        "rouge_l": 0.2475,
+        "reference_token_coverage": 0.6813,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      }
+    },
+    "Type D: Temporal relationship": {
+      "bm25_llm": {
+        "n": 9,
+        "rouge_l": 0.4065,
+        "reference_token_coverage": 0.6844,
+        "exact_match": 0.0,
+        "idk_rate": 0.0
+      },
+      "vanilla_rag": {
+        "n": 9,
+        "rouge_l": 0.4218,
+        "reference_token_coverage": 0.6221,
+        "exact_match": 0.0,
+        "idk_rate": 0.2222
+      },
+      "kg_rag": {
+        "n": 9,
+        "rouge_l": 0.5497,
+        "reference_token_coverage": 0.6691,
+        "exact_match": 0.0,
+        "idk_rate": 0.1111
+      }
+    }
+  },
+  "paired_statistical_tests": {
+    "rouge_l": {
+      "kg_vs_bm25": {
+        "mean_paired_difference": 0.0941,
+        "bootstrap_95_ci": [
+          -0.0057,
+          0.1834
+        ],
+        "wilcoxon": {
+          "n_non_zero": 31,
+          "reliable": true,
+          "statistic": 124.0,
+          "p_value": 0.015097576847980205
+        }
+      },
+      "kg_vs_vanilla_rag": {
+        "mean_paired_difference": 0.0935,
+        "bootstrap_95_ci": [
+          0.0288,
+          0.1695
+        ],
+        "wilcoxon": {
+          "n_non_zero": 21,
+          "reliable": true,
+          "statistic": 37.0,
+          "p_value": 0.004878997802734375
+        }
+      }
+    },
+    "reference_token_coverage": {
+      "kg_vs_bm25": {
+        "mean_paired_difference": 0.0707,
+        "bootstrap_95_ci": [
+          -0.049,
+          0.185
+        ],
+        "wilcoxon": {
+          "n_non_zero": 23,
+          "reliable": true,
+          "statistic": 106.0,
+          "p_value": 0.33035897706632544
+        }
+      },
+      "kg_vs_vanilla_rag": {
+        "mean_paired_difference": 0.0577,
+        "bootstrap_95_ci": [
+          -0.0477,
+          0.1757
+        ],
+        "wilcoxon": {
+          "n_non_zero": 15,
+          "reliable": true,
+          "statistic": 42.0,
+          "p_value": 0.306526583291276
+        }
+      }
+    },
+    "exact_match": {
+      "kg_vs_bm25": {
+        "mean_paired_difference": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "wilcoxon": {
+          "n_non_zero": 0,
+          "reliable": false,
+          "note": "Too few non-zero paired differences for asymptotic Wilcoxon test",
+          "p_value": null
+        }
+      },
+      "kg_vs_vanilla_rag": {
+        "mean_paired_difference": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "wilcoxon": {
+          "n_non_zero": 0,
+          "reliable": false,
+          "note": "Too few non-zero paired differences for asymptotic Wilcoxon test",
+          "p_value": null
+        }
+      }
+    },
+    "idk": {
+      "kg_vs_bm25": {
+        "mean_paired_difference": -0.1389,
+        "bootstrap_95_ci": [
+          -0.3056,
+          0.0
+        ],
+        "wilcoxon": {
+          "n_non_zero": 9,
+          "reliable": true,
+          "statistic": 10.0,
+          "p_value": 0.1796875
+        }
+      },
+      "kg_vs_vanilla_rag": {
+        "mean_paired_difference": -0.1667,
+        "bootstrap_95_ci": [
+          -0.3333,
+          0.0
+        ],
+        "wilcoxon": {
+          "n_non_zero": 10,
+          "reliable": true,
+          "statistic": 11.0,
+          "p_value": 0.109375
+        }
+      }
+    }
+  },
+  "kg_path_analysis": {
+    "total_questions": 36,
+    "questions_with_graph_node_match": 28,
+    "questions_with_non_empty_kg_context": 27,
+    "kg_coverage_fraction": 0.75
+  },
+  "limitations": [
+    "Sample size is N=36; exact match and non-zero differences have small sample support.",
+    "Metrics are lexical (ROUGE-L, token coverage, EM, IDK) rather than human-adjudicated correctness.",
+    "All systems use local 4-bit quantized Mistral-7b under identical prompt and temperature constraints."
+  ]
+}

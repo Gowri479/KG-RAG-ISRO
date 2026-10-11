@@ -1,0 +1,23 @@
+{
+  "mode": "incremental_augmentation",
+  "chunks_path": "data\\chunks\\chunks.json",
+  "new_chunk_count": 58,
+  "new_document_ids": [
+    "ADITYA_L1_ALPPS_HOME",
+    "ADITYA_L1_ALPPS_V1",
+    "ADITYA_L1_ISSDC_PAGE",
+    "ADITYA_L1_MISSION_BOOKLET"
+  ],
+  "removed_existing_aditya_edges": 482,
+  "added_nodes": 0,
+  "added_edges": 482,
+  "before": {
+    "nodes": 31358,
+    "edges": 95189
+  },
+  "after": {
+    "nodes": 31358,
+    "edges": 95671
+  },
+  "new_edges_with_source_url": 482
+}

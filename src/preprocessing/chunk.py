@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import re
 from pathlib import Path
 from typing import Iterable, List
 
@@ -48,12 +49,19 @@ def chunk_markdown_file(input_path: Path, output_path: Path, chunk_size: int = 5
     """Read a markdown file, chunk it, and save a JSON array of chunk metadata objects."""
     text = input_path.read_text(encoding="utf-8")
     chunks = chunk_text(text, chunk_size=chunk_size, stride=stride)
+    metadata = {}
+    for line in text.splitlines()[:20]:
+        match = re.match(r"^([A-Za-z][A-Za-z ]+):\s*(.+)$", line.strip())
+        if match:
+            key = match.group(1).strip().lower().replace(" ", "_")
+            metadata[key] = match.group(2).strip()
     payload = [
         {
             "chunk_index": index,
             "source_file": str(input_path),
             "chunk_size": len(chunk.split()),
             "text": chunk,
+            **{key: value for key, value in metadata.items() if key in {"document_id", "title", "mission", "organization", "document_type", "source_url", "page", "section", "authority"}},
         }
         for index, chunk in enumerate(chunks)
     ]

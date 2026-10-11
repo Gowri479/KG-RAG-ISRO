@@ -1,0 +1,440 @@
+{
+  "experiment": "expanded_runtime_diagnostic",
+  "protocol": "six frozen questions; same retrieval settings, prompts, model, and generation options as benchmark runner",
+  "questions": [
+    "isro_002",
+    "isro_101",
+    "isro_161",
+    "isro_003",
+    "isro_102",
+    "isro_162"
+  ],
+  "summaries": {
+    "bm25_llm": {
+      "n": 6,
+      "query_preprocessing_ms_mean": 0.1844,
+      "retrieval_ms_mean": 107200.0986,
+      "prompt_construction_ms_mean": 0.0269,
+      "ollama_request_ms_mean_successes": 81458.2919,
+      "generation_success_rate": 1.0,
+      "timeout_or_error_count": 0,
+      "generated_tokens_total": 244,
+      "context_tokens_mean": 1325.1667
+    },
+    "vanilla_rag": {
+      "n": 6,
+      "query_preprocessing_ms_mean": 0.0027,
+      "retrieval_ms_mean": 20265.6305,
+      "prompt_construction_ms_mean": 1.1978,
+      "ollama_request_ms_mean_successes": 72987.4475,
+      "generation_success_rate": 1.0,
+      "timeout_or_error_count": 0,
+      "generated_tokens_total": 229,
+      "context_tokens_mean": 1229.6667
+    },
+    "kg_rag": {
+      "n": 6,
+      "query_preprocessing_ms_mean": 16114.5264,
+      "retrieval_ms_mean": 44927.6247,
+      "prompt_construction_ms_mean": 0.2447,
+      "ollama_request_ms_mean_successes": 59203.7562,
+      "generation_success_rate": 0.8333,
+      "timeout_or_error_count": 1,
+      "generated_tokens_total": 150,
+      "context_tokens_mean": 1323.6667
+    }
+  },
+  "per_question": [
+    {
+      "id": "isro_002",
+      "tier": 1,
+      "question": "What is the primary objective of Chandrayaan-3?",
+      "wall_time_ms": 244269.903,
+      "systems": [
+        {
+          "system": "bm25_llm",
+          "answer": "The primary objective of Chandrayaan-3 is to carry out an in-situ study of the composition and distribution of the lunar neutral exosphere and its variability.",
+          "query_preprocessing_ms": 0.1976,
+          "retrieval_ms": 120550.185,
+          "context_tokens": 1536,
+          "generation": {
+            "prompt_construction_ms": 0.0654,
+            "request_latency_ms": 101655.1223,
+            "total_generation_ms": 101656.1855,
+            "prompt_chars": 9731,
+            "prompt_tokens": 1027,
+            "generated_tokens": 40,
+            "eval_duration_ns": 8611376000,
+            "prompt_eval_duration_ns": 43810985000,
+            "status": "ok",
+            "failure": null
+          }
+        },
+        {
+          "system": "vanilla_rag",
+          "answer": "The primary objective of Chandrayaan-3 is to establish communication with the lander and rover, and to conduct scientific experiments on the lunar surface.",
+          "query_preprocessing_ms": 0.0023,
+          "retrieval_ms": 105620.5376,
+          "context_tokens": 1536,
+          "generation": {
+            "prompt_construction_ms": 7.1076,
+            "request_latency_ms": 64077.9071,
+            "total_generation_ms": 64090.5355,
+            "prompt_chars": 9984,
+            "prompt_tokens": 1027,
+            "generated_tokens": 35,
+            "eval_duration_ns": 7318532000,
+            "prompt_eval_duration_ns": 42579069000,
+            "status": "ok",
+            "failure": null
+          }
+        },
+        {
+          "system": "kg_rag",
+          "answer": "I don't know.",
+          "query_preprocessing_ms": 79088.9498,
+          "retrieval_ms": 43127.9792,
+          "context_tokens": 1500,
+          "generation": {
+            "prompt_construction_ms": 0.0512,
+            "request_latency_ms": 0.0,
+            "total_generation_ms": 122043.5802,
+            "prompt_chars": 10175,
+            "prompt_tokens": null,
+            "generated_tokens": null,
+            "eval_duration_ns": null,
+            "prompt_eval_duration_ns": null,
+            "status": "error",
+            "failure": "ReadTimeout"
+          }
+        }
+      ]
+    },
+    {
+      "id": "isro_101",
+      "tier": 2,
+      "question": "Which launch vehicle carried the satellite that first detected water molecules on the Moon?",
+      "wall_time_ms": 221075.7525,
+      "systems": [
+        {
+          "system": "bm25_llm",
+          "answer": "The launch vehicle that carried the satellite that first detected water molecules on the Moon is not mentioned in the provided context.",
+          "query_preprocessing_ms": 0.0356,
+          "retrieval_ms": 131893.7722,
+          "context_tokens": 1085,
+          "generation": {
+            "prompt_construction_ms": 0.0078,
+            "request_latency_ms": 89161.1359,
+            "total_generation_ms": 89161.614,
+            "prompt_chars": 7113,
+            "prompt_tokens": 1954,
+            "generated_tokens": 26,
+            "eval_duration_ns": 5364025000,
+            "prompt_eval_duration_ns": 81668642000,
+            "status": "ok",
+            "failure": null
+          }
+        },
+        {
+          "system": "vanilla_rag",
+          "answer": "The launch vehicle that carried the satellite that first detected water molecules on the Moon is not mentioned in the provided context.",
+          "query_preprocessing_ms": 0.0037,
+          "retrieval_ms": 3010.5949,
+          "context_tokens": 1256,
+          "generation": {
+            "prompt_construction_ms": 0.0205,
+            "request_latency_ms": 70252.8925,
+            "total_generation_ms": 70256.3204,
+            "prompt_chars": 8464,
+            "prompt_tokens": 1027,
+            "generated_tokens": 26,
+            "eval_duration_ns": 5320891000,
+            "prompt_eval_duration_ns": 45560572000,
+            "status": "ok",
+            "failure": null
+          }
+        },
+        {
+          "system": "kg_rag",
+          "answer": "The launch vehicle that carried the satellite that first detected water molecules on the Moon is not mentioned in the provided information.",
+          "query_preprocessing_ms": 2489.299,
+          "retrieval_ms": 65209.7391,
+          "context_tokens": 1256,
+          "generation": {
+            "prompt_construction_ms": 0.6852,
+            "request_latency_ms": 11028.4905,
+            "total_generation_ms": 11030.491,
+            "prompt_chars": 8464,
+            "prompt_tokens": 1027,
+            "generated_tokens": 26,
+            "eval_duration_ns": 5294458000,
+            "prompt_eval_duration_ns": 203793000,
+            "status": "ok",
+            "failure": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "isro_161",
+      "tier": 3,
+      "question": "How many years after Chandrayaan-1 was Chandrayaan-2 launched?",
+      "wall_time_ms": 142783.6535,
+      "systems": [
+        {
+          "system": "bm25_llm",
+          "answer": "Chandrayaan-2 was launched on July 16, 2019, which is approximately 8 years and 1 month after the launch of Chandrayaan-1 on October 22, 2010.",
+          "query_preprocessing_ms": 0.512,
+          "retrieval_ms": 90168.8702,
+          "context_tokens": 1058,
+          "generation": {
+            "prompt_construction_ms": 0.0077,
+            "request_latency_ms": 52603.9786,
+            "total_generation_ms": 52604.6591,
+            "prompt_chars": 7004,
+            "prompt_tokens": 1027,
+            "generated_tokens": 55,
+            "eval_duration_ns": 10926673000,
+            "prompt_eval_duration_ns": 39558545000,
+            "status": "ok",
+            "failure": null
+          }
+        },
+        {
+          "system": "vanilla_rag",
+          "answer": "Chandrayaan-2 was launched 7 years after Chandrayaan-1.",
+          "query_preprocessing_ms": 0.0047,
+          "retrieval_ms": 3435.4147,
+          "context_tokens": 1058,
+          "generation": {
+            "prompt_construction_ms": 0.0075,
+            "request_latency_ms": 52311.1069,
+            "total_generation_ms": 52312.3324,
+            "prompt_chars": 6992,
+            "prompt_tokens": 1027,
+            "generated_tokens": 22,
+            "eval_duration_ns": 4450510000,
+            "prompt_eval_duration_ns": 45467829000,
+            "status": "ok",
+            "failure": null
+          }
+        },
+        {
+          "system": "kg_rag",
+          "answer": "Chandrayaan-2 was launched almost seven years after Chandrayaan-1.",
+          "query_preprocessing_ms": 4112.6854,
+          "retrieval_ms": 42821.1008,
+          "context_tokens": 1080,
+          "generation": {
+            "prompt_construction_ms": 0.162,
+            "request_latency_ms": 13249.9312,
+            "total_generation_ms": 13250.9033,
+            "prompt_chars": 7215,
+            "prompt_tokens": 1027,
+            "generated_tokens": 22,
+            "eval_duration_ns": 4182858000,
+            "prompt_eval_duration_ns": 244770000,
+            "status": "ok",
+            "failure": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "isro_003",
+      "tier": 1,
+      "question": "When did Chandrayaan-3 land on the Moon?",
+      "wall_time_ms": 150633.5018,
+      "systems": [
+        {
+          "system": "bm25_llm",
+          "answer": "Chandrayaan-3 landed on the Moon on August 23, 2023.",
+          "query_preprocessing_ms": 0.259,
+          "retrieval_ms": 101098.1464,
+          "context_tokens": 1360,
+          "generation": {
+            "prompt_construction_ms": 0.0187,
+            "request_latency_ms": 49523.189,
+            "total_generation_ms": 49524.4549,
+            "prompt_chars": 9322,
+            "prompt_tokens": 1027,
+            "generated_tokens": 25,
+            "eval_duration_ns": 4554245000,
+            "prompt_eval_duration_ns": 39803989000,
+            "status": "ok",
+            "failure": null
+          }
+        },
+        {
+          "system": "vanilla_rag",
+          "answer": "Chandrayaan-1 was launched on October 22, 2008 and landed on the Moon on October 22, 2008. However, Chandrayaan-3 has not been launched yet.",
+          "query_preprocessing_ms": 0.0021,
+          "retrieval_ms": 3336.9744,
+          "context_tokens": 1360,
+          "generation": {
+            "prompt_construction_ms": 0.0383,
+            "request_latency_ms": 57095.6817,
+            "total_generation_ms": 57097.1141,
+            "prompt_chars": 8765,
+            "prompt_tokens": 1027,
+            "generated_tokens": 52,
+            "eval_duration_ns": 10836528000,
+            "prompt_eval_duration_ns": 43897478000,
+            "status": "ok",
+            "failure": null
+          }
+        },
+        {
+          "system": "kg_rag",
+          "answer": "Chandrayaan-3 landed on the Moon on August 23, 2023.",
+          "query_preprocessing_ms": 3904.4368,
+          "retrieval_ms": 41799.622,
+          "context_tokens": 1257,
+          "generation": {
+            "prompt_construction_ms": 0.0991,
+            "request_latency_ms": 60444.4629,
+            "total_generation_ms": 60445.9523,
+            "prompt_chars": 8222,
+            "prompt_tokens": 1027,
+            "generated_tokens": 24,
+            "eval_duration_ns": 4514076000,
+            "prompt_eval_duration_ns": 41180828000,
+            "status": "ok",
+            "failure": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "isro_102",
+      "tier": 2,
+      "question": "Which ISRO mission carried the Moon Impact Probe and what did it discover?",
+      "wall_time_ms": 209451.0646,
+      "systems": [
+        {
+          "system": "bm25_llm",
+          "answer": "The ISRO mission that carried the Moon Impact Probe was Chandrayaan-3. The Moon Impact Probe discovered the altitude of the Moon Impact Probe and qualified technologies for future landing missions. It also measured the constituents of the tenuous lunar atmosphere during descent using an analog CCD camera Mass Spectrometer.",
+          "query_preprocessing_ms": 0.0287,
+          "retrieval_ms": 88531.825,
+          "context_tokens": 1536,
+          "generation": {
+            "prompt_construction_ms": 0.0398,
+            "request_latency_ms": 120908.9414,
+            "total_generation_ms": 120909.682,
+            "prompt_chars": 10057,
+            "prompt_tokens": 1027,
+            "generated_tokens": 70,
+            "eval_duration_ns": 13180289000,
+            "prompt_eval_duration_ns": 41566502000,
+            "status": "ok",
+            "failure": null
+          }
+        },
+        {
+          "system": "vanilla_rag",
+          "answer": "The ISRO mission that carried the Moon Impact Probe was Chandrayaan-2. The Moon Impact Probe was designed to study the lunar surface and its composition. It was separated from the Orbiter in preparation for landing and was intended to conduct in-situ studies of the lunar surface. However, communication from the lander to the ground stations was lost during the descent.",
+          "query_preprocessing_ms": 0.0016,
+          "retrieval_ms": 3143.3746,
+          "context_tokens": 1057,
+          "generation": {
+            "prompt_construction_ms": 0.006,
+            "request_latency_ms": 99536.9669,
+            "total_generation_ms": 99537.8478,
+            "prompt_chars": 7294,
+            "prompt_tokens": 1957,
+            "generated_tokens": 83,
+            "eval_duration_ns": 17531651000,
+            "prompt_eval_duration_ns": 79682963000,
+            "status": "ok",
+            "failure": null
+          }
+        },
+        {
+          "system": "kg_rag",
+          "answer": "The ISRO mission that carried the Moon Impact Probe was Chandrayaan-2. The Moon Impact Probe, also known as the Lunar Reconnaissance Orbiter (LRO), discovered that the Moon has a thin atmosphere and that it is gradually losing mass due to micrometeoroid impacts.",
+          "query_preprocessing_ms": 3700.2682,
+          "retrieval_ms": 34738.1437,
+          "context_tokens": 1489,
+          "generation": {
+            "prompt_construction_ms": 0.1914,
+            "request_latency_ms": 116129.2867,
+            "total_generation_ms": 116130.8491,
+            "prompt_chars": 10323,
+            "prompt_tokens": 1027,
+            "generated_tokens": 67,
+            "eval_duration_ns": 12488675000,
+            "prompt_eval_duration_ns": 39296414000,
+            "status": "ok",
+            "failure": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "isro_162",
+      "tier": 3,
+      "question": "Which came first -- Mangalyaan or Chandrayaan-2?",
+      "wall_time_ms": 185862.1154,
+      "systems": [
+        {
+          "system": "bm25_llm",
+          "answer": "The context does not provide information about the order in which Mangalyaan and Chandrayaan-2 were launched.",
+          "query_preprocessing_ms": 0.0732,
+          "retrieval_ms": 110957.7931,
+          "context_tokens": 1376,
+          "generation": {
+            "prompt_construction_ms": 0.0221,
+            "request_latency_ms": 74897.384,
+            "total_generation_ms": 74898.0145,
+            "prompt_chars": 9308,
+            "prompt_tokens": 1027,
+            "generated_tokens": 28,
+            "eval_duration_ns": 5474625000,
+            "prompt_eval_duration_ns": 39824761000,
+            "status": "ok",
+            "failure": null
+          }
+        },
+        {
+          "system": "vanilla_rag",
+          "answer": "Chandrayaan-2 came first.",
+          "query_preprocessing_ms": 0.0017,
+          "retrieval_ms": 3046.8868,
+          "context_tokens": 1111,
+          "generation": {
+            "prompt_construction_ms": 0.0071,
+            "request_latency_ms": 94650.1296,
+            "total_generation_ms": 94651.4753,
+            "prompt_chars": 7235,
+            "prompt_tokens": 2033,
+            "generated_tokens": 11,
+            "eval_duration_ns": 2235880000,
+            "prompt_eval_duration_ns": 90127912000,
+            "status": "ok",
+            "failure": null
+          }
+        },
+        {
+          "system": "kg_rag",
+          "answer": "Chandrayaan-2 came first.",
+          "query_preprocessing_ms": 3391.5191,
+          "retrieval_ms": 41869.1634,
+          "context_tokens": 1360,
+          "generation": {
+            "prompt_construction_ms": 0.2793,
+            "request_latency_ms": 95166.6098,
+            "total_generation_ms": 95167.9858,
+            "prompt_chars": 8827,
+            "prompt_tokens": 1027,
+            "generated_tokens": 11,
+            "eval_duration_ns": 2079002000,
+            "prompt_eval_duration_ns": 40515593000,
+            "status": "ok",
+            "failure": null
+          }
+        }
+      ]
+    }
+  ],
+  "generated_at_utc": "2026-10-05T11:54:56.331947+00:00"
+}

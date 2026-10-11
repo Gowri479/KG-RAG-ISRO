@@ -1,5 +1,9 @@
-# Retrieval-level evaluation
+# Retrieval-Level Quality Evaluation
 
-Retrieval-level evaluation requires manually verified relevance judgments and was not executed.
+**Status:** `PENDING_HUMAN_ANNOTATION`
 
-No retrieval metric was computed and no relevance label was inferred from benchmark source provenance.
+Retrieval-level evaluation requires manually verified chunk/passage relevance judgments and answer support IDs. Synthetic labels are strictly prohibited.
+
+- **Candidate Question Set:** 100 items in `data\annotations\retrieval_eval_template.json`
+- **Target Systems:** BM25, Dense (FAISS), KG, and Hybrid
+- **Target Metrics:** Recall@1, Recall@3, Recall@5, MRR, Entity Hit Rate, Triple Hit Rate

@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "research_scope": "Provenance-aware relationship coverage in authoritative ISRO mission documentation",
+  "design_principles": [
+    "Create an entity only when a collected primary source names or describes it.",
+    "Treat named mission science instruments as Payload unless the source distinguishes an instrument from a payload.",
+    "Do not infer developer, operator, target, or mission-sequence relationships from co-occurrence.",
+    "Store source-native names as aliases and keep one canonical ID per resolved entity."
+  ],
+  "entity_types": [
+    {
+      "name": "Mission",
+      "description": "An ISRO-led spacecraft or human-spaceflight mission represented in the curated mission set.",
+      "examples": ["Chandrayaan-1", "Chandrayaan-3", "Aditya-L1", "Mars Orbiter Mission", "Gaganyaan"],
+      "identifying_fields": ["canonical_name", "mission_programme", "aliases"],
+      "source_requirements": "An official ISRO or ISSDC mission page, mission document, or launch archive entry."
+    },
+    {
+      "name": "Spacecraft",
+      "description": "A named vehicle or spacecraft explicitly described as part of a mission.",
+      "examples": ["Chandrayaan-2 Orbiter", "Vikram Lander", "Pragyan Rover"],
+      "identifying_fields": ["canonical_name", "mission_id", "component_role"],
+      "source_requirements": "A primary source must explicitly name the spacecraft or mission component."
+    },
+    {
+      "name": "Payload",
+      "description": "A named scientific payload or onboard science instrument as the source labels it.",
+      "examples": ["VELC", "Mars Colour Camera", "AstroSat UVIT"],
+      "identifying_fields": ["canonical_name", "mission_id", "source_name", "payload_role"],
+      "source_requirements": "A primary mission or payload source must explicitly list or describe it as carried/onboard."
+    },
+    {
+      "name": "LaunchVehicle",
+      "description": "A named launch vehicle or mission-specific launcher configuration.",
+      "examples": ["PSLV-C11", "GSLV-Mk III - M1", "LVM3"],
+      "identifying_fields": ["canonical_name", "vehicle_family", "configuration"],
+      "source_requirements": "An official ISRO launch archive, launcher page, or mission document must identify it."
+    },
+    {
+      "name": "LaunchSite",
+      "description": "A launch complex explicitly identified as the origin of a mission launch.",
+      "examples": ["Satish Dhawan Space Centre SHAR", "Sriharikota"],
+      "identifying_fields": ["canonical_name", "aliases", "location"],
+      "source_requirements": "A primary launch record must state the launch site; an alias requires an official source."
+    },
+    {
+      "name": "Organization",
+      "description": "An organization explicitly credited with developing, operating, or leading a mission or payload.",
+      "examples": ["Indian Institute of Astrophysics", "Inter-University Centre for Astronomy and Astrophysics", "ISRO"],
+      "identifying_fields": ["canonical_name", "acronym", "organization_kind"],
+      "source_requirements": "A primary source must state the organizational relationship; names are not inferred from acronym similarity."
+    },
+    {
+      "name": "ISROCentre",
+      "description": "An ISRO centre/unit or Department of Space centre explicitly identified in official institutional documentation.",
+      "examples": ["Space Applications Centre", "ISTRAC", "Vikram Sarabhai Space Centre"],
+      "identifying_fields": ["canonical_name", "acronym", "location"],
+      "source_requirements": "An official ISRO centres directory or centre profile must identify the centre."
+    },
+    {
+      "name": "Date",
+      "description": "A source-stated calendar date attached to a mission launch or documented event.",
+      "examples": ["2008-10-22", "2023-07-14"],
+      "identifying_fields": ["iso_date", "source_display_value", "event_kind"],
+      "source_requirements": "A primary source must state the date. Date normalization must preserve the source display value."
+    },
+    {
+      "name": "Orbit",
+      "description": "A named or explicitly characterized orbit occupied or targeted by a spacecraft.",
+      "examples": ["100 km lunar orbit", "halo orbit around Sun-Earth L1"],
+      "identifying_fields": ["canonical_name", "body_or_system", "altitude_or_geometry"],
+      "source_requirements": "A primary source must explicitly associate the mission or spacecraft with the orbit."
+    },
+    {
+      "name": "ScientificObjective",
+      "description": "A source-stated scientific or technical objective of a mission or payload.",
+      "examples": ["study of the solar corona", "demonstrate safe and soft lunar landing"],
+      "identifying_fields": ["canonical_text", "mission_id", "objective_kind"],
+      "source_requirements": "The statement must occur in an identified objective section or be explicitly called an objective."
+    },
+    {
+      "name": "ScientificTarget",
+      "description": "A source-stated body, region, or scientific subject observed or studied by a mission or payload.",
+      "examples": ["Sun", "solar corona", "Martian atmosphere"],
+      "identifying_fields": ["canonical_name", "target_kind", "aliases"],
+      "source_requirements": "A primary source must explicitly state the target or observation subject."
+    },
+    {
+      "name": "PlanetaryBody",
+      "description": "A named natural body explicitly studied, orbited, or used as a reference by a mission.",
+      "examples": ["Moon", "Mars", "Earth"],
+      "identifying_fields": ["canonical_name", "body_kind"],
+      "source_requirements": "A primary source must identify the body in mission context."
+    },
+    {
+      "name": "Phenomenon",
+      "description": "A named physical or astronomical phenomenon explicitly measured or studied by a payload.",
+      "examples": ["solar wind", "coronal mass ejection", "lunar seismic activity"],
+      "identifying_fields": ["canonical_name", "aliases"],
+      "source_requirements": "A primary source must explicitly state that a mission or payload observes, measures, or studies it."
+    }
+  ],
+  "investigated_but_not_included": [
+    {
+      "name": "Instrument",
+      "reason": "The collected mission sources generally use payload and instrument interchangeably for onboard science hardware. A separate class is deferred unless a source explicitly distinguishes a nested instrument."
+    },
+    {
+      "name": "Person/Scientist",
+      "reason": "Not needed for the research question; no person-level relationship will be represented."
+    },
+    {
+      "name": "Location",
+      "reason": "The launch-site class is sufficient for the launch-location questions in scope; adding generic locations would duplicate site entities."
+    },
+    {
+      "name": "LaunchEvent",
+      "reason": "Each launch fact is attached to the mission and a typed Date; a separate event node is deferred to avoid redundant one-to-one nodes."
+    },
+    {
+      "name": "Dataset/DataProduct",
+      "reason": "Official archive and data-product sources were investigated, but dataset identity is outside the initial relationship-coverage scope and is not needed for the selected triples."
+    }
+  ]
+}

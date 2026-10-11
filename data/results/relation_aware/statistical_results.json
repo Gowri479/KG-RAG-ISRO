@@ -1,0 +1,596 @@
+{
+  "required": {
+    "rouge_l": {
+      "metric": "rouge_l",
+      "n": 60,
+      "left_mean": 0.14175073333333332,
+      "right_mean": 0.11173921666666667,
+      "mean_difference": 0.030011516666666665,
+      "median_difference": 0.0,
+      "bootstrap_mean_difference": {
+        "estimate": 0.030011516666666665,
+        "ci95": [
+          -0.020196033333333335,
+          0.08228380374999998
+        ],
+        "resamples": 10000,
+        "seed": 20261008
+      },
+      "wilcoxon_signed_rank": {
+        "statistic": 358.0,
+        "p_value": 0.24235713779577006,
+        "n_nonzero": 42
+      },
+      "wins_losses_ties": [
+        24,
+        18,
+        18
+      ],
+      "rank_biserial": 0.14285714285714285,
+      "differences": [
+        0.045455,
+        0.0,
+        -0.012407000000000001,
+        -0.415205,
+        0.0,
+        -0.421053,
+        0.5276289999999999,
+        -0.1,
+        0.0,
+        -0.031503,
+        0.021277,
+        0.0,
+        0.05052599999999999,
+        0.0,
+        -0.415205,
+        0.071429,
+        0.002474000000000004,
+        0.15438600000000002,
+        0.0,
+        0.18,
+        0.046512,
+        -0.222222,
+        -0.227273,
+        0.0,
+        -0.153846,
+        -0.2,
+        0.0,
+        0.163636,
+        0.021053,
+        0.0,
+        0.0017540000000000056,
+        0.0,
+        -0.01836700000000001,
+        0.454545,
+        0.0,
+        0.034783,
+        -0.021738999999999953,
+        0.0,
+        0.521739,
+        0.0,
+        0.0,
+        0.0,
+        -0.031903,
+        -0.133333,
+        0.410257,
+        0.75,
+        0.0,
+        -0.004762000000000002,
+        0.074074,
+        0.021505,
+        0.074074,
+        -0.005769,
+        -0.0023700000000000006,
+        0.5,
+        0.014553999999999997,
+        0.0,
+        0.037319000000000005,
+        -0.015528,
+        0.0,
+        0.05419499999999999
+      ]
+    },
+    "reference_token_coverage": {
+      "metric": "reference_token_coverage",
+      "n": 60,
+      "left_mean": 0.36142318333333334,
+      "right_mean": 0.30083333333333334,
+      "mean_difference": 0.06058985,
+      "median_difference": 0.0,
+      "bootstrap_mean_difference": {
+        "estimate": 0.06058985,
+        "ci95": [
+          -0.06310677166666666,
+          0.18188762124999988
+        ],
+        "resamples": 10000,
+        "seed": 20261008
+      },
+      "wilcoxon_signed_rank": {
+        "statistic": 193.0,
+        "p_value": 0.27849588568996186,
+        "n_nonzero": 31
+      },
+      "wins_losses_ties": [
+        19,
+        12,
+        29
+      ],
+      "rank_biserial": 0.22580645161290322,
+      "differences": [
+        1.0,
+        0.0,
+        0.0,
+        -0.666666,
+        0.0,
+        -0.833333,
+        0.6,
+        -0.166667,
+        0.0,
+        -0.3,
+        0.125,
+        0.0,
+        0.0,
+        0.0,
+        -0.666666,
+        0.2,
+        -0.06666699999999998,
+        0.0,
+        0.0,
+        0.19999999999999996,
+        0.25,
+        -1.0,
+        -0.4,
+        0.0,
+        -1.0,
+        -1.0,
+        0.0,
+        0.5,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.5,
+        1.0,
+        0.0,
+        0.181818,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.09999999999999998,
+        1.0,
+        0.0,
+        0.0,
+        0.5,
+        1.0,
+        0.25,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        0.0,
+        0.42857199999999995
+      ]
+    },
+    "exact_match": {
+      "metric": "exact_match",
+      "n": 60,
+      "left_mean": 0.0,
+      "right_mean": 0.0,
+      "mean_difference": 0.0,
+      "median_difference": 0.0,
+      "bootstrap_mean_difference": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "resamples": 10000,
+        "seed": 20261008
+      },
+      "wilcoxon_signed_rank": {
+        "statistic": null,
+        "p_value": null,
+        "n_nonzero": 0
+      },
+      "wins_losses_ties": [
+        0,
+        0,
+        60
+      ],
+      "rank_biserial": null,
+      "differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "idk": {
+      "metric": "idk",
+      "n": 60,
+      "left_mean": 0.016666666666666666,
+      "right_mean": 0.06666666666666667,
+      "mean_difference": -0.05,
+      "median_difference": 0.0,
+      "bootstrap_mean_difference": {
+        "estimate": -0.05,
+        "ci95": [
+          -0.11666666666666667,
+          0.0
+        ],
+        "resamples": 10000,
+        "seed": 20261008
+      },
+      "wilcoxon_signed_rank": {
+        "statistic": 0.0,
+        "p_value": 0.0832645166635504,
+        "n_nonzero": 3
+      },
+      "wins_losses_ties": [
+        0,
+        3,
+        57
+      ],
+      "rank_biserial": -1.0,
+      "differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "_holm_adjusted_p_values": {
+      "idk": 0.24979354999065123,
+      "rouge_l": 0.4847142755915401,
+      "reference_token_coverage": 0.4847142755915401,
+      "exact_match": null
+    }
+  },
+  "not_required": {
+    "rouge_l": {
+      "metric": "rouge_l",
+      "n": 12,
+      "left_mean": 0.030303,
+      "right_mean": 0.03333333333333333,
+      "mean_difference": -0.003030333333333334,
+      "median_difference": 0.0,
+      "bootstrap_mean_difference": {
+        "estimate": -0.003030333333333334,
+        "ci95": [
+          -0.05,
+          0.040909
+        ],
+        "resamples": 10000,
+        "seed": 20261008
+      },
+      "wilcoxon_signed_rank": {
+        "statistic": 1.0,
+        "p_value": 1.0,
+        "n_nonzero": 2
+      },
+      "wins_losses_ties": [
+        1,
+        1,
+        10
+      ],
+      "rank_biserial": 0.0,
+      "differences": [
+        0.0,
+        0.0,
+        -0.2,
+        0.0,
+        0.0,
+        0.163636,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "reference_token_coverage": {
+      "metric": "reference_token_coverage",
+      "n": 12,
+      "left_mean": 0.08333333333333333,
+      "right_mean": 0.125,
+      "mean_difference": -0.041666666666666664,
+      "median_difference": 0.0,
+      "bootstrap_mean_difference": {
+        "estimate": -0.041666666666666664,
+        "ci95": [
+          -0.25,
+          0.125
+        ],
+        "resamples": 10000,
+        "seed": 20261008
+      },
+      "wilcoxon_signed_rank": {
+        "statistic": 1.0,
+        "p_value": 1.0,
+        "n_nonzero": 2
+      },
+      "wins_losses_ties": [
+        1,
+        1,
+        10
+      ],
+      "rank_biserial": 0.0,
+      "differences": [
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "exact_match": {
+      "metric": "exact_match",
+      "n": 12,
+      "left_mean": 0.0,
+      "right_mean": 0.0,
+      "mean_difference": 0.0,
+      "median_difference": 0.0,
+      "bootstrap_mean_difference": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "resamples": 10000,
+        "seed": 20261008
+      },
+      "wilcoxon_signed_rank": {
+        "statistic": null,
+        "p_value": null,
+        "n_nonzero": 0
+      },
+      "wins_losses_ties": [
+        0,
+        0,
+        12
+      ],
+      "rank_biserial": null,
+      "differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "idk": {
+      "metric": "idk",
+      "n": 12,
+      "left_mean": 0.08333333333333333,
+      "right_mean": 0.08333333333333333,
+      "mean_difference": 0.0,
+      "median_difference": 0.0,
+      "bootstrap_mean_difference": {
+        "estimate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "resamples": 10000,
+        "seed": 20261008
+      },
+      "wilcoxon_signed_rank": {
+        "statistic": null,
+        "p_value": null,
+        "n_nonzero": 0
+      },
+      "wins_losses_ties": [
+        0,
+        0,
+        12
+      ],
+      "rank_biserial": null,
+      "differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "_holm_adjusted_p_values": {
+      "rouge_l": 1.0,
+      "reference_token_coverage": 1.0,
+      "exact_match": null,
+      "idk": null
+    }
+  },
+  "difference_in_differences": {
+    "rouge_l": {
+      "observed_difference_in_differences": 0.03304185,
+      "bootstrap_ci95": [
+        -0.0316425725,
+        0.10392782749999997
+      ],
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20261010,
+      "permutation_p_value": 0.5844415558444156,
+      "permutations": 10000,
+      "seed": 20261009
+    },
+    "reference_token_coverage": {
+      "observed_difference_in_differences": 0.10225651666666666,
+      "bootstrap_ci95": [
+        -0.100419265,
+        0.3477561570833333
+      ],
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20261010,
+      "permutation_p_value": 0.48835116488351166,
+      "permutations": 10000,
+      "seed": 20261009
+    },
+    "exact_match": {
+      "observed_difference_in_differences": 0.0,
+      "bootstrap_ci95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20261010,
+      "permutation_p_value": 1.0,
+      "permutations": 10000,
+      "seed": 20261009
+    },
+    "idk": {
+      "observed_difference_in_differences": -0.05,
+      "bootstrap_ci95": [
+        -0.11666666666666667,
+        0.0
+      ],
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20261010,
+      "permutation_p_value": 0.6398360163983602,
+      "permutations": 10000,
+      "seed": 20261009
+    }
+  }
+}

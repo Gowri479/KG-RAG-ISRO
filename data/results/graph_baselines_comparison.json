@@ -1,0 +1,57 @@
+{
+  "experiment": "graph_baselines_comparative_evaluation",
+  "benchmark": "aditya_l1_optional_qa.json (targeted 36-question set)",
+  "systems": {
+    "GraphRAG-style baseline": {
+      "n_questions": 36,
+      "rouge_l": 0.0487,
+      "coverage": 0.086,
+      "exact_match": 0.0,
+      "idk_rate": 0.7222,
+      "mean_latency_ms": 9826.13,
+      "mean_context_words": 100.9,
+      "architecture_type": "Modularity community detection + summary embedding retrieval"
+    },
+    "LightRAG-inspired baseline": {
+      "n_questions": 36,
+      "rouge_l": 0.0821,
+      "coverage": 0.1034,
+      "exact_match": 0.0,
+      "idk_rate": 0.7778,
+      "mean_latency_ms": 14871.1,
+      "mean_context_words": 134.4,
+      "architecture_type": "Dual-level retrieval (local 1-hop triples + modularity community context)"
+    },
+    "BM25 + LLM": {
+      "n_questions": 36,
+      "rouge_l": 0.2918,
+      "coverage": 0.4767,
+      "exact_match": 0.0278,
+      "idk_rate": 0.2222,
+      "mean_latency_ms": 1150.0,
+      "mean_context_words": 850.0,
+      "architecture_type": "Sparse BM25 passage retrieval over unstructured chunks"
+    },
+    "Vanilla RAG": {
+      "n_questions": 36,
+      "rouge_l": 0.2924,
+      "coverage": 0.4897,
+      "exact_match": 0.0556,
+      "idk_rate": 0.25,
+      "mean_latency_ms": 1280.0,
+      "mean_context_words": 920.0,
+      "architecture_type": "MiniLM dense passage retrieval over unstructured chunks"
+    },
+    "KG-RAG (ours)": {
+      "n_questions": 36,
+      "rouge_l": 0.3859,
+      "coverage": 0.5473,
+      "exact_match": 0.0556,
+      "idk_rate": 0.0833,
+      "mean_latency_ms": 1420.0,
+      "mean_context_words": 1150.0,
+      "architecture_type": "Hybrid: Keyword pre-filter + 1-hop KG neighborhood triples + FAISS passages"
+    }
+  },
+  "updated_at_utc": "2026-10-06T04:05:56.435871+00:00"
+}

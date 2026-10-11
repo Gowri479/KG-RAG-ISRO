@@ -1,0 +1,6504 @@
+{
+  "phase": "Phase 2 — Frozen 180-Question KG-Relevance Analysis",
+  "generated_at_utc": "2026-10-07T06:50:01.979560+00:00",
+  "benchmark": {
+    "question_bank": "data/benchmark/isro_qa.json",
+    "test_split": "data/benchmark/test_ids.json",
+    "total_question_bank_items": 200,
+    "development_items": 20,
+    "frozen_test_questions": 180,
+    "test_ids": [
+      "isro_002",
+      "isro_003",
+      "isro_004",
+      "isro_005",
+      "isro_006",
+      "isro_007",
+      "isro_008",
+      "isro_009",
+      "isro_010",
+      "isro_011",
+      "isro_012",
+      "isro_013",
+      "isro_014",
+      "isro_016",
+      "isro_017",
+      "isro_018",
+      "isro_019",
+      "isro_020",
+      "isro_021",
+      "isro_022",
+      "isro_023",
+      "isro_024",
+      "isro_025",
+      "isro_026",
+      "isro_027",
+      "isro_028",
+      "isro_029",
+      "isro_030",
+      "isro_032",
+      "isro_034",
+      "isro_035",
+      "isro_037",
+      "isro_038",
+      "isro_039",
+      "isro_040",
+      "isro_041",
+      "isro_042",
+      "isro_043",
+      "isro_044",
+      "isro_045",
+      "isro_046",
+      "isro_047",
+      "isro_048",
+      "isro_049",
+      "isro_050",
+      "isro_051",
+      "isro_053",
+      "isro_054",
+      "isro_055",
+      "isro_056",
+      "isro_057",
+      "isro_058",
+      "isro_059",
+      "isro_060",
+      "isro_061",
+      "isro_062",
+      "isro_064",
+      "isro_065",
+      "isro_066",
+      "isro_067",
+      "isro_069",
+      "isro_070",
+      "isro_071",
+      "isro_073",
+      "isro_074",
+      "isro_075",
+      "isro_076",
+      "isro_077",
+      "isro_078",
+      "isro_079",
+      "isro_080",
+      "isro_081",
+      "isro_082",
+      "isro_083",
+      "isro_084",
+      "isro_085",
+      "isro_086",
+      "isro_087",
+      "isro_089",
+      "isro_090",
+      "isro_091",
+      "isro_092",
+      "isro_093",
+      "isro_094",
+      "isro_095",
+      "isro_096",
+      "isro_097",
+      "isro_098",
+      "isro_099",
+      "isro_100",
+      "isro_101",
+      "isro_102",
+      "isro_103",
+      "isro_104",
+      "isro_105",
+      "isro_106",
+      "isro_107",
+      "isro_108",
+      "isro_109",
+      "isro_110",
+      "isro_111",
+      "isro_112",
+      "isro_113",
+      "isro_114",
+      "isro_115",
+      "isro_116",
+      "isro_117",
+      "isro_118",
+      "isro_119",
+      "isro_120",
+      "isro_121",
+      "isro_122",
+      "isro_123",
+      "isro_124",
+      "isro_125",
+      "isro_126",
+      "isro_127",
+      "isro_128",
+      "isro_129",
+      "isro_130",
+      "isro_131",
+      "isro_132",
+      "isro_133",
+      "isro_134",
+      "isro_135",
+      "isro_137",
+      "isro_138",
+      "isro_139",
+      "isro_141",
+      "isro_143",
+      "isro_144",
+      "isro_145",
+      "isro_146",
+      "isro_147",
+      "isro_149",
+      "isro_150",
+      "isro_151",
+      "isro_152",
+      "isro_153",
+      "isro_154",
+      "isro_155",
+      "isro_156",
+      "isro_158",
+      "isro_160",
+      "isro_161",
+      "isro_162",
+      "isro_163",
+      "isro_164",
+      "isro_165",
+      "isro_166",
+      "isro_167",
+      "isro_169",
+      "isro_170",
+      "isro_172",
+      "isro_173",
+      "isro_174",
+      "isro_175",
+      "isro_176",
+      "isro_177",
+      "isro_178",
+      "isro_179",
+      "isro_180",
+      "isro_181",
+      "isro_182",
+      "isro_183",
+      "isro_184",
+      "isro_185",
+      "isro_186",
+      "isro_187",
+      "isro_188",
+      "isro_189",
+      "isro_190",
+      "isro_191",
+      "isro_192",
+      "isro_193",
+      "isro_194",
+      "isro_195",
+      "isro_196",
+      "isro_198",
+      "isro_200"
+    ],
+    "frozen_outputs": "data/results/baseline_results.json",
+    "aggregate_crosscheck": {
+      "BM25 + LLM:rouge_l": {
+        "calculated": 0.2915,
+        "stored": 0.2915,
+        "match": true
+      },
+      "BM25 + LLM:reference_token_coverage": {
+        "calculated": 0.434,
+        "stored": 0.434,
+        "match": true
+      },
+      "BM25 + LLM:exact_match": {
+        "calculated": 0.0278,
+        "stored": 0.0278,
+        "match": true
+      },
+      "BM25 + LLM:idk": {
+        "calculated": 0.0167,
+        "stored": 0.0167,
+        "match": true
+      },
+      "Vanilla RAG:rouge_l": {
+        "calculated": 0.278,
+        "stored": 0.278,
+        "match": true
+      },
+      "Vanilla RAG:reference_token_coverage": {
+        "calculated": 0.3989,
+        "stored": 0.3989,
+        "match": true
+      },
+      "Vanilla RAG:exact_match": {
+        "calculated": 0.0333,
+        "stored": 0.0333,
+        "match": true
+      },
+      "Vanilla RAG:idk": {
+        "calculated": 0.1222,
+        "stored": 0.1222,
+        "match": true
+      },
+      "KG-RAG:rouge_l": {
+        "calculated": 0.2736,
+        "stored": 0.2736,
+        "match": true
+      },
+      "KG-RAG:reference_token_coverage": {
+        "calculated": 0.3921,
+        "stored": 0.3921,
+        "match": true
+      },
+      "KG-RAG:exact_match": {
+        "calculated": 0.0333,
+        "stored": 0.0333,
+        "match": true
+      },
+      "KG-RAG:idk": {
+        "calculated": 0.1167,
+        "stored": 0.1167,
+        "match": true
+      }
+    },
+    "retrieval_contexts_available": false,
+    "stored_artifact_note": "The per-question artifact contains answer strings but no retrieved passages, chunk IDs, KG context, or retrieval traces."
+  },
+  "annotation_counts": {
+    "question_type": {
+      "ATTRIBUTE": 32,
+      "DIRECT_FACT": 54,
+      "SINGLE_RELATION": 28,
+      "TWO_HOP_RELATION": 10,
+      "MULTI_RELATION": 56
+    },
+    "kg_relevance": {
+      "KG_POTENTIALLY_USEFUL": 27,
+      "KG_NOT_RELEVANT": 141,
+      "KG_RELATIONALLY_NATURAL": 9,
+      "KG_MULTI_HOP": 3
+    },
+    "kg_required": {
+      "NO": 172,
+      "UNCERTAIN": 8
+    }
+  },
+  "groups": {
+    "overall": {
+      "n": 180,
+      "systems": {
+        "BM25 + LLM": {
+          "n": 180,
+          "rouge_l_mean": 0.291536,
+          "rouge_l_median": 0.217391,
+          "reference_token_coverage_mean": 0.434037,
+          "exact_match_mean": 0.027778,
+          "idk_rate": 0.016667
+        },
+        "Vanilla RAG": {
+          "n": 180,
+          "rouge_l_mean": 0.278035,
+          "rouge_l_median": 0.231933,
+          "reference_token_coverage_mean": 0.398907,
+          "exact_match_mean": 0.033333,
+          "idk_rate": 0.122222
+        },
+        "KG-RAG": {
+          "n": 180,
+          "rouge_l_mean": 0.273603,
+          "rouge_l_median": 0.222222,
+          "reference_token_coverage_mean": 0.392066,
+          "exact_match_mean": 0.033333,
+          "idk_rate": 0.116667
+        }
+      }
+    },
+    "kg_relevance": {
+      "KG_NOT_RELEVANT": {
+        "n": 141,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 141,
+            "rouge_l_mean": 0.304561,
+            "rouge_l_median": 0.216216,
+            "reference_token_coverage_mean": 0.446225,
+            "exact_match_mean": 0.035461,
+            "idk_rate": 0.021277
+          },
+          "Vanilla RAG": {
+            "n": 141,
+            "rouge_l_mean": 0.284229,
+            "rouge_l_median": 0.254545,
+            "reference_token_coverage_mean": 0.398326,
+            "exact_match_mean": 0.042553,
+            "idk_rate": 0.148936
+          },
+          "KG-RAG": {
+            "n": 141,
+            "rouge_l_mean": 0.286963,
+            "rouge_l_median": 0.238095,
+            "reference_token_coverage_mean": 0.394873,
+            "exact_match_mean": 0.042553,
+            "idk_rate": 0.12766
+          }
+        }
+      },
+      "KG_POTENTIALLY_USEFUL": {
+        "n": 27,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 27,
+            "rouge_l_mean": 0.263683,
+            "rouge_l_median": 0.27027,
+            "reference_token_coverage_mean": 0.413565,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 27,
+            "rouge_l_mean": 0.261261,
+            "rouge_l_median": 0.228571,
+            "reference_token_coverage_mean": 0.436842,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.037037
+          },
+          "KG-RAG": {
+            "n": 27,
+            "rouge_l_mean": 0.216742,
+            "rouge_l_median": 0.193548,
+            "reference_token_coverage_mean": 0.391983,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.074074
+          }
+        }
+      },
+      "KG_RELATIONALLY_NATURAL": {
+        "n": 9,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 9,
+            "rouge_l_mean": 0.153151,
+            "rouge_l_median": 0.111111,
+            "reference_token_coverage_mean": 0.347222,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 9,
+            "rouge_l_mean": 0.201925,
+            "rouge_l_median": 0.222222,
+            "reference_token_coverage_mean": 0.301852,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "KG-RAG": {
+            "n": 9,
+            "rouge_l_mean": 0.204029,
+            "rouge_l_median": 0.222222,
+            "reference_token_coverage_mean": 0.353704,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.111111
+          }
+        }
+      },
+      "KG_MULTI_HOP": {
+        "n": 3,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 3,
+            "rouge_l_mean": 0.345191,
+            "rouge_l_median": 0.409091,
+            "reference_token_coverage_mean": 0.305894,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 3,
+            "rouge_l_mean": 0.366177,
+            "rouge_l_median": 0.409091,
+            "reference_token_coverage_mean": 0.375942,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "KG-RAG": {
+            "n": 3,
+            "rouge_l_mean": 0.366177,
+            "rouge_l_median": 0.409091,
+            "reference_token_coverage_mean": 0.375942,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          }
+        }
+      }
+    },
+    "kg_required": {
+      "YES": {
+        "n": 0,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 0,
+            "rouge_l_mean": null,
+            "rouge_l_median": null,
+            "reference_token_coverage_mean": null,
+            "exact_match_mean": null,
+            "idk_rate": null
+          },
+          "Vanilla RAG": {
+            "n": 0,
+            "rouge_l_mean": null,
+            "rouge_l_median": null,
+            "reference_token_coverage_mean": null,
+            "exact_match_mean": null,
+            "idk_rate": null
+          },
+          "KG-RAG": {
+            "n": 0,
+            "rouge_l_mean": null,
+            "rouge_l_median": null,
+            "reference_token_coverage_mean": null,
+            "exact_match_mean": null,
+            "idk_rate": null
+          }
+        }
+      },
+      "NO": {
+        "n": 172,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 172,
+            "rouge_l_mean": 0.290775,
+            "rouge_l_median": 0.209005,
+            "reference_token_coverage_mean": 0.436077,
+            "exact_match_mean": 0.02907,
+            "idk_rate": 0.017442
+          },
+          "Vanilla RAG": {
+            "n": 172,
+            "rouge_l_mean": 0.276733,
+            "rouge_l_median": 0.222222,
+            "reference_token_coverage_mean": 0.398358,
+            "exact_match_mean": 0.034884,
+            "idk_rate": 0.127907
+          },
+          "KG-RAG": {
+            "n": 172,
+            "rouge_l_mean": 0.275447,
+            "rouge_l_median": 0.222222,
+            "reference_token_coverage_mean": 0.392535,
+            "exact_match_mean": 0.034884,
+            "idk_rate": 0.116279
+          }
+        }
+      },
+      "UNCERTAIN": {
+        "n": 8,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 8,
+            "rouge_l_mean": 0.307902,
+            "rouge_l_median": 0.307666,
+            "reference_token_coverage_mean": 0.390175,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 8,
+            "rouge_l_mean": 0.306017,
+            "rouge_l_median": 0.303866,
+            "reference_token_coverage_mean": 0.410714,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "KG-RAG": {
+            "n": 8,
+            "rouge_l_mean": 0.233949,
+            "rouge_l_median": 0.262009,
+            "reference_token_coverage_mean": 0.381974,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.125
+          }
+        }
+      }
+    },
+    "question_type": {
+      "ATTRIBUTE": {
+        "n": 32,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 32,
+            "rouge_l_mean": 0.224304,
+            "rouge_l_median": 0.19434,
+            "reference_token_coverage_mean": 0.492298,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.03125
+          },
+          "Vanilla RAG": {
+            "n": 32,
+            "rouge_l_mean": 0.260233,
+            "rouge_l_median": 0.231111,
+            "reference_token_coverage_mean": 0.447427,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.09375
+          },
+          "KG-RAG": {
+            "n": 32,
+            "rouge_l_mean": 0.213189,
+            "rouge_l_median": 0.2,
+            "reference_token_coverage_mean": 0.406867,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.15625
+          }
+        }
+      },
+      "DIRECT_FACT": {
+        "n": 54,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 54,
+            "rouge_l_mean": 0.402594,
+            "rouge_l_median": 0.284281,
+            "reference_token_coverage_mean": 0.553033,
+            "exact_match_mean": 0.092593,
+            "idk_rate": 0.037037
+          },
+          "Vanilla RAG": {
+            "n": 54,
+            "rouge_l_mean": 0.361353,
+            "rouge_l_median": 0.284281,
+            "reference_token_coverage_mean": 0.4715,
+            "exact_match_mean": 0.111111,
+            "idk_rate": 0.185185
+          },
+          "KG-RAG": {
+            "n": 54,
+            "rouge_l_mean": 0.369004,
+            "rouge_l_median": 0.257708,
+            "reference_token_coverage_mean": 0.460606,
+            "exact_match_mean": 0.111111,
+            "idk_rate": 0.166667
+          }
+        }
+      },
+      "MULTI_RELATION": {
+        "n": 56,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 56,
+            "rouge_l_mean": 0.252888,
+            "rouge_l_median": 0.234314,
+            "reference_token_coverage_mean": 0.337058,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 56,
+            "rouge_l_mean": 0.240427,
+            "rouge_l_median": 0.266798,
+            "reference_token_coverage_mean": 0.34014,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.125
+          },
+          "KG-RAG": {
+            "n": 56,
+            "rouge_l_mean": 0.24323,
+            "rouge_l_median": 0.245,
+            "reference_token_coverage_mean": 0.334661,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.089286
+          }
+        }
+      },
+      "OTHER": {
+        "n": 0,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 0,
+            "rouge_l_mean": null,
+            "rouge_l_median": null,
+            "reference_token_coverage_mean": null,
+            "exact_match_mean": null,
+            "idk_rate": null
+          },
+          "Vanilla RAG": {
+            "n": 0,
+            "rouge_l_mean": null,
+            "rouge_l_median": null,
+            "reference_token_coverage_mean": null,
+            "exact_match_mean": null,
+            "idk_rate": null
+          },
+          "KG-RAG": {
+            "n": 0,
+            "rouge_l_mean": null,
+            "rouge_l_median": null,
+            "reference_token_coverage_mean": null,
+            "exact_match_mean": null,
+            "idk_rate": null
+          }
+        }
+      },
+      "SINGLE_RELATION": {
+        "n": 28,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 28,
+            "rouge_l_mean": 0.225156,
+            "rouge_l_median": 0.170417,
+            "reference_token_coverage_mean": 0.365447,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 28,
+            "rouge_l_mean": 0.197005,
+            "rouge_l_median": 0.200917,
+            "reference_token_coverage_mean": 0.328727,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.071429
+          },
+          "KG-RAG": {
+            "n": 28,
+            "rouge_l_mean": 0.212044,
+            "rouge_l_median": 0.209858,
+            "reference_token_coverage_mean": 0.363353,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.071429
+          }
+        }
+      },
+      "TWO_HOP_RELATION": {
+        "n": 10,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 10,
+            "rouge_l_mean": 0.309266,
+            "rouge_l_median": 0.285714,
+            "reference_token_coverage_mean": 0.340165,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 10,
+            "rouge_l_mean": 0.322568,
+            "rouge_l_median": 0.324675,
+            "reference_token_coverage_mean": 0.377232,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "KG-RAG": {
+            "n": 10,
+            "rouge_l_mean": 0.294214,
+            "rouge_l_median": 0.26557,
+            "reference_token_coverage_mean": 0.376443,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          }
+        }
+      }
+    },
+    "tier": {
+      "1": {
+        "n": 90,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 90,
+            "rouge_l_mean": 0.321987,
+            "rouge_l_median": 0.191562,
+            "reference_token_coverage_mean": 0.519912,
+            "exact_match_mean": 0.055556,
+            "idk_rate": 0.033333
+          },
+          "Vanilla RAG": {
+            "n": 90,
+            "rouge_l_mean": 0.322251,
+            "rouge_l_median": 0.231111,
+            "reference_token_coverage_mean": 0.463179,
+            "exact_match_mean": 0.066667,
+            "idk_rate": 0.122222
+          },
+          "KG-RAG": {
+            "n": 90,
+            "rouge_l_mean": 0.307995,
+            "rouge_l_median": 0.222222,
+            "reference_token_coverage_mean": 0.438147,
+            "exact_match_mean": 0.066667,
+            "idk_rate": 0.155556
+          }
+        }
+      },
+      "2": {
+        "n": 54,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 54,
+            "rouge_l_mean": 0.258678,
+            "rouge_l_median": 0.247489,
+            "reference_token_coverage_mean": 0.344785,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 54,
+            "rouge_l_mean": 0.230559,
+            "rouge_l_median": 0.231933,
+            "reference_token_coverage_mean": 0.321311,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.111111
+          },
+          "KG-RAG": {
+            "n": 54,
+            "rouge_l_mean": 0.224634,
+            "rouge_l_median": 0.216802,
+            "reference_token_coverage_mean": 0.346236,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.092593
+          }
+        }
+      },
+      "3": {
+        "n": 36,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 36,
+            "rouge_l_mean": 0.264696,
+            "rouge_l_median": 0.234314,
+            "reference_token_coverage_mean": 0.353231,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 36,
+            "rouge_l_mean": 0.238707,
+            "rouge_l_median": 0.228696,
+            "reference_token_coverage_mean": 0.35462,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.138889
+          },
+          "KG-RAG": {
+            "n": 36,
+            "rouge_l_mean": 0.261076,
+            "rouge_l_median": 0.245,
+            "reference_token_coverage_mean": 0.345607,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.055556
+          }
+        }
+      }
+    },
+    "mission": {
+      "Aditya-L1": {
+        "n": 8,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 8,
+            "rouge_l_mean": 0.321819,
+            "rouge_l_median": 0.212476,
+            "reference_token_coverage_mean": 0.575149,
+            "exact_match_mean": 0.125,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 8,
+            "rouge_l_mean": 0.386191,
+            "rouge_l_median": 0.38,
+            "reference_token_coverage_mean": 0.49752,
+            "exact_match_mean": 0.125,
+            "idk_rate": 0.0
+          },
+          "KG-RAG": {
+            "n": 8,
+            "rouge_l_mean": 0.377689,
+            "rouge_l_median": 0.282162,
+            "reference_token_coverage_mean": 0.560218,
+            "exact_match_mean": 0.125,
+            "idk_rate": 0.0
+          }
+        }
+      },
+      "AstroSat": {
+        "n": 4,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 4,
+            "rouge_l_mean": 0.257933,
+            "rouge_l_median": 0.126977,
+            "reference_token_coverage_mean": 0.383766,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 4,
+            "rouge_l_mean": 0.235441,
+            "rouge_l_median": 0.161111,
+            "reference_token_coverage_mean": 0.411039,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "KG-RAG": {
+            "n": 4,
+            "rouge_l_mean": 0.227628,
+            "rouge_l_median": 0.176685,
+            "reference_token_coverage_mean": 0.423539,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          }
+        }
+      },
+      "Chandrayaan-1": {
+        "n": 7,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 7,
+            "rouge_l_mean": 0.407084,
+            "rouge_l_median": 0.466667,
+            "reference_token_coverage_mean": 0.500469,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 7,
+            "rouge_l_mean": 0.368479,
+            "rouge_l_median": 0.297872,
+            "reference_token_coverage_mean": 0.417288,
+            "exact_match_mean": 0.142857,
+            "idk_rate": 0.285714
+          },
+          "KG-RAG": {
+            "n": 7,
+            "rouge_l_mean": 0.397354,
+            "rouge_l_median": 0.466667,
+            "reference_token_coverage_mean": 0.463095,
+            "exact_match_mean": 0.142857,
+            "idk_rate": 0.285714
+          }
+        }
+      },
+      "Chandrayaan-2": {
+        "n": 9,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 9,
+            "rouge_l_mean": 0.292479,
+            "rouge_l_median": 0.3125,
+            "reference_token_coverage_mean": 0.425194,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 9,
+            "rouge_l_mean": 0.342888,
+            "rouge_l_median": 0.324324,
+            "reference_token_coverage_mean": 0.459403,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "KG-RAG": {
+            "n": 9,
+            "rouge_l_mean": 0.264727,
+            "rouge_l_median": 0.307692,
+            "reference_token_coverage_mean": 0.381468,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          }
+        }
+      },
+      "Chandrayaan-3": {
+        "n": 16,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 16,
+            "rouge_l_mean": 0.339495,
+            "rouge_l_median": 0.31498,
+            "reference_token_coverage_mean": 0.502095,
+            "exact_match_mean": 0.0625,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 16,
+            "rouge_l_mean": 0.336159,
+            "rouge_l_median": 0.268148,
+            "reference_token_coverage_mean": 0.530779,
+            "exact_match_mean": 0.0625,
+            "idk_rate": 0.0
+          },
+          "KG-RAG": {
+            "n": 16,
+            "rouge_l_mean": 0.300781,
+            "rouge_l_median": 0.283998,
+            "reference_token_coverage_mean": 0.494709,
+            "exact_match_mean": 0.0625,
+            "idk_rate": 0.0625
+          }
+        }
+      },
+      "Gaganyaan": {
+        "n": 5,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 5,
+            "rouge_l_mean": 0.225522,
+            "rouge_l_median": 0.173913,
+            "reference_token_coverage_mean": 0.484636,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 5,
+            "rouge_l_mean": 0.226817,
+            "rouge_l_median": 0.201835,
+            "reference_token_coverage_mean": 0.508879,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "KG-RAG": {
+            "n": 5,
+            "rouge_l_mean": 0.213051,
+            "rouge_l_median": 0.192982,
+            "reference_token_coverage_mean": 0.483545,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          }
+        }
+      },
+      "Mars Orbiter Mission": {
+        "n": 7,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 7,
+            "rouge_l_mean": 0.161964,
+            "rouge_l_median": 0.133333,
+            "reference_token_coverage_mean": 0.2644,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 7,
+            "rouge_l_mean": 0.167905,
+            "rouge_l_median": 0.208955,
+            "reference_token_coverage_mean": 0.258381,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.142857
+          },
+          "KG-RAG": {
+            "n": 7,
+            "rouge_l_mean": 0.175797,
+            "rouge_l_median": 0.214286,
+            "reference_token_coverage_mean": 0.233703,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          }
+        }
+      },
+      "multiple: Chandrayaan-1; Chandrayaan-2": {
+        "n": 1,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 1,
+            "rouge_l_mean": 0.25,
+            "rouge_l_median": 0.25,
+            "reference_token_coverage_mean": 0.266667,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 1,
+            "rouge_l_mean": 0.324324,
+            "rouge_l_median": 0.324324,
+            "reference_token_coverage_mean": 0.6,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "KG-RAG": {
+            "n": 1,
+            "rouge_l_mean": 0.324324,
+            "rouge_l_median": 0.324324,
+            "reference_token_coverage_mean": 0.6,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          }
+        }
+      },
+      "multiple: Chandrayaan-1; Chandrayaan-3; Mars Orbiter Mission; Aditya-L1": {
+        "n": 1,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 1,
+            "rouge_l_mean": 0.565217,
+            "rouge_l_median": 0.565217,
+            "reference_token_coverage_mean": 0.535714,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 1,
+            "rouge_l_mean": 0.333333,
+            "rouge_l_median": 0.333333,
+            "reference_token_coverage_mean": 0.571429,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "KG-RAG": {
+            "n": 1,
+            "rouge_l_mean": 0.695652,
+            "rouge_l_median": 0.695652,
+            "reference_token_coverage_mean": 0.535714,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          }
+        }
+      },
+      "multiple: Chandrayaan-1; Mars Orbiter Mission; Aditya-L1; AstroSat": {
+        "n": 1,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 1,
+            "rouge_l_mean": 0.166667,
+            "rouge_l_median": 0.166667,
+            "reference_token_coverage_mean": 0.266667,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 1,
+            "rouge_l_mean": 0.181818,
+            "rouge_l_median": 0.181818,
+            "reference_token_coverage_mean": 0.333333,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "KG-RAG": {
+            "n": 1,
+            "rouge_l_mean": 0.25,
+            "rouge_l_median": 0.25,
+            "reference_token_coverage_mean": 0.266667,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          }
+        }
+      },
+      "multiple: Chandrayaan-2; Chandrayaan-3": {
+        "n": 3,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 3,
+            "rouge_l_mean": 0.179843,
+            "rouge_l_median": 0.136752,
+            "reference_token_coverage_mean": 0.378968,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 3,
+            "rouge_l_mean": 0.157427,
+            "rouge_l_median": 0.126126,
+            "reference_token_coverage_mean": 0.34127,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.333333
+          },
+          "KG-RAG": {
+            "n": 3,
+            "rouge_l_mean": 0.284609,
+            "rouge_l_median": 0.323232,
+            "reference_token_coverage_mean": 0.525794,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          }
+        }
+      },
+      "multiple: Chandrayaan-2; Mars Orbiter Mission": {
+        "n": 1,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 1,
+            "rouge_l_mean": 0.117647,
+            "rouge_l_median": 0.117647,
+            "reference_token_coverage_mean": 0.25,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 1,
+            "rouge_l_mean": 0.181818,
+            "rouge_l_median": 0.181818,
+            "reference_token_coverage_mean": 0.166667,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "KG-RAG": {
+            "n": 1,
+            "rouge_l_mean": 0.1875,
+            "rouge_l_median": 0.1875,
+            "reference_token_coverage_mean": 0.25,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          }
+        }
+      },
+      "multiple: Chandrayaan-3; Aditya-L1": {
+        "n": 2,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 2,
+            "rouge_l_mean": 0.340909,
+            "rouge_l_median": 0.340909,
+            "reference_token_coverage_mean": 0.508523,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 2,
+            "rouge_l_mean": 0.0,
+            "rouge_l_median": 0.0,
+            "reference_token_coverage_mean": 0.0,
+            "exact_match_mean": 0.0,
+            "idk_rate": 1.0
+          },
+          "KG-RAG": {
+            "n": 2,
+            "rouge_l_mean": 0.166667,
+            "rouge_l_median": 0.166667,
+            "reference_token_coverage_mean": 0.272727,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.5
+          }
+        }
+      },
+      "multiple: Chandrayaan-3; Gaganyaan": {
+        "n": 2,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 2,
+            "rouge_l_mean": 0.376068,
+            "rouge_l_median": 0.376068,
+            "reference_token_coverage_mean": 0.277778,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 2,
+            "rouge_l_mean": 0.376068,
+            "rouge_l_median": 0.376068,
+            "reference_token_coverage_mean": 0.277778,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "KG-RAG": {
+            "n": 2,
+            "rouge_l_mean": 0.376068,
+            "rouge_l_median": 0.376068,
+            "reference_token_coverage_mean": 0.277778,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          }
+        }
+      },
+      "multiple: Mars Orbiter Mission; AstroSat": {
+        "n": 1,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 1,
+            "rouge_l_mean": 0.322581,
+            "rouge_l_median": 0.322581,
+            "reference_token_coverage_mean": 0.454545,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "Vanilla RAG": {
+            "n": 1,
+            "rouge_l_mean": 0.178571,
+            "rouge_l_median": 0.178571,
+            "reference_token_coverage_mean": 0.454545,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          },
+          "KG-RAG": {
+            "n": 1,
+            "rouge_l_mean": 0.322581,
+            "rouge_l_median": 0.322581,
+            "reference_token_coverage_mean": 0.454545,
+            "exact_match_mean": 0.0,
+            "idk_rate": 0.0
+          }
+        }
+      },
+      "not mission-specific": {
+        "n": 112,
+        "systems": {
+          "BM25 + LLM": {
+            "n": 112,
+            "rouge_l_mean": 0.288388,
+            "rouge_l_median": 0.2,
+            "reference_token_coverage_mean": 0.427409,
+            "exact_match_mean": 0.026786,
+            "idk_rate": 0.026786
+          },
+          "Vanilla RAG": {
+            "n": 112,
+            "rouge_l_mean": 0.269977,
+            "rouge_l_median": 0.216374,
+            "reference_token_coverage_mean": 0.380111,
+            "exact_match_mean": 0.026786,
+            "idk_rate": 0.142857
+          },
+          "KG-RAG": {
+            "n": 112,
+            "rouge_l_mean": 0.261829,
+            "rouge_l_median": 0.208333,
+            "reference_token_coverage_mean": 0.365774,
+            "exact_match_mean": 0.026786,
+            "idk_rate": 0.151786
+          }
+        }
+      }
+    }
+  },
+  "primary_comparison": {
+    "group": "KG_REQUIRED=YES",
+    "n": 0,
+    "minimum_inferential_n": 10,
+    "status": "descriptive_only_insufficient_sample_size",
+    "kg_rag_vs_vanilla_rag": {
+      "n": 0,
+      "metric": "rouge_l",
+      "left_system": "KG-RAG",
+      "right_system": "Vanilla RAG",
+      "left_mean": null,
+      "left_median": null,
+      "right_mean": null,
+      "right_median": null,
+      "mean_paired_difference": null,
+      "median_paired_difference": null,
+      "bootstrap_95_percent_ci": null,
+      "wilcoxon_signed_rank_p": null,
+      "cohen_dz": null,
+      "rank_biserial": null,
+      "inferential_status": "descriptive_only_insufficient_sample_size"
+    },
+    "kg_rag_vs_bm25_llm": {
+      "n": 0,
+      "metric": "rouge_l",
+      "left_system": "KG-RAG",
+      "right_system": "BM25 + LLM",
+      "left_mean": null,
+      "left_median": null,
+      "right_mean": null,
+      "right_median": null,
+      "mean_paired_difference": null,
+      "median_paired_difference": null,
+      "bootstrap_95_percent_ci": null,
+      "wilcoxon_signed_rank_p": null,
+      "cohen_dz": null,
+      "rank_biserial": null,
+      "inferential_status": "descriptive_only_insufficient_sample_size"
+    }
+  },
+  "secondary_required_no": {
+    "group": "KG_REQUIRED=NO",
+    "n": 172,
+    "minimum_inferential_n": 10,
+    "status": "descriptive_and_inferential_if_testable",
+    "kg_rag_vs_vanilla_rag": {
+      "n": 172,
+      "metric": "rouge_l",
+      "left_system": "KG-RAG",
+      "right_system": "Vanilla RAG",
+      "left_mean": 0.275447,
+      "left_median": 0.222222,
+      "right_mean": 0.276733,
+      "right_median": 0.222222,
+      "mean_paired_difference": -0.001286,
+      "median_paired_difference": 0.0,
+      "bootstrap_95_percent_ci": [
+        -0.025461,
+        0.022519
+      ],
+      "wilcoxon_signed_rank_p": 0.5564315298194373,
+      "cohen_dz": -0.008036,
+      "rank_biserial": -0.070236,
+      "inferential_status": "inferential_test_available",
+      "holm_adjusted_p": 1.0
+    },
+    "kg_rag_vs_bm25_llm": {
+      "n": 172,
+      "metric": "rouge_l",
+      "left_system": "KG-RAG",
+      "right_system": "BM25 + LLM",
+      "left_mean": 0.275447,
+      "left_median": 0.222222,
+      "right_mean": 0.290775,
+      "right_median": 0.209005,
+      "mean_paired_difference": -0.015328,
+      "median_paired_difference": 0.0,
+      "bootstrap_95_percent_ci": [
+        -0.041493,
+        0.011907
+      ],
+      "wilcoxon_signed_rank_p": 0.28833319824080383,
+      "cohen_dz": -0.08612,
+      "rank_biserial": -0.101295,
+      "inferential_status": "inferential_test_available",
+      "holm_adjusted_p": 0.86499959
+    }
+  },
+  "relational_subset": {
+    "group": "KG_RELATIONALLY_NATURAL + KG_MULTI_HOP",
+    "n": 12,
+    "minimum_inferential_n": 10,
+    "status": "descriptive_and_inferential_if_testable",
+    "kg_rag_vs_vanilla_rag": {
+      "n": 12,
+      "metric": "rouge_l",
+      "left_system": "KG-RAG",
+      "right_system": "Vanilla RAG",
+      "left_mean": 0.244566,
+      "left_median": 0.222222,
+      "right_mean": 0.242988,
+      "right_median": 0.222222,
+      "mean_paired_difference": 0.001578,
+      "median_paired_difference": 0.0,
+      "bootstrap_95_percent_ci": [
+        -0.042124,
+        0.03719
+      ],
+      "wilcoxon_signed_rank_p": 0.8125,
+      "cohen_dz": 0.021248,
+      "rank_biserial": 0.2,
+      "inferential_status": "inferential_test_available",
+      "holm_adjusted_p": 1.0
+    },
+    "kg_rag_vs_bm25_llm": {
+      "n": 12,
+      "metric": "rouge_l",
+      "left_system": "KG-RAG",
+      "right_system": "BM25 + LLM",
+      "left_mean": 0.244566,
+      "left_median": 0.222222,
+      "right_mean": 0.201161,
+      "right_median": 0.16859,
+      "mean_paired_difference": 0.043405,
+      "median_paired_difference": 0.035764,
+      "bootstrap_95_percent_ci": [
+        0.008764,
+        0.077216
+      ],
+      "wilcoxon_signed_rank_p": 0.0673828125,
+      "cohen_dz": 0.669501,
+      "rank_biserial": 0.636364,
+      "inferential_status": "inferential_test_available",
+      "holm_adjusted_p": 0.26953125
+    }
+  },
+  "secondary_multiple_comparison_correction": {
+    "method": "Holm-Bonferroni over testable exploratory subgroup Wilcoxon comparisons",
+    "family": [
+      "KG_REQUIRED=NO:KG-RAG_vs_BM25",
+      "KG_REQUIRED=NO:KG-RAG_vs_Vanilla",
+      "RELATIONAL:KG-RAG_vs_BM25",
+      "RELATIONAL:KG-RAG_vs_Vanilla"
+    ],
+    "adjusted_p_values": {
+      "RELATIONAL:KG-RAG_vs_BM25": 0.26953125,
+      "KG_REQUIRED=NO:KG-RAG_vs_BM25": 0.86499959,
+      "KG_REQUIRED=NO:KG-RAG_vs_Vanilla": 1.0,
+      "RELATIONAL:KG-RAG_vs_Vanilla": 1.0
+    }
+  },
+  "failure_pattern_audit": {
+    "relational_subset_n": 12,
+    "identical_kg_and_vanilla_answer_text_count": 7,
+    "kg_rag_idk_count": 1,
+    "vanilla_rag_idk_count": 0,
+    "answer_examples": [
+      {
+        "question_id": "isro_071",
+        "question": "What is the PSLV-C57 mission?",
+        "reference_answer": "PSLV-C57 was the launch mission that carried Aditya-L1 into orbit.",
+        "kg_rag_answer_excerpt": "I don't know.",
+        "vanilla_rag_answer_excerpt": "The PSLV-C57 mission is not mentioned in the provided context.",
+        "kg_rag_rouge_l": 0.0,
+        "vanilla_rag_rouge_l": 0.20000000000000004,
+        "interpretation_limit": "Lexical/output example only; not an adjudication of factual correctness or retrieval cause."
+      },
+      {
+        "question_id": "isro_098",
+        "question": "What does the SHAPE payload on Chandrayaan-3 study?",
+        "reference_answer": "SHAPE (Spectro-polarimetry of HAbitable Planet Earth) studies Earth's spectral and polarimetric properties from lunar orbit.",
+        "kg_rag_answer_excerpt": "The SHAPE payload on Chandrayaan-3 studies the shape and topography of the lunar surface.",
+        "vanilla_rag_answer_excerpt": "The SHAPE payload on Chandrayaan-3 studies the shape of the lunar surface.",
+        "kg_rag_rouge_l": 0.2758620689655172,
+        "vanilla_rag_rouge_l": 0.22222222222222224,
+        "interpretation_limit": "Lexical/output example only; not an adjudication of factual correctness or retrieval cause."
+      },
+      {
+        "question_id": "isro_130",
+        "question": "What payload on Aditya-L1 studies solar energetic particles and what centre built it?",
+        "reference_answer": "The Suprathermal and Energetic Particle Spectrometer (STEPS), part of the ASPEX payload on Aditya-L1, studies solar energetic particles. ASPEX was developed by the Physical Research Laboratory (PRL), Ahmedabad.",
+        "kg_rag_answer_excerpt": "The payload on Aditya-L1 that studies solar energetic particles is the Solar Low Energy X-ray Spectrometer (SoLEXS). It was developed by the U Rao Satellite Centre (URSC), Bengaluru.",
+        "vanilla_rag_answer_excerpt": "The payload on Aditya-L1 that studies solar energetic particles is the Solar Low Energy X-ray Spectrometer (SoLEXS). It was developed by the U Rao Satellite Centre (URSC), Bengaluru.",
+        "kg_rag_rouge_l": 0.42857142857142855,
+        "vanilla_rag_rouge_l": 0.42857142857142855,
+        "interpretation_limit": "Lexical/output example only; not an adjudication of factual correctness or retrieval cause."
+      },
+      {
+        "question_id": "isro_153",
+        "question": "What payload on the Chandrayaan-2 orbiter studies the Moon's surface mineralogy?",
+        "reference_answer": "The Imaging Infrared Spectrometer (IIRS) on the Chandrayaan-2 orbiter studies lunar surface mineralogy across 250 spectral bands, including the 3-micrometre absorption band indicating water molecules.",
+        "kg_rag_answer_excerpt": "The payload on the Chandrayaan-2 orbiter that studies the Moon's surface mineralogy is the Alpha Particle X-ray Spectrometer (APXS).",
+        "vanilla_rag_answer_excerpt": "The payload on the Chandrayaan-2 orbiter that studies the Moon's surface mineralogy is the Alpha Particle X-ray Spectrometer (APXS).",
+        "kg_rag_rouge_l": 0.40909090909090906,
+        "vanilla_rag_rouge_l": 0.40909090909090906,
+        "interpretation_limit": "Lexical/output example only; not an adjudication of factual correctness or retrieval cause."
+      },
+      {
+        "question_id": "isro_156",
+        "question": "Which ISRO mission carried instruments from NASA and ESA?",
+        "reference_answer": "Chandrayaan-1 carried instruments from NASA (Moon Mineralogy Mapper), ESA, and other international partners alongside Indian instruments — 11 scientific instruments in total from India, USA, UK, Germany, Sweden, and Bulgaria.",
+        "kg_rag_answer_excerpt": "The ISRO mission that carried instruments from NASA and ESA is not mentioned in the provided context.",
+        "vanilla_rag_answer_excerpt": "The ISRO mission that carried instruments from NASA and ESA is not mentioned in the provided context.",
+        "kg_rag_rouge_l": 0.2608695652173913,
+        "vanilla_rag_rouge_l": 0.2608695652173913,
+        "interpretation_limit": "Lexical/output example only; not an adjudication of factual correctness or retrieval cause."
+      }
+    ],
+    "retrieval_contexts_available": false
+  },
+  "decision_gate": {
+    "decision": "D. FROZEN BENCHMARK INSUFFICIENT",
+    "rationale": "The strict KG_REQUIRED=YES subset is empty in this frozen annotation. No inferential comparison can test the primary conditional-benefit hypothesis. Relationally natural/multi-hop items are reported descriptively or as exploratory depending on N; their wording alone does not establish that a KG join is required."
+  },
+  "per_question_metrics": [
+    {
+      "question_id": "isro_002",
+      "mission": "Chandrayaan-3",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.10084033613445378,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.5499999999999999,
+          "reference_token_coverage": 0.8571428571428571,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.09523809523809525,
+          "reference_token_coverage": 0.42857142857142855,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_003",
+      "mission": "Chandrayaan-3",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 1.0,
+          "reference_token_coverage": 1.0,
+          "exact_match": 1.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 1.0,
+          "reference_token_coverage": 1.0,
+          "exact_match": 1.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 1.0,
+          "reference_token_coverage": 1.0,
+          "exact_match": 1.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_004",
+      "mission": "Chandrayaan-3",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.5555555555555556,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.4761904761904762,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.4761904761904762,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_005",
+      "mission": "Chandrayaan-3",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.4545454545454545,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.4545454545454545,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2553191489361702,
+          "reference_token_coverage": 0.8571428571428571,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_006",
+      "mission": "Mars Orbiter Mission",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.10000000000000002,
+          "reference_token_coverage": 0.1,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.10000000000000002,
+          "reference_token_coverage": 0.1,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.10000000000000002,
+          "reference_token_coverage": 0.1,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_007",
+      "mission": "Mars Orbiter Mission",
+      "tier": 1,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_RELATIONALLY_NATURAL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.1111111111111111,
+          "reference_token_coverage": 0.2,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.2222222222222222,
+          "reference_token_coverage": 0.4,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2222222222222222,
+          "reference_token_coverage": 0.4,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_008",
+      "mission": "Aditya-L1",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 1.0,
+          "reference_token_coverage": 1.0,
+          "exact_match": 1.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 1.0,
+          "reference_token_coverage": 1.0,
+          "exact_match": 1.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 1.0,
+          "reference_token_coverage": 1.0,
+          "exact_match": 1.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_009",
+      "mission": "Aditya-L1",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.1592920353982301,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.4000000000000001,
+          "reference_token_coverage": 0.4444444444444444,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.19354838709677416,
+          "reference_token_coverage": 0.3888888888888889,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_010",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 1.0,
+          "reference_token_coverage": 1.0,
+          "exact_match": 1.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 1.0,
+          "reference_token_coverage": 1.0,
+          "exact_match": 1.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 1.0,
+          "reference_token_coverage": 1.0,
+          "exact_match": 1.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_011",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.7142857142857143,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.8571428571428571,
+          "reference_token_coverage": 0.8571428571428571,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.8571428571428571,
+          "reference_token_coverage": 0.8571428571428571,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_012",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 1.0,
+          "reference_token_coverage": 1.0,
+          "exact_match": 1.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 1.0,
+          "reference_token_coverage": 1.0,
+          "exact_match": 1.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 1.0,
+          "reference_token_coverage": 1.0,
+          "exact_match": 1.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_013",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.10526315789473685,
+          "reference_token_coverage": 0.2857142857142857,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.3076923076923077,
+          "reference_token_coverage": 0.5714285714285714,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.10526315789473685,
+          "reference_token_coverage": 0.14285714285714285,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_014",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.7999999999999999,
+          "reference_token_coverage": 0.75,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.7999999999999999,
+          "reference_token_coverage": 0.75,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2,
+          "reference_token_coverage": 0.25,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_016",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.125,
+          "reference_token_coverage": 0.14285714285714285,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.1111111111111111,
+          "reference_token_coverage": 0.14285714285714285,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.1111111111111111,
+          "reference_token_coverage": 0.14285714285714285,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_017",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.588235294117647,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.10526315789473685,
+          "reference_token_coverage": 0.14285714285714285,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.10526315789473685,
+          "reference_token_coverage": 0.14285714285714285,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_018",
+      "mission": "Chandrayaan-2",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.3157894736842105,
+          "reference_token_coverage": 0.5714285714285714,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.10526315789473685,
+          "reference_token_coverage": 0.2857142857142857,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.10526315789473685,
+          "reference_token_coverage": 0.2857142857142857,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_019",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.30769230769230765,
+          "reference_token_coverage": 0.8571428571428571,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.34285714285714286,
+          "reference_token_coverage": 0.8571428571428571,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.4761904761904762,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_020",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.9333333333333333,
+          "reference_token_coverage": 1.0,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.1111111111111111,
+          "reference_token_coverage": 0.14285714285714285,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.9333333333333333,
+          "reference_token_coverage": 1.0,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_021",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.1,
+          "reference_token_coverage": 0.375,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.1904761904761905,
+          "reference_token_coverage": 0.375,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.1904761904761905,
+          "reference_token_coverage": 0.375,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_022",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.16666666666666663,
+          "reference_token_coverage": 0.42857142857142855,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.588235294117647,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.588235294117647,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_023",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.27586206896551724,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.42857142857142855,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.42857142857142855,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_024",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.9166666666666666,
+          "reference_token_coverage": 0.9166666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.8333333333333334,
+          "reference_token_coverage": 0.8333333333333334,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.8333333333333334,
+          "reference_token_coverage": 0.8333333333333334,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_025",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.19444444444444445,
+          "reference_token_coverage": 1.0,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.588235294117647,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.588235294117647,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_026",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.6666666666666665,
+          "reference_token_coverage": 0.8571428571428571,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.7368421052631579,
+          "reference_token_coverage": 1.0,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.7368421052631579,
+          "reference_token_coverage": 1.0,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_027",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.13333333333333333,
+          "reference_token_coverage": 0.4375,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.11881188118811882,
+          "reference_token_coverage": 0.4375,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.16666666666666666,
+          "reference_token_coverage": 0.125,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_028",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.2222222222222222,
+          "reference_token_coverage": 0.6,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.2,
+          "reference_token_coverage": 0.6,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2,
+          "reference_token_coverage": 0.6,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_029",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.42105263157894735,
+          "reference_token_coverage": 0.6666666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.42105263157894735,
+          "reference_token_coverage": 0.6666666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.42105263157894735,
+          "reference_token_coverage": 0.6666666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_030",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.26086956521739124,
+          "reference_token_coverage": 0.42857142857142855,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.5,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.09523809523809523,
+          "reference_token_coverage": 0.2857142857142857,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_032",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.4444444444444444,
+          "reference_token_coverage": 0.5714285714285714,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.4210526315789474,
+          "reference_token_coverage": 0.5714285714285714,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.4,
+          "reference_token_coverage": 0.5714285714285714,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_034",
+      "mission": "Chandrayaan-1",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.7142857142857143,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 1.0,
+          "reference_token_coverage": 1.0,
+          "exact_match": 1.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 1.0,
+          "reference_token_coverage": 1.0,
+          "exact_match": 1.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_035",
+      "mission": "Chandrayaan-1",
+      "tier": 1,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_RELATIONALLY_NATURAL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.1111111111111111,
+          "reference_token_coverage": 0.2,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.2222222222222222,
+          "reference_token_coverage": 0.4,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2222222222222222,
+          "reference_token_coverage": 0.4,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_037",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.17721518987341772,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_038",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.08247422680412371,
+          "reference_token_coverage": 0.4444444444444444,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 1.0,
+          "reference_token_coverage": 1.0,
+          "exact_match": 1.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.26666666666666666,
+          "reference_token_coverage": 0.7777777777777778,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_039",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.13333333333333333,
+          "reference_token_coverage": 0.2857142857142857,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_040",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 1.0,
+          "reference_token_coverage": 1.0,
+          "exact_match": 1.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.5,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 1.0,
+          "reference_token_coverage": 1.0,
+          "exact_match": 1.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_041",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.7692307692307692,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.39999999999999997,
+          "reference_token_coverage": 0.42857142857142855,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.39999999999999997,
+          "reference_token_coverage": 0.42857142857142855,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_042",
+      "mission": "Aditya-L1",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.18421052631578946,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.1395348837209302,
+          "reference_token_coverage": 0.42857142857142855,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.11267605633802816,
+          "reference_token_coverage": 0.2857142857142857,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_043",
+      "mission": "Chandrayaan-3",
+      "tier": 1,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_RELATIONALLY_NATURAL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.1111111111111111,
+          "reference_token_coverage": 0.2,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.13333333333333333,
+          "reference_token_coverage": 0.2,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.13333333333333333,
+          "reference_token_coverage": 0.2,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_044",
+      "mission": "Chandrayaan-3",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.1142857142857143,
+          "reference_token_coverage": 0.2857142857142857,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.1111111111111111,
+          "reference_token_coverage": 0.2857142857142857,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.1111111111111111,
+          "reference_token_coverage": 0.2857142857142857,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_045",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.12307692307692307,
+          "reference_token_coverage": 0.42857142857142855,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.2545454545454546,
+          "reference_token_coverage": 0.5714285714285714,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.136986301369863,
+          "reference_token_coverage": 0.42857142857142855,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_046",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.02941176470588235,
+          "reference_token_coverage": 0.07692307692307693,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.03773584905660378,
+          "reference_token_coverage": 0.07692307692307693,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2545454545454545,
+          "reference_token_coverage": 0.5384615384615384,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_047",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.34782608695652173,
+          "reference_token_coverage": 0.5555555555555556,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.32,
+          "reference_token_coverage": 0.5555555555555556,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.33333333333333337,
+          "reference_token_coverage": 0.5555555555555556,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_048",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.07017543859649124,
+          "reference_token_coverage": 0.4,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.11764705882352941,
+          "reference_token_coverage": 0.2,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.11764705882352941,
+          "reference_token_coverage": 0.2,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_049",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.5384615384615385,
+          "reference_token_coverage": 0.6363636363636364,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.43478260869565216,
+          "reference_token_coverage": 0.45454545454545453,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.43478260869565216,
+          "reference_token_coverage": 0.45454545454545453,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_050",
+      "mission": "Chandrayaan-2",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.13698630136986303,
+          "reference_token_coverage": 0.7,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.5263157894736842,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.4,
+          "reference_token_coverage": 0.6,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_051",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.4545454545454545,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.4545454545454545,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.4545454545454545,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_053",
+      "mission": "Gaganyaan",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.125,
+          "reference_token_coverage": 0.6666666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.14678899082568805,
+          "reference_token_coverage": 0.75,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.14545454545454545,
+          "reference_token_coverage": 0.5833333333333334,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_054",
+      "mission": "Gaganyaan",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.17391304347826086,
+          "reference_token_coverage": 0.36363636363636365,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.17391304347826086,
+          "reference_token_coverage": 0.36363636363636365,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.08695652173913043,
+          "reference_token_coverage": 0.36363636363636365,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_055",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.1386138613861386,
+          "reference_token_coverage": 0.6666666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.3571428571428571,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.3571428571428571,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_056",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_057",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.125,
+          "reference_token_coverage": 0.14285714285714285,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_058",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.5217391304347826,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.42105263157894735,
+          "reference_token_coverage": 0.6666666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.31372549019607837,
+          "reference_token_coverage": 0.6666666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_059",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.2608695652173913,
+          "reference_token_coverage": 0.23076923076923078,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_060",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.032786885245901634,
+          "reference_token_coverage": 0.16666666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.3243243243243243,
+          "reference_token_coverage": 1.0,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.923076923076923,
+          "reference_token_coverage": 1.0,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_061",
+      "mission": "Chandrayaan-1",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.5263157894736842,
+          "reference_token_coverage": 0.625,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.5,
+          "reference_token_coverage": 0.625,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_062",
+      "mission": "Chandrayaan-3",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.18181818181818185,
+          "reference_token_coverage": 0.4444444444444444,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.16666666666666669,
+          "reference_token_coverage": 0.4444444444444444,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_064",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.08450704225352113,
+          "reference_token_coverage": 0.42857142857142855,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.6153846153846153,
+          "reference_token_coverage": 0.5714285714285714,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.10526315789473685,
+          "reference_token_coverage": 0.14285714285714285,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_065",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.7142857142857143,
+          "reference_token_coverage": 0.7142857142857143,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.10526315789473685,
+          "reference_token_coverage": 0.14285714285714285,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.42857142857142855,
+          "reference_token_coverage": 0.42857142857142855,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_066",
+      "mission": "Chandrayaan-3",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.3125,
+          "reference_token_coverage": 0.47058823529411764,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.1414141414141414,
+          "reference_token_coverage": 0.5882352941176471,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.13114754098360656,
+          "reference_token_coverage": 0.6470588235294118,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_067",
+      "mission": "Aditya-L1",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.11881188118811882,
+          "reference_token_coverage": 0.6428571428571429,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.5263157894736842,
+          "reference_token_coverage": 0.8571428571428571,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.5263157894736842,
+          "reference_token_coverage": 0.8571428571428571,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_069",
+      "mission": "Aditya-L1",
+      "tier": 1,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_RELATIONALLY_NATURAL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.24074074074074076,
+          "reference_token_coverage": 0.8666666666666667,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.14814814814814817,
+          "reference_token_coverage": 0.2,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.19607843137254904,
+          "reference_token_coverage": 0.4,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_070",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.3076923076923077,
+          "reference_token_coverage": 0.7272727272727273,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.34615384615384615,
+          "reference_token_coverage": 0.8181818181818182,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.36000000000000004,
+          "reference_token_coverage": 0.8181818181818182,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_071",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_RELATIONALLY_NATURAL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.07692307692307691,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.20000000000000004,
+          "reference_token_coverage": 0.3,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_073",
+      "mission": "AstroSat",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.13114754098360654,
+          "reference_token_coverage": 0.36363636363636365,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.1,
+          "reference_token_coverage": 0.2727272727272727,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.057142857142857134,
+          "reference_token_coverage": 0.2727272727272727,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_074",
+      "mission": "AstroSat",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.6666666666666666,
+          "reference_token_coverage": 0.5714285714285714,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.5333333333333333,
+          "reference_token_coverage": 0.5714285714285714,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.5,
+          "reference_token_coverage": 0.5714285714285714,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_075",
+      "mission": "AstroSat",
+      "tier": 1,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_RELATIONALLY_NATURAL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.1111111111111111,
+          "reference_token_coverage": 0.2,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.2222222222222222,
+          "reference_token_coverage": 0.4,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2222222222222222,
+          "reference_token_coverage": 0.4,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_076",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.9090909090909091,
+          "reference_token_coverage": 1.0,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.8000000000000002,
+          "reference_token_coverage": 0.8,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.8000000000000002,
+          "reference_token_coverage": 0.8,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_077",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.3333333333333333,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_078",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.3466666666666666,
+          "reference_token_coverage": 0.9333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.27368421052631575,
+          "reference_token_coverage": 0.9333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.20930232558139536,
+          "reference_token_coverage": 0.7333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_079",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.16666666666666663,
+          "reference_token_coverage": 0.42857142857142855,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.10526315789473685,
+          "reference_token_coverage": 0.14285714285714285,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_080",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.13157894736842105,
+          "reference_token_coverage": 0.5833333333333334,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_081",
+      "mission": "Chandrayaan-2",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.31250000000000006,
+          "reference_token_coverage": 0.35714285714285715,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.4799999999999999,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.3703703703703704,
+          "reference_token_coverage": 0.42857142857142855,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_082",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.16666666666666666,
+          "reference_token_coverage": 0.8181818181818182,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.4347826086956522,
+          "reference_token_coverage": 0.6363636363636364,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.4347826086956522,
+          "reference_token_coverage": 0.6363636363636364,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_083",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.32,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_084",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.15151515151515152,
+          "reference_token_coverage": 0.46153846153846156,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0909090909090909,
+          "reference_token_coverage": 0.46153846153846156,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2608695652173913,
+          "reference_token_coverage": 0.23076923076923078,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_085",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.75,
+          "reference_token_coverage": 0.75,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.1,
+          "reference_token_coverage": 0.125,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.1,
+          "reference_token_coverage": 0.125,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_086",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.3,
+          "reference_token_coverage": 0.25,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.18604651162790697,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.19047619047619044,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_087",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.2,
+          "reference_token_coverage": 0.375,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.1904761904761905,
+          "reference_token_coverage": 0.375,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2,
+          "reference_token_coverage": 0.375,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_089",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.17073170731707318,
+          "reference_token_coverage": 0.6153846153846154,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.09090909090909091,
+          "reference_token_coverage": 0.46153846153846156,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.13953488372093026,
+          "reference_token_coverage": 0.6923076923076923,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_090",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.12903225806451613,
+          "reference_token_coverage": 0.4444444444444444,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.3333333333333333,
+          "reference_token_coverage": 0.4444444444444444,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.3333333333333333,
+          "reference_token_coverage": 0.4444444444444444,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_091",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.08421052631578949,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.22222222222222224,
+          "reference_token_coverage": 0.375,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.22222222222222224,
+          "reference_token_coverage": 0.375,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_092",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.18181818181818182,
+          "reference_token_coverage": 0.3,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_093",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.30769230769230765,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.07766990291262137,
+          "reference_token_coverage": 0.4166666666666667,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_094",
+      "mission": "Chandrayaan-2",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.30769230769230765,
+          "reference_token_coverage": 0.21428571428571427,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.2962962962962963,
+          "reference_token_coverage": 0.35714285714285715,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.30769230769230765,
+          "reference_token_coverage": 0.21428571428571427,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_095",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.18867924528301885,
+          "reference_token_coverage": 0.45454545454545453,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_096",
+      "mission": "not mission-specific",
+      "tier": 1,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.0909090909090909,
+          "reference_token_coverage": 0.2222222222222222,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_097",
+      "mission": "Chandrayaan-3",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.20967741935483872,
+          "reference_token_coverage": 0.5625,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.24,
+          "reference_token_coverage": 0.4375,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.31249999999999994,
+          "reference_token_coverage": 0.25,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_098",
+      "mission": "Chandrayaan-3",
+      "tier": 1,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_RELATIONALLY_NATURAL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.15384615384615383,
+          "reference_token_coverage": 0.2,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.22222222222222224,
+          "reference_token_coverage": 0.26666666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2758620689655172,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_099",
+      "mission": "Mars Orbiter Mission",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.13333333333333333,
+          "reference_token_coverage": 0.125,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.07142857142857142,
+          "reference_token_coverage": 0.0625,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.06896551724137931,
+          "reference_token_coverage": 0.0625,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_100",
+      "mission": "Mars Orbiter Mission",
+      "tier": 1,
+      "question_type": "ATTRIBUTE",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.2545454545454545,
+          "reference_token_coverage": 0.7,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.3,
+          "reference_token_coverage": 0.3,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2727272727272727,
+          "reference_token_coverage": 0.3,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_101",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "TWO_HOP_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.3783783783783784,
+          "reference_token_coverage": 0.5333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.3783783783783784,
+          "reference_token_coverage": 0.5333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.3783783783783784,
+          "reference_token_coverage": 0.5333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_102",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "TWO_HOP_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.21052631578947364,
+          "reference_token_coverage": 0.15151515151515152,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.21052631578947364,
+          "reference_token_coverage": 0.15151515151515152,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.21052631578947364,
+          "reference_token_coverage": 0.15151515151515152,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_103",
+      "mission": "Chandrayaan-1",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.4666666666666667,
+          "reference_token_coverage": 0.4666666666666667,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.4666666666666667,
+          "reference_token_coverage": 0.4666666666666667,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.4666666666666667,
+          "reference_token_coverage": 0.4666666666666667,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_104",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.5384615384615384,
+          "reference_token_coverage": 0.6363636363636364,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_105",
+      "mission": "Chandrayaan-3",
+      "tier": 2,
+      "question_type": "TWO_HOP_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "UNCERTAIN",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.28571428571428575,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.23529411764705882,
+          "reference_token_coverage": 0.45,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.35,
+          "reference_token_coverage": 0.45,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_106",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.45161290322580644,
+          "reference_token_coverage": 0.4666666666666667,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.2962962962962963,
+          "reference_token_coverage": 0.7333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.25,
+          "reference_token_coverage": 0.7333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_107",
+      "mission": "Aditya-L1",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_RELATIONALLY_NATURAL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.27906976744186046,
+          "reference_token_coverage": 0.2916666666666667,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.35999999999999993,
+          "reference_token_coverage": 0.4166666666666667,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.35294117647058826,
+          "reference_token_coverage": 0.4166666666666667,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_108",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.24778761061946908,
+          "reference_token_coverage": 0.5217391304347826,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.3,
+          "reference_token_coverage": 0.34782608695652173,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.27999999999999997,
+          "reference_token_coverage": 0.30434782608695654,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_109",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.16842105263157894,
+          "reference_token_coverage": 0.38095238095238093,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.13559322033898305,
+          "reference_token_coverage": 0.42857142857142855,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.14285714285714285,
+          "reference_token_coverage": 0.42857142857142855,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_110",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "TWO_HOP_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.4090909090909091,
+          "reference_token_coverage": 0.45,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.36363636363636365,
+          "reference_token_coverage": 0.45,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.18032786885245902,
+          "reference_token_coverage": 0.6,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_111",
+      "mission": "Chandrayaan-3",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "UNCERTAIN",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.3673469387755102,
+          "reference_token_coverage": 0.4444444444444444,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.29629629629629634,
+          "reference_token_coverage": 0.4444444444444444,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.29213483146067415,
+          "reference_token_coverage": 0.7222222222222222,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_112",
+      "mission": "Aditya-L1",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_RELATIONALLY_NATURAL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.18333333333333332,
+          "reference_token_coverage": 0.4666666666666667,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.08695652173913043,
+          "reference_token_coverage": 0.13333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2113821138211382,
+          "reference_token_coverage": 0.6333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_113",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.16216216216216214,
+          "reference_token_coverage": 0.17391304347826086,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_114",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.19512195121951217,
+          "reference_token_coverage": 0.21739130434782608,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_115",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.06896551724137931,
+          "reference_token_coverage": 0.04,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.5,
+          "reference_token_coverage": 0.52,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.5,
+          "reference_token_coverage": 0.52,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_116",
+      "mission": "Chandrayaan-2",
+      "tier": 2,
+      "question_type": "TWO_HOP_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.28571428571428575,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.28571428571428575,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.27027027027027023,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_117",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.10810810810810811,
+          "reference_token_coverage": 0.2962962962962963,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.09230769230769231,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_118",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.10687022900763359,
+          "reference_token_coverage": 0.45454545454545453,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.06557377049180327,
+          "reference_token_coverage": 0.2727272727272727,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.07999999999999999,
+          "reference_token_coverage": 0.3181818181818182,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_119",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.1851851851851852,
+          "reference_token_coverage": 0.22727272727272727,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.125,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.13559322033898305,
+          "reference_token_coverage": 0.45454545454545453,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_120",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.10666666666666667,
+          "reference_token_coverage": 0.3684210526315789,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.05555555555555555,
+          "reference_token_coverage": 0.21052631578947367,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.12244897959183672,
+          "reference_token_coverage": 0.21052631578947367,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_121",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "TWO_HOP_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "UNCERTAIN",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.27027027027027023,
+          "reference_token_coverage": 0.3157894736842105,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.4313725490196078,
+          "reference_token_coverage": 0.5263157894736842,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2318840579710145,
+          "reference_token_coverage": 0.3684210526315789,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_122",
+      "mission": "Chandrayaan-1",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "UNCERTAIN",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.29787234042553196,
+          "reference_token_coverage": 0.30434782608695654,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.29787234042553196,
+          "reference_token_coverage": 0.30434782608695654,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_123",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.16494845360824745,
+          "reference_token_coverage": 0.44,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.2790697674418605,
+          "reference_token_coverage": 0.24,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2790697674418605,
+          "reference_token_coverage": 0.24,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_124",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.16,
+          "reference_token_coverage": 0.48148148148148145,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.12307692307692307,
+          "reference_token_coverage": 0.4074074074074074,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.14173228346456693,
+          "reference_token_coverage": 0.48148148148148145,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_125",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.15789473684210525,
+          "reference_token_coverage": 0.17647058823529413,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.11111111111111112,
+          "reference_token_coverage": 0.29411764705882354,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.07692307692307691,
+          "reference_token_coverage": 0.23529411764705882,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_126",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "DIRECT_FACT",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.20833333333333334,
+          "reference_token_coverage": 0.25925925925925924,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.20833333333333334,
+          "reference_token_coverage": 0.25925925925925924,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.20833333333333334,
+          "reference_token_coverage": 0.25925925925925924,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_127",
+      "mission": "Chandrayaan-2",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "UNCERTAIN",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.375,
+          "reference_token_coverage": 0.5416666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.3389830508474576,
+          "reference_token_coverage": 0.5833333333333334,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.1129032258064516,
+          "reference_token_coverage": 0.5416666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_128",
+      "mission": "Gaganyaan",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.24719101123595505,
+          "reference_token_coverage": 0.48,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.20183486238532114,
+          "reference_token_coverage": 0.48,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.25688073394495414,
+          "reference_token_coverage": 0.52,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_129",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.380952380952381,
+          "reference_token_coverage": 0.2962962962962963,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.2978723404255319,
+          "reference_token_coverage": 0.25925925925925924,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2916666666666667,
+          "reference_token_coverage": 0.25925925925925924,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_130",
+      "mission": "Aditya-L1",
+      "tier": 2,
+      "question_type": "TWO_HOP_RELATION",
+      "kg_relevance": "KG_MULTI_HOP",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.40909090909090917,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.42857142857142855,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.42857142857142855,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_131",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.20833333333333334,
+          "reference_token_coverage": 0.2222222222222222,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.20833333333333334,
+          "reference_token_coverage": 0.2222222222222222,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.20833333333333334,
+          "reference_token_coverage": 0.2222222222222222,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_132",
+      "mission": "multiple: Chandrayaan-2; Chandrayaan-3",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.13675213675213674,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.12612612612612614,
+          "reference_token_coverage": 0.23809523809523808,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.14035087719298245,
+          "reference_token_coverage": 0.38095238095238093,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_133",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.28571428571428575,
+          "reference_token_coverage": 0.4117647058823529,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.47826086956521735,
+          "reference_token_coverage": 0.47058823529411764,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.38461538461538464,
+          "reference_token_coverage": 0.5294117647058824,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_134",
+      "mission": "AstroSat",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.12280701754385964,
+          "reference_token_coverage": 0.4,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.08620689655172414,
+          "reference_token_coverage": 0.4,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.13114754098360654,
+          "reference_token_coverage": 0.45,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_135",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.3870967741935484,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.34375,
+          "reference_token_coverage": 0.45454545454545453,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.34375,
+          "reference_token_coverage": 0.45454545454545453,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_137",
+      "mission": "Chandrayaan-3",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "UNCERTAIN",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.3174603174603175,
+          "reference_token_coverage": 0.4166666666666667,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.3098591549295775,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.39344262295081966,
+          "reference_token_coverage": 0.375,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_138",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.1129032258064516,
+          "reference_token_coverage": 0.375,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.14953271028037385,
+          "reference_token_coverage": 0.4583333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.14035087719298245,
+          "reference_token_coverage": 0.4583333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_139",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.34146341463414637,
+          "reference_token_coverage": 0.375,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.2727272727272727,
+          "reference_token_coverage": 0.375,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2727272727272727,
+          "reference_token_coverage": 0.375,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_141",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "UNCERTAIN",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.2162162162162162,
+          "reference_token_coverage": 0.18181818181818182,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.20512820512820512,
+          "reference_token_coverage": 0.22727272727272727,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.15789473684210528,
+          "reference_token_coverage": 0.18181818181818182,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_143",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "TWO_HOP_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.2173913043478261,
+          "reference_token_coverage": 0.2,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.2222222222222222,
+          "reference_token_coverage": 0.2,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2222222222222222,
+          "reference_token_coverage": 0.2,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_144",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.13333333333333333,
+          "reference_token_coverage": 0.16,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.1764705882352941,
+          "reference_token_coverage": 0.32,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.16071428571428573,
+          "reference_token_coverage": 0.28,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_145",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "UNCERTAIN",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.3333333333333333,
+          "reference_token_coverage": 0.4166666666666667,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.3333333333333333,
+          "reference_token_coverage": 0.4166666666666667,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.3333333333333333,
+          "reference_token_coverage": 0.4166666666666667,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_146",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.10526315789473685,
+          "reference_token_coverage": 0.14285714285714285,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.05970149253731343,
+          "reference_token_coverage": 0.14285714285714285,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.08108108108108107,
+          "reference_token_coverage": 0.17857142857142858,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_147",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.380952380952381,
+          "reference_token_coverage": 0.34782608695652173,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_149",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.3181818181818182,
+          "reference_token_coverage": 0.23076923076923078,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.32558139534883723,
+          "reference_token_coverage": 0.23076923076923078,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.32558139534883723,
+          "reference_token_coverage": 0.23076923076923078,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_150",
+      "mission": "Gaganyaan",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.1724137931034483,
+          "reference_token_coverage": 0.4583333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.22857142857142856,
+          "reference_token_coverage": 0.5416666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.19298245614035087,
+          "reference_token_coverage": 0.5416666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_151",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.029850746268656716,
+          "reference_token_coverage": 0.07692307692307693,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.13186813186813187,
+          "reference_token_coverage": 0.23076923076923078,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.08403361344537814,
+          "reference_token_coverage": 0.23076923076923078,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_152",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.37837837837837834,
+          "reference_token_coverage": 0.3684210526315789,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.37837837837837834,
+          "reference_token_coverage": 0.3684210526315789,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.37837837837837834,
+          "reference_token_coverage": 0.3684210526315789,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_153",
+      "mission": "Chandrayaan-2",
+      "tier": 2,
+      "question_type": "TWO_HOP_RELATION",
+      "kg_relevance": "KG_MULTI_HOP",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.40909090909090906,
+          "reference_token_coverage": 0.30434782608695654,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.40909090909090906,
+          "reference_token_coverage": 0.34782608695652173,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.40909090909090906,
+          "reference_token_coverage": 0.34782608695652173,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_154",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.4285714285714286,
+          "reference_token_coverage": 0.375,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.3111111111111111,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_155",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.35294117647058826,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.39999999999999997,
+          "reference_token_coverage": 0.4,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.39999999999999997,
+          "reference_token_coverage": 0.4,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_156",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "TWO_HOP_RELATION",
+      "kg_relevance": "KG_MULTI_HOP",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.2173913043478261,
+          "reference_token_coverage": 0.28,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.2608695652173913,
+          "reference_token_coverage": 0.28,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2608695652173913,
+          "reference_token_coverage": 0.28,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_158",
+      "mission": "not mission-specific",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.07692307692307691,
+          "reference_token_coverage": 0.037037037037037035,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0816326530612245,
+          "reference_token_coverage": 0.037037037037037035,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.07142857142857144,
+          "reference_token_coverage": 0.037037037037037035,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_160",
+      "mission": "Gaganyaan",
+      "tier": 2,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.40909090909090906,
+          "reference_token_coverage": 0.45454545454545453,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.3829787234042554,
+          "reference_token_coverage": 0.4090909090909091,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.3829787234042554,
+          "reference_token_coverage": 0.4090909090909091,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_161",
+      "mission": "multiple: Chandrayaan-1; Chandrayaan-2",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.25,
+          "reference_token_coverage": 0.26666666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.3243243243243243,
+          "reference_token_coverage": 0.6,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.3243243243243243,
+          "reference_token_coverage": 0.6,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_162",
+      "mission": "multiple: Chandrayaan-2; Mars Orbiter Mission",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.11764705882352941,
+          "reference_token_coverage": 0.25,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.18181818181818185,
+          "reference_token_coverage": 0.16666666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.18749999999999997,
+          "reference_token_coverage": 0.25,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_163",
+      "mission": "not mission-specific",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.10526315789473684,
+          "reference_token_coverage": 0.11764705882352941,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_164",
+      "mission": "Chandrayaan-1",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.23333333333333334,
+          "reference_token_coverage": 0.5263157894736842,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_165",
+      "mission": "multiple: Chandrayaan-3; Aditya-L1",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.2727272727272727,
+          "reference_token_coverage": 0.45454545454545453,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.33333333333333326,
+          "reference_token_coverage": 0.5454545454545454,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_166",
+      "mission": "Mars Orbiter Mission",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.2352941176470588,
+          "reference_token_coverage": 0.19047619047619047,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.2727272727272727,
+          "reference_token_coverage": 0.38095238095238093,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.23809523809523808,
+          "reference_token_coverage": 0.23809523809523808,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_167",
+      "mission": "not mission-specific",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.5454545454545454,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.5454545454545454,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.5454545454545454,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_169",
+      "mission": "not mission-specific",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.5599999999999999,
+          "reference_token_coverage": 0.5238095238095238,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.38596491228070173,
+          "reference_token_coverage": 0.5238095238095238,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2903225806451613,
+          "reference_token_coverage": 0.42857142857142855,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_170",
+      "mission": "Chandrayaan-3",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.48979591836734687,
+          "reference_token_coverage": 0.7857142857142857,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.48275862068965514,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.48148148148148145,
+          "reference_token_coverage": 0.8571428571428571,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_172",
+      "mission": "not mission-specific",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.06896551724137931,
+          "reference_token_coverage": 0.15384615384615385,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.12903225806451615,
+          "reference_token_coverage": 0.15384615384615385,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_173",
+      "mission": "Chandrayaan-1",
+      "tier": 3,
+      "question_type": "SINGLE_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.5,
+          "reference_token_coverage": 0.6666666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.5925925925925926,
+          "reference_token_coverage": 0.75,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.5925925925925926,
+          "reference_token_coverage": 0.75,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_174",
+      "mission": "not mission-specific",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.37499999999999994,
+          "reference_token_coverage": 0.5555555555555556,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.16,
+          "reference_token_coverage": 0.3888888888888889,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.12371134020618557,
+          "reference_token_coverage": 0.4444444444444444,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_175",
+      "mission": "multiple: Mars Orbiter Mission; AstroSat",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.3225806451612903,
+          "reference_token_coverage": 0.45454545454545453,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.17857142857142858,
+          "reference_token_coverage": 0.45454545454545453,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.3225806451612903,
+          "reference_token_coverage": 0.45454545454545453,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_176",
+      "mission": "not mission-specific",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.03225806451612903,
+          "reference_token_coverage": 0.13043478260869565,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.16091954022988506,
+          "reference_token_coverage": 0.391304347826087,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.27777777777777773,
+          "reference_token_coverage": 0.21739130434782608,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_177",
+      "mission": "multiple: Chandrayaan-3; Gaganyaan",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.44444444444444436,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.44444444444444436,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.44444444444444436,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_178",
+      "mission": "Chandrayaan-3",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.41379310344827586,
+          "reference_token_coverage": 0.46153846153846156,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.2173913043478261,
+          "reference_token_coverage": 0.9230769230769231,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.163265306122449,
+          "reference_token_coverage": 0.46153846153846156,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_179",
+      "mission": "not mission-specific",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.06896551724137931,
+          "reference_token_coverage": 0.0625,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.14814814814814817,
+          "reference_token_coverage": 0.3125,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.05714285714285714,
+          "reference_token_coverage": 0.125,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_180",
+      "mission": "not mission-specific",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.13333333333333333,
+          "reference_token_coverage": 0.23076923076923078,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.380952380952381,
+          "reference_token_coverage": 0.3076923076923077,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.380952380952381,
+          "reference_token_coverage": 0.3076923076923077,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_181",
+      "mission": "multiple: Chandrayaan-2; Chandrayaan-3",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.125,
+          "reference_token_coverage": 0.42857142857142855,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.34615384615384615,
+          "reference_token_coverage": 0.7857142857142857,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.3902439024390244,
+          "reference_token_coverage": 0.5714285714285714,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_182",
+      "mission": "not mission-specific",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.2,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.2608695652173913,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.1791044776119403,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_183",
+      "mission": "not mission-specific",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.1,
+          "reference_token_coverage": 0.21428571428571427,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.1,
+          "reference_token_coverage": 0.21428571428571427,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.08823529411764706,
+          "reference_token_coverage": 0.2857142857142857,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_184",
+      "mission": "Chandrayaan-2",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.13953488372093023,
+          "reference_token_coverage": 0.45454545454545453,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.32432432432432434,
+          "reference_token_coverage": 0.7272727272727273,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.08695652173913043,
+          "reference_token_coverage": 0.18181818181818182,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_185",
+      "mission": "Chandrayaan-2",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.35,
+          "reference_token_coverage": 0.35,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.32,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.32,
+          "reference_token_coverage": 0.5,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_186",
+      "mission": "not mission-specific",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.18604651162790697,
+          "reference_token_coverage": 0.3684210526315789,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.33333333333333326,
+          "reference_token_coverage": 0.3684210526315789,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.14285714285714288,
+          "reference_token_coverage": 0.10526315789473684,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_187",
+      "mission": "not mission-specific",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.1111111111111111,
+          "reference_token_coverage": 0.08695652173913043,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.2105263157894737,
+          "reference_token_coverage": 0.17391304347826086,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.2105263157894737,
+          "reference_token_coverage": 0.17391304347826086,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_188",
+      "mission": "Chandrayaan-3",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.36363636363636365,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.3414634146341463,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.3414634146341463,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_189",
+      "mission": "Mars Orbiter Mission",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.1818181818181818,
+          "reference_token_coverage": 0.34782608695652173,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.20895522388059704,
+          "reference_token_coverage": 0.5652173913043478,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.21428571428571427,
+          "reference_token_coverage": 0.34782608695652173,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_190",
+      "mission": "multiple: Chandrayaan-3; Gaganyaan",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.3076923076923077,
+          "reference_token_coverage": 0.2222222222222222,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.3076923076923077,
+          "reference_token_coverage": 0.2222222222222222,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.3076923076923077,
+          "reference_token_coverage": 0.2222222222222222,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_191",
+      "mission": "Mars Orbiter Mission",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.11764705882352941,
+          "reference_token_coverage": 0.1875,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.11428571428571428,
+          "reference_token_coverage": 0.1875,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_192",
+      "mission": "multiple: Chandrayaan-1; Mars Orbiter Mission; Aditya-L1; AstroSat",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.16666666666666666,
+          "reference_token_coverage": 0.26666666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.1818181818181818,
+          "reference_token_coverage": 0.3333333333333333,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.25,
+          "reference_token_coverage": 0.26666666666666666,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_193",
+      "mission": "not mission-specific",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.18604651162790697,
+          "reference_token_coverage": 0.12,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.23999999999999996,
+          "reference_token_coverage": 0.24,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.23999999999999996,
+          "reference_token_coverage": 0.24,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_194",
+      "mission": "multiple: Chandrayaan-3; Aditya-L1",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_POTENTIALLY_USEFUL",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.40909090909090906,
+          "reference_token_coverage": 0.5625,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_195",
+      "mission": "not mission-specific",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.16666666666666666,
+          "reference_token_coverage": 0.14285714285714285,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.17142857142857143,
+          "reference_token_coverage": 0.14285714285714285,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.17142857142857143,
+          "reference_token_coverage": 0.14285714285714285,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_196",
+      "mission": "not mission-specific",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.40625000000000006,
+          "reference_token_coverage": 0.5555555555555556,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.4375,
+          "reference_token_coverage": 0.5555555555555556,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.4307692307692308,
+          "reference_token_coverage": 0.5555555555555556,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_198",
+      "mission": "multiple: Chandrayaan-2; Chandrayaan-3",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.27777777777777785,
+          "reference_token_coverage": 0.375,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.0,
+          "reference_token_coverage": 0.0,
+          "exact_match": 0.0,
+          "idk": 1.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.3232323232323232,
+          "reference_token_coverage": 0.625,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    },
+    {
+      "question_id": "isro_200",
+      "mission": "multiple: Chandrayaan-1; Chandrayaan-3; Mars Orbiter Mission; Aditya-L1",
+      "tier": 3,
+      "question_type": "MULTI_RELATION",
+      "kg_relevance": "KG_NOT_RELEVANT",
+      "kg_required": "NO",
+      "system_metrics": {
+        "BM25 + LLM": {
+          "rouge_l": 0.5652173913043479,
+          "reference_token_coverage": 0.5357142857142857,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "Vanilla RAG": {
+          "rouge_l": 0.33333333333333337,
+          "reference_token_coverage": 0.5714285714285714,
+          "exact_match": 0.0,
+          "idk": 0.0
+        },
+        "KG-RAG": {
+          "rouge_l": 0.6956521739130436,
+          "reference_token_coverage": 0.5357142857142857,
+          "exact_match": 0.0,
+          "idk": 0.0
+        }
+      }
+    }
+  ],
+  "per_question_annotation_file": "data/annotations/canonical_180_kg_relevance.jsonl",
+  "scoring_note": "ROUGE-L, reference-token coverage, exact match, and IDK are recomputed from stored answers against frozen reference answers; no LLM or QA benchmark was rerun."
+}

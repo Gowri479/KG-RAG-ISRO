@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-08T08:42:54.409883+00:00",
+  "questions": 72,
+  "candidates": 216,
+  "raters": 2,
+  "rater_files": [
+    "data\\annotations\\corrected_rerun_human_eval_rater1.csv",
+    "data\\annotations\\corrected_rerun_human_eval_rater2.csv"
+  ],
+  "generation_results_sha256": "2d9b6f4799bbd003f5c9277d25d8072724ceddbffcdf3f9522e78cd98986d3b5",
+  "mapping_sha256": "f561c9884b401a634b9bdce6466c1dd6cf3152de89c3ac3495e6464c267155d3",
+  "warning": "Raters must not open the mapping file."
+}

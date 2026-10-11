@@ -1,0 +1,14 @@
+{
+  "backend": "tokenizers",
+  "bos_token": "<s>",
+  "bos_token_id": 1,
+  "eos_token": "<s>",
+  "eos_token_id": 1,
+  "is_local": true,
+  "local_files_only": false,
+  "model_max_length": 1000000000000000019884624838656,
+  "model_type": "llama",
+  "tokenizer_class": "TokenizersBackend",
+  "unk_token": "<unk>",
+  "unk_token_id": 0
+}

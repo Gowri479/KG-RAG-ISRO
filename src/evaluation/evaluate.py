@@ -209,9 +209,18 @@ def compute_paired_difference(results: list[dict], benchmark: list[dict], test_i
 
 
 def main() -> None:
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Evaluate the fixed ISRO-QA split without changing benchmark definitions.")
+    parser.add_argument("--results", type=Path, default=RESULTS_PATH, help="Generated answers JSON path.")
+    parser.add_argument("--output", type=Path, default=OUTPUT_PATH, help="Evaluation output JSON path.")
+    args = parser.parse_args()
+    results_path = args.results if args.results.is_absolute() else ROOT / args.results
+    output_path = args.output if args.output.is_absolute() else ROOT / args.output
+
     benchmark = json.loads(BENCHMARK_PATH.read_text(encoding="utf-8-sig"))
     test_ids = set(json.loads(TEST_IDS_PATH.read_text(encoding="utf-8-sig")))
-    results = json.loads(RESULTS_PATH.read_text(encoding="utf-8-sig"))
+    results = json.loads(results_path.read_text(encoding="utf-8-sig"))
     benchmark_hash = hashlib.sha256(BENCHMARK_PATH.read_bytes()).hexdigest()[:12]
 
     system_results = {}
@@ -300,10 +309,10 @@ def main() -> None:
         },
     }
 
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_PATH.write_text(json.dumps(output, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(json.dumps(output, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-    print(f"Saved canonical evaluation to {OUTPUT_PATH}")
+    print(f"Saved evaluation to {output_path}")
     print(json.dumps(output["overall"]["systems"], indent=2))
 
 

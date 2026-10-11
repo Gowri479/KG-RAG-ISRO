@@ -1,0 +1,14 @@
+{
+  "status": "PENDING",
+  "question_count": 62,
+  "systems_per_question": 3,
+  "random_seed": 20261007,
+  "system_mapping_is_hidden_from_annotator": true,
+  "scoring_fields": [
+    "correct_system_[a-c]",
+    "grounded_system_[a-c]",
+    "complete_system_[a-c]"
+  ],
+  "source_checkpoint_sha256": "e853d61da9b405b6e32461cff802711a5d2659315171d477f219e30605dd7904",
+  "instructions": "Score each anonymized answer for correctness, evidence grounding, and completeness. Do not infer scores from lexical metrics."
+}

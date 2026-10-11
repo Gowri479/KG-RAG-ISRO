@@ -1,0 +1,166 @@
+{
+  "coverage_matrix": {
+    "Aditya-L1": {
+      "Payload": "✓",
+      "Developer organization": "✓",
+      "Launch": "✓",
+      "Orbit": "✓",
+      "Temporal": "—",
+      "Science/objective": "✓"
+    },
+    "AstroSat": {
+      "Payload": "✓",
+      "Developer organization": "✓",
+      "Launch": "✓",
+      "Orbit": "✓",
+      "Temporal": "—",
+      "Science/objective": "✓"
+    },
+    "Chandrayaan-1": {
+      "Payload": "✓",
+      "Developer organization": "✓",
+      "Launch": "✓",
+      "Orbit": "✓",
+      "Temporal": "—",
+      "Science/objective": "✓"
+    },
+    "Chandrayaan-2": {
+      "Payload": "✓",
+      "Developer organization": "—",
+      "Launch": "✓",
+      "Orbit": "✓",
+      "Temporal": "—",
+      "Science/objective": "✓"
+    },
+    "Chandrayaan-3": {
+      "Payload": "✓",
+      "Developer organization": "—",
+      "Launch": "✓",
+      "Orbit": "✓",
+      "Temporal": "✓",
+      "Science/objective": "✓"
+    },
+    "Gaganyaan": {
+      "Payload": "—",
+      "Developer organization": "—",
+      "Launch": "N/A (unflown)",
+      "Orbit": "✓",
+      "Temporal": "—",
+      "Science/objective": "✓"
+    },
+    "Mars Orbiter Mission": {
+      "Payload": "✓",
+      "Developer organization": "✓",
+      "Launch": "✓",
+      "Orbit": "✓",
+      "Temporal": "—",
+      "Science/objective": "✓"
+    }
+  },
+  "mission_coverage": {
+    "Aditya-L1": {
+      "payloads": 7,
+      "payloads_with_developer_attribution": 7,
+      "developer_relations": 7,
+      "launch_relations": 3,
+      "launch_relation_kinds_present": 3,
+      "orbit_relations": 1,
+      "explicit_temporal_relations": 0,
+      "science_and_objective_relations": 4,
+      "triple_count": 22,
+      "chunk_count": 40,
+      "document_count": 3,
+      "word_count_estimate": 1923
+    },
+    "AstroSat": {
+      "payloads": 5,
+      "payloads_with_developer_attribution": 5,
+      "developer_relations": 5,
+      "launch_relations": 3,
+      "launch_relation_kinds_present": 3,
+      "orbit_relations": 1,
+      "explicit_temporal_relations": 0,
+      "science_and_objective_relations": 1,
+      "triple_count": 16,
+      "chunk_count": 9,
+      "document_count": 2,
+      "word_count_estimate": 1361
+    },
+    "Chandrayaan-1": {
+      "payloads": 11,
+      "payloads_with_developer_attribution": 2,
+      "developer_relations": 4,
+      "launch_relations": 3,
+      "launch_relation_kinds_present": 3,
+      "orbit_relations": 1,
+      "explicit_temporal_relations": 0,
+      "science_and_objective_relations": 14,
+      "triple_count": 33,
+      "chunk_count": 95,
+      "document_count": 5,
+      "word_count_estimate": 5701
+    },
+    "Chandrayaan-2": {
+      "payloads": 13,
+      "payloads_with_developer_attribution": 0,
+      "developer_relations": 0,
+      "launch_relations": 3,
+      "launch_relation_kinds_present": 3,
+      "orbit_relations": 1,
+      "explicit_temporal_relations": 0,
+      "science_and_objective_relations": 11,
+      "triple_count": 28,
+      "chunk_count": 580,
+      "document_count": 7,
+      "word_count_estimate": 49098
+    },
+    "Chandrayaan-3": {
+      "payloads": 7,
+      "payloads_with_developer_attribution": 0,
+      "developer_relations": 0,
+      "launch_relations": 3,
+      "launch_relation_kinds_present": 3,
+      "orbit_relations": 1,
+      "explicit_temporal_relations": 1,
+      "science_and_objective_relations": 9,
+      "triple_count": 21,
+      "chunk_count": 79,
+      "document_count": 3,
+      "word_count_estimate": 2069
+    },
+    "Gaganyaan": {
+      "payloads": 0,
+      "payloads_with_developer_attribution": 0,
+      "developer_relations": 0,
+      "launch_relations": 0,
+      "launch_relation_kinds_present": 0,
+      "orbit_relations": 1,
+      "explicit_temporal_relations": 0,
+      "science_and_objective_relations": 1,
+      "triple_count": 3,
+      "chunk_count": 6,
+      "document_count": 2,
+      "word_count_estimate": 677
+    },
+    "Mars Orbiter Mission": {
+      "payloads": 5,
+      "payloads_with_developer_attribution": 1,
+      "developer_relations": 1,
+      "launch_relations": 3,
+      "launch_relation_kinds_present": 3,
+      "orbit_relations": 1,
+      "explicit_temporal_relations": 0,
+      "science_and_objective_relations": 1,
+      "triple_count": 11,
+      "chunk_count": 43,
+      "document_count": 2,
+      "word_count_estimate": 1225
+    }
+  },
+  "status_legend": {
+    "✓": "At least one direct, source-linked fact is curated for this category.",
+    "partial": "Some but not all expected launch fields are represented.",
+    "N/A (unflown)": "No actual launch relationship is asserted for the planned Gaganyaan crewed mission.",
+    "—": "No direct fact is currently curated; this is not evidence that the fact is false."
+  }
+}

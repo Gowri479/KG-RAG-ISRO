@@ -1,0 +1,77 @@
+{
+  "experiment": "hardware_resource_profiling",
+  "timestamp_utc": "2026-10-06T06:59:59.025927+00:00",
+  "hardware_environment": {
+    "cpu": {
+      "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+      "cpu_count_logical": 16,
+      "cpu_count_physical": 8,
+      "os": "Windows 10"
+    },
+    "total_system_ram_mb": 15713.64,
+    "gpu": {
+      "gpu_name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+      "total_gpu_memory_mb": 4096.0,
+      "active_model_vram_mb": 4166.96
+    }
+  },
+  "indexing_and_load_times_ms": {
+    "bm25_index_load_ms": 84904.89,
+    "faiss_index_load_ms": 76.94,
+    "kg_graph_load_ms": 2694.13
+  },
+  "system_benchmarks": {
+    "BM25 + LLM": {
+      "n_queries": 8,
+      "retrieval_latency_ms_mean": 215.21,
+      "retrieval_latency_ms_sd": 69.19,
+      "generation_latency_ms_mean": 11266.14,
+      "generation_latency_ms_sd": 4746.05,
+      "e2e_latency_ms_mean": 11481.35,
+      "e2e_latency_ms_sd": 4758.72,
+      "tokens_per_sec_mean": 4.17,
+      "tokens_per_sec_sd": 1.22,
+      "peak_process_rss_mb": 2699.26,
+      "active_model_vram_mb": 4166.96
+    },
+    "Vanilla RAG": {
+      "n_queries": 8,
+      "retrieval_latency_ms_mean": 4270.99,
+      "retrieval_latency_ms_sd": 11799.51,
+      "generation_latency_ms_mean": 61875.18,
+      "generation_latency_ms_sd": 46611.68,
+      "e2e_latency_ms_mean": 66146.17,
+      "e2e_latency_ms_sd": 52503.25,
+      "tokens_per_sec_mean": 4.45,
+      "tokens_per_sec_sd": 0.53,
+      "peak_process_rss_mb": 1276.34,
+      "active_model_vram_mb": 4166.96
+    },
+    "GraphRAG-style": {
+      "n_queries": 8,
+      "retrieval_latency_ms_mean": 48.14,
+      "retrieval_latency_ms_sd": 28.84,
+      "generation_latency_ms_mean": 5008.98,
+      "generation_latency_ms_sd": 2494.71,
+      "e2e_latency_ms_mean": 5057.12,
+      "e2e_latency_ms_sd": 2489.61,
+      "tokens_per_sec_mean": 6.07,
+      "tokens_per_sec_sd": 0.55,
+      "peak_process_rss_mb": 168.38,
+      "active_model_vram_mb": 4166.96
+    },
+    "KG-RAG": {
+      "n_queries": 8,
+      "retrieval_latency_ms_mean": 4302.3,
+      "retrieval_latency_ms_sd": 11844.03,
+      "generation_latency_ms_mean": 36908.61,
+      "generation_latency_ms_sd": 48263.59,
+      "e2e_latency_ms_mean": 41210.91,
+      "e2e_latency_ms_sd": 56084.65,
+      "tokens_per_sec_mean": 4.84,
+      "tokens_per_sec_sd": 0.47,
+      "peak_process_rss_mb": 1297.84,
+      "active_model_vram_mb": 4166.96
+    }
+  }
+}

@@ -1,0 +1,2681 @@
+{
+  "integrity": {
+    "questions": 60,
+    "system_evaluations": 180,
+    "systems_per_question": 3,
+    "duplicate_question_ids": 0,
+    "missing_question_ids": [],
+    "valid_scores": true,
+    "benchmark_sha256": "6c7f3600995c0091de73d20d2f02953cb414023df281f7178069f9f81b432b64",
+    "human_analysis_sha256": "d7aafaa2501f64e29098d123d08e554a5879e3dd2a325c32ba7ffb10582fed81",
+    "generation_sha256": "e13e4c82a3638df15832887621a066b57afea62da5ce8d28394cb18cd608635c"
+  },
+  "overall_human_results": {
+    "vanilla": {
+      "correctness": 3.066666666666667,
+      "completeness": 2.7333333333333334,
+      "groundedness": 3.8666666666666667,
+      "relevance": 4.15
+    },
+    "corrected": {
+      "correctness": 2.9833333333333334,
+      "completeness": 2.683333333333333,
+      "groundedness": 3.85,
+      "relevance": 4.083333333333333
+    },
+    "relation_aware": {
+      "correctness": 2.783333333333333,
+      "completeness": 2.6333333333333333,
+      "groundedness": 3.5833333333333335,
+      "relevance": 3.966666666666667
+    }
+  },
+  "category_results": {
+    "DIRECT_CONTROL": {
+      "n": 10,
+      "correctness": {
+        "vanilla_mean": 3.3,
+        "relation_aware_mean": 3.4,
+        "difference": 0.10000000000000009,
+        "corrected_mean": 3.4,
+        "relation_aware_minus_corrected": 0.0,
+        "vanilla_median": 4.0,
+        "relation_aware_median": 4.0
+      },
+      "completeness": {
+        "vanilla_mean": 3.5,
+        "relation_aware_mean": 3.5,
+        "difference": 0.0,
+        "corrected_mean": 3.5,
+        "relation_aware_minus_corrected": 0.0,
+        "vanilla_median": 4.5,
+        "relation_aware_median": 4.5
+      },
+      "groundedness": {
+        "vanilla_mean": 4.4,
+        "relation_aware_mean": 4.5,
+        "difference": 0.09999999999999964,
+        "corrected_mean": 4.5,
+        "relation_aware_minus_corrected": 0.0,
+        "vanilla_median": 5.0,
+        "relation_aware_median": 5.0
+      },
+      "relevance": {
+        "vanilla_mean": 4.2,
+        "relation_aware_mean": 4.2,
+        "difference": 0.0,
+        "corrected_mean": 4.2,
+        "relation_aware_minus_corrected": 0.0,
+        "vanilla_median": 5.0,
+        "relation_aware_median": 5.0
+      },
+      "vanilladenserag_unsupported_rate": 0.1,
+      "correctedstructuredkgrag_unsupported_rate": 0.1,
+      "relationawarekgrag_unsupported_rate": 0.1,
+      "unsupported_relation_vs_vanilla": {
+        "n": 10,
+        "mean_difference": 0.0,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_nonzero": 0
+        },
+        "cohen_dz": null,
+        "wins_losses_ties": [
+          0,
+          0,
+          10
+        ],
+        "differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "unsupported_relation_vs_corrected": {
+        "n": 10,
+        "mean_difference": 0.0,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_nonzero": 0
+        },
+        "cohen_dz": null,
+        "wins_losses_ties": [
+          0,
+          0,
+          10
+        ],
+        "differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "MULTI_RELATION": {
+      "n": 10,
+      "correctness": {
+        "vanilla_mean": 4.3,
+        "relation_aware_mean": 4.0,
+        "difference": -0.2999999999999998,
+        "corrected_mean": 4.3,
+        "relation_aware_minus_corrected": -0.2999999999999998,
+        "vanilla_median": 4.0,
+        "relation_aware_median": 4.0
+      },
+      "completeness": {
+        "vanilla_mean": 3.3,
+        "relation_aware_mean": 3.0,
+        "difference": -0.2999999999999998,
+        "corrected_mean": 3.4,
+        "relation_aware_minus_corrected": -0.3999999999999999,
+        "vanilla_median": 3.0,
+        "relation_aware_median": 3.0
+      },
+      "groundedness": {
+        "vanilla_mean": 4.0,
+        "relation_aware_mean": 3.7,
+        "difference": -0.2999999999999998,
+        "corrected_mean": 4.0,
+        "relation_aware_minus_corrected": -0.2999999999999998,
+        "vanilla_median": 4.0,
+        "relation_aware_median": 4.0
+      },
+      "relevance": {
+        "vanilla_mean": 5.0,
+        "relation_aware_mean": 5.0,
+        "difference": 0.0,
+        "corrected_mean": 5.0,
+        "relation_aware_minus_corrected": 0.0,
+        "vanilla_median": 5.0,
+        "relation_aware_median": 5.0
+      },
+      "vanilladenserag_unsupported_rate": 0.0,
+      "correctedstructuredkgrag_unsupported_rate": 0.0,
+      "relationawarekgrag_unsupported_rate": 0.0,
+      "unsupported_relation_vs_vanilla": {
+        "n": 10,
+        "mean_difference": 0.0,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_nonzero": 0
+        },
+        "cohen_dz": null,
+        "wins_losses_ties": [
+          0,
+          0,
+          10
+        ],
+        "differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "unsupported_relation_vs_corrected": {
+        "n": 10,
+        "mean_difference": 0.0,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_nonzero": 0
+        },
+        "cohen_dz": null,
+        "wins_losses_ties": [
+          0,
+          0,
+          10
+        ],
+        "differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "SINGLE_RELATION": {
+      "n": 30,
+      "correctness": {
+        "vanilla_mean": 2.533333333333333,
+        "relation_aware_mean": 2.433333333333333,
+        "difference": -0.10000000000000009,
+        "corrected_mean": 2.3666666666666667,
+        "relation_aware_minus_corrected": 0.06666666666666643,
+        "vanilla_median": 1.0,
+        "relation_aware_median": 1.0
+      },
+      "completeness": {
+        "vanilla_mean": 2.3666666666666667,
+        "relation_aware_mean": 2.3333333333333335,
+        "difference": -0.033333333333333215,
+        "corrected_mean": 2.2333333333333334,
+        "relation_aware_minus_corrected": 0.10000000000000009,
+        "vanilla_median": 1.0,
+        "relation_aware_median": 1.0
+      },
+      "groundedness": {
+        "vanilla_mean": 3.6333333333333333,
+        "relation_aware_mean": 3.7333333333333334,
+        "difference": 0.10000000000000009,
+        "corrected_mean": 3.566666666666667,
+        "relation_aware_minus_corrected": 0.16666666666666652,
+        "vanilla_median": 4.0,
+        "relation_aware_median": 5.0
+      },
+      "relevance": {
+        "vanilla_mean": 3.8,
+        "relation_aware_mean": 3.7333333333333334,
+        "difference": -0.06666666666666643,
+        "corrected_mean": 3.6666666666666665,
+        "relation_aware_minus_corrected": 0.06666666666666687,
+        "vanilla_median": 4.0,
+        "relation_aware_median": 3.0
+      },
+      "vanilladenserag_unsupported_rate": 0.3,
+      "correctedstructuredkgrag_unsupported_rate": 0.36666666666666664,
+      "relationawarekgrag_unsupported_rate": 0.36666666666666664,
+      "unsupported_relation_vs_vanilla": {
+        "n": 30,
+        "mean_difference": 0.06666666666666667,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -0.1,
+          0.23333333333333334
+        ],
+        "wilcoxon": {
+          "statistic": 7.0,
+          "p_value": 0.4142161782425253,
+          "n_nonzero": 6
+        },
+        "cohen_dz": 0.1482217830472194,
+        "wins_losses_ties": [
+          4,
+          2,
+          24
+        ],
+        "differences": [
+          0.0,
+          1.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      "unsupported_relation_vs_corrected": {
+        "n": 30,
+        "mean_difference": 0.0,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -0.13333333333333333,
+          0.13333333333333333
+        ],
+        "wilcoxon": {
+          "statistic": 5.0,
+          "p_value": 1.0,
+          "n_nonzero": 4
+        },
+        "cohen_dz": 0.0,
+        "wins_losses_ties": [
+          2,
+          2,
+          26
+        ],
+        "differences": [
+          0.0,
+          1.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ]
+      }
+    },
+    "TWO_HOP_RELATION": {
+      "n": 10,
+      "correctness": {
+        "vanilla_mean": 3.2,
+        "relation_aware_mean": 2.0,
+        "difference": -1.2000000000000002,
+        "corrected_mean": 3.1,
+        "relation_aware_minus_corrected": -1.1,
+        "vanilla_median": 4.0,
+        "relation_aware_median": 1.5
+      },
+      "completeness": {
+        "vanilla_mean": 2.5,
+        "relation_aware_mean": 2.3,
+        "difference": -0.20000000000000018,
+        "corrected_mean": 2.5,
+        "relation_aware_minus_corrected": -0.20000000000000018,
+        "vanilla_median": 3.0,
+        "relation_aware_median": 2.0
+      },
+      "groundedness": {
+        "vanilla_mean": 3.9,
+        "relation_aware_mean": 2.1,
+        "difference": -1.7999999999999998,
+        "corrected_mean": 3.9,
+        "relation_aware_minus_corrected": -1.7999999999999998,
+        "vanilla_median": 4.0,
+        "relation_aware_median": 2.0
+      },
+      "relevance": {
+        "vanilla_mean": 4.3,
+        "relation_aware_mean": 3.4,
+        "difference": -0.8999999999999999,
+        "corrected_mean": 4.3,
+        "relation_aware_minus_corrected": -0.8999999999999999,
+        "vanilla_median": 5.0,
+        "relation_aware_median": 3.0
+      },
+      "vanilladenserag_unsupported_rate": 0.2,
+      "correctedstructuredkgrag_unsupported_rate": 0.1,
+      "relationawarekgrag_unsupported_rate": 0.9,
+      "unsupported_relation_vs_vanilla": {
+        "n": 10,
+        "mean_difference": 0.7,
+        "median_difference": 1.0,
+        "bootstrap_95_ci": [
+          0.3,
+          1.0
+        ],
+        "wilcoxon": {
+          "statistic": 5.0,
+          "p_value": 0.0390625,
+          "n_nonzero": 9
+        },
+        "cohen_dz": 1.037116076482069,
+        "wins_losses_ties": [
+          8,
+          1,
+          1
+        ],
+        "differences": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          -1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ]
+      },
+      "unsupported_relation_vs_corrected": {
+        "n": 10,
+        "mean_difference": 0.8,
+        "median_difference": 1.0,
+        "bootstrap_95_ci": [
+          0.5,
+          1.0
+        ],
+        "wilcoxon": {
+          "statistic": 0.0,
+          "p_value": 0.0078125,
+          "n_nonzero": 8
+        },
+        "cohen_dz": 1.8973665961010278,
+        "wins_losses_ties": [
+          8,
+          0,
+          2
+        ],
+        "differences": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "category_statistics": {
+    "DIRECT_CONTROL": {
+      "correctness": {
+        "relation_aware_vs_vanilla": {
+          "n": 10,
+          "mean_difference": 0.1,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -1.1,
+            1.3
+          ],
+          "wilcoxon": {
+            "statistic": 2.5,
+            "p_value": 1.0,
+            "n_nonzero": 3
+          },
+          "cohen_dz": 0.0523026032815805,
+          "wins_losses_ties": [
+            2,
+            1,
+            7
+          ],
+          "differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -4.0,
+            0.0,
+            1.0,
+            0.0,
+            4.0,
+            0.0
+          ]
+        },
+        "relation_aware_vs_corrected": {
+          "n": 10,
+          "mean_difference": 0.0,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -1.2,
+            1.2
+          ],
+          "wilcoxon": {
+            "statistic": 1.5,
+            "p_value": 1.0,
+            "n_nonzero": 2
+          },
+          "cohen_dz": 0.0,
+          "wins_losses_ties": [
+            1,
+            1,
+            8
+          ],
+          "differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -4.0,
+            0.0,
+            0.0,
+            0.0,
+            4.0,
+            0.0
+          ]
+        }
+      },
+      "completeness": {
+        "relation_aware_vs_vanilla": {
+          "n": 10,
+          "mean_difference": 0.0,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -1.2,
+            1.2
+          ],
+          "wilcoxon": {
+            "statistic": 1.5,
+            "p_value": 1.0,
+            "n_nonzero": 2
+          },
+          "cohen_dz": 0.0,
+          "wins_losses_ties": [
+            1,
+            1,
+            8
+          ],
+          "differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -4.0,
+            0.0,
+            0.0,
+            0.0,
+            4.0,
+            0.0
+          ]
+        },
+        "relation_aware_vs_corrected": {
+          "n": 10,
+          "mean_difference": 0.0,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -1.2,
+            1.2
+          ],
+          "wilcoxon": {
+            "statistic": 1.5,
+            "p_value": 1.0,
+            "n_nonzero": 2
+          },
+          "cohen_dz": 0.0,
+          "wins_losses_ties": [
+            1,
+            1,
+            8
+          ],
+          "differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -4.0,
+            0.0,
+            0.0,
+            0.0,
+            4.0,
+            0.0
+          ]
+        }
+      },
+      "groundedness": {
+        "relation_aware_vs_vanilla": {
+          "n": 10,
+          "mean_difference": 0.1,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            0.0,
+            0.3
+          ],
+          "wilcoxon": {
+            "statistic": null,
+            "p_value": null,
+            "n_nonzero": 1
+          },
+          "cohen_dz": 0.31622776601683794,
+          "wins_losses_ties": [
+            1,
+            0,
+            9
+          ],
+          "differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "relation_aware_vs_corrected": {
+          "n": 10,
+          "mean_difference": 0.0,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "wilcoxon": {
+            "statistic": null,
+            "p_value": null,
+            "n_nonzero": 0
+          },
+          "cohen_dz": null,
+          "wins_losses_ties": [
+            0,
+            0,
+            10
+          ],
+          "differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "relevance": {
+        "relation_aware_vs_vanilla": {
+          "n": 10,
+          "mean_difference": 0.0,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -0.6,
+            0.6
+          ],
+          "wilcoxon": {
+            "statistic": 1.5,
+            "p_value": 1.0,
+            "n_nonzero": 2
+          },
+          "cohen_dz": 0.0,
+          "wins_losses_ties": [
+            1,
+            1,
+            8
+          ],
+          "differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            2.0,
+            0.0
+          ]
+        },
+        "relation_aware_vs_corrected": {
+          "n": 10,
+          "mean_difference": 0.0,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -0.6,
+            0.6
+          ],
+          "wilcoxon": {
+            "statistic": 1.5,
+            "p_value": 1.0,
+            "n_nonzero": 2
+          },
+          "cohen_dz": 0.0,
+          "wins_losses_ties": [
+            1,
+            1,
+            8
+          ],
+          "differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            2.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "MULTI_RELATION": {
+      "correctness": {
+        "relation_aware_vs_vanilla": {
+          "n": 10,
+          "mean_difference": -0.3,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -0.6,
+            0.0
+          ],
+          "wilcoxon": {
+            "statistic": 0.0,
+            "p_value": 0.25,
+            "n_nonzero": 3
+          },
+          "cohen_dz": -0.6210590034081188,
+          "wins_losses_ties": [
+            0,
+            3,
+            7
+          ],
+          "differences": [
+            0.0,
+            0.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "relation_aware_vs_corrected": {
+          "n": 10,
+          "mean_difference": -0.3,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -0.6,
+            -0.1
+          ],
+          "wilcoxon": {
+            "statistic": 0.0,
+            "p_value": 0.25,
+            "n_nonzero": 3
+          },
+          "cohen_dz": -0.6210590034081188,
+          "wins_losses_ties": [
+            0,
+            3,
+            7
+          ],
+          "differences": [
+            0.0,
+            0.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "completeness": {
+        "relation_aware_vs_vanilla": {
+          "n": 10,
+          "mean_difference": -0.3,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -0.6,
+            0.0
+          ],
+          "wilcoxon": {
+            "statistic": 0.0,
+            "p_value": 0.25,
+            "n_nonzero": 3
+          },
+          "cohen_dz": -0.6210590034081188,
+          "wins_losses_ties": [
+            0,
+            3,
+            7
+          ],
+          "differences": [
+            0.0,
+            0.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "relation_aware_vs_corrected": {
+          "n": 10,
+          "mean_difference": -0.4,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -0.8,
+            0.0
+          ],
+          "wilcoxon": {
+            "statistic": 0.0,
+            "p_value": 0.25,
+            "n_nonzero": 3
+          },
+          "cohen_dz": -0.5720775535473555,
+          "wins_losses_ties": [
+            0,
+            3,
+            7
+          ],
+          "differences": [
+            0.0,
+            0.0,
+            -1.0,
+            -1.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "groundedness": {
+        "relation_aware_vs_vanilla": {
+          "n": 10,
+          "mean_difference": -0.3,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -0.6,
+            0.0
+          ],
+          "wilcoxon": {
+            "statistic": 0.0,
+            "p_value": 0.25,
+            "n_nonzero": 3
+          },
+          "cohen_dz": -0.6210590034081188,
+          "wins_losses_ties": [
+            0,
+            3,
+            7
+          ],
+          "differences": [
+            0.0,
+            0.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "relation_aware_vs_corrected": {
+          "n": 10,
+          "mean_difference": -0.3,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -0.6,
+            0.0
+          ],
+          "wilcoxon": {
+            "statistic": 0.0,
+            "p_value": 0.25,
+            "n_nonzero": 3
+          },
+          "cohen_dz": -0.6210590034081188,
+          "wins_losses_ties": [
+            0,
+            3,
+            7
+          ],
+          "differences": [
+            0.0,
+            0.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "relevance": {
+        "relation_aware_vs_vanilla": {
+          "n": 10,
+          "mean_difference": 0.0,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "wilcoxon": {
+            "statistic": null,
+            "p_value": null,
+            "n_nonzero": 0
+          },
+          "cohen_dz": null,
+          "wins_losses_ties": [
+            0,
+            0,
+            10
+          ],
+          "differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "relation_aware_vs_corrected": {
+          "n": 10,
+          "mean_difference": 0.0,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            0.0,
+            0.0
+          ],
+          "wilcoxon": {
+            "statistic": null,
+            "p_value": null,
+            "n_nonzero": 0
+          },
+          "cohen_dz": null,
+          "wins_losses_ties": [
+            0,
+            0,
+            10
+          ],
+          "differences": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "SINGLE_RELATION": {
+      "correctness": {
+        "relation_aware_vs_vanilla": {
+          "n": 30,
+          "mean_difference": -0.1,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -0.5666666666666667,
+            0.36666666666666664
+          ],
+          "wilcoxon": {
+            "statistic": 28.5,
+            "p_value": 0.6759180119144397,
+            "n_nonzero": 11
+          },
+          "cohen_dz": -0.07716751558792288,
+          "wins_losses_ties": [
+            5,
+            6,
+            19
+          ],
+          "differences": [
+            0.0,
+            -3.0,
+            -1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            -4.0,
+            0.0,
+            1.0,
+            0.0,
+            4.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            -1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            -1.0,
+            0.0
+          ]
+        },
+        "relation_aware_vs_corrected": {
+          "n": 30,
+          "mean_difference": 0.06666666666666667,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -0.43333333333333335,
+            0.6
+          ],
+          "wilcoxon": {
+            "statistic": 20.0,
+            "p_value": 0.7621842220884498,
+            "n_nonzero": 9
+          },
+          "cohen_dz": 0.045643546458763846,
+          "wins_losses_ties": [
+            5,
+            4,
+            21
+          ],
+          "differences": [
+            0.0,
+            -3.0,
+            -1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            -4.0,
+            0.0,
+            1.0,
+            0.0,
+            4.0,
+            0.0,
+            0.0,
+            0.0,
+            4.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      },
+      "completeness": {
+        "relation_aware_vs_vanilla": {
+          "n": 30,
+          "mean_difference": -0.03333333333333333,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -0.4666666666666667,
+            0.43333333333333335
+          ],
+          "wilcoxon": {
+            "statistic": 37.0,
+            "p_value": 0.8724758233872225,
+            "n_nonzero": 12
+          },
+          "cohen_dz": -0.025652368718616984,
+          "wins_losses_ties": [
+            5,
+            7,
+            18
+          ],
+          "differences": [
+            0.0,
+            -3.0,
+            -1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            -1.0,
+            -3.0,
+            0.0,
+            1.0,
+            0.0,
+            4.0,
+            0.0,
+            0.0,
+            0.0,
+            2.0,
+            0.0,
+            0.0,
+            -1.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            2.0,
+            0.0,
+            0.0,
+            -1.0,
+            0.0
+          ]
+        },
+        "relation_aware_vs_corrected": {
+          "n": 30,
+          "mean_difference": 0.1,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -0.4,
+            0.6333333333333333
+          ],
+          "wilcoxon": {
+            "statistic": 35.0,
+            "p_value": 0.7481884585655709,
+            "n_nonzero": 12
+          },
+          "cohen_dz": 0.06912014704969409,
+          "wins_losses_ties": [
+            6,
+            6,
+            18
+          ],
+          "differences": [
+            0.0,
+            -3.0,
+            -1.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            -1.0,
+            -3.0,
+            0.0,
+            1.0,
+            0.0,
+            4.0,
+            0.0,
+            0.0,
+            0.0,
+            4.0,
+            0.0,
+            0.0,
+            0.0,
+            -1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            2.0,
+            0.0,
+            0.0,
+            -1.0,
+            0.0
+          ]
+        }
+      },
+      "groundedness": {
+        "relation_aware_vs_vanilla": {
+          "n": 30,
+          "mean_difference": 0.1,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -0.4,
+            0.5666666666666667
+          ],
+          "wilcoxon": {
+            "statistic": 50.0,
+            "p_value": 0.5562889699067397,
+            "n_nonzero": 15
+          },
+          "cohen_dz": 0.07151670048297656,
+          "wins_losses_ties": [
+            10,
+            5,
+            15
+          ],
+          "differences": [
+            0.0,
+            -3.0,
+            3.0,
+            0.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            -4.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            -1.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            -1.0,
+            1.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            3.0,
+            1.0
+          ]
+        },
+        "relation_aware_vs_corrected": {
+          "n": 30,
+          "mean_difference": 0.16666666666666666,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -0.30083333333333256,
+            0.6
+          ],
+          "wilcoxon": {
+            "statistic": 26.5,
+            "p_value": 0.30984106688515645,
+            "n_nonzero": 12
+          },
+          "cohen_dz": 0.12671852991977015,
+          "wins_losses_ties": [
+            9,
+            3,
+            18
+          ],
+          "differences": [
+            0.0,
+            -3.0,
+            3.0,
+            0.0,
+            1.0,
+            0.0,
+            1.0,
+            0.0,
+            -4.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            0.0,
+            3.0,
+            1.0
+          ]
+        }
+      },
+      "relevance": {
+        "relation_aware_vs_vanilla": {
+          "n": 30,
+          "mean_difference": -0.06666666666666667,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -0.3333333333333333,
+            0.16666666666666666
+          ],
+          "wilcoxon": {
+            "statistic": 5.5,
+            "p_value": 0.580912420333197,
+            "n_nonzero": 5
+          },
+          "cohen_dz": -0.0964099154385678,
+          "wins_losses_ties": [
+            2,
+            3,
+            25
+          ],
+          "differences": [
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            2.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "relation_aware_vs_corrected": {
+          "n": 30,
+          "mean_difference": 0.06666666666666667,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -0.16666666666666666,
+            0.3333333333333333
+          ],
+          "wilcoxon": {
+            "statistic": 5.5,
+            "p_value": 0.580912420333197,
+            "n_nonzero": 5
+          },
+          "cohen_dz": 0.0964099154385678,
+          "wins_losses_ties": [
+            3,
+            2,
+            25
+          ],
+          "differences": [
+            0.0,
+            0.0,
+            -2.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            2.0,
+            -1.0,
+            0.0,
+            0.0,
+            2.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "TWO_HOP_RELATION": {
+      "correctness": {
+        "relation_aware_vs_vanilla": {
+          "n": 10,
+          "mean_difference": -1.2,
+          "median_difference": -2.0,
+          "bootstrap_95_ci": [
+            -2.2,
+            -0.1
+          ],
+          "wilcoxon": {
+            "statistic": 4.5,
+            "p_value": 0.078125,
+            "n_nonzero": 8
+          },
+          "cohen_dz": -0.6616931598844269,
+          "wins_losses_ties": [
+            2,
+            6,
+            2
+          ],
+          "differences": [
+            -2.0,
+            0.0,
+            -3.0,
+            -3.0,
+            -3.0,
+            2.0,
+            -2.0,
+            -2.0,
+            0.0,
+            1.0
+          ]
+        },
+        "relation_aware_vs_corrected": {
+          "n": 10,
+          "mean_difference": -1.1,
+          "median_difference": -2.0,
+          "bootstrap_95_ci": [
+            -2.2,
+            0.1
+          ],
+          "wilcoxon": {
+            "statistic": 7.5,
+            "p_value": 0.171875,
+            "n_nonzero": 8
+          },
+          "cohen_dz": -0.5432512781572743,
+          "wins_losses_ties": [
+            2,
+            6,
+            2
+          ],
+          "differences": [
+            -2.0,
+            0.0,
+            -3.0,
+            -3.0,
+            -3.0,
+            1.0,
+            -2.0,
+            -2.0,
+            0.0,
+            3.0
+          ]
+        }
+      },
+      "completeness": {
+        "relation_aware_vs_vanilla": {
+          "n": 10,
+          "mean_difference": -0.2,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -1.0,
+            0.6
+          ],
+          "wilcoxon": {
+            "statistic": 9.0,
+            "p_value": 0.8125,
+            "n_nonzero": 6
+          },
+          "cohen_dz": -0.14301938838683886,
+          "wins_losses_ties": [
+            2,
+            4,
+            4
+          ],
+          "differences": [
+            -2.0,
+            0.0,
+            -2.0,
+            -1.0,
+            -1.0,
+            2.0,
+            0.0,
+            0.0,
+            0.0,
+            2.0
+          ]
+        },
+        "relation_aware_vs_corrected": {
+          "n": 10,
+          "mean_difference": -0.2,
+          "median_difference": 0.0,
+          "bootstrap_95_ci": [
+            -1.0,
+            0.7
+          ],
+          "wilcoxon": {
+            "statistic": 8.0,
+            "p_value": 0.625,
+            "n_nonzero": 6
+          },
+          "cohen_dz": -0.1355261854357877,
+          "wins_losses_ties": [
+            2,
+            4,
+            4
+          ],
+          "differences": [
+            -2.0,
+            0.0,
+            -2.0,
+            -1.0,
+            -1.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            3.0
+          ]
+        }
+      },
+      "groundedness": {
+        "relation_aware_vs_vanilla": {
+          "n": 10,
+          "mean_difference": -1.8,
+          "median_difference": -2.0,
+          "bootstrap_95_ci": [
+            -2.7,
+            -0.8
+          ],
+          "wilcoxon": {
+            "statistic": 3.0,
+            "p_value": 0.0078125,
+            "n_nonzero": 10
+          },
+          "cohen_dz": -1.0672687103068281,
+          "wins_losses_ties": [
+            2,
+            8,
+            0
+          ],
+          "differences": [
+            -2.0,
+            -4.0,
+            -2.0,
+            -2.0,
+            -2.0,
+            1.0,
+            -2.0,
+            -2.0,
+            -4.0,
+            1.0
+          ]
+        },
+        "relation_aware_vs_corrected": {
+          "n": 10,
+          "mean_difference": -1.8,
+          "median_difference": -2.0,
+          "bootstrap_95_ci": [
+            -2.8,
+            -0.7950000000000728
+          ],
+          "wilcoxon": {
+            "statistic": 4.0,
+            "p_value": 0.03125,
+            "n_nonzero": 9
+          },
+          "cohen_dz": -1.0278724332962894,
+          "wins_losses_ties": [
+            1,
+            8,
+            1
+          ],
+          "differences": [
+            -2.0,
+            -4.0,
+            -2.0,
+            -2.0,
+            -2.0,
+            0.0,
+            -2.0,
+            -2.0,
+            -4.0,
+            2.0
+          ]
+        }
+      },
+      "relevance": {
+        "relation_aware_vs_vanilla": {
+          "n": 10,
+          "mean_difference": -0.9,
+          "median_difference": -1.0,
+          "bootstrap_95_ci": [
+            -1.6,
+            0.0
+          ],
+          "wilcoxon": {
+            "statistic": 11.0,
+            "p_value": 0.109375,
+            "n_nonzero": 10
+          },
+          "cohen_dz": -0.6567807448042019,
+          "wins_losses_ties": [
+            2,
+            8,
+            0
+          ],
+          "differences": [
+            -2.0,
+            -1.0,
+            -2.0,
+            -2.0,
+            -2.0,
+            1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            2.0
+          ]
+        },
+        "relation_aware_vs_corrected": {
+          "n": 10,
+          "mean_difference": -0.9,
+          "median_difference": -1.0,
+          "bootstrap_95_ci": [
+            -1.6,
+            0.0
+          ],
+          "wilcoxon": {
+            "statistic": 11.0,
+            "p_value": 0.109375,
+            "n_nonzero": 10
+          },
+          "cohen_dz": -0.6567807448042019,
+          "wins_losses_ties": [
+            2,
+            8,
+            0
+          ],
+          "differences": [
+            -2.0,
+            -1.0,
+            -2.0,
+            -2.0,
+            -2.0,
+            1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            2.0
+          ]
+        }
+      }
+    }
+  },
+  "category_holm_adjusted_p_values": {
+    "TWO_HOP_RELATION:groundedness": 0.109375,
+    "TWO_HOP_RELATION:correctness": 1.0,
+    "TWO_HOP_RELATION:relevance": 1.0,
+    "MULTI_RELATION:correctness": 1.0,
+    "MULTI_RELATION:completeness": 1.0,
+    "MULTI_RELATION:groundedness": 1.0,
+    "SINGLE_RELATION:groundedness": 1.0,
+    "SINGLE_RELATION:relevance": 1.0,
+    "SINGLE_RELATION:correctness": 1.0,
+    "TWO_HOP_RELATION:completeness": 1.0,
+    "SINGLE_RELATION:completeness": 1.0,
+    "DIRECT_CONTROL:correctness": 1.0,
+    "DIRECT_CONTROL:completeness": 1.0,
+    "DIRECT_CONTROL:relevance": 1.0,
+    "DIRECT_CONTROL:groundedness": null,
+    "MULTI_RELATION:relevance": null
+  },
+  "task_conditional_interactions": {
+    "correctness": {
+      "n_relational": 50,
+      "n_direct_control": 10,
+      "observed_interaction": -0.45999999999999996,
+      "bootstrap_95_ci": [
+        -1.6199999999999999,
+        0.7200000000000001
+      ],
+      "permutation_p_value": 0.40435956404359563,
+      "cohen_d_pooled": -0.3170678304815734,
+      "permutation_count": 10000
+    },
+    "completeness": {
+      "n_relational": 50,
+      "n_direct_control": 10,
+      "observed_interaction": -0.12,
+      "bootstrap_95_ci": [
+        -1.28,
+        1.04
+      ],
+      "permutation_p_value": 0.8977102289771023,
+      "cohen_d_pooled": -0.09153522941934472,
+      "permutation_count": 10000
+    },
+    "groundedness": {
+      "n_relational": 50,
+      "n_direct_control": 10,
+      "observed_interaction": -0.45999999999999996,
+      "bootstrap_95_ci": [
+        -0.92,
+        -0.04
+      ],
+      "permutation_p_value": 0.38366163383661633,
+      "cohen_d_pooled": -0.33066062244237737,
+      "permutation_count": 10000
+    },
+    "relevance": {
+      "n_relational": 50,
+      "n_direct_control": 10,
+      "observed_interaction": -0.22,
+      "bootstrap_95_ci": [
+        -0.8200000000000001,
+        0.39999999999999997
+      ],
+      "permutation_p_value": 0.5636436356364364,
+      "cohen_d_pooled": -0.2519549351896724,
+      "permutation_count": 10000
+    }
+  },
+  "relation_aware_vs_corrected_by_category": {
+    "DIRECT_CONTROL": {
+      "correctness": {
+        "n": 10,
+        "mean_difference": 0.0,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -1.2,
+          1.2
+        ],
+        "wilcoxon": {
+          "statistic": 1.5,
+          "p_value": 1.0,
+          "n_nonzero": 2
+        },
+        "cohen_dz": 0.0,
+        "wins_losses_ties": [
+          1,
+          1,
+          8
+        ],
+        "differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -4.0,
+          0.0,
+          0.0,
+          0.0,
+          4.0,
+          0.0
+        ]
+      },
+      "completeness": {
+        "n": 10,
+        "mean_difference": 0.0,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -1.2,
+          1.2
+        ],
+        "wilcoxon": {
+          "statistic": 1.5,
+          "p_value": 1.0,
+          "n_nonzero": 2
+        },
+        "cohen_dz": 0.0,
+        "wins_losses_ties": [
+          1,
+          1,
+          8
+        ],
+        "differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -4.0,
+          0.0,
+          0.0,
+          0.0,
+          4.0,
+          0.0
+        ]
+      },
+      "groundedness": {
+        "n": 10,
+        "mean_difference": 0.0,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_nonzero": 0
+        },
+        "cohen_dz": null,
+        "wins_losses_ties": [
+          0,
+          0,
+          10
+        ],
+        "differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "relevance": {
+        "n": 10,
+        "mean_difference": 0.0,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -0.6,
+          0.6
+        ],
+        "wilcoxon": {
+          "statistic": 1.5,
+          "p_value": 1.0,
+          "n_nonzero": 2
+        },
+        "cohen_dz": 0.0,
+        "wins_losses_ties": [
+          1,
+          1,
+          8
+        ],
+        "differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -2.0,
+          0.0,
+          0.0,
+          0.0,
+          2.0,
+          0.0
+        ]
+      }
+    },
+    "MULTI_RELATION": {
+      "correctness": {
+        "n": 10,
+        "mean_difference": -0.3,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -0.6,
+          0.0
+        ],
+        "wilcoxon": {
+          "statistic": 0.0,
+          "p_value": 0.25,
+          "n_nonzero": 3
+        },
+        "cohen_dz": -0.6210590034081188,
+        "wins_losses_ties": [
+          0,
+          3,
+          7
+        ],
+        "differences": [
+          0.0,
+          0.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "completeness": {
+        "n": 10,
+        "mean_difference": -0.4,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -0.9,
+          0.0
+        ],
+        "wilcoxon": {
+          "statistic": 0.0,
+          "p_value": 0.25,
+          "n_nonzero": 3
+        },
+        "cohen_dz": -0.5720775535473555,
+        "wins_losses_ties": [
+          0,
+          3,
+          7
+        ],
+        "differences": [
+          0.0,
+          0.0,
+          -1.0,
+          -1.0,
+          -2.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "groundedness": {
+        "n": 10,
+        "mean_difference": -0.3,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -0.6,
+          0.0
+        ],
+        "wilcoxon": {
+          "statistic": 0.0,
+          "p_value": 0.25,
+          "n_nonzero": 3
+        },
+        "cohen_dz": -0.6210590034081188,
+        "wins_losses_ties": [
+          0,
+          3,
+          7
+        ],
+        "differences": [
+          0.0,
+          0.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "relevance": {
+        "n": 10,
+        "mean_difference": 0.0,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_nonzero": 0
+        },
+        "cohen_dz": null,
+        "wins_losses_ties": [
+          0,
+          0,
+          10
+        ],
+        "differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "SINGLE_RELATION": {
+      "correctness": {
+        "n": 30,
+        "mean_difference": 0.06666666666666667,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -0.43333333333333335,
+          0.6
+        ],
+        "wilcoxon": {
+          "statistic": 20.0,
+          "p_value": 0.7621842220884498,
+          "n_nonzero": 9
+        },
+        "cohen_dz": 0.045643546458763846,
+        "wins_losses_ties": [
+          5,
+          4,
+          21
+        ],
+        "differences": [
+          0.0,
+          -3.0,
+          -1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          -4.0,
+          0.0,
+          1.0,
+          0.0,
+          4.0,
+          0.0,
+          0.0,
+          0.0,
+          4.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      "completeness": {
+        "n": 30,
+        "mean_difference": 0.1,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -0.4,
+          0.6333333333333333
+        ],
+        "wilcoxon": {
+          "statistic": 35.0,
+          "p_value": 0.7481884585655709,
+          "n_nonzero": 12
+        },
+        "cohen_dz": 0.06912014704969409,
+        "wins_losses_ties": [
+          6,
+          6,
+          18
+        ],
+        "differences": [
+          0.0,
+          -3.0,
+          -1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          -3.0,
+          0.0,
+          1.0,
+          0.0,
+          4.0,
+          0.0,
+          0.0,
+          0.0,
+          4.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          2.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      "groundedness": {
+        "n": 30,
+        "mean_difference": 0.16666666666666666,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -0.3333333333333333,
+          0.6
+        ],
+        "wilcoxon": {
+          "statistic": 26.5,
+          "p_value": 0.30984106688515645,
+          "n_nonzero": 12
+        },
+        "cohen_dz": 0.12671852991977015,
+        "wins_losses_ties": [
+          9,
+          3,
+          18
+        ],
+        "differences": [
+          0.0,
+          -3.0,
+          3.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          -4.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          3.0,
+          1.0
+        ]
+      },
+      "relevance": {
+        "n": 30,
+        "mean_difference": 0.06666666666666667,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -0.16666666666666666,
+          0.3333333333333333
+        ],
+        "wilcoxon": {
+          "statistic": 5.5,
+          "p_value": 0.580912420333197,
+          "n_nonzero": 5
+        },
+        "cohen_dz": 0.0964099154385678,
+        "wins_losses_ties": [
+          3,
+          2,
+          25
+        ],
+        "differences": [
+          0.0,
+          0.0,
+          -2.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.0,
+          -1.0,
+          0.0,
+          0.0,
+          2.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "TWO_HOP_RELATION": {
+      "correctness": {
+        "n": 10,
+        "mean_difference": -1.1,
+        "median_difference": -2.0,
+        "bootstrap_95_ci": [
+          -2.2,
+          0.1
+        ],
+        "wilcoxon": {
+          "statistic": 7.5,
+          "p_value": 0.171875,
+          "n_nonzero": 8
+        },
+        "cohen_dz": -0.5432512781572743,
+        "wins_losses_ties": [
+          2,
+          6,
+          2
+        ],
+        "differences": [
+          -2.0,
+          0.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          1.0,
+          -2.0,
+          -2.0,
+          0.0,
+          3.0
+        ]
+      },
+      "completeness": {
+        "n": 10,
+        "mean_difference": -0.2,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -1.0,
+          0.7
+        ],
+        "wilcoxon": {
+          "statistic": 8.0,
+          "p_value": 0.625,
+          "n_nonzero": 6
+        },
+        "cohen_dz": -0.1355261854357877,
+        "wins_losses_ties": [
+          2,
+          4,
+          4
+        ],
+        "differences": [
+          -2.0,
+          0.0,
+          -2.0,
+          -1.0,
+          -1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          3.0
+        ]
+      },
+      "groundedness": {
+        "n": 10,
+        "mean_difference": -1.8,
+        "median_difference": -2.0,
+        "bootstrap_95_ci": [
+          -2.8,
+          -0.8
+        ],
+        "wilcoxon": {
+          "statistic": 4.0,
+          "p_value": 0.03125,
+          "n_nonzero": 9
+        },
+        "cohen_dz": -1.0278724332962894,
+        "wins_losses_ties": [
+          1,
+          8,
+          1
+        ],
+        "differences": [
+          -2.0,
+          -4.0,
+          -2.0,
+          -2.0,
+          -2.0,
+          0.0,
+          -2.0,
+          -2.0,
+          -4.0,
+          2.0
+        ]
+      },
+      "relevance": {
+        "n": 10,
+        "mean_difference": -0.9,
+        "median_difference": -1.0,
+        "bootstrap_95_ci": [
+          -1.6,
+          0.0
+        ],
+        "wilcoxon": {
+          "statistic": 11.0,
+          "p_value": 0.109375,
+          "n_nonzero": 10
+        },
+        "cohen_dz": -0.6567807448042019,
+        "wins_losses_ties": [
+          2,
+          8,
+          0
+        ],
+        "differences": [
+          -2.0,
+          -1.0,
+          -2.0,
+          -2.0,
+          -2.0,
+          1.0,
+          -1.0,
+          -1.0,
+          -1.0,
+          2.0
+        ]
+      }
+    }
+  },
+  "question_level_balanced_examples": {
+    "relation_aware_strongest": [
+      {
+        "question_id": "rakg_058",
+        "category": "DIRECT_CONTROL",
+        "question": "Where was AstroSat launched from?",
+        "vanilla": {
+          "correctness": 1.0,
+          "completeness": 1.0,
+          "groundedness": 5.0,
+          "relevance": 3.0
+        },
+        "relation_aware": {
+          "correctness": 5.0,
+          "completeness": 5.0,
+          "groundedness": 5.0,
+          "relevance": 5.0
+        },
+        "differences": {
+          "correctness": 4.0,
+          "completeness": 4.0,
+          "groundedness": 0.0,
+          "relevance": 2.0
+        },
+        "aggregate_mean_difference": 2.5
+      },
+      {
+        "question_id": "rakg_046",
+        "category": "SINGLE_RELATION",
+        "question": "Which organization developed Advanced Tri-axial High Resolution Digital Magnetometers?",
+        "vanilla": {
+          "correctness": 1.0,
+          "completeness": 1.0,
+          "groundedness": 5.0,
+          "relevance": 3.0
+        },
+        "relation_aware": {
+          "correctness": 5.0,
+          "completeness": 5.0,
+          "groundedness": 5.0,
+          "relevance": 5.0
+        },
+        "differences": {
+          "correctness": 4.0,
+          "completeness": 4.0,
+          "groundedness": 0.0,
+          "relevance": 2.0
+        },
+        "aggregate_mean_difference": 2.5
+      },
+      {
+        "question_id": "rakg_062",
+        "category": "TWO_HOP_RELATION",
+        "question": "What does a payload carried by Chandrayaan-1 studies?",
+        "vanilla": {
+          "correctness": 3.0,
+          "completeness": 2.0,
+          "groundedness": 2.0,
+          "relevance": 3.0
+        },
+        "relation_aware": {
+          "correctness": 4.0,
+          "completeness": 4.0,
+          "groundedness": 3.0,
+          "relevance": 5.0
+        },
+        "differences": {
+          "correctness": 1.0,
+          "completeness": 2.0,
+          "groundedness": 1.0,
+          "relevance": 2.0
+        },
+        "aggregate_mean_difference": 1.5
+      },
+      {
+        "question_id": "rakg_038",
+        "category": "TWO_HOP_RELATION",
+        "question": "What does a payload carried by Chandrayaan-1 studies?",
+        "vanilla": {
+          "correctness": 3.0,
+          "completeness": 2.0,
+          "groundedness": 3.0,
+          "relevance": 4.0
+        },
+        "relation_aware": {
+          "correctness": 5.0,
+          "completeness": 4.0,
+          "groundedness": 4.0,
+          "relevance": 5.0
+        },
+        "differences": {
+          "correctness": 2.0,
+          "completeness": 2.0,
+          "groundedness": 1.0,
+          "relevance": 1.0
+        },
+        "aggregate_mean_difference": 1.5
+      },
+      {
+        "question_id": "rakg_066",
+        "category": "SINGLE_RELATION",
+        "question": "Which organization developed High Energy L1 Orbiting X-ray Spectrometer (HEL1OS)?",
+        "vanilla": {
+          "correctness": 4.0,
+          "completeness": 3.0,
+          "groundedness": 4.0,
+          "relevance": 5.0
+        },
+        "relation_aware": {
+          "correctness": 5.0,
+          "completeness": 5.0,
+          "groundedness": 5.0,
+          "relevance": 5.0
+        },
+        "differences": {
+          "correctness": 1.0,
+          "completeness": 2.0,
+          "groundedness": 1.0,
+          "relevance": 0.0
+        },
+        "aggregate_mean_difference": 1.0
+      }
+    ],
+    "vanilla_strongest": [
+      {
+        "question_id": "rakg_032",
+        "category": "SINGLE_RELATION",
+        "question": "Which organization developed Ultra Violet Imaging Telescope (UVIT)?",
+        "vanilla": {
+          "correctness": 5.0,
+          "completeness": 4.0,
+          "groundedness": 5.0,
+          "relevance": 5.0
+        },
+        "relation_aware": {
+          "correctness": 1.0,
+          "completeness": 1.0,
+          "groundedness": 1.0,
+          "relevance": 5.0
+        },
+        "differences": {
+          "correctness": -4.0,
+          "completeness": -3.0,
+          "groundedness": -4.0,
+          "relevance": 0.0
+        },
+        "aggregate_mean_difference": -2.75
+      },
+      {
+        "question_id": "rakg_035",
+        "category": "DIRECT_CONTROL",
+        "question": "Which launch vehicle launched Chandrayaan-3?",
+        "vanilla": {
+          "correctness": 5.0,
+          "completeness": 5.0,
+          "groundedness": 5.0,
+          "relevance": 5.0
+        },
+        "relation_aware": {
+          "correctness": 1.0,
+          "completeness": 1.0,
+          "groundedness": 5.0,
+          "relevance": 3.0
+        },
+        "differences": {
+          "correctness": -4.0,
+          "completeness": -4.0,
+          "groundedness": 0.0,
+          "relevance": -2.0
+        },
+        "aggregate_mean_difference": -2.5
+      },
+      {
+        "question_id": "rakg_009",
+        "category": "SINGLE_RELATION",
+        "question": "Which organization developed Cadmium-Zinc-Telluride Imager (CZTI)?",
+        "vanilla": {
+          "correctness": 5.0,
+          "completeness": 5.0,
+          "groundedness": 5.0,
+          "relevance": 5.0
+        },
+        "relation_aware": {
+          "correctness": 2.0,
+          "completeness": 2.0,
+          "groundedness": 2.0,
+          "relevance": 5.0
+        },
+        "differences": {
+          "correctness": -3.0,
+          "completeness": -3.0,
+          "groundedness": -3.0,
+          "relevance": 0.0
+        },
+        "aggregate_mean_difference": -2.25
+      },
+      {
+        "question_id": "rakg_030",
+        "category": "TWO_HOP_RELATION",
+        "question": "What does a payload carried by Aditya-L1 observes?",
+        "vanilla": {
+          "correctness": 4.0,
+          "completeness": 3.0,
+          "groundedness": 4.0,
+          "relevance": 5.0
+        },
+        "relation_aware": {
+          "correctness": 1.0,
+          "completeness": 1.0,
+          "groundedness": 2.0,
+          "relevance": 3.0
+        },
+        "differences": {
+          "correctness": -3.0,
+          "completeness": -2.0,
+          "groundedness": -2.0,
+          "relevance": -2.0
+        },
+        "aggregate_mean_difference": -2.25
+      },
+      {
+        "question_id": "rakg_001",
+        "category": "TWO_HOP_RELATION",
+        "question": "What does a payload carried by Chandrayaan-3 observes?",
+        "vanilla": {
+          "correctness": 4.0,
+          "completeness": 4.0,
+          "groundedness": 4.0,
+          "relevance": 5.0
+        },
+        "relation_aware": {
+          "correctness": 2.0,
+          "completeness": 2.0,
+          "groundedness": 2.0,
+          "relevance": 3.0
+        },
+        "differences": {
+          "correctness": -2.0,
+          "completeness": -2.0,
+          "groundedness": -2.0,
+          "relevance": -2.0
+        },
+        "aggregate_mean_difference": -2.0
+      }
+    ]
+  },
+  "automated_vs_human_correlations": {
+    "rouge_l_vs_correctness": {
+      "rho": 0.5370533845209735,
+      "p_value": 9.690673264798994e-06,
+      "n": 60
+    },
+    "rouge_l_vs_completeness": {
+      "rho": 0.5260793378987841,
+      "p_value": 1.582175989334162e-05,
+      "n": 60
+    },
+    "rouge_l_vs_groundedness": {
+      "rho": 0.051394166954872,
+      "p_value": 0.696550578550107,
+      "n": 60
+    },
+    "reference_token_coverage_vs_correctness": {
+      "rho": 0.5342090051960712,
+      "p_value": 1.1021761741097301e-05,
+      "n": 60
+    },
+    "reference_token_coverage_vs_completeness": {
+      "rho": 0.5278159561126294,
+      "p_value": 1.46573549229962e-05,
+      "n": 60
+    },
+    "reference_token_coverage_vs_groundedness": {
+      "rho": -0.04379679029005763,
+      "p_value": 0.7396842279595292,
+      "n": 60
+    }
+  },
+  "interpretation": {
+    "small_category_note": "Category-level inference is limited for small N; all N values are reported.",
+    "unsupported_claim_note": "Unsupported claims are analyzed as binary rates and paired counts, not as a continuous quality scale.",
+    "automated_metric_note": "Automated/human correlations are exploratory and do not validate ROUGE or coverage as factual measures."
+  },
+  "decision": "C. NOT SUPPORTED",
+  "decision_basis": "Relation-Aware KG-RAG is descriptively below Vanilla on all four overall human dimensions, and category/task-conditional analyses do not establish a consistent statistically credible improvement on intended relational categories.",
+  "paper_recommendation": "Do not present Relation-Aware KG-RAG as a demonstrated factual-quality improvement. If retained, describe the result as a negative or diagnostic finding and preserve the retrieval/provenance contribution separately from end-to-end answer quality."
+}

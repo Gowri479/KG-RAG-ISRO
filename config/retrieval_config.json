@@ -1,0 +1,18 @@
+{
+  "retrieval_parameters": {
+    "top_k_dense": 3,
+    "max_kg_triples": 10,
+    "max_context_tokens": 1200,
+    "default_hop_depth": 1,
+    "multihop_hop_depth": 2,
+    "dense_weight": 0.6,
+    "kg_weight": 0.4,
+    "deduplication_similarity_threshold": 0.85,
+    "keyword_filter_chunk_threshold": 20
+  },
+  "metadata": {
+    "description": "Controlled retrieval and evidence fusion configuration parameters tuned exclusively on 20 held-out development questions.",
+    "frozen_for_test": true,
+    "updated_at_utc": "2026-10-06T14:15:00Z"
+  }
+}

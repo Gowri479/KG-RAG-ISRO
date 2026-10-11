@@ -1,0 +1,48 @@
+{
+  "benchmark": "data/benchmark/aditya_l1_optional_qa.json",
+  "n_questions": 36,
+  "systems": ["bm25_llm", "vanilla_rag", "kg_rag"],
+  "primary_metric": "ROUGE-L",
+  "paired_unit": "question",
+  "comparisons": [
+    {
+      "comparison": "kg_rag - vanilla_rag",
+      "mean_paired_difference": 0.0934972,
+      "sd_paired_difference": 0.2106686,
+      "cohens_dz": 0.443812,
+      "nonzero_difference_n": 21,
+      "positive_nonzero_n": 16,
+      "negative_nonzero_n": 5,
+      "wilcoxon_p_raw": 0.0049,
+      "holm_adjusted_p": 0.0098,
+      "rank_biserial_correlation": 0.679654,
+      "bootstrap_95ci": [0.0288, 0.1695]
+    },
+    {
+      "comparison": "kg_rag - bm25_llm",
+      "mean_paired_difference": 0.0941278,
+      "sd_paired_difference": 0.2906634,
+      "cohens_dz": 0.323838,
+      "nonzero_difference_n": 31,
+      "positive_nonzero_n": 25,
+      "negative_nonzero_n": 6,
+      "wilcoxon_p_raw": 0.0151,
+      "holm_adjusted_p": 0.0151,
+      "rank_biserial_correlation": 0.5,
+      "bootstrap_95ci": [-0.0057, 0.1834]
+    }
+  ],
+  "holm_correction": {
+    "family": "two primary ROUGE-L comparisons",
+    "alpha": 0.05,
+    "raw_p_values_sorted": [0.0049, 0.0151],
+    "adjusted_p_values": [0.0098, 0.0151]
+  },
+  "secondary_metrics": {
+    "coverage": "Descriptive in the primary targeted report; paired p-values were not significant.",
+    "idk_rate": "Descriptive abstention-rate comparison; no hallucination/factuality claim is implied.",
+    "exact_match": "0 for all three systems and therefore non-informative for this benchmark."
+  },
+  "interpretation": "KG-RAG significantly outperformed both baselines in paired Wilcoxon ROUGE-L tests after Holm correction for the two primary comparisons. The paired effect was moderate versus Vanilla RAG (dz=0.444) and small-to-moderate versus BM25+LLM (dz=0.324). The KG-vs-BM25 bootstrap CI crosses zero, so the inferential evidence should not be overstated. This is a researcher-constructed targeted Aditya-L1 evaluation, not an external independent validation.",
+  "method_note": "The benchmark is separate from the canonical 180-question ISRO-QA test set. Results were generated with the same local Mistral-7B setup and stored per-question answers."
+}

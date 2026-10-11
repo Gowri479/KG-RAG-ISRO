@@ -1,0 +1,27 @@
+question_id,blind_system_mapping,vanilla_rag_correctness,corrected_structured_kg_rag_correctness,bm25_llm_correctness,kg_vs_vanilla_correctness_outcome,vanilla_rag_completeness,corrected_structured_kg_rag_completeness,bm25_llm_completeness,kg_vs_vanilla_completeness_outcome,vanilla_rag_groundedness,corrected_structured_kg_rag_groundedness,bm25_llm_groundedness,kg_vs_vanilla_groundedness_outcome,vanilla_rag_relevance,corrected_structured_kg_rag_relevance,bm25_llm_relevance,kg_vs_vanilla_relevance_outcome,vanilla_rag_unsupported_claim,corrected_structured_kg_rag_unsupported_claim,bm25_llm_unsupported_claim
+rqa_037,"{'A': 'bm25_llm', 'B': 'corrected_structured_kg_rag', 'C': 'vanilla_rag'}",1,5,1,KG better,2,5,1,KG better,5,5,5,Tie,3,5,3,KG better,0,0,0
+rqa_038,"{'A': 'bm25_llm', 'B': 'corrected_structured_kg_rag', 'C': 'vanilla_rag'}",2,5,5,KG better,2,5,5,KG better,3,5,5,KG better,3,5,5,KG better,0,0,0
+rqa_039,"{'A': 'corrected_structured_kg_rag', 'B': 'vanilla_rag', 'C': 'bm25_llm'}",5,5,1,Tie,5,5,1,Tie,5,5,1,Tie,5,5,2,Tie,0,0,1
+rqa_040,"{'A': 'bm25_llm', 'B': 'vanilla_rag', 'C': 'corrected_structured_kg_rag'}",1,1,1,Tie,1,1,1,Tie,1,1,1,Tie,2,2,2,Tie,1,1,1
+rqa_041,"{'A': 'corrected_structured_kg_rag', 'B': 'vanilla_rag', 'C': 'bm25_llm'}",1,4,1,KG better,1,4,1,KG better,1,3,1,KG better,2,4,2,KG better,1,1,1
+rqa_042,"{'A': 'bm25_llm', 'B': 'corrected_structured_kg_rag', 'C': 'vanilla_rag'}",1,1,1,Tie,1,1,1,Tie,1,1,5,Tie,2,2,3,Tie,1,1,0
+rqa_043,"{'A': 'corrected_structured_kg_rag', 'B': 'bm25_llm', 'C': 'vanilla_rag'}",1,5,1,KG better,1,5,1,KG better,5,5,5,Tie,3,5,3,KG better,0,0,0
+rqa_044,"{'A': 'corrected_structured_kg_rag', 'B': 'vanilla_rag', 'C': 'bm25_llm'}",5,1,5,Vanilla better,5,1,5,Vanilla better,4,1,5,Vanilla better,5,2,5,Vanilla better,0,1,0
+rqa_045,"{'A': 'corrected_structured_kg_rag', 'B': 'vanilla_rag', 'C': 'bm25_llm'}",1,1,1,Tie,1,1,1,Tie,1,5,3,KG better,2,3,2,KG better,1,0,1
+rqa_046,"{'A': 'corrected_structured_kg_rag', 'B': 'bm25_llm', 'C': 'vanilla_rag'}",1,1,1,Tie,1,1,1,Tie,1,1,1,Tie,2,2,2,Tie,1,1,1
+rqa_047,"{'A': 'bm25_llm', 'B': 'vanilla_rag', 'C': 'corrected_structured_kg_rag'}",5,5,1,Tie,5,5,1,Tie,5,5,1,Tie,5,5,2,Tie,0,0,1
+rqa_048,"{'A': 'vanilla_rag', 'B': 'bm25_llm', 'C': 'corrected_structured_kg_rag'}",1,1,5,Tie,1,1,5,Tie,5,1,5,Vanilla better,3,2,5,Vanilla better,0,1,0
+rqa_049,"{'A': 'corrected_structured_kg_rag', 'B': 'bm25_llm', 'C': 'vanilla_rag'}",1,5,1,KG better,1,5,1,KG better,1,5,5,KG better,2,5,3,KG better,1,0,0
+rqa_050,"{'A': 'vanilla_rag', 'B': 'corrected_structured_kg_rag', 'C': 'bm25_llm'}",5,5,1,Tie,5,5,1,Tie,5,5,5,Tie,5,5,3,Tie,0,0,0
+rqa_051,"{'A': 'bm25_llm', 'B': 'vanilla_rag', 'C': 'corrected_structured_kg_rag'}",1,5,1,KG better,1,5,1,KG better,5,4,1,Vanilla better,3,5,2,KG better,0,0,1
+rqa_052,"{'A': 'corrected_structured_kg_rag', 'B': 'bm25_llm', 'C': 'vanilla_rag'}",5,5,5,Tie,5,5,5,Tie,5,5,5,Tie,5,5,5,Tie,0,0,0
+rqa_053,"{'A': 'corrected_structured_kg_rag', 'B': 'bm25_llm', 'C': 'vanilla_rag'}",1,1,1,Tie,1,1,1,Tie,1,1,1,Tie,2,2,2,Tie,1,1,1
+rqa_054,"{'A': 'corrected_structured_kg_rag', 'B': 'bm25_llm', 'C': 'vanilla_rag'}",1,5,5,KG better,1,5,5,KG better,5,5,5,Tie,3,5,5,KG better,0,0,0
+rqa_055,"{'A': 'corrected_structured_kg_rag', 'B': 'bm25_llm', 'C': 'vanilla_rag'}",1,1,1,Tie,1,1,1,Tie,5,5,5,Tie,3,3,3,Tie,0,0,0
+rqa_056,"{'A': 'bm25_llm', 'B': 'vanilla_rag', 'C': 'corrected_structured_kg_rag'}",1,1,5,Tie,1,1,5,Tie,1,1,5,Tie,2,2,5,Tie,1,1,0
+rqa_057,"{'A': 'vanilla_rag', 'B': 'corrected_structured_kg_rag', 'C': 'bm25_llm'}",5,1,5,Vanilla better,5,1,5,Vanilla better,5,5,5,Tie,5,3,5,Vanilla better,0,0,0
+rqa_058,"{'A': 'bm25_llm', 'B': 'corrected_structured_kg_rag', 'C': 'vanilla_rag'}",1,1,2,Tie,1,1,2,Tie,1,1,3,Tie,2,2,3,Tie,1,1,0
+rqa_059,"{'A': 'corrected_structured_kg_rag', 'B': 'vanilla_rag', 'C': 'bm25_llm'}",5,5,1,Tie,5,5,1,Tie,5,5,3,Tie,5,5,3,Tie,0,0,0
+rqa_060,"{'A': 'bm25_llm', 'B': 'corrected_structured_kg_rag', 'C': 'vanilla_rag'}",1,1,5,Tie,1,1,5,Tie,5,1,5,Vanilla better,3,2,5,Vanilla better,0,1,0
+rqa_061,"{'A': 'bm25_llm', 'B': 'corrected_structured_kg_rag', 'C': 'vanilla_rag'}",1,5,1,KG better,1,5,1,KG better,1,5,5,KG better,2,5,3,KG better,1,0,0
+rqa_062,"{'A': 'vanilla_rag', 'B': 'corrected_structured_kg_rag', 'C': 'bm25_llm'}",1,1,1,Tie,1,1,1,Tie,5,5,5,Tie,3,3,3,Tie,0,0,0

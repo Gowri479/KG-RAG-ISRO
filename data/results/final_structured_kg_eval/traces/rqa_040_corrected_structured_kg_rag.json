@@ -1,0 +1,289 @@
+{
+  "question_id": "rqa_040",
+  "question": "Which Aditya-L1 payload was developed by Vikram Sarabhai Space Centre?",
+  "system": "corrected_structured_kg_rag",
+  "reference_answer": "Plasma Analyser Package For Aditya (PAPA)",
+  "answer": "The Aditya-L1 payload developed by Vikram Sarabhai Space Centre is the Magnetometer.",
+  "trace": {
+    "detected_entities": [
+      "Aditya-L1"
+    ],
+    "detected_relations": [
+      "HAS_PAYLOAD",
+      "DEVELOPED_BY"
+    ],
+    "retrieved_paths": [
+      {
+        "path_id": "path:aditya-payload-papa+aditya-papa-developed-by-vssc",
+        "nodes": [
+          "Aditya-L1",
+          "Plasma Analyser Package For Aditya (PAPA)",
+          "Vikram Sarabhai Space Centre (VSSC)"
+        ],
+        "relations": [
+          "HAS_PAYLOAD",
+          "DEVELOPED_BY"
+        ],
+        "triple_ids": [
+          "aditya-payload-papa",
+          "aditya-papa-developed-by-vssc"
+        ],
+        "source_documents": [
+          "ISRO_ADITYA_OVERVIEW",
+          "ISSDC_ADITYA_BOOKLET"
+        ],
+        "source_chunks": [
+          "ISRO_ADITYA_OVERVIEW::c00011",
+          "ISSDC_ADITYA_BOOKLET::c00014"
+        ],
+        "retrieval_score": 10.0
+      },
+      {
+        "path_id": "path:aditya-payload-hel1os+aditya-hel1os-developed-by-ursc",
+        "nodes": [
+          "Aditya-L1",
+          "High Energy L1 Orbiting X-ray Spectrometer (HEL1OS)",
+          "U R Rao Satellite Centre (URSC)"
+        ],
+        "relations": [
+          "HAS_PAYLOAD",
+          "DEVELOPED_BY"
+        ],
+        "triple_ids": [
+          "aditya-payload-hel1os",
+          "aditya-hel1os-developed-by-ursc"
+        ],
+        "source_documents": [
+          "ISRO_ADITYA_OVERVIEW"
+        ],
+        "source_chunks": [
+          "ISRO_ADITYA_OVERVIEW::c00008"
+        ],
+        "retrieval_score": 7.0
+      },
+      {
+        "path_id": "path:aditya-payload-aspex+aditya-aspex-developed-by-prl",
+        "nodes": [
+          "Aditya-L1",
+          "Aditya Solar wind Particle Experiment (ASPEX)",
+          "Physical Research Laboratory (PRL)"
+        ],
+        "relations": [
+          "HAS_PAYLOAD",
+          "DEVELOPED_BY"
+        ],
+        "triple_ids": [
+          "aditya-payload-aspex",
+          "aditya-aspex-developed-by-prl"
+        ],
+        "source_documents": [
+          "ISRO_ADITYA_OVERVIEW",
+          "ISSDC_ADITYA_BOOKLET"
+        ],
+        "source_chunks": [
+          "ISRO_ADITYA_OVERVIEW::c00010",
+          "ISSDC_ADITYA_BOOKLET::c00014"
+        ],
+        "retrieval_score": 6.0
+      },
+      {
+        "path_id": "path:aditya-payload-solexs+aditya-solexs-developed-by-ursc",
+        "nodes": [
+          "Aditya-L1",
+          "Solar Low Energy X-ray Spectrometer (SoLEXS)",
+          "U R Rao Satellite Centre (URSC)"
+        ],
+        "relations": [
+          "HAS_PAYLOAD",
+          "DEVELOPED_BY"
+        ],
+        "triple_ids": [
+          "aditya-payload-solexs",
+          "aditya-solexs-developed-by-ursc"
+        ],
+        "source_documents": [
+          "ISRO_ADITYA_OVERVIEW"
+        ],
+        "source_chunks": [
+          "ISRO_ADITYA_OVERVIEW::c00007"
+        ],
+        "retrieval_score": 6.0
+      },
+      {
+        "path_id": "path:aditya-payload-suit+aditya-suit-developed-by-iucaa",
+        "nodes": [
+          "Aditya-L1",
+          "Solar Ultraviolet Imaging Telescope (SUIT)",
+          "Inter University Centre for Astronomy and Astrophysics (IUCAA)"
+        ],
+        "relations": [
+          "HAS_PAYLOAD",
+          "DEVELOPED_BY"
+        ],
+        "triple_ids": [
+          "aditya-payload-suit",
+          "aditya-suit-developed-by-iucaa"
+        ],
+        "source_documents": [
+          "ISRO_ADITYA_OVERVIEW",
+          "ISSDC_ADITYA_BOOKLET"
+        ],
+        "source_chunks": [
+          "ISRO_ADITYA_OVERVIEW::c00006",
+          "ISSDC_ADITYA_BOOKLET::c00012"
+        ],
+        "retrieval_score": 6.0
+      },
+      {
+        "path_id": "path:aditya-payload-mag+aditya-mag-developed-by-leos",
+        "nodes": [
+          "Aditya-L1",
+          "Advanced Tri-axial High Resolution Digital Magnetometers",
+          "Laboratory for Electro-Optics Systems (LEOS)"
+        ],
+        "relations": [
+          "HAS_PAYLOAD",
+          "DEVELOPED_BY"
+        ],
+        "triple_ids": [
+          "aditya-payload-mag",
+          "aditya-mag-developed-by-leos"
+        ],
+        "source_documents": [
+          "ISRO_ADITYA_OVERVIEW",
+          "ISSDC_ADITYA_BOOKLET"
+        ],
+        "source_chunks": [
+          "ISRO_ADITYA_OVERVIEW::c00012",
+          "ISSDC_ADITYA_BOOKLET::c00012"
+        ],
+        "retrieval_score": 5.0
+      },
+      {
+        "path_id": "path:aditya-payload-velc+aditya-velc-developed-by-iia",
+        "nodes": [
+          "Aditya-L1",
+          "Visible Emission Line Coronagraph (VELC)",
+          "Indian Institute of Astrophysics (IIA)"
+        ],
+        "relations": [
+          "HAS_PAYLOAD",
+          "DEVELOPED_BY"
+        ],
+        "triple_ids": [
+          "aditya-payload-velc",
+          "aditya-velc-developed-by-iia"
+        ],
+        "source_documents": [
+          "ISRO_ADITYA_OVERVIEW",
+          "ISSDC_ADITYA_BOOKLET"
+        ],
+        "source_chunks": [
+          "ISRO_ADITYA_OVERVIEW::c00005",
+          "ISSDC_ADITYA_BOOKLET::c00013"
+        ],
+        "retrieval_score": 5.0
+      },
+      {
+        "path_id": "path:aditya-launch-site",
+        "nodes": [
+          "Aditya-L1",
+          "Satish Dhawan Space Centre SHAR, Sriharikota"
+        ],
+        "relations": [
+          "LAUNCHED_FROM"
+        ],
+        "triple_ids": [
+          "aditya-launch-site"
+        ],
+        "source_documents": [
+          "ISRO_LAUNCH_ARCHIVE"
+        ],
+        "source_chunks": [
+          "ISRO_LAUNCH_ARCHIVE::c00015"
+        ],
+        "retrieval_score": 4.0
+      },
+      {
+        "path_id": "path:aditya-payload-hel1os+aditya-hel1os-observes-sun",
+        "nodes": [
+          "Aditya-L1",
+          "High Energy L1 Orbiting X-ray Spectrometer (HEL1OS)",
+          "Sun"
+        ],
+        "relations": [
+          "HAS_PAYLOAD",
+          "OBSERVES"
+        ],
+        "triple_ids": [
+          "aditya-payload-hel1os",
+          "aditya-hel1os-observes-sun"
+        ],
+        "source_documents": [
+          "ISRO_ADITYA_OVERVIEW"
+        ],
+        "source_chunks": [
+          "ISRO_ADITYA_OVERVIEW::c00008"
+        ],
+        "retrieval_score": 4.0
+      },
+      {
+        "path_id": "path:aditya-launcher",
+        "nodes": [
+          "Aditya-L1",
+          "PSLV-C57 (PSLV-XL)"
+        ],
+        "relations": [
+          "LAUNCHED_BY"
+        ],
+        "triple_ids": [
+          "aditya-launcher"
+        ],
+        "source_documents": [
+          "ISRO_LAUNCH_ARCHIVE"
+        ],
+        "source_chunks": [
+          "ISRO_LAUNCH_ARCHIVE::c00015"
+        ],
+        "retrieval_score": 3.0
+      }
+    ],
+    "required_path_found": true,
+    "source_provenance_available": true,
+    "dense_chunks": [
+      "# Source: https://www.isro.gov.in/mission_prarambh.html Mission Prarambh Mission Prarambh Home Nov 18, 2022 The launch of Vikram-S, a suborbital launch vehicle from M/s Skyroot Aerospace Pvt. Ltd., Hyderabad, was accomplished successfully on November 18, 2022, at 11:30 am IST from the sounding rocket launch complex at Satish Dhawan Space Centre, Sriharikota. It marks the first launch of a launch vehicle built by a private company in India. The mission was authorized by IN-SPACe. The launcher reached an altitude of about 89.5 km in 155 seconds, as planned. This sounding rocket carried three payloads. Minister of State Dr. Jitendra Singh and Chairman, IN-SPACe congratulated Skyroot for the accomplishment and thanked ISRO for the able support provided. More Details VIKRAM-S PRARAMBH Skyroot Gallery More Details VIKRAM-S PRARAMBH Skyroot Gallery",
+      "Document ID: ADITYA_L1_ALPPS_V1 Title: Aditya-L1 Proposal Processing System (ALPPS) User Guide Mission: Aditya-L1 Organization: ALPPS/ISRO Document Type: user guide Source URL: https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf Page: 10 Section: PDF page 10 Authority: AUTHORITATIVE CORE: ALPPS/ISRO --- 7 Payloads, Configurability and Payload Operation Centre (POC) Aditya-L1 was launched on 23rd September 2023 and reached the Sun-Earth L1 orbit on 6th Jan 2024. All payload performance verifications were carried out and started the science operations from July 1 st 2024. Aditya-L1 has seven payloads which are briefly introduced below: Visible Emission Line Coronagraph (VELC) - is designed to study solar corona and dynamics of coronal mass ejections. The payload is developed by Indian Institute of Astrophysics, Bengaluru in close collaboration with ISRO. VELC is internally occulted solar coronagraph with simultaneous imaging, spectroscopy and spectro- polarimetry channels close to the solar limb, namely VELC CONT, VELC SPEC1, VELC SPEC2 and VELC IR. Solar Ultra -violet Imaging Telescope (SUIT) - to image the Solar Photosphere and Chromosphere in near Ultra -violet (UV) and, to measure the solar irradiance variations in near UV. The payload is developed by Inter University Centre for Astronomy and Astrophysics, Pune in close collaboration with ISRO. Solar Low Energy X -ray Spectrometer (SoLEX S) and High Energy L1 Orbiting X -ray Spectrometer (HEL1OS) - are designed to study the X-ray variability of the Sun over a wide X-ray energy range. Both these payloads are developed at U R Rao Satellite Centre, Bengaluru. Aditya Solar wind Particle Experiment (ASPEX) and Plasma Analyser Package for Aditya (PAPA) - payloads are designed to study the solar wind and energetic ions, as well as their energy distribution. ASPEX is developed at Physical Research Laboratory, Ahmedabad. ASPEX comprises two subsystems: SWIS and STEPS. PAPA is developed at Space Physics Laboratory, Vikram Sarabhai Space Centre, Thiruvananthapuram. Magnetometer (MAG) - payload is capable of measuring interplanetary magnetic fields at the L1 point. The payload is developed at Laboratory for Electro Optics Systems, Bengaluru in close collaboration with Space Physics Laboratory of VSSC. Based on original mission plan and the post PV phase observations, VELC SPEC1 and SUIT instruments are planned to be open under ALPPS for proposals by community users. Refer the detailed guide of these individual payloads available under Create Proposal section of ALPPS for specifics on the configurability. SoLEXS, HEL1OS, PAPA, MAG ASPEX SWIS and ASPEX STEPS are always operated in default mode and their science data products are available to public without any exclusive lock-in period. Each payload has their Payload Operations Centre (POC) defined which is responsible for maintenance of instrument throughout its life. They plan for timely calibration observations and configuration updates based on the payload performance evaluation. Additionally, POCs are also responsible for science product",
+      "gives confidence to handle future interplanetary missions. Aditya-L1 was designed and realised at UR Rao Satellite Centre (URSC) with participation from various ISRO centres. The payloads onboard Aditya-L1 were developed by Indian scientific laboratories, IIA, IUCAA and ISRO. The Aditya-L1 spacecraft was launched by PSLV-C57 on September 2, 2023 from SDSC SHAR, into an elliptical parking orbit (EPO) of 235.6 km by 19502.7 km. From here, Aditya-L1 embarked on an extraordinary journey towards the Sun-Earth-L1 Lagrange point, with the help of the onboard propulsion system, increased its orbital size progressively and moved toward L1 point. Five liquid engine burns (LEB) were executed during Earth orbit phase; gradually raised the apogee of the EPO in order to attain the desired trajectory with the fifth burn, known as the trans-L1 injection (TL1I) maneuver. The maneuver strategy is carefully devised to minimize incremental velocity addition (ΔV) for reaching the target L1 halo orbit while restricting the number of perigee passes to minimize the spacecraft's exposure to the high radiation Van Allen radiation belts. To address errors during, TL1I phase, a short burn of the engines, called TCM-1 was conducted on October 5, 2023, and another TCM-2 on December 14, 2023 to ensure compliance with Halo orbit insertion condition parameters. The spacecraft underwent a cruise phase lasting approximately 110 days to achieve the present condition prior to HOI targeted on January 6, 2024. All the payloads were tested during the pre-commissioning phase and performance of all the payload is confirmed to be satisfactory. The picture below shows the Halo orbit insertion process graphically in a two dimension picture. The Aditya-L1 spacecraft was moving from Earth towards the L1 point in the direction of Sun. The TCM1 &2 firing oriented the spacecraft toward the Halo Orbit, making it reach the HOI condition (which is a minimum fuel consumption condition) as on 6th January 2024 (Marked by the red dot). The final firing was done at this point, making the spacecraft align with the Halo Orbit. If the HOI manoeuvre was not conducted as done today, the spacecraft would have moved in the direction marked (Without HOI). Halo Orbit Insertion in L1 Rotating Frame function outsideAlert(url) { if (confirm(\"You will be directed to an external website. Are you sure that you want to proceed?\")) { window.open(url, '_blank'); } }"
+    ],
+    "structured_kg_evidence": "RELATIONAL EVIDENCE\nPATH path:aditya-payload-papa+aditya-papa-developed-by-vssc\nEntity: Aditya-L1\nRelation: HAS_PAYLOAD\nValue: Plasma Analyser Package For Aditya (PAPA)\nEntity: Plasma Analyser Package For Aditya (PAPA)\nRelation: DEVELOPED_BY\nValue: Vikram Sarabhai Space Centre (VSSC)\nSOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET\nSOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00011, ISSDC_ADITYA_BOOKLET::c00014\nSOURCE EVIDENCE:\n6 | Plasma Analyser Package For Aditya (PAPA) | Solar wind/Particle Analyzer Electrons & Heavier Ions with directions\nAditya Solar wind Particle EXperiment and Plasma Analyser\nPackage for Aditya payloads are designed to study the solar\nwind and energetic ions, as well as their energy distribution. ASPEX\nPAPA ASPEX is developed at Physical Research Laboratory, Ahmedabad.\nPAPA is developed at Space Physics Laboratory,\nVikram Sarabhai Space Centre, Thiruvananthapuram.\nPATH path:aditya-payload-hel1os+aditya-hel1os-developed-by-ursc\nEntity: Aditya-L1\nRelation: HAS_PAYLOAD\nValue: High Energy L1 Orbiting X-ray Spectrometer (HEL1OS)\nEntity: High Energy L1 Orbiting X-ray Spectrometer (HEL1OS)\nRelation: DEVELOPED_BY\nValue: U R Rao Satellite Centre (URSC)\nSOURCE: ISRO_ADITYA_OVERVIEW\nSOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00008\nSOURCE EVIDENCE:\n4 | High Energy L1 Orbiting X-ray Spectrometer(HEL1OS) | Hard X-ray spectrometer: Sun-as-a-star observation\nPATH path:aditya-payload-aspex+aditya-aspex-developed-by-prl\nEntity: Aditya-L1\nRelation: HAS_PAYLOAD\nValue: Aditya Solar wind Particle Experiment (ASPEX)\nEntity: Aditya Solar wind Particle Experiment (ASPEX)\nRelation: DEVELOPED_BY\nValue: Physical Research Laboratory (PRL)\nSOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET\nSOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00010, ISSDC_ADITYA_BOOKLET::c00014\nSOURCE EVIDENCE:\n5 | Aditya Solar wind Particle Experiment(ASPEX) | Solar wind/Particle Analyzer Protons & Heavier Ions with directions\nAditya Solar wind Particle EXperiment and Plasma Analyser\nPackage for Aditya payloads are designed to study the solar\nwind and energetic ions, as well as their energy distribution. ASPEX\nPAPA ASPEX is developed at Physical Research Laboratory, Ahmedabad.\nPAPA is developed at Space Physics Laboratory,\nVikram Sarabhai Space Centre, Thiruvananthapuram.\nPATH path:aditya-payload-solexs+aditya-solexs-developed-by-ursc\nEntity: Aditya-L1\nRelation: HAS_PAYLOAD\nValue: Solar Low Energy X-ray Spectrometer (SoLEXS)\nEntity: Solar Low Energy X-ray Spectrometer (SoLEXS)\nRelation: DEVELOPED_BY\nValue: U R Rao Satellite Centre (URSC)\nSOURCE: ISRO_ADITYA_OVERVIEW\nSOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00007\nSOURCE EVIDENCE:\n3 | Solar Low Energy X-ray Spectrometer (SoLEXS) | Soft X-ray spectrometer: Sun-as-a-star observation\nPATH path:aditya-payload-suit+aditya-suit-developed-by-iucaa\nEntity: Aditya-L1\nRelation: HAS_PAYLOAD\nValue: Solar Ultraviolet Imaging Telescope (SUIT)\nEntity: Solar Ultraviolet Imaging Telescope (SUIT)\nRelation: DEVELOPED_BY\nValue: Inter University Centre for Astronomy and Astrophysics (IUCAA)\nSOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET\nSOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00006, ISSDC_ADITYA_BOOKLET::c00012\nSOURCE EVIDENCE:\n2 | Solar Ultraviolet Imaging Telescope (SUIT) | Photosphere and Chromosphere Imaging- Narrow & Broadband\nMagnetometer payload is capable of measuring interplanetary\nmagnetic ﬁelds at the L1 point. The payload is developed at\nLaboratory for Electro Optics Systems, Bengaluru.\nSolar Ultra-violet Imaging Telescope to image the Solar\nPhotosphere and Chromosphere in near Ultra-violet (UV) and,\nto measure the solar irradiance variations in near UV . The payload\nis developed by Inter University Centre for Astronomy and\nAstrophysics, Pune in close collaboration with ISRO.\nPATH path:aditya-payload-mag+aditya-mag-developed-by-leos\nEntity: Aditya-L1\nRelation: HAS_PAYLOAD\nValue: Advanced Tri-axial High Resolution Digital Magnetometers\nEntity: Advanced Tri-axial High Resolution Digital Magnetometers\nRelation: DEVELOPED_BY\nValue: Laboratory for Electro-Optics Systems (LEOS)\nSOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET\nSOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00012, ISSDC_ADITYA_BOOKLET::c00012\nSOURCE EVIDENCE:\n7 | Advanced Tri-axial High Resolution Digital\nMagnetometers | In-situ magnetic field (Bx, By and Bz).\nMagnetometer payload is capable of measuring interplanetary\nmagnetic ﬁelds at the L1 point. The payload is developed at\nLaboratory for Electro Optics Systems, Bengaluru.\nSolar Ultra-violet Imaging Telescope to image the Solar\nPhotosphere and Chromosphere in near Ultra-violet (UV) and,\nto measure the solar irradiance variations in near UV . The payload\nis developed by Inter University Centre for Astronomy and\nAstrophysics, Pune in close collaboration with ISRO.\nPATH path:aditya-payload-velc+aditya-velc-developed-by-iia\nEntity: Aditya-L1\nRelation: HAS_PAYLOAD\nValue: Visible Emission Line Coronagraph (VELC)\nEntity: Visible Emission Line Coronagraph (VELC)\nRelation: DEVELOPED_BY\nValue: Indian Institute of Astrophysics (IIA)\nSOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET\nSOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00005, ISSDC_ADITYA_BOOKLET::c00013\nSOURCE EVIDENCE:\nTable columns — Type: Remote\nSensing Payloads | Sl. No.: 1 | Payload: Visible Emission Line Coronagraph(VELC) | Capability: Corona/Imaging & Spectroscopy\nVisible Emission Line Coronagraph is designed to study solar\ncorona and dynamics of coronal mass ejections. The payload is\ndeveloped by Indian Institute of Astrophysics, Bengaluru in\nclose collaboration with ISRO.\nPATH path:aditya-launch-site\nEntity: Aditya-L1\nRelation: LAUNCHED_FROM\nValue: Satish Dhawan Space Centre SHAR, Sriharikota\nSOURCE: ISRO_LAUNCH_ARCHIVE\nSOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00015\nSOURCE EVIDENCE:\n94 | PSLV-C57/Aditya-L1\nMission | Sep 02, 2023 | PSLV-XL | Aditya-L1 payloads\nPATH path:aditya-payload-hel1os+aditya-hel1os-observes-sun\nEntity: Aditya-L1\nRelation: HAS_PAYLOAD\nValue: High Energy L1 Orbiting X-ray Spectrometer (HEL1OS)\nEntity: High Energy L1 Orbiting X-ray Spectrometer (HEL1OS)\nRelation: OBSERVES\nValue: Sun\nSOURCE: ISRO_ADITYA_OVERVIEW\nSOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00008\nSOURCE EVIDENCE:\n4 | High Energy L1 Orbiting X-ray Spectrometer(HEL1OS) | Hard X-ray spectrometer: Sun-as-a-star observation\nPATH path:aditya-launcher\nEntity: Aditya-L1\nRelation: LAUNCHED_BY\nValue: PSLV-C57 (PSLV-XL)\nSOURCE: ISRO_LAUNCH_ARCHIVE\nSOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00015\nSOURCE EVIDENCE:\n94 | PSLV-C57/Aditya-L1\nMission | Sep 02, 2023 | PSLV-XL | Aditya-L1 payloads",
+    "final_fused_context": "RELATIONAL EVIDENCE PATH path:aditya-payload-papa+aditya-papa-developed-by-vssc Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: Plasma Analyser Package For Aditya (PAPA) Entity: Plasma Analyser Package For Aditya (PAPA) Relation: DEVELOPED_BY Value: Vikram Sarabhai Space Centre (VSSC) SOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00011, ISSDC_ADITYA_BOOKLET::c00014 SOURCE EVIDENCE: 6 | Plasma Analyser Package For Aditya (PAPA) | Solar wind/Particle Analyzer Electrons & Heavier Ions with directions Aditya Solar wind Particle EXperiment and Plasma Analyser Package for Aditya payloads are designed to study the solar wind and energetic ions, as well as their energy distribution. ASPEX PAPA ASPEX is developed at Physical Research Laboratory, Ahmedabad. PAPA is developed at Space Physics Laboratory, Vikram Sarabhai Space Centre, Thiruvananthapuram. PATH path:aditya-payload-hel1os+aditya-hel1os-developed-by-ursc Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: High Energy L1 Orbiting X-ray Spectrometer (HEL1OS) Entity: High Energy L1 Orbiting X-ray Spectrometer (HEL1OS) Relation: DEVELOPED_BY Value: U R Rao Satellite Centre (URSC) SOURCE: ISRO_ADITYA_OVERVIEW SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00008 SOURCE EVIDENCE: 4 | High Energy L1 Orbiting X-ray Spectrometer(HEL1OS) | Hard X-ray spectrometer: Sun-as-a-star observation PATH path:aditya-payload-aspex+aditya-aspex-developed-by-prl Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: Aditya Solar wind Particle Experiment (ASPEX) Entity: Aditya Solar wind Particle Experiment (ASPEX) Relation: DEVELOPED_BY Value: Physical Research Laboratory (PRL) SOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00010, ISSDC_ADITYA_BOOKLET::c00014 SOURCE EVIDENCE: 5 | Aditya Solar wind Particle Experiment(ASPEX) | Solar wind/Particle Analyzer Protons & Heavier Ions with directions Aditya Solar wind Particle EXperiment and Plasma Analyser Package for Aditya payloads are designed to study the solar wind and energetic ions, as well as their energy distribution. ASPEX PAPA ASPEX is developed at Physical Research Laboratory, Ahmedabad. PAPA is developed at Space Physics Laboratory, Vikram Sarabhai Space Centre, Thiruvananthapuram. PATH path:aditya-payload-solexs+aditya-solexs-developed-by-ursc Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: Solar Low Energy X-ray Spectrometer (SoLEXS) Entity: Solar Low Energy X-ray Spectrometer (SoLEXS) Relation: DEVELOPED_BY Value: U R Rao Satellite Centre (URSC) SOURCE: ISRO_ADITYA_OVERVIEW SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00007 SOURCE EVIDENCE: 3 | Solar Low Energy X-ray Spectrometer (SoLEXS) | Soft X-ray spectrometer: Sun-as-a-star observation PATH path:aditya-payload-suit+aditya-suit-developed-by-iucaa Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: Solar Ultraviolet Imaging Telescope (SUIT) Entity: Solar Ultraviolet Imaging Telescope (SUIT) Relation: DEVELOPED_BY Value: Inter University Centre for Astronomy and Astrophysics (IUCAA) SOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00006, ISSDC_ADITYA_BOOKLET::c00012 SOURCE EVIDENCE: 2 | Solar Ultraviolet Imaging Telescope (SUIT) | Photosphere and Chromosphere Imaging- Narrow & Broadband Magnetometer payload is capable of measuring interplanetary magnetic ﬁelds at the L1 point. The payload is developed at Laboratory for Electro Optics Systems, Bengaluru. Solar Ultra-violet Imaging Telescope to image the Solar Photosphere and Chromosphere in near Ultra-violet (UV) and, to measure the solar irradiance variations in near UV . The payload is developed by Inter University Centre for Astronomy and Astrophysics, Pune in close collaboration with ISRO. PATH path:aditya-payload-mag+aditya-mag-developed-by-leos Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: Advanced Tri-axial High Resolution Digital Magnetometers Entity: Advanced Tri-axial High Resolution Digital Magnetometers Relation: DEVELOPED_BY Value: Laboratory for Electro-Optics Systems (LEOS) SOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00012, ISSDC_ADITYA_BOOKLET::c00012 SOURCE EVIDENCE: 7 | Advanced Tri-axial High Resolution Digital Magnetometers | In-situ magnetic field (Bx, By and Bz). Magnetometer payload is capable of measuring interplanetary magnetic ﬁelds at the L1 point. The payload is developed at Laboratory for Electro Optics Systems, Bengaluru. Solar Ultra-violet Imaging Telescope to image the Solar Photosphere and Chromosphere in near Ultra-violet (UV) and, to measure the solar irradiance variations in near UV . The payload is developed by Inter University Centre for Astronomy and Astrophysics, Pune in close collaboration with ISRO. PATH path:aditya-payload-velc+aditya-velc-developed-by-iia Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: Visible Emission Line Coronagraph (VELC) Entity: Visible Emission Line Coronagraph (VELC) Relation: DEVELOPED_BY Value: Indian Institute of Astrophysics (IIA) SOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00005, ISSDC_ADITYA_BOOKLET::c00013 SOURCE EVIDENCE: Table columns — Type: Remote Sensing Payloads | Sl. No.: 1 | Payload: Visible Emission Line Coronagraph(VELC) | Capability: Corona/Imaging & Spectroscopy Visible Emission Line Coronagraph is designed to study solar corona and dynamics of coronal mass ejections. The payload is developed by Indian Institute of Astrophysics, Bengaluru in close collaboration with ISRO. PATH path:aditya-launch-site Entity: Aditya-L1 Relation: LAUNCHED_FROM Value: Satish Dhawan Space Centre SHAR, Sriharikota SOURCE: ISRO_LAUNCH_ARCHIVE SOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00015 SOURCE EVIDENCE: 94 | PSLV-C57/Aditya-L1 Mission | Sep 02, 2023 | PSLV-XL | Aditya-L1 payloads PATH path:aditya-payload-hel1os+aditya-hel1os-observes-sun Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: High Energy L1 Orbiting X-ray Spectrometer (HEL1OS) Entity: High Energy L1 Orbiting X-ray Spectrometer (HEL1OS) Relation: OBSERVES Value: Sun SOURCE: ISRO_ADITYA_OVERVIEW SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00008 SOURCE EVIDENCE: 4 | High Energy L1 Orbiting X-ray Spectrometer(HEL1OS) | Hard X-ray spectrometer: Sun-as-a-star observation PATH path:aditya-launcher Entity: Aditya-L1 Relation: LAUNCHED_BY Value: PSLV-C57 (PSLV-XL) SOURCE: ISRO_LAUNCH_ARCHIVE SOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00015 SOURCE EVIDENCE: 94 | PSLV-C57/Aditya-L1 Mission | Sep 02, 2023 | PSLV-XL | Aditya-L1 payloads RETRIEVED DOCUMENT EVIDENCE # Source: https://www.isro.gov.in/mission_prarambh.html Mission Prarambh Mission Prarambh Home Nov 18, 2022 The launch of Vikram-S, a suborbital launch vehicle from M/s Skyroot Aerospace Pvt. Ltd., Hyderabad, was accomplished successfully on November 18, 2022, at 11:30 am IST from the sounding rocket launch complex at Satish Dhawan Space Centre, Sriharikota. It marks the first launch of a launch vehicle built by a private company in India. The mission was authorized by IN-SPACe. The launcher reached an altitude of about 89.5 km in 155 seconds, as planned. This sounding rocket carried three payloads. Minister of State Dr. Jitendra Singh and Chairman, IN-SPACe congratulated Skyroot for the accomplishment and thanked ISRO for the able support provided. More Details VIKRAM-S PRARAMBH Skyroot Gallery More Details VIKRAM-S PRARAMBH Skyroot Gallery Document ID: ADITYA_L1_ALPPS_V1 Title: Aditya-L1 Proposal Processing System (ALPPS) User Guide Mission: Aditya-L1 Organization: ALPPS/ISRO Document Type: user guide Source URL: https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf Page: 10 Section: PDF page 10 Authority: AUTHORITATIVE CORE: ALPPS/ISRO --- 7 Payloads, Configurability and Payload Operation Centre (POC) Aditya-L1 was launched on 23rd September 2023 and reached the Sun-Earth L1 orbit on 6th Jan 2024. All payload performance verifications were carried out and started the science operations from July 1 st 2024. Aditya-L1 has seven payloads which are briefly introduced below: Visible Emission Line Coronagraph (VELC) - is designed to study solar corona and dynamics of coronal mass ejections. The payload is developed by Indian Institute of Astrophysics, Bengaluru in close collaboration with ISRO. VELC is internally occulted solar coronagraph with simultaneous imaging, spectroscopy and spectro- polarimetry channels close to the solar limb, namely VELC CONT, VELC SPEC1, VELC SPEC2 and VELC IR. Solar Ultra -violet Imaging Telescope (SUIT) - to image the Solar Photosphere and Chromosphere in near Ultra -violet (UV) and, to measure the solar irradiance variations in near UV. The payload is developed by Inter University Centre for Astronomy and Astrophysics, Pune in close collaboration with ISRO. Solar Low Energy X -ray Spectrometer (SoLEX S) and High Energy L1 Orbiting X -ray Spectrometer (HEL1OS) - are designed to study the X-ray variability of the Sun over a wide X-ray energy range. Both these payloads are developed at U R Rao Satellite Centre, Bengaluru. Aditya Solar wind Particle Experiment (ASPEX) and Plasma Analyser Package for Aditya (PAPA) - payloads are designed to study the solar wind and energetic ions, as well as their energy distribution. ASPEX is developed at Physical Research Laboratory, Ahmedabad. ASPEX comprises two subsystems: SWIS and STEPS. PAPA is developed at Space Physics Laboratory, Vikram Sarabhai Space Centre, Thiruvananthapuram. Magnetometer (MAG) - payload is capable of measuring interplanetary magnetic fields at the L1 point. The payload is developed at Laboratory for Electro Optics Systems, Bengaluru in close collaboration with Space Physics Laboratory of VSSC. Based on original mission plan and the post PV phase observations, VELC SPEC1 and SUIT instruments are planned to be open under ALPPS for proposals by community users. Refer the detailed guide of these individual payloads available under Create Proposal section of ALPPS for specifics on the configurability. SoLEXS, HEL1OS, PAPA, MAG ASPEX SWIS and ASPEX STEPS are always operated in default mode and their science data products are available to public without any exclusive lock-in period. Each payload has their Payload Operations Centre (POC) defined which is responsible for maintenance of instrument throughout its life. They plan for timely calibration observations and configuration updates based on the payload performance evaluation. Additionally, POCs are also responsible for science product gives confidence to handle future interplanetary missions. Aditya-L1 was designed and realised at UR Rao Satellite Centre (URSC) with participation from various ISRO centres. The payloads onboard Aditya-L1 were developed by Indian scientific laboratories, IIA, IUCAA and ISRO. The Aditya-L1 spacecraft was launched by PSLV-C57 on September 2, 2023 from SDSC SHAR, into an elliptical parking orbit (EPO) of 235.6 km by 19502.7 km. From here, Aditya-L1 embarked on an extraordinary journey towards the Sun-Earth-L1 Lagrange point, with the help of the onboard propulsion system, increased its orbital size progressively and moved toward L1 point. Five liquid engine burns (LEB) were executed during Earth orbit phase; gradually raised the apogee of the EPO in order to attain the desired trajectory with the fifth burn, known as the trans-L1 injection (TL1I) maneuver. The maneuver strategy is carefully devised to minimize incremental velocity addition (ΔV) for reaching the target L1 halo orbit while restricting the number of perigee passes to minimize the spacecraft's exposure to the high radiation Van Allen radiation belts.",
+    "retrieved_chunk_ids": [
+      "27338",
+      "10",
+      "444"
+    ],
+    "context_token_estimate": 1500,
+    "final_prompt": "CONTEXT:\nRELATIONAL EVIDENCE PATH path:aditya-payload-papa+aditya-papa-developed-by-vssc Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: Plasma Analyser Package For Aditya (PAPA) Entity: Plasma Analyser Package For Aditya (PAPA) Relation: DEVELOPED_BY Value: Vikram Sarabhai Space Centre (VSSC) SOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00011, ISSDC_ADITYA_BOOKLET::c00014 SOURCE EVIDENCE: 6 | Plasma Analyser Package For Aditya (PAPA) | Solar wind/Particle Analyzer Electrons & Heavier Ions with directions Aditya Solar wind Particle EXperiment and Plasma Analyser Package for Aditya payloads are designed to study the solar wind and energetic ions, as well as their energy distribution. ASPEX PAPA ASPEX is developed at Physical Research Laboratory, Ahmedabad. PAPA is developed at Space Physics Laboratory, Vikram Sarabhai Space Centre, Thiruvananthapuram. PATH path:aditya-payload-hel1os+aditya-hel1os-developed-by-ursc Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: High Energy L1 Orbiting X-ray Spectrometer (HEL1OS) Entity: High Energy L1 Orbiting X-ray Spectrometer (HEL1OS) Relation: DEVELOPED_BY Value: U R Rao Satellite Centre (URSC) SOURCE: ISRO_ADITYA_OVERVIEW SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00008 SOURCE EVIDENCE: 4 | High Energy L1 Orbiting X-ray Spectrometer(HEL1OS) | Hard X-ray spectrometer: Sun-as-a-star observation PATH path:aditya-payload-aspex+aditya-aspex-developed-by-prl Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: Aditya Solar wind Particle Experiment (ASPEX) Entity: Aditya Solar wind Particle Experiment (ASPEX) Relation: DEVELOPED_BY Value: Physical Research Laboratory (PRL) SOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00010, ISSDC_ADITYA_BOOKLET::c00014 SOURCE EVIDENCE: 5 | Aditya Solar wind Particle Experiment(ASPEX) | Solar wind/Particle Analyzer Protons & Heavier Ions with directions Aditya Solar wind Particle EXperiment and Plasma Analyser Package for Aditya payloads are designed to study the solar wind and energetic ions, as well as their energy distribution. ASPEX PAPA ASPEX is developed at Physical Research Laboratory, Ahmedabad. PAPA is developed at Space Physics Laboratory, Vikram Sarabhai Space Centre, Thiruvananthapuram. PATH path:aditya-payload-solexs+aditya-solexs-developed-by-ursc Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: Solar Low Energy X-ray Spectrometer (SoLEXS) Entity: Solar Low Energy X-ray Spectrometer (SoLEXS) Relation: DEVELOPED_BY Value: U R Rao Satellite Centre (URSC) SOURCE: ISRO_ADITYA_OVERVIEW SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00007 SOURCE EVIDENCE: 3 | Solar Low Energy X-ray Spectrometer (SoLEXS) | Soft X-ray spectrometer: Sun-as-a-star observation PATH path:aditya-payload-suit+aditya-suit-developed-by-iucaa Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: Solar Ultraviolet Imaging Telescope (SUIT) Entity: Solar Ultraviolet Imaging Telescope (SUIT) Relation: DEVELOPED_BY Value: Inter University Centre for Astronomy and Astrophysics (IUCAA) SOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00006, ISSDC_ADITYA_BOOKLET::c00012 SOURCE EVIDENCE: 2 | Solar Ultraviolet Imaging Telescope (SUIT) | Photosphere and Chromosphere Imaging- Narrow & Broadband Magnetometer payload is capable of measuring interplanetary magnetic ﬁelds at the L1 point. The payload is developed at Laboratory for Electro Optics Systems, Bengaluru. Solar Ultra-violet Imaging Telescope to image the Solar Photosphere and Chromosphere in near Ultra-violet (UV) and, to measure the solar irradiance variations in near UV . The payload is developed by Inter University Centre for Astronomy and Astrophysics, Pune in close collaboration with ISRO. PATH path:aditya-payload-mag+aditya-mag-developed-by-leos Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: Advanced Tri-axial High Resolution Digital Magnetometers Entity: Advanced Tri-axial High Resolution Digital Magnetometers Relation: DEVELOPED_BY Value: Laboratory for Electro-Optics Systems (LEOS) SOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00012, ISSDC_ADITYA_BOOKLET::c00012 SOURCE EVIDENCE: 7 | Advanced Tri-axial High Resolution Digital Magnetometers | In-situ magnetic field (Bx, By and Bz). Magnetometer payload is capable of measuring interplanetary magnetic ﬁelds at the L1 point. The payload is developed at Laboratory for Electro Optics Systems, Bengaluru. Solar Ultra-violet Imaging Telescope to image the Solar Photosphere and Chromosphere in near Ultra-violet (UV) and, to measure the solar irradiance variations in near UV . The payload is developed by Inter University Centre for Astronomy and Astrophysics, Pune in close collaboration with ISRO. PATH path:aditya-payload-velc+aditya-velc-developed-by-iia Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: Visible Emission Line Coronagraph (VELC) Entity: Visible Emission Line Coronagraph (VELC) Relation: DEVELOPED_BY Value: Indian Institute of Astrophysics (IIA) SOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00005, ISSDC_ADITYA_BOOKLET::c00013 SOURCE EVIDENCE: Table columns — Type: Remote Sensing Payloads | Sl. No.: 1 | Payload: Visible Emission Line Coronagraph(VELC) | Capability: Corona/Imaging & Spectroscopy Visible Emission Line Coronagraph is designed to study solar corona and dynamics of coronal mass ejections. The payload is developed by Indian Institute of Astrophysics, Bengaluru in close collaboration with ISRO. PATH path:aditya-launch-site Entity: Aditya-L1 Relation: LAUNCHED_FROM Value: Satish Dhawan Space Centre SHAR, Sriharikota SOURCE: ISRO_LAUNCH_ARCHIVE SOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00015 SOURCE EVIDENCE: 94 | PSLV-C57/Aditya-L1 Mission | Sep 02, 2023 | PSLV-XL | Aditya-L1 payloads PATH path:aditya-payload-hel1os+aditya-hel1os-observes-sun Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: High Energy L1 Orbiting X-ray Spectrometer (HEL1OS) Entity: High Energy L1 Orbiting X-ray Spectrometer (HEL1OS) Relation: OBSERVES Value: Sun SOURCE: ISRO_ADITYA_OVERVIEW SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00008 SOURCE EVIDENCE: 4 | High Energy L1 Orbiting X-ray Spectrometer(HEL1OS) | Hard X-ray spectrometer: Sun-as-a-star observation PATH path:aditya-launcher Entity: Aditya-L1 Relation: LAUNCHED_BY Value: PSLV-C57 (PSLV-XL) SOURCE: ISRO_LAUNCH_ARCHIVE SOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00015 SOURCE EVIDENCE: 94 | PSLV-C57/Aditya-L1 Mission | Sep 02, 2023 | PSLV-XL | Aditya-L1 payloads RETRIEVED DOCUMENT EVIDENCE # Source: https://www.isro.gov.in/mission_prarambh.html Mission Prarambh Mission Prarambh Home Nov 18, 2022 The launch of Vikram-S, a suborbital launch vehicle from M/s Skyroot Aerospace Pvt. Ltd., Hyderabad, was accomplished successfully on November 18, 2022, at 11:30 am IST from the sounding rocket launch complex at Satish Dhawan Space Centre, Sriharikota. It marks the first launch of a launch vehicle built by a private company in India. The mission was authorized by IN-SPACe. The launcher reached an altitude of about 89.5 km in 155 seconds, as planned. This sounding rocket carried three payloads. Minister of State Dr. Jitendra Singh and Chairman, IN-SPACe congratulated Skyroot for the accomplishment and thanked ISRO for the able support provided. More Details VIKRAM-S PRARAMBH Skyroot Gallery More Details VIKRAM-S PRARAMBH Skyroot Gallery Document ID: ADITYA_L1_ALPPS_V1 Title: Aditya-L1 Proposal Processing System (ALPPS) User Guide Mission: Aditya-L1 Organization: ALPPS/ISRO Document Type: user guide Source URL: https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf Page: 10 Section: PDF page 10 Authority: AUTHORITATIVE CORE: ALPPS/ISRO --- 7 Payloads, Configurability and Payload Operation Centre (POC) Aditya-L1 was launched on 23rd September 2023 and reached the Sun-Earth L1 orbit on 6th Jan 2024. All payload performance verifications were carried out and started the science operations from July 1 st 2024. Aditya-L1 has seven payloads which are briefly introduced below: Visible Emission Line Coronagraph (VELC) - is designed to study solar corona and dynamics of coronal mass ejections. The payload is developed by Indian Institute of Astrophysics, Bengaluru in close collaboration with ISRO. VELC is internally occulted solar coronagraph with simultaneous imaging, spectroscopy and spectro- polarimetry channels close to the solar limb, namely VELC CONT, VELC SPEC1, VELC SPEC2 and VELC IR. Solar Ultra -violet Imaging Telescope (SUIT) - to image the Solar Photosphere and Chromosphere in near Ultra -violet (UV) and, to measure the solar irradiance variations in near UV. The payload is developed by Inter University Centre for Astronomy and Astrophysics, Pune in close collaboration with ISRO. Solar Low Energy X -ray Spectrometer (SoLEX S) and High Energy L1 Orbiting X -ray Spectrometer (HEL1OS) - are designed to study the X-ray variability of the Sun over a wide X-ray energy range. Both these payloads are developed at U R Rao Satellite Centre, Bengaluru. Aditya Solar wind Particle Experiment (ASPEX) and Plasma Analyser Package for Aditya (PAPA) - payloads are designed to study the solar wind and energetic ions, as well as their energy distribution. ASPEX is developed at Physical Research Laboratory, Ahmedabad. ASPEX comprises two subsystems: SWIS and STEPS. PAPA is developed at Space Physics Laboratory, Vikram Sarabhai Space Centre, Thiruvananthapuram. Magnetometer (MAG) - payload is capable of measuring interplanetary magnetic fields at the L1 point. The payload is developed at Laboratory for Electro Optics Systems, Bengaluru in close collaboration with Space Physics Laboratory of VSSC. Based on original mission plan and the post PV phase observations, VELC SPEC1 and SUIT instruments are planned to be open under ALPPS for proposals by community users. Refer the detailed guide of these individual payloads available under Create Proposal section of ALPPS for specifics on the configurability. SoLEXS, HEL1OS, PAPA, MAG ASPEX SWIS and ASPEX STEPS are always operated in default mode and their science data products are available to public without any exclusive lock-in period. Each payload has their Payload Operations Centre (POC) defined which is responsible for maintenance of instrument throughout its life. They plan for timely calibration observations and configuration updates based on the payload performance evaluation. Additionally, POCs are also responsible for science product gives confidence to handle future interplanetary missions. Aditya-L1 was designed and realised at UR Rao Satellite Centre (URSC) with participation from various ISRO centres. The payloads onboard Aditya-L1 were developed by Indian scientific laboratories, IIA, IUCAA and ISRO. The Aditya-L1 spacecraft was launched by PSLV-C57 on September 2, 2023 from SDSC SHAR, into an elliptical parking orbit (EPO) of 235.6 km by 19502.7 km. From here, Aditya-L1 embarked on an extraordinary journey towards the Sun-Earth-L1 Lagrange point, with the help of the onboard propulsion system, increased its orbital size progressively and moved toward L1 point. Five liquid engine burns (LEB) were executed during Earth orbit phase; gradually raised the apogee of the EPO in order to attain the desired trajectory with the fifth burn, known as the trans-L1 injection (TL1I) maneuver. The maneuver strategy is carefully devised to minimize incremental velocity addition (ΔV) for reaching the target L1 halo orbit while restricting the number of perigee passes to minimize the spacecraft's exposure to the high radiation Van Allen radiation belts.\n\nQUESTION:\nWhich Aditya-L1 payload was developed by Vikram Sarabhai Space Centre?\n\nANSWER (based only on the context above):",
+    "final_context": "RELATIONAL EVIDENCE PATH path:aditya-payload-papa+aditya-papa-developed-by-vssc Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: Plasma Analyser Package For Aditya (PAPA) Entity: Plasma Analyser Package For Aditya (PAPA) Relation: DEVELOPED_BY Value: Vikram Sarabhai Space Centre (VSSC) SOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00011, ISSDC_ADITYA_BOOKLET::c00014 SOURCE EVIDENCE: 6 | Plasma Analyser Package For Aditya (PAPA) | Solar wind/Particle Analyzer Electrons & Heavier Ions with directions Aditya Solar wind Particle EXperiment and Plasma Analyser Package for Aditya payloads are designed to study the solar wind and energetic ions, as well as their energy distribution. ASPEX PAPA ASPEX is developed at Physical Research Laboratory, Ahmedabad. PAPA is developed at Space Physics Laboratory, Vikram Sarabhai Space Centre, Thiruvananthapuram. PATH path:aditya-payload-hel1os+aditya-hel1os-developed-by-ursc Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: High Energy L1 Orbiting X-ray Spectrometer (HEL1OS) Entity: High Energy L1 Orbiting X-ray Spectrometer (HEL1OS) Relation: DEVELOPED_BY Value: U R Rao Satellite Centre (URSC) SOURCE: ISRO_ADITYA_OVERVIEW SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00008 SOURCE EVIDENCE: 4 | High Energy L1 Orbiting X-ray Spectrometer(HEL1OS) | Hard X-ray spectrometer: Sun-as-a-star observation PATH path:aditya-payload-aspex+aditya-aspex-developed-by-prl Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: Aditya Solar wind Particle Experiment (ASPEX) Entity: Aditya Solar wind Particle Experiment (ASPEX) Relation: DEVELOPED_BY Value: Physical Research Laboratory (PRL) SOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00010, ISSDC_ADITYA_BOOKLET::c00014 SOURCE EVIDENCE: 5 | Aditya Solar wind Particle Experiment(ASPEX) | Solar wind/Particle Analyzer Protons & Heavier Ions with directions Aditya Solar wind Particle EXperiment and Plasma Analyser Package for Aditya payloads are designed to study the solar wind and energetic ions, as well as their energy distribution. ASPEX PAPA ASPEX is developed at Physical Research Laboratory, Ahmedabad. PAPA is developed at Space Physics Laboratory, Vikram Sarabhai Space Centre, Thiruvananthapuram. PATH path:aditya-payload-solexs+aditya-solexs-developed-by-ursc Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: Solar Low Energy X-ray Spectrometer (SoLEXS) Entity: Solar Low Energy X-ray Spectrometer (SoLEXS) Relation: DEVELOPED_BY Value: U R Rao Satellite Centre (URSC) SOURCE: ISRO_ADITYA_OVERVIEW SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00007 SOURCE EVIDENCE: 3 | Solar Low Energy X-ray Spectrometer (SoLEXS) | Soft X-ray spectrometer: Sun-as-a-star observation PATH path:aditya-payload-suit+aditya-suit-developed-by-iucaa Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: Solar Ultraviolet Imaging Telescope (SUIT) Entity: Solar Ultraviolet Imaging Telescope (SUIT) Relation: DEVELOPED_BY Value: Inter University Centre for Astronomy and Astrophysics (IUCAA) SOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00006, ISSDC_ADITYA_BOOKLET::c00012 SOURCE EVIDENCE: 2 | Solar Ultraviolet Imaging Telescope (SUIT) | Photosphere and Chromosphere Imaging- Narrow & Broadband Magnetometer payload is capable of measuring interplanetary magnetic ﬁelds at the L1 point. The payload is developed at Laboratory for Electro Optics Systems, Bengaluru. Solar Ultra-violet Imaging Telescope to image the Solar Photosphere and Chromosphere in near Ultra-violet (UV) and, to measure the solar irradiance variations in near UV . The payload is developed by Inter University Centre for Astronomy and Astrophysics, Pune in close collaboration with ISRO. PATH path:aditya-payload-mag+aditya-mag-developed-by-leos Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: Advanced Tri-axial High Resolution Digital Magnetometers Entity: Advanced Tri-axial High Resolution Digital Magnetometers Relation: DEVELOPED_BY Value: Laboratory for Electro-Optics Systems (LEOS) SOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00012, ISSDC_ADITYA_BOOKLET::c00012 SOURCE EVIDENCE: 7 | Advanced Tri-axial High Resolution Digital Magnetometers | In-situ magnetic field (Bx, By and Bz). Magnetometer payload is capable of measuring interplanetary magnetic ﬁelds at the L1 point. The payload is developed at Laboratory for Electro Optics Systems, Bengaluru. Solar Ultra-violet Imaging Telescope to image the Solar Photosphere and Chromosphere in near Ultra-violet (UV) and, to measure the solar irradiance variations in near UV . The payload is developed by Inter University Centre for Astronomy and Astrophysics, Pune in close collaboration with ISRO. PATH path:aditya-payload-velc+aditya-velc-developed-by-iia Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: Visible Emission Line Coronagraph (VELC) Entity: Visible Emission Line Coronagraph (VELC) Relation: DEVELOPED_BY Value: Indian Institute of Astrophysics (IIA) SOURCE: ISRO_ADITYA_OVERVIEW, ISSDC_ADITYA_BOOKLET SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00005, ISSDC_ADITYA_BOOKLET::c00013 SOURCE EVIDENCE: Table columns — Type: Remote Sensing Payloads | Sl. No.: 1 | Payload: Visible Emission Line Coronagraph(VELC) | Capability: Corona/Imaging & Spectroscopy Visible Emission Line Coronagraph is designed to study solar corona and dynamics of coronal mass ejections. The payload is developed by Indian Institute of Astrophysics, Bengaluru in close collaboration with ISRO. PATH path:aditya-launch-site Entity: Aditya-L1 Relation: LAUNCHED_FROM Value: Satish Dhawan Space Centre SHAR, Sriharikota SOURCE: ISRO_LAUNCH_ARCHIVE SOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00015 SOURCE EVIDENCE: 94 | PSLV-C57/Aditya-L1 Mission | Sep 02, 2023 | PSLV-XL | Aditya-L1 payloads PATH path:aditya-payload-hel1os+aditya-hel1os-observes-sun Entity: Aditya-L1 Relation: HAS_PAYLOAD Value: High Energy L1 Orbiting X-ray Spectrometer (HEL1OS) Entity: High Energy L1 Orbiting X-ray Spectrometer (HEL1OS) Relation: OBSERVES Value: Sun SOURCE: ISRO_ADITYA_OVERVIEW SOURCE CHUNKS: ISRO_ADITYA_OVERVIEW::c00008 SOURCE EVIDENCE: 4 | High Energy L1 Orbiting X-ray Spectrometer(HEL1OS) | Hard X-ray spectrometer: Sun-as-a-star observation PATH path:aditya-launcher Entity: Aditya-L1 Relation: LAUNCHED_BY Value: PSLV-C57 (PSLV-XL) SOURCE: ISRO_LAUNCH_ARCHIVE SOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00015 SOURCE EVIDENCE: 94 | PSLV-C57/Aditya-L1 Mission | Sep 02, 2023 | PSLV-XL | Aditya-L1 payloads RETRIEVED DOCUMENT EVIDENCE # Source: https://www.isro.gov.in/mission_prarambh.html Mission Prarambh Mission Prarambh Home Nov 18, 2022 The launch of Vikram-S, a suborbital launch vehicle from M/s Skyroot Aerospace Pvt. Ltd., Hyderabad, was accomplished successfully on November 18, 2022, at 11:30 am IST from the sounding rocket launch complex at Satish Dhawan Space Centre, Sriharikota. It marks the first launch of a launch vehicle built by a private company in India. The mission was authorized by IN-SPACe. The launcher reached an altitude of about 89.5 km in 155 seconds, as planned. This sounding rocket carried three payloads. Minister of State Dr. Jitendra Singh and Chairman, IN-SPACe congratulated Skyroot for the accomplishment and thanked ISRO for the able support provided. More Details VIKRAM-S PRARAMBH Skyroot Gallery More Details VIKRAM-S PRARAMBH Skyroot Gallery Document ID: ADITYA_L1_ALPPS_V1 Title: Aditya-L1 Proposal Processing System (ALPPS) User Guide Mission: Aditya-L1 Organization: ALPPS/ISRO Document Type: user guide Source URL: https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf Page: 10 Section: PDF page 10 Authority: AUTHORITATIVE CORE: ALPPS/ISRO --- 7 Payloads, Configurability and Payload Operation Centre (POC) Aditya-L1 was launched on 23rd September 2023 and reached the Sun-Earth L1 orbit on 6th Jan 2024. All payload performance verifications were carried out and started the science operations from July 1 st 2024. Aditya-L1 has seven payloads which are briefly introduced below: Visible Emission Line Coronagraph (VELC) - is designed to study solar corona and dynamics of coronal mass ejections. The payload is developed by Indian Institute of Astrophysics, Bengaluru in close collaboration with ISRO. VELC is internally occulted solar coronagraph with simultaneous imaging, spectroscopy and spectro- polarimetry channels close to the solar limb, namely VELC CONT, VELC SPEC1, VELC SPEC2 and VELC IR. Solar Ultra -violet Imaging Telescope (SUIT) - to image the Solar Photosphere and Chromosphere in near Ultra -violet (UV) and, to measure the solar irradiance variations in near UV. The payload is developed by Inter University Centre for Astronomy and Astrophysics, Pune in close collaboration with ISRO. Solar Low Energy X -ray Spectrometer (SoLEX S) and High Energy L1 Orbiting X -ray Spectrometer (HEL1OS) - are designed to study the X-ray variability of the Sun over a wide X-ray energy range. Both these payloads are developed at U R Rao Satellite Centre, Bengaluru. Aditya Solar wind Particle Experiment (ASPEX) and Plasma Analyser Package for Aditya (PAPA) - payloads are designed to study the solar wind and energetic ions, as well as their energy distribution. ASPEX is developed at Physical Research Laboratory, Ahmedabad. ASPEX comprises two subsystems: SWIS and STEPS. PAPA is developed at Space Physics Laboratory, Vikram Sarabhai Space Centre, Thiruvananthapuram. Magnetometer (MAG) - payload is capable of measuring interplanetary magnetic fields at the L1 point. The payload is developed at Laboratory for Electro Optics Systems, Bengaluru in close collaboration with Space Physics Laboratory of VSSC. Based on original mission plan and the post PV phase observations, VELC SPEC1 and SUIT instruments are planned to be open under ALPPS for proposals by community users. Refer the detailed guide of these individual payloads available under Create Proposal section of ALPPS for specifics on the configurability. SoLEXS, HEL1OS, PAPA, MAG ASPEX SWIS and ASPEX STEPS are always operated in default mode and their science data products are available to public without any exclusive lock-in period. Each payload has their Payload Operations Centre (POC) defined which is responsible for maintenance of instrument throughout its life. They plan for timely calibration observations and configuration updates based on the payload performance evaluation. Additionally, POCs are also responsible for science product gives confidence to handle future interplanetary missions. Aditya-L1 was designed and realised at UR Rao Satellite Centre (URSC) with participation from various ISRO centres. The payloads onboard Aditya-L1 were developed by Indian scientific laboratories, IIA, IUCAA and ISRO. The Aditya-L1 spacecraft was launched by PSLV-C57 on September 2, 2023 from SDSC SHAR, into an elliptical parking orbit (EPO) of 235.6 km by 19502.7 km. From here, Aditya-L1 embarked on an extraordinary journey towards the Sun-Earth-L1 Lagrange point, with the help of the onboard propulsion system, increased its orbital size progressively and moved toward L1 point. Five liquid engine burns (LEB) were executed during Earth orbit phase; gradually raised the apogee of the EPO in order to attain the desired trajectory with the fifth burn, known as the trans-L1 injection (TL1I) maneuver. The maneuver strategy is carefully devised to minimize incremental velocity addition (ΔV) for reaching the target L1 halo orbit while restricting the number of perigee passes to minimize the spacecraft's exposure to the high radiation Van Allen radiation belts.",
+    "context_size": 1500
+  },
+  "metrics": {
+    "rouge_l": 0.0,
+    "reference_token_coverage": 0.0,
+    "exact_match": 0.0,
+    "idk": false
+  },
+  "generation_telemetry": {
+    "prompt_construction_ms": 0.0542,
+    "request_latency_ms": 46526.4244,
+    "total_generation_ms": 46531.5444,
+    "prompt_chars": 11787,
+    "prompt_tokens": 1027,
+    "generated_tokens": 25,
+    "eval_duration_ns": 5801357000,
+    "prompt_eval_duration_ns": 40341590000,
+    "status": "ok",
+    "failure": null
+  },
+  "timestamp_utc": "2026-10-07T16:40:28.201876+00:00"
+}

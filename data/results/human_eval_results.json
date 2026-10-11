@@ -1,0 +1,15 @@
+{
+  "experiment": "human_factual_evaluation",
+  "status": "PENDING_HUMAN_ANNOTATION",
+  "reason": "File validation: 120 rows marked PENDING / unannotated out of 120.\nStatus: PENDING_HUMAN_ANNOTATION. Evaluation cannot proceed without genuine human ratings.",
+  "target_file": "data\\annotations\\human_eval_template.csv",
+  "annotation_schema": {
+    "dimensions": [
+      "correctness",
+      "completeness",
+      "faithfulness",
+      "relevance"
+    ],
+    "scale": "0, 1, 2"
+  }
+}

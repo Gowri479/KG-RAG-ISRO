@@ -1,0 +1,83 @@
+{
+  "primary_comparison": {
+    "left": "corrected_structured_kg_rag",
+    "right": "vanilla_rag",
+    "metrics": {
+      "correctness": {
+        "n": 26,
+        "mean_difference": 0.846154,
+        "median_difference": 0.0,
+        "standard_deviation": 2.257296,
+        "positive": 8,
+        "negative": 2,
+        "ties": 16,
+        "bootstrap_95_ci": [
+          -0.038462,
+          1.730769
+        ],
+        "wilcoxon_p": 0.117116,
+        "cohen_dz": 0.374853,
+        "note": null
+      },
+      "completeness": {
+        "n": 26,
+        "mean_difference": 0.807692,
+        "median_difference": 0.0,
+        "standard_deviation": 2.20942,
+        "positive": 8,
+        "negative": 2,
+        "ties": 16,
+        "bootstrap_95_ci": [
+          -0.038462,
+          1.653846
+        ],
+        "wilcoxon_p": 0.151855,
+        "cohen_dz": 0.365568,
+        "note": null
+      },
+      "groundedness": {
+        "n": 26,
+        "mean_difference": 0.153846,
+        "median_difference": 0.0,
+        "standard_deviation": 1.973673,
+        "positive": 5,
+        "negative": 4,
+        "ties": 17,
+        "bootstrap_95_ci": [
+          -0.576923,
+          0.884615
+        ],
+        "wilcoxon_p": 0.67266,
+        "cohen_dz": 0.077949,
+        "note": null
+      },
+      "relevance": {
+        "n": 26,
+        "mean_difference": 0.461538,
+        "median_difference": 0.0,
+        "standard_deviation": 1.448607,
+        "positive": 9,
+        "negative": 4,
+        "ties": 13,
+        "bootstrap_95_ci": [
+          -0.115385,
+          1.038462
+        ],
+        "wilcoxon_p": 0.108697,
+        "cohen_dz": 0.318609,
+        "note": null
+      }
+    },
+    "holm_adjusted_p": {
+      "correctness": 0.434788,
+      "completeness": 0.434788,
+      "groundedness": 0.67266,
+      "relevance": 0.434788
+    }
+  },
+  "unsupported_claim_rates": {
+    "vanilla_rag": 0.384615,
+    "corrected_structured_kg_rag": 0.384615,
+    "bm25_llm": 0.307692
+  }
+}

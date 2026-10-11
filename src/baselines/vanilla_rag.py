@@ -22,12 +22,13 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from src.generator.ollama_api import generate
+from src.retriever.embedding_model import get_embedding_model
 
 INDEX_PATH = ROOT / "data" / "index" / "faiss_index.index"
 CHUNKS_PATH = ROOT / "data" / "chunks" / "chunks.json"
 @lru_cache(maxsize=1)
 def _load_model() -> SentenceTransformer:
-    return SentenceTransformer("all-MiniLM-L6-v2", device="cpu")
+    return get_embedding_model()
 
 
 @lru_cache(maxsize=1)
@@ -37,12 +38,17 @@ def _load_chunks() -> list[str]:
     return [item["text"].strip() for item in items if isinstance(item, dict) and item.get("text")]
 
 
+@lru_cache(maxsize=1)
+def _load_index():
+    return faiss.read_index(str(INDEX_PATH))
+
+
 def retrieve_context(question: str, top_k: int = 5) -> str:
     """Retrieve dense passages using the prebuilt full FAISS index."""
     chunks = _load_chunks()
     if not chunks or not INDEX_PATH.exists():
         return ""
-    index = faiss.read_index(str(INDEX_PATH))
+    index = _load_index()
     vector = _load_model().encode([question], convert_to_numpy=True, normalize_embeddings=True)
     _, indices = index.search(np.asarray(vector, dtype=np.float32), top_k)
     passages = [chunks[int(i)] for i in indices[0] if 0 <= i < len(chunks)]

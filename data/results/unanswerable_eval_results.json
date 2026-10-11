@@ -1,0 +1,111 @@
+{
+  "experiment": "unanswerable_abstention_evaluation",
+  "benchmark_file": "data\\benchmark\\unanswerable_qa.json",
+  "n_questions_evaluated": 20,
+  "total_benchmark_questions": 40,
+  "systems": {
+    "bm25_llm": {
+      "n_questions": 20,
+      "grounded_abstention_rate": 0.9,
+      "strict_idk_rate": 0.75,
+      "unsupported_answer_rate": 0.1,
+      "mean_latency_ms": 34273.12,
+      "category_breakdown": {
+        "Completely absent fact": {
+          "n_questions": 4,
+          "grounded_abstention_rate": 0.75,
+          "unsupported_answer_rate": 0.25
+        },
+        "Plausible but unsupported question": {
+          "n_questions": 4,
+          "grounded_abstention_rate": 1.0,
+          "unsupported_answer_rate": 0.0
+        },
+        "Related entity but absent relationship": {
+          "n_questions": 4,
+          "grounded_abstention_rate": 0.75,
+          "unsupported_answer_rate": 0.25
+        },
+        "Similar entity with misleading evidence": {
+          "n_questions": 4,
+          "grounded_abstention_rate": 1.0,
+          "unsupported_answer_rate": 0.0
+        },
+        "Temporal fact absent from corpus": {
+          "n_questions": 4,
+          "grounded_abstention_rate": 1.0,
+          "unsupported_answer_rate": 0.0
+        }
+      }
+    },
+    "vanilla_rag": {
+      "n_questions": 20,
+      "grounded_abstention_rate": 0.95,
+      "strict_idk_rate": 0.85,
+      "unsupported_answer_rate": 0.05,
+      "mean_latency_ms": 32123.68,
+      "category_breakdown": {
+        "Completely absent fact": {
+          "n_questions": 4,
+          "grounded_abstention_rate": 0.75,
+          "unsupported_answer_rate": 0.25
+        },
+        "Plausible but unsupported question": {
+          "n_questions": 4,
+          "grounded_abstention_rate": 1.0,
+          "unsupported_answer_rate": 0.0
+        },
+        "Related entity but absent relationship": {
+          "n_questions": 4,
+          "grounded_abstention_rate": 1.0,
+          "unsupported_answer_rate": 0.0
+        },
+        "Similar entity with misleading evidence": {
+          "n_questions": 4,
+          "grounded_abstention_rate": 1.0,
+          "unsupported_answer_rate": 0.0
+        },
+        "Temporal fact absent from corpus": {
+          "n_questions": 4,
+          "grounded_abstention_rate": 1.0,
+          "unsupported_answer_rate": 0.0
+        }
+      }
+    },
+    "kg_rag": {
+      "n_questions": 20,
+      "grounded_abstention_rate": 0.85,
+      "strict_idk_rate": 0.65,
+      "unsupported_answer_rate": 0.15,
+      "mean_latency_ms": 41240.44,
+      "category_breakdown": {
+        "Completely absent fact": {
+          "n_questions": 4,
+          "grounded_abstention_rate": 0.75,
+          "unsupported_answer_rate": 0.25
+        },
+        "Plausible but unsupported question": {
+          "n_questions": 4,
+          "grounded_abstention_rate": 1.0,
+          "unsupported_answer_rate": 0.0
+        },
+        "Related entity but absent relationship": {
+          "n_questions": 4,
+          "grounded_abstention_rate": 0.75,
+          "unsupported_answer_rate": 0.25
+        },
+        "Similar entity with misleading evidence": {
+          "n_questions": 4,
+          "grounded_abstention_rate": 1.0,
+          "unsupported_answer_rate": 0.0
+        },
+        "Temporal fact absent from corpus": {
+          "n_questions": 4,
+          "grounded_abstention_rate": 0.75,
+          "unsupported_answer_rate": 0.25
+        }
+      }
+    }
+  },
+  "updated_at_utc": "2026-10-06T03:40:53.915191+00:00"
+}

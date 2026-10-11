@@ -1,0 +1,122 @@
+{
+  "sources": [
+    {
+      "document_id": "ADITYA_L1_MISSION_BOOKLET",
+      "title": "Aditya-L1 Mission Booklet",
+      "organization": "ISSDC",
+      "document_type": "mission booklet",
+      "url": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf",
+      "filename": "Aditya_L1_second_booklet.pdf",
+      "authority": "AUTHORITATIVE CORE: ISSDC",
+      "publication_date": ""
+    },
+    {
+      "document_id": "ADITYA_L1_PAYLOAD",
+      "title": "Aditya-L1 Payloads",
+      "organization": "ISSDC",
+      "document_type": "payload document",
+      "url": "https://www.issdc.gov.in/docs/Aditya/Al1_Payload.pdf",
+      "filename": "Al1_Payload.pdf",
+      "authority": "AUTHORITATIVE CORE: ISSDC",
+      "publication_date": ""
+    },
+    {
+      "document_id": "ADITYA_L1_ALPPS_V1",
+      "title": "Aditya-L1 Proposal Processing System (ALPPS) User Guide",
+      "organization": "ALPPS/ISRO",
+      "document_type": "user guide",
+      "url": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf",
+      "filename": "ALPPS_UserGuide_V1.0.pdf",
+      "authority": "AUTHORITATIVE CORE: ALPPS/ISRO",
+      "publication_date": "2026-01-01"
+    },
+    {
+      "document_id": "ADITYA_L1_ISSDC_PAGE",
+      "title": "Aditya-L1 Mission",
+      "organization": "ISSDC",
+      "document_type": "official mission page",
+      "url": "https://www.issdc.gov.in/adityal1.html",
+      "filename": "adityal1.html",
+      "authority": "SUPPLEMENTARY OFFICIAL SOURCE: ISSDC",
+      "publication_date": ""
+    },
+    {
+      "document_id": "ADITYA_L1_PRADAN_ARCHIVE",
+      "title": "Aditya-L1 PRADAN Archive",
+      "organization": "PRADAN/ISSDC",
+      "document_type": "official data archive landing page",
+      "url": "https://pradan1.issdc.gov.in/al1/",
+      "filename": "pradan_al1.html",
+      "authority": "SUPPLEMENTARY OFFICIAL SOURCE: PRADAN/ISSDC",
+      "publication_date": ""
+    },
+    {
+      "document_id": "ADITYA_L1_PRADAN_FAQ",
+      "title": "Aditya-L1 PRADAN FAQ",
+      "organization": "PRADAN/ISSDC",
+      "document_type": "official FAQ",
+      "url": "https://pradan1.issdc.gov.in/al1/faq.xhtml",
+      "filename": "pradan_al1_faq.xhtml",
+      "authority": "SUPPLEMENTARY OFFICIAL SOURCE: PRADAN/ISSDC",
+      "publication_date": ""
+    },
+    {
+      "document_id": "ADITYA_L1_ALPPS_HOME",
+      "title": "Aditya-L1 Proposal Processing System",
+      "organization": "ALPPS/ISRO",
+      "document_type": "official portal landing page",
+      "url": "https://alpps.issdc.gov.in/",
+      "filename": "alpps_home.html",
+      "authority": "SUPPLEMENTARY OFFICIAL SOURCE: ALPPS/ISRO",
+      "publication_date": ""
+    }
+  ],
+  "download_status": {
+    "ADITYA_L1_MISSION_BOOKLET": "downloaded",
+    "ADITYA_L1_PAYLOAD": "downloaded",
+    "ADITYA_L1_ALPPS_V1": "downloaded",
+    "ADITYA_L1_ISSDC_PAGE": "downloaded",
+    "ADITYA_L1_PRADAN_ARCHIVE": "download_failed: HTTP Error 504: Gateway Timeout",
+    "ADITYA_L1_PRADAN_FAQ": "download_failed: HTTP Error 504: Gateway Timeout",
+    "ADITYA_L1_ALPPS_HOME": "downloaded"
+  },
+  "extraction": {
+    "ADITYA_L1_MISSION_BOOKLET": {
+      "pages": 14,
+      "pages_with_text": 14,
+      "error": ""
+    },
+    "ADITYA_L1_PAYLOAD": {
+      "pages": 2,
+      "pages_with_text": 0,
+      "error": "image-only PDF; archived but not ingested"
+    },
+    "ADITYA_L1_ALPPS_V1": {
+      "pages": 42,
+      "pages_with_text": 42,
+      "error": ""
+    },
+    "ADITYA_L1_ISSDC_PAGE": {
+      "pages": 1,
+      "pages_with_text": 1,
+      "error": ""
+    },
+    "ADITYA_L1_PRADAN_ARCHIVE": {
+      "pages": 0,
+      "pages_with_text": 0,
+      "error": "source unavailable; no substitute used"
+    },
+    "ADITYA_L1_PRADAN_FAQ": {
+      "pages": 0,
+      "pages_with_text": 0,
+      "error": "source unavailable; no substitute used"
+    },
+    "ADITYA_L1_ALPPS_HOME": {
+      "pages": 1,
+      "pages_with_text": 1,
+      "error": ""
+    }
+  },
+  "raw_output": "data/raw/ADITYA_L1_*_page_*.md",
+  "manifest": "data\\source_manifest.csv"
+}

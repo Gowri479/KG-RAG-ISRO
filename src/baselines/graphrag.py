@@ -26,7 +26,16 @@ KG_PATH = ROOT / "data" / "kg" / "knowledge_graph.json"
 MODEL = SentenceTransformer("all-MiniLM-L6-v2", device="cpu")
 
 
+COMMUNITY_CACHE = ROOT / "data" / "kg" / "graphrag_community_summaries.json"
+
+
 def _build_community_summaries() -> list[str]:
+    if COMMUNITY_CACHE.exists():
+        try:
+            return json.loads(COMMUNITY_CACHE.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+
     payload = json.loads(KG_PATH.read_text(encoding="utf-8"))
     graph = nx.Graph()
     graph.add_nodes_from(node["id"] for node in payload.get("nodes", []) if isinstance(node, dict) and node.get("id"))
@@ -36,18 +45,20 @@ def _build_community_summaries() -> list[str]:
 
     if not graph:
         return []
-    communities = nx.community.greedy_modularity_communities(graph)
+    communities = list(nx.community.greedy_modularity_communities(graph))
+    sorted_comms = sorted([c for c in communities if len(c) >= 3], key=len, reverse=True)[:50]
     summaries = []
-    for community in communities:
-        members = set(community)
-        relations = []
-        for source, target, data in graph.edges(data=True):
-            if source in members and target in members:
-                relations.append(f"{source} -{data.get('relation', 'related_to')}-> {target}")
+    for comm in sorted_comms:
+        sub = graph.subgraph(comm)
+        relations = [f"{u} -{d.get('relation', 'related_to')}-> {v}" for u, v, d in sub.edges(data=True)]
+        members = sorted(list(comm))
         summaries.append(
-            "Entities: " + ", ".join(sorted(members)) +
-            "\nRelations: " + ("; ".join(relations) if relations else "none")
+            "Entities: " + ", ".join(members[:15]) +
+            "\nRelations: " + ("; ".join(relations[:10]) if relations else "structural co-occurrence")
         )
+
+    if summaries:
+        COMMUNITY_CACHE.write_text(json.dumps(summaries, indent=2), encoding="utf-8")
     return summaries
 
 

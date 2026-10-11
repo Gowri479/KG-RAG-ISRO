@@ -116,15 +116,15 @@ def build_graph(chunks: list[dict], nlp) -> nx.MultiDiGraph:
     total_triples = 0
     batch_size = 50
     texts: list[str] = []
-    metas: list[str] = []
+    metas: list[dict] = []
 
     for chunk in chunks:
         if isinstance(chunk, dict):
             text = chunk.get("text") or chunk.get("content") or ""
-            source = chunk.get("source_url", "")
+            source = {key: chunk.get(key, "") for key in ("source_url", "document_id", "page", "section", "title")}
         else:
             text = str(chunk)
-            source = ""
+            source = {}
         if text.strip():
             texts.append(text.strip())
             metas.append(source)
@@ -135,7 +135,7 @@ def build_graph(chunks: list[dict], nlp) -> nx.MultiDiGraph:
         batch_texts = texts[i:i + batch_size]
         batch_metas = metas[i:i + batch_size]
 
-        for doc, source in zip(nlp.pipe(batch_texts, batch_size=batch_size), batch_metas):
+        for doc, metadata in zip(nlp.pipe(batch_texts, batch_size=batch_size), batch_metas):
             entities = extract_entities(doc)
             triples = extract_triples(doc, entities)
             for subj, rel, obj in triples:
@@ -143,7 +143,9 @@ def build_graph(chunks: list[dict], nlp) -> nx.MultiDiGraph:
                     G.add_node(subj)
                 if not G.has_node(obj):
                     G.add_node(obj)
-                G.add_edge(subj, obj, relation=rel, source=source)
+                edge_metadata = {key: value for key, value in metadata.items() if value not in (None, "")}
+                edge_metadata["source"] = edge_metadata.get("source_url", "")
+                G.add_edge(subj, obj, relation=rel, **edge_metadata)
                 total_triples += 1
 
         if (i // batch_size + 1) % 10 == 0:
@@ -194,7 +196,7 @@ def build_graph_from_directory(source_dir: str | Path, output_dir: str | Path | 
     graph_data = {
         "nodes": list(G.nodes()),
         "edges": [
-            {"source": u, "target": v, "relation": d.get("relation", "related_to"), "doc_source": d.get("source", "")}
+            {"source": u, "target": v, "relation": d.get("relation", "related_to"), "doc_source": d.get("source", ""), **{key: d[key] for key in ("source_url", "document_id", "page", "section", "title") if key in d}}
             for u, v, d in G.edges(data=True)
         ],
     }
@@ -216,7 +218,8 @@ def save_graph(G: nx.MultiDiGraph):
                 "source": u,
                 "target": v,
                 "relation": d.get("relation", "related_to"),
-                "doc_source": d.get("source", "")
+                "doc_source": d.get("source", ""),
+                **{key: d[key] for key in ("source_url", "document_id", "page", "section", "title") if key in d}
             }
             for u, v, d in G.edges(data=True)
         ]

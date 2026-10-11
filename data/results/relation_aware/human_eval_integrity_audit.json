@@ -1,0 +1,16 @@
+{
+  "questions": 60,
+  "unique_questions": 60,
+  "candidate_answers": 180,
+  "triplets": 60,
+  "duplicate_question_ids": 0,
+  "missing_question_ids": [],
+  "candidate_hash_matches": 180,
+  "candidate_hash_mismatches": [],
+  "system_label_leakage": false,
+  "blank_score_fields": true,
+  "generation_results_sha256": "e13e4c82a3638df15832887621a066b57afea62da5ce8d28394cb18cd608635c",
+  "benchmark_sha256": "6c7f3600995c0091de73d20d2f02953cb414023df281f7178069f9f81b432b64",
+  "mapping_sha256": "557fcbbf448f3149bd2b585a4af8caf2a0f7fb9dd2c0bf585310acf83e37fafc",
+  "valid": true
+}

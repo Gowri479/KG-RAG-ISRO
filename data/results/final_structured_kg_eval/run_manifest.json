@@ -1,0 +1,25 @@
+{
+  "benchmark_sha256": "7f5daf5419b0a4cb70e5c3d5eba021a8a39118b5a0fd235ce19b81f75324ffce",
+  "question_count": 26,
+  "generation_count": 78,
+  "systems": [
+    "vanilla_rag",
+    "corrected_structured_kg_rag",
+    "bm25_llm"
+  ],
+  "model": "mistral:7b-instruct-q4_K_M",
+  "generation_options": {
+    "num_predict": 150,
+    "temperature": 0.1,
+    "num_ctx": 2048
+  },
+  "blind_randomization_seed": 20261007,
+  "code": "src/evaluation/run_final_structured_kg_eval.py",
+  "timestamp_utc": "2026-10-07T17:44:17.913046+00:00",
+  "git_commit": "892b45bb32f7c8b42e14f171a5e1ba39c0710c04",
+  "generation_results.jsonl_sha256": "42c765d7cf967575f2384d7de020d8db4153fca83f94659686778476ccf1d912",
+  "preliminary_metrics.json_sha256": "e87e4bb634cd4578c41561bad417ebfadc5b7de8ba8d451b54a89540a0d35b20",
+  "final_structured_kg_human_eval.csv_sha256": "7c80bf6e4b4262df1829b524fe701eb369d37e42189b07ae7607ccfdeee07d67",
+  "final_structured_kg_human_eval_guidelines.md_sha256": "bce51678e84d7f1aa9c5bc37099dd129447de9e8c6f052a07481b7d7d701363f",
+  "final_structured_kg_eval_report.md_sha256": "012016c9cfb91108dcdd072a9b70445036188a23aff465953412d1107ca35257"
+}

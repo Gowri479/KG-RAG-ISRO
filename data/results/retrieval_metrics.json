@@ -1,26 +1,39 @@
 {
   "experiment": "retrieval_quality",
-  "status": "not_executed",
-  "reason": "Retrieval-level evaluation requires manually verified relevance judgments and was not executed.",
-  "candidate_source_fields": [
-    "source_url",
-    "source_note"
-  ],
-  "label_decision": "Source URLs and source notes identify verification provenance, not relevant chunk IDs; no labels were inferred.",
-  "required_future_input": "Manually verified relevant chunk/document judgments for each evaluated question.",
-  "candidate_questions": 200,
+  "status": "pending_human_annotation",
+  "reason": "Retrieval-level evaluation requires manually verified chunk/passage relevance judgments and answer support IDs. Synthetic labels are strictly prohibited.",
+  "candidate_questions": 100,
   "systems": [
     "BM25",
-    "FAISS",
+    "Dense (FAISS)",
     "KG",
-    "Hybrid KG + FAISS"
+    "Hybrid"
   ],
-  "metrics": [
-    "Recall@1",
-    "Recall@3",
-    "Recall@5",
-    "Recall@10",
-    "MRR"
-  ],
-  "generated_at_utc": "2026-10-05T03:54:05.327927+00:00"
+  "metrics": {
+    "BM25": [
+      "Recall@1",
+      "Recall@3",
+      "Recall@5",
+      "MRR"
+    ],
+    "Dense": [
+      "Recall@1",
+      "Recall@3",
+      "Recall@5",
+      "MRR"
+    ],
+    "KG": [
+      "entity_hit_rate",
+      "triple_hit_rate",
+      "answer_path_hit_rate"
+    ],
+    "Hybrid": [
+      "Recall@1",
+      "Recall@3",
+      "Recall@5",
+      "MRR"
+    ]
+  },
+  "annotation_template": "data\\annotations\\retrieval_eval_template.json",
+  "updated_at_utc": "2026-10-06T02:52:33.602600+00:00"
 }

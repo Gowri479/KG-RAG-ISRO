@@ -27,6 +27,12 @@ def _load_chunks() -> list[str]:
     return [item["text"].strip() for item in items if isinstance(item, dict) and item.get("text")]
 
 
+@lru_cache(maxsize=1)
+def _load_bm25() -> BM25Okapi:
+    """Build the BM25 index once and reuse it across all benchmark questions."""
+    return BM25Okapi([_tokenize(chunk) for chunk in _load_chunks()])
+
+
 def _tokenize(text: str) -> list[str]:
     return re.findall(r"[a-z0-9]+", text.lower())
 
@@ -36,7 +42,7 @@ def retrieve_context(question: str, top_k: int = 5) -> str:
     chunks = _load_chunks()
     if not chunks:
         return ""
-    index = BM25Okapi([_tokenize(chunk) for chunk in chunks])
+    index = _load_bm25()
     scores = index.get_scores(_tokenize(question))
     top_indices = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:top_k]
     return "\n\n".join(chunks[i] for i in top_indices)

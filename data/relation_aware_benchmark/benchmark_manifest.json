@@ -1,0 +1,20 @@
+{
+  "benchmark_sha256": "6c7f3600995c0091de73d20d2f02953cb414023df281f7178069f9f81b432b64",
+  "total_questions": 72,
+  "split_counts": {
+    "development": 58,
+    "evaluation": 14
+  },
+  "category_counts": {
+    "TWO_HOP_RELATION": 10,
+    "MULTI_RELATION": 10,
+    "DIRECT_CONTROL": 22,
+    "SINGLE_RELATION": 30
+  },
+  "required_counts": {
+    "YES": 60,
+    "NO": 12
+  },
+  "construction": "canonical triples only; no answer/system outputs inspected",
+  "seed": 20261008
+}

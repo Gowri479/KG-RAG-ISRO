@@ -1,0 +1,261 @@
+{
+  "question_id": "rqa_042",
+  "question": "Which payload carried by the Mars Orbiter Mission was developed by the Space Applications Centre?",
+  "system": "corrected_structured_kg_rag",
+  "reference_answer": "Thermal Infrared Imaging Spectrometer (TIS)",
+  "answer": "The Mars Colour Camera (MCC) was developed by the Space Applications Centre.",
+  "trace": {
+    "detected_entities": [
+      "Mars Orbiter Mission",
+      "Mars orbit",
+      "Mars"
+    ],
+    "detected_relations": [
+      "HAS_PAYLOAD",
+      "DEVELOPED_BY"
+    ],
+    "retrieved_paths": [
+      {
+        "path_id": "path:mom-payload-tis+mom-tis-developed-by-sac",
+        "nodes": [
+          "Mars Orbiter Mission",
+          "Thermal Infrared Imaging Spectrometer (TIS)",
+          "Space Applications Centre (SAC)"
+        ],
+        "relations": [
+          "HAS_PAYLOAD",
+          "DEVELOPED_BY"
+        ],
+        "triple_ids": [
+          "mom-payload-tis",
+          "mom-tis-developed-by-sac"
+        ],
+        "source_documents": [
+          "ISRO_MOM_DETAILS"
+        ],
+        "source_chunks": [
+          "ISRO_MOM_DETAILS::c00003",
+          "ISRO_MOM_DETAILS::c00019"
+        ],
+        "retrieval_score": 9.0
+      },
+      {
+        "path_id": "path:mom-launch-site",
+        "nodes": [
+          "Mars Orbiter Mission",
+          "Satish Dhawan Space Centre SHAR, Sriharikota"
+        ],
+        "relations": [
+          "LAUNCHED_FROM"
+        ],
+        "triple_ids": [
+          "mom-launch-site"
+        ],
+        "source_documents": [
+          "ISRO_LAUNCH_ARCHIVE"
+        ],
+        "source_chunks": [
+          "ISRO_LAUNCH_ARCHIVE::c00069"
+        ],
+        "retrieval_score": 5.0
+      },
+      {
+        "path_id": "path:mom-launcher",
+        "nodes": [
+          "Mars Orbiter Mission",
+          "PSLV-C25"
+        ],
+        "relations": [
+          "LAUNCHED_BY"
+        ],
+        "triple_ids": [
+          "mom-launcher"
+        ],
+        "source_documents": [
+          "ISRO_LAUNCH_ARCHIVE"
+        ],
+        "source_chunks": [
+          "ISRO_LAUNCH_ARCHIVE::c00069"
+        ],
+        "retrieval_score": 4.0
+      },
+      {
+        "path_id": "path:mom-payload-lap",
+        "nodes": [
+          "Mars Orbiter Mission",
+          "Lyman Alpha Photometer (LAP)"
+        ],
+        "relations": [
+          "HAS_PAYLOAD"
+        ],
+        "triple_ids": [
+          "mom-payload-lap"
+        ],
+        "source_documents": [
+          "ISRO_MOM_DETAILS"
+        ],
+        "source_chunks": [
+          "ISRO_MOM_DETAILS::c00003"
+        ],
+        "retrieval_score": 4.0
+      },
+      {
+        "path_id": "path:mom-payload-mcc",
+        "nodes": [
+          "Mars Orbiter Mission",
+          "Mars Colour Camera (MCC)"
+        ],
+        "relations": [
+          "HAS_PAYLOAD"
+        ],
+        "triple_ids": [
+          "mom-payload-mcc"
+        ],
+        "source_documents": [
+          "ISRO_MOM_DETAILS"
+        ],
+        "source_chunks": [
+          "ISRO_MOM_DETAILS::c00003"
+        ],
+        "retrieval_score": 4.0
+      },
+      {
+        "path_id": "path:mom-payload-menca",
+        "nodes": [
+          "Mars Orbiter Mission",
+          "Mars Exospheric Neutral Composition Analyser (MENCA)"
+        ],
+        "relations": [
+          "HAS_PAYLOAD"
+        ],
+        "triple_ids": [
+          "mom-payload-menca"
+        ],
+        "source_documents": [
+          "ISRO_MOM_DETAILS"
+        ],
+        "source_chunks": [
+          "ISRO_MOM_DETAILS::c00003"
+        ],
+        "retrieval_score": 4.0
+      },
+      {
+        "path_id": "path:mom-payload-msm",
+        "nodes": [
+          "Mars Orbiter Mission",
+          "Methane Sensor for Mars (MSM)"
+        ],
+        "relations": [
+          "HAS_PAYLOAD"
+        ],
+        "triple_ids": [
+          "mom-payload-msm"
+        ],
+        "source_documents": [
+          "ISRO_MOM_DETAILS"
+        ],
+        "source_chunks": [
+          "ISRO_MOM_DETAILS::c00003"
+        ],
+        "retrieval_score": 4.0
+      },
+      {
+        "path_id": "path:mom-payload-tis",
+        "nodes": [
+          "Mars Orbiter Mission",
+          "Thermal Infrared Imaging Spectrometer (TIS)"
+        ],
+        "relations": [
+          "HAS_PAYLOAD"
+        ],
+        "triple_ids": [
+          "mom-payload-tis"
+        ],
+        "source_documents": [
+          "ISRO_MOM_DETAILS"
+        ],
+        "source_chunks": [
+          "ISRO_MOM_DETAILS::c00003"
+        ],
+        "retrieval_score": 4.0
+      },
+      {
+        "path_id": "path:mom-launch-date",
+        "nodes": [
+          "Mars Orbiter Mission",
+          "2013-11-05"
+        ],
+        "relations": [
+          "LAUNCHED_ON"
+        ],
+        "triple_ids": [
+          "mom-launch-date"
+        ],
+        "source_documents": [
+          "ISRO_LAUNCH_ARCHIVE"
+        ],
+        "source_chunks": [
+          "ISRO_LAUNCH_ARCHIVE::c00069"
+        ],
+        "retrieval_score": 3.0
+      },
+      {
+        "path_id": "path:mom-orbits-mars",
+        "nodes": [
+          "Mars Orbiter Mission",
+          "Mars orbit"
+        ],
+        "relations": [
+          "ORBITS"
+        ],
+        "triple_ids": [
+          "mom-orbits-mars"
+        ],
+        "source_documents": [
+          "ISRO_MOM_DETAILS"
+        ],
+        "source_chunks": [
+          "ISRO_MOM_DETAILS::c00002"
+        ],
+        "retrieval_score": 3.0
+      }
+    ],
+    "required_path_found": true,
+    "source_provenance_available": true,
+    "dense_chunks": [
+      "# Source: https://www.isro.gov.in/MarsOrbiterMissionSpacecraft.html Mars Orbiter Mission Mars Orbiter Mission Home / Activities / Science / Mars Orbiter Mission Mars Orbiter Mission (MOM), India's first interplanetary mission to planet Mars was launchedonboard PSLV-C25 on November 05, 2013. ISRO has become the fourth space agency to successfully send a spacecraft to Mars orbit.Though the designed mission life is 6 months, MOM completed 7 years in its orbit on Sept 24, 2021. Mission Objectives The objectives of this mission are primarily technological and include design, realisation and launch of a Mars Orbiter spacecraft capable of operating with sufficient autonomy during the journey phase; Mars orbit insertion / capture and in-orbit phase around Mars. MOM carries five scientific payloads to study the Martian surface features, morphology, mineralogy and Martian atmosphere. Scientific payloads Mars continues to be an object of keen interest to scientists in the context of planetary evolution and extra-terrestrial life. Based on our understanding of Mars, which was thought to be probably a warm and wet planet earlier, is now seen to be dry with a thin atmosphere. How this evolution has taken place is still a topic of research. In this backdrop, the Indian Mars Orbiter Mission carried the following five scientific payloads: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera The Mars Colour Camera is a versatile and multi-purpose snap shot camera with R-G-B Bayer pattern to map various morphological features on Mars and return visual images of Mars and its environs. Besides providing context information for other payloads, MCC is also expected to observe and help in furthering our understanding of events like dust storms, dust devils etc. that are known to occur in Mars. The highly elliptical orbit of the current mission allows imaging of localized scenes at high spatial resolution as well as provides a synoptic view of the full globe. This payload is developed by Space Application Centre Ahmedabad. The main objective of the Mars Colour camera therefore is: To map various morphological features on Mars with varying resolution and scales in the elliptical orbit. To provide context information for the other science payloads. The salient features of this instrument are given below: - Parameter Value Resolution 19.5 m @ Periareion Frame Size 40 km x 40 km@ Periareion Full Mars disc from 63000 km to Apoareion Spectral region 0.4 µm – 0.7 µm R-G-B (Bayer Pattern) Methane Sensor for Mars The Methane Sensor for Mars (MSM) is a differential radiometer based on Fabry-Perot Etalon filters operating in the short wave infrared (SWIR) region. It measures solar radiance in two SWIR channels. There is absorption by CH4 in the first channel (methane channel) whereas no absorption in the second spectral channel (reference channel). So the differential signal gives a measure of column amount of CH4. It can measure CH4 concentration in the Martian atmosphere with few parts-per-billion accuracy. By scanning the scene from apoareion, MSM can map the spatial distribution of methane. The temporal and spatial variation of methane",
+      "# Source: https://www.isro.gov.in/POEMCompletedOrbitsSpace.html POEM Completed 1000 Orbits in Space POEM Completed 1000 Orbits in Space Home / POEM Completed 1000 Orbits in Space March 07, 2025 The fourth edition of the PSLV Orbital platform Experiment Module (POEM-4), the repurposed spent upper stage of the PSLV vehicle used for PSLV-C60/ SPADEX Mission, has successfully completed 1000 orbits on March 04, 2025. The PSLV-C60 Mission was launched on December 30, 2024 and POEM-4 began its operations subsequent to the successful injection of the SPADEX spacecraft. POEM-4 was configured as a three-axis stabilized platform that carried 24 payloads including 10 payloads from Non-Governmental Entities (NGEs) and 14 payloads from ISRO/DoS. All the payloads including those from NGEs have successfully completed the intended experiments in orbit. POEM-4 carried out experiments in space robotics, germination of seeds & growth of bacterium in microgravity, green propulsion, laser ignition of pyro thrusters, amateur radio transmission and advanced sensors. The up-linking & execution of an AI model as part of AI lab in space was also tested by a space start-up. The POEM-4 avionics system also validated a Mission Management Computer based on a “Made-in-India” 32-bit processor, Vikram3201, with a custom architecture developed by ISRO along with the use of a Nano star sensor for the first time to aid the navigation system. The platform also employed a stabilization system based on reaction wheels for attitude control along with cold gas thrusters that extended the orbital life of the module by at least 45 days compared to previous POEM missions. POEM-4 carried the maximum number of payloads till date compared to the previous three POEM missions and has yet again proved its versatility as a cost-effective experimental platform to support diverse payloads. PS4 stage with POEM payloads assembled function outsideAlert(url) { if (confirm(\"You will be directed to an external website. Are you sure that you want to proceed?\")) { window.open(url, '_blank'); } }",
+      "Document ID: ADITYA_L1_MISSION_BOOKLET Title: Aditya-L1 Mission Booklet Mission: Aditya-L1 Organization: ISSDC Document Type: mission booklet Source URL: https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf Page: 12 Section: PDF page 12 Authority: AUTHORITATIVE CORE: ISSDC --- A D I T Y A - L 1 SWIS SUIT VELC PAPA STEPS-1 HEL1OS ASPEX SoLEXS MAGNETOMETER (STOWED) +R +P+Y +R +Y-P R, P , and Y indicate the Raw, Pitch, and Roll axis of the spacecraft. The location of all seven payloads—VELC, SUIT , SoLEXS, HEL1OS, ASPEX, PAPA and MAG are shown in the f igure below. Aditya-L1 Payloads On The Spacecraft"
+    ],
+    "structured_kg_evidence": "RELATIONAL EVIDENCE\nPATH path:mom-payload-tis+mom-tis-developed-by-sac\nEntity: Mars Orbiter Mission\nRelation: HAS_PAYLOAD\nValue: Thermal Infrared Imaging Spectrometer (TIS)\nEntity: Thermal Infrared Imaging Spectrometer (TIS)\nRelation: DEVELOPED_BY\nValue: Space Applications Centre (SAC)\nSOURCE: ISRO_MOM_DETAILS\nSOURCE CHUNKS: ISRO_MOM_DETAILS::c00003, ISRO_MOM_DETAILS::c00019\nSOURCE EVIDENCE:\nMars Color Camera (MCC)\n\nThermal Infrared Imaging Spectrometer (TIS)\n\nMethane Sensor for Mars (MSM)\n\nMars Exospheric Neutral Composition Analyser (MENCA)\n\nLyman Alpha Photometer (LAP)\n\nMars Colour Camera\nThis spectrometer operates in the thermal infrared (TIR) region (7 micron to 13 micron). TIS has been configured with an un-cooled micro-bolometer array that saves significantly in terms of weight and power when compared to a cooled IR detector. This payload is developed by Space Applications Centre, Ahmedabad.\n\nThe instrument features are:\nPATH path:mom-launch-site\nEntity: Mars Orbiter Mission\nRelation: LAUNCHED_FROM\nValue: Satish Dhawan Space Centre SHAR, Sriharikota\nSOURCE: ISRO_LAUNCH_ARCHIVE\nSOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00069\nSOURCE EVIDENCE:\n40 | PSLV-C25 /Mars Orbiter Mission | Nov 05, 2013 | PSLV-XL | Mars\nOrbiter\nMission Spacecraft\nPATH path:mom-launcher\nEntity: Mars Orbiter Mission\nRelation: LAUNCHED_BY\nValue: PSLV-C25\nSOURCE: ISRO_LAUNCH_ARCHIVE\nSOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00069\nSOURCE EVIDENCE:\n40 | PSLV-C25 /Mars Orbiter Mission | Nov 05, 2013 | PSLV-XL | Mars\nOrbiter\nMission Spacecraft\nPATH path:mom-payload-lap\nEntity: Mars Orbiter Mission\nRelation: HAS_PAYLOAD\nValue: Lyman Alpha Photometer (LAP)\nSOURCE: ISRO_MOM_DETAILS\nSOURCE CHUNKS: ISRO_MOM_DETAILS::c00003\nSOURCE EVIDENCE:\nMars Color Camera (MCC)\n\nThermal Infrared Imaging Spectrometer (TIS)\n\nMethane Sensor for Mars (MSM)\n\nMars Exospheric Neutral Composition Analyser (MENCA)\n\nLyman Alpha Photometer (LAP)\n\nMars Colour Camera\nPATH path:mom-payload-mcc\nEntity: Mars Orbiter Mission\nRelation: HAS_PAYLOAD\nValue: Mars Colour Camera (MCC)\nSOURCE: ISRO_MOM_DETAILS\nSOURCE CHUNKS: ISRO_MOM_DETAILS::c00003\nSOURCE EVIDENCE:\nMars Color Camera (MCC)\n\nThermal Infrared Imaging Spectrometer (TIS)\n\nMethane Sensor for Mars (MSM)\n\nMars Exospheric Neutral Composition Analyser (MENCA)\n\nLyman Alpha Photometer (LAP)\n\nMars Colour Camera\nPATH path:mom-payload-menca\nEntity: Mars Orbiter Mission\nRelation: HAS_PAYLOAD\nValue: Mars Exospheric Neutral Composition Analyser (MENCA)\nSOURCE: ISRO_MOM_DETAILS\nSOURCE CHUNKS: ISRO_MOM_DETAILS::c00003\nSOURCE EVIDENCE:\nMars Color Camera (MCC)\n\nThermal Infrared Imaging Spectrometer (TIS)\n\nMethane Sensor for Mars (MSM)\n\nMars Exospheric Neutral Composition Analyser (MENCA)\n\nLyman Alpha Photometer (LAP)\n\nMars Colour Camera\nPATH path:mom-payload-msm\nEntity: Mars Orbiter Mission\nRelation: HAS_PAYLOAD\nValue: Methane Sensor for Mars (MSM)\nSOURCE: ISRO_MOM_DETAILS\nSOURCE CHUNKS: ISRO_MOM_DETAILS::c00003\nSOURCE EVIDENCE:\nMars Color Camera (MCC)\n\nThermal Infrared Imaging Spectrometer (TIS)\n\nMethane Sensor for Mars (MSM)\n\nMars Exospheric Neutral Composition Analyser (MENCA)\n\nLyman Alpha Photometer (LAP)\n\nMars Colour Camera\nPATH path:mom-payload-tis\nEntity: Mars Orbiter Mission\nRelation: HAS_PAYLOAD\nValue: Thermal Infrared Imaging Spectrometer (TIS)\nSOURCE: ISRO_MOM_DETAILS\nSOURCE CHUNKS: ISRO_MOM_DETAILS::c00003\nSOURCE EVIDENCE:\nMars Color Camera (MCC)\n\nThermal Infrared Imaging Spectrometer (TIS)\n\nMethane Sensor for Mars (MSM)\n\nMars Exospheric Neutral Composition Analyser (MENCA)\n\nLyman Alpha Photometer (LAP)\n\nMars Colour Camera\nPATH path:mom-launch-date\nEntity: Mars Orbiter Mission\nRelation: LAUNCHED_ON\nValue: 2013-11-05\nSOURCE: ISRO_LAUNCH_ARCHIVE\nSOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00069\nSOURCE EVIDENCE:\n40 | PSLV-C25 /Mars Orbiter Mission | Nov 05, 2013 | PSLV-XL | Mars\nOrbiter\nMission Spacecraft\nPATH path:mom-orbits-mars\nEntity: Mars Orbiter Mission\nRelation: ORBITS\nValue: Mars orbit\nSOURCE: ISRO_MOM_DETAILS\nSOURCE CHUNKS: ISRO_MOM_DETAILS::c00002\nSOURCE EVIDENCE:\nMars Orbiter Mission (MOM), India's first interplanetary mission to planet Mars was launchedonboard PSLV-C25 on November 05, 2013. ISRO has become the fourth space agency to successfully send a spacecraft to Mars orbit.Though the designed mission life is 6 months, MOM completed 7 years in its orbit on Sept 24, 2021.\n\nMission Objectives\n\nThe objectives of this mission are primarily technological and include design, realisation and launch of a Mars Orbiter spacecraft capable of operating with sufficient autonomy during the journey phase; Mars orbit insertion / capture and in-orbit phase around Mars. MOM carries five scientific payloads to study the Martian surface features, morphology, mineralogy and Martian atmosphere.\n\nScientific payloads\n\nMars continues to be an object of keen interest to scientists in the context of planetary evolution and extra-terrestrial life. Based on our understanding of Mars, which was thought to be probably a warm and wet planet earlier, is now seen to be dry with a thin atmosphere. How this evolution has taken place is still a topic of research. In this backdrop, the Indian Mars Orbiter Mission carried the following five scientific payloads:",
+    "final_fused_context": "RELATIONAL EVIDENCE PATH path:mom-payload-tis+mom-tis-developed-by-sac Entity: Mars Orbiter Mission Relation: HAS_PAYLOAD Value: Thermal Infrared Imaging Spectrometer (TIS) Entity: Thermal Infrared Imaging Spectrometer (TIS) Relation: DEVELOPED_BY Value: Space Applications Centre (SAC) SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00003, ISRO_MOM_DETAILS::c00019 SOURCE EVIDENCE: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera This spectrometer operates in the thermal infrared (TIR) region (7 micron to 13 micron). TIS has been configured with an un-cooled micro-bolometer array that saves significantly in terms of weight and power when compared to a cooled IR detector. This payload is developed by Space Applications Centre, Ahmedabad. The instrument features are: PATH path:mom-launch-site Entity: Mars Orbiter Mission Relation: LAUNCHED_FROM Value: Satish Dhawan Space Centre SHAR, Sriharikota SOURCE: ISRO_LAUNCH_ARCHIVE SOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00069 SOURCE EVIDENCE: 40 | PSLV-C25 /Mars Orbiter Mission | Nov 05, 2013 | PSLV-XL | Mars Orbiter Mission Spacecraft PATH path:mom-launcher Entity: Mars Orbiter Mission Relation: LAUNCHED_BY Value: PSLV-C25 SOURCE: ISRO_LAUNCH_ARCHIVE SOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00069 SOURCE EVIDENCE: 40 | PSLV-C25 /Mars Orbiter Mission | Nov 05, 2013 | PSLV-XL | Mars Orbiter Mission Spacecraft PATH path:mom-payload-lap Entity: Mars Orbiter Mission Relation: HAS_PAYLOAD Value: Lyman Alpha Photometer (LAP) SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00003 SOURCE EVIDENCE: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera PATH path:mom-payload-mcc Entity: Mars Orbiter Mission Relation: HAS_PAYLOAD Value: Mars Colour Camera (MCC) SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00003 SOURCE EVIDENCE: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera PATH path:mom-payload-menca Entity: Mars Orbiter Mission Relation: HAS_PAYLOAD Value: Mars Exospheric Neutral Composition Analyser (MENCA) SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00003 SOURCE EVIDENCE: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera PATH path:mom-payload-msm Entity: Mars Orbiter Mission Relation: HAS_PAYLOAD Value: Methane Sensor for Mars (MSM) SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00003 SOURCE EVIDENCE: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera PATH path:mom-payload-tis Entity: Mars Orbiter Mission Relation: HAS_PAYLOAD Value: Thermal Infrared Imaging Spectrometer (TIS) SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00003 SOURCE EVIDENCE: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera PATH path:mom-launch-date Entity: Mars Orbiter Mission Relation: LAUNCHED_ON Value: 2013-11-05 SOURCE: ISRO_LAUNCH_ARCHIVE SOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00069 SOURCE EVIDENCE: 40 | PSLV-C25 /Mars Orbiter Mission | Nov 05, 2013 | PSLV-XL | Mars Orbiter Mission Spacecraft PATH path:mom-orbits-mars Entity: Mars Orbiter Mission Relation: ORBITS Value: Mars orbit SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00002 SOURCE EVIDENCE: Mars Orbiter Mission (MOM), India's first interplanetary mission to planet Mars was launchedonboard PSLV-C25 on November 05, 2013. ISRO has become the fourth space agency to successfully send a spacecraft to Mars orbit.Though the designed mission life is 6 months, MOM completed 7 years in its orbit on Sept 24, 2021. Mission Objectives The objectives of this mission are primarily technological and include design, realisation and launch of a Mars Orbiter spacecraft capable of operating with sufficient autonomy during the journey phase; Mars orbit insertion / capture and in-orbit phase around Mars. MOM carries five scientific payloads to study the Martian surface features, morphology, mineralogy and Martian atmosphere. Scientific payloads Mars continues to be an object of keen interest to scientists in the context of planetary evolution and extra-terrestrial life. Based on our understanding of Mars, which was thought to be probably a warm and wet planet earlier, is now seen to be dry with a thin atmosphere. How this evolution has taken place is still a topic of research. In this backdrop, the Indian Mars Orbiter Mission carried the following five scientific payloads: RETRIEVED DOCUMENT EVIDENCE # Source: https://www.isro.gov.in/MarsOrbiterMissionSpacecraft.html Mars Orbiter Mission Mars Orbiter Mission Home / Activities / Science / Mars Orbiter Mission Mars Orbiter Mission (MOM), India's first interplanetary mission to planet Mars was launchedonboard PSLV-C25 on November 05, 2013. ISRO has become the fourth space agency to successfully send a spacecraft to Mars orbit.Though the designed mission life is 6 months, MOM completed 7 years in its orbit on Sept 24, 2021. Mission Objectives The objectives of this mission are primarily technological and include design, realisation and launch of a Mars Orbiter spacecraft capable of operating with sufficient autonomy during the journey phase; Mars orbit insertion / capture and in-orbit phase around Mars. MOM carries five scientific payloads to study the Martian surface features, morphology, mineralogy and Martian atmosphere. Scientific payloads Mars continues to be an object of keen interest to scientists in the context of planetary evolution and extra-terrestrial life. Based on our understanding of Mars, which was thought to be probably a warm and wet planet earlier, is now seen to be dry with a thin atmosphere. How this evolution has taken place is still a topic of research. In this backdrop, the Indian Mars Orbiter Mission carried the following five scientific payloads: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera The Mars Colour Camera is a versatile and multi-purpose snap shot camera with R-G-B Bayer pattern to map various morphological features on Mars and return visual images of Mars and its environs. Besides providing context information for other payloads, MCC is also expected to observe and help in furthering our understanding of events like dust storms, dust devils etc. that are known to occur in Mars. The highly elliptical orbit of the current mission allows imaging of localized scenes at high spatial resolution as well as provides a synoptic view of the full globe. This payload is developed by Space Application Centre Ahmedabad. The main objective of the Mars Colour camera therefore is: To map various morphological features on Mars with varying resolution and scales in the elliptical orbit. To provide context information for the other science payloads. The salient features of this instrument are given below: - Parameter Value Resolution 19.5 m @ Periareion Frame Size 40 km x 40 km@ Periareion Full Mars disc from 63000 km to Apoareion Spectral region 0.4 µm – 0.7 µm R-G-B (Bayer Pattern) Methane Sensor for Mars The Methane Sensor for Mars (MSM) is a differential radiometer based on Fabry-Perot Etalon filters operating in the short wave infrared (SWIR) region. It measures solar radiance in two SWIR channels. There is absorption by CH4 in the first channel (methane channel) whereas no absorption in the second spectral channel (reference channel). So the differential signal gives a measure of column amount of CH4. It can measure CH4 concentration in the Martian atmosphere with few parts-per-billion accuracy. By scanning the scene from apoareion, MSM can map the spatial distribution of methane. The temporal and spatial variation of methane # Source: https://www.isro.gov.in/POEMCompletedOrbitsSpace.html POEM Completed 1000 Orbits in Space POEM Completed 1000 Orbits in Space Home / POEM Completed 1000 Orbits in Space March 07, 2025 The fourth edition of the PSLV Orbital platform Experiment Module (POEM-4), the repurposed spent upper stage of the PSLV vehicle used for PSLV-C60/ SPADEX Mission, has successfully completed 1000 orbits on March 04, 2025. The PSLV-C60 Mission was launched on December 30, 2024 and POEM-4 began its operations subsequent to the successful injection of the SPADEX spacecraft. POEM-4 was configured as a three-axis stabilized platform that carried 24 payloads including 10 payloads from Non-Governmental Entities (NGEs) and 14 payloads from ISRO/DoS. All the payloads including those from NGEs have successfully completed the intended experiments in orbit. POEM-4 carried out experiments in space robotics, germination of seeds & growth of bacterium in microgravity, green propulsion, laser ignition of pyro thrusters, amateur radio transmission and advanced sensors. The up-linking & execution of an AI model as part of AI lab in space was also tested by a space start-up. The POEM-4 avionics system also validated a Mission Management Computer based on a “Made-in-India” 32-bit processor, Vikram3201, with a custom architecture developed by ISRO along with the use of a Nano star sensor for the first time to aid the navigation system. The platform also employed a stabilization system based on reaction wheels for attitude control along with cold gas thrusters that extended the orbital life of the module by at least 45 days compared to previous POEM missions. POEM-4 carried the maximum number of payloads till date compared to the previous three POEM missions and has yet again proved its versatility as a cost-effective experimental platform to support diverse payloads. PS4 stage with POEM payloads assembled function outsideAlert(url) { if (confirm(\"You will be directed to an external website. Are you sure that you want to proceed?\")) { window.open(url, '_blank'); } } Document ID: ADITYA_L1_MISSION_BOOKLET Title: Aditya-L1 Mission",
+    "retrieved_chunk_ids": [
+      "604",
+      "27406",
+      "55"
+    ],
+    "context_token_estimate": 1500,
+    "final_prompt": "CONTEXT:\nRELATIONAL EVIDENCE PATH path:mom-payload-tis+mom-tis-developed-by-sac Entity: Mars Orbiter Mission Relation: HAS_PAYLOAD Value: Thermal Infrared Imaging Spectrometer (TIS) Entity: Thermal Infrared Imaging Spectrometer (TIS) Relation: DEVELOPED_BY Value: Space Applications Centre (SAC) SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00003, ISRO_MOM_DETAILS::c00019 SOURCE EVIDENCE: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera This spectrometer operates in the thermal infrared (TIR) region (7 micron to 13 micron). TIS has been configured with an un-cooled micro-bolometer array that saves significantly in terms of weight and power when compared to a cooled IR detector. This payload is developed by Space Applications Centre, Ahmedabad. The instrument features are: PATH path:mom-launch-site Entity: Mars Orbiter Mission Relation: LAUNCHED_FROM Value: Satish Dhawan Space Centre SHAR, Sriharikota SOURCE: ISRO_LAUNCH_ARCHIVE SOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00069 SOURCE EVIDENCE: 40 | PSLV-C25 /Mars Orbiter Mission | Nov 05, 2013 | PSLV-XL | Mars Orbiter Mission Spacecraft PATH path:mom-launcher Entity: Mars Orbiter Mission Relation: LAUNCHED_BY Value: PSLV-C25 SOURCE: ISRO_LAUNCH_ARCHIVE SOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00069 SOURCE EVIDENCE: 40 | PSLV-C25 /Mars Orbiter Mission | Nov 05, 2013 | PSLV-XL | Mars Orbiter Mission Spacecraft PATH path:mom-payload-lap Entity: Mars Orbiter Mission Relation: HAS_PAYLOAD Value: Lyman Alpha Photometer (LAP) SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00003 SOURCE EVIDENCE: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera PATH path:mom-payload-mcc Entity: Mars Orbiter Mission Relation: HAS_PAYLOAD Value: Mars Colour Camera (MCC) SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00003 SOURCE EVIDENCE: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera PATH path:mom-payload-menca Entity: Mars Orbiter Mission Relation: HAS_PAYLOAD Value: Mars Exospheric Neutral Composition Analyser (MENCA) SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00003 SOURCE EVIDENCE: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera PATH path:mom-payload-msm Entity: Mars Orbiter Mission Relation: HAS_PAYLOAD Value: Methane Sensor for Mars (MSM) SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00003 SOURCE EVIDENCE: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera PATH path:mom-payload-tis Entity: Mars Orbiter Mission Relation: HAS_PAYLOAD Value: Thermal Infrared Imaging Spectrometer (TIS) SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00003 SOURCE EVIDENCE: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera PATH path:mom-launch-date Entity: Mars Orbiter Mission Relation: LAUNCHED_ON Value: 2013-11-05 SOURCE: ISRO_LAUNCH_ARCHIVE SOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00069 SOURCE EVIDENCE: 40 | PSLV-C25 /Mars Orbiter Mission | Nov 05, 2013 | PSLV-XL | Mars Orbiter Mission Spacecraft PATH path:mom-orbits-mars Entity: Mars Orbiter Mission Relation: ORBITS Value: Mars orbit SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00002 SOURCE EVIDENCE: Mars Orbiter Mission (MOM), India's first interplanetary mission to planet Mars was launchedonboard PSLV-C25 on November 05, 2013. ISRO has become the fourth space agency to successfully send a spacecraft to Mars orbit.Though the designed mission life is 6 months, MOM completed 7 years in its orbit on Sept 24, 2021. Mission Objectives The objectives of this mission are primarily technological and include design, realisation and launch of a Mars Orbiter spacecraft capable of operating with sufficient autonomy during the journey phase; Mars orbit insertion / capture and in-orbit phase around Mars. MOM carries five scientific payloads to study the Martian surface features, morphology, mineralogy and Martian atmosphere. Scientific payloads Mars continues to be an object of keen interest to scientists in the context of planetary evolution and extra-terrestrial life. Based on our understanding of Mars, which was thought to be probably a warm and wet planet earlier, is now seen to be dry with a thin atmosphere. How this evolution has taken place is still a topic of research. In this backdrop, the Indian Mars Orbiter Mission carried the following five scientific payloads: RETRIEVED DOCUMENT EVIDENCE # Source: https://www.isro.gov.in/MarsOrbiterMissionSpacecraft.html Mars Orbiter Mission Mars Orbiter Mission Home / Activities / Science / Mars Orbiter Mission Mars Orbiter Mission (MOM), India's first interplanetary mission to planet Mars was launchedonboard PSLV-C25 on November 05, 2013. ISRO has become the fourth space agency to successfully send a spacecraft to Mars orbit.Though the designed mission life is 6 months, MOM completed 7 years in its orbit on Sept 24, 2021. Mission Objectives The objectives of this mission are primarily technological and include design, realisation and launch of a Mars Orbiter spacecraft capable of operating with sufficient autonomy during the journey phase; Mars orbit insertion / capture and in-orbit phase around Mars. MOM carries five scientific payloads to study the Martian surface features, morphology, mineralogy and Martian atmosphere. Scientific payloads Mars continues to be an object of keen interest to scientists in the context of planetary evolution and extra-terrestrial life. Based on our understanding of Mars, which was thought to be probably a warm and wet planet earlier, is now seen to be dry with a thin atmosphere. How this evolution has taken place is still a topic of research. In this backdrop, the Indian Mars Orbiter Mission carried the following five scientific payloads: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera The Mars Colour Camera is a versatile and multi-purpose snap shot camera with R-G-B Bayer pattern to map various morphological features on Mars and return visual images of Mars and its environs. Besides providing context information for other payloads, MCC is also expected to observe and help in furthering our understanding of events like dust storms, dust devils etc. that are known to occur in Mars. The highly elliptical orbit of the current mission allows imaging of localized scenes at high spatial resolution as well as provides a synoptic view of the full globe. This payload is developed by Space Application Centre Ahmedabad. The main objective of the Mars Colour camera therefore is: To map various morphological features on Mars with varying resolution and scales in the elliptical orbit. To provide context information for the other science payloads. The salient features of this instrument are given below: - Parameter Value Resolution 19.5 m @ Periareion Frame Size 40 km x 40 km@ Periareion Full Mars disc from 63000 km to Apoareion Spectral region 0.4 µm – 0.7 µm R-G-B (Bayer Pattern) Methane Sensor for Mars The Methane Sensor for Mars (MSM) is a differential radiometer based on Fabry-Perot Etalon filters operating in the short wave infrared (SWIR) region. It measures solar radiance in two SWIR channels. There is absorption by CH4 in the first channel (methane channel) whereas no absorption in the second spectral channel (reference channel). So the differential signal gives a measure of column amount of CH4. It can measure CH4 concentration in the Martian atmosphere with few parts-per-billion accuracy. By scanning the scene from apoareion, MSM can map the spatial distribution of methane. The temporal and spatial variation of methane # Source: https://www.isro.gov.in/POEMCompletedOrbitsSpace.html POEM Completed 1000 Orbits in Space POEM Completed 1000 Orbits in Space Home / POEM Completed 1000 Orbits in Space March 07, 2025 The fourth edition of the PSLV Orbital platform Experiment Module (POEM-4), the repurposed spent upper stage of the PSLV vehicle used for PSLV-C60/ SPADEX Mission, has successfully completed 1000 orbits on March 04, 2025. The PSLV-C60 Mission was launched on December 30, 2024 and POEM-4 began its operations subsequent to the successful injection of the SPADEX spacecraft. POEM-4 was configured as a three-axis stabilized platform that carried 24 payloads including 10 payloads from Non-Governmental Entities (NGEs) and 14 payloads from ISRO/DoS. All the payloads including those from NGEs have successfully completed the intended experiments in orbit. POEM-4 carried out experiments in space robotics, germination of seeds & growth of bacterium in microgravity, green propulsion, laser ignition of pyro thrusters, amateur radio transmission and advanced sensors. The up-linking & execution of an AI model as part of AI lab in space was also tested by a space start-up. The POEM-4 avionics system also validated a Mission Management Computer based on a “Made-in-India” 32-bit processor, Vikram3201, with a custom architecture developed by ISRO along with the use of a Nano star sensor for the first time to aid the navigation system. The platform also employed a stabilization system based on reaction wheels for attitude control along with cold gas thrusters that extended the orbital life of the module by at least 45 days compared to previous POEM missions. POEM-4 carried the maximum number of payloads till date compared to the previous three POEM missions and has yet again proved its versatility as a cost-effective experimental platform to support diverse payloads. PS4 stage with POEM payloads assembled function outsideAlert(url) { if (confirm(\"You will be directed to an external website. Are you sure that you want to proceed?\")) { window.open(url, '_blank'); } } Document ID: ADITYA_L1_MISSION_BOOKLET Title: Aditya-L1 Mission\n\nQUESTION:\nWhich payload carried by the Mars Orbiter Mission was developed by the Space Applications Centre?\n\nANSWER (based only on the context above):",
+    "final_context": "RELATIONAL EVIDENCE PATH path:mom-payload-tis+mom-tis-developed-by-sac Entity: Mars Orbiter Mission Relation: HAS_PAYLOAD Value: Thermal Infrared Imaging Spectrometer (TIS) Entity: Thermal Infrared Imaging Spectrometer (TIS) Relation: DEVELOPED_BY Value: Space Applications Centre (SAC) SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00003, ISRO_MOM_DETAILS::c00019 SOURCE EVIDENCE: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera This spectrometer operates in the thermal infrared (TIR) region (7 micron to 13 micron). TIS has been configured with an un-cooled micro-bolometer array that saves significantly in terms of weight and power when compared to a cooled IR detector. This payload is developed by Space Applications Centre, Ahmedabad. The instrument features are: PATH path:mom-launch-site Entity: Mars Orbiter Mission Relation: LAUNCHED_FROM Value: Satish Dhawan Space Centre SHAR, Sriharikota SOURCE: ISRO_LAUNCH_ARCHIVE SOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00069 SOURCE EVIDENCE: 40 | PSLV-C25 /Mars Orbiter Mission | Nov 05, 2013 | PSLV-XL | Mars Orbiter Mission Spacecraft PATH path:mom-launcher Entity: Mars Orbiter Mission Relation: LAUNCHED_BY Value: PSLV-C25 SOURCE: ISRO_LAUNCH_ARCHIVE SOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00069 SOURCE EVIDENCE: 40 | PSLV-C25 /Mars Orbiter Mission | Nov 05, 2013 | PSLV-XL | Mars Orbiter Mission Spacecraft PATH path:mom-payload-lap Entity: Mars Orbiter Mission Relation: HAS_PAYLOAD Value: Lyman Alpha Photometer (LAP) SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00003 SOURCE EVIDENCE: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera PATH path:mom-payload-mcc Entity: Mars Orbiter Mission Relation: HAS_PAYLOAD Value: Mars Colour Camera (MCC) SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00003 SOURCE EVIDENCE: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera PATH path:mom-payload-menca Entity: Mars Orbiter Mission Relation: HAS_PAYLOAD Value: Mars Exospheric Neutral Composition Analyser (MENCA) SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00003 SOURCE EVIDENCE: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera PATH path:mom-payload-msm Entity: Mars Orbiter Mission Relation: HAS_PAYLOAD Value: Methane Sensor for Mars (MSM) SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00003 SOURCE EVIDENCE: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera PATH path:mom-payload-tis Entity: Mars Orbiter Mission Relation: HAS_PAYLOAD Value: Thermal Infrared Imaging Spectrometer (TIS) SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00003 SOURCE EVIDENCE: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera PATH path:mom-launch-date Entity: Mars Orbiter Mission Relation: LAUNCHED_ON Value: 2013-11-05 SOURCE: ISRO_LAUNCH_ARCHIVE SOURCE CHUNKS: ISRO_LAUNCH_ARCHIVE::c00069 SOURCE EVIDENCE: 40 | PSLV-C25 /Mars Orbiter Mission | Nov 05, 2013 | PSLV-XL | Mars Orbiter Mission Spacecraft PATH path:mom-orbits-mars Entity: Mars Orbiter Mission Relation: ORBITS Value: Mars orbit SOURCE: ISRO_MOM_DETAILS SOURCE CHUNKS: ISRO_MOM_DETAILS::c00002 SOURCE EVIDENCE: Mars Orbiter Mission (MOM), India's first interplanetary mission to planet Mars was launchedonboard PSLV-C25 on November 05, 2013. ISRO has become the fourth space agency to successfully send a spacecraft to Mars orbit.Though the designed mission life is 6 months, MOM completed 7 years in its orbit on Sept 24, 2021. Mission Objectives The objectives of this mission are primarily technological and include design, realisation and launch of a Mars Orbiter spacecraft capable of operating with sufficient autonomy during the journey phase; Mars orbit insertion / capture and in-orbit phase around Mars. MOM carries five scientific payloads to study the Martian surface features, morphology, mineralogy and Martian atmosphere. Scientific payloads Mars continues to be an object of keen interest to scientists in the context of planetary evolution and extra-terrestrial life. Based on our understanding of Mars, which was thought to be probably a warm and wet planet earlier, is now seen to be dry with a thin atmosphere. How this evolution has taken place is still a topic of research. In this backdrop, the Indian Mars Orbiter Mission carried the following five scientific payloads: RETRIEVED DOCUMENT EVIDENCE # Source: https://www.isro.gov.in/MarsOrbiterMissionSpacecraft.html Mars Orbiter Mission Mars Orbiter Mission Home / Activities / Science / Mars Orbiter Mission Mars Orbiter Mission (MOM), India's first interplanetary mission to planet Mars was launchedonboard PSLV-C25 on November 05, 2013. ISRO has become the fourth space agency to successfully send a spacecraft to Mars orbit.Though the designed mission life is 6 months, MOM completed 7 years in its orbit on Sept 24, 2021. Mission Objectives The objectives of this mission are primarily technological and include design, realisation and launch of a Mars Orbiter spacecraft capable of operating with sufficient autonomy during the journey phase; Mars orbit insertion / capture and in-orbit phase around Mars. MOM carries five scientific payloads to study the Martian surface features, morphology, mineralogy and Martian atmosphere. Scientific payloads Mars continues to be an object of keen interest to scientists in the context of planetary evolution and extra-terrestrial life. Based on our understanding of Mars, which was thought to be probably a warm and wet planet earlier, is now seen to be dry with a thin atmosphere. How this evolution has taken place is still a topic of research. In this backdrop, the Indian Mars Orbiter Mission carried the following five scientific payloads: Mars Color Camera (MCC) Thermal Infrared Imaging Spectrometer (TIS) Methane Sensor for Mars (MSM) Mars Exospheric Neutral Composition Analyser (MENCA) Lyman Alpha Photometer (LAP) Mars Colour Camera The Mars Colour Camera is a versatile and multi-purpose snap shot camera with R-G-B Bayer pattern to map various morphological features on Mars and return visual images of Mars and its environs. Besides providing context information for other payloads, MCC is also expected to observe and help in furthering our understanding of events like dust storms, dust devils etc. that are known to occur in Mars. The highly elliptical orbit of the current mission allows imaging of localized scenes at high spatial resolution as well as provides a synoptic view of the full globe. This payload is developed by Space Application Centre Ahmedabad. The main objective of the Mars Colour camera therefore is: To map various morphological features on Mars with varying resolution and scales in the elliptical orbit. To provide context information for the other science payloads. The salient features of this instrument are given below: - Parameter Value Resolution 19.5 m @ Periareion Frame Size 40 km x 40 km@ Periareion Full Mars disc from 63000 km to Apoareion Spectral region 0.4 µm – 0.7 µm R-G-B (Bayer Pattern) Methane Sensor for Mars The Methane Sensor for Mars (MSM) is a differential radiometer based on Fabry-Perot Etalon filters operating in the short wave infrared (SWIR) region. It measures solar radiance in two SWIR channels. There is absorption by CH4 in the first channel (methane channel) whereas no absorption in the second spectral channel (reference channel). So the differential signal gives a measure of column amount of CH4. It can measure CH4 concentration in the Martian atmosphere with few parts-per-billion accuracy. By scanning the scene from apoareion, MSM can map the spatial distribution of methane. The temporal and spatial variation of methane # Source: https://www.isro.gov.in/POEMCompletedOrbitsSpace.html POEM Completed 1000 Orbits in Space POEM Completed 1000 Orbits in Space Home / POEM Completed 1000 Orbits in Space March 07, 2025 The fourth edition of the PSLV Orbital platform Experiment Module (POEM-4), the repurposed spent upper stage of the PSLV vehicle used for PSLV-C60/ SPADEX Mission, has successfully completed 1000 orbits on March 04, 2025. The PSLV-C60 Mission was launched on December 30, 2024 and POEM-4 began its operations subsequent to the successful injection of the SPADEX spacecraft. POEM-4 was configured as a three-axis stabilized platform that carried 24 payloads including 10 payloads from Non-Governmental Entities (NGEs) and 14 payloads from ISRO/DoS. All the payloads including those from NGEs have successfully completed the intended experiments in orbit. POEM-4 carried out experiments in space robotics, germination of seeds & growth of bacterium in microgravity, green propulsion, laser ignition of pyro thrusters, amateur radio transmission and advanced sensors. The up-linking & execution of an AI model as part of AI lab in space was also tested by a space start-up. The POEM-4 avionics system also validated a Mission Management Computer based on a “Made-in-India” 32-bit processor, Vikram3201, with a custom architecture developed by ISRO along with the use of a Nano star sensor for the first time to aid the navigation system. The platform also employed a stabilization system based on reaction wheels for attitude control along with cold gas thrusters that extended the orbital life of the module by at least 45 days compared to previous POEM missions. POEM-4 carried the maximum number of payloads till date compared to the previous three POEM missions and has yet again proved its versatility as a cost-effective experimental platform to support diverse payloads. PS4 stage with POEM payloads assembled function outsideAlert(url) { if (confirm(\"You will be directed to an external website. Are you sure that you want to proceed?\")) { window.open(url, '_blank'); } } Document ID: ADITYA_L1_MISSION_BOOKLET Title: Aditya-L1 Mission",
+    "context_size": 1500
+  },
+  "metrics": {
+    "rouge_l": 0.0,
+    "reference_token_coverage": 0.0,
+    "exact_match": 0.0,
+    "idk": false
+  },
+  "generation_telemetry": {
+    "prompt_construction_ms": 0.0447,
+    "request_latency_ms": 47069.5796,
+    "total_generation_ms": 47071.9167,
+    "prompt_chars": 10795,
+    "prompt_tokens": 1027,
+    "generated_tokens": 20,
+    "eval_duration_ns": 4087550000,
+    "prompt_eval_duration_ns": 42719121000,
+    "status": "ok",
+    "failure": null
+  },
+  "timestamp_utc": "2026-10-07T16:46:12.227104+00:00"
+}

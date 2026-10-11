@@ -4,6 +4,7 @@ requests>=2.32.0
 tqdm>=4.66.0
 numpy>=1.26.0
 pandas>=2.2.0
+pypdf>=5.0.0
 
 # NLP + graph
 spacy>=3.7.0
@@ -16,8 +17,14 @@ rank_bm25>=0.2.2
 ollama>=0.1.0
 transformers>=4.41.0
 
+# HTTP API for the frontend (src/api)
+fastapi>=0.115.0
+uvicorn>=0.30.0
+
+# Human-evaluation kits (workbook and PDF)
+openpyxl>=3.1.0
+reportlab>=4.0.0
+
 # Testing
 pytest>=8.0.0
-
-# Frontend tooling is handled separately in frontend/package.json
 

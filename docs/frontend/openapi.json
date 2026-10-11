@@ -1,0 +1,621 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "KG-RAG ISRO API",
+    "description": "Question answering over official ISRO/ISSDC documents with a provenance-linked knowledge graph (relation-aware KG-RAG). Every answer comes with the KG paths and official sources behind it.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/health": {
+      "get": {
+        "tags": [
+          "system"
+        ],
+        "summary": "Health",
+        "description": "Poll until status is 'ready' before enabling the ask button.",
+        "operationId": "health_api_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/examples": {
+      "get": {
+        "tags": [
+          "questions"
+        ],
+        "summary": "Examples",
+        "description": "Example questions from the evaluation benchmark, for suggestion chips.",
+        "operationId": "examples_api_examples_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExamplesResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ask": {
+      "post": {
+        "tags": [
+          "questions"
+        ],
+        "summary": "Ask",
+        "description": "Answer a question. Live answers take roughly 10-30 seconds on the local GPU.",
+        "operationId": "ask_api_ask_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AskRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AskResponse"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Still warming up, or the language model is unavailable.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AskRequest": {
+        "properties": {
+          "question": {
+            "type": "string",
+            "maxLength": 500,
+            "minLength": 3,
+            "title": "Question",
+            "examples": [
+              "Which organization developed the Solar Ultraviolet Imaging Telescope (SUIT)?"
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "question"
+        ],
+        "title": "AskRequest"
+      },
+      "AskResponse": {
+        "properties": {
+          "question": {
+            "type": "string",
+            "title": "Question"
+          },
+          "answer": {
+            "type": "string",
+            "title": "Answer"
+          },
+          "abstained": {
+            "type": "boolean",
+            "title": "Abstained",
+            "description": "True when the system answered \"I don't know.\""
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "live",
+              "mock"
+            ],
+            "title": "Mode",
+            "description": "'mock' answers are canned; never present them as real."
+          },
+          "system": {
+            "type": "string",
+            "title": "System",
+            "default": "relation_aware_kg_rag"
+          },
+          "analysis": {
+            "$ref": "#/components/schemas/QueryAnalysis"
+          },
+          "kg_paths": {
+            "items": {
+              "$ref": "#/components/schemas/KGPath"
+            },
+            "type": "array",
+            "title": "Kg Paths",
+            "description": "Top KG paths shown to the user (max 10)."
+          },
+          "kg_paths_total": {
+            "type": "integer",
+            "title": "Kg Paths Total",
+            "description": "All KG paths given to the model."
+          },
+          "passages": {
+            "items": {
+              "$ref": "#/components/schemas/Passage"
+            },
+            "type": "array",
+            "title": "Passages"
+          },
+          "usage": {
+            "$ref": "#/components/schemas/Usage"
+          }
+        },
+        "type": "object",
+        "required": [
+          "question",
+          "answer",
+          "abstained",
+          "mode",
+          "analysis",
+          "kg_paths",
+          "kg_paths_total",
+          "passages",
+          "usage"
+        ],
+        "title": "AskResponse"
+      },
+      "ErrorResponse": {
+        "properties": {
+          "detail": {
+            "type": "string",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "required": [
+          "detail"
+        ],
+        "title": "ErrorResponse"
+      },
+      "Example": {
+        "properties": {
+          "question": {
+            "type": "string",
+            "title": "Question"
+          },
+          "mission": {
+            "type": "string",
+            "title": "Mission"
+          },
+          "category": {
+            "type": "string",
+            "title": "Category"
+          }
+        },
+        "type": "object",
+        "required": [
+          "question",
+          "mission",
+          "category"
+        ],
+        "title": "Example"
+      },
+      "ExamplesResponse": {
+        "properties": {
+          "examples": {
+            "items": {
+              "$ref": "#/components/schemas/Example"
+            },
+            "type": "array",
+            "title": "Examples"
+          }
+        },
+        "type": "object",
+        "required": [
+          "examples"
+        ],
+        "title": "ExamplesResponse"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "HealthResponse": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "ready",
+              "warming_up",
+              "error"
+            ],
+            "title": "Status"
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "live",
+              "mock"
+            ],
+            "title": "Mode"
+          },
+          "model": {
+            "type": "string",
+            "title": "Model"
+          },
+          "ollama_reachable": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ollama Reachable"
+          },
+          "detail": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "required": [
+          "status",
+          "mode",
+          "model"
+        ],
+        "title": "HealthResponse"
+      },
+      "Hop": {
+        "properties": {
+          "subject": {
+            "type": "string",
+            "title": "Subject"
+          },
+          "relation": {
+            "type": "string",
+            "title": "Relation"
+          },
+          "object": {
+            "type": "string",
+            "title": "Object"
+          },
+          "triple_id": {
+            "type": "string",
+            "title": "Triple Id"
+          },
+          "source": {
+            "$ref": "#/components/schemas/Source"
+          }
+        },
+        "type": "object",
+        "required": [
+          "subject",
+          "relation",
+          "object",
+          "triple_id",
+          "source"
+        ],
+        "title": "Hop",
+        "description": "One fact in a KG path: subject -> relation -> object."
+      },
+      "KGPath": {
+        "properties": {
+          "path_id": {
+            "type": "string",
+            "title": "Path Id"
+          },
+          "score": {
+            "type": "number",
+            "title": "Score",
+            "description": "Retrieval score, 0-1; paths are sorted by it."
+          },
+          "hops": {
+            "items": {
+              "$ref": "#/components/schemas/Hop"
+            },
+            "type": "array",
+            "title": "Hops"
+          }
+        },
+        "type": "object",
+        "required": [
+          "path_id",
+          "score",
+          "hops"
+        ],
+        "title": "KGPath"
+      },
+      "Passage": {
+        "properties": {
+          "rank": {
+            "type": "integer",
+            "title": "Rank"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Url",
+            "description": "Source page, when the passage records one."
+          },
+          "title": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Title"
+          },
+          "mission": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mission"
+          },
+          "source_file": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source File"
+          }
+        },
+        "type": "object",
+        "required": [
+          "rank",
+          "text"
+        ],
+        "title": "Passage",
+        "description": "Text passage from dense retrieval."
+      },
+      "QueryAnalysis": {
+        "properties": {
+          "query_type": {
+            "type": "string",
+            "title": "Query Type",
+            "description": "FACTUAL, RELATIONAL or MULTI_HOP."
+          },
+          "entities": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Entities"
+          },
+          "relations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Relations"
+          },
+          "hop_depth": {
+            "type": "integer",
+            "title": "Hop Depth"
+          }
+        },
+        "type": "object",
+        "required": [
+          "query_type",
+          "entities",
+          "relations",
+          "hop_depth"
+        ],
+        "title": "QueryAnalysis"
+      },
+      "Source": {
+        "properties": {
+          "document_id": {
+            "type": "string",
+            "title": "Document Id"
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Url"
+          },
+          "section": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Section"
+          },
+          "page": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Page"
+          },
+          "excerpt": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Excerpt",
+            "description": "Supporting text from the official source."
+          }
+        },
+        "type": "object",
+        "required": [
+          "document_id"
+        ],
+        "title": "Source",
+        "description": "Official document a KG fact was curated from."
+      },
+      "Usage": {
+        "properties": {
+          "latency_ms": {
+            "type": "integer",
+            "title": "Latency Ms"
+          },
+          "prompt_tokens": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Prompt Tokens"
+          },
+          "context_tokens_used": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Context Tokens Used"
+          },
+          "context_trimmed": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Context Trimmed"
+          }
+        },
+        "type": "object",
+        "required": [
+          "latency_ms"
+        ],
+        "title": "Usage"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

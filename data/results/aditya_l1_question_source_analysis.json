@@ -1,0 +1,2892 @@
+{
+  "method": "Conservative lexical evidence: at least 75% of non-stopword reference tokens and at least three matched tokens (or all tokens for shorter references) in one source chunk.",
+  "warning": "This is a corpus-association analysis, not a human factuality judgment.",
+  "counts": {
+    "original corpus only": 78,
+    "new Aditya-L1 corpus": 0,
+    "both": 11,
+    "neither": 91
+  },
+  "rows": [
+    {
+      "id": "isro_002",
+      "tier": 1,
+      "reference_answer": "Chandrayaan-3 aims to demonstrate safe and soft landing on the lunar surface and rover operations.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_propulsion_module_moved_from_lunar_orbit_to_earth_orbit_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_003",
+      "tier": 1,
+      "reference_answer": "Chandrayaan-3 landed on the Moon on August 23, 2023.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 1.0,
+        "source": "data\\raw\\https_www_isro_gov_in_apxs_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_004",
+      "tier": 1,
+      "reference_answer": "The rover on Chandrayaan-3 is named Pragyan.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_alpha_particle_x_ray_spectrometer_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.0,
+        "source": null
+      }
+    },
+    {
+      "id": "isro_005",
+      "tier": 1,
+      "reference_answer": "The lander on Chandrayaan-3 is named Vikram.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_3rd_national_space_day_2026_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.25,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_006",
+      "tier": 1,
+      "reference_answer": "Mangalyaan (Mars Orbiter Mission) was launched on November 5, 2013.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.7143,
+        "source": "data\\raw\\https_www_isro_gov_in_marsorbitermissionspacecraft_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2857,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_007",
+      "tier": 1,
+      "reference_answer": "Mangalyaan was launched by PSLV-C25.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_achievements_department_of_space_2025_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_008",
+      "tier": 1,
+      "reference_answer": "Aditya-L1 was launched on September 2, 2023.",
+      "association": "both",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": true,
+        "best_coverage": 1.0,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_009",
+      "tier": 1,
+      "reference_answer": "Aditya-L1 aims to study the Sun from the L1 Lagrange point, focusing on solar corona, solar wind, and space weather.",
+      "association": "both",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_aditya_l1_catches_the_suns_early_warning_signs_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf"
+      }
+    },
+    {
+      "id": "isro_010",
+      "tier": 1,
+      "reference_answer": "PSLV stands for Polar Satellite Launch Vehicle.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8333,
+        "source": "data\\raw\\https_www_isro_gov_in_cartosat_1_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3333,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_011",
+      "tier": 1,
+      "reference_answer": "GSLV stands for Geosynchronous Satellite Launch Vehicle.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8333,
+        "source": "data\\raw\\https_www_isro_gov_in_edusat_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1667,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_012",
+      "tier": 1,
+      "reference_answer": "The current chairman of ISRO is Dr. V. Narayanan.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.25,
+        "source": "https://alpps.issdc.gov.in/"
+      }
+    },
+    {
+      "id": "isro_013",
+      "tier": 1,
+      "reference_answer": "ISRO was established on August 15, 1969.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_foundation_stone_laid_for_launch_pad_at_sslv_launch_complex_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.25,
+        "source": "https://alpps.issdc.gov.in/"
+      }
+    },
+    {
+      "id": "isro_014",
+      "tier": 1,
+      "reference_answer": "ISRO headquarters is located in Bengaluru, Karnataka, India.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8333,
+        "source": "data\\raw\\https_www_isro_gov_in_bellatrix_space_propulsion_lab_monopropellant_thruster_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3333,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_016",
+      "tier": 1,
+      "reference_answer": "Aryabhata was launched on April 19, 1975.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_astronomy_mission_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.25,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_017",
+      "tier": 1,
+      "reference_answer": "INSAT stands for Indian National Satellite System.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8333,
+        "source": "data\\raw\\https_www_isro_gov_in.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_018",
+      "tier": 1,
+      "reference_answer": "Chandrayaan-2 is in a lunar polar orbit.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.25,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_019",
+      "tier": 1,
+      "reference_answer": "ISRO's human spaceflight mission is called Gaganyaan.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8333,
+        "source": "data\\raw\\https_www_isro_gov_in_axiom04_mission_successfully_concluded_return_isro_gaganyatri_shubhanshushukla_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_020",
+      "tier": 1,
+      "reference_answer": "PSLV-C37 was launched on February 15, 2017.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "data\\raw\\https_www_isro_gov_in_spacecraftmissions_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.4,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_021",
+      "tier": 1,
+      "reference_answer": "PSLV-C37 carried 104 satellites, setting a world record.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.625,
+        "source": "data\\raw\\https_www_isro_gov_in_mission_pslv_c62_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.125,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_022",
+      "tier": 1,
+      "reference_answer": "SSLV stands for Small Satellite Launch Vehicle.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8333,
+        "source": "data\\raw\\https_www_isro_gov_in.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1667,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_023",
+      "tier": 1,
+      "reference_answer": "GSLV Mk III can carry up to 4 tonnes to Geostationary Transfer Orbit.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.875,
+        "source": "data\\raw\\https_www_isro_gov_in_gslv_f14_insat_3ds_mission_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.25,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_024",
+      "tier": 1,
+      "reference_answer": "The Satish Dhawan Space Centre is located in Sriharikota, Andhra Pradesh, India.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.7778,
+        "source": "data\\raw\\https_www_isro_gov_in_cabinetapprovesthirdlaunchpad_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.5556,
+        "source": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf"
+      }
+    },
+    {
+      "id": "isro_025",
+      "tier": 1,
+      "reference_answer": "VSSC stands for Vikram Sarabhai Space Centre.",
+      "association": "both",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 1.0,
+        "source": "data\\raw\\https_www_isro_gov_in_book_release_fea_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": true,
+        "best_coverage": 0.8333,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_026",
+      "tier": 1,
+      "reference_answer": "VSSC is located in Thiruvananthapuram, Kerala, India.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "data\\raw\\https_www_isro_gov_in_vssc_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.4,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_027",
+      "tier": 1,
+      "reference_answer": "NavIC is India's regional navigation satellite system, providing accurate position information over India and surrounding regions.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6923,
+        "source": "data\\raw\\https_www_isro_gov_in_gslv_f15_nvs_02_mission_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2308,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_028",
+      "tier": 1,
+      "reference_answer": "NavIC consists of 8 satellites.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6667,
+        "source": "data\\raw\\https_www_isro_gov_in_irnss_1a_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.0,
+        "source": null
+      }
+    },
+    {
+      "id": "isro_029",
+      "tier": 1,
+      "reference_answer": "SAC stands for Space Applications Centre.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "data\\raw\\https_www_isro_gov_in.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.4,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_030",
+      "tier": 1,
+      "reference_answer": "SAC is located in Ahmedabad, Gujarat, India.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "data\\raw\\https_www_isro_gov_in_3rd_national_space_day_2026_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_032",
+      "tier": 1,
+      "reference_answer": "NRSC is located in Hyderabad, Telangana, India.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "data\\raw\\https_www_isro_gov_in.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2,
+        "source": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf"
+      }
+    },
+    {
+      "id": "isro_034",
+      "tier": 1,
+      "reference_answer": "Chandrayaan-1 was launched on October 22, 2008.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_data_utilisation_ao_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.25,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_035",
+      "tier": 1,
+      "reference_answer": "Chandrayaan-1 was launched by PSLV-C11.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_037",
+      "tier": 1,
+      "reference_answer": "RISAT stands for Radar Imaging Satellite, used for remote sensing using synthetic aperture radar.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8182,
+        "source": "data\\raw\\https_www_isro_gov_in_risat_1_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1818,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_038",
+      "tier": 1,
+      "reference_answer": "ISTRAC stands for ISRO Telemetry, Tracking and Command Network.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8571,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_lunar_orbit_insertion_press_release_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2857,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_039",
+      "tier": 1,
+      "reference_answer": "ISRO was founded by Dr. Vikram Sarabhai.",
+      "association": "both",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_book_release_fea_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_040",
+      "tier": 1,
+      "reference_answer": "URSC stands for U R Rao Satellite Centre.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "data\\raw\\https_www_isro_gov_in_apxs_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.6,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_041",
+      "tier": 1,
+      "reference_answer": "URSC is located in Bengaluru, Karnataka, India.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "data\\raw\\https_www_isro_gov_in_isro_centres_science_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.4,
+        "source": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf"
+      }
+    },
+    {
+      "id": "isro_042",
+      "tier": 1,
+      "reference_answer": "Aditya-L1 studies the solar corona, solar wind, and space weather phenomena from the L1 Lagrange point.",
+      "association": "both",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "data\\raw\\https_www_isro_gov_in_aditya_l1_aspex_instrument_begins_measurements_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf"
+      }
+    },
+    {
+      "id": "isro_043",
+      "tier": 1,
+      "reference_answer": "Chandrayaan-3 was launched by LVM3-M4.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 1.0,
+        "source": "data\\raw\\https_www_isro_gov_in.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3333,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_044",
+      "tier": 1,
+      "reference_answer": "Chandrayaan-3 landed near the lunar south pole.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8333,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_apxs_volatile_measurements_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1667,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_045",
+      "tier": 1,
+      "reference_answer": "GSAT is India's series of communication satellites operated by ISRO for telecommunication and broadcasting.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6667,
+        "source": "data\\raw\\https_www_isro_gov_in_gsat_6_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2222,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_046",
+      "tier": 1,
+      "reference_answer": "LVM3 stands for Launch Vehicle Mark 3, formerly known as GSLV Mk III.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5556,
+        "source": "data\\raw\\https_www_isro_gov_in_gsat_19_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1111,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_047",
+      "tier": 1,
+      "reference_answer": "PSLV uses solid propellant (HTPB) in its first stage.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_celebrations_of_1000th_casting_completion_by_sprob_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.25,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_048",
+      "tier": 1,
+      "reference_answer": "HTPB stands for Hydroxyl-Terminated Polybutadiene.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "data\\raw\\https_www_isro_gov_in_30knhybridmotorsuccessfully_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.0,
+        "source": null
+      }
+    },
+    {
+      "id": "isro_049",
+      "tier": 1,
+      "reference_answer": "The first successful GSLV flight was GSLV-D2 on May 8, 2003.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8333,
+        "source": "data\\raw\\https_www_isro_gov_in_mission_gslv_d2_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3333,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_050",
+      "tier": 1,
+      "reference_answer": "The Chandrayaan-2 orbiter has a mission life of 7 years.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "data\\raw\\https_www_isro_gov_in.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.4,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_051",
+      "tier": 1,
+      "reference_answer": "India's first remote sensing satellite was IRS-1A.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8333,
+        "source": "data\\raw\\https_www_isro_gov_in.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3333,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_053",
+      "tier": 1,
+      "reference_answer": "Gaganyaan is ISRO's crewed orbital spacecraft mission to send Indian astronauts to space.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.7,
+        "source": "data\\raw\\https_www_isro_gov_in_achievements_department_of_space_2025_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.6,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_054",
+      "tier": 1,
+      "reference_answer": "Gaganyaan is planned to orbit at an altitude of 400 km.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "data\\raw\\https_www_isro_gov_in_gaganyaan_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.4,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_055",
+      "tier": 1,
+      "reference_answer": "ISRO's space science centre is the Space Physics Laboratory (SPL), part of VSSC.",
+      "association": "both",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.7778,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_rambha_lp_near_surface_plasma_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": true,
+        "best_coverage": 0.7778,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_056",
+      "tier": 1,
+      "reference_answer": "EDUSAT is India's first satellite dedicated to educational services.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8571,
+        "source": "data\\raw\\https_www_isro_gov_in_edusat_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2857,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_057",
+      "tier": 1,
+      "reference_answer": "EDUSAT was launched on September 20, 2004.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_edusat_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_058",
+      "tier": 1,
+      "reference_answer": "IRNSS stands for Indian Regional Navigation Satellite System, now known as NavIC.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6,
+        "source": "data\\raw\\https_www_isro_gov_in_gslv_f15_nvs_02_mission_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_059",
+      "tier": 1,
+      "reference_answer": "Rohini was India's first indigenously built and launched satellite, launched by SLV-3 in 1980.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6667,
+        "source": "data\\raw\\https_www_isro_gov_in_rohinisatellite_rs_1_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3333,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_060",
+      "tier": 1,
+      "reference_answer": "SLV stands for Satellite Launch Vehicle.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "data\\raw\\https_www_isro_gov_in_celebrations_of_1000th_casting_completion_by_sprob_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_061",
+      "tier": 1,
+      "reference_answer": "The project director of Chandrayaan-1 was M. Annadurai.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_data_utilisation_ao_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.0,
+        "source": null
+      }
+    },
+    {
+      "id": "isro_062",
+      "tier": 1,
+      "reference_answer": "Chandrayaan-3 had a launch mass of approximately 3,900 kg.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6667,
+        "source": "data\\raw\\https_www_isro_gov_in_lvm3_first_uncrewed_flight_gaganyaan_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1667,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_064",
+      "tier": 1,
+      "reference_answer": "LIBS stands for Laser Induced Breakdown Spectroscope.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8333,
+        "source": "data\\raw\\https_www_isro_gov_in_chandrayaan2_payloads_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.0,
+        "source": null
+      }
+    },
+    {
+      "id": "isro_065",
+      "tier": 1,
+      "reference_answer": "APXS stands for Alpha Particle X-ray Spectrometer.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8333,
+        "source": "data\\raw\\https_www_isro_gov_in_apxs_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_066",
+      "tier": 1,
+      "reference_answer": "The Chandrayaan-3 lander and rover have a mission life of one lunar day, approximately 14 Earth days.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_appraisal_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.4167,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_067",
+      "tier": 1,
+      "reference_answer": "Aditya-L1 is placed in a halo orbit around the Sun-Earth Lagrange Point 1 (L1).",
+      "association": "both",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 1.0,
+        "source": "data\\raw\\https_www_isro_gov_in_aditya_l1_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": true,
+        "best_coverage": 1.0,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_069",
+      "tier": 1,
+      "reference_answer": "VELC stands for Visible Emission Line Coronagraph, the primary payload of Aditya-L1 for studying the solar corona.",
+      "association": "both",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_aditya_l1_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_070",
+      "tier": 1,
+      "reference_answer": "The L1 Lagrange point is approximately 1.5 million km from Earth.",
+      "association": "both",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "data\\raw\\https_www_isro_gov_in_aditya_l1_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_071",
+      "tier": 1,
+      "reference_answer": "PSLV-C57 was the launch mission that carried Aditya-L1 into orbit.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.7778,
+        "source": "data\\raw\\https_www_isro_gov_in.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.6667,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_073",
+      "tier": 1,
+      "reference_answer": "AstroSat is India's first dedicated multi-wavelength space observatory for astronomical observations.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "data\\raw\\https_www_isro_gov_in_adiscovery_with_astrosat_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.4,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_074",
+      "tier": 1,
+      "reference_answer": "AstroSat was launched on September 28, 2015.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_adiscovery_with_astrosat_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_075",
+      "tier": 1,
+      "reference_answer": "AstroSat was launched by PSLV-C30.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 1.0,
+        "source": "data\\raw\\https_www_isro_gov_in_astrosat_spacecraft_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_076",
+      "tier": 1,
+      "reference_answer": "GSAT stands for Geostationary Satellite.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_axisstabilisation_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.25,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_077",
+      "tier": 1,
+      "reference_answer": "RISAT-1 is a synthetic aperture radar imaging satellite for all-weather earth observation.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "data\\raw\\https_www_isro_gov_in_mission_gslvf16_nisar_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.4,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_078",
+      "tier": 1,
+      "reference_answer": "Cartosat is a series of ISRO Earth observation satellites for cartographic applications and land mapping.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.9,
+        "source": "data\\raw\\https_www_isro_gov_in_cartosat_2_pslvc38_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_079",
+      "tier": 1,
+      "reference_answer": "IRS stands for Indian Remote Sensing satellite.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8333,
+        "source": "data\\raw\\https_www_isro_gov_in_astronomy_mission_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3333,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_080",
+      "tier": 1,
+      "reference_answer": "OCEANSAT is ISRO's series of satellites dedicated to ocean observation and research.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_isro_eumetsat_joint_science_cooperation_meet_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.375,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_081",
+      "tier": 1,
+      "reference_answer": "The Chandrayaan-2 orbiter is currently active and providing scientific data including high-resolution lunar maps.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_data_utilisation_ao_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1667,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_082",
+      "tier": 1,
+      "reference_answer": "The PSLV-XL variant is the most powerful and frequently used variant of PSLV.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "data\\raw\\https_www_isro_gov_in_achievements_department_of_space_2025_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1667,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_083",
+      "tier": 1,
+      "reference_answer": "ISRO's primary launch port is Satish Dhawan Space Centre (SDSC) SHAR, Sriharikota.",
+      "association": "both",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8182,
+        "source": "data\\raw\\https_www_isro_gov_in_celebrations_of_1000th_casting_completion_by_sprob_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": true,
+        "best_coverage": 0.8182,
+        "source": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf"
+      }
+    },
+    {
+      "id": "isro_084",
+      "tier": 1,
+      "reference_answer": "Mission Shakti was India's anti-satellite missile test conducted by DRDO in March 2019.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5455,
+        "source": "data\\raw\\https_www_isro_gov_in.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1818,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_085",
+      "tier": 1,
+      "reference_answer": "DRDO stands for Defence Research and Development Organisation.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8333,
+        "source": "data\\raw\\https_www_isro_gov_in_isro_conducts_second_integrated_air_drop_test_for_gaganyaan_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3333,
+        "source": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf"
+      }
+    },
+    {
+      "id": "isro_086",
+      "tier": 1,
+      "reference_answer": "GSAT-11 is India's heaviest and most advanced communication satellite, launched in 2018.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.7778,
+        "source": "data\\raw\\https_www_isro_gov_in_gsat_29_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2222,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_087",
+      "tier": 1,
+      "reference_answer": "GSAT-11 has a mass of approximately 5,854 kg.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "data\\raw\\https_www_isro_gov_in_astronomy_mission_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.25,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_089",
+      "tier": 1,
+      "reference_answer": "ISRO's RLV-TD programme aims to develop a reusable two-stage-to-orbit vehicle to reduce launch costs.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5385,
+        "source": "data\\raw\\https_www_isro_gov_in_gslv_f14_insat_3ds_mission_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2308,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_090",
+      "tier": 1,
+      "reference_answer": "ISRO's proposed space station is called Bharatiya Antariksh Station (BAS).",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.375,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_091",
+      "tier": 1,
+      "reference_answer": "Shukrayaan is ISRO's proposed orbiter mission to Venus.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6667,
+        "source": "data\\raw\\https_www_isro_gov_in.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_092",
+      "tier": 1,
+      "reference_answer": "EMISAT is an ISRO electronic intelligence satellite launched in 2019.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.7143,
+        "source": "data\\raw\\https_www_isro_gov_in_spacecraftmissions_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.4286,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_093",
+      "tier": 1,
+      "reference_answer": "PSLV-C45 launched EMISAT along with 28 international co-passenger satellites in April 2019.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6,
+        "source": "data\\raw\\https_www_isro_gov_in_mission_pslv_c14_oceansat_2_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_094",
+      "tier": 1,
+      "reference_answer": "The Chandrayaan-2 orbiter operates at an altitude of approximately 100 km above the lunar surface.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.7778,
+        "source": "data\\raw\\https_www_isro_gov_in_chandrayaan2_science_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1111,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_095",
+      "tier": 1,
+      "reference_answer": "ISRO launched 36 OneWeb broadband satellites using LVM3-M2 in October 2022.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.7778,
+        "source": "data\\raw\\https_www_isro_gov_in_lvm3m2missionlandingpage_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3333,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_096",
+      "tier": 1,
+      "reference_answer": "ISITE stands for ISRO Satellite Integration and Testing Establishment.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8571,
+        "source": "data\\raw\\https_www_isro_gov_in_ursc_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2857,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_097",
+      "tier": 1,
+      "reference_answer": "The Chandrayaan-3 propulsion module carried the lander-rover to lunar orbit and carries the SHAPE payload to study Earth from lunar orbit.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.7692,
+        "source": "data\\raw\\https_www_isro_gov_in_appraisal_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3846,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_098",
+      "tier": 1,
+      "reference_answer": "SHAPE (Spectro-polarimetry of HAbitable Planet Earth) studies Earth's spectral and polarimetric properties from lunar orbit.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8333,
+        "source": "data\\raw\\https_www_isro_gov_in_chandrayaan3_details_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3333,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_099",
+      "tier": 1,
+      "reference_answer": "Mangalyaan lost contact with ISRO in 2022 after exhausting its fuel, ending its mission after nearly 8 years.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5385,
+        "source": "data\\raw\\https_www_isro_gov_in_issar_2024_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2308,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_100",
+      "tier": 1,
+      "reference_answer": "Mangalyaan was designed for a mission life of 6 months.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_propulsion_module_moved_from_lunar_orbit_to_earth_orbit_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.6,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_101",
+      "tier": 2,
+      "reference_answer": "Chandrayaan-1 first detected water molecules on the Moon. It was carried by PSLV-C11 (PSLV-XL variant).",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6,
+        "source": "data\\raw\\https_www_isro_gov_in_chandrayaan_1_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_102",
+      "tier": 2,
+      "reference_answer": "Chandrayaan-1 carried the Moon Impact Probe (MIP). It separated from the orbiter on November 14, 2008 and struck near the lunar south pole. Data from its CHACE instrument and NASA's M3 spectrometer confirmed the presence of water molecules on the Moon.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.52,
+        "source": "data\\raw\\https_www_isro_gov_in_chandrayaan2_science_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.24,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_103",
+      "tier": 2,
+      "reference_answer": "G. Madhavan Nair was the ISRO Chairman when Chandrayaan-1 was launched, serving from 2003 to 2009.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.4444,
+        "source": "data\\raw\\https_www_isro_gov_in_appraisal_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2222,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_104",
+      "tier": 2,
+      "reference_answer": "Mangalyaan (Mars Orbiter Mission) established India as the first nation to reach Mars orbit on its debut attempt, and the first Asian country to do so.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6667,
+        "source": "data\\raw\\https_www_isro_gov_in_marsorbitermissionspacecraft_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2667,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_105",
+      "tier": 2,
+      "reference_answer": "The rover on Chandrayaan-3 is named Pragyan. It was built by ISRO's U R Rao Satellite Centre (URSC) in Bengaluru.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8182,
+        "source": "data\\raw\\https_www_isro_gov_in_apxs_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.4545,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_106",
+      "tier": 2,
+      "reference_answer": "Space Applications Centre (SAC), located in Ahmedabad, is the ISRO centre responsible for developing satellite payloads.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.9091,
+        "source": "data\\raw\\https_www_isro_gov_in_isro_centres_science_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.6364,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_107",
+      "tier": 2,
+      "reference_answer": "Aditya-L1 was launched by PSLV-C57 and placed into a halo orbit around the Sun-Earth Lagrange Point 1 (L1), approximately 1.5 million km from Earth.",
+      "association": "both",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8667,
+        "source": "data\\raw\\https_www_isro_gov_in_aditya_l1_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": true,
+        "best_coverage": 0.9333,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_108",
+      "tier": 2,
+      "reference_answer": "The Vikram lander was used in Chandrayaan-2. It crash-landed on the Moon's surface on September 7, 2019 due to a software glitch. The Chandrayaan-2 orbiter remains operational.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.625,
+        "source": "data\\raw\\https_www_isro_gov_in_chandrayaan2_science_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.125,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_109",
+      "tier": 2,
+      "reference_answer": "GSAT-11 provides broadband internet services across India using Ku and Ka band transponders, delivering up to 16 Gbps throughput to remote areas.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.4667,
+        "source": "data\\raw\\https_www_isro_gov_in_nisardata_soil_moisture_products_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1333,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_110",
+      "tier": 2,
+      "reference_answer": "Chandrayaan-1 confirmed water ice at the lunar south pole using NASA's Moon Mineralogy Mapper (M3) and the Moon Impact Probe's CHACE instrument.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.625,
+        "source": "data\\raw\\https_www_isro_gov_in_chandrayaan2_science_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.125,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_111",
+      "tier": 2,
+      "reference_answer": "The Liquid Propulsion Systems Centre (LPSC) developed the throttleable liquid engines for Chandrayaan-3's Vikram lander that enabled its soft landing.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.625,
+        "source": "data\\raw\\https_www_isro_gov_in_chandrayaan2_science_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3125,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_112",
+      "tier": 2,
+      "reference_answer": "PSLV-C57 was the launch mission that carried Aditya-L1 into orbit on September 2, 2023, first placing it in an elliptical Earth orbit before a series of manoeuvres led to L1 insertion.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.7,
+        "source": "data\\raw\\https_www_isro_gov_in_pslvc57_adityal1_pressrelease_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.45,
+        "source": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf"
+      }
+    },
+    {
+      "id": "isro_113",
+      "tier": 2,
+      "reference_answer": "ISRO launched 36 OneWeb broadband communication satellites using LVM3-M2 in October 2022, placing them into Low Earth Orbit at approximately 600 km altitude.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6316,
+        "source": "data\\raw\\https_www_isro_gov_in_lvm3m2missionlandingpage_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3684,
+        "source": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf"
+      }
+    },
+    {
+      "id": "isro_114",
+      "tier": 2,
+      "reference_answer": "Mangalyaan used a Hohmann-like transfer orbit, with the spacecraft traversing deep space for approximately 300 days before entering Mars orbit on September 24, 2014.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.4444,
+        "source": "data\\raw\\https_www_isro_gov_in_chandrayaan2earthgeomagneticlunarionosphereplasma_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2222,
+        "source": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf"
+      }
+    },
+    {
+      "id": "isro_115",
+      "tier": 2,
+      "reference_answer": "Dr. Satish Dhawan, ISRO Chairman from 1972 to 1984, oversaw the SLV-3 success in 1980 and established the foundations of India's first operational launch vehicle programmes.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5556,
+        "source": "data\\raw\\https_www_isro_gov_in_celebrations_of_1000th_casting_completion_by_sprob_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2222,
+        "source": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf"
+      }
+    },
+    {
+      "id": "isro_116",
+      "tier": 2,
+      "reference_answer": "CHACE-2 (Chandra's Atmospheric Composition Explorer-2) on the Chandrayaan-2 orbiter studies the neutral composition of the tenuous lunar exosphere.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_chandrayaan2_payloads_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.0833,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_117",
+      "tier": 2,
+      "reference_answer": "NavIC's development became critical after the 1999 Kargil War, when the US denied India access to GPS data for enemy location tracking, motivating India to build an independent navigation system.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.3333,
+        "source": "data\\raw\\https_www_isro_gov_in_achievements_department_of_space_2025_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1905,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_118",
+      "tier": 2,
+      "reference_answer": "NavIC provides India with an independent, secure navigation system for both civilian and strategic defence use, free from foreign denial or interference.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.375,
+        "source": "data\\raw\\https_www_isro_gov_in_achievements_department_of_space_2025_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.125,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_119",
+      "tier": 2,
+      "reference_answer": "ISRO's INSAT and GSAT communication satellites support India's disaster management programme. They operate in Geostationary Orbit, providing continuous coverage for disaster warning and monitoring.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5263,
+        "source": "data\\raw\\https_www_isro_gov_in_gslv_f14_insat_3ds_mission_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1579,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_120",
+      "tier": 2,
+      "reference_answer": "GSAT-11 was built and integrated by U R Rao Satellite Centre (URSC), formerly known as ISRO Satellite Centre (ISAC), in Bengaluru.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_ursc_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.4167,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_121",
+      "tier": 2,
+      "reference_answer": "Chandrayaan-1 carried the Terrain Mapping Camera (TMC), which produced three-dimensional high-resolution topographic maps of the lunar surface including the polar regions.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.7222,
+        "source": "data\\raw\\https_www_isro_gov_in_chandrayaan2_payloads_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1111,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_122",
+      "tier": 2,
+      "reference_answer": "NASA's Moon Mineralogy Mapper (M3) aboard Chandrayaan-1 confirmed water locked in minerals on the Moon. The Moon Impact Probe's CHACE instrument also detected water vapour during descent.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.4211,
+        "source": "data\\raw\\https_www_isro_gov_in_chandrayaan2_science_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1579,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_123",
+      "tier": 2,
+      "reference_answer": "NavIC (IRNSS) satellites provide positioning for Indian naval vessels via the Restricted Service (RS) encrypted channel, offering accuracy of 0.5 to 5 metres for defence applications.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.3889,
+        "source": "data\\raw\\https_www_isro_gov_in_gslv_f15_nvs_02_mission_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1111,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_124",
+      "tier": 2,
+      "reference_answer": "SAC in Ahmedabad designs and develops all optical and microwave sensors for ISRO's remote sensing satellites. The RISAT satellite series uses Synthetic Aperture Radar (SAR) payloads developed by SAC.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "data\\raw\\https_www_isro_gov_in_risat_1_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2727,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_125",
+      "tier": 2,
+      "reference_answer": "ISRO's first dedicated commercial launch was PSLV-C51/Amazonia-1 in February 2021, operated by NewSpace India Limited (NSIL), ISRO's commercial arm.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.625,
+        "source": "data\\raw\\https_www_isro_gov_in_mission_pslv_c62_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1875,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_126",
+      "tier": 2,
+      "reference_answer": "Chandrayaan-1 was the first ISRO mission to carry significant foreign payloads, including instruments from NASA, ESA, and other international agencies. It carried 11 scientific instruments, 6 Indian and 5 international.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.7222,
+        "source": "data\\raw\\https_www_isro_gov_in_media_isro_pdf_highlights_msv2035_astronomy_astrophysics_pdf.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3889,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_127",
+      "tier": 2,
+      "reference_answer": "ISRO Telemetry, Tracking and Command Network (ISTRAC) in Bengaluru is responsible for spacecraft tracking. For Chandrayaan-2, ISTRAC managed all mission operations including communication with Vikram during descent.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.7895,
+        "source": "data\\raw\\https_www_isro_gov_in_istrac_inaugurates_golden_jubilee_celebrations_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3684,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_128",
+      "tier": 2,
+      "reference_answer": "The human-rated LVM3 (evolved GSLV Mk III) is the designated launch vehicle for Gaganyaan, enhanced with crew escape system, structural redundancies, and health monitoring for human spaceflight.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6316,
+        "source": "data\\raw\\https_www_isro_gov_in_lvm3_first_uncrewed_flight_gaganyaan_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.0526,
+        "source": "https://alpps.issdc.gov.in/"
+      }
+    },
+    {
+      "id": "isro_129",
+      "tier": 2,
+      "reference_answer": "Dr. Nambi Narayanan and his team at LPSC are credited with pioneering ISRO's cryogenic engine programme. S. Somanath led development of the CE-7.5 indigenous cryogenic engine used in GSLV-D5.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.4118,
+        "source": "data\\raw\\https_www_isro_gov_in_achievements_department_of_space_2025_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1176,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_130",
+      "tier": 2,
+      "reference_answer": "The Suprathermal and Energetic Particle Spectrometer (STEPS), part of the ASPEX payload on Aditya-L1, studies solar energetic particles. ASPEX was developed by the Physical Research Laboratory (PRL), Ahmedabad.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8889,
+        "source": "data\\raw\\https_www_isro_gov_in_aditya_l1_collection_of_scientific_data_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.7222,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_131",
+      "tier": 2,
+      "reference_answer": "Mangalyaan demonstrated India's first deep space mission propulsion management, using precise fuel-efficient manoeuvres for Mars approach. India became the first country to reach Mars orbit on its maiden attempt.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.4348,
+        "source": "data\\raw\\https_www_isro_gov_in_marsorbitermissionspacecraft_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2609,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_132",
+      "tier": 2,
+      "reference_answer": "The Chandrayaan-2 orbiter established two-way communication with Chandrayaan-3's Vikram lander before landing and later imaged the landing site using its high-resolution OHRC camera.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6316,
+        "source": "data\\raw\\https_www_isro_gov_in_chandrayaan2_science_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2105,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_133",
+      "tier": 2,
+      "reference_answer": "The first orbital GSLV Mk III flight was GSLV Mk III-D1 on June 5, 2017, carrying the GSAT-19 communication satellite.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8182,
+        "source": "data\\raw\\https_www_isro_gov_in_mission_gslvmkiiid1_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3636,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_134",
+      "tier": 2,
+      "reference_answer": "AstroSat is India's first dedicated multi-wavelength space observatory, enabling simultaneous observation of celestial objects in ultraviolet, optical, and X-ray wavelengths.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8824,
+        "source": "data\\raw\\https_www_isro_gov_in_astrosat_spacecraft_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2353,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_135",
+      "tier": 2,
+      "reference_answer": "GSLV uses an indigenous cryogenic upper stage. The first successful flight with the indigenous CE-7.5 cryogenic engine was GSLV-D5 on January 5, 2014, carrying GSAT-14.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.7143,
+        "source": "data\\raw\\https_www_isro_gov_in_mission_gslv_d5gsat_14_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1429,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_137",
+      "tier": 2,
+      "reference_answer": "The Vikram lander was built and integrated by U R Rao Satellite Centre (URSC). The propulsion system using four throttleable liquid engines was developed by the Liquid Propulsion Systems Centre (LPSC).",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5556,
+        "source": "data\\raw\\https_www_isro_gov_in_halo_orbit_insertion_adtya_l1_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3889,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_138",
+      "tier": 2,
+      "reference_answer": "ISRO's RLV-TD programme aims to develop a reusable two-stage-to-orbit vehicle targeting a tenfold reduction in launch costs, making India more competitive in the global commercial launch market.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.4545,
+        "source": "data\\raw\\https_www_isro_gov_in_lvm3m2missionlandingpage_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1818,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_139",
+      "tier": 2,
+      "reference_answer": "GSLV-D5, launched on January 5, 2014, was the first ISRO mission to successfully use an indigenously developed cryogenic engine (CE-7.5), placing GSAT-14 into orbit.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.7647,
+        "source": "data\\raw\\https_www_isro_gov_in_mission_gslv_f05_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3529,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_141",
+      "tier": 2,
+      "reference_answer": "ISRO's INSAT and GSAT satellites support telemedicine services in India, connecting remote hospitals to specialist centres under the Ministry of Health's telemedicine programme.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5294,
+        "source": "data\\raw\\https_www_isro_gov_in_brics_heads_of_space_agencies_strengthen_space_cooperation_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1765,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_143",
+      "tier": 2,
+      "reference_answer": "Chandrayaan-1 carried the Moon Impact Probe (MIP). After separation on November 14, 2008, its CHACE instrument detected water vapour during descent to the lunar south pole.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5238,
+        "source": "data\\raw\\https_www_isro_gov_in_chandrayaan_1_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1429,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_144",
+      "tier": 2,
+      "reference_answer": "Dr. Vikram Sarabhai founded ISRO in 1969, having earlier established INCOSPAR in 1962 and India's first rocket launch facility at Thumba. VSSC is named in his honour.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.45,
+        "source": "data\\raw\\https_www_isro_gov_in_iprc_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_145",
+      "tier": 2,
+      "reference_answer": "GSAT-20 (CMS-03), launched in 2024 aboard SpaceX's Falcon 9, was the first ISRO satellite to formally use electric propulsion (Hall thrusters) for orbit raising.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "data\\raw\\https_www_isro_gov_in_issar_2024_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2778,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_146",
+      "tier": 2,
+      "reference_answer": "Four Indian Air Force pilots were selected for Gaganyaan and underwent training at Russia's Gagarin Cosmonaut Training Center (GCTC) under a contract signed between ISRO and Roscosmos in June 2019.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.3636,
+        "source": "data\\raw\\https_www_isro_gov_in_achievements_department_of_space_2025_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1818,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_147",
+      "tier": 2,
+      "reference_answer": "ISRO's OCEANSAT series (OCEANSAT-1, 2, 3) provides data for the National Ocean Monitoring Service (NOMS) operated by the Ministry of Earth Sciences and INCOIS.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6,
+        "source": "data\\raw\\https_www_isro_gov_in_gslv_f14_insat_3ds_mission_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2667,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_149",
+      "tier": 2,
+      "reference_answer": "The SpaDeX (Space Docking Experiment) mission demonstrated indigenous docking technology. SDX01 and SDX02 successfully docked on January 16, 2025, making India the fourth country to master this capability.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8095,
+        "source": "data\\raw\\https_www_isro_gov_in_mission_spadex_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1429,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_150",
+      "tier": 2,
+      "reference_answer": "The GSLV Mk III required human rating for Gaganyaan, including additional redundancies, a crew escape system, structural upgrades, and enhanced health monitoring for crewed spaceflight.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5263,
+        "source": "data\\raw\\https_www_isro_gov_in_lvm3_first_uncrewed_flight_gaganyaan_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1053,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_151",
+      "tier": 2,
+      "reference_answer": "SpaDeX stands for Space Docking Experiment. Launched aboard PSLV-C60 on December 30, 2024, it demonstrated India's indigenous Bharatiya Docking System (BDS) essential for future space station and lunar missions.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.7273,
+        "source": "data\\raw\\https_www_isro_gov_in_mission_spadex_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2273,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_152",
+      "tier": 2,
+      "reference_answer": "INSAT-4A, launched in 2005, was the dedicated satellite that enabled large-scale DTH (Direct-to-Home) television broadcasting in India using Ku-band transponders.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "data\\raw\\https_www_isro_gov_in_edusat_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2222,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_153",
+      "tier": 2,
+      "reference_answer": "The Imaging Infrared Spectrometer (IIRS) on the Chandrayaan-2 orbiter studies lunar surface mineralogy across 250 spectral bands, including the 3-micrometre absorption band indicating water molecules.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.7619,
+        "source": "data\\raw\\https_www_isro_gov_in_chandrayaan2_science_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.0952,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_154",
+      "tier": 2,
+      "reference_answer": "PSLV was derived from experience with the ASLV (Augmented Satellite Launch Vehicle) programme. ASLV was a stretched SLV-3, and lessons from its mixed record directly shaped the PSLV design.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "data\\raw\\https_www_isro_gov_in_celebrations_of_1000th_casting_completion_by_sprob_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1667,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_155",
+      "tier": 2,
+      "reference_answer": "The first operational PSLV mission was PSLV-D2, launched October 15, 1994, which successfully placed IRS-P2 into orbit — the first fully successful PSLV flight.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.7333,
+        "source": "data\\raw\\https_www_isro_gov_in_mission_pslv_c11_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.4667,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_156",
+      "tier": 2,
+      "reference_answer": "Chandrayaan-1 carried instruments from NASA (Moon Mineralogy Mapper), ESA, and other international partners alongside Indian instruments — 11 scientific instruments in total from India, USA, UK, Germany, Sweden, and Bulgaria.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6,
+        "source": "data\\raw\\https_www_isro_gov_in_chandrayaan_1_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.25,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_158",
+      "tier": 2,
+      "reference_answer": "The TV-D1 (Test Vehicle Abort Mission-1) on October 21, 2023 tested the Crew Escape System (CES) for Gaganyaan, successfully demonstrating in-flight abort at Mach 1.2 and safe crew module recovery.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8421,
+        "source": "data\\raw\\https_www_isro_gov_in_gaganyaan_tv_d1_mission_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1579,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_160",
+      "tier": 2,
+      "reference_answer": "The TV-D1 mission on October 21, 2023 was the first mission to test the Crew Escape System for Gaganyaan, validating abort capability at Mach 1.2.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.8462,
+        "source": "data\\raw\\https_www_isro_gov_in_gaganyaan_tv_d1_mission_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2308,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_161",
+      "tier": 3,
+      "reference_answer": "Chandrayaan-1 launched October 22, 2008; Chandrayaan-2 launched July 22, 2019 — approximately 10 years and 9 months later.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_data_utilisation_ao_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3,
+        "source": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf"
+      }
+    },
+    {
+      "id": "isro_162",
+      "tier": 3,
+      "reference_answer": "Mangalyaan came first, launched November 5, 2013. Chandrayaan-2 was launched July 22, 2019.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5556,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_propulsion_module_moved_from_lunar_orbit_to_earth_orbit_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2222,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_163",
+      "tier": 3,
+      "reference_answer": "ISRO was established August 15, 1969. Mangalyaan launched November 5, 2013 — approximately 44 years after ISRO's founding.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.4167,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_propulsion_module_moved_from_lunar_orbit_to_earth_orbit_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.25,
+        "source": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf"
+      }
+    },
+    {
+      "id": "isro_164",
+      "tier": 3,
+      "reference_answer": "Aryabhata launched April 19, 1975; Chandrayaan-1 launched October 22, 2008 — approximately 33 years between India's first satellite and first Moon mission.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6667,
+        "source": "data\\raw\\https_www_isro_gov_in_chandrayaan_1_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2667,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_165",
+      "tier": 3,
+      "reference_answer": "Chandrayaan-3 landed August 23, 2023. Aditya-L1 launched September 2, 2023 — Aditya-L1 was launched after Chandrayaan-3 landed.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.75,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_data_utilisation_ao_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_166",
+      "tier": 3,
+      "reference_answer": "Mangalyaan was designed for 6 months but operated until 2022 — approximately 7.5 years total, operating roughly 7 years beyond its designed mission life.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.4375,
+        "source": "data\\raw\\https_www_isro_gov_in_marsorbitermissionspacecraft_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3125,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_167",
+      "tier": 3,
+      "reference_answer": "PSLV-C37 launched February 15, 2017. GSLV Mk III-D1 launched June 5, 2017 — PSLV-C37 was launched first.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6667,
+        "source": "data\\raw\\https_www_isro_gov_in_mission_gslvmkiiid1_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3333,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_169",
+      "tier": 3,
+      "reference_answer": "First successful GSLV flight: GSLV-D2, May 8, 2003. First GSLV Mk III orbital flight: June 5, 2017 — approximately 14 years between the two milestones.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.4667,
+        "source": "data\\raw\\https_www_isro_gov_in_achievements_department_of_space_2025_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_170",
+      "tier": 3,
+      "reference_answer": "India's 75th Independence Day was August 15, 2022. Chandrayaan-3 launched July 14, 2023 — Chandrayaan-3 was launched after India's 75th Independence Day.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6364,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_data_utilisation_ao_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2727,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_172",
+      "tier": 3,
+      "reference_answer": "Aryabhata launched April 19, 1975; IRS-1A launched March 17, 1988 — approximately 13 years later.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "data\\raw\\https_www_isro_gov_in_astronomy_mission_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2,
+        "source": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf"
+      }
+    },
+    {
+      "id": "isro_173",
+      "tier": 3,
+      "reference_answer": "Chandrayaan-2 (2019) came immediately after Chandrayaan-1 (2008) in ISRO's lunar exploration sequence.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6,
+        "source": "data\\raw\\https_www_isro_gov_in_achievements_department_of_space_2025_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_174",
+      "tier": 3,
+      "reference_answer": "First PSLV flight: September 20, 1993. PSLV-C37 record-breaking launch: February 15, 2017 — approximately 23 years and 5 months.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.4286,
+        "source": "data\\raw\\https_www_isro_gov_in_kalpana_1_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2143,
+        "source": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf"
+      }
+    },
+    {
+      "id": "isro_175",
+      "tier": 3,
+      "reference_answer": "Mangalyaan launched November 5, 2013; AstroSat launched September 28, 2015 — AstroSat was launched after Mangalyaan.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.625,
+        "source": "data\\raw\\https_www_isro_gov_in_archival_20data_20of_20astrosat_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.25,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_176",
+      "tier": 3,
+      "reference_answer": "ISRO established August 15, 1969; IRS-1A launched March 17, 1988 — approximately 19 years between ISRO's founding and its first operational remote sensing satellite.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "data\\raw\\https_www_isro_gov_in_astronomy_mission_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2222,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_177",
+      "tier": 3,
+      "reference_answer": "Chandrayaan-3 landed August 23, 2023. The four Gaganyaan astronaut names were announced February 27, 2024 — Chandrayaan-3 landing happened first.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.4286,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_apxs_volatile_measurements_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1429,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_178",
+      "tier": 3,
+      "reference_answer": "Two ISRO lunar missions were launched before Chandrayaan-3: Chandrayaan-1 (2008) and Chandrayaan-2 (2019).",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.7778,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_data_utilisation_ao_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3333,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_179",
+      "tier": 3,
+      "reference_answer": "SLV-3 first successful flight: July 18, 1980. ASLV first flew March 24, 1987 — approximately 7 years later.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.4615,
+        "source": "data\\raw\\https_www_isro_gov_in_axiom04_mission_successfully_concluded_return_isro_gaganyatri_shubhanshushukla_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1538,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_180",
+      "tier": 3,
+      "reference_answer": "In order of first flight: SLV (1980), ASLV (1987), PSLV (1993), GSLV (2001).",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.7273,
+        "source": "data\\raw\\https_www_isro_gov_in_launchmissions_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1818,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_181",
+      "tier": 3,
+      "reference_answer": "Chandrayaan-2 launched July 22, 2019; Chandrayaan-3 landed August 23, 2023 — approximately 4 years after Chandrayaan-2.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.7,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_data_utilisation_ao_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_182",
+      "tier": 3,
+      "reference_answer": "GSAT-11 launched December 4, 2018. Mission Shakti was March 27, 2019 — GSAT-11 was launched before Mission Shakti.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6667,
+        "source": "data\\raw\\https_www_isro_gov_in_recent_updates_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2222,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_183",
+      "tier": 3,
+      "reference_answer": "ISRO established 1969; first successful orbit (Rohini RS-1) July 18, 1980 — approximately 11 years.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5455,
+        "source": "data\\raw\\https_www_isro_gov_in_ao_cycle_observations_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2727,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_184",
+      "tier": 3,
+      "reference_answer": "Chandrayaan-2 launched July 22, 2019. GSAT-29 launched November 14, 2018 — GSAT-29 came first.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6667,
+        "source": "data\\raw\\https_www_isro_gov_in_recent_updates_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2222,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_185",
+      "tier": 3,
+      "reference_answer": "Chandrayaan-2 launched July 22, 2019 and reached lunar orbit August 20, 2019 — approximately 29 days to reach the Moon from launch.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6923,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_data_utilisation_ao_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3077,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_186",
+      "tier": 3,
+      "reference_answer": "ISRO crossed the 100 total launches milestone around 2017 to 2020, with PSLV-C50 in December 2020 being PSLV's 50th flight.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.4667,
+        "source": "data\\raw\\https_www_isro_gov_in_launchmissions_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2667,
+        "source": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf"
+      }
+    },
+    {
+      "id": "isro_187",
+      "tier": 3,
+      "reference_answer": "Vikram Sarabhai died December 30, 1971. India's first successful satellite launch (Rohini RS-1) was July 18, 1980 — approximately 8.5 years after his death.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.4444,
+        "source": "data\\raw\\https_www_isro_gov_in_gaganyatrishubhanshushukla_called_dr_v_narayanan_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2222,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_188",
+      "tier": 3,
+      "reference_answer": "SpaDeX launched December 30, 2024. Chandrayaan-3 landed August 23, 2023 — SpaDeX was launched after Chandrayaan-3.",
+      "association": "original corpus only",
+      "original_evidence": {
+        "matched": true,
+        "best_coverage": 0.7778,
+        "source": "data\\raw\\https_www_isro_gov_in_recent_updates_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3333,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_189",
+      "tier": 3,
+      "reference_answer": "Mangalyaan launched November 2013. As of 2026, Mangalyaan-2 has been proposed but not yet launched — over 12 years have passed since the first mission.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5882,
+        "source": "data\\raw\\https_www_isro_gov_in_media_isro_pdf_highlights_msv2035_astronomy_astrophysics_pdf.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.3529,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_190",
+      "tier": 3,
+      "reference_answer": "Gaganyaan was announced by Prime Minister Modi on August 15, 2018. Chandrayaan-3 was formally approved in January 2020 — Gaganyaan was announced first.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5385,
+        "source": "data\\raw\\https_www_isro_gov_in_3rd_national_space_day_2026_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1538,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_191",
+      "tier": 3,
+      "reference_answer": "Mangalyaan traversed deep space for approximately 300 days before entering Mars orbit on September 24, 2014.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.4615,
+        "source": "data\\raw\\https_www_isro_gov_in_aditya_l1_missiondetails_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2308,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_192",
+      "tier": 3,
+      "reference_answer": "In order of launch: Chandrayaan-1 (October 2008), Mangalyaan (November 2013), AstroSat (September 2015), Aditya-L1 (September 2023).",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6154,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_data_utilisation_ao_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2308,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_193",
+      "tier": 3,
+      "reference_answer": "The first NavIC satellite (IRNSS-1A) launched July 1, 2013. The constellation was declared operational with 7 satellites in April 2016 — approximately 3 years to complete the initial constellation.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.4706,
+        "source": "data\\raw\\https_www_isro_gov_in_irnss_1c_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1765,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_194",
+      "tier": 3,
+      "reference_answer": "Yes. Both Chandrayaan-3 (July 14, 2023) and Aditya-L1 (September 2, 2023) were launched in the same year, 2023.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_data_utilisation_ao_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.6,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_195",
+      "tier": 3,
+      "reference_answer": "ISRO established August 15, 1969. India's first successful orbit (Rohini RS-1) was July 18, 1980 — approximately 11 years after ISRO's founding.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5333,
+        "source": "data\\raw\\https_www_isro_gov_in_ao_cycle_observations_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_196",
+      "tier": 3,
+      "reference_answer": "India's first operational communication satellite INSAT-1B entered service in 1983. ISRO's first dedicated commercial launch came in the early 2000s — the communication satellite came first.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "data\\raw\\https_www_isro_gov_in_assessment_spacesituation_lagrangepoint_l1_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1875,
+        "source": "https://www.issdc.gov.in/adityal1.html"
+      }
+    },
+    {
+      "id": "isro_198",
+      "tier": 3,
+      "reference_answer": "Yes. The Chandrayaan-2 orbiter was fully operational when Chandrayaan-3 landed on August 23, 2023. It established two-way communication with Vikram and imaged the landing site.",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.5,
+        "source": "data\\raw\\https_www_isro_gov_in_chandrayaan3_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.1875,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    },
+    {
+      "id": "isro_200",
+      "tier": 3,
+      "reference_answer": "In chronological order: (1) Chandrayaan-1 water discovery (September 2009), (2) Mangalyaan Mars orbit insertion (September 24, 2014), (3) Chandrayaan-3 landing (August 23, 2023), (4) Aditya-L1 L1 insertion (January 6, 2024).",
+      "association": "neither",
+      "original_evidence": {
+        "matched": false,
+        "best_coverage": 0.6667,
+        "source": "data\\raw\\https_www_isro_gov_in_ch3_data_utilisation_ao_html.md"
+      },
+      "aditya_l1_evidence": {
+        "matched": false,
+        "best_coverage": 0.2778,
+        "source": "https://alpps.issdc.gov.in/web/extensions/Aditya-l1/resources/docs/ALPPS_UserGuide_V1.0.pdf"
+      }
+    }
+  ]
+}

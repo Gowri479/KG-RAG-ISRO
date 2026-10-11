@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -34,23 +35,39 @@ def _short_answer(question: str, context: str) -> str:
     return generate(question, _limit_context(context), options=OLLAMA_OPTIONS)
 
 
+def _run_systems(question: str) -> tuple[str, str, str]:
+    """Run the unchanged three system calls concurrently for one question."""
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        kg_future = executor.submit(_short_answer, question, kgrag_context(question, passage_limit=3, max_tokens=1500))
+        bm25_future = executor.submit(_short_answer, question, bm25_context(question, top_k=3))
+        vanilla_future = executor.submit(_short_answer, question, vanilla_context(question, top_k=3))
+        return kg_future.result(), bm25_future.result(), vanilla_future.result()
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run KG-RAG and baseline systems over the ISRO benchmark.")
     parser.add_argument("--sample", type=int, default=None, help="Run only the first N benchmark questions.")
     parser.add_argument("--resume", action="store_true", help="Skip questions already saved in baseline_results.json.")
+    parser.add_argument("--output", type=Path, default=RESULTS_PATH, help="Output JSON path; defaults to the canonical baseline path.")
+    parser.add_argument("--ids-file", type=Path, default=None, help="Optional JSON list of benchmark IDs to run, preserving file order.")
     args = parser.parse_args()
 
     if args.sample is not None and args.sample < 0:
         parser.error("--sample must be non-negative")
 
     benchmark = json.loads(BENCHMARK_PATH.read_text(encoding="utf-8-sig"))
+    if args.ids_file is not None:
+        requested_ids = json.loads(args.ids_file.read_text(encoding="utf-8-sig"))
+        id_order = {question_id: index for index, question_id in enumerate(requested_ids)}
+        benchmark = sorted((item for item in benchmark if item["id"] in id_order), key=lambda item: id_order[item["id"]])
     benchmark = benchmark[:args.sample] if args.sample is not None else benchmark
-    RESULTS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    output_path = args.output if args.output.is_absolute() else ROOT / args.output
+    output_path.parent.mkdir(parents=True, exist_ok=True)
 
     results = []
     completed_ids = set()
-    if args.resume and RESULTS_PATH.exists():
-        results = json.loads(RESULTS_PATH.read_text(encoding="utf-8-sig"))
+    if args.resume and output_path.exists():
+        results = json.loads(output_path.read_text(encoding="utf-8-sig"))
         completed_ids = {item.get("id") for item in results}
 
     for index, item in enumerate(benchmark, 1):
@@ -58,9 +75,7 @@ def main() -> None:
             continue
 
         question = item["question"]
-        kgrag_answer = _short_answer(question, kgrag_context(question, passage_limit=3, max_tokens=1500))
-        bm25_answer = _short_answer(question, bm25_context(question, top_k=3))
-        vanilla_answer = _short_answer(question, vanilla_context(question, top_k=3))
+        kgrag_answer, bm25_answer, vanilla_answer = _run_systems(question)
 
         results.append({
             "id": item["id"],
@@ -73,11 +88,11 @@ def main() -> None:
             "graphrag_answer": "N/A",
         })
         completed_ids.add(item["id"])
-        RESULTS_PATH.write_text(json.dumps(results, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        output_path.write_text(json.dumps(results, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         if index % 10 == 0:
             print(f"Processed {index}/{len(benchmark)} questions", flush=True)
 
-    print(f"Saved {len(results)} results to {RESULTS_PATH}")
+    print(f"Saved {len(results)} results to {output_path}")
 
 
 if __name__ == "__main__":

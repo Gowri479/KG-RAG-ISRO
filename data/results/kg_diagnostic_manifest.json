@@ -1,0 +1,26 @@
+{
+  "benchmark_sha256": "7f5daf5419b0a4cb70e5c3d5eba021a8a39118b5a0fd235ce19b81f75324ffce",
+  "model": "mistral:7b-instruct-q4_K_M",
+  "generation_options": {
+    "num_predict": 150,
+    "temperature": 0.1,
+    "num_ctx": 2048
+  },
+  "variants": [
+    "DENSE_ONLY",
+    "KG_ONLY",
+    "KG_PLUS_SOURCE",
+    "DENSE_PLUS_KG_STRUCTURED",
+    "DENSE_PLUS_KG_UNSTRUCTURED"
+  ],
+  "question_count": 26,
+  "evaluation_count": 130,
+  "checkpoint": "D:\\Nandana\\MTECH\\Semester 3\\Projects\\CP\\KG-RAG-ISRO\\data\\results\\kg_diagnostic_26.jsonl",
+  "checkpoint_sha256": "a9b079ae8497c0703134ccce9eaf9c20740b627ef9cfb0a2044fd9a94b9d82a6",
+  "code": "src/evaluation/run_kg_diagnostic.py",
+  "git_commit": "892b45bb32f7c8b42e14f171a5e1ba39c0710c04",
+  "timestamp_utc": "2026-10-07T15:05:17.135953+00:00",
+  "diagnostic_json_sha256": "8dbd4dd67342909796c2288c5b3e22675ca46e1ab3c4418788721185a5b75f58",
+  "diagnostic_report_sha256": "734b14e2ca12862b9e246b451771750b68fe63248b552c4a6eb9b7e5d5fdeb58",
+  "audit_report": "data/results/kg_diagnostic_audit.md"
+}

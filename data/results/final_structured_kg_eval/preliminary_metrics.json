@@ -1,0 +1,23 @@
+{
+  "vanilla_rag": {
+    "n": 26,
+    "rouge_l": 0.116641,
+    "reference_token_coverage": 0.292949,
+    "exact_match_rate": 0.0,
+    "idk_rate": 0.076923
+  },
+  "corrected_structured_kg_rag": {
+    "n": 26,
+    "rouge_l": 0.203808,
+    "reference_token_coverage": 0.501282,
+    "exact_match_rate": 0.0,
+    "idk_rate": 0.0
+  },
+  "bm25_llm": {
+    "n": 26,
+    "rouge_l": 0.111743,
+    "reference_token_coverage": 0.280128,
+    "exact_match_rate": 0.0,
+    "idk_rate": 0.0
+  }
+}

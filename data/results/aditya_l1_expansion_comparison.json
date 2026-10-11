@@ -1,0 +1,334 @@
+{
+  "protocol": "same canonical 180-question test IDs, model, prompts, retrieval settings, and lexical metrics; only the corpus/index is expanded",
+  "baseline_result": "data\\results\\evaluation_results.json",
+  "expanded_result": "data\\results\\evaluation_results_aditya_expanded.json",
+  "test_size": 180,
+  "systems": {
+    "bm25_llm": {
+      "rouge_l": {
+        "baseline": 0.2915,
+        "expanded": 0.3135,
+        "absolute_change": 0.022,
+        "relative_change": 0.075472
+      },
+      "reference_token_coverage": {
+        "baseline": 0.434,
+        "expanded": 0.4636,
+        "absolute_change": 0.0296,
+        "relative_change": 0.068203
+      },
+      "exact_match": {
+        "baseline": 0.0278,
+        "expanded": 0.0278,
+        "absolute_change": 0.0,
+        "relative_change": 0.0
+      },
+      "idk_rate": {
+        "baseline": 0.0167,
+        "expanded": 0.0278,
+        "absolute_change": 0.0111,
+        "relative_change": 0.664671
+      }
+    },
+    "vanilla_rag": {
+      "rouge_l": {
+        "baseline": 0.278,
+        "expanded": 0.2483,
+        "absolute_change": -0.0297,
+        "relative_change": -0.106835
+      },
+      "reference_token_coverage": {
+        "baseline": 0.3989,
+        "expanded": 0.3789,
+        "absolute_change": -0.02,
+        "relative_change": -0.050138
+      },
+      "exact_match": {
+        "baseline": 0.0333,
+        "expanded": 0.0222,
+        "absolute_change": -0.0111,
+        "relative_change": -0.333333
+      },
+      "idk_rate": {
+        "baseline": 0.1222,
+        "expanded": 0.1944,
+        "absolute_change": 0.0722,
+        "relative_change": 0.590835
+      }
+    },
+    "kg_rag": {
+      "rouge_l": {
+        "baseline": 0.2736,
+        "expanded": 0.2568,
+        "absolute_change": -0.0168,
+        "relative_change": -0.061404
+      },
+      "reference_token_coverage": {
+        "baseline": 0.3921,
+        "expanded": 0.3814,
+        "absolute_change": -0.0107,
+        "relative_change": -0.027289
+      },
+      "exact_match": {
+        "baseline": 0.0333,
+        "expanded": 0.0222,
+        "absolute_change": -0.0111,
+        "relative_change": -0.333333
+      },
+      "idk_rate": {
+        "baseline": 0.1167,
+        "expanded": 0.1944,
+        "absolute_change": 0.0777,
+        "relative_change": 0.66581
+      }
+    }
+  },
+  "tier_results": {
+    "bm25_llm": {
+      "tier_1": {
+        "rouge_l": {
+          "baseline": 0.322,
+          "expanded": 0.3625,
+          "absolute_change": 0.0405,
+          "relative_change": 0.125776
+        },
+        "reference_token_coverage": {
+          "baseline": 0.5199,
+          "expanded": 0.5594,
+          "absolute_change": 0.0395,
+          "relative_change": 0.075976
+        },
+        "exact_match": {
+          "baseline": 0.0556,
+          "expanded": 0.0556,
+          "absolute_change": 0.0,
+          "relative_change": 0.0
+        },
+        "idk_rate": {
+          "baseline": 0.0333,
+          "expanded": 0.0333,
+          "absolute_change": 0.0,
+          "relative_change": 0.0
+        }
+      },
+      "tier_2": {
+        "rouge_l": {
+          "baseline": 0.2587,
+          "expanded": 0.2558,
+          "absolute_change": -0.0029,
+          "relative_change": -0.01121
+        },
+        "reference_token_coverage": {
+          "baseline": 0.3448,
+          "expanded": 0.3698,
+          "absolute_change": 0.025,
+          "relative_change": 0.072506
+        },
+        "exact_match": {
+          "baseline": 0.0,
+          "expanded": 0.0,
+          "absolute_change": 0.0,
+          "relative_change": null
+        },
+        "idk_rate": {
+          "baseline": 0.0,
+          "expanded": 0.0185,
+          "absolute_change": 0.0185,
+          "relative_change": null
+        }
+      },
+      "tier_3": {
+        "rouge_l": {
+          "baseline": 0.2647,
+          "expanded": 0.2776,
+          "absolute_change": 0.0129,
+          "relative_change": 0.048734
+        },
+        "reference_token_coverage": {
+          "baseline": 0.3532,
+          "expanded": 0.3647,
+          "absolute_change": 0.0115,
+          "relative_change": 0.032559
+        },
+        "exact_match": {
+          "baseline": 0.0,
+          "expanded": 0.0,
+          "absolute_change": 0.0,
+          "relative_change": null
+        },
+        "idk_rate": {
+          "baseline": 0.0,
+          "expanded": 0.0278,
+          "absolute_change": 0.0278,
+          "relative_change": null
+        }
+      }
+    },
+    "vanilla_rag": {
+      "tier_1": {
+        "rouge_l": {
+          "baseline": 0.3222,
+          "expanded": 0.2835,
+          "absolute_change": -0.0387,
+          "relative_change": -0.120112
+        },
+        "reference_token_coverage": {
+          "baseline": 0.4632,
+          "expanded": 0.4443,
+          "absolute_change": -0.0189,
+          "relative_change": -0.040803
+        },
+        "exact_match": {
+          "baseline": 0.0667,
+          "expanded": 0.0444,
+          "absolute_change": -0.0223,
+          "relative_change": -0.334333
+        },
+        "idk_rate": {
+          "baseline": 0.1222,
+          "expanded": 0.1778,
+          "absolute_change": 0.0556,
+          "relative_change": 0.454992
+        }
+      },
+      "tier_2": {
+        "rouge_l": {
+          "baseline": 0.2306,
+          "expanded": 0.2282,
+          "absolute_change": -0.0024,
+          "relative_change": -0.010408
+        },
+        "reference_token_coverage": {
+          "baseline": 0.3213,
+          "expanded": 0.3326,
+          "absolute_change": 0.0113,
+          "relative_change": 0.03517
+        },
+        "exact_match": {
+          "baseline": 0.0,
+          "expanded": 0.0,
+          "absolute_change": 0.0,
+          "relative_change": null
+        },
+        "idk_rate": {
+          "baseline": 0.1111,
+          "expanded": 0.1481,
+          "absolute_change": 0.037,
+          "relative_change": 0.333033
+        }
+      },
+      "tier_3": {
+        "rouge_l": {
+          "baseline": 0.2387,
+          "expanded": 0.1904,
+          "absolute_change": -0.0483,
+          "relative_change": -0.202346
+        },
+        "reference_token_coverage": {
+          "baseline": 0.3546,
+          "expanded": 0.2846,
+          "absolute_change": -0.07,
+          "relative_change": -0.197406
+        },
+        "exact_match": {
+          "baseline": 0.0,
+          "expanded": 0.0,
+          "absolute_change": 0.0,
+          "relative_change": null
+        },
+        "idk_rate": {
+          "baseline": 0.1389,
+          "expanded": 0.3056,
+          "absolute_change": 0.1667,
+          "relative_change": 1.200144
+        }
+      }
+    },
+    "kg_rag": {
+      "tier_1": {
+        "rouge_l": {
+          "baseline": 0.308,
+          "expanded": 0.2995,
+          "absolute_change": -0.0085,
+          "relative_change": -0.027597
+        },
+        "reference_token_coverage": {
+          "baseline": 0.4381,
+          "expanded": 0.4549,
+          "absolute_change": 0.0168,
+          "relative_change": 0.038347
+        },
+        "exact_match": {
+          "baseline": 0.0667,
+          "expanded": 0.0444,
+          "absolute_change": -0.0223,
+          "relative_change": -0.334333
+        },
+        "idk_rate": {
+          "baseline": 0.1556,
+          "expanded": 0.1889,
+          "absolute_change": 0.0333,
+          "relative_change": 0.21401
+        }
+      },
+      "tier_2": {
+        "rouge_l": {
+          "baseline": 0.2246,
+          "expanded": 0.2368,
+          "absolute_change": 0.0122,
+          "relative_change": 0.054319
+        },
+        "reference_token_coverage": {
+          "baseline": 0.3462,
+          "expanded": 0.3268,
+          "absolute_change": -0.0194,
+          "relative_change": -0.056037
+        },
+        "exact_match": {
+          "baseline": 0.0,
+          "expanded": 0.0,
+          "absolute_change": 0.0,
+          "relative_change": null
+        },
+        "idk_rate": {
+          "baseline": 0.0926,
+          "expanded": 0.1667,
+          "absolute_change": 0.0741,
+          "relative_change": 0.800216
+        }
+      },
+      "tier_3": {
+        "rouge_l": {
+          "baseline": 0.2611,
+          "expanded": 0.1802,
+          "absolute_change": -0.0809,
+          "relative_change": -0.309843
+        },
+        "reference_token_coverage": {
+          "baseline": 0.3456,
+          "expanded": 0.2794,
+          "absolute_change": -0.0662,
+          "relative_change": -0.191551
+        },
+        "exact_match": {
+          "baseline": 0.0,
+          "expanded": 0.0,
+          "absolute_change": 0.0,
+          "relative_change": null
+        },
+        "idk_rate": {
+          "baseline": 0.0556,
+          "expanded": 0.25,
+          "absolute_change": 0.1944,
+          "relative_change": 3.496403
+        }
+      }
+    }
+  },
+  "source_association_summary": {
+    "original corpus only": 78,
+    "new Aditya-L1 corpus": 0,
+    "both": 11,
+    "neither": 91
+  }
+}

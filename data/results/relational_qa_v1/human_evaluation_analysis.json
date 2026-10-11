@@ -1,0 +1,899 @@
+{
+  "status": "COMPLETED",
+  "input_file": "D:\\Users\\NANS\\Downloads\\human_evaluation_review_filled.csv",
+  "evaluation_scope": "FULL_186",
+  "annotation_count": 186,
+  "question_count": 62,
+  "benchmark_sha256": "7f5daf5419b0a4cb70e5c3d5eba021a8a39118b5a0fd235ce19b81f75324ffce",
+  "scale": {
+    "observed": "1-5 ordinal",
+    "submitted_scores_preserved": true,
+    "protocol_deviation": "Original guidance proposed 0-2; supplied annotations use 1-5 and were analyzed unchanged."
+  },
+  "missing_values": [],
+  "per_question_system_mapping": {
+    "rqa_001": {
+      "A": "kg_rag",
+      "B": "vanilla_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_002": {
+      "A": "kg_rag",
+      "B": "vanilla_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_003": {
+      "A": "vanilla_rag",
+      "B": "bm25_llm",
+      "C": "kg_rag"
+    },
+    "rqa_004": {
+      "A": "kg_rag",
+      "B": "bm25_llm",
+      "C": "vanilla_rag"
+    },
+    "rqa_005": {
+      "A": "vanilla_rag",
+      "B": "bm25_llm",
+      "C": "kg_rag"
+    },
+    "rqa_006": {
+      "A": "kg_rag",
+      "B": "vanilla_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_007": {
+      "A": "vanilla_rag",
+      "B": "kg_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_008": {
+      "A": "vanilla_rag",
+      "B": "bm25_llm",
+      "C": "kg_rag"
+    },
+    "rqa_009": {
+      "A": "vanilla_rag",
+      "B": "bm25_llm",
+      "C": "kg_rag"
+    },
+    "rqa_010": {
+      "A": "vanilla_rag",
+      "B": "kg_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_011": {
+      "A": "kg_rag",
+      "B": "bm25_llm",
+      "C": "vanilla_rag"
+    },
+    "rqa_012": {
+      "A": "bm25_llm",
+      "B": "kg_rag",
+      "C": "vanilla_rag"
+    },
+    "rqa_013": {
+      "A": "vanilla_rag",
+      "B": "kg_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_014": {
+      "A": "bm25_llm",
+      "B": "vanilla_rag",
+      "C": "kg_rag"
+    },
+    "rqa_015": {
+      "A": "kg_rag",
+      "B": "bm25_llm",
+      "C": "vanilla_rag"
+    },
+    "rqa_016": {
+      "A": "vanilla_rag",
+      "B": "kg_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_017": {
+      "A": "vanilla_rag",
+      "B": "kg_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_018": {
+      "A": "vanilla_rag",
+      "B": "kg_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_019": {
+      "A": "vanilla_rag",
+      "B": "kg_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_020": {
+      "A": "kg_rag",
+      "B": "bm25_llm",
+      "C": "vanilla_rag"
+    },
+    "rqa_021": {
+      "A": "bm25_llm",
+      "B": "vanilla_rag",
+      "C": "kg_rag"
+    },
+    "rqa_022": {
+      "A": "kg_rag",
+      "B": "vanilla_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_023": {
+      "A": "vanilla_rag",
+      "B": "bm25_llm",
+      "C": "kg_rag"
+    },
+    "rqa_024": {
+      "A": "kg_rag",
+      "B": "vanilla_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_025": {
+      "A": "kg_rag",
+      "B": "vanilla_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_026": {
+      "A": "bm25_llm",
+      "B": "vanilla_rag",
+      "C": "kg_rag"
+    },
+    "rqa_027": {
+      "A": "vanilla_rag",
+      "B": "kg_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_028": {
+      "A": "bm25_llm",
+      "B": "vanilla_rag",
+      "C": "kg_rag"
+    },
+    "rqa_029": {
+      "A": "vanilla_rag",
+      "B": "bm25_llm",
+      "C": "kg_rag"
+    },
+    "rqa_030": {
+      "A": "kg_rag",
+      "B": "vanilla_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_031": {
+      "A": "kg_rag",
+      "B": "vanilla_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_032": {
+      "A": "bm25_llm",
+      "B": "kg_rag",
+      "C": "vanilla_rag"
+    },
+    "rqa_033": {
+      "A": "kg_rag",
+      "B": "bm25_llm",
+      "C": "vanilla_rag"
+    },
+    "rqa_034": {
+      "A": "bm25_llm",
+      "B": "kg_rag",
+      "C": "vanilla_rag"
+    },
+    "rqa_035": {
+      "A": "kg_rag",
+      "B": "bm25_llm",
+      "C": "vanilla_rag"
+    },
+    "rqa_036": {
+      "A": "bm25_llm",
+      "B": "kg_rag",
+      "C": "vanilla_rag"
+    },
+    "rqa_037": {
+      "A": "kg_rag",
+      "B": "vanilla_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_038": {
+      "A": "bm25_llm",
+      "B": "kg_rag",
+      "C": "vanilla_rag"
+    },
+    "rqa_039": {
+      "A": "kg_rag",
+      "B": "vanilla_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_040": {
+      "A": "vanilla_rag",
+      "B": "kg_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_041": {
+      "A": "vanilla_rag",
+      "B": "bm25_llm",
+      "C": "kg_rag"
+    },
+    "rqa_042": {
+      "A": "kg_rag",
+      "B": "bm25_llm",
+      "C": "vanilla_rag"
+    },
+    "rqa_043": {
+      "A": "kg_rag",
+      "B": "bm25_llm",
+      "C": "vanilla_rag"
+    },
+    "rqa_044": {
+      "A": "vanilla_rag",
+      "B": "bm25_llm",
+      "C": "kg_rag"
+    },
+    "rqa_045": {
+      "A": "kg_rag",
+      "B": "vanilla_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_046": {
+      "A": "kg_rag",
+      "B": "bm25_llm",
+      "C": "vanilla_rag"
+    },
+    "rqa_047": {
+      "A": "bm25_llm",
+      "B": "vanilla_rag",
+      "C": "kg_rag"
+    },
+    "rqa_048": {
+      "A": "kg_rag",
+      "B": "bm25_llm",
+      "C": "vanilla_rag"
+    },
+    "rqa_049": {
+      "A": "vanilla_rag",
+      "B": "kg_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_050": {
+      "A": "vanilla_rag",
+      "B": "kg_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_051": {
+      "A": "vanilla_rag",
+      "B": "bm25_llm",
+      "C": "kg_rag"
+    },
+    "rqa_052": {
+      "A": "bm25_llm",
+      "B": "vanilla_rag",
+      "C": "kg_rag"
+    },
+    "rqa_053": {
+      "A": "bm25_llm",
+      "B": "kg_rag",
+      "C": "vanilla_rag"
+    },
+    "rqa_054": {
+      "A": "kg_rag",
+      "B": "bm25_llm",
+      "C": "vanilla_rag"
+    },
+    "rqa_055": {
+      "A": "kg_rag",
+      "B": "bm25_llm",
+      "C": "vanilla_rag"
+    },
+    "rqa_056": {
+      "A": "kg_rag",
+      "B": "bm25_llm",
+      "C": "vanilla_rag"
+    },
+    "rqa_057": {
+      "A": "vanilla_rag",
+      "B": "kg_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_058": {
+      "A": "bm25_llm",
+      "B": "vanilla_rag",
+      "C": "kg_rag"
+    },
+    "rqa_059": {
+      "A": "vanilla_rag",
+      "B": "kg_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_060": {
+      "A": "kg_rag",
+      "B": "vanilla_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_061": {
+      "A": "kg_rag",
+      "B": "vanilla_rag",
+      "C": "bm25_llm"
+    },
+    "rqa_062": {
+      "A": "bm25_llm",
+      "B": "kg_rag",
+      "C": "vanilla_rag"
+    }
+  },
+  "system_summaries": {
+    "all_62": {
+      "bm25_llm": {
+        "n_questions": 62,
+        "n_answers": 62,
+        "correctness": {
+          "mean": 2.741935,
+          "median": 1.0
+        },
+        "completeness": {
+          "mean": 2.725806,
+          "median": 1.0
+        },
+        "groundedness": {
+          "mean": 3.612903,
+          "median": 5.0
+        },
+        "relevance": {
+          "mean": 3.580645,
+          "median": 3.0
+        },
+        "unsupported_claim_rate": 0.306452
+      },
+      "vanilla_rag": {
+        "n_questions": 62,
+        "n_answers": 62,
+        "correctness": {
+          "mean": 2.645161,
+          "median": 1.0
+        },
+        "completeness": {
+          "mean": 2.645161,
+          "median": 1.0
+        },
+        "groundedness": {
+          "mean": 3.854839,
+          "median": 5.0
+        },
+        "relevance": {
+          "mean": 3.596774,
+          "median": 3.0
+        },
+        "unsupported_claim_rate": 0.258065
+      },
+      "kg_rag": {
+        "n_questions": 62,
+        "n_answers": 62,
+        "correctness": {
+          "mean": 2.5,
+          "median": 1.0
+        },
+        "completeness": {
+          "mean": 2.5,
+          "median": 1.0
+        },
+        "groundedness": {
+          "mean": 3.419355,
+          "median": 5.0
+        },
+        "relevance": {
+          "mean": 3.403226,
+          "median": 3.0
+        },
+        "unsupported_claim_rate": 0.370968
+      }
+    },
+    "kg_required_yes_26": {
+      "bm25_llm": {
+        "n_questions": 26,
+        "n_answers": 26,
+        "correctness": {
+          "mean": 2.384615,
+          "median": 1.0
+        },
+        "completeness": {
+          "mean": 2.384615,
+          "median": 1.0
+        },
+        "groundedness": {
+          "mean": 3.615385,
+          "median": 5.0
+        },
+        "relevance": {
+          "mean": 3.346154,
+          "median": 3.0
+        },
+        "unsupported_claim_rate": 0.346154
+      },
+      "vanilla_rag": {
+        "n_questions": 26,
+        "n_answers": 26,
+        "correctness": {
+          "mean": 2.115385,
+          "median": 1.0
+        },
+        "completeness": {
+          "mean": 2.153846,
+          "median": 1.0
+        },
+        "groundedness": {
+          "mean": 3.615385,
+          "median": 5.0
+        },
+        "relevance": {
+          "mean": 3.307692,
+          "median": 3.0
+        },
+        "unsupported_claim_rate": 0.346154
+      },
+      "kg_rag": {
+        "n_questions": 26,
+        "n_answers": 26,
+        "correctness": {
+          "mean": 1.961538,
+          "median": 1.0
+        },
+        "completeness": {
+          "mean": 2.0,
+          "median": 1.0
+        },
+        "groundedness": {
+          "mean": 3.153846,
+          "median": 4.0
+        },
+        "relevance": {
+          "mean": 3.115385,
+          "median": 3.0
+        },
+        "unsupported_claim_rate": 0.461538
+      }
+    },
+    "kg_required_no_36": {
+      "bm25_llm": {
+        "n_questions": 36,
+        "n_answers": 36,
+        "correctness": {
+          "mean": 3.0,
+          "median": 3.0
+        },
+        "completeness": {
+          "mean": 2.972222,
+          "median": 3.0
+        },
+        "groundedness": {
+          "mean": 3.611111,
+          "median": 5.0
+        },
+        "relevance": {
+          "mean": 3.75,
+          "median": 4.0
+        },
+        "unsupported_claim_rate": 0.277778
+      },
+      "vanilla_rag": {
+        "n_questions": 36,
+        "n_answers": 36,
+        "correctness": {
+          "mean": 3.027778,
+          "median": 3.5
+        },
+        "completeness": {
+          "mean": 3.0,
+          "median": 3.0
+        },
+        "groundedness": {
+          "mean": 4.027778,
+          "median": 5.0
+        },
+        "relevance": {
+          "mean": 3.805556,
+          "median": 4.5
+        },
+        "unsupported_claim_rate": 0.194444
+      },
+      "kg_rag": {
+        "n_questions": 36,
+        "n_answers": 36,
+        "correctness": {
+          "mean": 2.888889,
+          "median": 3.0
+        },
+        "completeness": {
+          "mean": 2.861111,
+          "median": 3.0
+        },
+        "groundedness": {
+          "mean": 3.611111,
+          "median": 5.0
+        },
+        "relevance": {
+          "mean": 3.611111,
+          "median": 3.5
+        },
+        "unsupported_claim_rate": 0.305556
+      }
+    }
+  },
+  "primary_kg_vs_vanilla_yes": {
+    "left": "kg_rag",
+    "right": "vanilla_rag",
+    "scope": "YES",
+    "metrics": {
+      "correctness": {
+        "n": 26,
+        "mean_difference": -0.153846,
+        "median_difference": 0.0,
+        "positive": 0,
+        "negative": 1,
+        "ties": 25,
+        "bootstrap_95_ci": [
+          -0.461538,
+          0.0
+        ],
+        "wilcoxon_p": null,
+        "cohen_dz": null,
+        "rank_biserial": null
+      },
+      "completeness": {
+        "n": 26,
+        "mean_difference": -0.153846,
+        "median_difference": 0.0,
+        "positive": 0,
+        "negative": 1,
+        "ties": 25,
+        "bootstrap_95_ci": [
+          -0.461538,
+          0.0
+        ],
+        "wilcoxon_p": null,
+        "cohen_dz": null,
+        "rank_biserial": null
+      },
+      "groundedness": {
+        "n": 26,
+        "mean_difference": -0.461538,
+        "median_difference": 0.0,
+        "positive": 0,
+        "negative": 3,
+        "ties": 23,
+        "bootstrap_95_ci": [
+          -0.923077,
+          0.0
+        ],
+        "wilcoxon_p": 0.083265,
+        "cohen_dz": -0.354144,
+        "rank_biserial": -1.0
+      },
+      "relevance": {
+        "n": 26,
+        "mean_difference": -0.192308,
+        "median_difference": 0.0,
+        "positive": 0,
+        "negative": 4,
+        "ties": 22,
+        "bootstrap_95_ci": [
+          -0.384615,
+          -0.038462
+        ],
+        "wilcoxon_p": 0.058782,
+        "cohen_dz": -0.391294,
+        "rank_biserial": -1.0
+      }
+    },
+    "unsupported_claim_rate": {
+      "kg_rag": 0.461538,
+      "vanilla_rag": 0.346154
+    }
+  },
+  "secondary_yes": {
+    "kg_vs_bm25": {
+      "left": "kg_rag",
+      "right": "bm25_llm",
+      "scope": "YES",
+      "metrics": {
+        "correctness": {
+          "n": 26,
+          "mean_difference": -0.423077,
+          "median_difference": 0.0,
+          "positive": 4,
+          "negative": 7,
+          "ties": 15,
+          "bootstrap_95_ci": [
+            -1.269231,
+            0.461538
+          ],
+          "wilcoxon_p": 0.40311,
+          "cohen_dz": -0.182506,
+          "rank_biserial": -0.272727
+        },
+        "completeness": {
+          "n": 26,
+          "mean_difference": -0.384615,
+          "median_difference": 0.0,
+          "positive": 4,
+          "negative": 6,
+          "ties": 16,
+          "bootstrap_95_ci": [
+            -1.230769,
+            0.5
+          ],
+          "wilcoxon_p": 0.449692,
+          "cohen_dz": -0.166033,
+          "rank_biserial": -0.254545
+        },
+        "groundedness": {
+          "n": 26,
+          "mean_difference": -0.461538,
+          "median_difference": 0.0,
+          "positive": 4,
+          "negative": 9,
+          "ties": 13,
+          "bootstrap_95_ci": [
+            -1.384615,
+            0.5
+          ],
+          "wilcoxon_p": 0.396554,
+          "cohen_dz": -0.182177,
+          "rank_biserial": -0.252747
+        },
+        "relevance": {
+          "n": 26,
+          "mean_difference": -0.230769,
+          "median_difference": 0.0,
+          "positive": 6,
+          "negative": 11,
+          "ties": 9,
+          "bootstrap_95_ci": [
+            -0.769231,
+            0.346154
+          ],
+          "wilcoxon_p": 0.397749,
+          "cohen_dz": -0.156131,
+          "rank_biserial": -0.228758
+        }
+      },
+      "unsupported_claim_rate": {
+        "kg_rag": 0.461538,
+        "bm25_llm": 0.346154
+      }
+    },
+    "vanilla_vs_bm25": {
+      "left": "vanilla_rag",
+      "right": "bm25_llm",
+      "scope": "YES",
+      "metrics": {
+        "correctness": {
+          "n": 26,
+          "mean_difference": -0.269231,
+          "median_difference": 0.0,
+          "positive": 5,
+          "negative": 7,
+          "ties": 14,
+          "bootstrap_95_ci": [
+            -1.192308,
+            0.692308
+          ],
+          "wilcoxon_p": 0.650509,
+          "cohen_dz": -0.108789,
+          "rank_biserial": -0.141026
+        },
+        "completeness": {
+          "n": 26,
+          "mean_difference": -0.230769,
+          "median_difference": 0.0,
+          "positive": 5,
+          "negative": 6,
+          "ties": 15,
+          "bootstrap_95_ci": [
+            -1.153846,
+            0.730769
+          ],
+          "wilcoxon_p": 0.704828,
+          "cohen_dz": -0.0934,
+          "rank_biserial": -0.121212
+        },
+        "groundedness": {
+          "n": 26,
+          "mean_difference": 0.0,
+          "median_difference": 0.0,
+          "positive": 5,
+          "negative": 7,
+          "ties": 14,
+          "bootstrap_95_ci": [
+            -0.961538,
+            0.923077
+          ],
+          "wilcoxon_p": 0.93435,
+          "cohen_dz": 0.0,
+          "rank_biserial": 0.025641
+        },
+        "relevance": {
+          "n": 26,
+          "mean_difference": -0.038462,
+          "median_difference": 0.0,
+          "positive": 7,
+          "negative": 10,
+          "ties": 9,
+          "bootstrap_95_ci": [
+            -0.576923,
+            0.576923
+          ],
+          "wilcoxon_p": 0.866101,
+          "cohen_dz": -0.025044,
+          "rank_biserial": -0.045752
+        }
+      },
+      "unsupported_claim_rate": {
+        "vanilla_rag": 0.346154,
+        "bm25_llm": 0.346154
+      }
+    }
+  },
+  "secondary_no": {
+    "kg_vs_bm25": {
+      "left": "kg_rag",
+      "right": "bm25_llm",
+      "scope": "NO",
+      "metrics": {
+        "correctness": {
+          "n": 36,
+          "mean_difference": -0.111111,
+          "median_difference": 0.0,
+          "positive": 11,
+          "negative": 11,
+          "ties": 14,
+          "bootstrap_95_ci": [
+            -0.944444,
+            0.694444
+          ],
+          "wilcoxon_p": 0.766464,
+          "cohen_dz": -0.043576,
+          "rank_biserial": -0.071146
+        },
+        "completeness": {
+          "n": 36,
+          "mean_difference": -0.111111,
+          "median_difference": 0.0,
+          "positive": 10,
+          "negative": 11,
+          "ties": 15,
+          "bootstrap_95_ci": [
+            -0.944444,
+            0.722222
+          ],
+          "wilcoxon_p": 0.776975,
+          "cohen_dz": -0.043386,
+          "rank_biserial": -0.069264
+        },
+        "groundedness": {
+          "n": 36,
+          "mean_difference": 0.0,
+          "median_difference": 0.0,
+          "positive": 9,
+          "negative": 9,
+          "ties": 18,
+          "bootstrap_95_ci": [
+            -0.666667,
+            0.666667
+          ],
+          "wilcoxon_p": 0.964861,
+          "cohen_dz": 0.0,
+          "rank_biserial": 0.011696
+        },
+        "relevance": {
+          "n": 36,
+          "mean_difference": -0.138889,
+          "median_difference": 0.0,
+          "positive": 11,
+          "negative": 13,
+          "ties": 12,
+          "bootstrap_95_ci": [
+            -0.694444,
+            0.416667
+          ],
+          "wilcoxon_p": 0.621582,
+          "cohen_dz": -0.080454,
+          "rank_biserial": -0.113333
+        }
+      },
+      "unsupported_claim_rate": {
+        "kg_rag": 0.305556,
+        "bm25_llm": 0.277778
+      }
+    },
+    "vanilla_vs_bm25": {
+      "left": "vanilla_rag",
+      "right": "bm25_llm",
+      "scope": "NO",
+      "metrics": {
+        "correctness": {
+          "n": 36,
+          "mean_difference": 0.027778,
+          "median_difference": 0.0,
+          "positive": 12,
+          "negative": 10,
+          "ties": 14,
+          "bootstrap_95_ci": [
+            -0.805556,
+            0.833333
+          ],
+          "wilcoxon_p": 0.973674,
+          "cohen_dz": 0.011005,
+          "rank_biserial": -0.007905
+        },
+        "completeness": {
+          "n": 36,
+          "mean_difference": 0.027778,
+          "median_difference": 0.0,
+          "positive": 11,
+          "negative": 10,
+          "ties": 15,
+          "bootstrap_95_ci": [
+            -0.805556,
+            0.833333
+          ],
+          "wilcoxon_p": 0.971746,
+          "cohen_dz": 0.010956,
+          "rank_biserial": -0.008658
+        },
+        "groundedness": {
+          "n": 36,
+          "mean_difference": 0.416667,
+          "median_difference": 0.0,
+          "positive": 11,
+          "negative": 7,
+          "ties": 18,
+          "bootstrap_95_ci": [
+            -0.194444,
+            1.027778
+          ],
+          "wilcoxon_p": 0.184898,
+          "cohen_dz": 0.217245,
+          "rank_biserial": 0.350877
+        },
+        "relevance": {
+          "n": 36,
+          "mean_difference": 0.055556,
+          "median_difference": 0.0,
+          "positive": 13,
+          "negative": 12,
+          "ties": 11,
+          "bootstrap_95_ci": [
+            -0.472222,
+            0.583333
+          ],
+          "wilcoxon_p": 0.826487,
+          "cohen_dz": 0.034666,
+          "rank_biserial": 0.049231
+        }
+      },
+      "unsupported_claim_rate": {
+        "vanilla_rag": 0.194444,
+        "bm25_llm": 0.277778
+      }
+    }
+  },
+  "lexical_comparison": {
+    "phase4_kg_minus_vanilla_yes_mean_rouge_l": -0.018373,
+    "phase4_bootstrap_95_ci": [
+      -0.068196,
+      0.010827
+    ],
+    "phase4_wilcoxon_p": 1.0,
+    "interpretation": "Human scores are factual-quality judgments on a 1-5 ordinal scale and should not be treated as ROUGE equivalents."
+  },
+  "methodological_limitations": [
+    "Primary comparison has N=26 questions.",
+    "Only one completed annotation file is present; inter-annotator agreement is not calculated.",
+    "The benchmark is researcher-constructed and human evaluation is not independent external validation.",
+    "Unsupported-claim labels are human judgments under the supplied rubric, not automatically measured hallucination.",
+    "Anonymization mapping is deterministic per question, not one global A/B/C mapping."
+  ],
+  "final_conclusion": "B — NO"
+}

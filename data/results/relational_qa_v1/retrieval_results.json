@@ -1,0 +1,23 @@
+{
+  "bm25_llm": {
+    "n": 62,
+    "supporting_chunk_hit_rate": 0,
+    "supporting_triple_hit_rate": 0,
+    "complete_supporting_path_hit_rate": 0,
+    "path_metric_note": "Existing KG retriever exposes serialized one-hop triples but no source-linked path IDs; complete path hits are conservatively recorded as false, never inferred."
+  },
+  "vanilla_rag": {
+    "n": 62,
+    "supporting_chunk_hit_rate": 0,
+    "supporting_triple_hit_rate": 0,
+    "complete_supporting_path_hit_rate": 0,
+    "path_metric_note": "Existing KG retriever exposes serialized one-hop triples but no source-linked path IDs; complete path hits are conservatively recorded as false, never inferred."
+  },
+  "kg_rag": {
+    "n": 62,
+    "supporting_chunk_hit_rate": 0.483871,
+    "supporting_triple_hit_rate": 0,
+    "complete_supporting_path_hit_rate": 0,
+    "path_metric_note": "Existing KG retriever exposes serialized one-hop triples but no source-linked path IDs; complete path hits are conservatively recorded as false, never inferred."
+  }
+}

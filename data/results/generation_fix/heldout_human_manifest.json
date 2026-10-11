@@ -1,0 +1,45 @@
+{
+  "input_csv_sha256": "df1df327c4e0ac84a3736a2e2e01c2458482086dab790743fbda1ed5e65dde3a",
+  "mapping_sha256": "492d3c371d9b95b57b25c05619563f0b23c11a3697b0b6f52eee80465f0f3e54",
+  "benchmark_sha256": "6c7f3600995c0091de73d20d2f02953cb414023df281f7178069f9f81b432b64",
+  "heldout_manifest_sha256": "052be6ac7cdb09c3b91a2ee5feb81ba597c94680115c6acc395d19abfe5947d3",
+  "question_count": 13,
+  "system_count": 3,
+  "systems": {
+    "vanilla_dense_rag": "Vanilla Dense RAG",
+    "A_CURRENT": "Current Relation-Aware KG-RAG",
+    "C_TWO_STAGE": "Two-Stage KG-Grounded Generation"
+  },
+  "analysis_timestamp_utc": "2026-10-08T06:59:50.057331+00:00",
+  "analysis_method": {
+    "unit": "question",
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20261008,
+    "wilcoxon": "two-sided, zero_method=wilcox, method=auto",
+    "holm_family": "8 paired tests: C-A and C-B across four quality dimensions",
+    "unsupported_claims": "binary rates and paired directional counts; not included in Holm quality-dimension family"
+  },
+  "score_columns_used": [
+    "A_correctness",
+    "A_completeness",
+    "A_groundedness",
+    "A_relevance",
+    "A_unsupported_claim",
+    "B_correctness",
+    "B_completeness",
+    "B_groundedness",
+    "B_relevance",
+    "B_unsupported_claim",
+    "C_correctness",
+    "C_completeness",
+    "C_groundedness",
+    "C_relevance",
+    "C_unsupported_claim"
+  ],
+  "output_files": [
+    "data/results/generation_fix/heldout_human_analysis.json",
+    "data/results/generation_fix/heldout_human_analysis.md",
+    "data/results/generation_fix/heldout_human_question_level_results.csv",
+    "data/results/generation_fix/heldout_human_statistics.json"
+  ]
+}

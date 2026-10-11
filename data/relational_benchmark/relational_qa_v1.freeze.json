@@ -1,0 +1,50 @@
+{
+  "benchmark_id": "isro_relational_qa_v1",
+  "frozen_at_utc": "2026-10-07T09:01:18.066876+00:00",
+  "frozen_before_system_evaluation": true,
+  "benchmark_sha256": "7f5daf5419b0a4cb70e5c3d5eba021a8a39118b5a0fd235ce19b81f75324ffce",
+  "provenance_sha256": "910a9955a7ffb6e8c9967ce16e69adf56a21ec0e84fe012ace89bc0f5ea07a8f",
+  "benchmark_file": "data/relational_benchmark/relational_qa_v1.json",
+  "provenance_file": "data/relational_benchmark/relational_qa_provenance.jsonl",
+  "question_count": 62,
+  "mission_distribution": {
+    "Aditya-L1": 13,
+    "AstroSat": 4,
+    "Chandrayaan-1": 15,
+    "Chandrayaan-2": 7,
+    "Chandrayaan-3": 16,
+    "Gaganyaan": 2,
+    "Mars Orbiter Mission": 5
+  },
+  "relation_distribution": {
+    "DEVELOPED_BY": 14,
+    "HAS_OBJECTIVE": 19,
+    "HAS_PAYLOAD": 32,
+    "LAUNCHED_BY": 6,
+    "LAUNCHED_ON": 6,
+    "LED_BY": 1,
+    "OBSERVES": 11,
+    "OPERATED_BY": 1,
+    "PRECEDED_BY": 1
+  },
+  "kg_required_distribution": {
+    "NO": 36,
+    "YES": 26
+  },
+  "category_distribution": {
+    "DIRECT_CONTROL": 15,
+    "MULTI_RELATION": 3,
+    "SINGLE_RELATION": 21,
+    "TWO_HOP_RELATION": 23
+  },
+  "two_hop_or_longer_path_pattern_counts": {
+    "Mission -> HAS_PAYLOAD -> Payload -> DEVELOPED_BY -> ISROCentre": 3,
+    "Mission -> HAS_PAYLOAD -> Payload -> DEVELOPED_BY -> Organization": 7,
+    "Mission -> HAS_PAYLOAD -> Payload -> HAS_OBJECTIVE -> ScientificObjective": 13,
+    "Mission -> HAS_PAYLOAD -> Payload -> OBSERVES -> Phenomenon": 4,
+    "Mission -> HAS_PAYLOAD -> Payload -> OBSERVES -> PlanetaryBody": 2,
+    "Mission -> PRECEDED_BY -> Mission -> HAS_PAYLOAD -> Payload -> HAS_OBJECTIVE -> ScientificObjective": 1
+  },
+  "validation_status": "passed",
+  "system_outputs_consulted_during_construction": false
+}

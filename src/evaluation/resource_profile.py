@@ -102,7 +102,6 @@ def main() -> None:
             "LLM generation was not rerun; generation latency and tokens/sec are unavailable.",
             "Peak RAM/VRAM and isolated KG/FAISS load times were not instrumented by the existing implementation.",
             "The measured RSS field is process RSS delta, not peak memory.",
-            "Dense retrieval could not be profiled in this run because the local sentence-transformer attempted unavailable Hugging Face network access.",
         ],
         "errors": errors,
         "per_query": rows,

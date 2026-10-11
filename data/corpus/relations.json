@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "evidence_policy": "Only source-explicit relationships are included in the initial corpus. Semantic normalization is permitted only when it preserves the source statement. No relationship is inferred from co-occurrence or from date ordering.",
+  "relations": [
+    {
+      "name": "HAS_PAYLOAD",
+      "subject_types": ["Mission", "Spacecraft"],
+      "object_types": ["Payload"],
+      "meaning": "The mission or spacecraft explicitly carries or lists the payload as onboard.",
+      "example": "Aditya-L1 HAS_PAYLOAD VELC",
+      "acceptable_evidence": "A primary-source payload list, mission page, or booklet that explicitly identifies the payload as carried/onboard.",
+      "evidence_mode": "direct_only"
+    },
+    {
+      "name": "LAUNCHED_BY",
+      "subject_types": ["Mission"],
+      "object_types": ["LaunchVehicle"],
+      "meaning": "The mission launch is explicitly attributed to the named launch vehicle or configuration.",
+      "example": "Chandrayaan-1 LAUNCHED_BY PSLV-C11",
+      "acceptable_evidence": "An official launch archive row or mission document naming the launcher.",
+      "evidence_mode": "direct_only"
+    },
+    {
+      "name": "LAUNCHED_ON",
+      "subject_types": ["Mission"],
+      "object_types": ["Date"],
+      "meaning": "The source-stated calendar date on which the mission launched.",
+      "example": "Chandrayaan-3 LAUNCHED_ON 2023-07-14",
+      "acceptable_evidence": "An official launch archive row or mission document naming the launch date.",
+      "evidence_mode": "direct_only"
+    },
+    {
+      "name": "LAUNCHED_FROM",
+      "subject_types": ["Mission"],
+      "object_types": ["LaunchSite"],
+      "meaning": "The site explicitly stated as the origin of the mission launch.",
+      "example": "AstroSat LAUNCHED_FROM Satish Dhawan Space Centre SHAR",
+      "acceptable_evidence": "An official launch archive statement naming the launch site.",
+      "evidence_mode": "direct_only"
+    },
+    {
+      "name": "HAS_OBJECTIVE",
+      "subject_types": ["Mission", "Payload"],
+      "object_types": ["ScientificObjective"],
+      "meaning": "The source explicitly identifies the linked statement as an objective of the mission or payload.",
+      "example": "Chandrayaan-3 HAS_OBJECTIVE demonstrate safe and soft lunar landing",
+      "acceptable_evidence": "An official mission/payload objective section or statement explicitly labelled as an objective.",
+      "evidence_mode": "direct_only"
+    },
+    {
+      "name": "DEVELOPED_BY",
+      "subject_types": ["Payload", "Spacecraft"],
+      "object_types": ["Organization", "ISROCentre"],
+      "meaning": "The source explicitly credits the organization with developing the payload or spacecraft.",
+      "example": "Mars Colour Camera DEVELOPED_BY Space Applications Centre",
+      "acceptable_evidence": "A primary source using an explicit development attribution such as developed by; broad collaboration does not establish this relation.",
+      "evidence_mode": "direct_only"
+    },
+    {
+      "name": "LED_BY",
+      "subject_types": ["Mission"],
+      "object_types": ["Organization", "ISROCentre"],
+      "meaning": "The source explicitly identifies an organization or centre as leading the mission programme.",
+      "example": "Gaganyaan LED_BY Human Space Flight Centre",
+      "acceptable_evidence": "An official source explicitly calling the organization/centre the lead or stating it spearheads the programme.",
+      "evidence_mode": "direct_only"
+    },
+    {
+      "name": "OPERATED_BY",
+      "subject_types": ["Mission", "Spacecraft"],
+      "object_types": ["Organization", "ISROCentre"],
+      "meaning": "The source explicitly assigns spacecraft/mission operations to the organization or centre.",
+      "example": "AstroSat OPERATED_BY ISTRAC",
+      "acceptable_evidence": "A primary source explicitly stating that the organization manages or conducts mission operations.",
+      "evidence_mode": "direct_only"
+    },
+    {
+      "name": "OBSERVES",
+      "subject_types": ["Payload", "Spacecraft", "Mission"],
+      "object_types": ["ScientificTarget", "PlanetaryBody", "Phenomenon"],
+      "meaning": "The source explicitly states that the subject observes or measures the target/phenomenon.",
+      "example": "VELC OBSERVES solar corona",
+      "acceptable_evidence": "A primary source explicitly describing the observation or measurement target.",
+      "evidence_mode": "direct_only"
+    },
+    {
+      "name": "STUDIES",
+      "subject_types": ["Mission", "Payload", "Spacecraft"],
+      "object_types": ["ScientificTarget", "PlanetaryBody", "Phenomenon"],
+      "meaning": "The source explicitly states that the mission, spacecraft, or payload studies the named body, subject, or phenomenon.",
+      "example": "Mars Orbiter Mission STUDIES Mars",
+      "acceptable_evidence": "A primary source explicitly using study/investigate language or an equivalent mission objective statement.",
+      "evidence_mode": "direct_only"
+    },
+    {
+      "name": "ORBITS",
+      "subject_types": ["Spacecraft", "Mission"],
+      "object_types": ["Orbit", "PlanetaryBody"],
+      "meaning": "The source explicitly states that the spacecraft or mission is in orbit around, or placed in, the named orbit/body.",
+      "example": "Chandrayaan-1 ORBITS Moon",
+      "acceptable_evidence": "An official mission or launch source directly stating the orbit or orbiting body.",
+      "evidence_mode": "direct_only"
+    },
+    {
+      "name": "PRECEDED_BY",
+      "subject_types": ["Mission"],
+      "object_types": ["Mission"],
+      "meaning": "The source explicitly identifies the object mission as an earlier mission or predecessor in the programme sequence; chronological order alone is not sufficient.",
+      "example": "Chandrayaan-3 PRECEDED_BY Chandrayaan-2",
+      "acceptable_evidence": "An official source explicitly describing one mission as a follow-on to, successor of, or preceded by the other.",
+      "evidence_mode": "direct_only"
+    }
+  ]
+}

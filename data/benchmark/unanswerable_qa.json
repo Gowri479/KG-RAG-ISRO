@@ -1,0 +1,322 @@
+[
+  {
+    "id": "unans_001",
+    "question": "What is the exact mass of the scientific payload on China's Chang'e-6 lunar far-side lander?",
+    "category": "Completely absent fact",
+    "answerable": false,
+    "unanswerable_reason": "Foreign space mission (CNSA) whose technical payload mass is completely absent from the ISRO corpus.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_002",
+    "question": "Who was the lead propulsion engineer for the ESA Rosetta comet lander Philae?",
+    "category": "Completely absent fact",
+    "answerable": false,
+    "unanswerable_reason": "European Space Agency mission personnel not documented in the ISRO documentation corpus.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_003",
+    "question": "What was the total fuel capacity of NASA's Cassini spacecraft when entering Saturn's orbit?",
+    "category": "Completely absent fact",
+    "answerable": false,
+    "unanswerable_reason": "NASA Saturn mission specification absent from ISRO corpus.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_004",
+    "question": "What is the focal length of the high-resolution camera on the UAE Hope Mars orbiter?",
+    "category": "Completely absent fact",
+    "answerable": false,
+    "unanswerable_reason": "UAE space agency Martian mission payload details absent from ISRO corpus.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_005",
+    "question": "What battery chemistry was utilized on JAXA's Hayabusa2 sample capsule?",
+    "category": "Completely absent fact",
+    "answerable": false,
+    "unanswerable_reason": "JAXA asteroid sample return engineering details absent from ISRO documentation.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_006",
+    "question": "What was the operating frequency of the telemetry downlink on the Soviet Luna 24 probe?",
+    "category": "Completely absent fact",
+    "answerable": false,
+    "unanswerable_reason": "Historic Soviet lunar mission communication frequency absent from ISRO corpus.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_007",
+    "question": "What was the retail price in USD of the titanium structural fasteners on SpaceX Falcon Heavy Flight 1?",
+    "category": "Completely absent fact",
+    "answerable": false,
+    "unanswerable_reason": "Commercial SpaceX procurement cost data completely absent from ISRO corpus.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_008",
+    "question": "What was the atmospheric entry temperature recorded by NASA's Galileo Jupiter atmospheric probe?",
+    "category": "Completely absent fact",
+    "answerable": false,
+    "unanswerable_reason": "NASA Jupiter atmospheric entry measurements absent from ISRO corpus.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_009",
+    "question": "Was Dr. K. Sivan the mission director for ISRO's Aryabhata satellite launch in 1975?",
+    "category": "Related entity but absent relationship",
+    "answerable": false,
+    "unanswerable_reason": "Both Dr. K. Sivan and Aryabhata exist in corpus, but Sivan was not the mission director for Aryabhata in 1975.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_010",
+    "question": "Did the PSLV-C37 rocket carry and deploy the Chandrayaan-3 Vikram lander into translunar trajectory?",
+    "category": "Related entity but absent relationship",
+    "answerable": false,
+    "unanswerable_reason": "PSLV-C37 (104 satellites) and Vikram lander exist in corpus, but PSLV-C37 did not launch Chandrayaan-3 (LVM3 did).",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_011",
+    "question": "Did Prof. U. R. Rao serve as the spacecraft designer for the SSLV-D1 demonstration launch?",
+    "category": "Related entity but absent relationship",
+    "answerable": false,
+    "unanswerable_reason": "Prof. U. R. Rao and SSLV-D1 are both in ISRO history/records, but Rao passed away in 2017 before SSLV was designed.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_012",
+    "question": "Was the SUIT telescope payload on Aditya-L1 mounted on the Mangalyaan Mars orbiter bus?",
+    "category": "Related entity but absent relationship",
+    "answerable": false,
+    "unanswerable_reason": "SUIT and Mangalyaan are both in corpus, but SUIT is exclusively an Aditya-L1 solar payload.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_013",
+    "question": "Did the Vikram Sarabhai Space Centre (VSSC) manufacture the cryogenic propellant tanks for NASA's Apollo 11 Saturn V?",
+    "category": "Related entity but absent relationship",
+    "answerable": false,
+    "unanswerable_reason": "VSSC is an ISRO center, but had zero manufacturing relationship with Apollo 11.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_014",
+    "question": "Was the Pragyan rover from Chandrayaan-3 deployed on the Martian surface by the MOM orbiter?",
+    "category": "Related entity but absent relationship",
+    "answerable": false,
+    "unanswerable_reason": "Pragyan and MOM are ISRO assets, but Pragyan landed on the Moon, not Mars.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_015",
+    "question": "Did S. Somanath personally pilot the RLV-TD reusable launch vehicle during its landing test?",
+    "category": "Related entity but absent relationship",
+    "answerable": false,
+    "unanswerable_reason": "RLV-TD is an autonomous unmanned test vehicle; Chairman Somanath did not pilot it.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_016",
+    "question": "Did the Cartosat-3 satellite carry an atmospheric sounder payload designed for Venusian cloud analysis?",
+    "category": "Related entity but absent relationship",
+    "answerable": false,
+    "unanswerable_reason": "Cartosat-3 is an Earth observation satellite; it carries no Venusian atmospheric sounder.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_017",
+    "question": "What were the exact landing coordinates for the soft landing of Chandrayaan-1 on the lunar south pole?",
+    "category": "Similar entity with misleading evidence",
+    "answerable": false,
+    "unanswerable_reason": "Misleading premise: Chandrayaan-1 was an orbiter with an impact probe (MIP), not a soft landing mission.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_018",
+    "question": "At what altitude did the Mangalyaan lander touch down on the Martian surface?",
+    "category": "Similar entity with misleading evidence",
+    "answerable": false,
+    "unanswerable_reason": "Misleading premise: Mars Orbiter Mission (Mangalyaan) was strictly an orbiter without a lander.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_019",
+    "question": "What was the name of the lunar rover deployed by the Chandrayaan-2 Vikram lander after soft landing?",
+    "category": "Similar entity with misleading evidence",
+    "answerable": false,
+    "unanswerable_reason": "Misleading premise: Chandrayaan-2 Vikram lander hard-landed/crashed; Pragyan rover was never deployed.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_020",
+    "question": "How many human astronauts were inside the crew module during the Gaganyaan TV-D1 abort flight test?",
+    "category": "Similar entity with misleading evidence",
+    "answerable": false,
+    "unanswerable_reason": "Misleading premise: TV-D1 was an uncrewed flight test with zero human astronauts.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_021",
+    "question": "Which solar flare class was directly measured by the XSM payload on Chandrayaan-1 during its landing on Mars?",
+    "category": "Similar entity with misleading evidence",
+    "answerable": false,
+    "unanswerable_reason": "Misleading blend: Chandrayaan-1 orbited the Moon, never went to Mars, and XSM was on Chandrayaan-2.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_022",
+    "question": "What was the parachute deployment velocity for the Aditya-L1 atmospheric re-entry capsule upon returning to Earth?",
+    "category": "Similar entity with misleading evidence",
+    "answerable": false,
+    "unanswerable_reason": "Misleading premise: Aditya-L1 remains permanently in halo orbit around Sun-Earth L1 and has no re-entry capsule.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_023",
+    "question": "How many orbital dockings did the GSAT-30 communications satellite perform with the International Space Station?",
+    "category": "Similar entity with misleading evidence",
+    "answerable": false,
+    "unanswerable_reason": "Misleading premise: GSAT-30 is a geostationary communications satellite, not a docking spacecraft.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_024",
+    "question": "What was the tire pressure of the Pragyan rover wheels during its transit in the launch vehicle fairing?",
+    "category": "Similar entity with misleading evidence",
+    "answerable": false,
+    "unanswerable_reason": "Misleading premise: Pragyan utilizes rigid metallic cleated wheels, not pneumatic tires.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_025",
+    "question": "On what date in the year 2045 will Aditya-L1 officially complete its extended mission and be decommissioned?",
+    "category": "Temporal fact absent from corpus",
+    "answerable": false,
+    "unanswerable_reason": "Future decommissioning date in 2045 does not exist in ISRO corpus.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_026",
+    "question": "At what exact microsecond of UTC time did the PSLV-C25 fourth stage ignite during the MOM launch?",
+    "category": "Temporal fact absent from corpus",
+    "answerable": false,
+    "unanswerable_reason": "Microsecond-level staging timestamp is not documented in public ISRO documents.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_027",
+    "question": "In which exact month and day of 1961 was the first meeting between Vikram Sarabhai and APJ Abdul Kalam held?",
+    "category": "Temporal fact absent from corpus",
+    "answerable": false,
+    "unanswerable_reason": "Specific day and month of the 1961 initial meeting is absent from the corpus.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_028",
+    "question": "What was the exact sunset time in seconds at the Vikram lander coordinates on lunar day 14 of Chandrayaan-3?",
+    "category": "Temporal fact absent from corpus",
+    "answerable": false,
+    "unanswerable_reason": "Precise second-level lunar sunset time at landing site is absent from corpus.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_029",
+    "question": "On what exact date was the first wooden blueprint for the SLV-3 third stage drafted?",
+    "category": "Temporal fact absent from corpus",
+    "answerable": false,
+    "unanswerable_reason": "Specific drafting calendar date for historical SLV-3 blueprint absent from documents.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_030",
+    "question": "When will the Chandrayaan-4 sample return mission touch down back on Earth at the exact hour and minute?",
+    "category": "Temporal fact absent from corpus",
+    "answerable": false,
+    "unanswerable_reason": "Future landing schedule for planned Chandrayaan-4 is not yet fixed or present in corpus.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_031",
+    "question": "What was the exact date and minute when the Aryabhata satellite entered Earth's atmosphere for re-entry decay?",
+    "category": "Temporal fact absent from corpus",
+    "answerable": false,
+    "unanswerable_reason": "Exact minute-level decay timestamp for Aryabhata in 1992 is absent from public ISRO text.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_032",
+    "question": "At what exact local time did the second solar panel wing of INSAT-4CR deploy in orbit?",
+    "category": "Temporal fact absent from corpus",
+    "answerable": false,
+    "unanswerable_reason": "Sub-orbital panel deployment operational timestamp absent from ISRO corpus.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_033",
+    "question": "What brand of synthetic cryogenic lubricant is used in the main turbopump bearings of the CE-20 engine?",
+    "category": "Plausible but unsupported question",
+    "answerable": false,
+    "unanswerable_reason": "Proprietary commercial brand of bearing lubricant is not disclosed in ISRO public documentation.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_034",
+    "question": "What is the exact serial number on the optical prism inside the Chandrayaan-2 CLASS spectrometer?",
+    "category": "Plausible but unsupported question",
+    "answerable": false,
+    "unanswerable_reason": "Component-level optical prism serial number is an internal manufacturing detail absent from corpus.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_035",
+    "question": "What is the personal shoe size of ISRO founder Dr. Vikram Sarabhai?",
+    "category": "Plausible but unsupported question",
+    "answerable": false,
+    "unanswerable_reason": "Irrelevant personal biographical detail completely absent from space documentation.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_036",
+    "question": "What brand of paint was applied to the exterior white thermal coating of the PSLV core stage in 2023?",
+    "category": "Plausible but unsupported question",
+    "answerable": false,
+    "unanswerable_reason": "Commercial paint brand name for thermal barrier is not specified in ISRO documentation.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_037",
+    "question": "What was the cafeteria lunch menu at SDSC Sriharikota on the day of the Aditya-L1 launch?",
+    "category": "Plausible but unsupported question",
+    "answerable": false,
+    "unanswerable_reason": "Cafeteria meal menu is extraneous personal trivia absent from official mission reports.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_038",
+    "question": "How many individual screws were used to mount the solar panels on the AstroSat observatory satellite?",
+    "category": "Plausible but unsupported question",
+    "answerable": false,
+    "unanswerable_reason": "Screw count for structural integration is an unrecorded microscopic assembly detail.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_039",
+    "question": "What was the electrical resistance in ohms of the grounding strap on the launch gantry during LVM3-M4 rollout?",
+    "category": "Plausible but unsupported question",
+    "answerable": false,
+    "unanswerable_reason": "Gantry grounding electrical resistance is a ground support facility trace absent from corpus.",
+    "expected_behavior": "Abstain (I don't know)"
+  },
+  {
+    "id": "unans_040",
+    "question": "What is the favorite color of the flight dynamics lead for the XPoSat mission?",
+    "category": "Plausible but unsupported question",
+    "answerable": false,
+    "unanswerable_reason": "Personal psychological preferences of personnel are completely absent from corpus.",
+    "expected_behavior": "Abstain (I don't know)"
+  }
+]

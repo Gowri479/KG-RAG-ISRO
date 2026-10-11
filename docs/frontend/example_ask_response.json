@@ -1,0 +1,98 @@
+{
+  "question": "Which organization developed a payload carried by Aditya-L1?",
+  "answer": "The organization that developed a payload carried by Aditya-L1 is the Physical Research Laboratory (PRL).",
+  "abstained": false,
+  "mode": "mock",
+  "system": "relation_aware_kg_rag",
+  "analysis": {
+    "query_type": "MULTI_HOP",
+    "entities": [
+      "mission:aditya-l1"
+    ],
+    "relations": [
+      "HAS_PAYLOAD",
+      "DEVELOPED_BY"
+    ],
+    "hop_depth": 2
+  },
+  "kg_paths": [
+    {
+      "path_id": "path:aditya-payload-aspex",
+      "score": 0.65,
+      "hops": [
+        {
+          "subject": "Aditya-L1",
+          "relation": "HAS_PAYLOAD",
+          "object": "Aditya Solar wind Particle Experiment (ASPEX)",
+          "triple_id": "aditya-payload-aspex",
+          "source": {
+            "document_id": "ISRO_ADITYA_OVERVIEW",
+            "url": "https://www.isro.gov.in/Aditya_L1.html",
+            "section": "ADITYA-L1",
+            "page": null,
+            "excerpt": "5 | Aditya Solar wind Particle Experiment(ASPEX) | Solar wind/Particle Analyzer Protons & Heavier Ions with directions"
+          }
+        }
+      ]
+    },
+    {
+      "path_id": "path:aditya-payload-aspex+aditya-aspex-developed-by-prl",
+      "score": 0.65,
+      "hops": [
+        {
+          "subject": "Aditya-L1",
+          "relation": "HAS_PAYLOAD",
+          "object": "Aditya Solar wind Particle Experiment (ASPEX)",
+          "triple_id": "aditya-payload-aspex",
+          "source": {
+            "document_id": "ISRO_ADITYA_OVERVIEW",
+            "url": "https://www.isro.gov.in/Aditya_L1.html",
+            "section": "ADITYA-L1",
+            "page": null,
+            "excerpt": "5 | Aditya Solar wind Particle Experiment(ASPEX) | Solar wind/Particle Analyzer Protons & Heavier Ions with directions"
+          }
+        },
+        {
+          "subject": "Aditya Solar wind Particle Experiment (ASPEX)",
+          "relation": "DEVELOPED_BY",
+          "object": "Physical Research Laboratory (PRL)",
+          "triple_id": "aditya-aspex-developed-by-prl",
+          "source": {
+            "document_id": "ISSDC_ADITYA_BOOKLET",
+            "url": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf",
+            "section": "Page 8 > VELC",
+            "page": "8",
+            "excerpt": "Aditya Solar wind Particle EXperiment and Plasma Analyser Package for Aditya payloads are designed to study the solar wind and energetic ions, as well as their energy distribution. ASPEX PAPA ASPEX is developed at Physical Research Laboratory, Ahmedabad. PAPA is developed at Space Physics Laboratory, Vikram Sarabhai Space Centre, Thiruvananthapuram."
+          }
+        }
+      ]
+    },
+    {
+      "path_id": "path:aditya-payload-hel1os",
+      "score": 0.65,
+      "hops": [
+        {
+          "subject": "Aditya-L1",
+          "relation": "HAS_PAYLOAD",
+          "object": "High Energy L1 Orbiting X-ray Spectrometer (HEL1OS)",
+          "triple_id": "aditya-payload-hel1os",
+          "source": {
+            "document_id": "ISRO_ADITYA_OVERVIEW",
+            "url": "https://www.isro.gov.in/Aditya_L1.html",
+            "section": "ADITYA-L1",
+            "page": null,
+            "excerpt": "4 | High Energy L1 Orbiting X-ray Spectrometer(HEL1OS) | Hard X-ray spectrometer: Sun-as-a-star observation"
+          }
+        }
+      ]
+    }
+  ],
+  "kg_paths_total": 14,
+  "passages": [],
+  "usage": {
+    "latency_ms": 12,
+    "prompt_tokens": null,
+    "context_tokens_used": null,
+    "context_trimmed": null
+  }
+}

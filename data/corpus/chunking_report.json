@@ -1,0 +1,19 @@
+{
+  "target_chunk_words": 350,
+  "overlap_words": 0,
+  "chunk_count": 1006,
+  "word_count_estimate": 65601,
+  "documents_with_chunks": 32,
+  "chunks_by_mission": {
+    "Aditya-L1": 40,
+    "AstroSat": 9,
+    "Chandrayaan-1": 95,
+    "Chandrayaan-2": 580,
+    "Chandrayaan-3": 79,
+    "Gaganyaan": 6,
+    "Mars Orbiter Mission": 43,
+    "cross-mission": 154
+  },
+  "oversized_chunks": [],
+  "policy": "Chunks do not cross document, section, or PDF page boundaries. Table rows remain atomic with their headers. Long prose is split at sentence boundaries; no arbitrary overlap is added."
+}

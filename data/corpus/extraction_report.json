@@ -1,0 +1,301 @@
+{
+  "document_count": 33,
+  "record_count": 1468,
+  "documents": [
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_CY1_OVERVIEW",
+      "record_count": 17,
+      "extracted_title": "Chandrayaan-1"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_CY1_LAUNCH_DETAILS",
+      "record_count": 19,
+      "extracted_title": "PSLV-C11"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISSDC_CY1_OVERVIEW",
+      "record_count": 23,
+      "extracted_title": "Chandrayaan-1 - ISSDC"
+    },
+    {
+      "page_count": 17,
+      "pages_with_text": 17,
+      "warnings": [
+        "Page 1 contains unresolved extraction glyphs U+F0A7 (5), U+F0B7 (5); text was retained unchanged for review.",
+        "Page 2 contains unresolved extraction glyphs U+F0B7 (1); text was retained unchanged for review.",
+        "Page 3 contains unresolved extraction glyphs U+F0B0 (2); text was retained unchanged for review.",
+        "Page 6 contains unresolved extraction glyphs U+F0B7 (3); text was retained unchanged for review.",
+        "Page 7 contains unresolved extraction glyphs U+F0B7 (6); text was retained unchanged for review.",
+        "Page 11 contains unresolved extraction glyphs U+F0B7 (4); text was retained unchanged for review.",
+        "Page 13 contains unresolved extraction glyphs U+F0B7 (5); text was retained unchanged for review.",
+        "Page 14 contains unresolved extraction glyphs U+F0B7 (3); text was retained unchanged for review.",
+        "Page 15 contains unresolved extraction glyphs U+F0B0 (1); text was retained unchanged for review.",
+        "Page 17 contains unresolved extraction glyphs U+F06D (3), U+F0B7 (3); text was retained unchanged for review."
+      ],
+      "document_id": "ISSDC_CY1_PAYLOADS",
+      "record_count": 96,
+      "extracted_title": ""
+    },
+    {
+      "page_count": 8,
+      "pages_with_text": 0,
+      "warnings": [
+        "Page 1 produced no extractable text.",
+        "Page 2 produced no extractable text.",
+        "Page 3 produced no extractable text.",
+        "Page 4 produced no extractable text.",
+        "Page 5 produced no extractable text.",
+        "Page 6 produced no extractable text.",
+        "Page 7 produced no extractable text.",
+        "Page 8 produced no extractable text."
+      ],
+      "document_id": "ISSDC_CY1_BROCHURE",
+      "record_count": 0,
+      "extracted_title": ""
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISSDC_CY2_OVERVIEW",
+      "record_count": 26,
+      "extracted_title": "Chandrayaan-2 - ISSDC"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_CY2_OVERVIEW",
+      "record_count": 7,
+      "extracted_title": "Chandrayaan2"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_CY2_LAUNCH_DETAILS",
+      "record_count": 7,
+      "extracted_title": "GSLV-Mk III - M1 / Chandrayaan-2 Mission"
+    },
+    {
+      "page_count": 11,
+      "pages_with_text": 11,
+      "warnings": [
+        "Page 1 contains unresolved extraction glyphs U+F0B7 (2); text was retained unchanged for review.",
+        "Page 2 contains unresolved extraction glyphs U+F0B7 (2); text was retained unchanged for review.",
+        "Page 3 contains unresolved extraction glyphs U+F0B7 (3); text was retained unchanged for review.",
+        "Page 6 contains unresolved extraction glyphs U+F0B7 (1); text was retained unchanged for review.",
+        "Page 8 contains unresolved extraction glyphs U+F0B7 (2); text was retained unchanged for review.",
+        "Page 9 contains unresolved extraction glyphs U+F0B7 (1); text was retained unchanged for review.",
+        "Page 10 contains unresolved extraction glyphs U+F0B7 (1); text was retained unchanged for review."
+      ],
+      "document_id": "ISSDC_CY2_PAYLOADS",
+      "record_count": 45,
+      "extracted_title": ""
+    },
+    {
+      "page_count": 13,
+      "pages_with_text": 12,
+      "warnings": [
+        "Page 1 produced no extractable text."
+      ],
+      "document_id": "ISSDC_CY2_BROCHURE",
+      "record_count": 43,
+      "extracted_title": ""
+    },
+    {
+      "page_count": 150,
+      "pages_with_text": 150,
+      "warnings": [],
+      "document_id": "ISSDC_CY2_SCIENCE_RESULTS",
+      "record_count": 457,
+      "extracted_title": ""
+    },
+    {
+      "page_count": 53,
+      "pages_with_text": 53,
+      "warnings": [],
+      "document_id": "ISSDC_CY2_PAYLOADS_DATA_HANDBOOK",
+      "record_count": 161,
+      "extracted_title": ""
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_CY3_OVERVIEW",
+      "record_count": 28,
+      "extracted_title": "Chandrayaan-3"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_CY3_DETAILS",
+      "record_count": 57,
+      "extracted_title": "Chandrayaan-3 Details"
+    },
+    {
+      "page_count": 12,
+      "pages_with_text": 12,
+      "warnings": [],
+      "document_id": "ISRO_CY3_BROCHURE",
+      "record_count": 50,
+      "extracted_title": ""
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_ADITYA_OVERVIEW",
+      "record_count": 43,
+      "extracted_title": "ADITYA-L1"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_ADITYA_DETAILS",
+      "record_count": 9,
+      "extracted_title": "ADITYA-L1 Mission Details"
+    },
+    {
+      "page_count": 14,
+      "pages_with_text": 14,
+      "warnings": [],
+      "document_id": "ISSDC_ADITYA_BOOKLET",
+      "record_count": 28,
+      "extracted_title": ""
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_MOM_DETAILS",
+      "record_count": 54,
+      "extracted_title": "Mars Orbiter Mission"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_MOM_LAUNCH_DETAILS",
+      "record_count": 14,
+      "extracted_title": "PSLV-C25"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_ASTROSAT_DETAILS",
+      "record_count": 29,
+      "extracted_title": "Astrosat"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_ASTROSAT_LAUNCH_DETAILS",
+      "record_count": 7,
+      "extracted_title": "PSLV-C30/AstroSat Mission"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_GAGANYAAN_OVERVIEW",
+      "record_count": 23,
+      "extracted_title": "Gaganyaan"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_GAGANYAAN_TEST_MISSION_TABLE",
+      "record_count": 2,
+      "extracted_title": "Gaganyaan Mission"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_LAUNCH_ARCHIVE",
+      "record_count": 108,
+      "extracted_title": "Launch Missions"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_LAUNCHERS_OVERVIEW",
+      "record_count": 21,
+      "extracted_title": "Launchers"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_CENTRE_DIRECTORY",
+      "record_count": 26,
+      "extracted_title": "DoS Centers/ Units"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_SAC_PROFILE",
+      "record_count": 11,
+      "extracted_title": "Space Applications Centre (SAC)"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_ISTRAC_PROFILE",
+      "record_count": 13,
+      "extracted_title": "ISRO Telemetry, Tracking and Command Network (ISTRAC)"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_VSSC_PROFILE",
+      "record_count": 11,
+      "extracted_title": "Vikram Sarabhai Space Centre (VSSC)"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_URSC_PROFILE",
+      "record_count": 11,
+      "extracted_title": "U R Rao Satellite Centre (URSC)"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_LEOS_PROFILE",
+      "record_count": 11,
+      "extracted_title": "Laboratory for Electro-Optics Systems (LEOS)"
+    },
+    {
+      "page_count": 1,
+      "pages_with_text": 1,
+      "warnings": [],
+      "document_id": "ISRO_PRL_PROFILE",
+      "record_count": 11,
+      "extracted_title": "Physical Research Laboratory (PRL)"
+    }
+  ],
+  "failures": []
+}

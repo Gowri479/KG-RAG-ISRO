@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-10-08T05:17:26.726909+00:00",
+  "benchmark_sha256": "6c7f3600995c0091de73d20d2f02953cb414023df281f7178069f9f81b432b64",
+  "frozen_generation_sha256": "e13e4c82a3638df15832887621a066b57afea62da5ce8d28394cb18cd608635c",
+  "generation_fix_sha256": "6bc3c474daa7ff19dc8e6d794b75e497110bd50aff322a472419863bc2a950a9",
+  "question_count": 60,
+  "system_count": 3,
+  "randomization_seed": 20261008,
+  "rubric_version": "1-5 correctness/completeness/groundedness/relevance; 0-1 unsupported claim",
+  "exact_source_files": [
+    "data\\relation_aware_benchmark\\relation_aware_qa_v2.json",
+    "data\\results\\relation_aware\\generation_results.jsonl",
+    "data\\results\\generation_fix\\generation_results.jsonl"
+  ],
+  "validation": {
+    "question_count": 60,
+    "candidate_count": 180,
+    "unique_question_ids": 60,
+    "duplicate_question_ids": 0,
+    "blank_score_fields": true,
+    "system_label_leakage": false,
+    "candidate_hash_matches": true,
+    "frozen_benchmark_sha256": "6c7f3600995c0091de73d20d2f02953cb414023df281f7178069f9f81b432b64",
+    "frozen_generation_sha256": "e13e4c82a3638df15832887621a066b57afea62da5ce8d28394cb18cd608635c",
+    "generation_fix_sha256": "6bc3c474daa7ff19dc8e6d794b75e497110bd50aff322a472419863bc2a950a9"
+  }
+}

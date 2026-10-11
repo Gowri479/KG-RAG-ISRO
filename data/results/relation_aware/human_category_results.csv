@@ -1,0 +1,61 @@
+question_id,category,question,vanilladenserag_correctness,vanilladenserag_completeness,vanilladenserag_groundedness,vanilladenserag_relevance,vanilladenserag_unsupported_claim,correctedstructuredkgrag_correctness,correctedstructuredkgrag_completeness,correctedstructuredkgrag_groundedness,correctedstructuredkgrag_relevance,correctedstructuredkgrag_unsupported_claim,relationawarekgrag_correctness,relationawarekgrag_completeness,relationawarekgrag_groundedness,relationawarekgrag_relevance,relationawarekgrag_unsupported_claim
+rakg_001,TWO_HOP_RELATION,What does a payload carried by Chandrayaan-3 observes?,4.0,4.0,4.0,5.0,0.0,4.0,4.0,4.0,5.0,0.0,2.0,2.0,2.0,3.0,1.0
+rakg_002,MULTI_RELATION,Which organization developed a payload carried by Aditya-L1?,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0
+rakg_005,MULTI_RELATION,Which organization developed a payload carried by Aditya-L1?,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0
+rakg_007,MULTI_RELATION,Which organization developed a payload carried by AstroSat?,5.0,4.0,4.0,5.0,0.0,5.0,4.0,4.0,5.0,0.0,4.0,3.0,3.0,5.0,0.0
+rakg_008,SINGLE_RELATION,What is the objective of Imaging IR Spectrometer (IIRS)?,1.0,1.0,4.0,2.0,0.0,1.0,1.0,4.0,2.0,0.0,1.0,1.0,4.0,2.0,0.0
+rakg_009,SINGLE_RELATION,Which organization developed Cadmium-Zinc-Telluride Imager (CZTI)?,5.0,5.0,5.0,5.0,0.0,5.0,5.0,5.0,5.0,0.0,2.0,2.0,2.0,5.0,1.0
+rakg_010,MULTI_RELATION,Which organization developed a payload carried by AstroSat?,5.0,4.0,4.0,5.0,0.0,5.0,4.0,4.0,5.0,0.0,4.0,3.0,3.0,5.0,0.0
+rakg_012,SINGLE_RELATION,Which organization developed Soft X-ray Telescope (SXT)?,2.0,2.0,2.0,5.0,1.0,2.0,2.0,2.0,5.0,1.0,1.0,1.0,5.0,3.0,0.0
+rakg_015,SINGLE_RELATION,Which organization developed Sub keV Atom Reflecting Analyzer (SARA)?,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0
+rakg_016,SINGLE_RELATION,What is the objective of Moon Impact Probe (MIP)?,1.0,1.0,1.0,2.0,1.0,1.0,1.0,1.0,2.0,1.0,2.0,2.0,2.0,3.0,1.0
+rakg_017,TWO_HOP_RELATION,What does a payload carried by Chandrayaan-1 observes?,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0,1.0,1.0,1.0,2.0,1.0
+rakg_018,DIRECT_CONTROL,Where was Chandrayaan-1 launched from?,3.0,4.0,3.0,3.0,0.0,3.0,4.0,3.0,3.0,0.0,3.0,4.0,3.0,3.0,0.0
+rakg_019,DIRECT_CONTROL,Where was Aditya-L1 launched from?,4.0,5.0,3.0,5.0,1.0,4.0,5.0,3.0,5.0,1.0,4.0,5.0,3.0,5.0,1.0
+rakg_020,DIRECT_CONTROL,Where was Chandrayaan-2 launched from?,5.0,5.0,5.0,5.0,0.0,5.0,5.0,5.0,5.0,0.0,5.0,5.0,5.0,5.0,0.0
+rakg_022,MULTI_RELATION,Which organization developed a payload carried by AstroSat?,5.0,4.0,4.0,5.0,0.0,5.0,5.0,4.0,5.0,0.0,4.0,3.0,3.0,5.0,0.0
+rakg_023,MULTI_RELATION,Which organization developed a payload carried by Aditya-L1?,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0
+rakg_025,SINGLE_RELATION,What is the objective of Miniature Synthetic Aperature Radar (Mini SAR)?,1.0,1.0,1.0,2.0,1.0,1.0,1.0,1.0,2.0,1.0,1.0,1.0,1.0,2.0,1.0
+rakg_026,SINGLE_RELATION,Which organization developed Aditya Solar wind Particle Experiment (ASPEX)?,5.0,5.0,4.0,5.0,0.0,5.0,5.0,4.0,5.0,0.0,5.0,5.0,5.0,5.0,0.0
+rakg_027,DIRECT_CONTROL,Which launch vehicle launched Chandrayaan-1?,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0
+rakg_029,SINGLE_RELATION,Which organization developed Visible Emission Line Coronagraph (VELC)?,5.0,5.0,5.0,5.0,0.0,5.0,5.0,5.0,5.0,0.0,5.0,4.0,5.0,5.0,0.0
+rakg_030,TWO_HOP_RELATION,What does a payload carried by Aditya-L1 observes?,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0,1.0,1.0,2.0,3.0,1.0
+rakg_031,TWO_HOP_RELATION,What does a payload carried by Aditya-L1 observes?,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0,1.0,2.0,2.0,3.0,1.0
+rakg_032,SINGLE_RELATION,Which organization developed Ultra Violet Imaging Telescope (UVIT)?,5.0,4.0,5.0,5.0,0.0,5.0,4.0,5.0,5.0,0.0,1.0,1.0,1.0,5.0,1.0
+rakg_033,SINGLE_RELATION,What is the objective of Sub keV Atom Reflecting Analyzer (SARA)?,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0
+rakg_034,TWO_HOP_RELATION,What does a payload carried by Aditya-L1 observes?,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0,1.0,2.0,2.0,3.0,1.0
+rakg_035,DIRECT_CONTROL,Which launch vehicle launched Chandrayaan-3?,5.0,5.0,5.0,5.0,0.0,5.0,5.0,5.0,5.0,0.0,1.0,1.0,5.0,3.0,0.0
+rakg_036,SINGLE_RELATION,Which organization developed Chandrayaan-I X-ray Spectrometer (CIXS)?,1.0,1.0,1.0,5.0,1.0,1.0,1.0,1.0,5.0,1.0,2.0,2.0,2.0,5.0,1.0
+rakg_037,DIRECT_CONTROL,Which launch vehicle launched Aditya-L1?,5.0,5.0,5.0,5.0,0.0,5.0,5.0,5.0,5.0,0.0,5.0,5.0,5.0,5.0,0.0
+rakg_038,TWO_HOP_RELATION,What does a payload carried by Chandrayaan-1 studies?,3.0,2.0,3.0,4.0,1.0,4.0,3.0,4.0,4.0,0.0,5.0,4.0,4.0,5.0,0.0
+rakg_040,MULTI_RELATION,Which organization developed a payload carried by Aditya-L1?,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0
+rakg_041,SINGLE_RELATION,What is the objective of Moon Mineralogy Mapper (M3)?,1.0,1.0,5.0,2.0,0.0,1.0,1.0,5.0,2.0,0.0,1.0,1.0,5.0,2.0,0.0
+rakg_042,MULTI_RELATION,Which organization developed a payload carried by Aditya-L1?,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0
+rakg_043,TWO_HOP_RELATION,What does a payload carried by Chandrayaan-2 observes?,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0,2.0,3.0,2.0,4.0,1.0
+rakg_046,SINGLE_RELATION,Which organization developed Advanced Tri-axial High Resolution Digital Magnetometers?,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0,5.0,5.0,5.0,5.0,0.0
+rakg_047,DIRECT_CONTROL,Which launch vehicle launched Chandrayaan-2?,4.0,5.0,4.0,5.0,0.0,5.0,5.0,5.0,5.0,0.0,5.0,5.0,5.0,5.0,0.0
+rakg_048,SINGLE_RELATION,What is the objective of High Energy X - ray Spectrometer (HEX)?,1.0,1.0,2.0,3.0,1.0,1.0,1.0,2.0,3.0,1.0,1.0,1.0,1.0,2.0,1.0
+rakg_049,SINGLE_RELATION,Which organization developed Large Area X-ray Proportional Counter (LAXPC)?,5.0,5.0,5.0,5.0,0.0,5.0,5.0,5.0,5.0,0.0,5.0,5.0,5.0,5.0,0.0
+rakg_050,SINGLE_RELATION,Which organization developed Solar Ultraviolet Imaging Telescope (SUIT)?,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0
+rakg_051,SINGLE_RELATION,Which organization developed Solar Low Energy X-ray Spectrometer (SoLEXS)?,4.0,3.0,4.0,5.0,0.0,1.0,1.0,5.0,3.0,0.0,5.0,5.0,5.0,5.0,0.0
+rakg_052,SINGLE_RELATION,Which organization developed Chandrayaan-I X-ray Spectrometer (CIXS)?,1.0,1.0,1.0,5.0,1.0,1.0,1.0,1.0,5.0,1.0,1.0,1.0,1.0,5.0,1.0
+rakg_053,SINGLE_RELATION,Which organization developed Sub keV Atom Reflecting Analyzer (SARA)?,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0
+rakg_054,DIRECT_CONTROL,Which launch vehicle launched AstroSat?,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0
+rakg_055,SINGLE_RELATION,What is the objective of Hyper Spectral Imager (HySI)?,4.0,4.0,4.0,5.0,0.0,3.0,3.0,3.0,3.0,1.0,3.0,3.0,3.0,3.0,1.0
+rakg_056,TWO_HOP_RELATION,What does a payload carried by Chandrayaan-2 observes?,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0,2.0,3.0,2.0,4.0,1.0
+rakg_057,SINGLE_RELATION,What is the objective of Alpha Particle X-ray Spectrometer (APXS)?,5.0,5.0,4.0,5.0,0.0,5.0,5.0,4.0,5.0,0.0,5.0,4.0,5.0,5.0,0.0
+rakg_058,DIRECT_CONTROL,Where was AstroSat launched from?,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0,5.0,5.0,5.0,5.0,0.0
+rakg_059,SINGLE_RELATION,Which organization developed Thermal Infrared Imaging Spectrometer (TIS)?,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0
+rakg_060,SINGLE_RELATION,Which organization developed Plasma Analyser Package For Aditya (PAPA)?,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0
+rakg_061,TWO_HOP_RELATION,What does a payload carried by Chandrayaan-1 observes?,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0,1.0,1.0,1.0,2.0,1.0
+rakg_062,TWO_HOP_RELATION,What does a payload carried by Chandrayaan-1 studies?,3.0,2.0,2.0,3.0,1.0,1.0,1.0,1.0,3.0,1.0,4.0,4.0,3.0,5.0,1.0
+rakg_063,MULTI_RELATION,Which organization developed a payload carried by Aditya-L1?,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0
+rakg_064,SINGLE_RELATION,What is the objective of Instrument for Lunar Seismic Activity (ILSA)?,5.0,5.0,5.0,5.0,0.0,4.0,4.0,3.0,5.0,1.0,4.0,5.0,3.0,5.0,1.0
+rakg_065,SINGLE_RELATION,What is the objective of Chandrayaan-I X-ray Spectrometer (CIXS)?,1.0,1.0,1.0,2.0,1.0,1.0,1.0,1.0,2.0,1.0,1.0,1.0,1.0,2.0,1.0
+rakg_066,SINGLE_RELATION,Which organization developed High Energy L1 Orbiting X-ray Spectrometer (HEL1OS)?,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0,5.0,5.0,5.0,5.0,0.0
+rakg_067,SINGLE_RELATION,What is the objective of Terrain Mapping Camera (TMC)?,5.0,4.0,4.0,5.0,0.0,5.0,4.0,4.0,5.0,0.0,5.0,4.0,5.0,5.0,0.0
+rakg_068,SINGLE_RELATION,Which organization developed Scanning Sky Monitor (SSM)?,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0,1.0,1.0,5.0,3.0,0.0
+rakg_069,SINGLE_RELATION,What is the objective of Lunar Laser Ranging Instrument (LLRI)?,2.0,2.0,2.0,3.0,1.0,2.0,2.0,2.0,3.0,1.0,1.0,1.0,5.0,3.0,0.0
+rakg_070,MULTI_RELATION,Which organization developed a payload carried by Aditya-L1?,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0
+rakg_071,DIRECT_CONTROL,Which launch vehicle launched Mars Orbiter Mission?,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0,4.0,3.0,4.0,5.0,0.0
+rakg_072,SINGLE_RELATION,What is the objective of Chandrayaan-2 Large Area Soft X ray spectrometer (CLASS)?,1.0,1.0,1.0,2.0,1.0,1.0,1.0,1.0,2.0,1.0,1.0,1.0,2.0,2.0,1.0

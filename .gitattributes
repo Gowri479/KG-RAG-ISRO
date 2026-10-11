@@ -1,0 +1,3 @@
+# Hashed research artifacts must be checked out byte-for-byte (no CRLF conversion).
+data/** -text
+config/tokenizer/** -text

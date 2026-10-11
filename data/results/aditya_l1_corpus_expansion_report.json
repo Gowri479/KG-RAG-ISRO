@@ -1,0 +1,57 @@
+{
+  "sources": {
+    "manifest_rows": 7,
+    "downloaded": [
+      "ADITYA_L1_MISSION_BOOKLET",
+      "ADITYA_L1_PAYLOAD",
+      "ADITYA_L1_ALPPS_V1",
+      "ADITYA_L1_ISSDC_PAGE",
+      "ADITYA_L1_ALPPS_HOME"
+    ],
+    "unavailable_without_substitute": [
+      "ADITYA_L1_PRADAN_ARCHIVE",
+      "ADITYA_L1_PRADAN_FAQ"
+    ],
+    "extractable_documents": [
+      "ADITYA_L1_MISSION_BOOKLET",
+      "ADITYA_L1_ALPPS_V1",
+      "ADITYA_L1_ISSDC_PAGE",
+      "ADITYA_L1_ALPPS_HOME"
+    ]
+  },
+  "chunks": {
+    "total": 27545,
+    "aditya_l1_total": 58,
+    "by_document": {
+      "ADITYA_L1_ALPPS_HOME": 1,
+      "ADITYA_L1_ALPPS_V1": 42,
+      "ADITYA_L1_ISSDC_PAGE": 1,
+      "ADITYA_L1_MISSION_BOOKLET": 14
+    },
+    "empty_aditya_l1_chunks": 0
+  },
+  "faiss": {
+    "ntotal": 27545,
+    "dimension": 384,
+    "matches_chunk_count": true
+  },
+  "knowledge_graph": {
+    "nodes": 31358,
+    "edges": 95671,
+    "aditya_l1_edges": 482,
+    "aditya_l1_edges_missing_provenance": 0
+  },
+  "canonical_benchmark": {
+    "path": "data/results/evaluation_results.json",
+    "sha256": "29c1a0b9ae1a3c9f70a3a918fcf953a71c7d29494144f8a1b73adaabbc20af75",
+    "unchanged_in_git_worktree": true
+  },
+  "checks": {
+    "manifest_has_expected_sources": true,
+    "no_empty_aditya_chunks": true,
+    "index_matches_chunks": true,
+    "new_graph_edges_have_provenance": true,
+    "canonical_benchmark_unchanged": true,
+    "all_passed": true
+  }
+}

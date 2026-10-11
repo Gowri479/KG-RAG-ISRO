@@ -16,14 +16,18 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 warnings.filterwarnings("ignore")
 
 ROOT = Path(__file__).resolve().parents[2]
+from src.retriever.embedding_model import get_embedding_model
+
 INDEX_PATH = ROOT / "data" / "index" / "faiss_index.index"
 CHUNKS_PATH = ROOT / "data" / "chunks" / "chunks.json"
 @lru_cache(maxsize=1)
 def _load_model() -> SentenceTransformer:
-    return SentenceTransformer("all-MiniLM-L6-v2", device="cpu")
+    return get_embedding_model()
 
 
-def _load_chunks() -> list[str]:
+@lru_cache(maxsize=1)
+def _load_chunk_records() -> list[dict]:
+    """Non-empty chunks in index order, as dicts with at least a ``text`` key."""
     if not CHUNKS_PATH.exists():
         return []
     payload = json.loads(CHUNKS_PATH.read_text(encoding="utf-8"))
@@ -34,17 +38,27 @@ def _load_chunks() -> list[str]:
     else:
         items = []
 
-    texts: list[str] = []
+    records: list[dict] = []
     for item in items:
         if isinstance(item, dict):
             text = item.get("text") or item.get("content") or ""
             if isinstance(text, str) and text.strip():
-                texts.append(text.strip())
+                records.append({**item, "text": text.strip()})
         elif isinstance(item, str):
             value = item.strip()
             if value:
-                texts.append(value)
-    return texts
+                records.append({"text": value})
+    return records
+
+
+@lru_cache(maxsize=1)
+def _load_chunks() -> list[str]:
+    return [record["text"] for record in _load_chunk_records()]
+
+
+@lru_cache(maxsize=1)
+def _load_index():
+    return faiss.read_index(str(INDEX_PATH))
 
 
 def _query_keywords(query: str) -> list[str]:
@@ -65,7 +79,7 @@ def get_passage_context(query: str, top_k: int = 5) -> str:
     if not chunks:
         return ""
 
-    index = faiss.read_index(str(INDEX_PATH))
+    index = _load_index()
     if index is None or index.ntotal == 0:
         return ""
     if index.ntotal == 0:

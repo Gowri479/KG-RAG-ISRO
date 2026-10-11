@@ -1,0 +1,77 @@
+{
+  "phase": 1,
+  "document_count": 33,
+  "documents_by_mission": {
+    "Aditya-L1": 3,
+    "AstroSat": 2,
+    "Chandrayaan-1": 5,
+    "Chandrayaan-2": 7,
+    "Chandrayaan-3": 3,
+    "Gaganyaan": 2,
+    "Mars Orbiter Mission": 2,
+    "cross-mission": 9
+  },
+  "documents_by_authority_tier": {
+    "TIER_1": 33
+  },
+  "chunks_count": 1006,
+  "chunks_by_mission": {
+    "Aditya-L1": 40,
+    "AstroSat": 9,
+    "Chandrayaan-1": 95,
+    "Chandrayaan-2": 580,
+    "Chandrayaan-3": 79,
+    "Gaganyaan": 6,
+    "Mars Orbiter Mission": 43,
+    "cross-mission": 154
+  },
+  "word_count_estimate": 65601,
+  "mission_count": 7,
+  "entity_count": 123,
+  "entities_by_type": {
+    "Date": 6,
+    "ISROCentre": 6,
+    "LaunchSite": 1,
+    "LaunchVehicle": 6,
+    "Mission": 7,
+    "Orbit": 7,
+    "Organization": 6,
+    "Payload": 48,
+    "Phenomenon": 4,
+    "PlanetaryBody": 3,
+    "ScientificObjective": 26,
+    "ScientificTarget": 3
+  },
+  "payload_count": 48,
+  "organization_count": 12,
+  "launch_vehicle_count": 6,
+  "orbit_count": 7,
+  "controlled_relation_type_count": 12,
+  "supported_relation_type_count": 12,
+  "triple_count": 134,
+  "triples_by_relation": {
+    "DEVELOPED_BY": 17,
+    "HAS_OBJECTIVE": 26,
+    "HAS_PAYLOAD": 48,
+    "LAUNCHED_BY": 6,
+    "LAUNCHED_FROM": 6,
+    "LAUNCHED_ON": 6,
+    "LED_BY": 1,
+    "OBSERVES": 9,
+    "OPERATED_BY": 1,
+    "ORBITS": 7,
+    "PRECEDED_BY": 1,
+    "STUDIES": 6
+  },
+  "triples_by_mission": {
+    "Aditya-L1": 22,
+    "AstroSat": 16,
+    "Chandrayaan-1": 33,
+    "Chandrayaan-2": 28,
+    "Chandrayaan-3": 21,
+    "Gaganyaan": 3,
+    "Mars Orbiter Mission": 11
+  },
+  "provenance_linked_triple_count": 134,
+  "all_triples_provenance_linked": true
+}

@@ -1,0 +1,2247 @@
+{
+  "benchmark_id": "isro_relation_aware_qa_v2",
+  "schema_version": "2.0",
+  "seed": 20261008,
+  "questions": [
+    {
+      "question_id": "rakg_001",
+      "question": "What does a payload carried by Chandrayaan-3 observes?",
+      "category": "TWO_HOP_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "OBSERVES"
+      ],
+      "mission": "Chandrayaan-3",
+      "reference_answer": "Moon",
+      "acceptable_answers": [
+        "Moon"
+      ],
+      "supporting_triples": [
+        "cy3-payload-apxs",
+        "cy3-apxs-observes-lunar-soil"
+      ],
+      "supporting_paths": [
+        [
+          "cy3-payload-apxs",
+          "cy3-apxs-observes-lunar-soil"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_CY3_DETAILS::c00011",
+        "ISRO_CY3_DETAILS::c00027"
+      ],
+      "source_document": "ISRO_CY3_DETAILS",
+      "source_url": "https://www.isro.gov.in/Chandrayaan3_Details.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_002",
+      "question": "Which organization developed a payload carried by Aditya-L1?",
+      "category": "MULTI_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "DEVELOPED_BY"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "U R Rao Satellite Centre (URSC)",
+      "acceptable_answers": [
+        "U R Rao Satellite Centre (URSC)"
+      ],
+      "supporting_triples": [
+        "aditya-payload-hel1os",
+        "aditya-hel1os-developed-by-ursc"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-payload-hel1os",
+          "aditya-hel1os-developed-by-ursc"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ADITYA_OVERVIEW::c00008",
+        "ISRO_ADITYA_OVERVIEW::c00008"
+      ],
+      "source_document": "ISRO_ADITYA_OVERVIEW",
+      "source_url": "https://www.isro.gov.in/Aditya_L1.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_003",
+      "question": "When was Chandrayaan-1 launched?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "NO",
+      "relation_type": [
+        "LAUNCHED_ON"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "2008-10-22",
+      "acceptable_answers": [
+        "2008-10-22"
+      ],
+      "supporting_triples": [
+        "cy1-launch-date"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-launch-date"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00082"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_004",
+      "question": "Which launch vehicle launched Chandrayaan-1?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "NO",
+      "relation_type": [
+        "LAUNCHED_BY"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "PSLV-C11",
+      "acceptable_answers": [
+        "PSLV-C11"
+      ],
+      "supporting_triples": [
+        "cy1-launcher"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-launcher"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00082"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_005",
+      "question": "Which organization developed a payload carried by Aditya-L1?",
+      "category": "MULTI_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "DEVELOPED_BY"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "Inter University Centre for Astronomy and Astrophysics (IUCAA)",
+      "acceptable_answers": [
+        "Inter University Centre for Astronomy and Astrophysics (IUCAA)"
+      ],
+      "supporting_triples": [
+        "aditya-payload-suit",
+        "aditya-suit-developed-by-iucaa"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-payload-suit",
+          "aditya-suit-developed-by-iucaa"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ADITYA_OVERVIEW::c00006",
+        "ISSDC_ADITYA_BOOKLET::c00012"
+      ],
+      "source_document": "ISSDC_ADITYA_BOOKLET",
+      "source_url": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "evaluation"
+    },
+    {
+      "question_id": "rakg_006",
+      "question": "Which launch vehicle launched Chandrayaan-3?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "NO",
+      "relation_type": [
+        "LAUNCHED_BY"
+      ],
+      "mission": "Chandrayaan-3",
+      "reference_answer": "LVM3",
+      "acceptable_answers": [
+        "LVM3"
+      ],
+      "supporting_triples": [
+        "cy3-launcher"
+      ],
+      "supporting_paths": [
+        [
+          "cy3-launcher"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00017"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_007",
+      "question": "Which organization developed a payload carried by AstroSat?",
+      "category": "MULTI_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "DEVELOPED_BY"
+      ],
+      "mission": "AstroSat",
+      "reference_answer": "Tata Institute of Fundamental Research (TIFR)",
+      "acceptable_answers": [
+        "Tata Institute of Fundamental Research (TIFR)"
+      ],
+      "supporting_triples": [
+        "astrosat-payload-czti",
+        "astrosat-czti-developed-by-tifr"
+      ],
+      "supporting_paths": [
+        [
+          "astrosat-payload-czti",
+          "astrosat-czti-developed-by-tifr"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ASTROSAT_DETAILS::c00003",
+        "ISRO_ASTROSAT_DETAILS::c00003"
+      ],
+      "source_document": "ISRO_ASTROSAT_DETAILS",
+      "source_url": "https://www.isro.gov.in/Astrosat_Spacecraft.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_008",
+      "question": "What is the objective of Imaging IR Spectrometer (IIRS)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_OBJECTIVE"
+      ],
+      "mission": "Chandrayaan-2",
+      "reference_answer": "Globally map lunar mineralogy and volatiles at high spectral resolution.",
+      "acceptable_answers": [
+        "Globally map lunar mineralogy and volatiles at high spectral resolution."
+      ],
+      "supporting_triples": [
+        "cy2-iirs-objective"
+      ],
+      "supporting_paths": [
+        [
+          "cy2-iirs-objective"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY2_PAYLOADS::c00008"
+      ],
+      "source_document": "ISSDC_CY2_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch2/chandrayaan2_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_009",
+      "question": "Which organization developed Cadmium-Zinc-Telluride Imager (CZTI)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "DEVELOPED_BY"
+      ],
+      "mission": "AstroSat",
+      "reference_answer": "Tata Institute of Fundamental Research (TIFR)",
+      "acceptable_answers": [
+        "Tata Institute of Fundamental Research (TIFR)"
+      ],
+      "supporting_triples": [
+        "astrosat-czti-developed-by-tifr"
+      ],
+      "supporting_paths": [
+        [
+          "astrosat-czti-developed-by-tifr"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ASTROSAT_DETAILS::c00003"
+      ],
+      "source_document": "ISRO_ASTROSAT_DETAILS",
+      "source_url": "https://www.isro.gov.in/Astrosat_Spacecraft.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_010",
+      "question": "Which organization developed a payload carried by AstroSat?",
+      "category": "MULTI_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "DEVELOPED_BY"
+      ],
+      "mission": "AstroSat",
+      "reference_answer": "Indian Space Research Organisation (ISRO)",
+      "acceptable_answers": [
+        "Indian Space Research Organisation (ISRO)"
+      ],
+      "supporting_triples": [
+        "astrosat-payload-ssm",
+        "astrosat-ssm-developed-by-isro"
+      ],
+      "supporting_paths": [
+        [
+          "astrosat-payload-ssm",
+          "astrosat-ssm-developed-by-isro"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ASTROSAT_DETAILS::c00003",
+        "ISRO_ASTROSAT_DETAILS::c00003"
+      ],
+      "source_document": "ISRO_ASTROSAT_DETAILS",
+      "source_url": "https://www.isro.gov.in/Astrosat_Spacecraft.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "evaluation"
+    },
+    {
+      "question_id": "rakg_011",
+      "question": "Which launch vehicle launched AstroSat?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "NO",
+      "relation_type": [
+        "LAUNCHED_BY"
+      ],
+      "mission": "AstroSat",
+      "reference_answer": "PSLV-C30 (XL)",
+      "acceptable_answers": [
+        "PSLV-C30 (XL)"
+      ],
+      "supporting_triples": [
+        "astrosat-launcher"
+      ],
+      "supporting_paths": [
+        [
+          "astrosat-launcher"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00060"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_012",
+      "question": "Which organization developed Soft X-ray Telescope (SXT)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "DEVELOPED_BY"
+      ],
+      "mission": "AstroSat",
+      "reference_answer": "Tata Institute of Fundamental Research (TIFR)",
+      "acceptable_answers": [
+        "Tata Institute of Fundamental Research (TIFR)"
+      ],
+      "supporting_triples": [
+        "astrosat-sxt-developed-by-tifr"
+      ],
+      "supporting_paths": [
+        [
+          "astrosat-sxt-developed-by-tifr"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ASTROSAT_DETAILS::c00003"
+      ],
+      "source_document": "ISRO_ASTROSAT_DETAILS",
+      "source_url": "https://www.isro.gov.in/Astrosat_Spacecraft.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_013",
+      "question": "When was Chandrayaan-2 launched?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "NO",
+      "relation_type": [
+        "LAUNCHED_ON"
+      ],
+      "mission": "Chandrayaan-2",
+      "reference_answer": "2019-07-22",
+      "acceptable_answers": [
+        "2019-07-22"
+      ],
+      "supporting_triples": [
+        "cy2-launch-date"
+      ],
+      "supporting_paths": [
+        [
+          "cy2-launch-date"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00033"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_014",
+      "question": "Which launch vehicle launched Aditya-L1?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "NO",
+      "relation_type": [
+        "LAUNCHED_BY"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "PSLV-C57 (PSLV-XL)",
+      "acceptable_answers": [
+        "PSLV-C57 (PSLV-XL)"
+      ],
+      "supporting_triples": [
+        "aditya-launcher"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-launcher"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00015"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_015",
+      "question": "Which organization developed Sub keV Atom Reflecting Analyzer (SARA)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "DEVELOPED_BY"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "ESA",
+      "acceptable_answers": [
+        "ESA"
+      ],
+      "supporting_triples": [
+        "cy1-sara-developed-by-esa"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-sara-developed-by-esa"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY1_PAYLOADS::c00001"
+      ],
+      "source_document": "ISSDC_CY1_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "evaluation"
+    },
+    {
+      "question_id": "rakg_016",
+      "question": "What is the objective of Moon Impact Probe (MIP)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_OBJECTIVE"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "Demonstrate probe impact technologies and qualify technologies for future soft-landing missions.",
+      "acceptable_answers": [
+        "Demonstrate probe impact technologies and qualify technologies for future soft-landing missions."
+      ],
+      "supporting_triples": [
+        "cy1-mip-objective"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-mip-objective"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY1_PAYLOADS::c00018"
+      ],
+      "source_document": "ISSDC_CY1_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_017",
+      "question": "What does a payload carried by Chandrayaan-1 observes?",
+      "category": "TWO_HOP_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "OBSERVES"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "water ice in permanently shadowed lunar polar regions",
+      "acceptable_answers": [
+        "water ice in permanently shadowed lunar polar regions"
+      ],
+      "supporting_triples": [
+        "cy1-payload-minisar",
+        "cy1-minisar-observes-water-ice"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-payload-minisar",
+          "cy1-minisar-observes-water-ice"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_CY1_OVERVIEW::c00008",
+        "ISSDC_CY1_PAYLOADS::c00039"
+      ],
+      "source_document": "ISSDC_CY1_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_018",
+      "question": "Where was Chandrayaan-1 launched from?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "YES",
+      "relation_type": [
+        "LAUNCHED_FROM"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "Satish Dhawan Space Centre SHAR, Sriharikota",
+      "acceptable_answers": [
+        "Satish Dhawan Space Centre SHAR, Sriharikota"
+      ],
+      "supporting_triples": [
+        "cy1-launch-site"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-launch-site"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00082"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_019",
+      "question": "Where was Aditya-L1 launched from?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "YES",
+      "relation_type": [
+        "LAUNCHED_FROM"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "Satish Dhawan Space Centre SHAR, Sriharikota",
+      "acceptable_answers": [
+        "Satish Dhawan Space Centre SHAR, Sriharikota"
+      ],
+      "supporting_triples": [
+        "aditya-launch-site"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-launch-site"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00015"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_020",
+      "question": "Where was Chandrayaan-2 launched from?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "YES",
+      "relation_type": [
+        "LAUNCHED_FROM"
+      ],
+      "mission": "Chandrayaan-2",
+      "reference_answer": "Satish Dhawan Space Centre SHAR, Sriharikota",
+      "acceptable_answers": [
+        "Satish Dhawan Space Centre SHAR, Sriharikota"
+      ],
+      "supporting_triples": [
+        "cy2-launch-site"
+      ],
+      "supporting_paths": [
+        [
+          "cy2-launch-site"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00033"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "evaluation"
+    },
+    {
+      "question_id": "rakg_021",
+      "question": "When was Mars Orbiter Mission launched?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "NO",
+      "relation_type": [
+        "LAUNCHED_ON"
+      ],
+      "mission": "Mars Orbiter Mission",
+      "reference_answer": "2013-11-05",
+      "acceptable_answers": [
+        "2013-11-05"
+      ],
+      "supporting_triples": [
+        "mom-launch-date"
+      ],
+      "supporting_paths": [
+        [
+          "mom-launch-date"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00069"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_022",
+      "question": "Which organization developed a payload carried by AstroSat?",
+      "category": "MULTI_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "DEVELOPED_BY"
+      ],
+      "mission": "AstroSat",
+      "reference_answer": "Tata Institute of Fundamental Research (TIFR)",
+      "acceptable_answers": [
+        "Tata Institute of Fundamental Research (TIFR)"
+      ],
+      "supporting_triples": [
+        "astrosat-payload-laxpc",
+        "astrosat-laxpc-developed-by-tifr"
+      ],
+      "supporting_paths": [
+        [
+          "astrosat-payload-laxpc",
+          "astrosat-laxpc-developed-by-tifr"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ASTROSAT_DETAILS::c00003",
+        "ISRO_ASTROSAT_DETAILS::c00003"
+      ],
+      "source_document": "ISRO_ASTROSAT_DETAILS",
+      "source_url": "https://www.isro.gov.in/Astrosat_Spacecraft.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_023",
+      "question": "Which organization developed a payload carried by Aditya-L1?",
+      "category": "MULTI_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "DEVELOPED_BY"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "Vikram Sarabhai Space Centre (VSSC)",
+      "acceptable_answers": [
+        "Vikram Sarabhai Space Centre (VSSC)"
+      ],
+      "supporting_triples": [
+        "aditya-payload-papa",
+        "aditya-papa-developed-by-vssc"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-payload-papa",
+          "aditya-papa-developed-by-vssc"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ADITYA_OVERVIEW::c00011",
+        "ISSDC_ADITYA_BOOKLET::c00014"
+      ],
+      "source_document": "ISSDC_ADITYA_BOOKLET",
+      "source_url": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_024",
+      "question": "Which launch vehicle launched Mars Orbiter Mission?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "NO",
+      "relation_type": [
+        "LAUNCHED_BY"
+      ],
+      "mission": "Mars Orbiter Mission",
+      "reference_answer": "PSLV-C25",
+      "acceptable_answers": [
+        "PSLV-C25"
+      ],
+      "supporting_triples": [
+        "mom-launcher"
+      ],
+      "supporting_paths": [
+        [
+          "mom-launcher"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00069"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_025",
+      "question": "What is the objective of Miniature Synthetic Aperature Radar (Mini SAR)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_OBJECTIVE"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "Detect water ice in permanently shadowed lunar polar regions to a depth of a few meters.",
+      "acceptable_answers": [
+        "Detect water ice in permanently shadowed lunar polar regions to a depth of a few meters."
+      ],
+      "supporting_triples": [
+        "cy1-minisar-objective"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-minisar-objective"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY1_PAYLOADS::c00039"
+      ],
+      "source_document": "ISSDC_CY1_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "evaluation"
+    },
+    {
+      "question_id": "rakg_026",
+      "question": "Which organization developed Aditya Solar wind Particle Experiment (ASPEX)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "DEVELOPED_BY"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "Physical Research Laboratory (PRL)",
+      "acceptable_answers": [
+        "Physical Research Laboratory (PRL)"
+      ],
+      "supporting_triples": [
+        "aditya-aspex-developed-by-prl"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-aspex-developed-by-prl"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_ADITYA_BOOKLET::c00014"
+      ],
+      "source_document": "ISSDC_ADITYA_BOOKLET",
+      "source_url": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_027",
+      "question": "Which launch vehicle launched Chandrayaan-1?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "YES",
+      "relation_type": [
+        "LAUNCHED_BY"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "PSLV-C11",
+      "acceptable_answers": [
+        "PSLV-C11"
+      ],
+      "supporting_triples": [
+        "cy1-launcher"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-launcher"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00082"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_028",
+      "question": "When was AstroSat launched?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "NO",
+      "relation_type": [
+        "LAUNCHED_ON"
+      ],
+      "mission": "AstroSat",
+      "reference_answer": "2015-09-28",
+      "acceptable_answers": [
+        "2015-09-28"
+      ],
+      "supporting_triples": [
+        "astrosat-launch-date"
+      ],
+      "supporting_paths": [
+        [
+          "astrosat-launch-date"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00060"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_029",
+      "question": "Which organization developed Visible Emission Line Coronagraph (VELC)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "DEVELOPED_BY"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "Indian Institute of Astrophysics (IIA)",
+      "acceptable_answers": [
+        "Indian Institute of Astrophysics (IIA)"
+      ],
+      "supporting_triples": [
+        "aditya-velc-developed-by-iia"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-velc-developed-by-iia"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_ADITYA_BOOKLET::c00013"
+      ],
+      "source_document": "ISSDC_ADITYA_BOOKLET",
+      "source_url": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_030",
+      "question": "What does a payload carried by Aditya-L1 observes?",
+      "category": "TWO_HOP_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "OBSERVES"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "solar photosphere and chromosphere",
+      "acceptable_answers": [
+        "solar photosphere and chromosphere"
+      ],
+      "supporting_triples": [
+        "aditya-payload-suit",
+        "aditya-suit-observes-photosphere-chromosphere"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-payload-suit",
+          "aditya-suit-observes-photosphere-chromosphere"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ADITYA_OVERVIEW::c00006",
+        "ISRO_ADITYA_OVERVIEW::c00006"
+      ],
+      "source_document": "ISRO_ADITYA_OVERVIEW",
+      "source_url": "https://www.isro.gov.in/Aditya_L1.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "evaluation"
+    },
+    {
+      "question_id": "rakg_031",
+      "question": "What does a payload carried by Aditya-L1 observes?",
+      "category": "TWO_HOP_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "OBSERVES"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "Sun",
+      "acceptable_answers": [
+        "Sun"
+      ],
+      "supporting_triples": [
+        "aditya-payload-solexs",
+        "aditya-solexs-observes-sun"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-payload-solexs",
+          "aditya-solexs-observes-sun"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ADITYA_OVERVIEW::c00007",
+        "ISRO_ADITYA_OVERVIEW::c00007"
+      ],
+      "source_document": "ISRO_ADITYA_OVERVIEW",
+      "source_url": "https://www.isro.gov.in/Aditya_L1.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_032",
+      "question": "Which organization developed Ultra Violet Imaging Telescope (UVIT)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "DEVELOPED_BY"
+      ],
+      "mission": "AstroSat",
+      "reference_answer": "Indian Institute of Astrophysics (IIA)",
+      "acceptable_answers": [
+        "Indian Institute of Astrophysics (IIA)"
+      ],
+      "supporting_triples": [
+        "astrosat-uvit-developed-by-iia"
+      ],
+      "supporting_paths": [
+        [
+          "astrosat-uvit-developed-by-iia"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ASTROSAT_DETAILS::c00003"
+      ],
+      "source_document": "ISRO_ASTROSAT_DETAILS",
+      "source_url": "https://www.isro.gov.in/Astrosat_Spacecraft.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_033",
+      "question": "What is the objective of Sub keV Atom Reflecting Analyzer (SARA)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_OBJECTIVE"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "Image lunar surface composition and solar-wind surface interactions using low-energy neutral atoms.",
+      "acceptable_answers": [
+        "Image lunar surface composition and solar-wind surface interactions using low-energy neutral atoms."
+      ],
+      "supporting_triples": [
+        "cy1-sara-objective"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-sara-objective"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY1_PAYLOADS::c00028"
+      ],
+      "source_document": "ISSDC_CY1_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_034",
+      "question": "What does a payload carried by Aditya-L1 observes?",
+      "category": "TWO_HOP_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "OBSERVES"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "Sun",
+      "acceptable_answers": [
+        "Sun"
+      ],
+      "supporting_triples": [
+        "aditya-payload-hel1os",
+        "aditya-hel1os-observes-sun"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-payload-hel1os",
+          "aditya-hel1os-observes-sun"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ADITYA_OVERVIEW::c00008",
+        "ISRO_ADITYA_OVERVIEW::c00008"
+      ],
+      "source_document": "ISRO_ADITYA_OVERVIEW",
+      "source_url": "https://www.isro.gov.in/Aditya_L1.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_035",
+      "question": "Which launch vehicle launched Chandrayaan-3?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "YES",
+      "relation_type": [
+        "LAUNCHED_BY"
+      ],
+      "mission": "Chandrayaan-3",
+      "reference_answer": "LVM3",
+      "acceptable_answers": [
+        "LVM3"
+      ],
+      "supporting_triples": [
+        "cy3-launcher"
+      ],
+      "supporting_paths": [
+        [
+          "cy3-launcher"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00017"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "evaluation"
+    },
+    {
+      "question_id": "rakg_036",
+      "question": "Which organization developed Chandrayaan-I X-ray Spectrometer (CIXS)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "DEVELOPED_BY"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "ESA",
+      "acceptable_answers": [
+        "ESA"
+      ],
+      "supporting_triples": [
+        "cy1-c1xs-developed-by-esa"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-c1xs-developed-by-esa"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY1_PAYLOADS::c00001"
+      ],
+      "source_document": "ISSDC_CY1_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_037",
+      "question": "Which launch vehicle launched Aditya-L1?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "YES",
+      "relation_type": [
+        "LAUNCHED_BY"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "PSLV-C57 (PSLV-XL)",
+      "acceptable_answers": [
+        "PSLV-C57 (PSLV-XL)"
+      ],
+      "supporting_triples": [
+        "aditya-launcher"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-launcher"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00015"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_038",
+      "question": "What does a payload carried by Chandrayaan-1 studies?",
+      "category": "TWO_HOP_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "STUDIES"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "Moon",
+      "acceptable_answers": [
+        "Moon"
+      ],
+      "supporting_triples": [
+        "cy1-payload-tmc",
+        "cy1-tmc-studies-moon"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-payload-tmc",
+          "cy1-tmc-studies-moon"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_CY1_OVERVIEW::c00007",
+        "ISSDC_CY1_PAYLOADS::c00006"
+      ],
+      "source_document": "ISSDC_CY1_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_039",
+      "question": "Which launch vehicle launched Chandrayaan-2?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "NO",
+      "relation_type": [
+        "LAUNCHED_BY"
+      ],
+      "mission": "Chandrayaan-2",
+      "reference_answer": "GSLV-Mk III - M1",
+      "acceptable_answers": [
+        "GSLV-Mk III - M1"
+      ],
+      "supporting_triples": [
+        "cy2-launcher"
+      ],
+      "supporting_paths": [
+        [
+          "cy2-launcher"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_CY2_LAUNCH_DETAILS::c00002"
+      ],
+      "source_document": "ISRO_CY2_LAUNCH_DETAILS",
+      "source_url": "https://www.isro.gov.in/mission_GSLVMkIIIM1.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_040",
+      "question": "Which organization developed a payload carried by Aditya-L1?",
+      "category": "MULTI_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "DEVELOPED_BY"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "U R Rao Satellite Centre (URSC)",
+      "acceptable_answers": [
+        "U R Rao Satellite Centre (URSC)"
+      ],
+      "supporting_triples": [
+        "aditya-payload-solexs",
+        "aditya-solexs-developed-by-ursc"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-payload-solexs",
+          "aditya-solexs-developed-by-ursc"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ADITYA_OVERVIEW::c00007",
+        "ISRO_ADITYA_OVERVIEW::c00007"
+      ],
+      "source_document": "ISRO_ADITYA_OVERVIEW",
+      "source_url": "https://www.isro.gov.in/Aditya_L1.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "evaluation"
+    },
+    {
+      "question_id": "rakg_041",
+      "question": "What is the objective of Moon Mineralogy Mapper (M3)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_OBJECTIVE"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "Characterize and map lunar surface mineralogy in the context of lunar geological evolution.",
+      "acceptable_answers": [
+        "Characterize and map lunar surface mineralogy in the context of lunar geological evolution."
+      ],
+      "supporting_triples": [
+        "cy1-m3-objective"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-m3-objective"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY1_PAYLOADS::c00043"
+      ],
+      "source_document": "ISSDC_CY1_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_042",
+      "question": "Which organization developed a payload carried by Aditya-L1?",
+      "category": "MULTI_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "DEVELOPED_BY"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "Laboratory for Electro-Optics Systems (LEOS)",
+      "acceptable_answers": [
+        "Laboratory for Electro-Optics Systems (LEOS)"
+      ],
+      "supporting_triples": [
+        "aditya-payload-mag",
+        "aditya-mag-developed-by-leos"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-payload-mag",
+          "aditya-mag-developed-by-leos"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ADITYA_OVERVIEW::c00012",
+        "ISSDC_ADITYA_BOOKLET::c00012"
+      ],
+      "source_document": "ISSDC_ADITYA_BOOKLET",
+      "source_url": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_043",
+      "question": "What does a payload carried by Chandrayaan-2 observes?",
+      "category": "TWO_HOP_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "OBSERVES"
+      ],
+      "mission": "Chandrayaan-2",
+      "reference_answer": "seismicity around the lunar landing site",
+      "acceptable_answers": [
+        "seismicity around the lunar landing site"
+      ],
+      "supporting_triples": [
+        "cy2-payload-ilsa",
+        "cy2-ilsa-observes-moonquakes"
+      ],
+      "supporting_paths": [
+        [
+          "cy2-payload-ilsa",
+          "cy2-ilsa-observes-moonquakes"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY2_PAYLOADS::c00020",
+        "ISSDC_CY2_PAYLOADS::c00021"
+      ],
+      "source_document": "ISSDC_CY2_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch2/chandrayaan2_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_044",
+      "question": "When was Aditya-L1 launched?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "NO",
+      "relation_type": [
+        "LAUNCHED_ON"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "2023-09-02",
+      "acceptable_answers": [
+        "2023-09-02"
+      ],
+      "supporting_triples": [
+        "aditya-launch-date"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-launch-date"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00015"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_045",
+      "question": "When was Chandrayaan-3 launched?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "NO",
+      "relation_type": [
+        "LAUNCHED_ON"
+      ],
+      "mission": "Chandrayaan-3",
+      "reference_answer": "2023-07-14",
+      "acceptable_answers": [
+        "2023-07-14"
+      ],
+      "supporting_triples": [
+        "cy3-launch-date"
+      ],
+      "supporting_paths": [
+        [
+          "cy3-launch-date"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00017"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "evaluation"
+    },
+    {
+      "question_id": "rakg_046",
+      "question": "Which organization developed Advanced Tri-axial High Resolution Digital Magnetometers?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "DEVELOPED_BY"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "Laboratory for Electro-Optics Systems (LEOS)",
+      "acceptable_answers": [
+        "Laboratory for Electro-Optics Systems (LEOS)"
+      ],
+      "supporting_triples": [
+        "aditya-mag-developed-by-leos"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-mag-developed-by-leos"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_ADITYA_BOOKLET::c00012"
+      ],
+      "source_document": "ISSDC_ADITYA_BOOKLET",
+      "source_url": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_047",
+      "question": "Which launch vehicle launched Chandrayaan-2?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "YES",
+      "relation_type": [
+        "LAUNCHED_BY"
+      ],
+      "mission": "Chandrayaan-2",
+      "reference_answer": "GSLV-Mk III - M1",
+      "acceptable_answers": [
+        "GSLV-Mk III - M1"
+      ],
+      "supporting_triples": [
+        "cy2-launcher"
+      ],
+      "supporting_paths": [
+        [
+          "cy2-launcher"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_CY2_LAUNCH_DETAILS::c00002"
+      ],
+      "source_document": "ISRO_CY2_LAUNCH_DETAILS",
+      "source_url": "https://www.isro.gov.in/mission_GSLVMkIIIM1.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_048",
+      "question": "What is the objective of High Energy X - ray Spectrometer (HEX)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_OBJECTIVE"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "Characterize lunar terrain chemical and radioactive composition and investigate polar volatile transport.",
+      "acceptable_answers": [
+        "Characterize lunar terrain chemical and radioactive composition and investigate polar volatile transport."
+      ],
+      "supporting_triples": [
+        "cy1-hex-objective"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-hex-objective"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY1_PAYLOADS::c00015"
+      ],
+      "source_document": "ISSDC_CY1_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_049",
+      "question": "Which organization developed Large Area X-ray Proportional Counter (LAXPC)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "DEVELOPED_BY"
+      ],
+      "mission": "AstroSat",
+      "reference_answer": "Tata Institute of Fundamental Research (TIFR)",
+      "acceptable_answers": [
+        "Tata Institute of Fundamental Research (TIFR)"
+      ],
+      "supporting_triples": [
+        "astrosat-laxpc-developed-by-tifr"
+      ],
+      "supporting_paths": [
+        [
+          "astrosat-laxpc-developed-by-tifr"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ASTROSAT_DETAILS::c00003"
+      ],
+      "source_document": "ISRO_ASTROSAT_DETAILS",
+      "source_url": "https://www.isro.gov.in/Astrosat_Spacecraft.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_050",
+      "question": "Which organization developed Solar Ultraviolet Imaging Telescope (SUIT)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "DEVELOPED_BY"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "Inter University Centre for Astronomy and Astrophysics (IUCAA)",
+      "acceptable_answers": [
+        "Inter University Centre for Astronomy and Astrophysics (IUCAA)"
+      ],
+      "supporting_triples": [
+        "aditya-suit-developed-by-iucaa"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-suit-developed-by-iucaa"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_ADITYA_BOOKLET::c00012"
+      ],
+      "source_document": "ISSDC_ADITYA_BOOKLET",
+      "source_url": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "evaluation"
+    },
+    {
+      "question_id": "rakg_051",
+      "question": "Which organization developed Solar Low Energy X-ray Spectrometer (SoLEXS)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "DEVELOPED_BY"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "U R Rao Satellite Centre (URSC)",
+      "acceptable_answers": [
+        "U R Rao Satellite Centre (URSC)"
+      ],
+      "supporting_triples": [
+        "aditya-solexs-developed-by-ursc"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-solexs-developed-by-ursc"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ADITYA_OVERVIEW::c00007"
+      ],
+      "source_document": "ISRO_ADITYA_OVERVIEW",
+      "source_url": "https://www.isro.gov.in/Aditya_L1.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_052",
+      "question": "Which organization developed Chandrayaan-I X-ray Spectrometer (CIXS)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "DEVELOPED_BY"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "Indian Space Research Organisation (ISRO)",
+      "acceptable_answers": [
+        "Indian Space Research Organisation (ISRO)"
+      ],
+      "supporting_triples": [
+        "cy1-c1xs-developed-by-isro"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-c1xs-developed-by-isro"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY1_PAYLOADS::c00001"
+      ],
+      "source_document": "ISSDC_CY1_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_053",
+      "question": "Which organization developed Sub keV Atom Reflecting Analyzer (SARA)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "DEVELOPED_BY"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "Indian Space Research Organisation (ISRO)",
+      "acceptable_answers": [
+        "Indian Space Research Organisation (ISRO)"
+      ],
+      "supporting_triples": [
+        "cy1-sara-developed-by-isro"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-sara-developed-by-isro"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY1_PAYLOADS::c00001"
+      ],
+      "source_document": "ISSDC_CY1_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_054",
+      "question": "Which launch vehicle launched AstroSat?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "YES",
+      "relation_type": [
+        "LAUNCHED_BY"
+      ],
+      "mission": "AstroSat",
+      "reference_answer": "PSLV-C30 (XL)",
+      "acceptable_answers": [
+        "PSLV-C30 (XL)"
+      ],
+      "supporting_triples": [
+        "astrosat-launcher"
+      ],
+      "supporting_paths": [
+        [
+          "astrosat-launcher"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00060"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_055",
+      "question": "What is the objective of Hyper Spectral Imager (HySI)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_OBJECTIVE"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "Obtain spectroscopic data for mineralogical mapping of the lunar surface.",
+      "acceptable_answers": [
+        "Obtain spectroscopic data for mineralogical mapping of the lunar surface."
+      ],
+      "supporting_triples": [
+        "cy1-hysi-objective"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-hysi-objective"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY1_PAYLOADS::c00009"
+      ],
+      "source_document": "ISSDC_CY1_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "evaluation"
+    },
+    {
+      "question_id": "rakg_056",
+      "question": "What does a payload carried by Chandrayaan-2 observes?",
+      "category": "TWO_HOP_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "OBSERVES"
+      ],
+      "mission": "Chandrayaan-2",
+      "reference_answer": "Moon",
+      "acceptable_answers": [
+        "Moon"
+      ],
+      "supporting_triples": [
+        "cy2-payload-apxs",
+        "cy2-apxs-observes-lunar-surface"
+      ],
+      "supporting_paths": [
+        [
+          "cy2-payload-apxs",
+          "cy2-apxs-observes-lunar-surface"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY2_PAYLOADS::c00025",
+        "ISSDC_CY2_PAYLOADS::c00025"
+      ],
+      "source_document": "ISSDC_CY2_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch2/chandrayaan2_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_057",
+      "question": "What is the objective of Alpha Particle X-ray Spectrometer (APXS)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_OBJECTIVE"
+      ],
+      "mission": "Chandrayaan-2",
+      "reference_answer": "Determine elemental composition of the lunar surface near the landing site.",
+      "acceptable_answers": [
+        "Determine elemental composition of the lunar surface near the landing site."
+      ],
+      "supporting_triples": [
+        "cy2-apxs-objective"
+      ],
+      "supporting_paths": [
+        [
+          "cy2-apxs-objective"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY2_PAYLOADS::c00025"
+      ],
+      "source_document": "ISSDC_CY2_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch2/chandrayaan2_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_058",
+      "question": "Where was AstroSat launched from?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "YES",
+      "relation_type": [
+        "LAUNCHED_FROM"
+      ],
+      "mission": "AstroSat",
+      "reference_answer": "Satish Dhawan Space Centre SHAR, Sriharikota",
+      "acceptable_answers": [
+        "Satish Dhawan Space Centre SHAR, Sriharikota"
+      ],
+      "supporting_triples": [
+        "astrosat-launch-site"
+      ],
+      "supporting_paths": [
+        [
+          "astrosat-launch-site"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00060"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_059",
+      "question": "Which organization developed Thermal Infrared Imaging Spectrometer (TIS)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "DEVELOPED_BY"
+      ],
+      "mission": "Mars Orbiter Mission",
+      "reference_answer": "Space Applications Centre (SAC)",
+      "acceptable_answers": [
+        "Space Applications Centre (SAC)"
+      ],
+      "supporting_triples": [
+        "mom-tis-developed-by-sac"
+      ],
+      "supporting_paths": [
+        [
+          "mom-tis-developed-by-sac"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_MOM_DETAILS::c00019"
+      ],
+      "source_document": "ISRO_MOM_DETAILS",
+      "source_url": "https://www.isro.gov.in/MarsOrbiterMissionSpacecraft.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_060",
+      "question": "Which organization developed Plasma Analyser Package For Aditya (PAPA)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "DEVELOPED_BY"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "Vikram Sarabhai Space Centre (VSSC)",
+      "acceptable_answers": [
+        "Vikram Sarabhai Space Centre (VSSC)"
+      ],
+      "supporting_triples": [
+        "aditya-papa-developed-by-vssc"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-papa-developed-by-vssc"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_ADITYA_BOOKLET::c00014"
+      ],
+      "source_document": "ISSDC_ADITYA_BOOKLET",
+      "source_url": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "evaluation"
+    },
+    {
+      "question_id": "rakg_061",
+      "question": "What does a payload carried by Chandrayaan-1 observes?",
+      "category": "TWO_HOP_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "OBSERVES"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "solar-wind interaction with the lunar surface",
+      "acceptable_answers": [
+        "solar-wind interaction with the lunar surface"
+      ],
+      "supporting_triples": [
+        "cy1-payload-sara",
+        "cy1-sara-observes-lunar-solar-wind-interaction"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-payload-sara",
+          "cy1-sara-observes-lunar-solar-wind-interaction"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_CY1_OVERVIEW::c00008",
+        "ISSDC_CY1_PAYLOADS::c00028"
+      ],
+      "source_document": "ISSDC_CY1_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_062",
+      "question": "What does a payload carried by Chandrayaan-1 studies?",
+      "category": "TWO_HOP_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "STUDIES"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "Moon",
+      "acceptable_answers": [
+        "Moon"
+      ],
+      "supporting_triples": [
+        "cy1-payload-hysi",
+        "cy1-hysi-studies-moon"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-payload-hysi",
+          "cy1-hysi-studies-moon"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_CY1_OVERVIEW::c00007",
+        "ISSDC_CY1_PAYLOADS::c00009"
+      ],
+      "source_document": "ISSDC_CY1_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_063",
+      "question": "Which organization developed a payload carried by Aditya-L1?",
+      "category": "MULTI_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "DEVELOPED_BY"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "Physical Research Laboratory (PRL)",
+      "acceptable_answers": [
+        "Physical Research Laboratory (PRL)"
+      ],
+      "supporting_triples": [
+        "aditya-payload-aspex",
+        "aditya-aspex-developed-by-prl"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-payload-aspex",
+          "aditya-aspex-developed-by-prl"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ADITYA_OVERVIEW::c00010",
+        "ISSDC_ADITYA_BOOKLET::c00014"
+      ],
+      "source_document": "ISSDC_ADITYA_BOOKLET",
+      "source_url": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_064",
+      "question": "What is the objective of Instrument for Lunar Seismic Activity (ILSA)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_OBJECTIVE"
+      ],
+      "mission": "Chandrayaan-2",
+      "reference_answer": "Characterize seismicity around the landing site.",
+      "acceptable_answers": [
+        "Characterize seismicity around the landing site."
+      ],
+      "supporting_triples": [
+        "cy2-ilsa-objective"
+      ],
+      "supporting_paths": [
+        [
+          "cy2-ilsa-objective"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY2_PAYLOADS::c00021"
+      ],
+      "source_document": "ISSDC_CY2_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch2/chandrayaan2_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_065",
+      "question": "What is the objective of Chandrayaan-I X-ray Spectrometer (CIXS)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_OBJECTIVE"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "Map lunar elemental abundance using X-ray fluorescence spectrometry.",
+      "acceptable_answers": [
+        "Map lunar elemental abundance using X-ray fluorescence spectrometry."
+      ],
+      "supporting_triples": [
+        "cy1-cixs-objective"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-cixs-objective"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY1_PAYLOADS::c00021"
+      ],
+      "source_document": "ISSDC_CY1_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "evaluation"
+    },
+    {
+      "question_id": "rakg_066",
+      "question": "Which organization developed High Energy L1 Orbiting X-ray Spectrometer (HEL1OS)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "DEVELOPED_BY"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "U R Rao Satellite Centre (URSC)",
+      "acceptable_answers": [
+        "U R Rao Satellite Centre (URSC)"
+      ],
+      "supporting_triples": [
+        "aditya-hel1os-developed-by-ursc"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-hel1os-developed-by-ursc"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ADITYA_OVERVIEW::c00008"
+      ],
+      "source_document": "ISRO_ADITYA_OVERVIEW",
+      "source_url": "https://www.isro.gov.in/Aditya_L1.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_067",
+      "question": "What is the objective of Terrain Mapping Camera (TMC)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_OBJECTIVE"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "Map the near and far sides of the Moon and prepare a three-dimensional lunar topographic atlas.",
+      "acceptable_answers": [
+        "Map the near and far sides of the Moon and prepare a three-dimensional lunar topographic atlas."
+      ],
+      "supporting_triples": [
+        "cy1-tmc-objective"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-tmc-objective"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY1_PAYLOADS::c00006"
+      ],
+      "source_document": "ISSDC_CY1_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_068",
+      "question": "Which organization developed Scanning Sky Monitor (SSM)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "DEVELOPED_BY"
+      ],
+      "mission": "AstroSat",
+      "reference_answer": "Indian Space Research Organisation (ISRO)",
+      "acceptable_answers": [
+        "Indian Space Research Organisation (ISRO)"
+      ],
+      "supporting_triples": [
+        "astrosat-ssm-developed-by-isro"
+      ],
+      "supporting_paths": [
+        [
+          "astrosat-ssm-developed-by-isro"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ASTROSAT_DETAILS::c00003"
+      ],
+      "source_document": "ISRO_ASTROSAT_DETAILS",
+      "source_url": "https://www.isro.gov.in/Astrosat_Spacecraft.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_069",
+      "question": "What is the objective of Lunar Laser Ranging Instrument (LLRI)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_OBJECTIVE"
+      ],
+      "mission": "Chandrayaan-1",
+      "reference_answer": "Determine spacecraft altitude, lunar topography, and an improved lunar gravity-field model.",
+      "acceptable_answers": [
+        "Determine spacecraft altitude, lunar topography, and an improved lunar gravity-field model."
+      ],
+      "supporting_triples": [
+        "cy1-llri-objective"
+      ],
+      "supporting_paths": [
+        [
+          "cy1-llri-objective"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY1_PAYLOADS::c00012"
+      ],
+      "source_document": "ISSDC_CY1_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch1/chandrayaan1_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_070",
+      "question": "Which organization developed a payload carried by Aditya-L1?",
+      "category": "MULTI_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_PAYLOAD",
+        "DEVELOPED_BY"
+      ],
+      "mission": "Aditya-L1",
+      "reference_answer": "Indian Institute of Astrophysics (IIA)",
+      "acceptable_answers": [
+        "Indian Institute of Astrophysics (IIA)"
+      ],
+      "supporting_triples": [
+        "aditya-payload-velc",
+        "aditya-velc-developed-by-iia"
+      ],
+      "supporting_paths": [
+        [
+          "aditya-payload-velc",
+          "aditya-velc-developed-by-iia"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_ADITYA_OVERVIEW::c00005",
+        "ISSDC_ADITYA_BOOKLET::c00013"
+      ],
+      "source_document": "ISSDC_ADITYA_BOOKLET",
+      "source_url": "https://www.issdc.gov.in/docs/Aditya/Aditya_L1_second_booklet.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "evaluation"
+    },
+    {
+      "question_id": "rakg_071",
+      "question": "Which launch vehicle launched Mars Orbiter Mission?",
+      "category": "DIRECT_CONTROL",
+      "kg_required": "YES",
+      "relation_type": [
+        "LAUNCHED_BY"
+      ],
+      "mission": "Mars Orbiter Mission",
+      "reference_answer": "PSLV-C25",
+      "acceptable_answers": [
+        "PSLV-C25"
+      ],
+      "supporting_triples": [
+        "mom-launcher"
+      ],
+      "supporting_paths": [
+        [
+          "mom-launcher"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISRO_LAUNCH_ARCHIVE::c00069"
+      ],
+      "source_document": "ISRO_LAUNCH_ARCHIVE",
+      "source_url": "https://www.isro.gov.in/LaunchMissions.html",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    },
+    {
+      "question_id": "rakg_072",
+      "question": "What is the objective of Chandrayaan-2 Large Area Soft X ray spectrometer (CLASS)?",
+      "category": "SINGLE_RELATION",
+      "kg_required": "YES",
+      "relation_type": [
+        "HAS_OBJECTIVE"
+      ],
+      "mission": "Chandrayaan-2",
+      "reference_answer": "Map major-element abundance on the lunar surface.",
+      "acceptable_answers": [
+        "Map major-element abundance on the lunar surface."
+      ],
+      "supporting_triples": [
+        "cy2-class-objective"
+      ],
+      "supporting_paths": [
+        [
+          "cy2-class-objective"
+        ]
+      ],
+      "supporting_chunks": [
+        "ISSDC_CY2_PAYLOADS::c00003"
+      ],
+      "source_document": "ISSDC_CY2_PAYLOADS",
+      "source_url": "https://www.issdc.gov.in/docs/ch2/chandrayaan2_payload.pdf",
+      "selection_rule": "All canonical triples in supported relation families, ordered by relation and triple ID; controls are deterministic launch/date facts.",
+      "system_result_contamination": false,
+      "split": "development"
+    }
+  ]
+}

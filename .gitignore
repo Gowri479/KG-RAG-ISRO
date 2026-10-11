@@ -206,6 +206,7 @@ data/chunks/
 data/kg/
 data/index/
 data/cleaned/
+paper/
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
 
@@ -222,3 +223,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Paper bundles are kept locally, like paper/
+*_updated.zip
+
+# Generated evaluator hand-off kits (rebuild with build_spotcheck_evaluator_kit.py)
+handoff/

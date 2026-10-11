@@ -1,0 +1,1021 @@
+{
+  "integrity": {
+    "input_csv_sha256": "df1df327c4e0ac84a3736a2e2e01c2458482086dab790743fbda1ed5e65dde3a",
+    "mapping_sha256": "492d3c371d9b95b57b25c05619563f0b23c11a3697b0b6f52eee80465f0f3e54",
+    "heldout_manifest_sha256": "052be6ac7cdb09c3b91a2ee5feb81ba597c94680115c6acc395d19abfe5947d3",
+    "benchmark_sha256": "6c7f3600995c0091de73d20d2f02953cb414023df281f7178069f9f81b432b64",
+    "question_count": 13,
+    "candidate_count": 39,
+    "mapping_integrity": true,
+    "score_analysis_performed": true
+  },
+  "systems": {
+    "vanilla_dense_rag": {
+      "n": 13,
+      "correctness": {
+        "mean": 3.3076923076923075,
+        "median": 4.0,
+        "standard_deviation": 1.6525039276108335,
+        "minimum": 1.0,
+        "maximum": 5.0
+      },
+      "completeness": {
+        "mean": 2.8461538461538463,
+        "median": 3.0,
+        "standard_deviation": 1.4632243987255136,
+        "minimum": 1.0,
+        "maximum": 5.0
+      },
+      "groundedness": {
+        "mean": 3.8461538461538463,
+        "median": 4.0,
+        "standard_deviation": 1.3445044840729643,
+        "minimum": 1.0,
+        "maximum": 5.0
+      },
+      "relevance": {
+        "mean": 4.230769230769231,
+        "median": 5.0,
+        "standard_deviation": 1.2351684199496948,
+        "minimum": 2.0,
+        "maximum": 5.0
+      },
+      "unsupported_claim": {
+        "mean": 0.15384615384615385,
+        "median": 0.0,
+        "standard_deviation": 0.3755338080994054,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "rate": 0.15384615384615385,
+        "percentage": 15.384615384615385
+      }
+    },
+    "A_CURRENT": {
+      "n": 13,
+      "correctness": {
+        "mean": 2.6153846153846154,
+        "median": 3.0,
+        "standard_deviation": 1.6092680291808414,
+        "minimum": 1.0,
+        "maximum": 5.0
+      },
+      "completeness": {
+        "mean": 2.230769230769231,
+        "median": 3.0,
+        "standard_deviation": 1.3008872711759818,
+        "minimum": 1.0,
+        "maximum": 5.0
+      },
+      "groundedness": {
+        "mean": 3.5384615384615383,
+        "median": 4.0,
+        "standard_deviation": 1.4500221041639685,
+        "minimum": 1.0,
+        "maximum": 5.0
+      },
+      "relevance": {
+        "mean": 3.769230769230769,
+        "median": 3.0,
+        "standard_deviation": 1.2351684199496948,
+        "minimum": 2.0,
+        "maximum": 5.0
+      },
+      "unsupported_claim": {
+        "mean": 0.3076923076923077,
+        "median": 0.0,
+        "standard_deviation": 0.4803844614152614,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "rate": 0.3076923076923077,
+        "percentage": 30.76923076923077
+      }
+    },
+    "C_TWO_STAGE": {
+      "n": 13,
+      "correctness": {
+        "mean": 3.076923076923077,
+        "median": 4.0,
+        "standard_deviation": 1.7541160386140584,
+        "minimum": 1.0,
+        "maximum": 5.0
+      },
+      "completeness": {
+        "mean": 2.6923076923076925,
+        "median": 3.0,
+        "standard_deviation": 1.6012815380508714,
+        "minimum": 1.0,
+        "maximum": 5.0
+      },
+      "groundedness": {
+        "mean": 3.3076923076923075,
+        "median": 4.0,
+        "standard_deviation": 1.702185623672077,
+        "minimum": 1.0,
+        "maximum": 5.0
+      },
+      "relevance": {
+        "mean": 4.230769230769231,
+        "median": 5.0,
+        "standard_deviation": 1.2351684199496948,
+        "minimum": 2.0,
+        "maximum": 5.0
+      },
+      "unsupported_claim": {
+        "mean": 0.3076923076923077,
+        "median": 0.0,
+        "standard_deviation": 0.4803844614152614,
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "rate": 0.3076923076923077,
+        "percentage": 30.76923076923077
+      }
+    }
+  },
+  "comparisons": {
+    "C_TWO_STAGE_minus_A_VANILLA": {
+      "correctness": {
+        "n": 13,
+        "mean_difference": -0.23076923076923078,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -1.2307692307692308,
+          0.7692307692307693
+        ],
+        "wilcoxon_signed_rank": {
+          "statistic": 6.0,
+          "p_value": 0.875,
+          "n_nonzero": 5
+        },
+        "paired_dz": -0.12290197355980541,
+        "wins": 2,
+        "losses": 3,
+        "ties": 8,
+        "differences": [
+          0.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          -3.0,
+          -4.0,
+          0.0,
+          4.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "completeness": {
+        "n": 13,
+        "mean_difference": -0.15384615384615385,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -1.0769230769230769,
+          0.7692307692307693
+        ],
+        "wilcoxon_signed_rank": {
+          "statistic": 6.0,
+          "p_value": 0.875,
+          "n_nonzero": 5
+        },
+        "paired_dz": -0.08680623146431428,
+        "wins": 2,
+        "losses": 3,
+        "ties": 8,
+        "differences": [
+          0.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          -2.0,
+          -4.0,
+          0.0,
+          4.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "groundedness": {
+        "n": 13,
+        "mean_difference": -0.5384615384615384,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -1.3076923076923077,
+          0.07692307692307693
+        ],
+        "wilcoxon_signed_rank": {
+          "statistic": 1.5,
+          "p_value": 0.375,
+          "n_nonzero": 4
+        },
+        "paired_dz": -0.3870022726577742,
+        "wins": 1,
+        "losses": 3,
+        "ties": 9,
+        "differences": [
+          0.0,
+          -1.0,
+          -4.0,
+          0.0,
+          0.0,
+          -3.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "relevance": {
+        "n": 13,
+        "mean_difference": 0.0,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -0.6153846153846154,
+          0.6153846153846154
+        ],
+        "wilcoxon_signed_rank": {
+          "statistic": 5.0,
+          "p_value": 1.0,
+          "n_nonzero": 4
+        },
+        "paired_dz": 0.0,
+        "wins": 2,
+        "losses": 2,
+        "ties": 9,
+        "differences": [
+          0.0,
+          0.0,
+          2.0,
+          0.0,
+          0.0,
+          -2.0,
+          -2.0,
+          0.0,
+          2.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "unsupported_claim": {
+        "left_rate": 0.3076923076923077,
+        "right_rate": 0.15384615384615385,
+        "difference_percentage_points": 15.384615384615385,
+        "left_minus_right_differences": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "improves": 0,
+        "worsens": 2,
+        "unchanged": 11
+      }
+    },
+    "C_TWO_STAGE_minus_B_RELATION_AWARE": {
+      "correctness": {
+        "n": 13,
+        "mean_difference": 0.46153846153846156,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          1.2307692307692308
+        ],
+        "wilcoxon_signed_rank": {
+          "statistic": 0.0,
+          "p_value": 0.5,
+          "n_nonzero": 2
+        },
+        "paired_dz": 0.38516444325982163,
+        "wins": 2,
+        "losses": 0,
+        "ties": 11,
+        "differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          4.0,
+          2.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "completeness": {
+        "n": 13,
+        "mean_difference": 0.46153846153846156,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          1.2307692307692308
+        ],
+        "wilcoxon_signed_rank": {
+          "statistic": 0.0,
+          "p_value": 0.5,
+          "n_nonzero": 2
+        },
+        "paired_dz": 0.38516444325982163,
+        "wins": 2,
+        "losses": 0,
+        "ties": 11,
+        "differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          4.0,
+          2.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "groundedness": {
+        "n": 13,
+        "mean_difference": -0.23076923076923078,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -1.0,
+          0.3076923076923077
+        ],
+        "wilcoxon_signed_rank": {
+          "statistic": 2.0,
+          "p_value": 0.75,
+          "n_nonzero": 3
+        },
+        "paired_dz": -0.1773937187967248,
+        "wins": 1,
+        "losses": 2,
+        "ties": 10,
+        "differences": [
+          0.0,
+          0.0,
+          -4.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0,
+          2.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "relevance": {
+        "n": 13,
+        "mean_difference": 0.46153846153846156,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.9230769230769231
+        ],
+        "wilcoxon_signed_rank": {
+          "statistic": 0.0,
+          "p_value": 0.25,
+          "n_nonzero": 3
+        },
+        "paired_dz": 0.5262348115842176,
+        "wins": 3,
+        "losses": 0,
+        "ties": 10,
+        "differences": [
+          0.0,
+          0.0,
+          2.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.0,
+          2.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "unsupported_claim": {
+        "left_rate": 0.3076923076923077,
+        "right_rate": 0.3076923076923077,
+        "difference_percentage_points": 0.0,
+        "left_minus_right_differences": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "improves": 1,
+        "worsens": 1,
+        "unchanged": 11
+      }
+    }
+  },
+  "holm_adjusted_p_values": {
+    "C_TWO_STAGE_minus_A_VANILLA:correctness": 1.0,
+    "C_TWO_STAGE_minus_A_VANILLA:completeness": 1.0,
+    "C_TWO_STAGE_minus_A_VANILLA:groundedness": 1.0,
+    "C_TWO_STAGE_minus_A_VANILLA:relevance": 1.0,
+    "C_TWO_STAGE_minus_B_RELATION_AWARE:correctness": 1.0,
+    "C_TWO_STAGE_minus_B_RELATION_AWARE:completeness": 1.0,
+    "C_TWO_STAGE_minus_B_RELATION_AWARE:groundedness": 1.0,
+    "C_TWO_STAGE_minus_B_RELATION_AWARE:relevance": 1.0
+  },
+  "category_results": {
+    "DIRECT_CONTROL": {
+      "n": 2,
+      "systems": {
+        "vanilla_dense_rag": {
+          "n": 2,
+          "correctness": {
+            "mean": 5.0,
+            "median": 5.0,
+            "standard_deviation": 0.0,
+            "minimum": 5.0,
+            "maximum": 5.0
+          },
+          "completeness": {
+            "mean": 5.0,
+            "median": 5.0,
+            "standard_deviation": 0.0,
+            "minimum": 5.0,
+            "maximum": 5.0
+          },
+          "groundedness": {
+            "mean": 5.0,
+            "median": 5.0,
+            "standard_deviation": 0.0,
+            "minimum": 5.0,
+            "maximum": 5.0
+          },
+          "relevance": {
+            "mean": 5.0,
+            "median": 5.0,
+            "standard_deviation": 0.0,
+            "minimum": 5.0,
+            "maximum": 5.0
+          },
+          "unsupported_claim": {
+            "mean": 0.0,
+            "median": 0.0,
+            "standard_deviation": 0.0,
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "rate": 0.0,
+            "percentage": 0.0
+          }
+        },
+        "A_CURRENT": {
+          "n": 2,
+          "correctness": {
+            "mean": 3.0,
+            "median": 3.0,
+            "standard_deviation": 2.8284271247461903,
+            "minimum": 1.0,
+            "maximum": 5.0
+          },
+          "completeness": {
+            "mean": 3.0,
+            "median": 3.0,
+            "standard_deviation": 2.8284271247461903,
+            "minimum": 1.0,
+            "maximum": 5.0
+          },
+          "groundedness": {
+            "mean": 5.0,
+            "median": 5.0,
+            "standard_deviation": 0.0,
+            "minimum": 5.0,
+            "maximum": 5.0
+          },
+          "relevance": {
+            "mean": 4.0,
+            "median": 4.0,
+            "standard_deviation": 1.4142135623730951,
+            "minimum": 3.0,
+            "maximum": 5.0
+          },
+          "unsupported_claim": {
+            "mean": 0.0,
+            "median": 0.0,
+            "standard_deviation": 0.0,
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "rate": 0.0,
+            "percentage": 0.0
+          }
+        },
+        "C_TWO_STAGE": {
+          "n": 2,
+          "correctness": {
+            "mean": 3.0,
+            "median": 3.0,
+            "standard_deviation": 2.8284271247461903,
+            "minimum": 1.0,
+            "maximum": 5.0
+          },
+          "completeness": {
+            "mean": 3.0,
+            "median": 3.0,
+            "standard_deviation": 2.8284271247461903,
+            "minimum": 1.0,
+            "maximum": 5.0
+          },
+          "groundedness": {
+            "mean": 5.0,
+            "median": 5.0,
+            "standard_deviation": 0.0,
+            "minimum": 5.0,
+            "maximum": 5.0
+          },
+          "relevance": {
+            "mean": 4.0,
+            "median": 4.0,
+            "standard_deviation": 1.4142135623730951,
+            "minimum": 3.0,
+            "maximum": 5.0
+          },
+          "unsupported_claim": {
+            "mean": 0.0,
+            "median": 0.0,
+            "standard_deviation": 0.0,
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "rate": 0.0,
+            "percentage": 0.0
+          }
+        }
+      }
+    },
+    "MULTI_RELATION": {
+      "n": 4,
+      "systems": {
+        "vanilla_dense_rag": {
+          "n": 4,
+          "correctness": {
+            "mean": 4.25,
+            "median": 4.0,
+            "standard_deviation": 0.5,
+            "minimum": 4.0,
+            "maximum": 5.0
+          },
+          "completeness": {
+            "mean": 3.25,
+            "median": 3.0,
+            "standard_deviation": 0.5,
+            "minimum": 3.0,
+            "maximum": 4.0
+          },
+          "groundedness": {
+            "mean": 4.0,
+            "median": 4.0,
+            "standard_deviation": 0.0,
+            "minimum": 4.0,
+            "maximum": 4.0
+          },
+          "relevance": {
+            "mean": 5.0,
+            "median": 5.0,
+            "standard_deviation": 0.0,
+            "minimum": 5.0,
+            "maximum": 5.0
+          },
+          "unsupported_claim": {
+            "mean": 0.0,
+            "median": 0.0,
+            "standard_deviation": 0.0,
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "rate": 0.0,
+            "percentage": 0.0
+          }
+        },
+        "A_CURRENT": {
+          "n": 4,
+          "correctness": {
+            "mean": 4.0,
+            "median": 4.0,
+            "standard_deviation": 0.0,
+            "minimum": 4.0,
+            "maximum": 4.0
+          },
+          "completeness": {
+            "mean": 3.0,
+            "median": 3.0,
+            "standard_deviation": 0.0,
+            "minimum": 3.0,
+            "maximum": 3.0
+          },
+          "groundedness": {
+            "mean": 3.75,
+            "median": 4.0,
+            "standard_deviation": 0.5,
+            "minimum": 3.0,
+            "maximum": 4.0
+          },
+          "relevance": {
+            "mean": 5.0,
+            "median": 5.0,
+            "standard_deviation": 0.0,
+            "minimum": 5.0,
+            "maximum": 5.0
+          },
+          "unsupported_claim": {
+            "mean": 0.0,
+            "median": 0.0,
+            "standard_deviation": 0.0,
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "rate": 0.0,
+            "percentage": 0.0
+          }
+        },
+        "C_TWO_STAGE": {
+          "n": 4,
+          "correctness": {
+            "mean": 4.0,
+            "median": 4.0,
+            "standard_deviation": 0.0,
+            "minimum": 4.0,
+            "maximum": 4.0
+          },
+          "completeness": {
+            "mean": 3.0,
+            "median": 3.0,
+            "standard_deviation": 0.0,
+            "minimum": 3.0,
+            "maximum": 3.0
+          },
+          "groundedness": {
+            "mean": 3.75,
+            "median": 4.0,
+            "standard_deviation": 0.5,
+            "minimum": 3.0,
+            "maximum": 4.0
+          },
+          "relevance": {
+            "mean": 5.0,
+            "median": 5.0,
+            "standard_deviation": 0.0,
+            "minimum": 5.0,
+            "maximum": 5.0
+          },
+          "unsupported_claim": {
+            "mean": 0.0,
+            "median": 0.0,
+            "standard_deviation": 0.0,
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "rate": 0.0,
+            "percentage": 0.0
+          }
+        }
+      }
+    },
+    "SINGLE_RELATION": {
+      "n": 6,
+      "systems": {
+        "vanilla_dense_rag": {
+          "n": 6,
+          "correctness": {
+            "mean": 2.0,
+            "median": 1.0,
+            "standard_deviation": 1.5491933384829668,
+            "minimum": 1.0,
+            "maximum": 4.0
+          },
+          "completeness": {
+            "mean": 1.8333333333333333,
+            "median": 1.0,
+            "standard_deviation": 1.3291601358251257,
+            "minimum": 1.0,
+            "maximum": 4.0
+          },
+          "groundedness": {
+            "mean": 3.3333333333333335,
+            "median": 4.0,
+            "standard_deviation": 1.8618986725025255,
+            "minimum": 1.0,
+            "maximum": 5.0
+          },
+          "relevance": {
+            "mean": 3.3333333333333335,
+            "median": 3.0,
+            "standard_deviation": 1.3662601021279464,
+            "minimum": 2.0,
+            "maximum": 5.0
+          },
+          "unsupported_claim": {
+            "mean": 0.3333333333333333,
+            "median": 0.0,
+            "standard_deviation": 0.5163977794943223,
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "rate": 0.3333333333333333,
+            "percentage": 33.33333333333333
+          }
+        },
+        "A_CURRENT": {
+          "n": 6,
+          "correctness": {
+            "mean": 1.8333333333333333,
+            "median": 1.0,
+            "standard_deviation": 1.3291601358251257,
+            "minimum": 1.0,
+            "maximum": 4.0
+          },
+          "completeness": {
+            "mean": 1.6666666666666667,
+            "median": 1.0,
+            "standard_deviation": 1.0327955589886446,
+            "minimum": 1.0,
+            "maximum": 3.0
+          },
+          "groundedness": {
+            "mean": 3.1666666666666665,
+            "median": 3.5,
+            "standard_deviation": 1.834847859269718,
+            "minimum": 1.0,
+            "maximum": 5.0
+          },
+          "relevance": {
+            "mean": 3.0,
+            "median": 3.0,
+            "standard_deviation": 1.0954451150103321,
+            "minimum": 2.0,
+            "maximum": 5.0
+          },
+          "unsupported_claim": {
+            "mean": 0.5,
+            "median": 0.5,
+            "standard_deviation": 0.5477225575051661,
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "rate": 0.5,
+            "percentage": 50.0
+          }
+        },
+        "C_TWO_STAGE": {
+          "n": 6,
+          "correctness": {
+            "mean": 2.8333333333333335,
+            "median": 2.5,
+            "standard_deviation": 2.041241452319315,
+            "minimum": 1.0,
+            "maximum": 5.0
+          },
+          "completeness": {
+            "mean": 2.6666666666666665,
+            "median": 2.0,
+            "standard_deviation": 1.96638416050035,
+            "minimum": 1.0,
+            "maximum": 5.0
+          },
+          "groundedness": {
+            "mean": 2.8333333333333335,
+            "median": 2.5,
+            "standard_deviation": 2.041241452319315,
+            "minimum": 1.0,
+            "maximum": 5.0
+          },
+          "relevance": {
+            "mean": 4.0,
+            "median": 5.0,
+            "standard_deviation": 1.5491933384829668,
+            "minimum": 2.0,
+            "maximum": 5.0
+          },
+          "unsupported_claim": {
+            "mean": 0.5,
+            "median": 0.5,
+            "standard_deviation": 0.5477225575051661,
+            "minimum": 0.0,
+            "maximum": 1.0,
+            "rate": 0.5,
+            "percentage": 50.0
+          }
+        }
+      }
+    },
+    "TWO_HOP_RELATION": {
+      "n": 1,
+      "systems": {
+        "vanilla_dense_rag": {
+          "n": 1,
+          "correctness": {
+            "mean": 4.0,
+            "median": 4.0,
+            "standard_deviation": 0.0,
+            "minimum": 4.0,
+            "maximum": 4.0
+          },
+          "completeness": {
+            "mean": 3.0,
+            "median": 3.0,
+            "standard_deviation": 0.0,
+            "minimum": 3.0,
+            "maximum": 3.0
+          },
+          "groundedness": {
+            "mean": 4.0,
+            "median": 4.0,
+            "standard_deviation": 0.0,
+            "minimum": 4.0,
+            "maximum": 4.0
+          },
+          "relevance": {
+            "mean": 5.0,
+            "median": 5.0,
+            "standard_deviation": 0.0,
+            "minimum": 5.0,
+            "maximum": 5.0
+          },
+          "unsupported_claim": {
+            "mean": 0.0,
+            "median": 0.0,
+            "standard_deviation": 0.0,
+            "minimum": 0.0,
+            "maximum": 0.0,
+            "rate": 0.0,
+            "percentage": 0.0
+          }
+        },
+        "A_CURRENT": {
+          "n": 1,
+          "correctness": {
+            "mean": 1.0,
+            "median": 1.0,
+            "standard_deviation": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          "completeness": {
+            "mean": 1.0,
+            "median": 1.0,
+            "standard_deviation": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          "groundedness": {
+            "mean": 2.0,
+            "median": 2.0,
+            "standard_deviation": 0.0,
+            "minimum": 2.0,
+            "maximum": 2.0
+          },
+          "relevance": {
+            "mean": 3.0,
+            "median": 3.0,
+            "standard_deviation": 0.0,
+            "minimum": 3.0,
+            "maximum": 3.0
+          },
+          "unsupported_claim": {
+            "mean": 1.0,
+            "median": 1.0,
+            "standard_deviation": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0,
+            "rate": 1.0,
+            "percentage": 100.0
+          }
+        },
+        "C_TWO_STAGE": {
+          "n": 1,
+          "correctness": {
+            "mean": 1.0,
+            "median": 1.0,
+            "standard_deviation": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          "completeness": {
+            "mean": 1.0,
+            "median": 1.0,
+            "standard_deviation": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          "groundedness": {
+            "mean": 1.0,
+            "median": 1.0,
+            "standard_deviation": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0
+          },
+          "relevance": {
+            "mean": 3.0,
+            "median": 3.0,
+            "standard_deviation": 0.0,
+            "minimum": 3.0,
+            "maximum": 3.0
+          },
+          "unsupported_claim": {
+            "mean": 1.0,
+            "median": 1.0,
+            "standard_deviation": 0.0,
+            "minimum": 1.0,
+            "maximum": 1.0,
+            "rate": 1.0,
+            "percentage": 100.0
+          }
+        }
+      }
+    }
+  },
+  "question_level_illustrative_extremes": {
+    "correctness": {
+      "largest_C_minus_A_improvement": "rakg_050",
+      "largest_C_minus_A_degradation": "rakg_035"
+    },
+    "completeness": {
+      "largest_C_minus_A_improvement": "rakg_050",
+      "largest_C_minus_A_degradation": "rakg_035"
+    },
+    "groundedness": {
+      "largest_C_minus_A_improvement": "rakg_055",
+      "largest_C_minus_A_degradation": "rakg_015"
+    },
+    "relevance": {
+      "largest_C_minus_A_improvement": "rakg_015",
+      "largest_C_minus_A_degradation": "rakg_030"
+    }
+  },
+  "automated_context": {
+    "A_CURRENT": {
+      "rouge_l": 0.104,
+      "coverage": 0.223
+    },
+    "B_STRUCTURED": {
+      "rouge_l": 0.07,
+      "coverage": 0.176
+    },
+    "C_TWO_STAGE": {
+      "rouge_l": 0.233,
+      "coverage": 0.412
+    },
+    "C_minus_A": {
+      "rouge_l_mean_difference": 0.129947,
+      "coverage_mean_difference": 0.188462,
+      "rouge_l_wilcoxon_p": 0.097656,
+      "coverage_wilcoxon_p": 0.125
+    }
+  },
+  "decision": "NOT SUPPORTED",
+  "paper_implication": {
+    "proposed_final_method": "Do not replace the proposed method solely on this N=13 evaluation.",
+    "two_stage_contribution": "Can be framed as a promising generation-bottleneck result, not a demonstrated superiority claim.",
+    "superiority_claim_supported": false,
+    "limitations": [
+      "Only 13 held-out questions were human-rated.",
+      "Paired tests are underpowered and Holm-adjusted evidence is not statistically conclusive.",
+      "Automated ROUGE-L and coverage are lexical diagnostics.",
+      "Unsupported-claim behavior must be interpreted descriptively."
+    ]
+  },
+  "method": {
+    "unit": "question",
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20261008,
+    "wilcoxon": "two-sided, zero_method=wilcox, method=auto",
+    "holm_family": "8 paired tests: C-A and C-B across four quality dimensions",
+    "unsupported_claims": "binary rates and paired directional counts; not included in Holm quality-dimension family"
+  },
+  "timestamp_utc": "2026-10-08T06:59:50.057331+00:00"
+}

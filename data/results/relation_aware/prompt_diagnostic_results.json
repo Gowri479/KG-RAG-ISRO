@@ -1,0 +1,363 @@
+{
+  "integrity": {
+    "rows": 54,
+    "questions": 18,
+    "variants": [
+      "P1_current",
+      "P2_kg_priority",
+      "P3_structured_evidence"
+    ],
+    "duplicates": 0,
+    "input_sha256": "7655a0e536f8f0e52583c485289018db530ac9228ea30c9a38263708d8ddd4e3"
+  },
+  "selection": "First 18 KG-required questions by question_id, selected before diagnostic outcomes.",
+  "variant_summaries": {
+    "P1_current": {
+      "n": 18,
+      "rouge_l_mean": 0.12456555555555555,
+      "rouge_l_median": 0.09127,
+      "coverage_mean": 0.29861116666666665,
+      "coverage_median": 0.166667,
+      "exact_match_rate": 0.0,
+      "idk_rate": 0.0
+    },
+    "P2_kg_priority": {
+      "n": 18,
+      "rouge_l_mean": 0.11530683333333333,
+      "rouge_l_median": 0.077037,
+      "coverage_mean": 0.29351855555555556,
+      "coverage_median": 0.1833335,
+      "exact_match_rate": 0.0,
+      "idk_rate": 0.1111111111111111
+    },
+    "P3_structured_evidence": {
+      "n": 18,
+      "rouge_l_mean": 0.13351688888888888,
+      "rouge_l_median": 0.1026315,
+      "coverage_mean": 0.3620371111111111,
+      "coverage_median": 0.2,
+      "exact_match_rate": 0.0,
+      "idk_rate": 0.0
+    }
+  },
+  "paired_comparisons_vs_P1": {
+    "P2_kg_priority_minus_P1_current": {
+      "rouge_l": {
+        "n": 18,
+        "mean_difference": -0.009258722222222224,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -0.05392246388888889,
+          0.025559463888888873
+        ],
+        "wilcoxon": {
+          "statistic": 22.0,
+          "p_value": 0.9527650219907529,
+          "n_nonzero": 9
+        },
+        "wins_losses_ties": [
+          5,
+          4,
+          9
+        ],
+        "differences": [
+          0.088889,
+          0.0,
+          0.0,
+          0.0,
+          0.007885,
+          0.0,
+          0.0,
+          0.1,
+          0.0,
+          -0.05495800000000001,
+          0.088235,
+          -0.111111,
+          -0.007904999999999995,
+          -0.307692,
+          0.0,
+          0.0,
+          0.03,
+          0.0
+        ]
+      },
+      "reference_token_coverage": {
+        "n": 18,
+        "mean_difference": -0.005092611111111109,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -0.07594919999999998,
+          0.06435183333333333
+        ],
+        "wilcoxon": {
+          "statistic": 13.5,
+          "p_value": 0.9325263296150477,
+          "n_nonzero": 7
+        },
+        "wins_losses_ties": [
+          4,
+          3,
+          11
+        ],
+        "differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.1,
+          0.0,
+          0.0,
+          0.166667,
+          0.0,
+          -0.3,
+          0.375,
+          -0.166667,
+          0.0,
+          -0.333333,
+          0.0,
+          0.0,
+          0.066666,
+          0.0
+        ]
+      },
+      "exact_match": {
+        "n": 18,
+        "mean_difference": 0.0,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_nonzero": 0
+        },
+        "wins_losses_ties": [
+          0,
+          0,
+          18
+        ],
+        "differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "idk": {
+        "n": 18,
+        "mean_difference": 0.1111111111111111,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.2777777777777778
+        ],
+        "wilcoxon": {
+          "statistic": 0.0,
+          "p_value": 0.15729920705028502,
+          "n_nonzero": 2
+        },
+        "wins_losses_ties": [
+          2,
+          0,
+          16
+        ],
+        "differences": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "P3_structured_evidence_minus_P1_current": {
+      "rouge_l": {
+        "n": 18,
+        "mean_difference": 0.008951333333333332,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          -0.018032893055555558,
+          0.03658908333333333
+        ],
+        "wilcoxon": {
+          "statistic": 22.0,
+          "p_value": 0.5750621301739497,
+          "n_nonzero": 10
+        },
+        "wins_losses_ties": [
+          6,
+          4,
+          8
+        ],
+        "differences": [
+          -0.10303000000000001,
+          0.0,
+          0.0,
+          0.0,
+          0.013627000000000004,
+          0.105263,
+          0.0,
+          0.1,
+          0.0,
+          -0.01252700000000001,
+          0.083333,
+          0.111111,
+          -0.038960999999999996,
+          -0.10769200000000001,
+          0.0,
+          0.0,
+          0.009999999999999995,
+          0.0
+        ]
+      },
+      "reference_token_coverage": {
+        "n": 18,
+        "mean_difference": 0.06342594444444445,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          0.013414315277777792,
+          0.12361116666666667
+        ],
+        "wilcoxon": {
+          "statistic": 1.0,
+          "p_value": 0.045799589111186666,
+          "n_nonzero": 6
+        },
+        "wins_losses_ties": [
+          5,
+          1,
+          12
+        ],
+        "differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.166667,
+          0.0,
+          0.166667,
+          0.0,
+          0.0,
+          0.375,
+          0.16666599999999998,
+          0.0,
+          0.333334,
+          0.0,
+          0.0,
+          -0.06666699999999998,
+          0.0
+        ]
+      },
+      "exact_match": {
+        "n": 18,
+        "mean_difference": 0.0,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_nonzero": 0
+        },
+        "wins_losses_ties": [
+          0,
+          0,
+          18
+        ],
+        "differences": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "idk": {
+        "n": 18,
+        "mean_difference": 0,
+        "median_difference": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_nonzero": 0
+        },
+        "wins_losses_ties": [
+          0,
+          0,
+          18
+        ],
+        "differences": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "interpretation": "Small prompt-only diagnostic, not a benchmark. Automated lexical metrics do not establish factual quality.",
+  "retrieval_frozen": true
+}

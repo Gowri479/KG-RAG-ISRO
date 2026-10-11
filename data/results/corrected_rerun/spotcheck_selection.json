@@ -1,0 +1,26 @@
+{
+  "seed": 20261022,
+  "size": 20,
+  "question_ids": [
+    "rakg_001",
+    "rakg_007",
+    "rakg_015",
+    "rakg_018",
+    "rakg_019",
+    "rakg_022",
+    "rakg_023",
+    "rakg_027",
+    "rakg_029",
+    "rakg_032",
+    "rakg_047",
+    "rakg_050",
+    "rakg_053",
+    "rakg_056",
+    "rakg_058",
+    "rakg_064",
+    "rakg_065",
+    "rakg_066",
+    "rakg_067",
+    "rakg_072"
+  ]
+}

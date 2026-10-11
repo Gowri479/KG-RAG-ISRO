@@ -1,0 +1,48 @@
+{
+  "source_file": "d:\\Users\\NANS\\Downloads\\generation_fix_heldout_human_eval_filled.csv",
+  "stored_file": "data/annotations/generation_fix_heldout_human_eval_filled.csv",
+  "question_count": 13,
+  "expected_question_count": 13,
+  "unique_question_count": 13,
+  "duplicate_question_count": 0,
+  "question_ids_match_manifest": true,
+  "candidate_count": 39,
+  "candidate_hash_matches": 39,
+  "expected_candidate_hash_matches": 39,
+  "score_validation": {
+    "correctness": {
+      "count": 39,
+      "valid": true,
+      "min": 1,
+      "max": 5
+    },
+    "completeness": {
+      "count": 39,
+      "valid": true,
+      "min": 1,
+      "max": 5
+    },
+    "groundedness": {
+      "count": 39,
+      "valid": true,
+      "min": 1,
+      "max": 5
+    },
+    "relevance": {
+      "count": 39,
+      "valid": true,
+      "min": 2,
+      "max": 5
+    },
+    "unsupported_claim": {
+      "count": 39,
+      "valid": true,
+      "min": 0,
+      "max": 1
+    }
+  },
+  "score_analysis_performed": false,
+  "source_sha256": "df1df327c4e0ac84a3736a2e2e01c2458482086dab790743fbda1ed5e65dde3a",
+  "stored_sha256": "df1df327c4e0ac84a3736a2e2e01c2458482086dab790743fbda1ed5e65dde3a",
+  "all_checks_pass": true
+}

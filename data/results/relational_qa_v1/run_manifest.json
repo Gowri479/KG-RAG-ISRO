@@ -1,0 +1,31 @@
+{
+  "benchmark_sha256": "7f5daf5419b0a4cb70e5c3d5eba021a8a39118b5a0fd235ce19b81f75324ffce",
+  "benchmark_size": 62,
+  "systems": [
+    "bm25_llm",
+    "vanilla_rag",
+    "kg_rag"
+  ],
+  "model": "mistral:7b-instruct-q4_K_M",
+  "inference_backend": "Ollama local API",
+  "prompt_module": "src/generator/prompt.py",
+  "prompt_sha256": "7beb2ce9ae83d46d25e268edc01d3298c912dea378c8fec0837722d25117590c",
+  "generation_options": {
+    "num_predict": 150,
+    "temperature": 0.1,
+    "num_ctx": 2048
+  },
+  "retrieval": {
+    "bm25_top_k": 3,
+    "dense_top_k": 3,
+    "kg_hops": 1,
+    "context_token_budget": 1500
+  },
+  "embedding_model": "repository default via src/retriever/embedding_model.py",
+  "timestamp_utc": "2026-10-07T09:07:17.147613+00:00",
+  "git_commit": "892b45b",
+  "trace_limitations": [
+    "BM25 and dense chunk IDs are indices from the existing pilot index.",
+    "The existing KG-RAG API exposes serialized one-hop triples but not source-linked path IDs; retrieved_kg_paths is empty rather than fabricated."
+  ]
+}

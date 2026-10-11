@@ -1,0 +1,34 @@
+{
+  "benchmark_sha256": "7f5daf5419b0a4cb70e5c3d5eba021a8a39118b5a0fd235ce19b81f75324ffce",
+  "question_count": 26,
+  "generation_count": 78,
+  "systems": [
+    "vanilla_rag",
+    "corrected_structured_kg_rag",
+    "bm25_llm"
+  ],
+  "model": "mistral:7b-instruct-q4_K_M",
+  "generation_options": {
+    "num_predict": 150,
+    "temperature": 0.1,
+    "num_ctx": 2048
+  },
+  "blind_randomization_seed": 20261007,
+  "code": "src/evaluation/run_final_structured_kg_eval.py",
+  "timestamp_utc": "2026-10-07T17:44:17.913046+00:00",
+  "git_commit": "892b45bb32f7c8b42e14f171a5e1ba39c0710c04",
+  "generation_results.jsonl_sha256": "42c765d7cf967575f2384d7de020d8db4153fca83f94659686778476ccf1d912",
+  "preliminary_metrics.json_sha256": "e87e4bb634cd4578c41561bad417ebfadc5b7de8ba8d451b54a89540a0d35b20",
+  "final_structured_kg_human_eval.csv_sha256": "7c80bf6e4b4262df1829b524fe701eb369d37e42189b07ae7607ccfdeee07d67",
+  "final_structured_kg_human_eval_guidelines.md_sha256": "bce51678e84d7f1aa9c5bc37099dd129447de9e8c6f052a07481b7d7d701363f",
+  "final_structured_kg_eval_report.md_sha256": "012016c9cfb91108dcdd072a9b70445036188a23aff465953412d1107ca35257",
+  "human_csv_sha256": "edd8ea05ffe4f7a9c32da947dc4a1213298f12c41c216be93ac72f48be99a8c8",
+  "diagnostic_artifact_sha256": "8dbd4dd67342909796c2288c5b3e22675ca46e1ab3c4418788721185a5b75f58",
+  "analysis_timestamp_utc": "2026-10-07T19:17:05.833066+00:00",
+  "analysis_script": "src/evaluation/analyze_final_structured_kg_human.py",
+  "analysis_methodology": "paired per-question differences; 5000-sample bootstrap percentile CI; Wilcoxon signed-rank; Cohen dz; Holm correction across four primary metrics",
+  "human_evaluation_analysis.json_sha256": "e42a348c6df1acf2680203ca5c6bfd6db71ad5e88f6b3c86a81190aa6d59fd8f",
+  "statistical_results.json_sha256": "bdbb69dded83d1f7f25bcfdd88f5f1bf23cf0ea04c204ac810d22e8347502ab2",
+  "question_level_results.csv_sha256": "c7ad62ebb135f55d17cc4844dbe9ac1ae63bbcaf4e3cb03f7f7fe51e68010a49",
+  "human_evaluation_report.md_sha256": "0c9248f0a68e5f43bb1d380409a12aea5f89811a926bc5ac1832c0607dea3f43"
+}
