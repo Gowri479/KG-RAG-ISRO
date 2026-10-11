@@ -27,7 +27,7 @@ jobs:
 
       - name: Run pytest test suite
         run: |
-          pytest -q
+          python -m pytest -q
 
   frontend-checks:
     name: React Frontend Checks (ASTRA)
