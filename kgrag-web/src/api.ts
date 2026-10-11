@@ -1,11 +1,11 @@
-const BASE = import.meta.env.VITE_API_URL;
+const BASE = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
 
 export type Source = {
   document_id: string;
-  url: string;
-  section?: string;
-  page?: string;
-  excerpt?: string;
+  url: string | null;
+  section?: string | null;
+  page?: string | null;
+  excerpt?: string | null;
 };
 
 export type Hop = {
@@ -42,6 +42,19 @@ export type AskResponse = {
 
 export type Health = { status: string; mode: string; model?: string; detail?: string };
 
+const OFFLINE = "The service is currently unavailable. Please try again later.";
+
+async function errorMessage(r: Response): Promise<string> {
+  try {
+    const d = (await r.json())?.detail;
+    if (typeof d === "string") return d;
+    if (Array.isArray(d)) return d.map((x) => x?.msg ?? String(x)).join("; ");
+  } catch {
+    /* response was not JSON */
+  }
+  return `Request failed (${r.status})`;
+}
+
 export async function getHealth(): Promise<Health> {
   const r = await fetch(`${BASE}/api/health`);
   return r.json();
@@ -57,11 +70,16 @@ export async function getExamples(): Promise<string[]> {
 }
 
 export async function ask(question: string): Promise<AskResponse> {
-  const r = await fetch(`${BASE}/api/ask`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ question }),
-  });
-  if (!r.ok) throw new Error(`Request failed (${r.status})`);
+  let r: Response;
+  try {
+    r = await fetch(`${BASE}/api/ask`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question }),
+    });
+  } catch {
+    throw new Error(OFFLINE);
+  }
+  if (!r.ok) throw new Error(await errorMessage(r));
   return r.json();
 }
