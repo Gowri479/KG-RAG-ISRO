@@ -262,3 +262,28 @@ Recorded 2026-10-11, before `analyze_corrected_rerun_spotcheck.py` was run.
   scoring, not copying.
 - The evaluator's identity and their adherence to the independence rules are
   attested by the project owner, not verified by the analysis.
+
+## 17. Second spot-check rater (post hoc, exploratory; recorded before its analysis)
+
+Recorded 2026-10-11, before running any agreement analysis on this rating.
+
+- **Status:** NOT pre-registered. This rating was obtained **after** the §14
+  spot-check had been analysed and FAILED. It cannot change the §14 outcome,
+  which stands as the pre-registered result. It is reported only as an
+  additional, exploratory check, next to §14 and never instead of it.
+- **Source:** a CSV export of the Scoring sheet from a new evaluator (not the
+  "IS" evaluator), stored as
+  `data/annotations/corrected_rerun_spotcheck2_sheet_export.csv`
+  (SHA-256 `6d35cc87…`) and converted with
+  `import_spotcheck_workbook.py` to `corrected_rerun_spotcheck2_filled.csv`.
+  All 300 scores are valid, and every answer text matched the package.
+- **Independence:** the project owner attests that the evaluator is new, did
+  not see any other scores, the AI draft or the §14 result, and used no AI
+  tools. This is not verified by the analysis.
+- **Seen before this record:** cell-level overlap of this rating with the IS
+  rating (75.0%), the rater-1 sheet (82.7%) and the AI draft (84.0%).
+- **Analysis (fixed now):** the same §14 computation against rater 1
+  (`--filled`/`--output` options; output `spotcheck2_analysis.json`), plus
+  agreement between the two independent checkers (IS vs this rater) with the
+  same Krippendorff α. The §14 criterion is applied descriptively only, with
+  no PASS/FAIL claim for the study.
