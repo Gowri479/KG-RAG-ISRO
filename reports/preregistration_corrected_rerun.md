@@ -243,3 +243,22 @@ Recorded 2026-10-08, before the kit was given to the evaluator.
   procedural only: independence rules (no AI tools, no discussion, no other
   ratings), filling instructions, and one sentence stating that 2 and 4 mark
   levels between the described anchors.
+
+## 16. Spot-check rating received (recorded before the §14 analysis)
+
+Recorded 2026-10-11, before `analyze_corrected_rerun_spotcheck.py` was run.
+
+- **Source:** workbook returned by an evaluator with initials "IS", stored as
+  `data/annotations/corrected_rerun_spotcheck_rater_IS.xlsx`
+  (SHA-256 `a22ace31…32a8`; file metadata: created 2026-10-08 at kit build,
+  last modified 2026-10-11 06:51 UTC). It was converted with
+  `import_spotcheck_workbook.py` to `corrected_rerun_spotcheck_filled.csv`.
+  All 300 scores are valid, and every answer text matched the package.
+- **Independence screen** (descriptive; it does not affect the §14 criterion):
+  the new scores match the rater-1 sheet in 70.0% of cells (87.7% within one
+  point) and the AI draft in 70.7%. Only 3 of 20 questions are identical in
+  all 15 cells. Score distribution: 1 ×26, 2 ×17, 3 ×15, 4 ×18, 5 ×164;
+  8 of 60 unsupported-claim flags. This is consistent with independent
+  scoring, not copying.
+- The evaluator's identity and their adherence to the independence rules are
+  attested by the project owner, not verified by the analysis.
